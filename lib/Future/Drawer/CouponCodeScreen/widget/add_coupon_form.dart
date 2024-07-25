@@ -2,7 +2,6 @@ import '../../../../core/get_it/get_it.dart';
 import '../../../../models/response_coupon/datum.dart';
 import '../logic/cubit/coupon_cubit.dart';
 import '../logic/cubit/coupon_state.dart';
-import '../../../../models/couponModel.dart';
 import '../../../../widgets/RowBottomAdd.dart';
 
 import 'package:flutter/material.dart';
@@ -17,7 +16,7 @@ import '../../../../widgets/custom_text_field.dart';
 class CouponSubmitForm extends StatelessWidget {
   final Datum? coupon;
 
-  const CouponSubmitForm({Key? key, this.coupon}) : super(key: key);
+  const CouponSubmitForm({super.key, this.coupon});
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +31,7 @@ class CouponSubmitForm extends StatelessWidget {
               key: context.read<CouponCubit>().addCouponFormKey,
               child: Container(
                 width: size.width * 0.7,
-                padding: EdgeInsets.all(defaultPadding),
+                padding: const EdgeInsets.all(defaultPadding),
                 decoration: BoxDecoration(
                   color: bgColor,
                   borderRadius: BorderRadius.circular(12.0),
@@ -40,7 +39,7 @@ class CouponSubmitForm extends StatelessWidget {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    Gap(defaultPadding),
+                    const Gap(defaultPadding),
                     Row(
                       children: [
                         Expanded(
@@ -56,7 +55,7 @@ class CouponSubmitForm extends StatelessWidget {
                         ),
                       ],
                     ),
-                    Gap(defaultPadding),
+                    const Gap(defaultPadding),
                     Row(
                       children: [
                         Expanded(
@@ -84,7 +83,7 @@ class CouponSubmitForm extends StatelessWidget {
                         ),
                       ],
                     ),
-                    Gap(defaultPadding),
+                    const Gap(defaultPadding),
                     Row(
                       children: [
                         Expanded(
@@ -105,7 +104,7 @@ class CouponSubmitForm extends StatelessWidget {
                         ),
                       ],
                     ),
-                    Gap(defaultPadding),
+                    const Gap(defaultPadding),
                     RowBotttomAdd(onPressed: () {})
                   ],
                 ),
