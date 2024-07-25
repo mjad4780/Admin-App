@@ -1,0 +1,21 @@
+{
+    "status": "success",
+    "data": [
+        {
+            "notification_id": 87,
+            "notification_title": "succes",
+            "notification_body": "mohamed",
+            "notification_userid": 100,
+            "notification_datetime": "2024-05-26 21:59:16",
+            "notification_image": ""
+        },
+        {
+            "notification_id": 88,
+            "notification_title": "succes",
+            "notification_body": "mohamed",
+            "notification_userid": 100,
+            "notification_datetime": "2024-05-26 22:00:01",
+            "notification_image": ""
+        }
+    ]
+}

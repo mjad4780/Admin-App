@@ -1,0 +1,32 @@
+{
+    "item_id": 63,
+    "item_name": "gdgzg",
+    "item_name_ar": "gsg",
+    "item_decs": "gdsg",
+    "item_decs_ar": "gdsg",
+    "item_image": "2099Screenshot 2024-03-04 105337.png",
+    "item_count": 4,
+    "item_active": 1,
+    "item_price": 444,
+    "item_discount": 23,
+    "item_data": "2024-07-09 23:16:45",
+    "item_categories": 11,
+    "items_prices": 444,
+    "itemprice_discount": 341.88,
+    "countitems": 1,
+    "cart_id": 137,
+    "cart_itemid": 63,
+    "cart_userid": 100,
+    "cart_orders": 71,
+    "images": [
+        "6019Screenshot_٢٠٢٣-٠٤-٠٢-١٣-٥٢-٤٤-٣٨_f9ee0578fe1cc94de7482bd41accb329.jpg"
+    ],
+    "size": [
+        {
+            "id": 188,
+            "size": "hd",
+            "quantity": 224,
+            "color": "redd"
+        }
+    ]
+}

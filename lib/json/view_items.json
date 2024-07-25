@@ -1,0 +1,52 @@
+[
+    {
+        "item_id": 63,
+        "item_name": "gdgzg",
+        "item_name_ar": "gsg",
+        "item_decs": "gdsg",
+        "item_decs_ar": "gdsg",
+        "item_image": "2099Screenshot 2024-03-04 105337.png",
+        "item_count": 4,
+        "item_active": 1,
+        "item_price": 444,
+        "item_discount": 23,
+        "item_data": "2024-07-09 23:16:45",
+        "item_categories": 11,
+        "images": [
+            "6019Screenshot_٢٠٢٣-٠٤-٠٢-١٣-٥٢-٤٤-٣٨_f9ee0578fe1cc94de7482bd41accb329.jpg"
+        ],
+        "size": [
+            {
+                "id": 188,
+                "size": "hd",
+                "quantity": 224,
+                "color": "redd"
+            }
+        ]
+    },
+    {
+        "item_id": 64,
+        "item_name": "dhdh",
+        "item_name_ar": "gzgg",
+        "item_decs": "fdhdh",
+        "item_decs_ar": "zrhdh",
+        "item_image": "Array",
+        "item_count": 2,
+        "item_active": 1,
+        "item_price": 4444,
+        "item_discount": 33,
+        "item_data": "2024-07-09 23:55:16",
+        "item_categories": 11,
+        "images": [
+            "7161Screenshot 2024-03-04 105337.png"
+        ],
+        "size": [
+            {
+                "id": 187,
+                "size": "hd",
+                "quantity": 224,
+                "color": "redd"
+            }
+        ]
+    }
+]

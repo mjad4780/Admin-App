@@ -1,0 +1,61 @@
+{
+    "status": "success",
+    "data": [
+        {
+            "categories_id": 11,
+            "categories_name": "choise",
+            "categories_name_ar": "حذاء",
+            "categories_Image": "1300sneakers.png",
+            "categories_Data": "2024-03-20 10:10:08"
+        },
+        {
+            "categories_id": 12,
+            "categories_name": "camera",
+            "categories_name_ar": "كاميرا",
+            "categories_Image": "3852camera.png",
+            "categories_Data": "2024-03-20 10:10:59"
+        },
+        {
+            "categories_id": 14,
+            "categories_name": "laptop",
+            "categories_name_ar": "لابتوب",
+            "categories_Image": "4638laptop.png",
+            "categories_Data": "2024-03-20 10:11:45"
+        },
+        {
+            "categories_id": 15,
+            "categories_name": "mobile",
+            "categories_name_ar": "موبايل",
+            "categories_Image": "7874cell-phone.png",
+            "categories_Data": "2024-03-20 10:13:16"
+        },
+        {
+            "categories_id": 17,
+            "categories_name": "PC2",
+            "categories_name_ar": "كمبيوتر",
+            "categories_Image": "7152monitor.png",
+            "categories_Data": "2024-03-20 10:14:54"
+        },
+        {
+            "categories_id": 44,
+            "categories_name": "gggggggaff",
+            "categories_name_ar": "ggggggggg",
+            "categories_Image": "9843Screenshot (205).png",
+            "categories_Data": "2024-05-14 22:34:54"
+        },
+        {
+            "categories_id": 45,
+            "categories_name": "gg67r4e55dgd",
+            "categories_name_ar": "gggggggggsfa",
+            "categories_Image": "80232269e301-8a24-462d-8185-ff4f2571ca601043951668385361579.jpg",
+            "categories_Data": "2024-05-14 22:36:46"
+        },
+        {
+            "categories_id": 48,
+            "categories_name": "mohamed",
+            "categories_name_ar": "wszhgdrhyd",
+            "categories_Image": "6490IMG_20240303_213314.jpg",
+            "categories_Data": "2024-05-15 19:11:41"
+        }
+    ]
+}

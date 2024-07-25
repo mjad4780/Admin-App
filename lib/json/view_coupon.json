@@ -1,0 +1,23 @@
+{
+    "status": "success",
+    "data": [
+        {
+            "coupon_id": 1,
+            "coupon_name": "hello",
+            "coupon_count": 2,
+            "coupon_data": "2024-04-21 19:01:06",
+            "coupon_discount": 20,
+            "copon_maxuser": 0,
+            "copon_endDate": "2024-05-26 10:49:06"
+        },
+        {
+            "coupon_id": 2,
+            "coupon_name": "mjj",
+            "coupon_count": 2,
+            "coupon_data": "2024-05-26 10:01:06",
+            "coupon_discount": 20,
+            "copon_maxuser": 44,
+            "copon_endDate": "2024-07-26 11:40:06"
+        }
+    ]
+}
