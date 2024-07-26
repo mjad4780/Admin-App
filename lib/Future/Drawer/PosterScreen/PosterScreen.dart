@@ -1,13 +1,15 @@
-import '../../../core/get_it/get_it.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:untitled/Future/Drawer/PosterScreen/logic/cubit/cubit/posters_cubit.dart';
 
 import '../../../utility/constants.dart';
 import '../../../widgets/Heder.dart';
 
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'widget/add_poster_bloc.dart';
 import 'widget/add_poster_form.dart';
-import 'widget/poster_list_section.dart';
+import 'widget/show_and_form_dialog.dart';
+import 'widget/view_poster_bloc.dart';
 
 class PosterScreen extends StatelessWidget {
   const PosterScreen({super.key});
@@ -48,13 +50,13 @@ class PosterScreen extends StatelessWidget {
                             ),
                           ),
                           onPressed: () {
-                            // showAddForm(
-                            //   context,
-                            //   'Add Poster',
-                            //   PosterSubmitForm(),
-                            // );
-
-                            // showAddPosterForm(context, null);
+                            context.read<PostersCubit>().title.clear();
+                            context.read<PostersCubit>().body.clear();
+                            showAddForm(
+                              context,
+                              'Add Poster',
+                              const PosterSubmitForm(),
+                            );
                           },
                           icon: const Icon(Icons.add),
                           label: const Text("Add New"),
@@ -62,13 +64,14 @@ class PosterScreen extends StatelessWidget {
                         const Gap(20),
                         IconButton(
                             onPressed: () {
-                              //TODO: should complete call getAllPosters
+                              context.read<PostersCubit>().viewPoster();
                             },
                             icon: const Icon(Icons.refresh)),
                       ],
                     ),
                     const Gap(defaultPadding),
-                    const PosterListSection(),
+                    const PostersBlocBuilder(),
+                    const AddPostersBlocListener()
                   ],
                 ),
               ),

@@ -1,50 +1,34 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../models/posterModels.dart';
+import '../../../../core/networking/api_constants.dart';
+import '../../../../models/response_poster/datum.dart';
 import '../../../../utility/constants.dart';
 
-DataRow posterDataRow(PosterModel poster, {Function? edit, Function? delete}) {
+DataRow posterDataRow(
+  Datum poster,
+) {
   return DataRow(
     cells: [
       DataCell(
-        Row(
-          children: [
-            Image.network(
-              poster.image ?? '',
-              height: 30,
-              width: 30,
-              errorBuilder: (BuildContext context, Object exception,
-                  StackTrace? stackTrace) {
-                return Icon(Icons.error);
-              },
-            ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
-              child: Text(poster.title ?? ''),
-            ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
-              child: Text(poster.body ?? ''),
-            ),
-          ],
+        CachedNetworkImage(
+          imageUrl: '${ApiConstants.imageposter}/${poster.settingImage}',
+          height: 30,
+          width: 30,
         ),
       ),
-      DataCell(IconButton(
-          onPressed: () {
-            if (edit != null) edit();
-          },
-          icon: Icon(
-            Icons.edit,
-            color: Colors.white,
-          ))),
-      DataCell(IconButton(
-          onPressed: () {
-            if (delete != null) delete();
-          },
-          icon: Icon(
-            Icons.delete,
-            color: Colors.red,
-          ))),
+      DataCell(
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
+          child: Text(poster.settingTitle ?? ''),
+        ),
+      ),
+      DataCell(
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
+          child: Text(poster.settingBody ?? ''),
+        ),
+      ),
     ],
   );
 }

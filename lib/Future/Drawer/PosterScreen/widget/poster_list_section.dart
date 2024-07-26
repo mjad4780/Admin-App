@@ -1,15 +1,15 @@
+import '../../../../models/response_poster/datum.dart';
 import '../../../../utility/constants.dart';
-import 'add_poster_form.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 import 'posterDataRow.dart';
 
 class PosterListSection extends StatelessWidget {
   const PosterListSection({
     super.key,
+    required this.poster,
   });
-
+  final List<Datum> poster;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -32,30 +32,21 @@ class PosterListSection extends StatelessWidget {
                 // minWidth: 600,
                 columns: const [
                   DataColumn(
-                    label: Text("Category Name"),
+                    label: Text("image "),
                   ),
                   DataColumn(
-                    label: Text("Edit"),
+                    label: Text("title"),
                   ),
                   DataColumn(
-                    label: Text("Delete"),
+                    label: Text("body"),
                   ),
                 ],
-                rows: const [],
-                // rows: List.generate(
-                //   context.read<PosterCubit>().Posters.length,
-                //   (index) => posterDataRow(
-                //       context.read<PosterCubit>().Posters[index], delete: () {
-                //     //TODO: should complete call deletePoster
-                //   }, edit: () {
-                //     showAddForm(
-                //         context,
-                //         'Edit Posters',
-                //         PosterSubmitForm(
-                //             poster:
-                //                 context.read<PosterCubit>().Posters[index]));
-                //   }),
-                // ),
+                rows: List.generate(
+                  poster.length,
+                  (index) => posterDataRow(
+                    poster[index],
+                  ),
+                ),
               )),
         ],
       ),

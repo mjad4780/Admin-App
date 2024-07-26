@@ -1,4 +1,5 @@
 import 'package:untitled/Future/Drawer/CategoryScreen/logic/cubit/categories_cubit.dart';
+import 'package:untitled/Future/Drawer/PosterScreen/logic/cubit/cubit/posters_cubit.dart';
 import 'package:untitled/core/get_it/get_it.dart';
 
 import 'package:flutter/material.dart';
@@ -45,10 +46,13 @@ class MainCubit extends Cubit<MainState> {
         selectedScreen = const VariantsScreen();
         break;
       case 'Coupon':
-        selectedScreen = CouponCodeScreen();
+        selectedScreen = const CouponCodeScreen();
         break;
       case 'Poster':
-        selectedScreen = PosterScreen();
+        selectedScreen = BlocProvider(
+          create: (context) => getIt<PostersCubit>()..viewPoster(),
+          child: const PosterScreen(),
+        );
         break;
       case 'Order':
         selectedScreen = OrderScreen();

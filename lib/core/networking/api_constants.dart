@@ -13,6 +13,7 @@ class ApiConstants {
 //image
   static const String imageCat = '$baseUrl/upload/categories';
   static const String imageItem = '$baseUrl/upload/item';
+  static const String imageposter = '$baseUrl/upload/poster';
 
 //Categories
   static const String addCategories = '$baseUrl/admin/categories/add.php';
@@ -21,8 +22,8 @@ class ApiConstants {
   static const String deleteCategories = '$baseUrl/admin/categories/delete.php';
 
 //coupon
-  static const String addCoupon = '$baseUrl/admin/coponadd.php';
-  static const String getCoupon = '$baseUrl/admincoponget.php';
+  static const String addCoupon = '$baseUrl/admin/copon/add.php';
+  static const String getCoupon = '$baseUrl/admin/copon/get.php';
 
   //Items
   static const String addItems = '$baseUrl/admin/items/add.php';
@@ -32,7 +33,7 @@ class ApiConstants {
 
   //poster
   static const String addposter = '$baseUrl/admin/poster/add.php';
-  static const String getposter = '$baseUrl/admin/poster/view.php';
+  static const String getposter = '$baseUrl/admin/poster/get.php';
 
   //orders
   static const String approve = '$baseUrl/admin/orders/approve.php';
