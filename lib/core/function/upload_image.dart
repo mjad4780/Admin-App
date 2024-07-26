@@ -29,7 +29,7 @@ imageuploadgallery() async {
 }
 
 dd() async {
-  ImagePicker imagePicker = await ImagePicker();
+  ImagePicker imagePicker = ImagePicker();
   List<XFile> PickImages = [];
 
   List<XFile> images = await imagePicker.pickMultiImage();

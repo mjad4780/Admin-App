@@ -1,25 +1,28 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../../core/function/showAddForm.dart';
+import '../../../../models/response_categories/datum.dart';
 import '../../../../utility/constants.dart';
 import 'package:flutter/material.dart';
 
-import '../logic/CategoryScreen_cubit/category_cubit.dart';
+import '../logic/cubit/categories_cubit.dart';
 import 'add_category_form.dart';
 import 'categoryDataRow.dart';
+import 'show_and_form_dialog.dart';
 
 class CategoryListSection extends StatelessWidget {
   const CategoryListSection({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+    required this.categories,
+  });
 
+  final List<Datum> categories;
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(defaultPadding),
-      decoration: BoxDecoration(
+      padding: const EdgeInsets.all(defaultPadding),
+      decoration: const BoxDecoration(
         color: secondaryColor,
-        borderRadius: const BorderRadius.all(Radius.circular(10)),
+        borderRadius: BorderRadius.all(Radius.circular(10)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -33,9 +36,12 @@ class CategoryListSection extends StatelessWidget {
             child: DataTable(
               columnSpacing: defaultPadding,
               // minWidth: 600,
-              columns: [
+              columns: const [
                 DataColumn(
                   label: Text("Category Name"),
+                ),
+                DataColumn(
+                  label: Text("Category Name Ar"),
                 ),
                 DataColumn(
                   label: Text("Added Date"),
@@ -48,14 +54,20 @@ class CategoryListSection extends StatelessWidget {
                 ),
               ],
               rows: List.generate(
-                context.read<CategoryCubit>().categories.length,
-                (index) => categoryDataRow(
-                    context.read<CategoryCubit>().categories[index],
-                    delete: () {}, edit: () {
+                categories.length,
+                (index) =>
+                    categoryDataRow(categories[index], delete: () {}, edit: () {
+                  context
+                      .read<CategoriesCubit>()
+                      .setDataForUpdateCategory(categories[index], context);
                   showAddForm(
                     context,
                     'Edit Categories',
-                    CategorySubmitForm(),
+                    CategorySubmitForm(
+                      onPressed: () => context
+                          .read<CategoriesCubit>()
+                          .editCategories(categories[index].categoriesId!),
+                    ),
                   );
                 }),
               ),

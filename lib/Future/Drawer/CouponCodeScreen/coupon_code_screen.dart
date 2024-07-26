@@ -2,7 +2,6 @@ import '../../../core/get_it/get_it.dart';
 import 'logic/cubit/coupon_cubit.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../core/function/showAddForm.dart';
 import '../../../utility/constants.dart';
 import '../../../widgets/Heder.dart';
 
@@ -13,6 +12,8 @@ import 'widget/add_coupon_form.dart';
 import 'widget/coupon_list_section.dart';
 
 class CouponCodeScreen extends StatelessWidget {
+  const CouponCodeScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -20,13 +21,13 @@ class CouponCodeScreen extends StatelessWidget {
         create: (context) => getIt<CouponCubit>(),
         child: SingleChildScrollView(
           primary: false,
-          padding: EdgeInsets.all(defaultPadding),
+          padding: const EdgeInsets.all(defaultPadding),
           child: Column(
             children: [
-              Header(
+              const Header(
                 title: 'Coupon',
               ),
-              Gap(defaultPadding),
+              const Gap(defaultPadding),
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -45,28 +46,28 @@ class CouponCodeScreen extends StatelessWidget {
                             ),
                             ElevatedButton.icon(
                               style: TextButton.styleFrom(
-                                padding: EdgeInsets.symmetric(
+                                padding: const EdgeInsets.symmetric(
                                   horizontal: defaultPadding * 1.5,
                                   vertical: defaultPadding,
                                 ),
                               ),
                               onPressed: () {
-                                showAddForm(
-                                    context, "Add Coupon", CouponSubmitForm());
+                                // showAddForm(
+                                //     context, "Add Coupon", CouponSubmitForm());
                               },
-                              icon: Icon(Icons.add),
-                              label: Text("Add New"),
+                              icon: const Icon(Icons.add),
+                              label: const Text("Add New"),
                             ),
-                            Gap(20),
+                            const Gap(20),
                             IconButton(
                                 onPressed: () {
                                   //TODO: should complete call getAllCoupons
                                 },
-                                icon: Icon(Icons.refresh)),
+                                icon: const Icon(Icons.refresh)),
                           ],
                         ),
-                        Gap(defaultPadding),
-                        CouponListSection(
+                        const Gap(defaultPadding),
+                        const CouponListSection(
                           coupon: [],
                         ),
                       ],

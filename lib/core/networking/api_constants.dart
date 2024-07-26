@@ -1,5 +1,5 @@
 class ApiConstants {
-  static const String baseUrl = "http://10.0.2.2/e-ecommerse";
+  static const String baseUrl = "http://localhost/e-ecommerse";
 
 //ده خاص باالاميلوتر لانه غير مرفوع علي استضافه
   static String test = "$baseUrl/test.php";
@@ -21,8 +21,8 @@ class ApiConstants {
   static const String deleteCategories = '$baseUrl/admin/categories/delete.php';
 
 //coupon
-  static const String addCoupon = '$baseUrl/admin/copon\add.php';
-  static const String getCoupon = '$baseUrl/admin\copon\get.php';
+  static const String addCoupon = '$baseUrl/admin/coponadd.php';
+  static const String getCoupon = '$baseUrl/admincoponget.php';
 
   //Items
   static const String addItems = '$baseUrl/admin/items/add.php';

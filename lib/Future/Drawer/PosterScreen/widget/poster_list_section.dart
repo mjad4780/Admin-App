@@ -1,4 +1,3 @@
-import '../../../../core/function/showAddForm.dart';
 import '../../../../utility/constants.dart';
 import 'add_poster_form.dart';
 import 'package:flutter/material.dart';
@@ -8,16 +7,16 @@ import 'posterDataRow.dart';
 
 class PosterListSection extends StatelessWidget {
   const PosterListSection({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(defaultPadding),
-      decoration: BoxDecoration(
+      padding: const EdgeInsets.all(defaultPadding),
+      decoration: const BoxDecoration(
         color: secondaryColor,
-        borderRadius: const BorderRadius.all(Radius.circular(10)),
+        borderRadius: BorderRadius.all(Radius.circular(10)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -31,7 +30,7 @@ class PosterListSection extends StatelessWidget {
               child: DataTable(
                 columnSpacing: defaultPadding,
                 // minWidth: 600,
-                columns: [
+                columns: const [
                   DataColumn(
                     label: Text("Category Name"),
                   ),
@@ -42,7 +41,7 @@ class PosterListSection extends StatelessWidget {
                     label: Text("Delete"),
                   ),
                 ],
-                rows: [],
+                rows: const [],
                 // rows: List.generate(
                 //   context.read<PosterCubit>().Posters.length,
                 //   (index) => posterDataRow(

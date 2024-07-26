@@ -13,7 +13,7 @@ class _ApiService implements ApiService {
     this._dio, {
     this.baseUrl,
   }) {
-    baseUrl ??= 'http://10.0.2.2/e-ecommerse';
+    baseUrl ??= 'http://localhost/e-ecommerse';
   }
 
   final Dio _dio;
@@ -21,7 +21,7 @@ class _ApiService implements ApiService {
   String? baseUrl;
 
   @override
-  Future<dynamic> AddCategories(dynamic body) async {
+  Future<dynamic> addCategories(dynamic body) async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
@@ -33,7 +33,7 @@ class _ApiService implements ApiService {
     )
         .compose(
           _dio.options,
-          'http://10.0.2.2/e-ecommerse/admin/categories/add.php',
+          'http://localhost/e-ecommerse/admin/categories/add.php',
           queryParameters: queryParameters,
           data: _data,
         )
@@ -59,7 +59,7 @@ class _ApiService implements ApiService {
     )
         .compose(
           _dio.options,
-          'http://10.0.2.2/e-ecommerse/admin/categories/edit.php',
+          'http://localhost/e-ecommerse/admin/categories/edit.php',
           queryParameters: queryParameters,
           data: _data,
         )
@@ -85,7 +85,7 @@ class _ApiService implements ApiService {
     )
         .compose(
           _dio.options,
-          'http://10.0.2.2/e-ecommerse/admin/categories/delete.php',
+          'http://localhost/e-ecommerse/admin/categories/delete.php',
           queryParameters: queryParameters,
           data: _data,
         )
@@ -99,29 +99,28 @@ class _ApiService implements ApiService {
   }
 
   @override
-  Future<ResponseCategories> ViewCategories() async {
+  Future<ResponseCategories> viewCategories() async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
     const Map<String, dynamic>? _data = null;
-    final _result = await _dio
-        .fetch<Map<String, dynamic>>(_setStreamType<ResponseCategories>(Options(
+    final _result = await _dio.fetch(_setStreamType<ResponseCategories>(Options(
       method: 'GET',
       headers: _headers,
       extra: _extra,
     )
-            .compose(
-              _dio.options,
-              'http://10.0.2.2/e-ecommerse/admin/categories/view.php',
-              queryParameters: queryParameters,
-              data: _data,
-            )
-            .copyWith(
-                baseUrl: _combineBaseUrls(
-              _dio.options.baseUrl,
-              baseUrl,
-            ))));
-    final _value = ResponseCategories.fromJson(_result.data!);
+        .compose(
+          _dio.options,
+          'http://localhost/e-ecommerse/admin/categories/view.php',
+          queryParameters: queryParameters,
+          data: _data,
+        )
+        .copyWith(
+            baseUrl: _combineBaseUrls(
+          _dio.options.baseUrl,
+          baseUrl,
+        ))));
+    final _value = ResponseCategories.fromJson(jsonDecode(_result.data!));
     return _value;
   }
 
@@ -138,7 +137,7 @@ class _ApiService implements ApiService {
     )
         .compose(
           _dio.options,
-          'http://10.0.2.2/e-ecommerse/admin/items/add.php',
+          'http://localhost/e-ecommerse/admin/items/add.php',
           queryParameters: queryParameters,
           data: _data,
         )
@@ -164,7 +163,7 @@ class _ApiService implements ApiService {
     )
         .compose(
           _dio.options,
-          'http://10.0.2.2/e-ecommerse/admin/items/edit.php',
+          'http://localhost/e-ecommerse/admin/items/edit.php',
           queryParameters: queryParameters,
           data: _data,
         )
@@ -190,7 +189,7 @@ class _ApiService implements ApiService {
     )
         .compose(
           _dio.options,
-          'http://10.0.2.2/e-ecommerse/admin/items/delete.php',
+          'http://localhost/e-ecommerse/admin/items/delete.php',
           queryParameters: queryParameters,
           data: _data,
         )
@@ -217,7 +216,7 @@ class _ApiService implements ApiService {
     )
             .compose(
               _dio.options,
-              'http://10.0.2.2/e-ecommerse/admin/items/view.php',
+              'http://localhost/e-ecommerse/admin/items/view.php',
               queryParameters: queryParameters,
               data: _data,
             )
@@ -245,7 +244,7 @@ class _ApiService implements ApiService {
     )
         .compose(
           _dio.options,
-          'http://10.0.2.2/e-ecommerse/admin/coponadd.php',
+          'http://localhost/e-ecommerse/admin/coponadd.php',
           queryParameters: queryParameters,
           data: _data,
         )
@@ -272,7 +271,7 @@ class _ApiService implements ApiService {
     )
             .compose(
               _dio.options,
-              'http://10.0.2.2/e-ecommerse/admincoponget.php',
+              'http://localhost/e-ecommerse/admincoponget.php',
               queryParameters: queryParameters,
               data: _data,
             )
@@ -298,7 +297,7 @@ class _ApiService implements ApiService {
     )
         .compose(
           _dio.options,
-          'http://10.0.2.2/e-ecommerse/admin/notification/add.php',
+          'http://localhost/e-ecommerse/admin/notification/add.php',
           queryParameters: queryParameters,
           data: _data,
         )
@@ -325,7 +324,7 @@ class _ApiService implements ApiService {
     )
             .compose(
               _dio.options,
-              'http://10.0.2.2/e-ecommerse/admin/notification/get_notification.php',
+              'http://localhost/e-ecommerse/admin/notification/get_notification.php',
               queryParameters: queryParameters,
               data: _data,
             )
@@ -351,7 +350,7 @@ class _ApiService implements ApiService {
     )
         .compose(
           _dio.options,
-          'http://10.0.2.2/e-ecommerse/admin/poster/add.php',
+          'http://localhost/e-ecommerse/admin/poster/add.php',
           queryParameters: queryParameters,
           data: _data,
         )
@@ -378,7 +377,7 @@ class _ApiService implements ApiService {
     )
             .compose(
               _dio.options,
-              'http://10.0.2.2/e-ecommerse/admin/poster/view.php',
+              'http://localhost/e-ecommerse/admin/poster/view.php',
               queryParameters: queryParameters,
               data: _data,
             )
@@ -405,7 +404,7 @@ class _ApiService implements ApiService {
     )
             .compose(
               _dio.options,
-              'http://10.0.2.2/e-ecommerse/admin/orders/viewapprove.php',
+              'http://localhost/e-ecommerse/admin/orders/viewapprove.php',
               queryParameters: queryParameters,
               data: _data,
             )
@@ -432,7 +431,7 @@ class _ApiService implements ApiService {
     )
             .compose(
               _dio.options,
-              'http://10.0.2.2/e-ecommerse/admin/orders/viewCancel.php',
+              'http://localhost/e-ecommerse/admin/orders/viewCancel.php',
               queryParameters: queryParameters,
               data: _data,
             )
@@ -459,7 +458,7 @@ class _ApiService implements ApiService {
     )
             .compose(
               _dio.options,
-              'http://10.0.2.2/e-ecommerse/admin/orders/details.php',
+              'http://localhost/e-ecommerse/admin/orders/details.php',
               queryParameters: queryParameters,
               data: _data,
             )
@@ -486,7 +485,7 @@ class _ApiService implements ApiService {
     )
             .compose(
               _dio.options,
-              'http://10.0.2.2/e-ecommerse/admin/orders/viewdone.php',
+              'http://localhost/e-ecommerse/admin/orders/viewdone.php',
               queryParameters: queryParameters,
               data: _data,
             )
@@ -513,7 +512,7 @@ class _ApiService implements ApiService {
     )
             .compose(
               _dio.options,
-              'http://10.0.2.2/e-ecommerse/admin/orders/viewpending.php',
+              'http://localhost/e-ecommerse/admin/orders/viewpending.php',
               queryParameters: queryParameters,
               data: _data,
             )
@@ -540,7 +539,7 @@ class _ApiService implements ApiService {
     )
             .compose(
               _dio.options,
-              'http://10.0.2.2/e-ecommerse/admin/orders/viewprepare.php',
+              'http://localhost/e-ecommerse/admin/orders/viewprepare.php',
               queryParameters: queryParameters,
               data: _data,
             )
@@ -567,7 +566,7 @@ class _ApiService implements ApiService {
     )
             .compose(
               _dio.options,
-              'http://10.0.2.2/e-ecommerse/admin/orders/viewshipped.php',
+              'http://localhost/e-ecommerse/admin/orders/viewshipped.php',
               queryParameters: queryParameters,
               data: _data,
             )
@@ -593,7 +592,7 @@ class _ApiService implements ApiService {
     )
         .compose(
           _dio.options,
-          'http://10.0.2.2/e-ecommerse/admin/orders/approve.php',
+          'http://localhost/e-ecommerse/admin/orders/approve.php',
           queryParameters: queryParameters,
           data: _data,
         )
@@ -619,7 +618,7 @@ class _ApiService implements ApiService {
     )
         .compose(
           _dio.options,
-          'http://10.0.2.2/e-ecommerse/admin/orders/prepare.php',
+          'http://localhost/e-ecommerse/admin/orders/prepare.php',
           queryParameters: queryParameters,
           data: _data,
         )
@@ -645,7 +644,7 @@ class _ApiService implements ApiService {
     )
         .compose(
           _dio.options,
-          'http://10.0.2.2/e-ecommerse/admin/orders/shipped.php',
+          'http://localhost/e-ecommerse/admin/orders/shipped.php',
           queryParameters: queryParameters,
           data: _data,
         )
@@ -671,7 +670,7 @@ class _ApiService implements ApiService {
     )
         .compose(
           _dio.options,
-          'http://10.0.2.2/e-ecommerse/admin/orders/done.php',
+          'http://localhost/e-ecommerse/admin/orders/done.php',
           queryParameters: queryParameters,
           data: _data,
         )

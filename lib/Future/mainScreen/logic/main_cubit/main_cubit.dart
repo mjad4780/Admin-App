@@ -1,4 +1,6 @@
-import '../../../Drawer/CategoryScreen/logic/CategoryScreen_cubit/category_cubit.dart';
+import 'package:untitled/Future/Drawer/CategoryScreen/logic/cubit/categories_cubit.dart';
+import 'package:untitled/core/get_it/get_it.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -17,30 +19,30 @@ part 'main_state.dart';
 
 class MainCubit extends Cubit<MainState> {
   MainCubit() : super(MainInitial());
-  Widget selectedScreen = DashboardScreen();
+  Widget selectedScreen = const DashboardScreen();
 
   navigateToScreen(String screenName) {
     switch (screenName) {
       case 'Dashboard':
-        selectedScreen = DashboardScreen();
+        selectedScreen = const DashboardScreen();
         break; // Break statement needed here
       case 'Category':
         selectedScreen = BlocProvider(
-          create: (context) => CategoryCubit(),
-          child: CategoryScreen(),
+          create: (context) => getIt<CategoriesCubit>()..viewCategories(),
+          child: const CategoryScreen(),
         );
         break;
       case 'SubCategory':
-        selectedScreen = SubCategoryScreen();
+        selectedScreen = const SubCategoryScreen();
         break;
       case 'Brands':
-        selectedScreen = BrandScreen();
+        selectedScreen = const BrandScreen();
         break;
       case 'VariantType':
-        selectedScreen = VariantsTypeScreen();
+        selectedScreen = const VariantsTypeScreen();
         break;
       case 'Variants':
-        selectedScreen = VariantsScreen();
+        selectedScreen = const VariantsScreen();
         break;
       case 'Coupon':
         selectedScreen = CouponCodeScreen();
@@ -55,7 +57,7 @@ class MainCubit extends Cubit<MainState> {
         selectedScreen = NotificationScreen();
         break;
       default:
-        selectedScreen = DashboardScreen();
+        selectedScreen = const DashboardScreen();
     }
     emit(Navigator());
   }

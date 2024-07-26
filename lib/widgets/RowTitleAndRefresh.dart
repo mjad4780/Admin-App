@@ -5,9 +5,9 @@ import '../utility/constants.dart';
 
 class RowTitleAndRefresh extends StatelessWidget {
   const RowTitleAndRefresh(
-      {super.key, required this.text, this.AddonPressed, this.refresh});
+      {super.key, required this.text, this.addonPressed, this.refresh});
   final String text;
-  final void Function()? AddonPressed;
+  final void Function()? addonPressed;
   final void Function()? refresh;
 
   @override
@@ -23,17 +23,17 @@ class RowTitleAndRefresh extends StatelessWidget {
         ),
         ElevatedButton.icon(
           style: TextButton.styleFrom(
-            padding: EdgeInsets.symmetric(
+            padding: const EdgeInsets.symmetric(
               horizontal: defaultPadding * 1.5,
               vertical: defaultPadding,
             ),
           ),
-          onPressed: AddonPressed,
-          icon: Icon(Icons.add),
-          label: Text("Add New"),
+          onPressed: addonPressed,
+          icon: const Icon(Icons.add),
+          label: const Text("Add New"),
         ),
-        Gap(20),
-        IconButton(onPressed: refresh, icon: Icon(Icons.refresh)),
+        const Gap(20),
+        IconButton(onPressed: refresh, icon: const Icon(Icons.refresh)),
       ],
     );
   }

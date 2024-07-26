@@ -2,7 +2,6 @@ import '../../../core/get_it/get_it.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../utility/constants.dart';
-import '../../../core/function/showAddForm.dart';
 import '../../../widgets/Heder.dart';
 
 import 'package:flutter/material.dart';
@@ -11,18 +10,20 @@ import 'widget/add_poster_form.dart';
 import 'widget/poster_list_section.dart';
 
 class PosterScreen extends StatelessWidget {
+  const PosterScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
         child: SingleChildScrollView(
       primary: false,
-      padding: EdgeInsets.all(defaultPadding),
+      padding: const EdgeInsets.all(defaultPadding),
       child: Column(
         children: [
-          Header(
+          const Header(
             title: 'Posters',
           ),
-          SizedBox(height: defaultPadding),
+          const SizedBox(height: defaultPadding),
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -41,33 +42,33 @@ class PosterScreen extends StatelessWidget {
                         ),
                         ElevatedButton.icon(
                           style: TextButton.styleFrom(
-                            padding: EdgeInsets.symmetric(
+                            padding: const EdgeInsets.symmetric(
                               horizontal: defaultPadding * 1.5,
                               vertical: defaultPadding,
                             ),
                           ),
                           onPressed: () {
-                            showAddForm(
-                              context,
-                              'Add Poster',
-                              PosterSubmitForm(),
-                            );
+                            // showAddForm(
+                            //   context,
+                            //   'Add Poster',
+                            //   PosterSubmitForm(),
+                            // );
 
                             // showAddPosterForm(context, null);
                           },
-                          icon: Icon(Icons.add),
-                          label: Text("Add New"),
+                          icon: const Icon(Icons.add),
+                          label: const Text("Add New"),
                         ),
-                        Gap(20),
+                        const Gap(20),
                         IconButton(
                             onPressed: () {
                               //TODO: should complete call getAllPosters
                             },
-                            icon: Icon(Icons.refresh)),
+                            icon: const Icon(Icons.refresh)),
                       ],
                     ),
-                    Gap(defaultPadding),
-                    PosterListSection(),
+                    const Gap(defaultPadding),
+                    const PosterListSection(),
                   ],
                 ),
               ),

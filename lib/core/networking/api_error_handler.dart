@@ -122,8 +122,9 @@ extension DataSourceExtension on DataSource {
 
 class ErrorHandler implements Exception {
   late ApiErrorModel apiErrorModel;
+  String? failerCache;
 
-  ErrorHandler.handle(dynamic error) {
+  ErrorHandler.handle(dynamic error, [this.failerCache]) {
     if (error is DioException) {
       // dio error so its an error from response of the API or from dio itself
       apiErrorModel = _handleError(error);

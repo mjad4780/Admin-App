@@ -15,9 +15,10 @@ class CategoriesRepo {
 
   //ViewCategories
 
-  Future<ApiResult<ResponseCategories>> ViewCategories() async {
+  Future<ApiResult<ResponseCategories>> viewCategories() async {
     try {
-      final response = await _apiService.ViewCategories();
+      final response = await _apiService.viewCategories();
+
       return ApiResult.success(response);
     } catch (e) {
       return ApiResult.failure(ErrorHandler.handle(e));
@@ -26,7 +27,7 @@ class CategoriesRepo {
 
   //AddCategories
 
-  Future<ApiResult<dynamic>> AddCategories(
+  Future<ApiResult<dynamic>> addCategories(
       String name, String namear, File file) async {
     Map<String, dynamic> data = {
       "name": name,
@@ -34,7 +35,7 @@ class CategoriesRepo {
       "file": await uploadImageToAPI(file)
     };
     try {
-      final response = await _apiService.AddCategories(formDataPost(data));
+      final response = await _apiService.addCategories(formDataPost(data));
       return ApiResult.success(response);
     } catch (e) {
       return ApiResult.failure(ErrorHandler.handle(e));
@@ -43,8 +44,9 @@ class CategoriesRepo {
   //editCategories
 
   Future<ApiResult<dynamic>> editCategories(
-      String name, String namear, File? file, String imageold) async {
+      int id, String name, String namear, File? file, String imageold) async {
     Map<String, dynamic> data = {
+      'id': id,
       "name": name,
       "namear": namear,
       "imageold": imageold,

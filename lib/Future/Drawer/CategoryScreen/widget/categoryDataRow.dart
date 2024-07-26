@@ -1,37 +1,41 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:untitled/models/response_categories/datum.dart';
 
-import '../../../../models/category.dart';
+import '../../../../core/networking/api_constants.dart';
 import '../../../../utility/constants.dart';
 
-DataRow categoryDataRow(CategoryModel CatInfo,
-    {Function? edit, Function? delete}) {
+DataRow categoryDataRow(Datum categories, {Function? edit, Function? delete}) {
   return DataRow(
     cells: [
       DataCell(
         Row(
           children: [
-            Image.network(
-              CatInfo.image ?? ' ',
+            CachedNetworkImage(
+              imageUrl:
+                  '${ApiConstants.imageCat}/${categories.categoriesImage} ',
               height: 30,
               width: 30,
-              errorBuilder: (BuildContext context, Object exception,
-                  StackTrace? stackTrace) {
-                return Icon(Icons.error);
-              },
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
-              child: Text(CatInfo.name ?? ' '),
+              child: Text(categories.categoriesName ?? ' '),
             ),
           ],
         ),
       ),
-      // DataCell(Text(CatInfo.createdAt ?? ' ')),
+      DataCell(
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
+          child: Text(categories.categoriesNameAr ?? ' '),
+        ),
+      ),
+      DataCell(Text(categories.categoriesData ?? ' ')),
       DataCell(IconButton(
           onPressed: () {
             if (edit != null) edit();
           },
-          icon: Icon(
+          icon: const Icon(
             Icons.edit,
             color: Colors.white,
           ))),
@@ -39,7 +43,7 @@ DataRow categoryDataRow(CategoryModel CatInfo,
           onPressed: () {
             if (delete != null) delete();
           },
-          icon: Icon(
+          icon: const Icon(
             Icons.delete,
             color: Colors.red,
           ))),

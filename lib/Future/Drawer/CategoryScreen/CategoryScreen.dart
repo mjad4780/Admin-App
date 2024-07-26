@@ -1,26 +1,32 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gap/gap.dart';
-import '../../../core/function/showAddForm.dart';
+import 'package:untitled/Future/Drawer/CategoryScreen/logic/cubit/categories_cubit.dart';
+import 'package:untitled/Future/Drawer/CategoryScreen/widget/add_category_bloc.dart';
+import 'package:untitled/Future/Drawer/CategoryScreen/widget/edit_category_bloc.dart';
 import '../../../utility/constants.dart';
 
 import '../../../widgets/Heder.dart';
 import '../../../widgets/RowTitleAndRefresh.dart';
 import 'widget/add_category_form.dart';
-import 'widget/category_list_section.dart';
+import 'widget/categories_bloc_listener.dart';
+import 'widget/show_and_form_dialog.dart';
 
 class CategoryScreen extends StatelessWidget {
+  const CategoryScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: SingleChildScrollView(
         primary: false,
-        padding: EdgeInsets.all(defaultPadding),
+        padding: const EdgeInsets.all(defaultPadding),
         child: Column(
           children: [
-            Header(
+            const Header(
               title: 'Category',
             ),
-            SizedBox(height: defaultPadding),
+            const SizedBox(height: defaultPadding),
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -30,17 +36,30 @@ class CategoryScreen extends StatelessWidget {
                     children: [
                       RowTitleAndRefresh(
                         text: "My Categories",
-                        AddonPressed: () {
+                        addonPressed: () {
+                          context.read<CategoriesCubit>().namear.clear();
+                          context.read<CategoriesCubit>().name.clear();
+                          context.read<CategoriesCubit>().image = null;
                           showAddForm(
                             context,
                             'Add Category',
-                            CategorySubmitForm(),
+                            CategorySubmitForm(
+                              onPressed: () {
+                                context
+                                    .read<CategoriesCubit>()
+                                    .addCategories(context);
+                              },
+                            ),
                           );
                         },
-                        refresh: () {},
+                        refresh: () {
+                          context.read<CategoriesCubit>().viewCategories();
+                        },
                       ),
-                      Gap(defaultPadding),
-                      CategoryListSection(),
+                      const Gap(defaultPadding),
+                      const CategoriesBlocBuilder(),
+                      const AddCategoriesBlocListener(),
+                      const EditcategoriesBlocListener()
                     ],
                   ),
                 ),

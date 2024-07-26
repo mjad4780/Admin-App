@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:untitled/models/response_categories/response_categories.dart';
 import 'package:untitled/models/response_coupon/response_coupon.dart';
 import 'package:untitled/models/response_details/response_details.dart';
@@ -21,7 +23,7 @@ abstract class ApiService {
 
   //Add
   @POST(ApiConstants.addCategories)
-  Future<dynamic> AddCategories(@Body() dynamic body);
+  Future<dynamic> addCategories(@Body() dynamic body);
   //edit
   @POST(ApiConstants.editCategories)
   Future<dynamic> editCategories(@Body() dynamic body);
@@ -30,7 +32,7 @@ abstract class ApiService {
   Future<dynamic> deleteCategories(@Body() dynamic body);
   //View
   @GET(ApiConstants.getCategories)
-  Future<ResponseCategories> ViewCategories();
+  Future<ResponseCategories> viewCategories();
 
   ///////////////Items/////////////
 

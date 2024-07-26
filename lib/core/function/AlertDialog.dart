@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:untitled/core/extensions/extention_navigator.dart';
 
 void showSuccessDialog(BuildContext context, String title) {
   showDialog(
@@ -55,7 +56,7 @@ Future<bool> showMyDialog(
               'cancel',
             ),
             onPressed: () {
-              Navigator.of(context).pop(false);
+              context.pop();
             },
           ),
           TextButton(
@@ -63,9 +64,7 @@ Future<bool> showMyDialog(
               'Approve',
             ),
             onPressed: () {
-              Navigator.of(context).pop(true);
-
-              exit(0);
+              context.pop();
             },
           ),
         ],

@@ -11,7 +11,7 @@ import 'package:gap/gap.dart';
 import 'package:provider/provider.dart';
 import '../../../../utility/constants.dart';
 import '../../../../widgets/RowBottomAdd.dart';
-import '../../../../widgets/category_image_card.dart';
+import '../../../../core/widgets/category_image_card.dart';
 import '../../../../widgets/custom_text_field.dart';
 
 class PosterSubmitForm extends StatelessWidget {
@@ -50,6 +50,8 @@ class PosterSubmitForm extends StatelessWidget {
                       onTap: () {
                         context.read<PostersCubit>().chooseimagegaler();
                       },
+                      ifcondition:
+                          'http://localhost/e-ecommerse/upload/poster/null',
                     ),
                     const Gap(defaultPadding),
                     CustomTextField(
