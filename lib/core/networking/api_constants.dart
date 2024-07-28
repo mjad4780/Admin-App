@@ -48,7 +48,7 @@ class ApiConstants {
   static const String viewpending = '$baseUrl/admin/orders/viewpending.php';
   static const String viewprepare = '$baseUrl/admin/orders/viewprepare.php';
   static const String viewshipped = '$baseUrl/admin/orders/viewshipped.php';
-  static const String viewdetails = '$baseUrl/admin/orders/details.php';
+  static const String viewdetails = '$baseUrl/admin/orders/viewdetails.php';
 }
 
 class ApiErrors {

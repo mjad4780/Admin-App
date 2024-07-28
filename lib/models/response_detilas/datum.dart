@@ -3,51 +3,51 @@ import 'package:json_annotation/json_annotation.dart';
 
 import 'size.dart';
 
-part 'response_details.g.dart';
+part 'datum.g.dart';
 
 @JsonSerializable()
-class ResponseDetails {
+class DataDetails {
   @JsonKey(name: 'item_id')
-  final int? itemId;
+  int? itemId;
   @JsonKey(name: 'item_name')
-  final String? itemName;
+  String? itemName;
   @JsonKey(name: 'item_name_ar')
-  final String? itemNameAr;
+  String? itemNameAr;
   @JsonKey(name: 'item_decs')
-  final String? itemDecs;
+  String? itemDecs;
   @JsonKey(name: 'item_decs_ar')
-  final String? itemDecsAr;
+  String? itemDecsAr;
   @JsonKey(name: 'item_image')
-  final String? itemImage;
+  String? itemImage;
   @JsonKey(name: 'item_count')
-  final int? itemCount;
+  int? itemCount;
   @JsonKey(name: 'item_active')
-  final int? itemActive;
+  int? itemActive;
   @JsonKey(name: 'item_price')
-  final int? itemPrice;
+  int? itemPrice;
   @JsonKey(name: 'item_discount')
-  final int? itemDiscount;
+  int? itemDiscount;
   @JsonKey(name: 'item_data')
-  final String? itemData;
+  String? itemData;
   @JsonKey(name: 'item_categories')
-  final int? itemCategories;
+  int? itemCategories;
   @JsonKey(name: 'items_prices')
-  final int? itemsPrices;
+  int? itemsPrices;
   @JsonKey(name: 'itemprice_discount')
-  final double? itempriceDiscount;
-  final int? countitems;
+  double? itempriceDiscount;
+  int? countitems;
   @JsonKey(name: 'cart_id')
-  final int? cartId;
+  int? cartId;
   @JsonKey(name: 'cart_itemid')
-  final int? cartItemid;
+  int? cartItemid;
   @JsonKey(name: 'cart_userid')
-  final int? cartUserid;
+  int? cartUserid;
   @JsonKey(name: 'cart_orders')
-  final int? cartOrders;
-  final List<String>? images;
-  final List<Size>? size;
+  int? cartOrders;
+  List<String>? images;
+  List<ItemSize>? size;
 
-  const ResponseDetails({
+  DataDetails({
     this.itemId,
     this.itemName,
     this.itemNameAr,
@@ -71,16 +71,15 @@ class ResponseDetails {
     this.size,
   });
 
-  factory ResponseDetails.fromJson(Map<String, dynamic> json) {
-    return _$ResponseDetailsFromJson(json);
-  }
+  factory DataDetails.fromJson(Map<String, dynamic> json) =>
+      _$DataDetailsFromJson(json);
 
-  Map<String, dynamic> toJson() => _$ResponseDetailsToJson(this);
+  Map<String, dynamic> toJson() => _$DataDetailsToJson(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    if (other is! ResponseDetails) return false;
+    if (other is! DataDetails) return false;
     final mapEquals = const DeepCollectionEquality().equals;
     return mapEquals(other.toJson(), toJson());
   }

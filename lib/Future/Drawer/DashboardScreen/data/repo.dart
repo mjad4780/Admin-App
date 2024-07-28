@@ -15,7 +15,7 @@ class ItemsRepo {
 
   //ViewItems
 
-  Future<ApiResult<List<ResponseItems>>> ViewItems() async {
+  Future<ApiResult<ResponseItems>> viewItems() async {
     try {
       final response = await _apiService.getItems();
       return ApiResult.success(response);

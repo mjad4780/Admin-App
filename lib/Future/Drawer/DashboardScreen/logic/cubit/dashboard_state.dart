@@ -1,5 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
+import '../../../../../models/response_items/datum.dart';
 import '../../../../../models/response_items/response_items.dart';
 part 'dashboard_state.freezed.dart';
 
@@ -10,7 +11,7 @@ class DashboardState with _$DashboardState {
 /////////////////items//////////////////
   ///:view
   const factory DashboardState.loadingview() = Loadingview;
-  const factory DashboardState.successview(List<ResponseItems> response) =
+  const factory DashboardState.successview(List<ItemsData> response) =
       Successview;
   const factory DashboardState.erorrview({required String erorr}) = Erorrview;
 

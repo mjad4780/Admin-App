@@ -2,7 +2,6 @@ import 'dart:convert';
 
 import 'package:untitled/models/response_categories/response_categories.dart';
 import 'package:untitled/models/response_coupon/response_coupon.dart';
-import 'package:untitled/models/response_details/response_details.dart';
 import 'package:untitled/models/response_items/response_items.dart';
 import 'package:untitled/models/response_notifacation/response_notifacation.dart';
 import 'package:untitled/models/response_orders/response_orders.dart';
@@ -11,6 +10,7 @@ import 'package:dio/dio.dart';
 
 import 'package:retrofit/retrofit.dart';
 
+import '../../models/response_detilas/response_detilas.dart';
 import 'api_constants.dart';
 
 part 'api_service.g.dart';
@@ -47,7 +47,7 @@ abstract class ApiService {
   Future<dynamic> deleteItems(@Body() dynamic body);
   //View
   @GET(ApiConstants.getItems)
-  Future<List<ResponseItems>> getItems();
+  Future<ResponseItems> getItems();
 
   ///////////////COUPON/////////////
 

@@ -1,4 +1,5 @@
 import 'package:untitled/Future/Drawer/CategoryScreen/logic/cubit/categories_cubit.dart';
+import 'package:untitled/Future/Drawer/OrderScreen/logic/cubit/orders_cubit.dart';
 import 'package:untitled/Future/Drawer/PosterScreen/logic/cubit/cubit/posters_cubit.dart';
 import 'package:untitled/core/get_it/get_it.dart';
 
@@ -55,7 +56,10 @@ class MainCubit extends Cubit<MainState> {
         );
         break;
       case 'Order':
-        selectedScreen = OrderScreen();
+        selectedScreen = BlocProvider(
+          create: (context) => getIt<OrdersCubit>(),
+          child: OrderScreen(),
+        );
         break;
       case 'Notifications':
         selectedScreen = NotificationScreen();

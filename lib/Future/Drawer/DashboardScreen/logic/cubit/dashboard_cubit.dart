@@ -6,13 +6,13 @@ import 'package:go_router/go_router.dart';
 
 import '../../../../../core/function/AlertDialog.dart';
 import '../../../../../core/function/upload_image.dart';
-import '../../../../../models/response_items/response_items.dart';
+import '../../../../../models/response_items/datum.dart';
 import '../../../../../models/response_items/size.dart';
 import '../../data/repo.dart';
 import 'dashboard_state.dart';
 
 class DashboardCubit extends Cubit<DashboardState> {
-  DashboardCubit(this._itemrepo) : super(DashboardState.initial());
+  DashboardCubit(this._itemrepo) : super(const DashboardState.initial());
 
   final ItemsRepo _itemrepo;
 
@@ -55,7 +55,7 @@ class DashboardCubit extends Cubit<DashboardState> {
   File? file;
   File? editfile;
 
-  List<ResponseItems> items = [];
+  List<ItemsData> items = [];
 
   ///:chooseimagegaler
   chooseimagegaler() async {
@@ -66,10 +66,10 @@ class DashboardCubit extends Cubit<DashboardState> {
   ///:viewItems
   viewItems() async {
     emit(const DashboardState.loadingview());
-    final response = await _itemrepo.ViewItems();
+    final response = await _itemrepo.viewItems();
     response.when(success: (data) {
-      items = data;
-      emit(DashboardState.successview(data));
+      items = data.data ?? [];
+      emit(DashboardState.successview(data.data ?? []));
     }, failure: (error) {
       emit(DashboardState.erorrview(erorr: error.apiErrorModel.messege ?? ''));
     });
@@ -77,8 +77,9 @@ class DashboardCubit extends Cubit<DashboardState> {
 
   ///:AddItems
   addItems(BuildContext context) async {
-    if (file == null)
+    if (file == null) {
       return showMyDialog(context, "erorr", "please choose image");
+    }
 
     emit(const DashboardState.loadingAdd());
     final response = await _itemrepo.AddItems(
@@ -143,7 +144,7 @@ class DashboardCubit extends Cubit<DashboardState> {
     });
   }
 
-  pushEdit(ResponseItems items, BuildContext context, ItemSize size) {
+  pushEdit(ItemsData items, BuildContext context, ItemSize size) {
     editname.text = items.itemName ?? 'M';
     editname.text = items.itemNameAr ?? "";
     editdecs.text = items.itemDecs ?? 'M';

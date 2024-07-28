@@ -86,7 +86,6 @@ class PosterSubmitForm extends StatelessWidget {
   }
 }
 
-
 // How to show the category popup
 // void showAddPosterForm(BuildContext context, Poster? poster) {
 //   showDialog(

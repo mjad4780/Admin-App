@@ -32,7 +32,7 @@ mixin _$OrdersState {
     required TResult Function() successshipped,
     required TResult Function(String erorr) erorrshipped,
     required TResult Function() loadingviewdetails,
-    required TResult Function(ResponseDetails responseDetails)
+    required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
     required TResult Function(String erorr) erorrviewdetails,
     required TResult Function() loadingviewapprove,
@@ -71,7 +71,7 @@ mixin _$OrdersState {
     TResult? Function()? successshipped,
     TResult? Function(String erorr)? erorrshipped,
     TResult? Function()? loadingviewdetails,
-    TResult? Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
     TResult? Function()? loadingviewapprove,
     TResult? Function(List<Datum> vieworders)? successviewapprove,
@@ -109,7 +109,7 @@ mixin _$OrdersState {
     TResult Function()? successshipped,
     TResult Function(String erorr)? erorrshipped,
     TResult Function()? loadingviewdetails,
-    TResult Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
     TResult Function()? loadingviewapprove,
     TResult Function(List<Datum> vieworders)? successviewapprove,
@@ -319,7 +319,7 @@ class _$InitialImpl implements _Initial {
     required TResult Function() successshipped,
     required TResult Function(String erorr) erorrshipped,
     required TResult Function() loadingviewdetails,
-    required TResult Function(ResponseDetails responseDetails)
+    required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
     required TResult Function(String erorr) erorrviewdetails,
     required TResult Function() loadingviewapprove,
@@ -361,7 +361,7 @@ class _$InitialImpl implements _Initial {
     TResult? Function()? successshipped,
     TResult? Function(String erorr)? erorrshipped,
     TResult? Function()? loadingviewdetails,
-    TResult? Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
     TResult? Function()? loadingviewapprove,
     TResult? Function(List<Datum> vieworders)? successviewapprove,
@@ -402,7 +402,7 @@ class _$InitialImpl implements _Initial {
     TResult Function()? successshipped,
     TResult Function(String erorr)? erorrshipped,
     TResult Function()? loadingviewdetails,
-    TResult Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
     TResult Function()? loadingviewapprove,
     TResult Function(List<Datum> vieworders)? successviewapprove,
@@ -614,7 +614,7 @@ class _$LoadingapproveImpl implements Loadingapprove {
     required TResult Function() successshipped,
     required TResult Function(String erorr) erorrshipped,
     required TResult Function() loadingviewdetails,
-    required TResult Function(ResponseDetails responseDetails)
+    required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
     required TResult Function(String erorr) erorrviewdetails,
     required TResult Function() loadingviewapprove,
@@ -656,7 +656,7 @@ class _$LoadingapproveImpl implements Loadingapprove {
     TResult? Function()? successshipped,
     TResult? Function(String erorr)? erorrshipped,
     TResult? Function()? loadingviewdetails,
-    TResult? Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
     TResult? Function()? loadingviewapprove,
     TResult? Function(List<Datum> vieworders)? successviewapprove,
@@ -697,7 +697,7 @@ class _$LoadingapproveImpl implements Loadingapprove {
     TResult Function()? successshipped,
     TResult Function(String erorr)? erorrshipped,
     TResult Function()? loadingviewdetails,
-    TResult Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
     TResult Function()? loadingviewapprove,
     TResult Function(List<Datum> vieworders)? successviewapprove,
@@ -909,7 +909,7 @@ class _$SuccessapproveImpl implements Successapprove {
     required TResult Function() successshipped,
     required TResult Function(String erorr) erorrshipped,
     required TResult Function() loadingviewdetails,
-    required TResult Function(ResponseDetails responseDetails)
+    required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
     required TResult Function(String erorr) erorrviewdetails,
     required TResult Function() loadingviewapprove,
@@ -951,7 +951,7 @@ class _$SuccessapproveImpl implements Successapprove {
     TResult? Function()? successshipped,
     TResult? Function(String erorr)? erorrshipped,
     TResult? Function()? loadingviewdetails,
-    TResult? Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
     TResult? Function()? loadingviewapprove,
     TResult? Function(List<Datum> vieworders)? successviewapprove,
@@ -992,7 +992,7 @@ class _$SuccessapproveImpl implements Successapprove {
     TResult Function()? successshipped,
     TResult Function(String erorr)? erorrshipped,
     TResult Function()? loadingviewdetails,
-    TResult Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
     TResult Function()? loadingviewapprove,
     TResult Function(List<Datum> vieworders)? successviewapprove,
@@ -1230,7 +1230,7 @@ class _$ErorrapproveImpl implements Erorrapprove {
     required TResult Function() successshipped,
     required TResult Function(String erorr) erorrshipped,
     required TResult Function() loadingviewdetails,
-    required TResult Function(ResponseDetails responseDetails)
+    required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
     required TResult Function(String erorr) erorrviewdetails,
     required TResult Function() loadingviewapprove,
@@ -1272,7 +1272,7 @@ class _$ErorrapproveImpl implements Erorrapprove {
     TResult? Function()? successshipped,
     TResult? Function(String erorr)? erorrshipped,
     TResult? Function()? loadingviewdetails,
-    TResult? Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
     TResult? Function()? loadingviewapprove,
     TResult? Function(List<Datum> vieworders)? successviewapprove,
@@ -1313,7 +1313,7 @@ class _$ErorrapproveImpl implements Erorrapprove {
     TResult Function()? successshipped,
     TResult Function(String erorr)? erorrshipped,
     TResult Function()? loadingviewdetails,
-    TResult Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
     TResult Function()? loadingviewapprove,
     TResult Function(List<Datum> vieworders)? successviewapprove,
@@ -1531,7 +1531,7 @@ class _$LoadingprepareImpl implements Loadingprepare {
     required TResult Function() successshipped,
     required TResult Function(String erorr) erorrshipped,
     required TResult Function() loadingviewdetails,
-    required TResult Function(ResponseDetails responseDetails)
+    required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
     required TResult Function(String erorr) erorrviewdetails,
     required TResult Function() loadingviewapprove,
@@ -1573,7 +1573,7 @@ class _$LoadingprepareImpl implements Loadingprepare {
     TResult? Function()? successshipped,
     TResult? Function(String erorr)? erorrshipped,
     TResult? Function()? loadingviewdetails,
-    TResult? Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
     TResult? Function()? loadingviewapprove,
     TResult? Function(List<Datum> vieworders)? successviewapprove,
@@ -1614,7 +1614,7 @@ class _$LoadingprepareImpl implements Loadingprepare {
     TResult Function()? successshipped,
     TResult Function(String erorr)? erorrshipped,
     TResult Function()? loadingviewdetails,
-    TResult Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
     TResult Function()? loadingviewapprove,
     TResult Function(List<Datum> vieworders)? successviewapprove,
@@ -1826,7 +1826,7 @@ class _$SuccessprepareImpl implements Successprepare {
     required TResult Function() successshipped,
     required TResult Function(String erorr) erorrshipped,
     required TResult Function() loadingviewdetails,
-    required TResult Function(ResponseDetails responseDetails)
+    required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
     required TResult Function(String erorr) erorrviewdetails,
     required TResult Function() loadingviewapprove,
@@ -1868,7 +1868,7 @@ class _$SuccessprepareImpl implements Successprepare {
     TResult? Function()? successshipped,
     TResult? Function(String erorr)? erorrshipped,
     TResult? Function()? loadingviewdetails,
-    TResult? Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
     TResult? Function()? loadingviewapprove,
     TResult? Function(List<Datum> vieworders)? successviewapprove,
@@ -1909,7 +1909,7 @@ class _$SuccessprepareImpl implements Successprepare {
     TResult Function()? successshipped,
     TResult Function(String erorr)? erorrshipped,
     TResult Function()? loadingviewdetails,
-    TResult Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
     TResult Function()? loadingviewapprove,
     TResult Function(List<Datum> vieworders)? successviewapprove,
@@ -2147,7 +2147,7 @@ class _$ErorrprepareImpl implements Erorrprepare {
     required TResult Function() successshipped,
     required TResult Function(String erorr) erorrshipped,
     required TResult Function() loadingviewdetails,
-    required TResult Function(ResponseDetails responseDetails)
+    required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
     required TResult Function(String erorr) erorrviewdetails,
     required TResult Function() loadingviewapprove,
@@ -2189,7 +2189,7 @@ class _$ErorrprepareImpl implements Erorrprepare {
     TResult? Function()? successshipped,
     TResult? Function(String erorr)? erorrshipped,
     TResult? Function()? loadingviewdetails,
-    TResult? Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
     TResult? Function()? loadingviewapprove,
     TResult? Function(List<Datum> vieworders)? successviewapprove,
@@ -2230,7 +2230,7 @@ class _$ErorrprepareImpl implements Erorrprepare {
     TResult Function()? successshipped,
     TResult Function(String erorr)? erorrshipped,
     TResult Function()? loadingviewdetails,
-    TResult Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
     TResult Function()? loadingviewapprove,
     TResult Function(List<Datum> vieworders)? successviewapprove,
@@ -2448,7 +2448,7 @@ class _$LoadingdoneImpl implements Loadingdone {
     required TResult Function() successshipped,
     required TResult Function(String erorr) erorrshipped,
     required TResult Function() loadingviewdetails,
-    required TResult Function(ResponseDetails responseDetails)
+    required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
     required TResult Function(String erorr) erorrviewdetails,
     required TResult Function() loadingviewapprove,
@@ -2490,7 +2490,7 @@ class _$LoadingdoneImpl implements Loadingdone {
     TResult? Function()? successshipped,
     TResult? Function(String erorr)? erorrshipped,
     TResult? Function()? loadingviewdetails,
-    TResult? Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
     TResult? Function()? loadingviewapprove,
     TResult? Function(List<Datum> vieworders)? successviewapprove,
@@ -2531,7 +2531,7 @@ class _$LoadingdoneImpl implements Loadingdone {
     TResult Function()? successshipped,
     TResult Function(String erorr)? erorrshipped,
     TResult Function()? loadingviewdetails,
-    TResult Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
     TResult Function()? loadingviewapprove,
     TResult Function(List<Datum> vieworders)? successviewapprove,
@@ -2743,7 +2743,7 @@ class _$SuccessdoneImpl implements Successdone {
     required TResult Function() successshipped,
     required TResult Function(String erorr) erorrshipped,
     required TResult Function() loadingviewdetails,
-    required TResult Function(ResponseDetails responseDetails)
+    required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
     required TResult Function(String erorr) erorrviewdetails,
     required TResult Function() loadingviewapprove,
@@ -2785,7 +2785,7 @@ class _$SuccessdoneImpl implements Successdone {
     TResult? Function()? successshipped,
     TResult? Function(String erorr)? erorrshipped,
     TResult? Function()? loadingviewdetails,
-    TResult? Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
     TResult? Function()? loadingviewapprove,
     TResult? Function(List<Datum> vieworders)? successviewapprove,
@@ -2826,7 +2826,7 @@ class _$SuccessdoneImpl implements Successdone {
     TResult Function()? successshipped,
     TResult Function(String erorr)? erorrshipped,
     TResult Function()? loadingviewdetails,
-    TResult Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
     TResult Function()? loadingviewapprove,
     TResult Function(List<Datum> vieworders)? successviewapprove,
@@ -3064,7 +3064,7 @@ class _$ErorrdoneImpl implements Erorrdone {
     required TResult Function() successshipped,
     required TResult Function(String erorr) erorrshipped,
     required TResult Function() loadingviewdetails,
-    required TResult Function(ResponseDetails responseDetails)
+    required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
     required TResult Function(String erorr) erorrviewdetails,
     required TResult Function() loadingviewapprove,
@@ -3106,7 +3106,7 @@ class _$ErorrdoneImpl implements Erorrdone {
     TResult? Function()? successshipped,
     TResult? Function(String erorr)? erorrshipped,
     TResult? Function()? loadingviewdetails,
-    TResult? Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
     TResult? Function()? loadingviewapprove,
     TResult? Function(List<Datum> vieworders)? successviewapprove,
@@ -3147,7 +3147,7 @@ class _$ErorrdoneImpl implements Erorrdone {
     TResult Function()? successshipped,
     TResult Function(String erorr)? erorrshipped,
     TResult Function()? loadingviewdetails,
-    TResult Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
     TResult Function()? loadingviewapprove,
     TResult Function(List<Datum> vieworders)? successviewapprove,
@@ -3364,7 +3364,7 @@ class _$LoadingshippedImpl implements Loadingshipped {
     required TResult Function() successshipped,
     required TResult Function(String erorr) erorrshipped,
     required TResult Function() loadingviewdetails,
-    required TResult Function(ResponseDetails responseDetails)
+    required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
     required TResult Function(String erorr) erorrviewdetails,
     required TResult Function() loadingviewapprove,
@@ -3406,7 +3406,7 @@ class _$LoadingshippedImpl implements Loadingshipped {
     TResult? Function()? successshipped,
     TResult? Function(String erorr)? erorrshipped,
     TResult? Function()? loadingviewdetails,
-    TResult? Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
     TResult? Function()? loadingviewapprove,
     TResult? Function(List<Datum> vieworders)? successviewapprove,
@@ -3447,7 +3447,7 @@ class _$LoadingshippedImpl implements Loadingshipped {
     TResult Function()? successshipped,
     TResult Function(String erorr)? erorrshipped,
     TResult Function()? loadingviewdetails,
-    TResult Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
     TResult Function()? loadingviewapprove,
     TResult Function(List<Datum> vieworders)? successviewapprove,
@@ -3659,7 +3659,7 @@ class _$SuccessshippedImpl implements Successshipped {
     required TResult Function() successshipped,
     required TResult Function(String erorr) erorrshipped,
     required TResult Function() loadingviewdetails,
-    required TResult Function(ResponseDetails responseDetails)
+    required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
     required TResult Function(String erorr) erorrviewdetails,
     required TResult Function() loadingviewapprove,
@@ -3701,7 +3701,7 @@ class _$SuccessshippedImpl implements Successshipped {
     TResult? Function()? successshipped,
     TResult? Function(String erorr)? erorrshipped,
     TResult? Function()? loadingviewdetails,
-    TResult? Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
     TResult? Function()? loadingviewapprove,
     TResult? Function(List<Datum> vieworders)? successviewapprove,
@@ -3742,7 +3742,7 @@ class _$SuccessshippedImpl implements Successshipped {
     TResult Function()? successshipped,
     TResult Function(String erorr)? erorrshipped,
     TResult Function()? loadingviewdetails,
-    TResult Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
     TResult Function()? loadingviewapprove,
     TResult Function(List<Datum> vieworders)? successviewapprove,
@@ -3980,7 +3980,7 @@ class _$ErorrshippedImpl implements Erorrshipped {
     required TResult Function() successshipped,
     required TResult Function(String erorr) erorrshipped,
     required TResult Function() loadingviewdetails,
-    required TResult Function(ResponseDetails responseDetails)
+    required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
     required TResult Function(String erorr) erorrviewdetails,
     required TResult Function() loadingviewapprove,
@@ -4022,7 +4022,7 @@ class _$ErorrshippedImpl implements Erorrshipped {
     TResult? Function()? successshipped,
     TResult? Function(String erorr)? erorrshipped,
     TResult? Function()? loadingviewdetails,
-    TResult? Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
     TResult? Function()? loadingviewapprove,
     TResult? Function(List<Datum> vieworders)? successviewapprove,
@@ -4063,7 +4063,7 @@ class _$ErorrshippedImpl implements Erorrshipped {
     TResult Function()? successshipped,
     TResult Function(String erorr)? erorrshipped,
     TResult Function()? loadingviewdetails,
-    TResult Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
     TResult Function()? loadingviewapprove,
     TResult Function(List<Datum> vieworders)? successviewapprove,
@@ -4281,7 +4281,7 @@ class _$LoadingviewdetailsImpl implements Loadingviewdetails {
     required TResult Function() successshipped,
     required TResult Function(String erorr) erorrshipped,
     required TResult Function() loadingviewdetails,
-    required TResult Function(ResponseDetails responseDetails)
+    required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
     required TResult Function(String erorr) erorrviewdetails,
     required TResult Function() loadingviewapprove,
@@ -4323,7 +4323,7 @@ class _$LoadingviewdetailsImpl implements Loadingviewdetails {
     TResult? Function()? successshipped,
     TResult? Function(String erorr)? erorrshipped,
     TResult? Function()? loadingviewdetails,
-    TResult? Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
     TResult? Function()? loadingviewapprove,
     TResult? Function(List<Datum> vieworders)? successviewapprove,
@@ -4364,7 +4364,7 @@ class _$LoadingviewdetailsImpl implements Loadingviewdetails {
     TResult Function()? successshipped,
     TResult Function(String erorr)? erorrshipped,
     TResult Function()? loadingviewdetails,
-    TResult Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
     TResult Function()? loadingviewapprove,
     TResult Function(List<Datum> vieworders)? successviewapprove,
@@ -4530,7 +4530,7 @@ abstract class _$$successviewdetailsImplCopyWith<$Res> {
           $Res Function(_$successviewdetailsImpl) then) =
       __$$successviewdetailsImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({ResponseDetails responseDetails});
+  $Res call({List<DataDetails> responseDetails});
 }
 
 /// @nodoc
@@ -4548,9 +4548,9 @@ class __$$successviewdetailsImplCopyWithImpl<$Res>
   }) {
     return _then(_$successviewdetailsImpl(
       null == responseDetails
-          ? _value.responseDetails
+          ? _value._responseDetails
           : responseDetails // ignore: cast_nullable_to_non_nullable
-              as ResponseDetails,
+              as List<DataDetails>,
     ));
   }
 }
@@ -4558,10 +4558,16 @@ class __$$successviewdetailsImplCopyWithImpl<$Res>
 /// @nodoc
 
 class _$successviewdetailsImpl implements successviewdetails {
-  const _$successviewdetailsImpl(this.responseDetails);
+  const _$successviewdetailsImpl(final List<DataDetails> responseDetails)
+      : _responseDetails = responseDetails;
 
+  final List<DataDetails> _responseDetails;
   @override
-  final ResponseDetails responseDetails;
+  List<DataDetails> get responseDetails {
+    if (_responseDetails is EqualUnmodifiableListView) return _responseDetails;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_responseDetails);
+  }
 
   @override
   String toString() {
@@ -4573,12 +4579,13 @@ class _$successviewdetailsImpl implements successviewdetails {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$successviewdetailsImpl &&
-            (identical(other.responseDetails, responseDetails) ||
-                other.responseDetails == responseDetails));
+            const DeepCollectionEquality()
+                .equals(other._responseDetails, _responseDetails));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, responseDetails);
+  int get hashCode => Object.hash(
+      runtimeType, const DeepCollectionEquality().hash(_responseDetails));
 
   @JsonKey(ignore: true)
   @override
@@ -4604,7 +4611,7 @@ class _$successviewdetailsImpl implements successviewdetails {
     required TResult Function() successshipped,
     required TResult Function(String erorr) erorrshipped,
     required TResult Function() loadingviewdetails,
-    required TResult Function(ResponseDetails responseDetails)
+    required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
     required TResult Function(String erorr) erorrviewdetails,
     required TResult Function() loadingviewapprove,
@@ -4646,7 +4653,7 @@ class _$successviewdetailsImpl implements successviewdetails {
     TResult? Function()? successshipped,
     TResult? Function(String erorr)? erorrshipped,
     TResult? Function()? loadingviewdetails,
-    TResult? Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
     TResult? Function()? loadingviewapprove,
     TResult? Function(List<Datum> vieworders)? successviewapprove,
@@ -4687,7 +4694,7 @@ class _$successviewdetailsImpl implements successviewdetails {
     TResult Function()? successshipped,
     TResult Function(String erorr)? erorrshipped,
     TResult Function()? loadingviewdetails,
-    TResult Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
     TResult Function()? loadingviewapprove,
     TResult Function(List<Datum> vieworders)? successviewapprove,
@@ -4844,10 +4851,10 @@ class _$successviewdetailsImpl implements successviewdetails {
 }
 
 abstract class successviewdetails implements OrdersState {
-  const factory successviewdetails(final ResponseDetails responseDetails) =
+  const factory successviewdetails(final List<DataDetails> responseDetails) =
       _$successviewdetailsImpl;
 
-  ResponseDetails get responseDetails;
+  List<DataDetails> get responseDetails;
   @JsonKey(ignore: true)
   _$$successviewdetailsImplCopyWith<_$successviewdetailsImpl> get copyWith =>
       throw _privateConstructorUsedError;
@@ -4932,7 +4939,7 @@ class _$ErorrviewdetailsImpl implements Erorrviewdetails {
     required TResult Function() successshipped,
     required TResult Function(String erorr) erorrshipped,
     required TResult Function() loadingviewdetails,
-    required TResult Function(ResponseDetails responseDetails)
+    required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
     required TResult Function(String erorr) erorrviewdetails,
     required TResult Function() loadingviewapprove,
@@ -4974,7 +4981,7 @@ class _$ErorrviewdetailsImpl implements Erorrviewdetails {
     TResult? Function()? successshipped,
     TResult? Function(String erorr)? erorrshipped,
     TResult? Function()? loadingviewdetails,
-    TResult? Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
     TResult? Function()? loadingviewapprove,
     TResult? Function(List<Datum> vieworders)? successviewapprove,
@@ -5015,7 +5022,7 @@ class _$ErorrviewdetailsImpl implements Erorrviewdetails {
     TResult Function()? successshipped,
     TResult Function(String erorr)? erorrshipped,
     TResult Function()? loadingviewdetails,
-    TResult Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
     TResult Function()? loadingviewapprove,
     TResult Function(List<Datum> vieworders)? successviewapprove,
@@ -5233,7 +5240,7 @@ class _$LoadingviewapproveImpl implements Loadingviewapprove {
     required TResult Function() successshipped,
     required TResult Function(String erorr) erorrshipped,
     required TResult Function() loadingviewdetails,
-    required TResult Function(ResponseDetails responseDetails)
+    required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
     required TResult Function(String erorr) erorrviewdetails,
     required TResult Function() loadingviewapprove,
@@ -5275,7 +5282,7 @@ class _$LoadingviewapproveImpl implements Loadingviewapprove {
     TResult? Function()? successshipped,
     TResult? Function(String erorr)? erorrshipped,
     TResult? Function()? loadingviewdetails,
-    TResult? Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
     TResult? Function()? loadingviewapprove,
     TResult? Function(List<Datum> vieworders)? successviewapprove,
@@ -5316,7 +5323,7 @@ class _$LoadingviewapproveImpl implements Loadingviewapprove {
     TResult Function()? successshipped,
     TResult Function(String erorr)? erorrshipped,
     TResult Function()? loadingviewdetails,
-    TResult Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
     TResult Function()? loadingviewapprove,
     TResult Function(List<Datum> vieworders)? successviewapprove,
@@ -5563,7 +5570,7 @@ class _$SuccessviewapproveImpl implements Successviewapprove {
     required TResult Function() successshipped,
     required TResult Function(String erorr) erorrshipped,
     required TResult Function() loadingviewdetails,
-    required TResult Function(ResponseDetails responseDetails)
+    required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
     required TResult Function(String erorr) erorrviewdetails,
     required TResult Function() loadingviewapprove,
@@ -5605,7 +5612,7 @@ class _$SuccessviewapproveImpl implements Successviewapprove {
     TResult? Function()? successshipped,
     TResult? Function(String erorr)? erorrshipped,
     TResult? Function()? loadingviewdetails,
-    TResult? Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
     TResult? Function()? loadingviewapprove,
     TResult? Function(List<Datum> vieworders)? successviewapprove,
@@ -5646,7 +5653,7 @@ class _$SuccessviewapproveImpl implements Successviewapprove {
     TResult Function()? successshipped,
     TResult Function(String erorr)? erorrshipped,
     TResult Function()? loadingviewdetails,
-    TResult Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
     TResult Function()? loadingviewapprove,
     TResult Function(List<Datum> vieworders)? successviewapprove,
@@ -5891,7 +5898,7 @@ class _$ErorrviewapproveImpl implements Erorrviewapprove {
     required TResult Function() successshipped,
     required TResult Function(String erorr) erorrshipped,
     required TResult Function() loadingviewdetails,
-    required TResult Function(ResponseDetails responseDetails)
+    required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
     required TResult Function(String erorr) erorrviewdetails,
     required TResult Function() loadingviewapprove,
@@ -5933,7 +5940,7 @@ class _$ErorrviewapproveImpl implements Erorrviewapprove {
     TResult? Function()? successshipped,
     TResult? Function(String erorr)? erorrshipped,
     TResult? Function()? loadingviewdetails,
-    TResult? Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
     TResult? Function()? loadingviewapprove,
     TResult? Function(List<Datum> vieworders)? successviewapprove,
@@ -5974,7 +5981,7 @@ class _$ErorrviewapproveImpl implements Erorrviewapprove {
     TResult Function()? successshipped,
     TResult Function(String erorr)? erorrshipped,
     TResult Function()? loadingviewdetails,
-    TResult Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
     TResult Function()? loadingviewapprove,
     TResult Function(List<Datum> vieworders)? successviewapprove,
@@ -6192,7 +6199,7 @@ class _$LoadingviewCancelImpl implements LoadingviewCancel {
     required TResult Function() successshipped,
     required TResult Function(String erorr) erorrshipped,
     required TResult Function() loadingviewdetails,
-    required TResult Function(ResponseDetails responseDetails)
+    required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
     required TResult Function(String erorr) erorrviewdetails,
     required TResult Function() loadingviewapprove,
@@ -6234,7 +6241,7 @@ class _$LoadingviewCancelImpl implements LoadingviewCancel {
     TResult? Function()? successshipped,
     TResult? Function(String erorr)? erorrshipped,
     TResult? Function()? loadingviewdetails,
-    TResult? Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
     TResult? Function()? loadingviewapprove,
     TResult? Function(List<Datum> vieworders)? successviewapprove,
@@ -6275,7 +6282,7 @@ class _$LoadingviewCancelImpl implements LoadingviewCancel {
     TResult Function()? successshipped,
     TResult Function(String erorr)? erorrshipped,
     TResult Function()? loadingviewdetails,
-    TResult Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
     TResult Function()? loadingviewapprove,
     TResult Function(List<Datum> vieworders)? successviewapprove,
@@ -6522,7 +6529,7 @@ class _$SuccessviewCancelImpl implements SuccessviewCancel {
     required TResult Function() successshipped,
     required TResult Function(String erorr) erorrshipped,
     required TResult Function() loadingviewdetails,
-    required TResult Function(ResponseDetails responseDetails)
+    required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
     required TResult Function(String erorr) erorrviewdetails,
     required TResult Function() loadingviewapprove,
@@ -6564,7 +6571,7 @@ class _$SuccessviewCancelImpl implements SuccessviewCancel {
     TResult? Function()? successshipped,
     TResult? Function(String erorr)? erorrshipped,
     TResult? Function()? loadingviewdetails,
-    TResult? Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
     TResult? Function()? loadingviewapprove,
     TResult? Function(List<Datum> vieworders)? successviewapprove,
@@ -6605,7 +6612,7 @@ class _$SuccessviewCancelImpl implements SuccessviewCancel {
     TResult Function()? successshipped,
     TResult Function(String erorr)? erorrshipped,
     TResult Function()? loadingviewdetails,
-    TResult Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
     TResult Function()? loadingviewapprove,
     TResult Function(List<Datum> vieworders)? successviewapprove,
@@ -6850,7 +6857,7 @@ class _$ErorrviewCancelImpl implements ErorrviewCancel {
     required TResult Function() successshipped,
     required TResult Function(String erorr) erorrshipped,
     required TResult Function() loadingviewdetails,
-    required TResult Function(ResponseDetails responseDetails)
+    required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
     required TResult Function(String erorr) erorrviewdetails,
     required TResult Function() loadingviewapprove,
@@ -6892,7 +6899,7 @@ class _$ErorrviewCancelImpl implements ErorrviewCancel {
     TResult? Function()? successshipped,
     TResult? Function(String erorr)? erorrshipped,
     TResult? Function()? loadingviewdetails,
-    TResult? Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
     TResult? Function()? loadingviewapprove,
     TResult? Function(List<Datum> vieworders)? successviewapprove,
@@ -6933,7 +6940,7 @@ class _$ErorrviewCancelImpl implements ErorrviewCancel {
     TResult Function()? successshipped,
     TResult Function(String erorr)? erorrshipped,
     TResult Function()? loadingviewdetails,
-    TResult Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
     TResult Function()? loadingviewapprove,
     TResult Function(List<Datum> vieworders)? successviewapprove,
@@ -7151,7 +7158,7 @@ class _$LoadingviewdoneImpl implements Loadingviewdone {
     required TResult Function() successshipped,
     required TResult Function(String erorr) erorrshipped,
     required TResult Function() loadingviewdetails,
-    required TResult Function(ResponseDetails responseDetails)
+    required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
     required TResult Function(String erorr) erorrviewdetails,
     required TResult Function() loadingviewapprove,
@@ -7193,7 +7200,7 @@ class _$LoadingviewdoneImpl implements Loadingviewdone {
     TResult? Function()? successshipped,
     TResult? Function(String erorr)? erorrshipped,
     TResult? Function()? loadingviewdetails,
-    TResult? Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
     TResult? Function()? loadingviewapprove,
     TResult? Function(List<Datum> vieworders)? successviewapprove,
@@ -7234,7 +7241,7 @@ class _$LoadingviewdoneImpl implements Loadingviewdone {
     TResult Function()? successshipped,
     TResult Function(String erorr)? erorrshipped,
     TResult Function()? loadingviewdetails,
-    TResult Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
     TResult Function()? loadingviewapprove,
     TResult Function(List<Datum> vieworders)? successviewapprove,
@@ -7481,7 +7488,7 @@ class _$SuccessviewdoneImpl implements Successviewdone {
     required TResult Function() successshipped,
     required TResult Function(String erorr) erorrshipped,
     required TResult Function() loadingviewdetails,
-    required TResult Function(ResponseDetails responseDetails)
+    required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
     required TResult Function(String erorr) erorrviewdetails,
     required TResult Function() loadingviewapprove,
@@ -7523,7 +7530,7 @@ class _$SuccessviewdoneImpl implements Successviewdone {
     TResult? Function()? successshipped,
     TResult? Function(String erorr)? erorrshipped,
     TResult? Function()? loadingviewdetails,
-    TResult? Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
     TResult? Function()? loadingviewapprove,
     TResult? Function(List<Datum> vieworders)? successviewapprove,
@@ -7564,7 +7571,7 @@ class _$SuccessviewdoneImpl implements Successviewdone {
     TResult Function()? successshipped,
     TResult Function(String erorr)? erorrshipped,
     TResult Function()? loadingviewdetails,
-    TResult Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
     TResult Function()? loadingviewapprove,
     TResult Function(List<Datum> vieworders)? successviewapprove,
@@ -7808,7 +7815,7 @@ class _$ErorrviewdoneImpl implements Erorrviewdone {
     required TResult Function() successshipped,
     required TResult Function(String erorr) erorrshipped,
     required TResult Function() loadingviewdetails,
-    required TResult Function(ResponseDetails responseDetails)
+    required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
     required TResult Function(String erorr) erorrviewdetails,
     required TResult Function() loadingviewapprove,
@@ -7850,7 +7857,7 @@ class _$ErorrviewdoneImpl implements Erorrviewdone {
     TResult? Function()? successshipped,
     TResult? Function(String erorr)? erorrshipped,
     TResult? Function()? loadingviewdetails,
-    TResult? Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
     TResult? Function()? loadingviewapprove,
     TResult? Function(List<Datum> vieworders)? successviewapprove,
@@ -7891,7 +7898,7 @@ class _$ErorrviewdoneImpl implements Erorrviewdone {
     TResult Function()? successshipped,
     TResult Function(String erorr)? erorrshipped,
     TResult Function()? loadingviewdetails,
-    TResult Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
     TResult Function()? loadingviewapprove,
     TResult Function(List<Datum> vieworders)? successviewapprove,
@@ -8109,7 +8116,7 @@ class _$LoadingviewpendingImpl implements Loadingviewpending {
     required TResult Function() successshipped,
     required TResult Function(String erorr) erorrshipped,
     required TResult Function() loadingviewdetails,
-    required TResult Function(ResponseDetails responseDetails)
+    required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
     required TResult Function(String erorr) erorrviewdetails,
     required TResult Function() loadingviewapprove,
@@ -8151,7 +8158,7 @@ class _$LoadingviewpendingImpl implements Loadingviewpending {
     TResult? Function()? successshipped,
     TResult? Function(String erorr)? erorrshipped,
     TResult? Function()? loadingviewdetails,
-    TResult? Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
     TResult? Function()? loadingviewapprove,
     TResult? Function(List<Datum> vieworders)? successviewapprove,
@@ -8192,7 +8199,7 @@ class _$LoadingviewpendingImpl implements Loadingviewpending {
     TResult Function()? successshipped,
     TResult Function(String erorr)? erorrshipped,
     TResult Function()? loadingviewdetails,
-    TResult Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
     TResult Function()? loadingviewapprove,
     TResult Function(List<Datum> vieworders)? successviewapprove,
@@ -8439,7 +8446,7 @@ class _$SuccessviewpendingImpl implements Successviewpending {
     required TResult Function() successshipped,
     required TResult Function(String erorr) erorrshipped,
     required TResult Function() loadingviewdetails,
-    required TResult Function(ResponseDetails responseDetails)
+    required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
     required TResult Function(String erorr) erorrviewdetails,
     required TResult Function() loadingviewapprove,
@@ -8481,7 +8488,7 @@ class _$SuccessviewpendingImpl implements Successviewpending {
     TResult? Function()? successshipped,
     TResult? Function(String erorr)? erorrshipped,
     TResult? Function()? loadingviewdetails,
-    TResult? Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
     TResult? Function()? loadingviewapprove,
     TResult? Function(List<Datum> vieworders)? successviewapprove,
@@ -8522,7 +8529,7 @@ class _$SuccessviewpendingImpl implements Successviewpending {
     TResult Function()? successshipped,
     TResult Function(String erorr)? erorrshipped,
     TResult Function()? loadingviewdetails,
-    TResult Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
     TResult Function()? loadingviewapprove,
     TResult Function(List<Datum> vieworders)? successviewapprove,
@@ -8767,7 +8774,7 @@ class _$ErorrviewpendingImpl implements Erorrviewpending {
     required TResult Function() successshipped,
     required TResult Function(String erorr) erorrshipped,
     required TResult Function() loadingviewdetails,
-    required TResult Function(ResponseDetails responseDetails)
+    required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
     required TResult Function(String erorr) erorrviewdetails,
     required TResult Function() loadingviewapprove,
@@ -8809,7 +8816,7 @@ class _$ErorrviewpendingImpl implements Erorrviewpending {
     TResult? Function()? successshipped,
     TResult? Function(String erorr)? erorrshipped,
     TResult? Function()? loadingviewdetails,
-    TResult? Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
     TResult? Function()? loadingviewapprove,
     TResult? Function(List<Datum> vieworders)? successviewapprove,
@@ -8850,7 +8857,7 @@ class _$ErorrviewpendingImpl implements Erorrviewpending {
     TResult Function()? successshipped,
     TResult Function(String erorr)? erorrshipped,
     TResult Function()? loadingviewdetails,
-    TResult Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
     TResult Function()? loadingviewapprove,
     TResult Function(List<Datum> vieworders)? successviewapprove,
@@ -9068,7 +9075,7 @@ class _$LoadingviewprepareImpl implements Loadingviewprepare {
     required TResult Function() successshipped,
     required TResult Function(String erorr) erorrshipped,
     required TResult Function() loadingviewdetails,
-    required TResult Function(ResponseDetails responseDetails)
+    required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
     required TResult Function(String erorr) erorrviewdetails,
     required TResult Function() loadingviewapprove,
@@ -9110,7 +9117,7 @@ class _$LoadingviewprepareImpl implements Loadingviewprepare {
     TResult? Function()? successshipped,
     TResult? Function(String erorr)? erorrshipped,
     TResult? Function()? loadingviewdetails,
-    TResult? Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
     TResult? Function()? loadingviewapprove,
     TResult? Function(List<Datum> vieworders)? successviewapprove,
@@ -9151,7 +9158,7 @@ class _$LoadingviewprepareImpl implements Loadingviewprepare {
     TResult Function()? successshipped,
     TResult Function(String erorr)? erorrshipped,
     TResult Function()? loadingviewdetails,
-    TResult Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
     TResult Function()? loadingviewapprove,
     TResult Function(List<Datum> vieworders)? successviewapprove,
@@ -9399,7 +9406,7 @@ class _$SuccessviewprepareImpl implements Successviewprepare {
     required TResult Function() successshipped,
     required TResult Function(String erorr) erorrshipped,
     required TResult Function() loadingviewdetails,
-    required TResult Function(ResponseDetails responseDetails)
+    required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
     required TResult Function(String erorr) erorrviewdetails,
     required TResult Function() loadingviewapprove,
@@ -9441,7 +9448,7 @@ class _$SuccessviewprepareImpl implements Successviewprepare {
     TResult? Function()? successshipped,
     TResult? Function(String erorr)? erorrshipped,
     TResult? Function()? loadingviewdetails,
-    TResult? Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
     TResult? Function()? loadingviewapprove,
     TResult? Function(List<Datum> vieworders)? successviewapprove,
@@ -9482,7 +9489,7 @@ class _$SuccessviewprepareImpl implements Successviewprepare {
     TResult Function()? successshipped,
     TResult Function(String erorr)? erorrshipped,
     TResult Function()? loadingviewdetails,
-    TResult Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
     TResult Function()? loadingviewapprove,
     TResult Function(List<Datum> vieworders)? successviewapprove,
@@ -9727,7 +9734,7 @@ class _$ErorrviewprepareImpl implements Erorrviewprepare {
     required TResult Function() successshipped,
     required TResult Function(String erorr) erorrshipped,
     required TResult Function() loadingviewdetails,
-    required TResult Function(ResponseDetails responseDetails)
+    required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
     required TResult Function(String erorr) erorrviewdetails,
     required TResult Function() loadingviewapprove,
@@ -9769,7 +9776,7 @@ class _$ErorrviewprepareImpl implements Erorrviewprepare {
     TResult? Function()? successshipped,
     TResult? Function(String erorr)? erorrshipped,
     TResult? Function()? loadingviewdetails,
-    TResult? Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
     TResult? Function()? loadingviewapprove,
     TResult? Function(List<Datum> vieworders)? successviewapprove,
@@ -9810,7 +9817,7 @@ class _$ErorrviewprepareImpl implements Erorrviewprepare {
     TResult Function()? successshipped,
     TResult Function(String erorr)? erorrshipped,
     TResult Function()? loadingviewdetails,
-    TResult Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
     TResult Function()? loadingviewapprove,
     TResult Function(List<Datum> vieworders)? successviewapprove,
@@ -10028,7 +10035,7 @@ class _$LoadingviewshippedImpl implements Loadingviewshipped {
     required TResult Function() successshipped,
     required TResult Function(String erorr) erorrshipped,
     required TResult Function() loadingviewdetails,
-    required TResult Function(ResponseDetails responseDetails)
+    required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
     required TResult Function(String erorr) erorrviewdetails,
     required TResult Function() loadingviewapprove,
@@ -10070,7 +10077,7 @@ class _$LoadingviewshippedImpl implements Loadingviewshipped {
     TResult? Function()? successshipped,
     TResult? Function(String erorr)? erorrshipped,
     TResult? Function()? loadingviewdetails,
-    TResult? Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
     TResult? Function()? loadingviewapprove,
     TResult? Function(List<Datum> vieworders)? successviewapprove,
@@ -10111,7 +10118,7 @@ class _$LoadingviewshippedImpl implements Loadingviewshipped {
     TResult Function()? successshipped,
     TResult Function(String erorr)? erorrshipped,
     TResult Function()? loadingviewdetails,
-    TResult Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
     TResult Function()? loadingviewapprove,
     TResult Function(List<Datum> vieworders)? successviewapprove,
@@ -10358,7 +10365,7 @@ class _$successviewshippedImpl implements successviewshipped {
     required TResult Function() successshipped,
     required TResult Function(String erorr) erorrshipped,
     required TResult Function() loadingviewdetails,
-    required TResult Function(ResponseDetails responseDetails)
+    required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
     required TResult Function(String erorr) erorrviewdetails,
     required TResult Function() loadingviewapprove,
@@ -10400,7 +10407,7 @@ class _$successviewshippedImpl implements successviewshipped {
     TResult? Function()? successshipped,
     TResult? Function(String erorr)? erorrshipped,
     TResult? Function()? loadingviewdetails,
-    TResult? Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
     TResult? Function()? loadingviewapprove,
     TResult? Function(List<Datum> vieworders)? successviewapprove,
@@ -10441,7 +10448,7 @@ class _$successviewshippedImpl implements successviewshipped {
     TResult Function()? successshipped,
     TResult Function(String erorr)? erorrshipped,
     TResult Function()? loadingviewdetails,
-    TResult Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
     TResult Function()? loadingviewapprove,
     TResult Function(List<Datum> vieworders)? successviewapprove,
@@ -10686,7 +10693,7 @@ class _$ErorrviewshippedImpl implements Erorrviewshipped {
     required TResult Function() successshipped,
     required TResult Function(String erorr) erorrshipped,
     required TResult Function() loadingviewdetails,
-    required TResult Function(ResponseDetails responseDetails)
+    required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
     required TResult Function(String erorr) erorrviewdetails,
     required TResult Function() loadingviewapprove,
@@ -10728,7 +10735,7 @@ class _$ErorrviewshippedImpl implements Erorrviewshipped {
     TResult? Function()? successshipped,
     TResult? Function(String erorr)? erorrshipped,
     TResult? Function()? loadingviewdetails,
-    TResult? Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
     TResult? Function()? loadingviewapprove,
     TResult? Function(List<Datum> vieworders)? successviewapprove,
@@ -10769,7 +10776,7 @@ class _$ErorrviewshippedImpl implements Erorrviewshipped {
     TResult Function()? successshipped,
     TResult Function(String erorr)? erorrshipped,
     TResult Function()? loadingviewdetails,
-    TResult Function(ResponseDetails responseDetails)? successviewdetails,
+    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
     TResult Function()? loadingviewapprove,
     TResult Function(List<Datum> vieworders)? successviewapprove,

@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:untitled/models/response_orders/datum.dart';
 
-import '../../../../models/ordersmodel.dart';
 import '../../../../utility/constants.dart';
 import 'FormRow.dart';
 
-class addressSection extends StatelessWidget {
-  const addressSection({super.key, required this.order});
-  final OrdersModel order;
+class AddressSection extends StatelessWidget {
+  const AddressSection({super.key, required this.order});
+  final Datum order;
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(top: 20),
-      padding: EdgeInsets.all(defaultPadding),
+      margin: const EdgeInsets.only(top: 20),
+      padding: const EdgeInsets.all(defaultPadding),
       decoration: BoxDecoration(
         color: secondaryColor, // Light grey background to stand out
         borderRadius: BorderRadius.circular(8.0),
@@ -21,7 +21,7 @@ class addressSection extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Padding(
+          const Padding(
             padding: EdgeInsets.symmetric(vertical: 8.0),
             child: Text(
               'Shipping Address',
@@ -31,21 +31,21 @@ class addressSection extends StatelessWidget {
                   color: Colors.blueAccent),
             ),
           ),
-          FormRow(
+          const FormRow(
               text: 'Phone:',
               widget: Text('0128888888', style: TextStyle(fontSize: 16))),
           FormRow(
               text: 'Street:',
-              widget: Text(order.addressStreet ?? 'N/A',
-                  style: TextStyle(fontSize: 16))),
+              widget: Text(order.adressStreet ?? 'N/A',
+                  style: const TextStyle(fontSize: 16))),
           FormRow(
               text: 'City:',
-              widget: Text(order.addressCity ?? 'N/A',
-                  style: TextStyle(fontSize: 16))),
+              widget: Text(order.adressCity ?? 'N/A',
+                  style: const TextStyle(fontSize: 16))),
           FormRow(
               text: 'Country:',
-              widget: Text(order.addressName ?? 'N/A',
-                  style: TextStyle(fontSize: 16))),
+              widget: Text(order.adressName ?? 'N/A',
+                  style: const TextStyle(fontSize: 16))),
         ],
       ),
     );

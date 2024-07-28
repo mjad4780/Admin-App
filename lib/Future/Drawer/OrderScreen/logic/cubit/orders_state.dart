@@ -1,6 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-import '../../../../../models/response_details/response_details.dart';
+import '../../../../../models/response_detilas/datum.dart';
 import '../../../../../models/response_orders/datum.dart';
 
 part 'orders_state.freezed.dart';
@@ -38,7 +38,7 @@ class OrdersState with _$OrdersState {
   ///:viewdetails
   const factory OrdersState.loadingviewdetails() = Loadingviewdetails;
   const factory OrdersState.successviewdetails(
-      ResponseDetails responseDetails) = successviewdetails;
+      List<DataDetails> responseDetails) = successviewdetails;
   const factory OrdersState.erorrviewdetails({required String erorr}) =
       Erorrviewdetails;
 

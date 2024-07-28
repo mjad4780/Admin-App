@@ -2,7 +2,7 @@ import '../../../../core/function/formDataPost.dart';
 import '../../../../core/networking/api_error_handler.dart';
 import '../../../../core/networking/api_result.dart';
 import '../../../../core/networking/api_service.dart';
-import '../../../../models/response_details/response_details.dart';
+import '../../../../models/response_detilas/response_detilas.dart';
 
 class OrdersRepo {
   final ApiService _apiService;
@@ -70,13 +70,14 @@ class OrdersRepo {
   //viewdetails
 
   Future<ApiResult<ResponseDetails>> viewdetails(
-      int orderid, int userid) async {
+    int orderid,
+  ) async {
     Map<String, dynamic> data = {
-      "orderid": orderid,
-      "userid": userid,
+      "id": orderid,
     };
     try {
       final response = await _apiService.viewdetails(formDataPost(data));
+
       return ApiResult.success(response);
     } catch (e) {
       return ApiResult.failure(ErrorHandler.handle(e));

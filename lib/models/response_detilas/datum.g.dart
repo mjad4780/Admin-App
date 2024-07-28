@@ -1,13 +1,12 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'response_details.dart';
+part of 'datum.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-ResponseDetails _$ResponseDetailsFromJson(Map<String, dynamic> json) =>
-    ResponseDetails(
+DataDetails _$DataDetailsFromJson(Map<String, dynamic> json) => DataDetails(
       itemId: (json['item_id'] as num?)?.toInt(),
       itemName: json['item_name'] as String?,
       itemNameAr: json['item_name_ar'] as String?,
@@ -30,11 +29,11 @@ ResponseDetails _$ResponseDetailsFromJson(Map<String, dynamic> json) =>
       images:
           (json['images'] as List<dynamic>?)?.map((e) => e as String).toList(),
       size: (json['size'] as List<dynamic>?)
-          ?.map((e) => Size.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => ItemSize.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
-Map<String, dynamic> _$ResponseDetailsToJson(ResponseDetails instance) =>
+Map<String, dynamic> _$DataDetailsToJson(DataDetails instance) =>
     <String, dynamic>{
       'item_id': instance.itemId,
       'item_name': instance.itemName,

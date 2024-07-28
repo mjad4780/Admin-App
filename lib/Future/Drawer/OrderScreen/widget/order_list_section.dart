@@ -1,4 +1,5 @@
-import '../logic/cubit_r/orders_cubit.dart';
+import '../../../../models/response_orders/datum.dart';
+import '../logic/cubit/orders_cubit.dart';
 
 import '../../../../utility/constants.dart';
 import 'ShowDilogOrders.dart';
@@ -6,18 +7,21 @@ import 'orderDataRow.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import 'view_order_form.dart';
+
 class OrderListSection extends StatelessWidget {
   const OrderListSection({
-    Key? key,
-  }) : super(key: key);
-
+    super.key,
+    required this.order,
+  });
+  final List<Datum> order;
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(defaultPadding),
-      decoration: BoxDecoration(
+      padding: const EdgeInsets.all(defaultPadding),
+      decoration: const BoxDecoration(
         color: secondaryColor,
-        borderRadius: const BorderRadius.all(Radius.circular(10)),
+        borderRadius: BorderRadius.all(Radius.circular(10)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -30,44 +34,70 @@ class OrderListSection extends StatelessWidget {
               width: double.infinity,
               child: DataTable(
                 columnSpacing: defaultPadding,
-                // minWidth: 600,
-                columns: [
+                columns: const [
                   DataColumn(
-                    label: Text("Customer Name"),
+                    label: Text(
+                      "Customer Name",
+                      overflow: TextOverflow.ellipsis,
+                    ),
                   ),
                   DataColumn(
-                    label: Text("Order Amount"),
+                    label: Text(
+                      "Total Price Order",
+                      overflow: TextOverflow.ellipsis,
+                    ),
                   ),
                   DataColumn(
-                    label: Text("Payment"),
+                    label: Text(
+                      "Payment",
+                      overflow: TextOverflow.ellipsis,
+                    ),
                   ),
                   DataColumn(
-                    label: Text("Status"),
+                    label: Text(
+                      "Status",
+                      overflow: TextOverflow.ellipsis,
+                    ),
                   ),
                   DataColumn(
-                    label: Text("Date"),
+                    label: Text(
+                      "Date",
+                      overflow: TextOverflow.ellipsis,
+                    ),
                   ),
                   DataColumn(
-                    label: Text("Edit"),
+                    label: Text(
+                      "Edit",
+                      overflow: TextOverflow.ellipsis,
+                    ),
                   ),
                   DataColumn(
-                    label: Text("Delete"),
+                    label: Text(
+                      "Delete",
+                      overflow: TextOverflow.ellipsis,
+                    ),
                   ),
                 ],
-                rows: List.generate(
-                  context.read<OrdersCubit>().orderData.length,
-                  (index) => orderDataRow(
-                      context.read<OrdersCubit>().orderData[index], index + 1,
-                      delete: () {
-                    //TODO: should complete call deleteOrder
-                  }, edit: () {
-                    showOrderForm(
-                        context, context.read<OrdersCubit>().orderData[index]);
-                  }),
-                ),
+                rows: rowtable(context),
               )),
         ],
       ),
+    );
+  }
+
+  List<DataRow> rowtable(BuildContext context) {
+    return List.generate(
+      order.length,
+      (index) => orderDataRow(order[index], index + 1, delete: () {}, edit: () {
+        context
+            .read<OrdersCubit>()
+            .viewdetails(order[index].ordersId!, order[index].adressUserid!);
+        context.read<OrdersCubit>().orderStatus(order[index].ordersStatus!);
+        showOrderForm(
+          context,
+          OrderSubmitForm(order: order[index]),
+        );
+      }),
     );
   }
 }

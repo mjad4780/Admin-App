@@ -1,19 +1,23 @@
-import 'view_order_form.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:untitled/Future/Drawer/OrderScreen/logic/cubit/orders_cubit.dart';
+
 import 'package:flutter/material.dart';
 
-import '../../../../models/ordersmodel.dart';
 import '../../../../utility/constants.dart';
 
-void showOrderForm(BuildContext context, OrdersModel? order) {
+void showOrderForm(BuildContext context, Widget widget) {
+  var getorders = context.read<OrdersCubit>();
   showDialog(
     context: context,
     builder: (BuildContext context) {
-      return AlertDialog(
-        backgroundColor: bgColor,
-        title: Center(
-            child: Text('Order Details'.toUpperCase(),
-                style: TextStyle(color: primaryColor))),
-        content: OrderSubmitForm(order: order),
+      return BlocProvider.value(
+        value: getorders,
+        child: AlertDialog(
+            backgroundColor: bgColor,
+            title: Center(
+                child: Text('Order Details'.toUpperCase(),
+                    style: const TextStyle(color: primaryColor))),
+            content: widget),
       );
     },
   );

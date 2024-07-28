@@ -64,8 +64,10 @@ class DefaultFirebaseOptions {
     messagingSenderId: '237528939048',
     projectId: 'e-ecommerce-f3bee',
     storageBucket: 'e-ecommerce-f3bee.appspot.com',
-    androidClientId: '237528939048-pmnhtgg71326h1836flk2d72vvmjgi6o.apps.googleusercontent.com',
-    iosClientId: '237528939048-dv2ak3maeil7900ndnpm4oju8moptr1n.apps.googleusercontent.com',
+    androidClientId:
+        '237528939048-pmnhtgg71326h1836flk2d72vvmjgi6o.apps.googleusercontent.com',
+    iosClientId:
+        '237528939048-dv2ak3maeil7900ndnpm4oju8moptr1n.apps.googleusercontent.com',
     iosBundleId: 'com.example.untitled',
   );
 
@@ -75,8 +77,10 @@ class DefaultFirebaseOptions {
     messagingSenderId: '237528939048',
     projectId: 'e-ecommerce-f3bee',
     storageBucket: 'e-ecommerce-f3bee.appspot.com',
-    androidClientId: '237528939048-pmnhtgg71326h1836flk2d72vvmjgi6o.apps.googleusercontent.com',
-    iosClientId: '237528939048-dv2ak3maeil7900ndnpm4oju8moptr1n.apps.googleusercontent.com',
+    androidClientId:
+        '237528939048-pmnhtgg71326h1836flk2d72vvmjgi6o.apps.googleusercontent.com',
+    iosClientId:
+        '237528939048-dv2ak3maeil7900ndnpm4oju8moptr1n.apps.googleusercontent.com',
     iosBundleId: 'com.example.untitled',
   );
 

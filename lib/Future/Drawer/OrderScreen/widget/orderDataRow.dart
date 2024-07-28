@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:untitled/models/response_orders/datum.dart';
 
-import '../../../../models/ordersmodel.dart';
 import '../../../../utility/color_list.dart';
 import '../../../../utility/constants.dart';
 
-DataRow orderDataRow(OrdersModel orderInfo, int index,
+DataRow orderDataRow(Datum orderInfo, int index,
     {Function? edit, Function? delete}) {
   return DataRow(
     cells: [
@@ -27,15 +27,15 @@ DataRow orderDataRow(OrdersModel orderInfo, int index,
           ],
         ),
       ),
-      DataCell(Text('${orderInfo.ordersTotalprice}')),
-      DataCell(Text(orderInfo.ordersPaymentmethod.toString())),
+      DataCell(Text('${orderInfo.orderToatalprice}')),
+      DataCell(Text(orderInfo.ordersPaymentmets.toString())),
       DataCell(Text(orderInfo.ordersStatus.toString())),
       DataCell(Text(orderInfo.ordersDatetime ?? '')),
       DataCell(IconButton(
           onPressed: () {
             if (edit != null) edit();
           },
-          icon: Icon(
+          icon: const Icon(
             Icons.edit,
             color: Colors.white,
           ))),
@@ -43,7 +43,7 @@ DataRow orderDataRow(OrdersModel orderInfo, int index,
           onPressed: () {
             if (delete != null) delete();
           },
-          icon: Icon(
+          icon: const Icon(
             Icons.delete,
             color: Colors.red,
           ))),

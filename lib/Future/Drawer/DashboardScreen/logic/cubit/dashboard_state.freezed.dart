@@ -20,7 +20,7 @@ mixin _$DashboardState {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loadingview,
-    required TResult Function(List<ResponseItems> response) successview,
+    required TResult Function(List<ItemsData> response) successview,
     required TResult Function(String erorr) erorrview,
     required TResult Function() loadingAdd,
     required TResult Function() successAdd,
@@ -39,7 +39,7 @@ mixin _$DashboardState {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loadingview,
-    TResult? Function(List<ResponseItems> response)? successview,
+    TResult? Function(List<ItemsData> response)? successview,
     TResult? Function(String erorr)? erorrview,
     TResult? Function()? loadingAdd,
     TResult? Function()? successAdd,
@@ -58,7 +58,7 @@ mixin _$DashboardState {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loadingview,
-    TResult Function(List<ResponseItems> response)? successview,
+    TResult Function(List<ItemsData> response)? successview,
     TResult Function(String erorr)? erorrview,
     TResult Function()? loadingAdd,
     TResult Function()? successAdd,
@@ -192,7 +192,7 @@ class _$InitialImpl implements _Initial {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loadingview,
-    required TResult Function(List<ResponseItems> response) successview,
+    required TResult Function(List<ItemsData> response) successview,
     required TResult Function(String erorr) erorrview,
     required TResult Function() loadingAdd,
     required TResult Function() successAdd,
@@ -214,7 +214,7 @@ class _$InitialImpl implements _Initial {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loadingview,
-    TResult? Function(List<ResponseItems> response)? successview,
+    TResult? Function(List<ItemsData> response)? successview,
     TResult? Function(String erorr)? erorrview,
     TResult? Function()? loadingAdd,
     TResult? Function()? successAdd,
@@ -236,7 +236,7 @@ class _$InitialImpl implements _Initial {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loadingview,
-    TResult Function(List<ResponseItems> response)? successview,
+    TResult Function(List<ItemsData> response)? successview,
     TResult Function(String erorr)? erorrview,
     TResult Function()? loadingAdd,
     TResult Function()? successAdd,
@@ -372,7 +372,7 @@ class _$LoadingviewImpl implements Loadingview {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loadingview,
-    required TResult Function(List<ResponseItems> response) successview,
+    required TResult Function(List<ItemsData> response) successview,
     required TResult Function(String erorr) erorrview,
     required TResult Function() loadingAdd,
     required TResult Function() successAdd,
@@ -394,7 +394,7 @@ class _$LoadingviewImpl implements Loadingview {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loadingview,
-    TResult? Function(List<ResponseItems> response)? successview,
+    TResult? Function(List<ItemsData> response)? successview,
     TResult? Function(String erorr)? erorrview,
     TResult? Function()? loadingAdd,
     TResult? Function()? successAdd,
@@ -416,7 +416,7 @@ class _$LoadingviewImpl implements Loadingview {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loadingview,
-    TResult Function(List<ResponseItems> response)? successview,
+    TResult Function(List<ItemsData> response)? successview,
     TResult Function(String erorr)? erorrview,
     TResult Function()? loadingAdd,
     TResult Function()? successAdd,
@@ -518,7 +518,7 @@ abstract class _$$SuccessviewImplCopyWith<$Res> {
           _$SuccessviewImpl value, $Res Function(_$SuccessviewImpl) then) =
       __$$SuccessviewImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({List<ResponseItems> response});
+  $Res call({List<ItemsData> response});
 }
 
 /// @nodoc
@@ -538,7 +538,7 @@ class __$$SuccessviewImplCopyWithImpl<$Res>
       null == response
           ? _value._response
           : response // ignore: cast_nullable_to_non_nullable
-              as List<ResponseItems>,
+              as List<ItemsData>,
     ));
   }
 }
@@ -546,12 +546,12 @@ class __$$SuccessviewImplCopyWithImpl<$Res>
 /// @nodoc
 
 class _$SuccessviewImpl implements Successview {
-  const _$SuccessviewImpl(final List<ResponseItems> response)
+  const _$SuccessviewImpl(final List<ItemsData> response)
       : _response = response;
 
-  final List<ResponseItems> _response;
+  final List<ItemsData> _response;
   @override
-  List<ResponseItems> get response {
+  List<ItemsData> get response {
     if (_response is EqualUnmodifiableListView) return _response;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_response);
@@ -585,7 +585,7 @@ class _$SuccessviewImpl implements Successview {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loadingview,
-    required TResult Function(List<ResponseItems> response) successview,
+    required TResult Function(List<ItemsData> response) successview,
     required TResult Function(String erorr) erorrview,
     required TResult Function() loadingAdd,
     required TResult Function() successAdd,
@@ -607,7 +607,7 @@ class _$SuccessviewImpl implements Successview {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loadingview,
-    TResult? Function(List<ResponseItems> response)? successview,
+    TResult? Function(List<ItemsData> response)? successview,
     TResult? Function(String erorr)? erorrview,
     TResult? Function()? loadingAdd,
     TResult? Function()? successAdd,
@@ -629,7 +629,7 @@ class _$SuccessviewImpl implements Successview {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loadingview,
-    TResult Function(List<ResponseItems> response)? successview,
+    TResult Function(List<ItemsData> response)? successview,
     TResult Function(String erorr)? erorrview,
     TResult Function()? loadingAdd,
     TResult Function()? successAdd,
@@ -722,10 +722,9 @@ class _$SuccessviewImpl implements Successview {
 }
 
 abstract class Successview implements DashboardState {
-  const factory Successview(final List<ResponseItems> response) =
-      _$SuccessviewImpl;
+  const factory Successview(final List<ItemsData> response) = _$SuccessviewImpl;
 
-  List<ResponseItems> get response;
+  List<ItemsData> get response;
   @JsonKey(ignore: true)
   _$$SuccessviewImplCopyWith<_$SuccessviewImpl> get copyWith =>
       throw _privateConstructorUsedError;
@@ -797,7 +796,7 @@ class _$ErorrviewImpl implements Erorrview {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loadingview,
-    required TResult Function(List<ResponseItems> response) successview,
+    required TResult Function(List<ItemsData> response) successview,
     required TResult Function(String erorr) erorrview,
     required TResult Function() loadingAdd,
     required TResult Function() successAdd,
@@ -819,7 +818,7 @@ class _$ErorrviewImpl implements Erorrview {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loadingview,
-    TResult? Function(List<ResponseItems> response)? successview,
+    TResult? Function(List<ItemsData> response)? successview,
     TResult? Function(String erorr)? erorrview,
     TResult? Function()? loadingAdd,
     TResult? Function()? successAdd,
@@ -841,7 +840,7 @@ class _$ErorrviewImpl implements Erorrview {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loadingview,
-    TResult Function(List<ResponseItems> response)? successview,
+    TResult Function(List<ItemsData> response)? successview,
     TResult Function(String erorr)? erorrview,
     TResult Function()? loadingAdd,
     TResult Function()? successAdd,
@@ -982,7 +981,7 @@ class _$LoadingAddImpl implements LoadingAdd {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loadingview,
-    required TResult Function(List<ResponseItems> response) successview,
+    required TResult Function(List<ItemsData> response) successview,
     required TResult Function(String erorr) erorrview,
     required TResult Function() loadingAdd,
     required TResult Function() successAdd,
@@ -1004,7 +1003,7 @@ class _$LoadingAddImpl implements LoadingAdd {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loadingview,
-    TResult? Function(List<ResponseItems> response)? successview,
+    TResult? Function(List<ItemsData> response)? successview,
     TResult? Function(String erorr)? erorrview,
     TResult? Function()? loadingAdd,
     TResult? Function()? successAdd,
@@ -1026,7 +1025,7 @@ class _$LoadingAddImpl implements LoadingAdd {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loadingview,
-    TResult Function(List<ResponseItems> response)? successview,
+    TResult Function(List<ItemsData> response)? successview,
     TResult Function(String erorr)? erorrview,
     TResult Function()? loadingAdd,
     TResult Function()? successAdd,
@@ -1162,7 +1161,7 @@ class _$SuccessAddImpl implements SuccessAdd {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loadingview,
-    required TResult Function(List<ResponseItems> response) successview,
+    required TResult Function(List<ItemsData> response) successview,
     required TResult Function(String erorr) erorrview,
     required TResult Function() loadingAdd,
     required TResult Function() successAdd,
@@ -1184,7 +1183,7 @@ class _$SuccessAddImpl implements SuccessAdd {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loadingview,
-    TResult? Function(List<ResponseItems> response)? successview,
+    TResult? Function(List<ItemsData> response)? successview,
     TResult? Function(String erorr)? erorrview,
     TResult? Function()? loadingAdd,
     TResult? Function()? successAdd,
@@ -1206,7 +1205,7 @@ class _$SuccessAddImpl implements SuccessAdd {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loadingview,
-    TResult Function(List<ResponseItems> response)? successview,
+    TResult Function(List<ItemsData> response)? successview,
     TResult Function(String erorr)? erorrview,
     TResult Function()? loadingAdd,
     TResult Function()? successAdd,
@@ -1368,7 +1367,7 @@ class _$ErorrAddImpl implements ErorrAdd {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loadingview,
-    required TResult Function(List<ResponseItems> response) successview,
+    required TResult Function(List<ItemsData> response) successview,
     required TResult Function(String erorr) erorrview,
     required TResult Function() loadingAdd,
     required TResult Function() successAdd,
@@ -1390,7 +1389,7 @@ class _$ErorrAddImpl implements ErorrAdd {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loadingview,
-    TResult? Function(List<ResponseItems> response)? successview,
+    TResult? Function(List<ItemsData> response)? successview,
     TResult? Function(String erorr)? erorrview,
     TResult? Function()? loadingAdd,
     TResult? Function()? successAdd,
@@ -1412,7 +1411,7 @@ class _$ErorrAddImpl implements ErorrAdd {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loadingview,
-    TResult Function(List<ResponseItems> response)? successview,
+    TResult Function(List<ItemsData> response)? successview,
     TResult Function(String erorr)? erorrview,
     TResult Function()? loadingAdd,
     TResult Function()? successAdd,
@@ -1553,7 +1552,7 @@ class _$LoadingeditImpl implements Loadingedit {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loadingview,
-    required TResult Function(List<ResponseItems> response) successview,
+    required TResult Function(List<ItemsData> response) successview,
     required TResult Function(String erorr) erorrview,
     required TResult Function() loadingAdd,
     required TResult Function() successAdd,
@@ -1575,7 +1574,7 @@ class _$LoadingeditImpl implements Loadingedit {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loadingview,
-    TResult? Function(List<ResponseItems> response)? successview,
+    TResult? Function(List<ItemsData> response)? successview,
     TResult? Function(String erorr)? erorrview,
     TResult? Function()? loadingAdd,
     TResult? Function()? successAdd,
@@ -1597,7 +1596,7 @@ class _$LoadingeditImpl implements Loadingedit {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loadingview,
-    TResult Function(List<ResponseItems> response)? successview,
+    TResult Function(List<ItemsData> response)? successview,
     TResult Function(String erorr)? erorrview,
     TResult Function()? loadingAdd,
     TResult Function()? successAdd,
@@ -1733,7 +1732,7 @@ class _$SuccesseditImpl implements Successedit {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loadingview,
-    required TResult Function(List<ResponseItems> response) successview,
+    required TResult Function(List<ItemsData> response) successview,
     required TResult Function(String erorr) erorrview,
     required TResult Function() loadingAdd,
     required TResult Function() successAdd,
@@ -1755,7 +1754,7 @@ class _$SuccesseditImpl implements Successedit {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loadingview,
-    TResult? Function(List<ResponseItems> response)? successview,
+    TResult? Function(List<ItemsData> response)? successview,
     TResult? Function(String erorr)? erorrview,
     TResult? Function()? loadingAdd,
     TResult? Function()? successAdd,
@@ -1777,7 +1776,7 @@ class _$SuccesseditImpl implements Successedit {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loadingview,
-    TResult Function(List<ResponseItems> response)? successview,
+    TResult Function(List<ItemsData> response)? successview,
     TResult Function(String erorr)? erorrview,
     TResult Function()? loadingAdd,
     TResult Function()? successAdd,
@@ -1939,7 +1938,7 @@ class _$ErorreditImpl implements Erorredit {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loadingview,
-    required TResult Function(List<ResponseItems> response) successview,
+    required TResult Function(List<ItemsData> response) successview,
     required TResult Function(String erorr) erorrview,
     required TResult Function() loadingAdd,
     required TResult Function() successAdd,
@@ -1961,7 +1960,7 @@ class _$ErorreditImpl implements Erorredit {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loadingview,
-    TResult? Function(List<ResponseItems> response)? successview,
+    TResult? Function(List<ItemsData> response)? successview,
     TResult? Function(String erorr)? erorrview,
     TResult? Function()? loadingAdd,
     TResult? Function()? successAdd,
@@ -1983,7 +1982,7 @@ class _$ErorreditImpl implements Erorredit {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loadingview,
-    TResult Function(List<ResponseItems> response)? successview,
+    TResult Function(List<ItemsData> response)? successview,
     TResult Function(String erorr)? erorrview,
     TResult Function()? loadingAdd,
     TResult Function()? successAdd,
@@ -2124,7 +2123,7 @@ class _$LoadingdeleteImpl implements Loadingdelete {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loadingview,
-    required TResult Function(List<ResponseItems> response) successview,
+    required TResult Function(List<ItemsData> response) successview,
     required TResult Function(String erorr) erorrview,
     required TResult Function() loadingAdd,
     required TResult Function() successAdd,
@@ -2146,7 +2145,7 @@ class _$LoadingdeleteImpl implements Loadingdelete {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loadingview,
-    TResult? Function(List<ResponseItems> response)? successview,
+    TResult? Function(List<ItemsData> response)? successview,
     TResult? Function(String erorr)? erorrview,
     TResult? Function()? loadingAdd,
     TResult? Function()? successAdd,
@@ -2168,7 +2167,7 @@ class _$LoadingdeleteImpl implements Loadingdelete {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loadingview,
-    TResult Function(List<ResponseItems> response)? successview,
+    TResult Function(List<ItemsData> response)? successview,
     TResult Function(String erorr)? erorrview,
     TResult Function()? loadingAdd,
     TResult Function()? successAdd,
@@ -2304,7 +2303,7 @@ class _$SuccessdeleteImpl implements Successdelete {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loadingview,
-    required TResult Function(List<ResponseItems> response) successview,
+    required TResult Function(List<ItemsData> response) successview,
     required TResult Function(String erorr) erorrview,
     required TResult Function() loadingAdd,
     required TResult Function() successAdd,
@@ -2326,7 +2325,7 @@ class _$SuccessdeleteImpl implements Successdelete {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loadingview,
-    TResult? Function(List<ResponseItems> response)? successview,
+    TResult? Function(List<ItemsData> response)? successview,
     TResult? Function(String erorr)? erorrview,
     TResult? Function()? loadingAdd,
     TResult? Function()? successAdd,
@@ -2348,7 +2347,7 @@ class _$SuccessdeleteImpl implements Successdelete {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loadingview,
-    TResult Function(List<ResponseItems> response)? successview,
+    TResult Function(List<ItemsData> response)? successview,
     TResult Function(String erorr)? erorrview,
     TResult Function()? loadingAdd,
     TResult Function()? successAdd,
@@ -2510,7 +2509,7 @@ class _$ErorrdeleteImpl implements Erorrdelete {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loadingview,
-    required TResult Function(List<ResponseItems> response) successview,
+    required TResult Function(List<ItemsData> response) successview,
     required TResult Function(String erorr) erorrview,
     required TResult Function() loadingAdd,
     required TResult Function() successAdd,
@@ -2532,7 +2531,7 @@ class _$ErorrdeleteImpl implements Erorrdelete {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loadingview,
-    TResult? Function(List<ResponseItems> response)? successview,
+    TResult? Function(List<ItemsData> response)? successview,
     TResult? Function(String erorr)? erorrview,
     TResult? Function()? loadingAdd,
     TResult? Function()? successAdd,
@@ -2554,7 +2553,7 @@ class _$ErorrdeleteImpl implements Erorrdelete {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loadingview,
-    TResult Function(List<ResponseItems> response)? successview,
+    TResult Function(List<ItemsData> response)? successview,
     TResult Function(String erorr)? erorrview,
     TResult Function()? loadingAdd,
     TResult Function()? successAdd,
@@ -2695,7 +2694,7 @@ class _$GalerImpl implements Galer {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loadingview,
-    required TResult Function(List<ResponseItems> response) successview,
+    required TResult Function(List<ItemsData> response) successview,
     required TResult Function(String erorr) erorrview,
     required TResult Function() loadingAdd,
     required TResult Function() successAdd,
@@ -2717,7 +2716,7 @@ class _$GalerImpl implements Galer {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loadingview,
-    TResult? Function(List<ResponseItems> response)? successview,
+    TResult? Function(List<ItemsData> response)? successview,
     TResult? Function(String erorr)? erorrview,
     TResult? Function()? loadingAdd,
     TResult? Function()? successAdd,
@@ -2739,7 +2738,7 @@ class _$GalerImpl implements Galer {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loadingview,
-    TResult Function(List<ResponseItems> response)? successview,
+    TResult Function(List<ItemsData> response)? successview,
     TResult Function(String erorr)? erorrview,
     TResult Function()? loadingAdd,
     TResult Function()? successAdd,
@@ -2875,7 +2874,7 @@ class _$PushEditImpl implements PushEdit {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loadingview,
-    required TResult Function(List<ResponseItems> response) successview,
+    required TResult Function(List<ItemsData> response) successview,
     required TResult Function(String erorr) erorrview,
     required TResult Function() loadingAdd,
     required TResult Function() successAdd,
@@ -2897,7 +2896,7 @@ class _$PushEditImpl implements PushEdit {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loadingview,
-    TResult? Function(List<ResponseItems> response)? successview,
+    TResult? Function(List<ItemsData> response)? successview,
     TResult? Function(String erorr)? erorrview,
     TResult? Function()? loadingAdd,
     TResult? Function()? successAdd,
@@ -2919,7 +2918,7 @@ class _$PushEditImpl implements PushEdit {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loadingview,
-    TResult Function(List<ResponseItems> response)? successview,
+    TResult Function(List<ItemsData> response)? successview,
     TResult Function(String erorr)? erorrview,
     TResult Function()? loadingAdd,
     TResult Function()? successAdd,
