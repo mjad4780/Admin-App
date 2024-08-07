@@ -5,8 +5,9 @@ import 'package:bloc/bloc.dart';
 import 'package:flutter/widgets.dart';
 
 import '../../../../../core/function/AlertDialog.dart';
-import '../../../../../core/function/upload_image.dart';
+import '../../../../../core/function/function_api/upload_image.dart';
 import '../../../../../models/response_categories/datum.dart';
+import '../../../../../models/select_categories/select_categories.dart';
 import 'categories_state.dart';
 
 class CategoriesCubit extends Cubit<CategoriesState> {
@@ -29,6 +30,7 @@ class CategoriesCubit extends Cubit<CategoriesState> {
   AutovalidateMode autovalidateMode = AutovalidateMode.disabled;
   File? file;
   List<Datum> categories = [];
+  List<SelectCategories> itemCat = [];
   String? image;
   String? old;
 
@@ -46,9 +48,16 @@ class CategoriesCubit extends Cubit<CategoriesState> {
     final response = await _categoriesRepo.viewCategories();
     response.when(success: (data) {
       categories = data.data ?? [];
+      for (var i = 0; i < categories.length; i++) {
+        itemCat.add(SelectCategories(
+          id: categories[i].categoriesId ?? 0,
+          name: categories[i].categoriesName ?? '',
+        ));
+      }
+      print(',,,,,,,,,,,,,,,,,,,,,,,,,$itemCat');
       emit(CategoriesState.successview(data));
     }, failure: (error) {
-      emit(CategoriesState.erorrview(erorr: error.apiErrorModel.messege ?? ''));
+      emit(CategoriesState.erorrview(erorr: error.messege ?? ''));
     });
   }
 
@@ -64,8 +73,7 @@ class CategoriesCubit extends Cubit<CategoriesState> {
       response.when(success: (data) {
         emit(const CategoriesState.successAdd());
       }, failure: (error) {
-        emit(
-            CategoriesState.erorrAdd(erorr: error.apiErrorModel.messege ?? ''));
+        emit(CategoriesState.erorrAdd(erorr: error.messege ?? ''));
       });
     }
   }
@@ -84,8 +92,7 @@ class CategoriesCubit extends Cubit<CategoriesState> {
       response.when(success: (data) {
         emit(const CategoriesState.successedit());
       }, failure: (error) {
-        emit(CategoriesState.erorredit(
-            erorr: error.apiErrorModel.messege ?? ''));
+        emit(CategoriesState.erorredit(erorr: error.messege ?? ''));
       });
     }
   }
@@ -98,8 +105,7 @@ class CategoriesCubit extends Cubit<CategoriesState> {
       categories.removeWhere((element) => element.categoriesId == id);
       emit(const CategoriesState.successdelete());
     }, failure: (error) {
-      emit(CategoriesState.erorrdelete(
-          erorr: error.apiErrorModel.messege ?? ''));
+      emit(CategoriesState.erorrdelete(erorr: error.messege ?? ''));
     });
   }
 

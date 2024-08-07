@@ -1,4 +1,4 @@
-import '../logic/cubit_d/dashboard_cubit.dart';
+import '../logic/cubit/dashboard_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -9,41 +9,41 @@ List<ProductSummeryInfo> ListCardSummeryInfo(BuildContext context) {
   List<ProductSummeryInfo> productSummeryItems = [
     ProductSummeryInfo(
       title: "All Product",
-      productsCount: context.read<DashboardsCubit>().totalProduct,
+      productsCount: context.read<DashboardCubit>().totalProduct,
       svgSrc: "assets/icons/Product.svg",
       color: primaryColor,
       percentage: 100,
     ),
     ProductSummeryInfo(
       title: "Out of Stock",
-      productsCount: context.read<DashboardsCubit>().outOfStockProduct,
+      productsCount: context.read<DashboardCubit>().outOfStockProduct,
       svgSrc: "assets/icons/Product2.svg",
-      color: Color(0xFFEA3829),
-      percentage: context.read<DashboardsCubit>().totalProduct != 0
-          ? (context.read<DashboardsCubit>().outOfStockProduct /
-                  context.read<DashboardsCubit>().totalProduct) *
+      color: const Color(0xFFEA3829),
+      percentage: context.read<DashboardCubit>().totalProduct != 0
+          ? (context.read<DashboardCubit>().outOfStockProduct /
+                  context.read<DashboardCubit>().totalProduct) *
               100
           : 0,
     ),
     ProductSummeryInfo(
       title: "Limited Stock",
-      productsCount: context.read<DashboardsCubit>().limitedStockProduct,
+      productsCount: context.read<DashboardCubit>().limitedStockProduct,
       svgSrc: "assets/icons/Product3.svg",
-      color: Color(0xFFECBE23),
-      percentage: context.read<DashboardsCubit>().totalProduct != 0
-          ? (context.read<DashboardsCubit>().limitedStockProduct /
-                  context.read<DashboardsCubit>().totalProduct) *
+      color: const Color(0xFFECBE23),
+      percentage: context.read<DashboardCubit>().totalProduct != 0
+          ? (context.read<DashboardCubit>().limitedStockProduct /
+                  context.read<DashboardCubit>().totalProduct) *
               100
           : 0,
     ),
     ProductSummeryInfo(
       title: "Other Stock",
-      productsCount: context.read<DashboardsCubit>().otherStockProduct,
+      productsCount: context.read<DashboardCubit>().otherStockProduct,
       svgSrc: "assets/icons/Product4.svg",
-      color: Color(0xFF47e228),
-      percentage: context.read<DashboardsCubit>().totalProduct != 0
-          ? (context.read<DashboardsCubit>().otherStockProduct /
-                  context.read<DashboardsCubit>().totalProduct) *
+      color: const Color(0xFF47e228),
+      percentage: context.read<DashboardCubit>().totalProduct != 0
+          ? (context.read<DashboardCubit>().otherStockProduct /
+                  context.read<DashboardCubit>().totalProduct) *
               100
           : 0,
     ),

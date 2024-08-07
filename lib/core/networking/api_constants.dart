@@ -2,7 +2,7 @@ class ApiConstants {
   static const String baseUrl = "http://localhost/e-ecommerse";
 
 //ده خاص باالاميلوتر لانه غير مرفوع علي استضافه
-  static String test = "$baseUrl/test.php";
+  static const String test = "$baseUrl/admin/items/test.php";
   ////////////////admin////////////
 
   //notification

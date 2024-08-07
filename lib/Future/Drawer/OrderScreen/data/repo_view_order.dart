@@ -15,7 +15,7 @@ class ViewOrdersRepo {
       final response = await _apiService.viewapprove();
       return ApiResult.success(response);
     } catch (e) {
-      return ApiResult.failure(ErrorHandler.handle(e));
+      return ApiResult.failure(ApiErrorHandler.handle(e));
     }
   }
   //viewCancel
@@ -25,7 +25,7 @@ class ViewOrdersRepo {
       final response = await _apiService.viewCancel();
       return ApiResult.success(response);
     } catch (e) {
-      return ApiResult.failure(ErrorHandler.handle(e));
+      return ApiResult.failure(ApiErrorHandler.handle(e));
     }
   } //viewdone
 
@@ -34,7 +34,7 @@ class ViewOrdersRepo {
       final response = await _apiService.viewdone();
       return ApiResult.success(response);
     } catch (e) {
-      return ApiResult.failure(ErrorHandler.handle(e));
+      return ApiResult.failure(ApiErrorHandler.handle(e));
     }
   }
   //viewpending
@@ -44,7 +44,7 @@ class ViewOrdersRepo {
       final response = await _apiService.viewpending();
       return ApiResult.success(response);
     } catch (e) {
-      return ApiResult.failure(ErrorHandler.handle(e));
+      return ApiResult.failure(ApiErrorHandler.handle(e));
     }
   }
   //viewprepare
@@ -54,7 +54,7 @@ class ViewOrdersRepo {
       final response = await _apiService.viewprepare();
       return ApiResult.success(response);
     } catch (e) {
-      return ApiResult.failure(ErrorHandler.handle(e));
+      return ApiResult.failure(ApiErrorHandler.handle(e));
     }
   }
   //viewshipped
@@ -64,7 +64,7 @@ class ViewOrdersRepo {
       final response = await _apiService.viewshipped();
       return ApiResult.success(response);
     } catch (e) {
-      return ApiResult.failure(ErrorHandler.handle(e));
+      return ApiResult.failure(ApiErrorHandler.handle(e));
     }
   }
 }

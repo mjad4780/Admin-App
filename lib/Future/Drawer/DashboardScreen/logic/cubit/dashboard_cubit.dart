@@ -5,16 +5,21 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../../../core/function/AlertDialog.dart';
-import '../../../../../core/function/upload_image.dart';
+import '../../../../../core/function/function_api/upload_image.dart';
+import '../../../../../models/Item.dart';
 import '../../../../../models/response_items/datum.dart';
 import '../../../../../models/response_items/size.dart';
+import '../../../../../models/select_categories/select_categories.dart';
+import '../../../CategoryScreen/data/repo.dart';
 import '../../data/repo.dart';
 import 'dashboard_state.dart';
 
 class DashboardCubit extends Cubit<DashboardState> {
-  DashboardCubit(this._itemrepo) : super(const DashboardState.initial());
+  DashboardCubit(this._itemrepo, this._categoriesRepo)
+      : super(const DashboardState.initial());
 
   final ItemsRepo _itemrepo;
+  final CategoriesRepo _categoriesRepo;
 
 ////////////////Add/////////////////////////
   TextEditingController name = TextEditingController();
@@ -25,43 +30,43 @@ class DashboardCubit extends Cubit<DashboardState> {
   TextEditingController active = TextEditingController();
   TextEditingController price = TextEditingController();
   TextEditingController discount = TextEditingController();
-  TextEditingController quantity = TextEditingController();
   TextEditingController itemCategories = TextEditingController();
+  List<SelectCategories> itemCat = [];
+  List<String> selectedcolors = [];
 
-  List size = [];
-  List color = [];
-  List images = [];
-////////////////////////edit///////////////
-  TextEditingController editname = TextEditingController();
-  TextEditingController editnamear = TextEditingController();
-  TextEditingController editdecs = TextEditingController();
-  TextEditingController editdecsar = TextEditingController();
-  TextEditingController editcount = TextEditingController();
-  TextEditingController editactive = TextEditingController();
-  TextEditingController editprice = TextEditingController();
-  TextEditingController editdiscount = TextEditingController();
-  TextEditingController editquantity = TextEditingController();
-  TextEditingController edititemCategories = TextEditingController();
+  List<String> colors = [
+    'red',
+    'orange',
+    'blue',
+    'black',
+  ];
 
-  List editsize = [];
-  List editcolor = [];
-  List editimages = [];
-  List editold = [];
+  List<String> selectedSize = [];
 
-  GlobalKey<FormState> formstateeduit = GlobalKey<FormState>();
+  List<String> sizes = [
+    'MM',
+    'ML',
+    'XXL',
+    'RM',
+  ];
+  List<String> oldimage = [];
+
+  String? selestnamecategories;
+
+  GlobalKey<FormState> formstateadd = GlobalKey<FormState>();
 
   AutovalidateMode autovalidateMode = AutovalidateMode.disabled;
 
-  File? file;
-  File? editfile;
+  File? selectedMainImage, selectedSecondImage, selectedThirdImage;
+  List<File> images = [];
 
   List<ItemsData> items = [];
 
   ///:chooseimagegaler
-  chooseimagegaler() async {
-    file = await imageuploadgallery();
-    emit(const DashboardState.galer());
-  }
+  // chooseimagegaler() async {
+  //   file = await imageuploadgallery();
+  //   emit(const DashboardState.galer());
+  // }
 
   ///:viewItems
   viewItems() async {
@@ -71,21 +76,23 @@ class DashboardCubit extends Cubit<DashboardState> {
       items = data.data ?? [];
       emit(DashboardState.successview(data.data ?? []));
     }, failure: (error) {
-      emit(DashboardState.erorrview(erorr: error.apiErrorModel.messege ?? ''));
+      emit(DashboardState.erorrview(erorr: error.messege ?? ''));
     });
   }
 
   ///:AddItems
   addItems(BuildContext context) async {
-    if (file == null) {
+    if (selectedMainImage == null &&
+        selectedSecondImage == null &&
+        selectedThirdImage == null) {
       return showMyDialog(context, "erorr", "please choose image");
     }
 
     emit(const DashboardState.loadingAdd());
-    final response = await _itemrepo.AddItems(
+    final response = await _itemrepo.addItems(
         name.text,
         namear.text,
-        file!,
+        selectedMainImage!,
         decs.text,
         decsar.text,
         int.parse(count.text),
@@ -93,14 +100,13 @@ class DashboardCubit extends Cubit<DashboardState> {
         int.parse(price.text),
         int.parse(discount.text),
         int.parse(itemCategories.text),
-        size,
-        color,
-        int.parse(quantity.text),
+        selectedSize,
+        selectedcolors,
         images);
     response.when(success: (data) {
       emit(const DashboardState.successAdd());
     }, failure: (error) {
-      emit(DashboardState.erorrAdd(erorr: error.apiErrorModel.messege ?? ''));
+      emit(DashboardState.erorrAdd(erorr: error.messege ?? ''));
     });
   }
 
@@ -109,25 +115,24 @@ class DashboardCubit extends Cubit<DashboardState> {
     emit(const DashboardState.loadingedit());
     final response = await _itemrepo.editItems(
         id,
-        editname.text,
-        editnamear.text,
-        editdecs.text,
-        editdecsar.text,
-        int.parse(editcount.text),
-        int.parse(editactive.text),
-        int.parse(editprice.text),
-        int.parse(editdiscount.text),
-        int.parse(edititemCategories.text),
-        editsize,
-        editcolor,
-        int.parse(editquantity.text),
-        editfile,
-        editold,
-        editimages);
+        name.text,
+        namear.text,
+        decs.text,
+        decsar.text,
+        int.parse(count.text),
+        int.parse(active.text),
+        int.parse(price.text),
+        int.parse(discount.text),
+        int.parse(itemCategories.text),
+        selectedSize,
+        selectedcolors,
+        selectedMainImage,
+        oldimage,
+        images);
     response.when(success: (data) {
       emit(const DashboardState.successedit());
     }, failure: (error) {
-      emit(DashboardState.erorredit(erorr: error.apiErrorModel.messege ?? ''));
+      emit(DashboardState.erorredit(erorr: error.messege ?? ''));
     });
   }
 
@@ -139,25 +144,98 @@ class DashboardCubit extends Cubit<DashboardState> {
       items.removeWhere((element) => element.itemId == id);
       emit(const DashboardState.successdelete());
     }, failure: (error) {
-      emit(
-          DashboardState.erorrdelete(erorr: error.apiErrorModel.messege ?? ''));
+      emit(DashboardState.erorrdelete(erorr: error.messege ?? ''));
+    });
+  }
+
+  ///:viewCategories
+  viewCategories() async {
+    itemCat.clear();
+    emit(const DashboardState.loadingviewCat());
+    final response = await _categoriesRepo.viewCategories();
+    response.when(success: (data) {
+      for (var i = 0; i < data.data!.length; i++) {
+        itemCat.add(SelectCategories(
+          id: data.data![i].categoriesId ?? 0,
+          name: data.data![i].categoriesName ?? '',
+        ));
+      }
+      emit(const DashboardState.successviewCat());
+    }, failure: (error) {
+      emit(DashboardState.erorrviewCat(erorr: error.messege ?? ''));
     });
   }
 
   pushEdit(ItemsData items, BuildContext context, ItemSize size) {
-    editname.text = items.itemName ?? 'M';
-    editname.text = items.itemNameAr ?? "";
-    editdecs.text = items.itemDecs ?? 'M';
-    editdecsar.text = items.itemDecsAr ?? "";
-    editcount.text = items.itemCount.toString();
-    editactive.text = items.itemActive.toString();
-    editprice.text = items.itemPrice.toString();
-    editdiscount.text = items.itemDiscount.toString();
-    edititemCategories.text = items.itemCategories.toString();
-    editquantity.text = size.quantity.toString();
-    // editname.text = items.itemName ?? 'M';
-    // editname.text = items.itemNameAr ?? "";
+    name.text = items.itemName ?? 'M';
+    name.text = items.itemNameAr ?? "";
+    decs.text = items.itemDecs ?? 'M';
+    decsar.text = items.itemDecsAr ?? "";
+    count.text = items.itemCount.toString();
+    active.text = items.itemActive.toString();
+    price.text = items.itemPrice.toString();
+    discount.text = items.itemDiscount.toString();
+    itemCategories.text = items.itemCategories.toString();
     context.push('');
-    emit(const DashboardState.PushEdit());
+    emit(const DashboardState.pushEdit());
   }
+
+  ItemsModel? productForUpdate;
+
+  // XFile? mainImgXFile, secondImgXFile, thirdImgXFile;
+
+  // VariantType? variantTypeForUpdate;
+
+  int totalOrder = 10;
+  int pendingOrder = 4;
+  int processingOrder = 3;
+  int cancelledOrder = 2;
+  int shippedOrder = 6;
+  int deliveredOrder = 1;
+  ////////////////
+  int totalProduct = 4;
+  // totalProduct = 1;
+  int outOfStockProduct = 33;
+  int limitedStockProduct = 0;
+  int otherStockProduct = 1;
+  // totalOrder = pendingOrder + deliveredOrder + processingOrder + shippedOrder;
+
+  ///////////////////////////////function
+  void pickImage({required int imageCardNumber}) async {
+    final File? image = await imageuploadgallery();
+    if (image != null) {
+      if (imageCardNumber == 1) {
+        selectedMainImage = image;
+      } else if (imageCardNumber == 2) {
+        // selectedSecondImage = File(image.path);
+        selectedSecondImage = image;
+        images.add(selectedSecondImage!);
+      } else if (imageCardNumber == 3) {
+        // selectedThirdImage = File(image.path);
+        selectedThirdImage = image;
+        images.add(selectedThirdImage!);
+      }
+      emit(const DashboardState.galer());
+    }
+  }
+
+  // /////////test
+  // ///:viewItems
+  // List<String> old = ["50531b3gggggg29.jpg", "50531b32ggggggg9.jpg"];
+  // List<String> colors = ['redy', 'blacky'];
+  // List<String> size = [
+  //   'MMk',
+  //   'LLr',
+  //   'EEE',
+  // ];
+
+  // addimahes() async {
+  //   emit(const DashboardState.loadingvimage());
+  //   final response = await _itemrepo.addimages(images, old, colors, size);
+  //   response.when(success: (data) {
+  //     emit(const DashboardState.successimage());
+  //   }, failure: (error) {
+  //     emit(DashboardState.erorrvimage(erorr: error.messege ?? ''));
+  //   });
+  // }
 }

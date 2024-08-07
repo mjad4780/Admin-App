@@ -1,6 +1,6 @@
-String? validator(String? value, String Text) {
+String? validator(String? value, String text) {
   if (value == null || value.isEmpty) {
-    return Text;
+    return text;
   }
   return null;
 }

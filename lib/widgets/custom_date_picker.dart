@@ -7,11 +7,11 @@ class CustomDatePicker extends StatelessWidget {
   final void Function() onDateSelected;
 
   const CustomDatePicker({
-    Key? key,
+    super.key,
     required this.labelText,
     required this.controller,
     required this.onDateSelected,
-  }) : super(key: key);
+  });
 
   // void _selectDate(BuildContext context) async {
   @override
@@ -22,7 +22,7 @@ class CustomDatePicker extends StatelessWidget {
         controller: controller,
         decoration: InputDecoration(
           labelText: labelText,
-          suffixIcon: Icon(Icons.calendar_today),
+          suffixIcon: const Icon(Icons.calendar_today),
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(8.0),
           ),

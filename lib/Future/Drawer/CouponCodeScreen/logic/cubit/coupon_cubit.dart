@@ -34,7 +34,7 @@ class CouponCubit extends Cubit<CouponState> {
     response.when(success: (data) {
       emit(CouponState.successview(data.data ?? []));
     }, failure: (error) {
-      emit(CouponState.erorrview(erorr: error.apiErrorModel.messege ?? ''));
+      emit(CouponState.erorrview(erorr: error.messege ?? ''));
     });
   }
 
@@ -46,7 +46,7 @@ class CouponCubit extends Cubit<CouponState> {
     response.when(success: (data) {
       emit(const CouponState.successAdd());
     }, failure: (error) {
-      emit(CouponState.erorrAdd(erorr: error.apiErrorModel.messege ?? ''));
+      emit(CouponState.erorrAdd(erorr: error.messege ?? ''));
     });
   }
 }

@@ -2,8 +2,9 @@ import 'dart:io';
 
 import 'package:untitled/models/response_items/response_items.dart';
 
-import '../../../../core/function/formDataPost.dart';
-import '../../../../core/function/upload_image.dart';
+import '../../../../core/function/function_api/formDataPost.dart';
+import '../../../../core/function/function_api/ssend_list_api.dart';
+import '../../../../core/function/function_api/upload_image.dart';
 import '../../../../core/networking/api_error_handler.dart';
 import '../../../../core/networking/api_result.dart';
 import '../../../../core/networking/api_service.dart';
@@ -13,6 +14,24 @@ class ItemsRepo {
 
   ItemsRepo(this._apiService);
 
+  Future<ApiResult<dynamic>> addimages(List<File>? images, List<String> old,
+      List<String> color, List<String> size) async {
+    Map<String, dynamic> data = {
+      // "images[]":
+      //     images!.isNotEmpty ? await uploadMultiImageSToAPI(images) : '',
+      "old": sendListApi(old.toString()),
+      "color": sendListApi(color.toString()),
+      "size": sendListApi(size.toString()),
+      "quantity": 40,
+    };
+    try {
+      final response = await _apiService.addimages(formDataPost(data));
+      return ApiResult.success(response);
+    } catch (e) {
+      return ApiResult.failure(ApiErrorHandler.handle(e));
+    }
+  }
+
   //ViewItems
 
   Future<ApiResult<ResponseItems>> viewItems() async {
@@ -20,13 +39,13 @@ class ItemsRepo {
       final response = await _apiService.getItems();
       return ApiResult.success(response);
     } catch (e) {
-      return ApiResult.failure(ErrorHandler.handle(e));
+      return ApiResult.failure(ApiErrorHandler.handle(e));
     }
   }
 
   //AddItems
 
-  Future<ApiResult<dynamic>> AddItems(
+  Future<ApiResult<dynamic>> addItems(
     String name,
     String namear,
     File file,
@@ -39,8 +58,7 @@ class ItemsRepo {
     int itemcategories,
     List size,
     List color,
-    int quantity,
-    List images,
+    List<File> images,
   ) async {
     Map<String, dynamic> data = {
       "name": name,
@@ -52,19 +70,29 @@ class ItemsRepo {
       "price": price,
       "discount": discount,
       "itemcategories": itemcategories,
-      "size": size,
-      "color": color,
-      "quantity": quantity,
-      "images[]": images,
+      "size": sendListApi(size.toString()) ?? [],
+      "color": sendListApi(color.toString()) ?? [],
+      "images[]": await uploadMultiImageSToAPI(images),
       "file": await uploadImageToAPI(file)
     };
     try {
       final response = await _apiService.addItems(formDataPost(data));
       return ApiResult.success(response);
     } catch (e) {
-      return ApiResult.failure(ErrorHandler.handle(e));
+      return ApiResult.failure(ApiErrorHandler.handle(e));
     }
   }
+
+  // Future<FormData> newMethod(List<File>? images) async {
+  //   FormData formDat = FormData();
+
+  //   for (var i = 0; i < images!.length; i++) {
+  //     String filename = images[i].path.split('/').last;
+
+  //     formDat.files.add(MapEntry('images[]',
+  //         await MultipartFile.fromFile(images[i].path, filename: filename)));
+  //   }
+  // }
   //editItems
 
   Future<ApiResult<dynamic>> editItems(
@@ -80,10 +108,9 @@ class ItemsRepo {
     int itemcategories,
     List size,
     List color,
-    int quantity,
     File? file,
     List? imageold,
-    List images,
+    List<File> images,
   ) async {
     Map<String, dynamic> data = {
       "id": id,
@@ -96,11 +123,10 @@ class ItemsRepo {
       "price": price,
       "discount": discount,
       "itemcategories": itemcategories,
-      "size": size,
-      "color": color,
-      "quantity": quantity,
-      "imageold": imageold ?? 'old',
-      "images[]": images,
+      "size": sendListApi(size.toString()) ?? [],
+      "color": sendListApi(color.toString()) ?? [],
+      "imageold": sendListApi(imageold.toString()) ?? [],
+      "images[]": images.isNotEmpty ? await uploadMultiImageSToAPI(images) : '',
       "file": file != null ? await uploadImageToAPI(file) : ''
     };
 
@@ -108,7 +134,7 @@ class ItemsRepo {
       final response = await _apiService.editItems(formDataPost(data));
       return ApiResult.success(response);
     } catch (e) {
-      return ApiResult.failure(ErrorHandler.handle(e));
+      return ApiResult.failure(ApiErrorHandler.handle(e));
     }
   }
 
@@ -121,7 +147,7 @@ class ItemsRepo {
       final response = await _apiService.deleteItems(formDataPost(data));
       return ApiResult.success(response);
     } catch (e) {
-      return ApiResult.failure(ErrorHandler.handle(e));
+      return ApiResult.failure(ApiErrorHandler.handle(e));
     }
   }
 }

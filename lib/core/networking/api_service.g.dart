@@ -21,6 +21,32 @@ class _ApiService implements ApiService {
   String? baseUrl;
 
   @override
+  Future<dynamic> addimages(dynamic body) async {
+    final _extra = <String, dynamic>{};
+    final queryParameters = <String, dynamic>{};
+    final _headers = <String, dynamic>{};
+    final _data = body;
+    final _result = await _dio.fetch(_setStreamType<dynamic>(Options(
+      method: 'POST',
+      headers: _headers,
+      extra: _extra,
+    )
+        .compose(
+          _dio.options,
+          'http://localhost/e-ecommerse/admin/items/test.php',
+          queryParameters: queryParameters,
+          data: _data,
+        )
+        .copyWith(
+            baseUrl: _combineBaseUrls(
+          _dio.options.baseUrl,
+          baseUrl,
+        ))));
+    final _value = jsonDecode(_result.data);
+    return _value;
+  }
+
+  @override
   Future<dynamic> addCategories(dynamic body) async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
@@ -120,7 +146,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = ResponseCategories.fromJson(jsonDecode(_result.data!));
+    final _value = ResponseCategories.fromJson(jsonDecode(_result.data)!);
     return _value;
   }
 
@@ -224,7 +250,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = ResponseItems.fromJson(jsonDecode(_result.data!));
+    final _value = ResponseItems.fromJson(jsonDecode(_result.data)!);
     return _value;
   }
 
@@ -276,7 +302,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = ResponseCoupon.fromJson(jsonDecode(_result.data!));
+    final _value = ResponseCoupon.fromJson(jsonDecode(_result.data)!);
     return _value;
   }
 
@@ -329,7 +355,7 @@ class _ApiService implements ApiService {
               _dio.options.baseUrl,
               baseUrl,
             ))));
-    final _value = ResponseNotifacation.fromJson(jsonDecode(_result.data!));
+    final _value = ResponseNotifacation.fromJson(jsonDecode(_result.data)!);
     return _value;
   }
 
@@ -381,7 +407,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = ResponsePoster.fromJson(jsonDecode(_result.data!));
+    final _value = ResponsePoster.fromJson(jsonDecode(_result.data)!);
     return _value;
   }
 
@@ -407,7 +433,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = ResponseOrders.fromJson(jsonDecode(_result.data!));
+    final _value = ResponseOrders.fromJson(jsonDecode(_result.data)!);
     return _value;
   }
 
@@ -433,7 +459,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = ResponseOrders.fromJson(jsonDecode(_result.data!));
+    final _value = ResponseOrders.fromJson(jsonDecode(_result.data)!);
     return _value;
   }
 
@@ -459,7 +485,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = ResponseDetails.fromJson(jsonDecode(_result.data!));
+    final _value = ResponseDetails.fromJson(jsonDecode(_result.data)!);
     return _value;
   }
 
@@ -485,7 +511,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = ResponseOrders.fromJson(jsonDecode(_result.data!));
+    final _value = ResponseOrders.fromJson(jsonDecode(_result.data)!);
     return _value;
   }
 
@@ -511,7 +537,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = ResponseOrders.fromJson(jsonDecode(_result.data!));
+    final _value = ResponseOrders.fromJson(jsonDecode(_result.data)!);
     return _value;
   }
 
@@ -537,7 +563,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = ResponseOrders.fromJson(jsonDecode(_result.data!));
+    final _value = ResponseOrders.fromJson(jsonDecode(_result.data)!);
     return _value;
   }
 
@@ -563,7 +589,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = ResponseOrders.fromJson(jsonDecode(_result.data!));
+    final _value = ResponseOrders.fromJson(jsonDecode(_result.data)!);
     return _value;
   }
 

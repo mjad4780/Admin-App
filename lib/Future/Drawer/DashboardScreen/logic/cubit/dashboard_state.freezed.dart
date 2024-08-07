@@ -31,8 +31,16 @@ mixin _$DashboardState {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
+    required TResult Function() loadingviewCat,
+    required TResult Function() successviewCat,
+    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingvimage,
+    required TResult Function() successimage,
+    required TResult Function(String erorr) erorrvimage,
     required TResult Function() galer,
-    required TResult Function() PushEdit,
+    required TResult Function() galer2,
+    required TResult Function() galer3,
+    required TResult Function() pushEdit,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -50,8 +58,16 @@ mixin _$DashboardState {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
+    TResult? Function()? loadingviewCat,
+    TResult? Function()? successviewCat,
+    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingvimage,
+    TResult? Function()? successimage,
+    TResult? Function(String erorr)? erorrvimage,
     TResult? Function()? galer,
-    TResult? Function()? PushEdit,
+    TResult? Function()? galer2,
+    TResult? Function()? galer3,
+    TResult? Function()? pushEdit,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -69,8 +85,16 @@ mixin _$DashboardState {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
+    TResult Function()? loadingviewCat,
+    TResult Function()? successviewCat,
+    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingvimage,
+    TResult Function()? successimage,
+    TResult Function(String erorr)? erorrvimage,
     TResult Function()? galer,
-    TResult Function()? PushEdit,
+    TResult Function()? galer2,
+    TResult Function()? galer3,
+    TResult Function()? pushEdit,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -89,8 +113,16 @@ mixin _$DashboardState {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
+    required TResult Function(LoadingviewCat value) loadingviewCat,
+    required TResult Function(SuccessviewCat value) successviewCat,
+    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(Loadingimage value) loadingvimage,
+    required TResult Function(Successimage value) successimage,
+    required TResult Function(Erorrimage value) erorrvimage,
     required TResult Function(Galer value) galer,
-    required TResult Function(PushEdit value) PushEdit,
+    required TResult Function(Galer2 value) galer2,
+    required TResult Function(Galer3 value) galer3,
+    required TResult Function(PushEdit value) pushEdit,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -108,8 +140,16 @@ mixin _$DashboardState {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
+    TResult? Function(LoadingviewCat value)? loadingviewCat,
+    TResult? Function(SuccessviewCat value)? successviewCat,
+    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(Loadingimage value)? loadingvimage,
+    TResult? Function(Successimage value)? successimage,
+    TResult? Function(Erorrimage value)? erorrvimage,
     TResult? Function(Galer value)? galer,
-    TResult? Function(PushEdit value)? PushEdit,
+    TResult? Function(Galer2 value)? galer2,
+    TResult? Function(Galer3 value)? galer3,
+    TResult? Function(PushEdit value)? pushEdit,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -127,8 +167,16 @@ mixin _$DashboardState {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
+    TResult Function(LoadingviewCat value)? loadingviewCat,
+    TResult Function(SuccessviewCat value)? successviewCat,
+    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(Loadingimage value)? loadingvimage,
+    TResult Function(Successimage value)? successimage,
+    TResult Function(Erorrimage value)? erorrvimage,
     TResult Function(Galer value)? galer,
-    TResult Function(PushEdit value)? PushEdit,
+    TResult Function(Galer2 value)? galer2,
+    TResult Function(Galer3 value)? galer3,
+    TResult Function(PushEdit value)? pushEdit,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -203,8 +251,16 @@ class _$InitialImpl implements _Initial {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
+    required TResult Function() loadingviewCat,
+    required TResult Function() successviewCat,
+    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingvimage,
+    required TResult Function() successimage,
+    required TResult Function(String erorr) erorrvimage,
     required TResult Function() galer,
-    required TResult Function() PushEdit,
+    required TResult Function() galer2,
+    required TResult Function() galer3,
+    required TResult Function() pushEdit,
   }) {
     return initial();
   }
@@ -225,8 +281,16 @@ class _$InitialImpl implements _Initial {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
+    TResult? Function()? loadingviewCat,
+    TResult? Function()? successviewCat,
+    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingvimage,
+    TResult? Function()? successimage,
+    TResult? Function(String erorr)? erorrvimage,
     TResult? Function()? galer,
-    TResult? Function()? PushEdit,
+    TResult? Function()? galer2,
+    TResult? Function()? galer3,
+    TResult? Function()? pushEdit,
   }) {
     return initial?.call();
   }
@@ -247,8 +311,16 @@ class _$InitialImpl implements _Initial {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
+    TResult Function()? loadingviewCat,
+    TResult Function()? successviewCat,
+    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingvimage,
+    TResult Function()? successimage,
+    TResult Function(String erorr)? erorrvimage,
     TResult Function()? galer,
-    TResult Function()? PushEdit,
+    TResult Function()? galer2,
+    TResult Function()? galer3,
+    TResult Function()? pushEdit,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -273,8 +345,16 @@ class _$InitialImpl implements _Initial {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
+    required TResult Function(LoadingviewCat value) loadingviewCat,
+    required TResult Function(SuccessviewCat value) successviewCat,
+    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(Loadingimage value) loadingvimage,
+    required TResult Function(Successimage value) successimage,
+    required TResult Function(Erorrimage value) erorrvimage,
     required TResult Function(Galer value) galer,
-    required TResult Function(PushEdit value) PushEdit,
+    required TResult Function(Galer2 value) galer2,
+    required TResult Function(Galer3 value) galer3,
+    required TResult Function(PushEdit value) pushEdit,
   }) {
     return initial(this);
   }
@@ -295,8 +375,16 @@ class _$InitialImpl implements _Initial {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
+    TResult? Function(LoadingviewCat value)? loadingviewCat,
+    TResult? Function(SuccessviewCat value)? successviewCat,
+    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(Loadingimage value)? loadingvimage,
+    TResult? Function(Successimage value)? successimage,
+    TResult? Function(Erorrimage value)? erorrvimage,
     TResult? Function(Galer value)? galer,
-    TResult? Function(PushEdit value)? PushEdit,
+    TResult? Function(Galer2 value)? galer2,
+    TResult? Function(Galer3 value)? galer3,
+    TResult? Function(PushEdit value)? pushEdit,
   }) {
     return initial?.call(this);
   }
@@ -317,8 +405,16 @@ class _$InitialImpl implements _Initial {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
+    TResult Function(LoadingviewCat value)? loadingviewCat,
+    TResult Function(SuccessviewCat value)? successviewCat,
+    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(Loadingimage value)? loadingvimage,
+    TResult Function(Successimage value)? successimage,
+    TResult Function(Erorrimage value)? erorrvimage,
     TResult Function(Galer value)? galer,
-    TResult Function(PushEdit value)? PushEdit,
+    TResult Function(Galer2 value)? galer2,
+    TResult Function(Galer3 value)? galer3,
+    TResult Function(PushEdit value)? pushEdit,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -383,8 +479,16 @@ class _$LoadingviewImpl implements Loadingview {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
+    required TResult Function() loadingviewCat,
+    required TResult Function() successviewCat,
+    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingvimage,
+    required TResult Function() successimage,
+    required TResult Function(String erorr) erorrvimage,
     required TResult Function() galer,
-    required TResult Function() PushEdit,
+    required TResult Function() galer2,
+    required TResult Function() galer3,
+    required TResult Function() pushEdit,
   }) {
     return loadingview();
   }
@@ -405,8 +509,16 @@ class _$LoadingviewImpl implements Loadingview {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
+    TResult? Function()? loadingviewCat,
+    TResult? Function()? successviewCat,
+    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingvimage,
+    TResult? Function()? successimage,
+    TResult? Function(String erorr)? erorrvimage,
     TResult? Function()? galer,
-    TResult? Function()? PushEdit,
+    TResult? Function()? galer2,
+    TResult? Function()? galer3,
+    TResult? Function()? pushEdit,
   }) {
     return loadingview?.call();
   }
@@ -427,8 +539,16 @@ class _$LoadingviewImpl implements Loadingview {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
+    TResult Function()? loadingviewCat,
+    TResult Function()? successviewCat,
+    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingvimage,
+    TResult Function()? successimage,
+    TResult Function(String erorr)? erorrvimage,
     TResult Function()? galer,
-    TResult Function()? PushEdit,
+    TResult Function()? galer2,
+    TResult Function()? galer3,
+    TResult Function()? pushEdit,
     required TResult orElse(),
   }) {
     if (loadingview != null) {
@@ -453,8 +573,16 @@ class _$LoadingviewImpl implements Loadingview {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
+    required TResult Function(LoadingviewCat value) loadingviewCat,
+    required TResult Function(SuccessviewCat value) successviewCat,
+    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(Loadingimage value) loadingvimage,
+    required TResult Function(Successimage value) successimage,
+    required TResult Function(Erorrimage value) erorrvimage,
     required TResult Function(Galer value) galer,
-    required TResult Function(PushEdit value) PushEdit,
+    required TResult Function(Galer2 value) galer2,
+    required TResult Function(Galer3 value) galer3,
+    required TResult Function(PushEdit value) pushEdit,
   }) {
     return loadingview(this);
   }
@@ -475,8 +603,16 @@ class _$LoadingviewImpl implements Loadingview {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
+    TResult? Function(LoadingviewCat value)? loadingviewCat,
+    TResult? Function(SuccessviewCat value)? successviewCat,
+    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(Loadingimage value)? loadingvimage,
+    TResult? Function(Successimage value)? successimage,
+    TResult? Function(Erorrimage value)? erorrvimage,
     TResult? Function(Galer value)? galer,
-    TResult? Function(PushEdit value)? PushEdit,
+    TResult? Function(Galer2 value)? galer2,
+    TResult? Function(Galer3 value)? galer3,
+    TResult? Function(PushEdit value)? pushEdit,
   }) {
     return loadingview?.call(this);
   }
@@ -497,8 +633,16 @@ class _$LoadingviewImpl implements Loadingview {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
+    TResult Function(LoadingviewCat value)? loadingviewCat,
+    TResult Function(SuccessviewCat value)? successviewCat,
+    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(Loadingimage value)? loadingvimage,
+    TResult Function(Successimage value)? successimage,
+    TResult Function(Erorrimage value)? erorrvimage,
     TResult Function(Galer value)? galer,
-    TResult Function(PushEdit value)? PushEdit,
+    TResult Function(Galer2 value)? galer2,
+    TResult Function(Galer3 value)? galer3,
+    TResult Function(PushEdit value)? pushEdit,
     required TResult orElse(),
   }) {
     if (loadingview != null) {
@@ -596,8 +740,16 @@ class _$SuccessviewImpl implements Successview {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
+    required TResult Function() loadingviewCat,
+    required TResult Function() successviewCat,
+    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingvimage,
+    required TResult Function() successimage,
+    required TResult Function(String erorr) erorrvimage,
     required TResult Function() galer,
-    required TResult Function() PushEdit,
+    required TResult Function() galer2,
+    required TResult Function() galer3,
+    required TResult Function() pushEdit,
   }) {
     return successview(response);
   }
@@ -618,8 +770,16 @@ class _$SuccessviewImpl implements Successview {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
+    TResult? Function()? loadingviewCat,
+    TResult? Function()? successviewCat,
+    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingvimage,
+    TResult? Function()? successimage,
+    TResult? Function(String erorr)? erorrvimage,
     TResult? Function()? galer,
-    TResult? Function()? PushEdit,
+    TResult? Function()? galer2,
+    TResult? Function()? galer3,
+    TResult? Function()? pushEdit,
   }) {
     return successview?.call(response);
   }
@@ -640,8 +800,16 @@ class _$SuccessviewImpl implements Successview {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
+    TResult Function()? loadingviewCat,
+    TResult Function()? successviewCat,
+    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingvimage,
+    TResult Function()? successimage,
+    TResult Function(String erorr)? erorrvimage,
     TResult Function()? galer,
-    TResult Function()? PushEdit,
+    TResult Function()? galer2,
+    TResult Function()? galer3,
+    TResult Function()? pushEdit,
     required TResult orElse(),
   }) {
     if (successview != null) {
@@ -666,8 +834,16 @@ class _$SuccessviewImpl implements Successview {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
+    required TResult Function(LoadingviewCat value) loadingviewCat,
+    required TResult Function(SuccessviewCat value) successviewCat,
+    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(Loadingimage value) loadingvimage,
+    required TResult Function(Successimage value) successimage,
+    required TResult Function(Erorrimage value) erorrvimage,
     required TResult Function(Galer value) galer,
-    required TResult Function(PushEdit value) PushEdit,
+    required TResult Function(Galer2 value) galer2,
+    required TResult Function(Galer3 value) galer3,
+    required TResult Function(PushEdit value) pushEdit,
   }) {
     return successview(this);
   }
@@ -688,8 +864,16 @@ class _$SuccessviewImpl implements Successview {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
+    TResult? Function(LoadingviewCat value)? loadingviewCat,
+    TResult? Function(SuccessviewCat value)? successviewCat,
+    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(Loadingimage value)? loadingvimage,
+    TResult? Function(Successimage value)? successimage,
+    TResult? Function(Erorrimage value)? erorrvimage,
     TResult? Function(Galer value)? galer,
-    TResult? Function(PushEdit value)? PushEdit,
+    TResult? Function(Galer2 value)? galer2,
+    TResult? Function(Galer3 value)? galer3,
+    TResult? Function(PushEdit value)? pushEdit,
   }) {
     return successview?.call(this);
   }
@@ -710,8 +894,16 @@ class _$SuccessviewImpl implements Successview {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
+    TResult Function(LoadingviewCat value)? loadingviewCat,
+    TResult Function(SuccessviewCat value)? successviewCat,
+    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(Loadingimage value)? loadingvimage,
+    TResult Function(Successimage value)? successimage,
+    TResult Function(Erorrimage value)? erorrvimage,
     TResult Function(Galer value)? galer,
-    TResult Function(PushEdit value)? PushEdit,
+    TResult Function(Galer2 value)? galer2,
+    TResult Function(Galer3 value)? galer3,
+    TResult Function(PushEdit value)? pushEdit,
     required TResult orElse(),
   }) {
     if (successview != null) {
@@ -807,8 +999,16 @@ class _$ErorrviewImpl implements Erorrview {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
+    required TResult Function() loadingviewCat,
+    required TResult Function() successviewCat,
+    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingvimage,
+    required TResult Function() successimage,
+    required TResult Function(String erorr) erorrvimage,
     required TResult Function() galer,
-    required TResult Function() PushEdit,
+    required TResult Function() galer2,
+    required TResult Function() galer3,
+    required TResult Function() pushEdit,
   }) {
     return erorrview(erorr);
   }
@@ -829,8 +1029,16 @@ class _$ErorrviewImpl implements Erorrview {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
+    TResult? Function()? loadingviewCat,
+    TResult? Function()? successviewCat,
+    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingvimage,
+    TResult? Function()? successimage,
+    TResult? Function(String erorr)? erorrvimage,
     TResult? Function()? galer,
-    TResult? Function()? PushEdit,
+    TResult? Function()? galer2,
+    TResult? Function()? galer3,
+    TResult? Function()? pushEdit,
   }) {
     return erorrview?.call(erorr);
   }
@@ -851,8 +1059,16 @@ class _$ErorrviewImpl implements Erorrview {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
+    TResult Function()? loadingviewCat,
+    TResult Function()? successviewCat,
+    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingvimage,
+    TResult Function()? successimage,
+    TResult Function(String erorr)? erorrvimage,
     TResult Function()? galer,
-    TResult Function()? PushEdit,
+    TResult Function()? galer2,
+    TResult Function()? galer3,
+    TResult Function()? pushEdit,
     required TResult orElse(),
   }) {
     if (erorrview != null) {
@@ -877,8 +1093,16 @@ class _$ErorrviewImpl implements Erorrview {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
+    required TResult Function(LoadingviewCat value) loadingviewCat,
+    required TResult Function(SuccessviewCat value) successviewCat,
+    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(Loadingimage value) loadingvimage,
+    required TResult Function(Successimage value) successimage,
+    required TResult Function(Erorrimage value) erorrvimage,
     required TResult Function(Galer value) galer,
-    required TResult Function(PushEdit value) PushEdit,
+    required TResult Function(Galer2 value) galer2,
+    required TResult Function(Galer3 value) galer3,
+    required TResult Function(PushEdit value) pushEdit,
   }) {
     return erorrview(this);
   }
@@ -899,8 +1123,16 @@ class _$ErorrviewImpl implements Erorrview {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
+    TResult? Function(LoadingviewCat value)? loadingviewCat,
+    TResult? Function(SuccessviewCat value)? successviewCat,
+    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(Loadingimage value)? loadingvimage,
+    TResult? Function(Successimage value)? successimage,
+    TResult? Function(Erorrimage value)? erorrvimage,
     TResult? Function(Galer value)? galer,
-    TResult? Function(PushEdit value)? PushEdit,
+    TResult? Function(Galer2 value)? galer2,
+    TResult? Function(Galer3 value)? galer3,
+    TResult? Function(PushEdit value)? pushEdit,
   }) {
     return erorrview?.call(this);
   }
@@ -921,8 +1153,16 @@ class _$ErorrviewImpl implements Erorrview {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
+    TResult Function(LoadingviewCat value)? loadingviewCat,
+    TResult Function(SuccessviewCat value)? successviewCat,
+    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(Loadingimage value)? loadingvimage,
+    TResult Function(Successimage value)? successimage,
+    TResult Function(Erorrimage value)? erorrvimage,
     TResult Function(Galer value)? galer,
-    TResult Function(PushEdit value)? PushEdit,
+    TResult Function(Galer2 value)? galer2,
+    TResult Function(Galer3 value)? galer3,
+    TResult Function(PushEdit value)? pushEdit,
     required TResult orElse(),
   }) {
     if (erorrview != null) {
@@ -992,8 +1232,16 @@ class _$LoadingAddImpl implements LoadingAdd {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
+    required TResult Function() loadingviewCat,
+    required TResult Function() successviewCat,
+    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingvimage,
+    required TResult Function() successimage,
+    required TResult Function(String erorr) erorrvimage,
     required TResult Function() galer,
-    required TResult Function() PushEdit,
+    required TResult Function() galer2,
+    required TResult Function() galer3,
+    required TResult Function() pushEdit,
   }) {
     return loadingAdd();
   }
@@ -1014,8 +1262,16 @@ class _$LoadingAddImpl implements LoadingAdd {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
+    TResult? Function()? loadingviewCat,
+    TResult? Function()? successviewCat,
+    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingvimage,
+    TResult? Function()? successimage,
+    TResult? Function(String erorr)? erorrvimage,
     TResult? Function()? galer,
-    TResult? Function()? PushEdit,
+    TResult? Function()? galer2,
+    TResult? Function()? galer3,
+    TResult? Function()? pushEdit,
   }) {
     return loadingAdd?.call();
   }
@@ -1036,8 +1292,16 @@ class _$LoadingAddImpl implements LoadingAdd {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
+    TResult Function()? loadingviewCat,
+    TResult Function()? successviewCat,
+    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingvimage,
+    TResult Function()? successimage,
+    TResult Function(String erorr)? erorrvimage,
     TResult Function()? galer,
-    TResult Function()? PushEdit,
+    TResult Function()? galer2,
+    TResult Function()? galer3,
+    TResult Function()? pushEdit,
     required TResult orElse(),
   }) {
     if (loadingAdd != null) {
@@ -1062,8 +1326,16 @@ class _$LoadingAddImpl implements LoadingAdd {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
+    required TResult Function(LoadingviewCat value) loadingviewCat,
+    required TResult Function(SuccessviewCat value) successviewCat,
+    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(Loadingimage value) loadingvimage,
+    required TResult Function(Successimage value) successimage,
+    required TResult Function(Erorrimage value) erorrvimage,
     required TResult Function(Galer value) galer,
-    required TResult Function(PushEdit value) PushEdit,
+    required TResult Function(Galer2 value) galer2,
+    required TResult Function(Galer3 value) galer3,
+    required TResult Function(PushEdit value) pushEdit,
   }) {
     return loadingAdd(this);
   }
@@ -1084,8 +1356,16 @@ class _$LoadingAddImpl implements LoadingAdd {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
+    TResult? Function(LoadingviewCat value)? loadingviewCat,
+    TResult? Function(SuccessviewCat value)? successviewCat,
+    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(Loadingimage value)? loadingvimage,
+    TResult? Function(Successimage value)? successimage,
+    TResult? Function(Erorrimage value)? erorrvimage,
     TResult? Function(Galer value)? galer,
-    TResult? Function(PushEdit value)? PushEdit,
+    TResult? Function(Galer2 value)? galer2,
+    TResult? Function(Galer3 value)? galer3,
+    TResult? Function(PushEdit value)? pushEdit,
   }) {
     return loadingAdd?.call(this);
   }
@@ -1106,8 +1386,16 @@ class _$LoadingAddImpl implements LoadingAdd {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
+    TResult Function(LoadingviewCat value)? loadingviewCat,
+    TResult Function(SuccessviewCat value)? successviewCat,
+    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(Loadingimage value)? loadingvimage,
+    TResult Function(Successimage value)? successimage,
+    TResult Function(Erorrimage value)? erorrvimage,
     TResult Function(Galer value)? galer,
-    TResult Function(PushEdit value)? PushEdit,
+    TResult Function(Galer2 value)? galer2,
+    TResult Function(Galer3 value)? galer3,
+    TResult Function(PushEdit value)? pushEdit,
     required TResult orElse(),
   }) {
     if (loadingAdd != null) {
@@ -1172,8 +1460,16 @@ class _$SuccessAddImpl implements SuccessAdd {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
+    required TResult Function() loadingviewCat,
+    required TResult Function() successviewCat,
+    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingvimage,
+    required TResult Function() successimage,
+    required TResult Function(String erorr) erorrvimage,
     required TResult Function() galer,
-    required TResult Function() PushEdit,
+    required TResult Function() galer2,
+    required TResult Function() galer3,
+    required TResult Function() pushEdit,
   }) {
     return successAdd();
   }
@@ -1194,8 +1490,16 @@ class _$SuccessAddImpl implements SuccessAdd {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
+    TResult? Function()? loadingviewCat,
+    TResult? Function()? successviewCat,
+    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingvimage,
+    TResult? Function()? successimage,
+    TResult? Function(String erorr)? erorrvimage,
     TResult? Function()? galer,
-    TResult? Function()? PushEdit,
+    TResult? Function()? galer2,
+    TResult? Function()? galer3,
+    TResult? Function()? pushEdit,
   }) {
     return successAdd?.call();
   }
@@ -1216,8 +1520,16 @@ class _$SuccessAddImpl implements SuccessAdd {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
+    TResult Function()? loadingviewCat,
+    TResult Function()? successviewCat,
+    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingvimage,
+    TResult Function()? successimage,
+    TResult Function(String erorr)? erorrvimage,
     TResult Function()? galer,
-    TResult Function()? PushEdit,
+    TResult Function()? galer2,
+    TResult Function()? galer3,
+    TResult Function()? pushEdit,
     required TResult orElse(),
   }) {
     if (successAdd != null) {
@@ -1242,8 +1554,16 @@ class _$SuccessAddImpl implements SuccessAdd {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
+    required TResult Function(LoadingviewCat value) loadingviewCat,
+    required TResult Function(SuccessviewCat value) successviewCat,
+    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(Loadingimage value) loadingvimage,
+    required TResult Function(Successimage value) successimage,
+    required TResult Function(Erorrimage value) erorrvimage,
     required TResult Function(Galer value) galer,
-    required TResult Function(PushEdit value) PushEdit,
+    required TResult Function(Galer2 value) galer2,
+    required TResult Function(Galer3 value) galer3,
+    required TResult Function(PushEdit value) pushEdit,
   }) {
     return successAdd(this);
   }
@@ -1264,8 +1584,16 @@ class _$SuccessAddImpl implements SuccessAdd {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
+    TResult? Function(LoadingviewCat value)? loadingviewCat,
+    TResult? Function(SuccessviewCat value)? successviewCat,
+    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(Loadingimage value)? loadingvimage,
+    TResult? Function(Successimage value)? successimage,
+    TResult? Function(Erorrimage value)? erorrvimage,
     TResult? Function(Galer value)? galer,
-    TResult? Function(PushEdit value)? PushEdit,
+    TResult? Function(Galer2 value)? galer2,
+    TResult? Function(Galer3 value)? galer3,
+    TResult? Function(PushEdit value)? pushEdit,
   }) {
     return successAdd?.call(this);
   }
@@ -1286,8 +1614,16 @@ class _$SuccessAddImpl implements SuccessAdd {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
+    TResult Function(LoadingviewCat value)? loadingviewCat,
+    TResult Function(SuccessviewCat value)? successviewCat,
+    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(Loadingimage value)? loadingvimage,
+    TResult Function(Successimage value)? successimage,
+    TResult Function(Erorrimage value)? erorrvimage,
     TResult Function(Galer value)? galer,
-    TResult Function(PushEdit value)? PushEdit,
+    TResult Function(Galer2 value)? galer2,
+    TResult Function(Galer3 value)? galer3,
+    TResult Function(PushEdit value)? pushEdit,
     required TResult orElse(),
   }) {
     if (successAdd != null) {
@@ -1378,8 +1714,16 @@ class _$ErorrAddImpl implements ErorrAdd {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
+    required TResult Function() loadingviewCat,
+    required TResult Function() successviewCat,
+    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingvimage,
+    required TResult Function() successimage,
+    required TResult Function(String erorr) erorrvimage,
     required TResult Function() galer,
-    required TResult Function() PushEdit,
+    required TResult Function() galer2,
+    required TResult Function() galer3,
+    required TResult Function() pushEdit,
   }) {
     return erorrAdd(erorr);
   }
@@ -1400,8 +1744,16 @@ class _$ErorrAddImpl implements ErorrAdd {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
+    TResult? Function()? loadingviewCat,
+    TResult? Function()? successviewCat,
+    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingvimage,
+    TResult? Function()? successimage,
+    TResult? Function(String erorr)? erorrvimage,
     TResult? Function()? galer,
-    TResult? Function()? PushEdit,
+    TResult? Function()? galer2,
+    TResult? Function()? galer3,
+    TResult? Function()? pushEdit,
   }) {
     return erorrAdd?.call(erorr);
   }
@@ -1422,8 +1774,16 @@ class _$ErorrAddImpl implements ErorrAdd {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
+    TResult Function()? loadingviewCat,
+    TResult Function()? successviewCat,
+    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingvimage,
+    TResult Function()? successimage,
+    TResult Function(String erorr)? erorrvimage,
     TResult Function()? galer,
-    TResult Function()? PushEdit,
+    TResult Function()? galer2,
+    TResult Function()? galer3,
+    TResult Function()? pushEdit,
     required TResult orElse(),
   }) {
     if (erorrAdd != null) {
@@ -1448,8 +1808,16 @@ class _$ErorrAddImpl implements ErorrAdd {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
+    required TResult Function(LoadingviewCat value) loadingviewCat,
+    required TResult Function(SuccessviewCat value) successviewCat,
+    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(Loadingimage value) loadingvimage,
+    required TResult Function(Successimage value) successimage,
+    required TResult Function(Erorrimage value) erorrvimage,
     required TResult Function(Galer value) galer,
-    required TResult Function(PushEdit value) PushEdit,
+    required TResult Function(Galer2 value) galer2,
+    required TResult Function(Galer3 value) galer3,
+    required TResult Function(PushEdit value) pushEdit,
   }) {
     return erorrAdd(this);
   }
@@ -1470,8 +1838,16 @@ class _$ErorrAddImpl implements ErorrAdd {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
+    TResult? Function(LoadingviewCat value)? loadingviewCat,
+    TResult? Function(SuccessviewCat value)? successviewCat,
+    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(Loadingimage value)? loadingvimage,
+    TResult? Function(Successimage value)? successimage,
+    TResult? Function(Erorrimage value)? erorrvimage,
     TResult? Function(Galer value)? galer,
-    TResult? Function(PushEdit value)? PushEdit,
+    TResult? Function(Galer2 value)? galer2,
+    TResult? Function(Galer3 value)? galer3,
+    TResult? Function(PushEdit value)? pushEdit,
   }) {
     return erorrAdd?.call(this);
   }
@@ -1492,8 +1868,16 @@ class _$ErorrAddImpl implements ErorrAdd {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
+    TResult Function(LoadingviewCat value)? loadingviewCat,
+    TResult Function(SuccessviewCat value)? successviewCat,
+    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(Loadingimage value)? loadingvimage,
+    TResult Function(Successimage value)? successimage,
+    TResult Function(Erorrimage value)? erorrvimage,
     TResult Function(Galer value)? galer,
-    TResult Function(PushEdit value)? PushEdit,
+    TResult Function(Galer2 value)? galer2,
+    TResult Function(Galer3 value)? galer3,
+    TResult Function(PushEdit value)? pushEdit,
     required TResult orElse(),
   }) {
     if (erorrAdd != null) {
@@ -1563,8 +1947,16 @@ class _$LoadingeditImpl implements Loadingedit {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
+    required TResult Function() loadingviewCat,
+    required TResult Function() successviewCat,
+    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingvimage,
+    required TResult Function() successimage,
+    required TResult Function(String erorr) erorrvimage,
     required TResult Function() galer,
-    required TResult Function() PushEdit,
+    required TResult Function() galer2,
+    required TResult Function() galer3,
+    required TResult Function() pushEdit,
   }) {
     return loadingedit();
   }
@@ -1585,8 +1977,16 @@ class _$LoadingeditImpl implements Loadingedit {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
+    TResult? Function()? loadingviewCat,
+    TResult? Function()? successviewCat,
+    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingvimage,
+    TResult? Function()? successimage,
+    TResult? Function(String erorr)? erorrvimage,
     TResult? Function()? galer,
-    TResult? Function()? PushEdit,
+    TResult? Function()? galer2,
+    TResult? Function()? galer3,
+    TResult? Function()? pushEdit,
   }) {
     return loadingedit?.call();
   }
@@ -1607,8 +2007,16 @@ class _$LoadingeditImpl implements Loadingedit {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
+    TResult Function()? loadingviewCat,
+    TResult Function()? successviewCat,
+    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingvimage,
+    TResult Function()? successimage,
+    TResult Function(String erorr)? erorrvimage,
     TResult Function()? galer,
-    TResult Function()? PushEdit,
+    TResult Function()? galer2,
+    TResult Function()? galer3,
+    TResult Function()? pushEdit,
     required TResult orElse(),
   }) {
     if (loadingedit != null) {
@@ -1633,8 +2041,16 @@ class _$LoadingeditImpl implements Loadingedit {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
+    required TResult Function(LoadingviewCat value) loadingviewCat,
+    required TResult Function(SuccessviewCat value) successviewCat,
+    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(Loadingimage value) loadingvimage,
+    required TResult Function(Successimage value) successimage,
+    required TResult Function(Erorrimage value) erorrvimage,
     required TResult Function(Galer value) galer,
-    required TResult Function(PushEdit value) PushEdit,
+    required TResult Function(Galer2 value) galer2,
+    required TResult Function(Galer3 value) galer3,
+    required TResult Function(PushEdit value) pushEdit,
   }) {
     return loadingedit(this);
   }
@@ -1655,8 +2071,16 @@ class _$LoadingeditImpl implements Loadingedit {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
+    TResult? Function(LoadingviewCat value)? loadingviewCat,
+    TResult? Function(SuccessviewCat value)? successviewCat,
+    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(Loadingimage value)? loadingvimage,
+    TResult? Function(Successimage value)? successimage,
+    TResult? Function(Erorrimage value)? erorrvimage,
     TResult? Function(Galer value)? galer,
-    TResult? Function(PushEdit value)? PushEdit,
+    TResult? Function(Galer2 value)? galer2,
+    TResult? Function(Galer3 value)? galer3,
+    TResult? Function(PushEdit value)? pushEdit,
   }) {
     return loadingedit?.call(this);
   }
@@ -1677,8 +2101,16 @@ class _$LoadingeditImpl implements Loadingedit {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
+    TResult Function(LoadingviewCat value)? loadingviewCat,
+    TResult Function(SuccessviewCat value)? successviewCat,
+    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(Loadingimage value)? loadingvimage,
+    TResult Function(Successimage value)? successimage,
+    TResult Function(Erorrimage value)? erorrvimage,
     TResult Function(Galer value)? galer,
-    TResult Function(PushEdit value)? PushEdit,
+    TResult Function(Galer2 value)? galer2,
+    TResult Function(Galer3 value)? galer3,
+    TResult Function(PushEdit value)? pushEdit,
     required TResult orElse(),
   }) {
     if (loadingedit != null) {
@@ -1743,8 +2175,16 @@ class _$SuccesseditImpl implements Successedit {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
+    required TResult Function() loadingviewCat,
+    required TResult Function() successviewCat,
+    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingvimage,
+    required TResult Function() successimage,
+    required TResult Function(String erorr) erorrvimage,
     required TResult Function() galer,
-    required TResult Function() PushEdit,
+    required TResult Function() galer2,
+    required TResult Function() galer3,
+    required TResult Function() pushEdit,
   }) {
     return successedit();
   }
@@ -1765,8 +2205,16 @@ class _$SuccesseditImpl implements Successedit {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
+    TResult? Function()? loadingviewCat,
+    TResult? Function()? successviewCat,
+    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingvimage,
+    TResult? Function()? successimage,
+    TResult? Function(String erorr)? erorrvimage,
     TResult? Function()? galer,
-    TResult? Function()? PushEdit,
+    TResult? Function()? galer2,
+    TResult? Function()? galer3,
+    TResult? Function()? pushEdit,
   }) {
     return successedit?.call();
   }
@@ -1787,8 +2235,16 @@ class _$SuccesseditImpl implements Successedit {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
+    TResult Function()? loadingviewCat,
+    TResult Function()? successviewCat,
+    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingvimage,
+    TResult Function()? successimage,
+    TResult Function(String erorr)? erorrvimage,
     TResult Function()? galer,
-    TResult Function()? PushEdit,
+    TResult Function()? galer2,
+    TResult Function()? galer3,
+    TResult Function()? pushEdit,
     required TResult orElse(),
   }) {
     if (successedit != null) {
@@ -1813,8 +2269,16 @@ class _$SuccesseditImpl implements Successedit {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
+    required TResult Function(LoadingviewCat value) loadingviewCat,
+    required TResult Function(SuccessviewCat value) successviewCat,
+    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(Loadingimage value) loadingvimage,
+    required TResult Function(Successimage value) successimage,
+    required TResult Function(Erorrimage value) erorrvimage,
     required TResult Function(Galer value) galer,
-    required TResult Function(PushEdit value) PushEdit,
+    required TResult Function(Galer2 value) galer2,
+    required TResult Function(Galer3 value) galer3,
+    required TResult Function(PushEdit value) pushEdit,
   }) {
     return successedit(this);
   }
@@ -1835,8 +2299,16 @@ class _$SuccesseditImpl implements Successedit {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
+    TResult? Function(LoadingviewCat value)? loadingviewCat,
+    TResult? Function(SuccessviewCat value)? successviewCat,
+    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(Loadingimage value)? loadingvimage,
+    TResult? Function(Successimage value)? successimage,
+    TResult? Function(Erorrimage value)? erorrvimage,
     TResult? Function(Galer value)? galer,
-    TResult? Function(PushEdit value)? PushEdit,
+    TResult? Function(Galer2 value)? galer2,
+    TResult? Function(Galer3 value)? galer3,
+    TResult? Function(PushEdit value)? pushEdit,
   }) {
     return successedit?.call(this);
   }
@@ -1857,8 +2329,16 @@ class _$SuccesseditImpl implements Successedit {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
+    TResult Function(LoadingviewCat value)? loadingviewCat,
+    TResult Function(SuccessviewCat value)? successviewCat,
+    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(Loadingimage value)? loadingvimage,
+    TResult Function(Successimage value)? successimage,
+    TResult Function(Erorrimage value)? erorrvimage,
     TResult Function(Galer value)? galer,
-    TResult Function(PushEdit value)? PushEdit,
+    TResult Function(Galer2 value)? galer2,
+    TResult Function(Galer3 value)? galer3,
+    TResult Function(PushEdit value)? pushEdit,
     required TResult orElse(),
   }) {
     if (successedit != null) {
@@ -1949,8 +2429,16 @@ class _$ErorreditImpl implements Erorredit {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
+    required TResult Function() loadingviewCat,
+    required TResult Function() successviewCat,
+    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingvimage,
+    required TResult Function() successimage,
+    required TResult Function(String erorr) erorrvimage,
     required TResult Function() galer,
-    required TResult Function() PushEdit,
+    required TResult Function() galer2,
+    required TResult Function() galer3,
+    required TResult Function() pushEdit,
   }) {
     return erorredit(erorr);
   }
@@ -1971,8 +2459,16 @@ class _$ErorreditImpl implements Erorredit {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
+    TResult? Function()? loadingviewCat,
+    TResult? Function()? successviewCat,
+    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingvimage,
+    TResult? Function()? successimage,
+    TResult? Function(String erorr)? erorrvimage,
     TResult? Function()? galer,
-    TResult? Function()? PushEdit,
+    TResult? Function()? galer2,
+    TResult? Function()? galer3,
+    TResult? Function()? pushEdit,
   }) {
     return erorredit?.call(erorr);
   }
@@ -1993,8 +2489,16 @@ class _$ErorreditImpl implements Erorredit {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
+    TResult Function()? loadingviewCat,
+    TResult Function()? successviewCat,
+    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingvimage,
+    TResult Function()? successimage,
+    TResult Function(String erorr)? erorrvimage,
     TResult Function()? galer,
-    TResult Function()? PushEdit,
+    TResult Function()? galer2,
+    TResult Function()? galer3,
+    TResult Function()? pushEdit,
     required TResult orElse(),
   }) {
     if (erorredit != null) {
@@ -2019,8 +2523,16 @@ class _$ErorreditImpl implements Erorredit {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
+    required TResult Function(LoadingviewCat value) loadingviewCat,
+    required TResult Function(SuccessviewCat value) successviewCat,
+    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(Loadingimage value) loadingvimage,
+    required TResult Function(Successimage value) successimage,
+    required TResult Function(Erorrimage value) erorrvimage,
     required TResult Function(Galer value) galer,
-    required TResult Function(PushEdit value) PushEdit,
+    required TResult Function(Galer2 value) galer2,
+    required TResult Function(Galer3 value) galer3,
+    required TResult Function(PushEdit value) pushEdit,
   }) {
     return erorredit(this);
   }
@@ -2041,8 +2553,16 @@ class _$ErorreditImpl implements Erorredit {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
+    TResult? Function(LoadingviewCat value)? loadingviewCat,
+    TResult? Function(SuccessviewCat value)? successviewCat,
+    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(Loadingimage value)? loadingvimage,
+    TResult? Function(Successimage value)? successimage,
+    TResult? Function(Erorrimage value)? erorrvimage,
     TResult? Function(Galer value)? galer,
-    TResult? Function(PushEdit value)? PushEdit,
+    TResult? Function(Galer2 value)? galer2,
+    TResult? Function(Galer3 value)? galer3,
+    TResult? Function(PushEdit value)? pushEdit,
   }) {
     return erorredit?.call(this);
   }
@@ -2063,8 +2583,16 @@ class _$ErorreditImpl implements Erorredit {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
+    TResult Function(LoadingviewCat value)? loadingviewCat,
+    TResult Function(SuccessviewCat value)? successviewCat,
+    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(Loadingimage value)? loadingvimage,
+    TResult Function(Successimage value)? successimage,
+    TResult Function(Erorrimage value)? erorrvimage,
     TResult Function(Galer value)? galer,
-    TResult Function(PushEdit value)? PushEdit,
+    TResult Function(Galer2 value)? galer2,
+    TResult Function(Galer3 value)? galer3,
+    TResult Function(PushEdit value)? pushEdit,
     required TResult orElse(),
   }) {
     if (erorredit != null) {
@@ -2134,8 +2662,16 @@ class _$LoadingdeleteImpl implements Loadingdelete {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
+    required TResult Function() loadingviewCat,
+    required TResult Function() successviewCat,
+    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingvimage,
+    required TResult Function() successimage,
+    required TResult Function(String erorr) erorrvimage,
     required TResult Function() galer,
-    required TResult Function() PushEdit,
+    required TResult Function() galer2,
+    required TResult Function() galer3,
+    required TResult Function() pushEdit,
   }) {
     return loadingdelete();
   }
@@ -2156,8 +2692,16 @@ class _$LoadingdeleteImpl implements Loadingdelete {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
+    TResult? Function()? loadingviewCat,
+    TResult? Function()? successviewCat,
+    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingvimage,
+    TResult? Function()? successimage,
+    TResult? Function(String erorr)? erorrvimage,
     TResult? Function()? galer,
-    TResult? Function()? PushEdit,
+    TResult? Function()? galer2,
+    TResult? Function()? galer3,
+    TResult? Function()? pushEdit,
   }) {
     return loadingdelete?.call();
   }
@@ -2178,8 +2722,16 @@ class _$LoadingdeleteImpl implements Loadingdelete {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
+    TResult Function()? loadingviewCat,
+    TResult Function()? successviewCat,
+    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingvimage,
+    TResult Function()? successimage,
+    TResult Function(String erorr)? erorrvimage,
     TResult Function()? galer,
-    TResult Function()? PushEdit,
+    TResult Function()? galer2,
+    TResult Function()? galer3,
+    TResult Function()? pushEdit,
     required TResult orElse(),
   }) {
     if (loadingdelete != null) {
@@ -2204,8 +2756,16 @@ class _$LoadingdeleteImpl implements Loadingdelete {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
+    required TResult Function(LoadingviewCat value) loadingviewCat,
+    required TResult Function(SuccessviewCat value) successviewCat,
+    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(Loadingimage value) loadingvimage,
+    required TResult Function(Successimage value) successimage,
+    required TResult Function(Erorrimage value) erorrvimage,
     required TResult Function(Galer value) galer,
-    required TResult Function(PushEdit value) PushEdit,
+    required TResult Function(Galer2 value) galer2,
+    required TResult Function(Galer3 value) galer3,
+    required TResult Function(PushEdit value) pushEdit,
   }) {
     return loadingdelete(this);
   }
@@ -2226,8 +2786,16 @@ class _$LoadingdeleteImpl implements Loadingdelete {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
+    TResult? Function(LoadingviewCat value)? loadingviewCat,
+    TResult? Function(SuccessviewCat value)? successviewCat,
+    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(Loadingimage value)? loadingvimage,
+    TResult? Function(Successimage value)? successimage,
+    TResult? Function(Erorrimage value)? erorrvimage,
     TResult? Function(Galer value)? galer,
-    TResult? Function(PushEdit value)? PushEdit,
+    TResult? Function(Galer2 value)? galer2,
+    TResult? Function(Galer3 value)? galer3,
+    TResult? Function(PushEdit value)? pushEdit,
   }) {
     return loadingdelete?.call(this);
   }
@@ -2248,8 +2816,16 @@ class _$LoadingdeleteImpl implements Loadingdelete {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
+    TResult Function(LoadingviewCat value)? loadingviewCat,
+    TResult Function(SuccessviewCat value)? successviewCat,
+    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(Loadingimage value)? loadingvimage,
+    TResult Function(Successimage value)? successimage,
+    TResult Function(Erorrimage value)? erorrvimage,
     TResult Function(Galer value)? galer,
-    TResult Function(PushEdit value)? PushEdit,
+    TResult Function(Galer2 value)? galer2,
+    TResult Function(Galer3 value)? galer3,
+    TResult Function(PushEdit value)? pushEdit,
     required TResult orElse(),
   }) {
     if (loadingdelete != null) {
@@ -2314,8 +2890,16 @@ class _$SuccessdeleteImpl implements Successdelete {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
+    required TResult Function() loadingviewCat,
+    required TResult Function() successviewCat,
+    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingvimage,
+    required TResult Function() successimage,
+    required TResult Function(String erorr) erorrvimage,
     required TResult Function() galer,
-    required TResult Function() PushEdit,
+    required TResult Function() galer2,
+    required TResult Function() galer3,
+    required TResult Function() pushEdit,
   }) {
     return successdelete();
   }
@@ -2336,8 +2920,16 @@ class _$SuccessdeleteImpl implements Successdelete {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
+    TResult? Function()? loadingviewCat,
+    TResult? Function()? successviewCat,
+    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingvimage,
+    TResult? Function()? successimage,
+    TResult? Function(String erorr)? erorrvimage,
     TResult? Function()? galer,
-    TResult? Function()? PushEdit,
+    TResult? Function()? galer2,
+    TResult? Function()? galer3,
+    TResult? Function()? pushEdit,
   }) {
     return successdelete?.call();
   }
@@ -2358,8 +2950,16 @@ class _$SuccessdeleteImpl implements Successdelete {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
+    TResult Function()? loadingviewCat,
+    TResult Function()? successviewCat,
+    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingvimage,
+    TResult Function()? successimage,
+    TResult Function(String erorr)? erorrvimage,
     TResult Function()? galer,
-    TResult Function()? PushEdit,
+    TResult Function()? galer2,
+    TResult Function()? galer3,
+    TResult Function()? pushEdit,
     required TResult orElse(),
   }) {
     if (successdelete != null) {
@@ -2384,8 +2984,16 @@ class _$SuccessdeleteImpl implements Successdelete {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
+    required TResult Function(LoadingviewCat value) loadingviewCat,
+    required TResult Function(SuccessviewCat value) successviewCat,
+    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(Loadingimage value) loadingvimage,
+    required TResult Function(Successimage value) successimage,
+    required TResult Function(Erorrimage value) erorrvimage,
     required TResult Function(Galer value) galer,
-    required TResult Function(PushEdit value) PushEdit,
+    required TResult Function(Galer2 value) galer2,
+    required TResult Function(Galer3 value) galer3,
+    required TResult Function(PushEdit value) pushEdit,
   }) {
     return successdelete(this);
   }
@@ -2406,8 +3014,16 @@ class _$SuccessdeleteImpl implements Successdelete {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
+    TResult? Function(LoadingviewCat value)? loadingviewCat,
+    TResult? Function(SuccessviewCat value)? successviewCat,
+    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(Loadingimage value)? loadingvimage,
+    TResult? Function(Successimage value)? successimage,
+    TResult? Function(Erorrimage value)? erorrvimage,
     TResult? Function(Galer value)? galer,
-    TResult? Function(PushEdit value)? PushEdit,
+    TResult? Function(Galer2 value)? galer2,
+    TResult? Function(Galer3 value)? galer3,
+    TResult? Function(PushEdit value)? pushEdit,
   }) {
     return successdelete?.call(this);
   }
@@ -2428,8 +3044,16 @@ class _$SuccessdeleteImpl implements Successdelete {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
+    TResult Function(LoadingviewCat value)? loadingviewCat,
+    TResult Function(SuccessviewCat value)? successviewCat,
+    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(Loadingimage value)? loadingvimage,
+    TResult Function(Successimage value)? successimage,
+    TResult Function(Erorrimage value)? erorrvimage,
     TResult Function(Galer value)? galer,
-    TResult Function(PushEdit value)? PushEdit,
+    TResult Function(Galer2 value)? galer2,
+    TResult Function(Galer3 value)? galer3,
+    TResult Function(PushEdit value)? pushEdit,
     required TResult orElse(),
   }) {
     if (successdelete != null) {
@@ -2520,8 +3144,16 @@ class _$ErorrdeleteImpl implements Erorrdelete {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
+    required TResult Function() loadingviewCat,
+    required TResult Function() successviewCat,
+    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingvimage,
+    required TResult Function() successimage,
+    required TResult Function(String erorr) erorrvimage,
     required TResult Function() galer,
-    required TResult Function() PushEdit,
+    required TResult Function() galer2,
+    required TResult Function() galer3,
+    required TResult Function() pushEdit,
   }) {
     return erorrdelete(erorr);
   }
@@ -2542,8 +3174,16 @@ class _$ErorrdeleteImpl implements Erorrdelete {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
+    TResult? Function()? loadingviewCat,
+    TResult? Function()? successviewCat,
+    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingvimage,
+    TResult? Function()? successimage,
+    TResult? Function(String erorr)? erorrvimage,
     TResult? Function()? galer,
-    TResult? Function()? PushEdit,
+    TResult? Function()? galer2,
+    TResult? Function()? galer3,
+    TResult? Function()? pushEdit,
   }) {
     return erorrdelete?.call(erorr);
   }
@@ -2564,8 +3204,16 @@ class _$ErorrdeleteImpl implements Erorrdelete {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
+    TResult Function()? loadingviewCat,
+    TResult Function()? successviewCat,
+    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingvimage,
+    TResult Function()? successimage,
+    TResult Function(String erorr)? erorrvimage,
     TResult Function()? galer,
-    TResult Function()? PushEdit,
+    TResult Function()? galer2,
+    TResult Function()? galer3,
+    TResult Function()? pushEdit,
     required TResult orElse(),
   }) {
     if (erorrdelete != null) {
@@ -2590,8 +3238,16 @@ class _$ErorrdeleteImpl implements Erorrdelete {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
+    required TResult Function(LoadingviewCat value) loadingviewCat,
+    required TResult Function(SuccessviewCat value) successviewCat,
+    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(Loadingimage value) loadingvimage,
+    required TResult Function(Successimage value) successimage,
+    required TResult Function(Erorrimage value) erorrvimage,
     required TResult Function(Galer value) galer,
-    required TResult Function(PushEdit value) PushEdit,
+    required TResult Function(Galer2 value) galer2,
+    required TResult Function(Galer3 value) galer3,
+    required TResult Function(PushEdit value) pushEdit,
   }) {
     return erorrdelete(this);
   }
@@ -2612,8 +3268,16 @@ class _$ErorrdeleteImpl implements Erorrdelete {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
+    TResult? Function(LoadingviewCat value)? loadingviewCat,
+    TResult? Function(SuccessviewCat value)? successviewCat,
+    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(Loadingimage value)? loadingvimage,
+    TResult? Function(Successimage value)? successimage,
+    TResult? Function(Erorrimage value)? erorrvimage,
     TResult? Function(Galer value)? galer,
-    TResult? Function(PushEdit value)? PushEdit,
+    TResult? Function(Galer2 value)? galer2,
+    TResult? Function(Galer3 value)? galer3,
+    TResult? Function(PushEdit value)? pushEdit,
   }) {
     return erorrdelete?.call(this);
   }
@@ -2634,8 +3298,16 @@ class _$ErorrdeleteImpl implements Erorrdelete {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
+    TResult Function(LoadingviewCat value)? loadingviewCat,
+    TResult Function(SuccessviewCat value)? successviewCat,
+    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(Loadingimage value)? loadingvimage,
+    TResult Function(Successimage value)? successimage,
+    TResult Function(Erorrimage value)? erorrvimage,
     TResult Function(Galer value)? galer,
-    TResult Function(PushEdit value)? PushEdit,
+    TResult Function(Galer2 value)? galer2,
+    TResult Function(Galer3 value)? galer3,
+    TResult Function(PushEdit value)? pushEdit,
     required TResult orElse(),
   }) {
     if (erorrdelete != null) {
@@ -2651,6 +3323,1437 @@ abstract class Erorrdelete implements DashboardState {
   String get erorr;
   @JsonKey(ignore: true)
   _$$ErorrdeleteImplCopyWith<_$ErorrdeleteImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$LoadingviewCatImplCopyWith<$Res> {
+  factory _$$LoadingviewCatImplCopyWith(_$LoadingviewCatImpl value,
+          $Res Function(_$LoadingviewCatImpl) then) =
+      __$$LoadingviewCatImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$LoadingviewCatImplCopyWithImpl<$Res>
+    extends _$DashboardStateCopyWithImpl<$Res, _$LoadingviewCatImpl>
+    implements _$$LoadingviewCatImplCopyWith<$Res> {
+  __$$LoadingviewCatImplCopyWithImpl(
+      _$LoadingviewCatImpl _value, $Res Function(_$LoadingviewCatImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$LoadingviewCatImpl implements LoadingviewCat {
+  const _$LoadingviewCatImpl();
+
+  @override
+  String toString() {
+    return 'DashboardState.loadingviewCat()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$LoadingviewCatImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loadingview,
+    required TResult Function(List<ItemsData> response) successview,
+    required TResult Function(String erorr) erorrview,
+    required TResult Function() loadingAdd,
+    required TResult Function() successAdd,
+    required TResult Function(String erorr) erorrAdd,
+    required TResult Function() loadingedit,
+    required TResult Function() successedit,
+    required TResult Function(String erorr) erorredit,
+    required TResult Function() loadingdelete,
+    required TResult Function() successdelete,
+    required TResult Function(String erorr) erorrdelete,
+    required TResult Function() loadingviewCat,
+    required TResult Function() successviewCat,
+    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingvimage,
+    required TResult Function() successimage,
+    required TResult Function(String erorr) erorrvimage,
+    required TResult Function() galer,
+    required TResult Function() galer2,
+    required TResult Function() galer3,
+    required TResult Function() pushEdit,
+  }) {
+    return loadingviewCat();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loadingview,
+    TResult? Function(List<ItemsData> response)? successview,
+    TResult? Function(String erorr)? erorrview,
+    TResult? Function()? loadingAdd,
+    TResult? Function()? successAdd,
+    TResult? Function(String erorr)? erorrAdd,
+    TResult? Function()? loadingedit,
+    TResult? Function()? successedit,
+    TResult? Function(String erorr)? erorredit,
+    TResult? Function()? loadingdelete,
+    TResult? Function()? successdelete,
+    TResult? Function(String erorr)? erorrdelete,
+    TResult? Function()? loadingviewCat,
+    TResult? Function()? successviewCat,
+    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingvimage,
+    TResult? Function()? successimage,
+    TResult? Function(String erorr)? erorrvimage,
+    TResult? Function()? galer,
+    TResult? Function()? galer2,
+    TResult? Function()? galer3,
+    TResult? Function()? pushEdit,
+  }) {
+    return loadingviewCat?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loadingview,
+    TResult Function(List<ItemsData> response)? successview,
+    TResult Function(String erorr)? erorrview,
+    TResult Function()? loadingAdd,
+    TResult Function()? successAdd,
+    TResult Function(String erorr)? erorrAdd,
+    TResult Function()? loadingedit,
+    TResult Function()? successedit,
+    TResult Function(String erorr)? erorredit,
+    TResult Function()? loadingdelete,
+    TResult Function()? successdelete,
+    TResult Function(String erorr)? erorrdelete,
+    TResult Function()? loadingviewCat,
+    TResult Function()? successviewCat,
+    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingvimage,
+    TResult Function()? successimage,
+    TResult Function(String erorr)? erorrvimage,
+    TResult Function()? galer,
+    TResult Function()? galer2,
+    TResult Function()? galer3,
+    TResult Function()? pushEdit,
+    required TResult orElse(),
+  }) {
+    if (loadingviewCat != null) {
+      return loadingviewCat();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(Loadingview value) loadingview,
+    required TResult Function(Successview value) successview,
+    required TResult Function(Erorrview value) erorrview,
+    required TResult Function(LoadingAdd value) loadingAdd,
+    required TResult Function(SuccessAdd value) successAdd,
+    required TResult Function(ErorrAdd value) erorrAdd,
+    required TResult Function(Loadingedit value) loadingedit,
+    required TResult Function(Successedit value) successedit,
+    required TResult Function(Erorredit value) erorredit,
+    required TResult Function(Loadingdelete value) loadingdelete,
+    required TResult Function(Successdelete value) successdelete,
+    required TResult Function(Erorrdelete value) erorrdelete,
+    required TResult Function(LoadingviewCat value) loadingviewCat,
+    required TResult Function(SuccessviewCat value) successviewCat,
+    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(Loadingimage value) loadingvimage,
+    required TResult Function(Successimage value) successimage,
+    required TResult Function(Erorrimage value) erorrvimage,
+    required TResult Function(Galer value) galer,
+    required TResult Function(Galer2 value) galer2,
+    required TResult Function(Galer3 value) galer3,
+    required TResult Function(PushEdit value) pushEdit,
+  }) {
+    return loadingviewCat(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(Loadingview value)? loadingview,
+    TResult? Function(Successview value)? successview,
+    TResult? Function(Erorrview value)? erorrview,
+    TResult? Function(LoadingAdd value)? loadingAdd,
+    TResult? Function(SuccessAdd value)? successAdd,
+    TResult? Function(ErorrAdd value)? erorrAdd,
+    TResult? Function(Loadingedit value)? loadingedit,
+    TResult? Function(Successedit value)? successedit,
+    TResult? Function(Erorredit value)? erorredit,
+    TResult? Function(Loadingdelete value)? loadingdelete,
+    TResult? Function(Successdelete value)? successdelete,
+    TResult? Function(Erorrdelete value)? erorrdelete,
+    TResult? Function(LoadingviewCat value)? loadingviewCat,
+    TResult? Function(SuccessviewCat value)? successviewCat,
+    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(Loadingimage value)? loadingvimage,
+    TResult? Function(Successimage value)? successimage,
+    TResult? Function(Erorrimage value)? erorrvimage,
+    TResult? Function(Galer value)? galer,
+    TResult? Function(Galer2 value)? galer2,
+    TResult? Function(Galer3 value)? galer3,
+    TResult? Function(PushEdit value)? pushEdit,
+  }) {
+    return loadingviewCat?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(Loadingview value)? loadingview,
+    TResult Function(Successview value)? successview,
+    TResult Function(Erorrview value)? erorrview,
+    TResult Function(LoadingAdd value)? loadingAdd,
+    TResult Function(SuccessAdd value)? successAdd,
+    TResult Function(ErorrAdd value)? erorrAdd,
+    TResult Function(Loadingedit value)? loadingedit,
+    TResult Function(Successedit value)? successedit,
+    TResult Function(Erorredit value)? erorredit,
+    TResult Function(Loadingdelete value)? loadingdelete,
+    TResult Function(Successdelete value)? successdelete,
+    TResult Function(Erorrdelete value)? erorrdelete,
+    TResult Function(LoadingviewCat value)? loadingviewCat,
+    TResult Function(SuccessviewCat value)? successviewCat,
+    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(Loadingimage value)? loadingvimage,
+    TResult Function(Successimage value)? successimage,
+    TResult Function(Erorrimage value)? erorrvimage,
+    TResult Function(Galer value)? galer,
+    TResult Function(Galer2 value)? galer2,
+    TResult Function(Galer3 value)? galer3,
+    TResult Function(PushEdit value)? pushEdit,
+    required TResult orElse(),
+  }) {
+    if (loadingviewCat != null) {
+      return loadingviewCat(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class LoadingviewCat implements DashboardState {
+  const factory LoadingviewCat() = _$LoadingviewCatImpl;
+}
+
+/// @nodoc
+abstract class _$$SuccessviewCatImplCopyWith<$Res> {
+  factory _$$SuccessviewCatImplCopyWith(_$SuccessviewCatImpl value,
+          $Res Function(_$SuccessviewCatImpl) then) =
+      __$$SuccessviewCatImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$SuccessviewCatImplCopyWithImpl<$Res>
+    extends _$DashboardStateCopyWithImpl<$Res, _$SuccessviewCatImpl>
+    implements _$$SuccessviewCatImplCopyWith<$Res> {
+  __$$SuccessviewCatImplCopyWithImpl(
+      _$SuccessviewCatImpl _value, $Res Function(_$SuccessviewCatImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$SuccessviewCatImpl implements SuccessviewCat {
+  const _$SuccessviewCatImpl();
+
+  @override
+  String toString() {
+    return 'DashboardState.successviewCat()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$SuccessviewCatImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loadingview,
+    required TResult Function(List<ItemsData> response) successview,
+    required TResult Function(String erorr) erorrview,
+    required TResult Function() loadingAdd,
+    required TResult Function() successAdd,
+    required TResult Function(String erorr) erorrAdd,
+    required TResult Function() loadingedit,
+    required TResult Function() successedit,
+    required TResult Function(String erorr) erorredit,
+    required TResult Function() loadingdelete,
+    required TResult Function() successdelete,
+    required TResult Function(String erorr) erorrdelete,
+    required TResult Function() loadingviewCat,
+    required TResult Function() successviewCat,
+    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingvimage,
+    required TResult Function() successimage,
+    required TResult Function(String erorr) erorrvimage,
+    required TResult Function() galer,
+    required TResult Function() galer2,
+    required TResult Function() galer3,
+    required TResult Function() pushEdit,
+  }) {
+    return successviewCat();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loadingview,
+    TResult? Function(List<ItemsData> response)? successview,
+    TResult? Function(String erorr)? erorrview,
+    TResult? Function()? loadingAdd,
+    TResult? Function()? successAdd,
+    TResult? Function(String erorr)? erorrAdd,
+    TResult? Function()? loadingedit,
+    TResult? Function()? successedit,
+    TResult? Function(String erorr)? erorredit,
+    TResult? Function()? loadingdelete,
+    TResult? Function()? successdelete,
+    TResult? Function(String erorr)? erorrdelete,
+    TResult? Function()? loadingviewCat,
+    TResult? Function()? successviewCat,
+    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingvimage,
+    TResult? Function()? successimage,
+    TResult? Function(String erorr)? erorrvimage,
+    TResult? Function()? galer,
+    TResult? Function()? galer2,
+    TResult? Function()? galer3,
+    TResult? Function()? pushEdit,
+  }) {
+    return successviewCat?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loadingview,
+    TResult Function(List<ItemsData> response)? successview,
+    TResult Function(String erorr)? erorrview,
+    TResult Function()? loadingAdd,
+    TResult Function()? successAdd,
+    TResult Function(String erorr)? erorrAdd,
+    TResult Function()? loadingedit,
+    TResult Function()? successedit,
+    TResult Function(String erorr)? erorredit,
+    TResult Function()? loadingdelete,
+    TResult Function()? successdelete,
+    TResult Function(String erorr)? erorrdelete,
+    TResult Function()? loadingviewCat,
+    TResult Function()? successviewCat,
+    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingvimage,
+    TResult Function()? successimage,
+    TResult Function(String erorr)? erorrvimage,
+    TResult Function()? galer,
+    TResult Function()? galer2,
+    TResult Function()? galer3,
+    TResult Function()? pushEdit,
+    required TResult orElse(),
+  }) {
+    if (successviewCat != null) {
+      return successviewCat();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(Loadingview value) loadingview,
+    required TResult Function(Successview value) successview,
+    required TResult Function(Erorrview value) erorrview,
+    required TResult Function(LoadingAdd value) loadingAdd,
+    required TResult Function(SuccessAdd value) successAdd,
+    required TResult Function(ErorrAdd value) erorrAdd,
+    required TResult Function(Loadingedit value) loadingedit,
+    required TResult Function(Successedit value) successedit,
+    required TResult Function(Erorredit value) erorredit,
+    required TResult Function(Loadingdelete value) loadingdelete,
+    required TResult Function(Successdelete value) successdelete,
+    required TResult Function(Erorrdelete value) erorrdelete,
+    required TResult Function(LoadingviewCat value) loadingviewCat,
+    required TResult Function(SuccessviewCat value) successviewCat,
+    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(Loadingimage value) loadingvimage,
+    required TResult Function(Successimage value) successimage,
+    required TResult Function(Erorrimage value) erorrvimage,
+    required TResult Function(Galer value) galer,
+    required TResult Function(Galer2 value) galer2,
+    required TResult Function(Galer3 value) galer3,
+    required TResult Function(PushEdit value) pushEdit,
+  }) {
+    return successviewCat(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(Loadingview value)? loadingview,
+    TResult? Function(Successview value)? successview,
+    TResult? Function(Erorrview value)? erorrview,
+    TResult? Function(LoadingAdd value)? loadingAdd,
+    TResult? Function(SuccessAdd value)? successAdd,
+    TResult? Function(ErorrAdd value)? erorrAdd,
+    TResult? Function(Loadingedit value)? loadingedit,
+    TResult? Function(Successedit value)? successedit,
+    TResult? Function(Erorredit value)? erorredit,
+    TResult? Function(Loadingdelete value)? loadingdelete,
+    TResult? Function(Successdelete value)? successdelete,
+    TResult? Function(Erorrdelete value)? erorrdelete,
+    TResult? Function(LoadingviewCat value)? loadingviewCat,
+    TResult? Function(SuccessviewCat value)? successviewCat,
+    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(Loadingimage value)? loadingvimage,
+    TResult? Function(Successimage value)? successimage,
+    TResult? Function(Erorrimage value)? erorrvimage,
+    TResult? Function(Galer value)? galer,
+    TResult? Function(Galer2 value)? galer2,
+    TResult? Function(Galer3 value)? galer3,
+    TResult? Function(PushEdit value)? pushEdit,
+  }) {
+    return successviewCat?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(Loadingview value)? loadingview,
+    TResult Function(Successview value)? successview,
+    TResult Function(Erorrview value)? erorrview,
+    TResult Function(LoadingAdd value)? loadingAdd,
+    TResult Function(SuccessAdd value)? successAdd,
+    TResult Function(ErorrAdd value)? erorrAdd,
+    TResult Function(Loadingedit value)? loadingedit,
+    TResult Function(Successedit value)? successedit,
+    TResult Function(Erorredit value)? erorredit,
+    TResult Function(Loadingdelete value)? loadingdelete,
+    TResult Function(Successdelete value)? successdelete,
+    TResult Function(Erorrdelete value)? erorrdelete,
+    TResult Function(LoadingviewCat value)? loadingviewCat,
+    TResult Function(SuccessviewCat value)? successviewCat,
+    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(Loadingimage value)? loadingvimage,
+    TResult Function(Successimage value)? successimage,
+    TResult Function(Erorrimage value)? erorrvimage,
+    TResult Function(Galer value)? galer,
+    TResult Function(Galer2 value)? galer2,
+    TResult Function(Galer3 value)? galer3,
+    TResult Function(PushEdit value)? pushEdit,
+    required TResult orElse(),
+  }) {
+    if (successviewCat != null) {
+      return successviewCat(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class SuccessviewCat implements DashboardState {
+  const factory SuccessviewCat() = _$SuccessviewCatImpl;
+}
+
+/// @nodoc
+abstract class _$$ErorrviewCatImplCopyWith<$Res> {
+  factory _$$ErorrviewCatImplCopyWith(
+          _$ErorrviewCatImpl value, $Res Function(_$ErorrviewCatImpl) then) =
+      __$$ErorrviewCatImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({String erorr});
+}
+
+/// @nodoc
+class __$$ErorrviewCatImplCopyWithImpl<$Res>
+    extends _$DashboardStateCopyWithImpl<$Res, _$ErorrviewCatImpl>
+    implements _$$ErorrviewCatImplCopyWith<$Res> {
+  __$$ErorrviewCatImplCopyWithImpl(
+      _$ErorrviewCatImpl _value, $Res Function(_$ErorrviewCatImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? erorr = null,
+  }) {
+    return _then(_$ErorrviewCatImpl(
+      erorr: null == erorr
+          ? _value.erorr
+          : erorr // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$ErorrviewCatImpl implements ErorrviewCat {
+  const _$ErorrviewCatImpl({required this.erorr});
+
+  @override
+  final String erorr;
+
+  @override
+  String toString() {
+    return 'DashboardState.erorrviewCat(erorr: $erorr)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$ErorrviewCatImpl &&
+            (identical(other.erorr, erorr) || other.erorr == erorr));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, erorr);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$ErorrviewCatImplCopyWith<_$ErorrviewCatImpl> get copyWith =>
+      __$$ErorrviewCatImplCopyWithImpl<_$ErorrviewCatImpl>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loadingview,
+    required TResult Function(List<ItemsData> response) successview,
+    required TResult Function(String erorr) erorrview,
+    required TResult Function() loadingAdd,
+    required TResult Function() successAdd,
+    required TResult Function(String erorr) erorrAdd,
+    required TResult Function() loadingedit,
+    required TResult Function() successedit,
+    required TResult Function(String erorr) erorredit,
+    required TResult Function() loadingdelete,
+    required TResult Function() successdelete,
+    required TResult Function(String erorr) erorrdelete,
+    required TResult Function() loadingviewCat,
+    required TResult Function() successviewCat,
+    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingvimage,
+    required TResult Function() successimage,
+    required TResult Function(String erorr) erorrvimage,
+    required TResult Function() galer,
+    required TResult Function() galer2,
+    required TResult Function() galer3,
+    required TResult Function() pushEdit,
+  }) {
+    return erorrviewCat(erorr);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loadingview,
+    TResult? Function(List<ItemsData> response)? successview,
+    TResult? Function(String erorr)? erorrview,
+    TResult? Function()? loadingAdd,
+    TResult? Function()? successAdd,
+    TResult? Function(String erorr)? erorrAdd,
+    TResult? Function()? loadingedit,
+    TResult? Function()? successedit,
+    TResult? Function(String erorr)? erorredit,
+    TResult? Function()? loadingdelete,
+    TResult? Function()? successdelete,
+    TResult? Function(String erorr)? erorrdelete,
+    TResult? Function()? loadingviewCat,
+    TResult? Function()? successviewCat,
+    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingvimage,
+    TResult? Function()? successimage,
+    TResult? Function(String erorr)? erorrvimage,
+    TResult? Function()? galer,
+    TResult? Function()? galer2,
+    TResult? Function()? galer3,
+    TResult? Function()? pushEdit,
+  }) {
+    return erorrviewCat?.call(erorr);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loadingview,
+    TResult Function(List<ItemsData> response)? successview,
+    TResult Function(String erorr)? erorrview,
+    TResult Function()? loadingAdd,
+    TResult Function()? successAdd,
+    TResult Function(String erorr)? erorrAdd,
+    TResult Function()? loadingedit,
+    TResult Function()? successedit,
+    TResult Function(String erorr)? erorredit,
+    TResult Function()? loadingdelete,
+    TResult Function()? successdelete,
+    TResult Function(String erorr)? erorrdelete,
+    TResult Function()? loadingviewCat,
+    TResult Function()? successviewCat,
+    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingvimage,
+    TResult Function()? successimage,
+    TResult Function(String erorr)? erorrvimage,
+    TResult Function()? galer,
+    TResult Function()? galer2,
+    TResult Function()? galer3,
+    TResult Function()? pushEdit,
+    required TResult orElse(),
+  }) {
+    if (erorrviewCat != null) {
+      return erorrviewCat(erorr);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(Loadingview value) loadingview,
+    required TResult Function(Successview value) successview,
+    required TResult Function(Erorrview value) erorrview,
+    required TResult Function(LoadingAdd value) loadingAdd,
+    required TResult Function(SuccessAdd value) successAdd,
+    required TResult Function(ErorrAdd value) erorrAdd,
+    required TResult Function(Loadingedit value) loadingedit,
+    required TResult Function(Successedit value) successedit,
+    required TResult Function(Erorredit value) erorredit,
+    required TResult Function(Loadingdelete value) loadingdelete,
+    required TResult Function(Successdelete value) successdelete,
+    required TResult Function(Erorrdelete value) erorrdelete,
+    required TResult Function(LoadingviewCat value) loadingviewCat,
+    required TResult Function(SuccessviewCat value) successviewCat,
+    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(Loadingimage value) loadingvimage,
+    required TResult Function(Successimage value) successimage,
+    required TResult Function(Erorrimage value) erorrvimage,
+    required TResult Function(Galer value) galer,
+    required TResult Function(Galer2 value) galer2,
+    required TResult Function(Galer3 value) galer3,
+    required TResult Function(PushEdit value) pushEdit,
+  }) {
+    return erorrviewCat(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(Loadingview value)? loadingview,
+    TResult? Function(Successview value)? successview,
+    TResult? Function(Erorrview value)? erorrview,
+    TResult? Function(LoadingAdd value)? loadingAdd,
+    TResult? Function(SuccessAdd value)? successAdd,
+    TResult? Function(ErorrAdd value)? erorrAdd,
+    TResult? Function(Loadingedit value)? loadingedit,
+    TResult? Function(Successedit value)? successedit,
+    TResult? Function(Erorredit value)? erorredit,
+    TResult? Function(Loadingdelete value)? loadingdelete,
+    TResult? Function(Successdelete value)? successdelete,
+    TResult? Function(Erorrdelete value)? erorrdelete,
+    TResult? Function(LoadingviewCat value)? loadingviewCat,
+    TResult? Function(SuccessviewCat value)? successviewCat,
+    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(Loadingimage value)? loadingvimage,
+    TResult? Function(Successimage value)? successimage,
+    TResult? Function(Erorrimage value)? erorrvimage,
+    TResult? Function(Galer value)? galer,
+    TResult? Function(Galer2 value)? galer2,
+    TResult? Function(Galer3 value)? galer3,
+    TResult? Function(PushEdit value)? pushEdit,
+  }) {
+    return erorrviewCat?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(Loadingview value)? loadingview,
+    TResult Function(Successview value)? successview,
+    TResult Function(Erorrview value)? erorrview,
+    TResult Function(LoadingAdd value)? loadingAdd,
+    TResult Function(SuccessAdd value)? successAdd,
+    TResult Function(ErorrAdd value)? erorrAdd,
+    TResult Function(Loadingedit value)? loadingedit,
+    TResult Function(Successedit value)? successedit,
+    TResult Function(Erorredit value)? erorredit,
+    TResult Function(Loadingdelete value)? loadingdelete,
+    TResult Function(Successdelete value)? successdelete,
+    TResult Function(Erorrdelete value)? erorrdelete,
+    TResult Function(LoadingviewCat value)? loadingviewCat,
+    TResult Function(SuccessviewCat value)? successviewCat,
+    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(Loadingimage value)? loadingvimage,
+    TResult Function(Successimage value)? successimage,
+    TResult Function(Erorrimage value)? erorrvimage,
+    TResult Function(Galer value)? galer,
+    TResult Function(Galer2 value)? galer2,
+    TResult Function(Galer3 value)? galer3,
+    TResult Function(PushEdit value)? pushEdit,
+    required TResult orElse(),
+  }) {
+    if (erorrviewCat != null) {
+      return erorrviewCat(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class ErorrviewCat implements DashboardState {
+  const factory ErorrviewCat({required final String erorr}) =
+      _$ErorrviewCatImpl;
+
+  String get erorr;
+  @JsonKey(ignore: true)
+  _$$ErorrviewCatImplCopyWith<_$ErorrviewCatImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$LoadingimageImplCopyWith<$Res> {
+  factory _$$LoadingimageImplCopyWith(
+          _$LoadingimageImpl value, $Res Function(_$LoadingimageImpl) then) =
+      __$$LoadingimageImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$LoadingimageImplCopyWithImpl<$Res>
+    extends _$DashboardStateCopyWithImpl<$Res, _$LoadingimageImpl>
+    implements _$$LoadingimageImplCopyWith<$Res> {
+  __$$LoadingimageImplCopyWithImpl(
+      _$LoadingimageImpl _value, $Res Function(_$LoadingimageImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$LoadingimageImpl implements Loadingimage {
+  const _$LoadingimageImpl();
+
+  @override
+  String toString() {
+    return 'DashboardState.loadingvimage()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$LoadingimageImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loadingview,
+    required TResult Function(List<ItemsData> response) successview,
+    required TResult Function(String erorr) erorrview,
+    required TResult Function() loadingAdd,
+    required TResult Function() successAdd,
+    required TResult Function(String erorr) erorrAdd,
+    required TResult Function() loadingedit,
+    required TResult Function() successedit,
+    required TResult Function(String erorr) erorredit,
+    required TResult Function() loadingdelete,
+    required TResult Function() successdelete,
+    required TResult Function(String erorr) erorrdelete,
+    required TResult Function() loadingviewCat,
+    required TResult Function() successviewCat,
+    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingvimage,
+    required TResult Function() successimage,
+    required TResult Function(String erorr) erorrvimage,
+    required TResult Function() galer,
+    required TResult Function() galer2,
+    required TResult Function() galer3,
+    required TResult Function() pushEdit,
+  }) {
+    return loadingvimage();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loadingview,
+    TResult? Function(List<ItemsData> response)? successview,
+    TResult? Function(String erorr)? erorrview,
+    TResult? Function()? loadingAdd,
+    TResult? Function()? successAdd,
+    TResult? Function(String erorr)? erorrAdd,
+    TResult? Function()? loadingedit,
+    TResult? Function()? successedit,
+    TResult? Function(String erorr)? erorredit,
+    TResult? Function()? loadingdelete,
+    TResult? Function()? successdelete,
+    TResult? Function(String erorr)? erorrdelete,
+    TResult? Function()? loadingviewCat,
+    TResult? Function()? successviewCat,
+    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingvimage,
+    TResult? Function()? successimage,
+    TResult? Function(String erorr)? erorrvimage,
+    TResult? Function()? galer,
+    TResult? Function()? galer2,
+    TResult? Function()? galer3,
+    TResult? Function()? pushEdit,
+  }) {
+    return loadingvimage?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loadingview,
+    TResult Function(List<ItemsData> response)? successview,
+    TResult Function(String erorr)? erorrview,
+    TResult Function()? loadingAdd,
+    TResult Function()? successAdd,
+    TResult Function(String erorr)? erorrAdd,
+    TResult Function()? loadingedit,
+    TResult Function()? successedit,
+    TResult Function(String erorr)? erorredit,
+    TResult Function()? loadingdelete,
+    TResult Function()? successdelete,
+    TResult Function(String erorr)? erorrdelete,
+    TResult Function()? loadingviewCat,
+    TResult Function()? successviewCat,
+    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingvimage,
+    TResult Function()? successimage,
+    TResult Function(String erorr)? erorrvimage,
+    TResult Function()? galer,
+    TResult Function()? galer2,
+    TResult Function()? galer3,
+    TResult Function()? pushEdit,
+    required TResult orElse(),
+  }) {
+    if (loadingvimage != null) {
+      return loadingvimage();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(Loadingview value) loadingview,
+    required TResult Function(Successview value) successview,
+    required TResult Function(Erorrview value) erorrview,
+    required TResult Function(LoadingAdd value) loadingAdd,
+    required TResult Function(SuccessAdd value) successAdd,
+    required TResult Function(ErorrAdd value) erorrAdd,
+    required TResult Function(Loadingedit value) loadingedit,
+    required TResult Function(Successedit value) successedit,
+    required TResult Function(Erorredit value) erorredit,
+    required TResult Function(Loadingdelete value) loadingdelete,
+    required TResult Function(Successdelete value) successdelete,
+    required TResult Function(Erorrdelete value) erorrdelete,
+    required TResult Function(LoadingviewCat value) loadingviewCat,
+    required TResult Function(SuccessviewCat value) successviewCat,
+    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(Loadingimage value) loadingvimage,
+    required TResult Function(Successimage value) successimage,
+    required TResult Function(Erorrimage value) erorrvimage,
+    required TResult Function(Galer value) galer,
+    required TResult Function(Galer2 value) galer2,
+    required TResult Function(Galer3 value) galer3,
+    required TResult Function(PushEdit value) pushEdit,
+  }) {
+    return loadingvimage(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(Loadingview value)? loadingview,
+    TResult? Function(Successview value)? successview,
+    TResult? Function(Erorrview value)? erorrview,
+    TResult? Function(LoadingAdd value)? loadingAdd,
+    TResult? Function(SuccessAdd value)? successAdd,
+    TResult? Function(ErorrAdd value)? erorrAdd,
+    TResult? Function(Loadingedit value)? loadingedit,
+    TResult? Function(Successedit value)? successedit,
+    TResult? Function(Erorredit value)? erorredit,
+    TResult? Function(Loadingdelete value)? loadingdelete,
+    TResult? Function(Successdelete value)? successdelete,
+    TResult? Function(Erorrdelete value)? erorrdelete,
+    TResult? Function(LoadingviewCat value)? loadingviewCat,
+    TResult? Function(SuccessviewCat value)? successviewCat,
+    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(Loadingimage value)? loadingvimage,
+    TResult? Function(Successimage value)? successimage,
+    TResult? Function(Erorrimage value)? erorrvimage,
+    TResult? Function(Galer value)? galer,
+    TResult? Function(Galer2 value)? galer2,
+    TResult? Function(Galer3 value)? galer3,
+    TResult? Function(PushEdit value)? pushEdit,
+  }) {
+    return loadingvimage?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(Loadingview value)? loadingview,
+    TResult Function(Successview value)? successview,
+    TResult Function(Erorrview value)? erorrview,
+    TResult Function(LoadingAdd value)? loadingAdd,
+    TResult Function(SuccessAdd value)? successAdd,
+    TResult Function(ErorrAdd value)? erorrAdd,
+    TResult Function(Loadingedit value)? loadingedit,
+    TResult Function(Successedit value)? successedit,
+    TResult Function(Erorredit value)? erorredit,
+    TResult Function(Loadingdelete value)? loadingdelete,
+    TResult Function(Successdelete value)? successdelete,
+    TResult Function(Erorrdelete value)? erorrdelete,
+    TResult Function(LoadingviewCat value)? loadingviewCat,
+    TResult Function(SuccessviewCat value)? successviewCat,
+    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(Loadingimage value)? loadingvimage,
+    TResult Function(Successimage value)? successimage,
+    TResult Function(Erorrimage value)? erorrvimage,
+    TResult Function(Galer value)? galer,
+    TResult Function(Galer2 value)? galer2,
+    TResult Function(Galer3 value)? galer3,
+    TResult Function(PushEdit value)? pushEdit,
+    required TResult orElse(),
+  }) {
+    if (loadingvimage != null) {
+      return loadingvimage(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class Loadingimage implements DashboardState {
+  const factory Loadingimage() = _$LoadingimageImpl;
+}
+
+/// @nodoc
+abstract class _$$SuccessimageImplCopyWith<$Res> {
+  factory _$$SuccessimageImplCopyWith(
+          _$SuccessimageImpl value, $Res Function(_$SuccessimageImpl) then) =
+      __$$SuccessimageImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$SuccessimageImplCopyWithImpl<$Res>
+    extends _$DashboardStateCopyWithImpl<$Res, _$SuccessimageImpl>
+    implements _$$SuccessimageImplCopyWith<$Res> {
+  __$$SuccessimageImplCopyWithImpl(
+      _$SuccessimageImpl _value, $Res Function(_$SuccessimageImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$SuccessimageImpl implements Successimage {
+  const _$SuccessimageImpl();
+
+  @override
+  String toString() {
+    return 'DashboardState.successimage()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$SuccessimageImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loadingview,
+    required TResult Function(List<ItemsData> response) successview,
+    required TResult Function(String erorr) erorrview,
+    required TResult Function() loadingAdd,
+    required TResult Function() successAdd,
+    required TResult Function(String erorr) erorrAdd,
+    required TResult Function() loadingedit,
+    required TResult Function() successedit,
+    required TResult Function(String erorr) erorredit,
+    required TResult Function() loadingdelete,
+    required TResult Function() successdelete,
+    required TResult Function(String erorr) erorrdelete,
+    required TResult Function() loadingviewCat,
+    required TResult Function() successviewCat,
+    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingvimage,
+    required TResult Function() successimage,
+    required TResult Function(String erorr) erorrvimage,
+    required TResult Function() galer,
+    required TResult Function() galer2,
+    required TResult Function() galer3,
+    required TResult Function() pushEdit,
+  }) {
+    return successimage();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loadingview,
+    TResult? Function(List<ItemsData> response)? successview,
+    TResult? Function(String erorr)? erorrview,
+    TResult? Function()? loadingAdd,
+    TResult? Function()? successAdd,
+    TResult? Function(String erorr)? erorrAdd,
+    TResult? Function()? loadingedit,
+    TResult? Function()? successedit,
+    TResult? Function(String erorr)? erorredit,
+    TResult? Function()? loadingdelete,
+    TResult? Function()? successdelete,
+    TResult? Function(String erorr)? erorrdelete,
+    TResult? Function()? loadingviewCat,
+    TResult? Function()? successviewCat,
+    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingvimage,
+    TResult? Function()? successimage,
+    TResult? Function(String erorr)? erorrvimage,
+    TResult? Function()? galer,
+    TResult? Function()? galer2,
+    TResult? Function()? galer3,
+    TResult? Function()? pushEdit,
+  }) {
+    return successimage?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loadingview,
+    TResult Function(List<ItemsData> response)? successview,
+    TResult Function(String erorr)? erorrview,
+    TResult Function()? loadingAdd,
+    TResult Function()? successAdd,
+    TResult Function(String erorr)? erorrAdd,
+    TResult Function()? loadingedit,
+    TResult Function()? successedit,
+    TResult Function(String erorr)? erorredit,
+    TResult Function()? loadingdelete,
+    TResult Function()? successdelete,
+    TResult Function(String erorr)? erorrdelete,
+    TResult Function()? loadingviewCat,
+    TResult Function()? successviewCat,
+    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingvimage,
+    TResult Function()? successimage,
+    TResult Function(String erorr)? erorrvimage,
+    TResult Function()? galer,
+    TResult Function()? galer2,
+    TResult Function()? galer3,
+    TResult Function()? pushEdit,
+    required TResult orElse(),
+  }) {
+    if (successimage != null) {
+      return successimage();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(Loadingview value) loadingview,
+    required TResult Function(Successview value) successview,
+    required TResult Function(Erorrview value) erorrview,
+    required TResult Function(LoadingAdd value) loadingAdd,
+    required TResult Function(SuccessAdd value) successAdd,
+    required TResult Function(ErorrAdd value) erorrAdd,
+    required TResult Function(Loadingedit value) loadingedit,
+    required TResult Function(Successedit value) successedit,
+    required TResult Function(Erorredit value) erorredit,
+    required TResult Function(Loadingdelete value) loadingdelete,
+    required TResult Function(Successdelete value) successdelete,
+    required TResult Function(Erorrdelete value) erorrdelete,
+    required TResult Function(LoadingviewCat value) loadingviewCat,
+    required TResult Function(SuccessviewCat value) successviewCat,
+    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(Loadingimage value) loadingvimage,
+    required TResult Function(Successimage value) successimage,
+    required TResult Function(Erorrimage value) erorrvimage,
+    required TResult Function(Galer value) galer,
+    required TResult Function(Galer2 value) galer2,
+    required TResult Function(Galer3 value) galer3,
+    required TResult Function(PushEdit value) pushEdit,
+  }) {
+    return successimage(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(Loadingview value)? loadingview,
+    TResult? Function(Successview value)? successview,
+    TResult? Function(Erorrview value)? erorrview,
+    TResult? Function(LoadingAdd value)? loadingAdd,
+    TResult? Function(SuccessAdd value)? successAdd,
+    TResult? Function(ErorrAdd value)? erorrAdd,
+    TResult? Function(Loadingedit value)? loadingedit,
+    TResult? Function(Successedit value)? successedit,
+    TResult? Function(Erorredit value)? erorredit,
+    TResult? Function(Loadingdelete value)? loadingdelete,
+    TResult? Function(Successdelete value)? successdelete,
+    TResult? Function(Erorrdelete value)? erorrdelete,
+    TResult? Function(LoadingviewCat value)? loadingviewCat,
+    TResult? Function(SuccessviewCat value)? successviewCat,
+    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(Loadingimage value)? loadingvimage,
+    TResult? Function(Successimage value)? successimage,
+    TResult? Function(Erorrimage value)? erorrvimage,
+    TResult? Function(Galer value)? galer,
+    TResult? Function(Galer2 value)? galer2,
+    TResult? Function(Galer3 value)? galer3,
+    TResult? Function(PushEdit value)? pushEdit,
+  }) {
+    return successimage?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(Loadingview value)? loadingview,
+    TResult Function(Successview value)? successview,
+    TResult Function(Erorrview value)? erorrview,
+    TResult Function(LoadingAdd value)? loadingAdd,
+    TResult Function(SuccessAdd value)? successAdd,
+    TResult Function(ErorrAdd value)? erorrAdd,
+    TResult Function(Loadingedit value)? loadingedit,
+    TResult Function(Successedit value)? successedit,
+    TResult Function(Erorredit value)? erorredit,
+    TResult Function(Loadingdelete value)? loadingdelete,
+    TResult Function(Successdelete value)? successdelete,
+    TResult Function(Erorrdelete value)? erorrdelete,
+    TResult Function(LoadingviewCat value)? loadingviewCat,
+    TResult Function(SuccessviewCat value)? successviewCat,
+    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(Loadingimage value)? loadingvimage,
+    TResult Function(Successimage value)? successimage,
+    TResult Function(Erorrimage value)? erorrvimage,
+    TResult Function(Galer value)? galer,
+    TResult Function(Galer2 value)? galer2,
+    TResult Function(Galer3 value)? galer3,
+    TResult Function(PushEdit value)? pushEdit,
+    required TResult orElse(),
+  }) {
+    if (successimage != null) {
+      return successimage(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class Successimage implements DashboardState {
+  const factory Successimage() = _$SuccessimageImpl;
+}
+
+/// @nodoc
+abstract class _$$ErorrimageImplCopyWith<$Res> {
+  factory _$$ErorrimageImplCopyWith(
+          _$ErorrimageImpl value, $Res Function(_$ErorrimageImpl) then) =
+      __$$ErorrimageImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({String erorr});
+}
+
+/// @nodoc
+class __$$ErorrimageImplCopyWithImpl<$Res>
+    extends _$DashboardStateCopyWithImpl<$Res, _$ErorrimageImpl>
+    implements _$$ErorrimageImplCopyWith<$Res> {
+  __$$ErorrimageImplCopyWithImpl(
+      _$ErorrimageImpl _value, $Res Function(_$ErorrimageImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? erorr = null,
+  }) {
+    return _then(_$ErorrimageImpl(
+      erorr: null == erorr
+          ? _value.erorr
+          : erorr // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$ErorrimageImpl implements Erorrimage {
+  const _$ErorrimageImpl({required this.erorr});
+
+  @override
+  final String erorr;
+
+  @override
+  String toString() {
+    return 'DashboardState.erorrvimage(erorr: $erorr)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$ErorrimageImpl &&
+            (identical(other.erorr, erorr) || other.erorr == erorr));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, erorr);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$ErorrimageImplCopyWith<_$ErorrimageImpl> get copyWith =>
+      __$$ErorrimageImplCopyWithImpl<_$ErorrimageImpl>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loadingview,
+    required TResult Function(List<ItemsData> response) successview,
+    required TResult Function(String erorr) erorrview,
+    required TResult Function() loadingAdd,
+    required TResult Function() successAdd,
+    required TResult Function(String erorr) erorrAdd,
+    required TResult Function() loadingedit,
+    required TResult Function() successedit,
+    required TResult Function(String erorr) erorredit,
+    required TResult Function() loadingdelete,
+    required TResult Function() successdelete,
+    required TResult Function(String erorr) erorrdelete,
+    required TResult Function() loadingviewCat,
+    required TResult Function() successviewCat,
+    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingvimage,
+    required TResult Function() successimage,
+    required TResult Function(String erorr) erorrvimage,
+    required TResult Function() galer,
+    required TResult Function() galer2,
+    required TResult Function() galer3,
+    required TResult Function() pushEdit,
+  }) {
+    return erorrvimage(erorr);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loadingview,
+    TResult? Function(List<ItemsData> response)? successview,
+    TResult? Function(String erorr)? erorrview,
+    TResult? Function()? loadingAdd,
+    TResult? Function()? successAdd,
+    TResult? Function(String erorr)? erorrAdd,
+    TResult? Function()? loadingedit,
+    TResult? Function()? successedit,
+    TResult? Function(String erorr)? erorredit,
+    TResult? Function()? loadingdelete,
+    TResult? Function()? successdelete,
+    TResult? Function(String erorr)? erorrdelete,
+    TResult? Function()? loadingviewCat,
+    TResult? Function()? successviewCat,
+    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingvimage,
+    TResult? Function()? successimage,
+    TResult? Function(String erorr)? erorrvimage,
+    TResult? Function()? galer,
+    TResult? Function()? galer2,
+    TResult? Function()? galer3,
+    TResult? Function()? pushEdit,
+  }) {
+    return erorrvimage?.call(erorr);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loadingview,
+    TResult Function(List<ItemsData> response)? successview,
+    TResult Function(String erorr)? erorrview,
+    TResult Function()? loadingAdd,
+    TResult Function()? successAdd,
+    TResult Function(String erorr)? erorrAdd,
+    TResult Function()? loadingedit,
+    TResult Function()? successedit,
+    TResult Function(String erorr)? erorredit,
+    TResult Function()? loadingdelete,
+    TResult Function()? successdelete,
+    TResult Function(String erorr)? erorrdelete,
+    TResult Function()? loadingviewCat,
+    TResult Function()? successviewCat,
+    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingvimage,
+    TResult Function()? successimage,
+    TResult Function(String erorr)? erorrvimage,
+    TResult Function()? galer,
+    TResult Function()? galer2,
+    TResult Function()? galer3,
+    TResult Function()? pushEdit,
+    required TResult orElse(),
+  }) {
+    if (erorrvimage != null) {
+      return erorrvimage(erorr);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(Loadingview value) loadingview,
+    required TResult Function(Successview value) successview,
+    required TResult Function(Erorrview value) erorrview,
+    required TResult Function(LoadingAdd value) loadingAdd,
+    required TResult Function(SuccessAdd value) successAdd,
+    required TResult Function(ErorrAdd value) erorrAdd,
+    required TResult Function(Loadingedit value) loadingedit,
+    required TResult Function(Successedit value) successedit,
+    required TResult Function(Erorredit value) erorredit,
+    required TResult Function(Loadingdelete value) loadingdelete,
+    required TResult Function(Successdelete value) successdelete,
+    required TResult Function(Erorrdelete value) erorrdelete,
+    required TResult Function(LoadingviewCat value) loadingviewCat,
+    required TResult Function(SuccessviewCat value) successviewCat,
+    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(Loadingimage value) loadingvimage,
+    required TResult Function(Successimage value) successimage,
+    required TResult Function(Erorrimage value) erorrvimage,
+    required TResult Function(Galer value) galer,
+    required TResult Function(Galer2 value) galer2,
+    required TResult Function(Galer3 value) galer3,
+    required TResult Function(PushEdit value) pushEdit,
+  }) {
+    return erorrvimage(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(Loadingview value)? loadingview,
+    TResult? Function(Successview value)? successview,
+    TResult? Function(Erorrview value)? erorrview,
+    TResult? Function(LoadingAdd value)? loadingAdd,
+    TResult? Function(SuccessAdd value)? successAdd,
+    TResult? Function(ErorrAdd value)? erorrAdd,
+    TResult? Function(Loadingedit value)? loadingedit,
+    TResult? Function(Successedit value)? successedit,
+    TResult? Function(Erorredit value)? erorredit,
+    TResult? Function(Loadingdelete value)? loadingdelete,
+    TResult? Function(Successdelete value)? successdelete,
+    TResult? Function(Erorrdelete value)? erorrdelete,
+    TResult? Function(LoadingviewCat value)? loadingviewCat,
+    TResult? Function(SuccessviewCat value)? successviewCat,
+    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(Loadingimage value)? loadingvimage,
+    TResult? Function(Successimage value)? successimage,
+    TResult? Function(Erorrimage value)? erorrvimage,
+    TResult? Function(Galer value)? galer,
+    TResult? Function(Galer2 value)? galer2,
+    TResult? Function(Galer3 value)? galer3,
+    TResult? Function(PushEdit value)? pushEdit,
+  }) {
+    return erorrvimage?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(Loadingview value)? loadingview,
+    TResult Function(Successview value)? successview,
+    TResult Function(Erorrview value)? erorrview,
+    TResult Function(LoadingAdd value)? loadingAdd,
+    TResult Function(SuccessAdd value)? successAdd,
+    TResult Function(ErorrAdd value)? erorrAdd,
+    TResult Function(Loadingedit value)? loadingedit,
+    TResult Function(Successedit value)? successedit,
+    TResult Function(Erorredit value)? erorredit,
+    TResult Function(Loadingdelete value)? loadingdelete,
+    TResult Function(Successdelete value)? successdelete,
+    TResult Function(Erorrdelete value)? erorrdelete,
+    TResult Function(LoadingviewCat value)? loadingviewCat,
+    TResult Function(SuccessviewCat value)? successviewCat,
+    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(Loadingimage value)? loadingvimage,
+    TResult Function(Successimage value)? successimage,
+    TResult Function(Erorrimage value)? erorrvimage,
+    TResult Function(Galer value)? galer,
+    TResult Function(Galer2 value)? galer2,
+    TResult Function(Galer3 value)? galer3,
+    TResult Function(PushEdit value)? pushEdit,
+    required TResult orElse(),
+  }) {
+    if (erorrvimage != null) {
+      return erorrvimage(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class Erorrimage implements DashboardState {
+  const factory Erorrimage({required final String erorr}) = _$ErorrimageImpl;
+
+  String get erorr;
+  @JsonKey(ignore: true)
+  _$$ErorrimageImplCopyWith<_$ErorrimageImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -2705,8 +4808,16 @@ class _$GalerImpl implements Galer {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
+    required TResult Function() loadingviewCat,
+    required TResult Function() successviewCat,
+    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingvimage,
+    required TResult Function() successimage,
+    required TResult Function(String erorr) erorrvimage,
     required TResult Function() galer,
-    required TResult Function() PushEdit,
+    required TResult Function() galer2,
+    required TResult Function() galer3,
+    required TResult Function() pushEdit,
   }) {
     return galer();
   }
@@ -2727,8 +4838,16 @@ class _$GalerImpl implements Galer {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
+    TResult? Function()? loadingviewCat,
+    TResult? Function()? successviewCat,
+    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingvimage,
+    TResult? Function()? successimage,
+    TResult? Function(String erorr)? erorrvimage,
     TResult? Function()? galer,
-    TResult? Function()? PushEdit,
+    TResult? Function()? galer2,
+    TResult? Function()? galer3,
+    TResult? Function()? pushEdit,
   }) {
     return galer?.call();
   }
@@ -2749,8 +4868,16 @@ class _$GalerImpl implements Galer {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
+    TResult Function()? loadingviewCat,
+    TResult Function()? successviewCat,
+    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingvimage,
+    TResult Function()? successimage,
+    TResult Function(String erorr)? erorrvimage,
     TResult Function()? galer,
-    TResult Function()? PushEdit,
+    TResult Function()? galer2,
+    TResult Function()? galer3,
+    TResult Function()? pushEdit,
     required TResult orElse(),
   }) {
     if (galer != null) {
@@ -2775,8 +4902,16 @@ class _$GalerImpl implements Galer {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
+    required TResult Function(LoadingviewCat value) loadingviewCat,
+    required TResult Function(SuccessviewCat value) successviewCat,
+    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(Loadingimage value) loadingvimage,
+    required TResult Function(Successimage value) successimage,
+    required TResult Function(Erorrimage value) erorrvimage,
     required TResult Function(Galer value) galer,
-    required TResult Function(PushEdit value) PushEdit,
+    required TResult Function(Galer2 value) galer2,
+    required TResult Function(Galer3 value) galer3,
+    required TResult Function(PushEdit value) pushEdit,
   }) {
     return galer(this);
   }
@@ -2797,8 +4932,16 @@ class _$GalerImpl implements Galer {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
+    TResult? Function(LoadingviewCat value)? loadingviewCat,
+    TResult? Function(SuccessviewCat value)? successviewCat,
+    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(Loadingimage value)? loadingvimage,
+    TResult? Function(Successimage value)? successimage,
+    TResult? Function(Erorrimage value)? erorrvimage,
     TResult? Function(Galer value)? galer,
-    TResult? Function(PushEdit value)? PushEdit,
+    TResult? Function(Galer2 value)? galer2,
+    TResult? Function(Galer3 value)? galer3,
+    TResult? Function(PushEdit value)? pushEdit,
   }) {
     return galer?.call(this);
   }
@@ -2819,8 +4962,16 @@ class _$GalerImpl implements Galer {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
+    TResult Function(LoadingviewCat value)? loadingviewCat,
+    TResult Function(SuccessviewCat value)? successviewCat,
+    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(Loadingimage value)? loadingvimage,
+    TResult Function(Successimage value)? successimage,
+    TResult Function(Erorrimage value)? erorrvimage,
     TResult Function(Galer value)? galer,
-    TResult Function(PushEdit value)? PushEdit,
+    TResult Function(Galer2 value)? galer2,
+    TResult Function(Galer3 value)? galer3,
+    TResult Function(PushEdit value)? pushEdit,
     required TResult orElse(),
   }) {
     if (galer != null) {
@@ -2832,6 +4983,462 @@ class _$GalerImpl implements Galer {
 
 abstract class Galer implements DashboardState {
   const factory Galer() = _$GalerImpl;
+}
+
+/// @nodoc
+abstract class _$$Galer2ImplCopyWith<$Res> {
+  factory _$$Galer2ImplCopyWith(
+          _$Galer2Impl value, $Res Function(_$Galer2Impl) then) =
+      __$$Galer2ImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$Galer2ImplCopyWithImpl<$Res>
+    extends _$DashboardStateCopyWithImpl<$Res, _$Galer2Impl>
+    implements _$$Galer2ImplCopyWith<$Res> {
+  __$$Galer2ImplCopyWithImpl(
+      _$Galer2Impl _value, $Res Function(_$Galer2Impl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$Galer2Impl implements Galer2 {
+  const _$Galer2Impl();
+
+  @override
+  String toString() {
+    return 'DashboardState.galer2()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Galer2Impl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loadingview,
+    required TResult Function(List<ItemsData> response) successview,
+    required TResult Function(String erorr) erorrview,
+    required TResult Function() loadingAdd,
+    required TResult Function() successAdd,
+    required TResult Function(String erorr) erorrAdd,
+    required TResult Function() loadingedit,
+    required TResult Function() successedit,
+    required TResult Function(String erorr) erorredit,
+    required TResult Function() loadingdelete,
+    required TResult Function() successdelete,
+    required TResult Function(String erorr) erorrdelete,
+    required TResult Function() loadingviewCat,
+    required TResult Function() successviewCat,
+    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingvimage,
+    required TResult Function() successimage,
+    required TResult Function(String erorr) erorrvimage,
+    required TResult Function() galer,
+    required TResult Function() galer2,
+    required TResult Function() galer3,
+    required TResult Function() pushEdit,
+  }) {
+    return galer2();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loadingview,
+    TResult? Function(List<ItemsData> response)? successview,
+    TResult? Function(String erorr)? erorrview,
+    TResult? Function()? loadingAdd,
+    TResult? Function()? successAdd,
+    TResult? Function(String erorr)? erorrAdd,
+    TResult? Function()? loadingedit,
+    TResult? Function()? successedit,
+    TResult? Function(String erorr)? erorredit,
+    TResult? Function()? loadingdelete,
+    TResult? Function()? successdelete,
+    TResult? Function(String erorr)? erorrdelete,
+    TResult? Function()? loadingviewCat,
+    TResult? Function()? successviewCat,
+    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingvimage,
+    TResult? Function()? successimage,
+    TResult? Function(String erorr)? erorrvimage,
+    TResult? Function()? galer,
+    TResult? Function()? galer2,
+    TResult? Function()? galer3,
+    TResult? Function()? pushEdit,
+  }) {
+    return galer2?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loadingview,
+    TResult Function(List<ItemsData> response)? successview,
+    TResult Function(String erorr)? erorrview,
+    TResult Function()? loadingAdd,
+    TResult Function()? successAdd,
+    TResult Function(String erorr)? erorrAdd,
+    TResult Function()? loadingedit,
+    TResult Function()? successedit,
+    TResult Function(String erorr)? erorredit,
+    TResult Function()? loadingdelete,
+    TResult Function()? successdelete,
+    TResult Function(String erorr)? erorrdelete,
+    TResult Function()? loadingviewCat,
+    TResult Function()? successviewCat,
+    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingvimage,
+    TResult Function()? successimage,
+    TResult Function(String erorr)? erorrvimage,
+    TResult Function()? galer,
+    TResult Function()? galer2,
+    TResult Function()? galer3,
+    TResult Function()? pushEdit,
+    required TResult orElse(),
+  }) {
+    if (galer2 != null) {
+      return galer2();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(Loadingview value) loadingview,
+    required TResult Function(Successview value) successview,
+    required TResult Function(Erorrview value) erorrview,
+    required TResult Function(LoadingAdd value) loadingAdd,
+    required TResult Function(SuccessAdd value) successAdd,
+    required TResult Function(ErorrAdd value) erorrAdd,
+    required TResult Function(Loadingedit value) loadingedit,
+    required TResult Function(Successedit value) successedit,
+    required TResult Function(Erorredit value) erorredit,
+    required TResult Function(Loadingdelete value) loadingdelete,
+    required TResult Function(Successdelete value) successdelete,
+    required TResult Function(Erorrdelete value) erorrdelete,
+    required TResult Function(LoadingviewCat value) loadingviewCat,
+    required TResult Function(SuccessviewCat value) successviewCat,
+    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(Loadingimage value) loadingvimage,
+    required TResult Function(Successimage value) successimage,
+    required TResult Function(Erorrimage value) erorrvimage,
+    required TResult Function(Galer value) galer,
+    required TResult Function(Galer2 value) galer2,
+    required TResult Function(Galer3 value) galer3,
+    required TResult Function(PushEdit value) pushEdit,
+  }) {
+    return galer2(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(Loadingview value)? loadingview,
+    TResult? Function(Successview value)? successview,
+    TResult? Function(Erorrview value)? erorrview,
+    TResult? Function(LoadingAdd value)? loadingAdd,
+    TResult? Function(SuccessAdd value)? successAdd,
+    TResult? Function(ErorrAdd value)? erorrAdd,
+    TResult? Function(Loadingedit value)? loadingedit,
+    TResult? Function(Successedit value)? successedit,
+    TResult? Function(Erorredit value)? erorredit,
+    TResult? Function(Loadingdelete value)? loadingdelete,
+    TResult? Function(Successdelete value)? successdelete,
+    TResult? Function(Erorrdelete value)? erorrdelete,
+    TResult? Function(LoadingviewCat value)? loadingviewCat,
+    TResult? Function(SuccessviewCat value)? successviewCat,
+    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(Loadingimage value)? loadingvimage,
+    TResult? Function(Successimage value)? successimage,
+    TResult? Function(Erorrimage value)? erorrvimage,
+    TResult? Function(Galer value)? galer,
+    TResult? Function(Galer2 value)? galer2,
+    TResult? Function(Galer3 value)? galer3,
+    TResult? Function(PushEdit value)? pushEdit,
+  }) {
+    return galer2?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(Loadingview value)? loadingview,
+    TResult Function(Successview value)? successview,
+    TResult Function(Erorrview value)? erorrview,
+    TResult Function(LoadingAdd value)? loadingAdd,
+    TResult Function(SuccessAdd value)? successAdd,
+    TResult Function(ErorrAdd value)? erorrAdd,
+    TResult Function(Loadingedit value)? loadingedit,
+    TResult Function(Successedit value)? successedit,
+    TResult Function(Erorredit value)? erorredit,
+    TResult Function(Loadingdelete value)? loadingdelete,
+    TResult Function(Successdelete value)? successdelete,
+    TResult Function(Erorrdelete value)? erorrdelete,
+    TResult Function(LoadingviewCat value)? loadingviewCat,
+    TResult Function(SuccessviewCat value)? successviewCat,
+    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(Loadingimage value)? loadingvimage,
+    TResult Function(Successimage value)? successimage,
+    TResult Function(Erorrimage value)? erorrvimage,
+    TResult Function(Galer value)? galer,
+    TResult Function(Galer2 value)? galer2,
+    TResult Function(Galer3 value)? galer3,
+    TResult Function(PushEdit value)? pushEdit,
+    required TResult orElse(),
+  }) {
+    if (galer2 != null) {
+      return galer2(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class Galer2 implements DashboardState {
+  const factory Galer2() = _$Galer2Impl;
+}
+
+/// @nodoc
+abstract class _$$Galer3ImplCopyWith<$Res> {
+  factory _$$Galer3ImplCopyWith(
+          _$Galer3Impl value, $Res Function(_$Galer3Impl) then) =
+      __$$Galer3ImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$Galer3ImplCopyWithImpl<$Res>
+    extends _$DashboardStateCopyWithImpl<$Res, _$Galer3Impl>
+    implements _$$Galer3ImplCopyWith<$Res> {
+  __$$Galer3ImplCopyWithImpl(
+      _$Galer3Impl _value, $Res Function(_$Galer3Impl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$Galer3Impl implements Galer3 {
+  const _$Galer3Impl();
+
+  @override
+  String toString() {
+    return 'DashboardState.galer3()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$Galer3Impl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loadingview,
+    required TResult Function(List<ItemsData> response) successview,
+    required TResult Function(String erorr) erorrview,
+    required TResult Function() loadingAdd,
+    required TResult Function() successAdd,
+    required TResult Function(String erorr) erorrAdd,
+    required TResult Function() loadingedit,
+    required TResult Function() successedit,
+    required TResult Function(String erorr) erorredit,
+    required TResult Function() loadingdelete,
+    required TResult Function() successdelete,
+    required TResult Function(String erorr) erorrdelete,
+    required TResult Function() loadingviewCat,
+    required TResult Function() successviewCat,
+    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingvimage,
+    required TResult Function() successimage,
+    required TResult Function(String erorr) erorrvimage,
+    required TResult Function() galer,
+    required TResult Function() galer2,
+    required TResult Function() galer3,
+    required TResult Function() pushEdit,
+  }) {
+    return galer3();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loadingview,
+    TResult? Function(List<ItemsData> response)? successview,
+    TResult? Function(String erorr)? erorrview,
+    TResult? Function()? loadingAdd,
+    TResult? Function()? successAdd,
+    TResult? Function(String erorr)? erorrAdd,
+    TResult? Function()? loadingedit,
+    TResult? Function()? successedit,
+    TResult? Function(String erorr)? erorredit,
+    TResult? Function()? loadingdelete,
+    TResult? Function()? successdelete,
+    TResult? Function(String erorr)? erorrdelete,
+    TResult? Function()? loadingviewCat,
+    TResult? Function()? successviewCat,
+    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingvimage,
+    TResult? Function()? successimage,
+    TResult? Function(String erorr)? erorrvimage,
+    TResult? Function()? galer,
+    TResult? Function()? galer2,
+    TResult? Function()? galer3,
+    TResult? Function()? pushEdit,
+  }) {
+    return galer3?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loadingview,
+    TResult Function(List<ItemsData> response)? successview,
+    TResult Function(String erorr)? erorrview,
+    TResult Function()? loadingAdd,
+    TResult Function()? successAdd,
+    TResult Function(String erorr)? erorrAdd,
+    TResult Function()? loadingedit,
+    TResult Function()? successedit,
+    TResult Function(String erorr)? erorredit,
+    TResult Function()? loadingdelete,
+    TResult Function()? successdelete,
+    TResult Function(String erorr)? erorrdelete,
+    TResult Function()? loadingviewCat,
+    TResult Function()? successviewCat,
+    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingvimage,
+    TResult Function()? successimage,
+    TResult Function(String erorr)? erorrvimage,
+    TResult Function()? galer,
+    TResult Function()? galer2,
+    TResult Function()? galer3,
+    TResult Function()? pushEdit,
+    required TResult orElse(),
+  }) {
+    if (galer3 != null) {
+      return galer3();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(Loadingview value) loadingview,
+    required TResult Function(Successview value) successview,
+    required TResult Function(Erorrview value) erorrview,
+    required TResult Function(LoadingAdd value) loadingAdd,
+    required TResult Function(SuccessAdd value) successAdd,
+    required TResult Function(ErorrAdd value) erorrAdd,
+    required TResult Function(Loadingedit value) loadingedit,
+    required TResult Function(Successedit value) successedit,
+    required TResult Function(Erorredit value) erorredit,
+    required TResult Function(Loadingdelete value) loadingdelete,
+    required TResult Function(Successdelete value) successdelete,
+    required TResult Function(Erorrdelete value) erorrdelete,
+    required TResult Function(LoadingviewCat value) loadingviewCat,
+    required TResult Function(SuccessviewCat value) successviewCat,
+    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(Loadingimage value) loadingvimage,
+    required TResult Function(Successimage value) successimage,
+    required TResult Function(Erorrimage value) erorrvimage,
+    required TResult Function(Galer value) galer,
+    required TResult Function(Galer2 value) galer2,
+    required TResult Function(Galer3 value) galer3,
+    required TResult Function(PushEdit value) pushEdit,
+  }) {
+    return galer3(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(Loadingview value)? loadingview,
+    TResult? Function(Successview value)? successview,
+    TResult? Function(Erorrview value)? erorrview,
+    TResult? Function(LoadingAdd value)? loadingAdd,
+    TResult? Function(SuccessAdd value)? successAdd,
+    TResult? Function(ErorrAdd value)? erorrAdd,
+    TResult? Function(Loadingedit value)? loadingedit,
+    TResult? Function(Successedit value)? successedit,
+    TResult? Function(Erorredit value)? erorredit,
+    TResult? Function(Loadingdelete value)? loadingdelete,
+    TResult? Function(Successdelete value)? successdelete,
+    TResult? Function(Erorrdelete value)? erorrdelete,
+    TResult? Function(LoadingviewCat value)? loadingviewCat,
+    TResult? Function(SuccessviewCat value)? successviewCat,
+    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(Loadingimage value)? loadingvimage,
+    TResult? Function(Successimage value)? successimage,
+    TResult? Function(Erorrimage value)? erorrvimage,
+    TResult? Function(Galer value)? galer,
+    TResult? Function(Galer2 value)? galer2,
+    TResult? Function(Galer3 value)? galer3,
+    TResult? Function(PushEdit value)? pushEdit,
+  }) {
+    return galer3?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(Loadingview value)? loadingview,
+    TResult Function(Successview value)? successview,
+    TResult Function(Erorrview value)? erorrview,
+    TResult Function(LoadingAdd value)? loadingAdd,
+    TResult Function(SuccessAdd value)? successAdd,
+    TResult Function(ErorrAdd value)? erorrAdd,
+    TResult Function(Loadingedit value)? loadingedit,
+    TResult Function(Successedit value)? successedit,
+    TResult Function(Erorredit value)? erorredit,
+    TResult Function(Loadingdelete value)? loadingdelete,
+    TResult Function(Successdelete value)? successdelete,
+    TResult Function(Erorrdelete value)? erorrdelete,
+    TResult Function(LoadingviewCat value)? loadingviewCat,
+    TResult Function(SuccessviewCat value)? successviewCat,
+    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(Loadingimage value)? loadingvimage,
+    TResult Function(Successimage value)? successimage,
+    TResult Function(Erorrimage value)? erorrvimage,
+    TResult Function(Galer value)? galer,
+    TResult Function(Galer2 value)? galer2,
+    TResult Function(Galer3 value)? galer3,
+    TResult Function(PushEdit value)? pushEdit,
+    required TResult orElse(),
+  }) {
+    if (galer3 != null) {
+      return galer3(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class Galer3 implements DashboardState {
+  const factory Galer3() = _$Galer3Impl;
 }
 
 /// @nodoc
@@ -2857,7 +5464,7 @@ class _$PushEditImpl implements PushEdit {
 
   @override
   String toString() {
-    return 'DashboardState.PushEdit()';
+    return 'DashboardState.pushEdit()';
   }
 
   @override
@@ -2885,10 +5492,18 @@ class _$PushEditImpl implements PushEdit {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
+    required TResult Function() loadingviewCat,
+    required TResult Function() successviewCat,
+    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingvimage,
+    required TResult Function() successimage,
+    required TResult Function(String erorr) erorrvimage,
     required TResult Function() galer,
-    required TResult Function() PushEdit,
+    required TResult Function() galer2,
+    required TResult Function() galer3,
+    required TResult Function() pushEdit,
   }) {
-    return PushEdit();
+    return pushEdit();
   }
 
   @override
@@ -2907,10 +5522,18 @@ class _$PushEditImpl implements PushEdit {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
+    TResult? Function()? loadingviewCat,
+    TResult? Function()? successviewCat,
+    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingvimage,
+    TResult? Function()? successimage,
+    TResult? Function(String erorr)? erorrvimage,
     TResult? Function()? galer,
-    TResult? Function()? PushEdit,
+    TResult? Function()? galer2,
+    TResult? Function()? galer3,
+    TResult? Function()? pushEdit,
   }) {
-    return PushEdit?.call();
+    return pushEdit?.call();
   }
 
   @override
@@ -2929,12 +5552,20 @@ class _$PushEditImpl implements PushEdit {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
+    TResult Function()? loadingviewCat,
+    TResult Function()? successviewCat,
+    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingvimage,
+    TResult Function()? successimage,
+    TResult Function(String erorr)? erorrvimage,
     TResult Function()? galer,
-    TResult Function()? PushEdit,
+    TResult Function()? galer2,
+    TResult Function()? galer3,
+    TResult Function()? pushEdit,
     required TResult orElse(),
   }) {
-    if (PushEdit != null) {
-      return PushEdit();
+    if (pushEdit != null) {
+      return pushEdit();
     }
     return orElse();
   }
@@ -2955,10 +5586,18 @@ class _$PushEditImpl implements PushEdit {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
+    required TResult Function(LoadingviewCat value) loadingviewCat,
+    required TResult Function(SuccessviewCat value) successviewCat,
+    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(Loadingimage value) loadingvimage,
+    required TResult Function(Successimage value) successimage,
+    required TResult Function(Erorrimage value) erorrvimage,
     required TResult Function(Galer value) galer,
-    required TResult Function(PushEdit value) PushEdit,
+    required TResult Function(Galer2 value) galer2,
+    required TResult Function(Galer3 value) galer3,
+    required TResult Function(PushEdit value) pushEdit,
   }) {
-    return PushEdit(this);
+    return pushEdit(this);
   }
 
   @override
@@ -2977,10 +5616,18 @@ class _$PushEditImpl implements PushEdit {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
+    TResult? Function(LoadingviewCat value)? loadingviewCat,
+    TResult? Function(SuccessviewCat value)? successviewCat,
+    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(Loadingimage value)? loadingvimage,
+    TResult? Function(Successimage value)? successimage,
+    TResult? Function(Erorrimage value)? erorrvimage,
     TResult? Function(Galer value)? galer,
-    TResult? Function(PushEdit value)? PushEdit,
+    TResult? Function(Galer2 value)? galer2,
+    TResult? Function(Galer3 value)? galer3,
+    TResult? Function(PushEdit value)? pushEdit,
   }) {
-    return PushEdit?.call(this);
+    return pushEdit?.call(this);
   }
 
   @override
@@ -2999,12 +5646,20 @@ class _$PushEditImpl implements PushEdit {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
+    TResult Function(LoadingviewCat value)? loadingviewCat,
+    TResult Function(SuccessviewCat value)? successviewCat,
+    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(Loadingimage value)? loadingvimage,
+    TResult Function(Successimage value)? successimage,
+    TResult Function(Erorrimage value)? erorrvimage,
     TResult Function(Galer value)? galer,
-    TResult Function(PushEdit value)? PushEdit,
+    TResult Function(Galer2 value)? galer2,
+    TResult Function(Galer3 value)? galer3,
+    TResult Function(PushEdit value)? pushEdit,
     required TResult orElse(),
   }) {
-    if (PushEdit != null) {
-      return PushEdit(this);
+    if (pushEdit != null) {
+      return pushEdit(this);
     }
     return orElse();
   }

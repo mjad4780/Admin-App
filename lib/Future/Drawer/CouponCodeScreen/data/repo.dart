@@ -1,6 +1,6 @@
 import 'package:untitled/models/response_coupon/response_coupon.dart';
 
-import '../../../../core/function/formDataPost.dart';
+import '../../../../core/function/function_api/formDataPost.dart';
 import '../../../../core/networking/api_error_handler.dart';
 import '../../../../core/networking/api_result.dart';
 import '../../../../core/networking/api_service.dart';
@@ -17,7 +17,7 @@ class CouponRepo {
       final response = await _apiService.getCoupon();
       return ApiResult.success(response);
     } catch (e) {
-      return ApiResult.failure(ErrorHandler.handle(e));
+      return ApiResult.failure(ApiErrorHandler.handle(e));
     }
   }
 
@@ -37,7 +37,7 @@ class CouponRepo {
       final response = await _apiService.addCoupon(formDataPost(data));
       return ApiResult.success(response);
     } catch (e) {
-      return ApiResult.failure(ErrorHandler.handle(e));
+      return ApiResult.failure(ApiErrorHandler.handle(e));
     }
   }
 }

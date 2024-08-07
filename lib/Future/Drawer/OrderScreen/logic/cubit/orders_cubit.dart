@@ -109,7 +109,7 @@ class OrdersCubit extends Cubit<OrdersState> {
     response.when(success: (data) {
       emit(const OrdersState.successapprove());
     }, failure: (error) {
-      emit(OrdersState.erorrapprove(erorr: error.apiErrorModel.messege ?? ''));
+      emit(OrdersState.erorrapprove(erorr: error.messege ?? ''));
     });
   }
 
@@ -120,7 +120,7 @@ class OrdersCubit extends Cubit<OrdersState> {
     response.when(success: (data) {
       emit(const OrdersState.successprepare());
     }, failure: (error) {
-      emit(OrdersState.erorrprepare(erorr: error.apiErrorModel.messege ?? ''));
+      emit(OrdersState.erorrprepare(erorr: error.messege ?? ''));
     });
   }
 
@@ -131,7 +131,7 @@ class OrdersCubit extends Cubit<OrdersState> {
     response.when(success: (data) {
       emit(const OrdersState.successdone());
     }, failure: (error) {
-      emit(OrdersState.erorrdone(erorr: error.apiErrorModel.messege ?? ''));
+      emit(OrdersState.erorrdone(erorr: error.messege ?? ''));
     });
   }
 
@@ -142,7 +142,7 @@ class OrdersCubit extends Cubit<OrdersState> {
     response.when(success: (data) {
       emit(const OrdersState.successshipped());
     }, failure: (error) {
-      emit(OrdersState.erorrshipped(erorr: error.apiErrorModel.messege ?? ''));
+      emit(OrdersState.erorrshipped(erorr: error.messege ?? ''));
     });
   }
 
@@ -155,8 +155,7 @@ class OrdersCubit extends Cubit<OrdersState> {
     response.when(success: (data) {
       emit(OrdersState.successviewdetails(data.data ?? []));
     }, failure: (error) {
-      emit(OrdersState.erorrviewdetails(
-          erorr: error.apiErrorModel.messege ?? ''));
+      emit(OrdersState.erorrviewdetails(erorr: error.messege ?? ''));
     });
   }
 
@@ -169,8 +168,7 @@ class OrdersCubit extends Cubit<OrdersState> {
       itemorders = data.data ?? [];
       emit(OrdersState.successviewapprove(data.data ?? []));
     }, failure: (error) {
-      emit(OrdersState.erorrviewapprove(
-          erorr: error.apiErrorModel.messege ?? ''));
+      emit(OrdersState.erorrviewapprove(erorr: error.messege ?? ''));
     });
   }
 
@@ -185,8 +183,7 @@ class OrdersCubit extends Cubit<OrdersState> {
 
       emit(OrdersState.successviewCancel(data.data ?? []));
     }, failure: (error) {
-      emit(OrdersState.erorrviewCancel(
-          erorr: error.apiErrorModel.messege ?? ''));
+      emit(OrdersState.erorrviewCancel(erorr: error.messege ?? ''));
     });
   }
 
@@ -201,7 +198,7 @@ class OrdersCubit extends Cubit<OrdersState> {
 
       emit(OrdersState.successviewdone(data.data ?? []));
     }, failure: (error) {
-      emit(OrdersState.erorrdone(erorr: error.apiErrorModel.messege ?? ''));
+      emit(OrdersState.erorrdone(erorr: error.messege ?? ''));
     });
   }
 
@@ -216,7 +213,7 @@ class OrdersCubit extends Cubit<OrdersState> {
 
       emit(OrdersState.successviewpending(data.data ?? []));
     }, failure: (error) {
-      emit(OrdersState.erorrviewdone(erorr: error.apiErrorModel.messege ?? ''));
+      emit(OrdersState.erorrviewdone(erorr: error.messege ?? ''));
     });
   }
 
@@ -231,8 +228,7 @@ class OrdersCubit extends Cubit<OrdersState> {
 
       emit(OrdersState.successviewprepare(data.data ?? []));
     }, failure: (error) {
-      emit(OrdersState.erorrviewprepare(
-          erorr: error.apiErrorModel.messege ?? ''));
+      emit(OrdersState.erorrviewprepare(erorr: error.messege ?? ''));
     });
   }
 
@@ -246,8 +242,7 @@ class OrdersCubit extends Cubit<OrdersState> {
 
       emit(OrdersState.successviewshipped(data.data ?? []));
     }, failure: (error) {
-      emit(OrdersState.erorrviewshipped(
-          erorr: error.apiErrorModel.messege ?? ''));
+      emit(OrdersState.erorrviewshipped(erorr: error.messege ?? ''));
     });
   }
 }

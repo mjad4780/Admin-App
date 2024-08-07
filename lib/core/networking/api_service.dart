@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:retrofit/http.dart';
 import 'package:untitled/models/response_categories/response_categories.dart';
 import 'package:untitled/models/response_coupon/response_coupon.dart';
 import 'package:untitled/models/response_items/response_items.dart';
@@ -18,6 +19,11 @@ part 'api_service.g.dart';
 @RestApi(baseUrl: ApiConstants.baseUrl)
 abstract class ApiService {
   factory ApiService(Dio dio, {String baseUrl}) = _ApiService;
+/////////test/////////
+
+  //Add
+  @POST(ApiConstants.test)
+  Future<dynamic> addimages(@Body() dynamic body);
 
   ///////////////Categories/////////////
 
@@ -38,7 +44,9 @@ abstract class ApiService {
 
   //Add
   @POST(ApiConstants.addItems)
-  Future<dynamic> addItems(@Body() dynamic body);
+  Future<dynamic> addItems(
+    @Body() dynamic body,
+  );
   //edit
   @POST(ApiConstants.editItems)
   Future<dynamic> editItems(@Body() dynamic body);

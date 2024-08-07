@@ -16,7 +16,7 @@
 //       final response = await _apiService.getnotification();
 //       return ApiResult.success(response);
 //     } catch (e) {
-//       return ApiResult.failure(ErrorHandler.handle(e));
+//       return ApiResult.failure(ApiErrorHandler.handle(e));
 //     }
 //   }
 
@@ -36,7 +36,7 @@
 //       final response = await _apiService.addnotification(formDataPost(data));
 //       return ApiResult.success(response);
 //     } catch (e) {
-//       return ApiResult.failure(ErrorHandler.handle(e));
+//       return ApiResult.failure(ApiErrorHandler.handle(e));
 //     }
 //   }
 // }

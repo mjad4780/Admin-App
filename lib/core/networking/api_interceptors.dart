@@ -11,6 +11,7 @@ class ApiInterceptor extends Interceptor {
     options.headers['Accept-Language'] = "en";
 
     options.headers['Content-Type'] = "application/json";
+    options.headers['Content-Type'] = "multipart/form-data";
 
     options.headers['Authorization'] =
         getIt<CacheHelper>().getDataString(key: 'token');

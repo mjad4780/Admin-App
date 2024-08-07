@@ -52,7 +52,7 @@ class OrderScreen extends StatelessWidget {
                                   hintText: 'Filter Order By status',
                                   initialValue: 'All order',
                                   items: context.read<OrdersCubit>().item,
-                                  displayItem: (val) => val,
+                                  displayItem: (val) => val ?? '',
                                   onChanged: (newValue) {
                                     context
                                         .read<OrdersCubit>()

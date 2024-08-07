@@ -1,4 +1,4 @@
-import '../../../../core/function/formDataPost.dart';
+import '../../../../core/function/function_api/formDataPost.dart';
 import '../../../../core/networking/api_error_handler.dart';
 import '../../../../core/networking/api_result.dart';
 import '../../../../core/networking/api_service.dart';
@@ -21,7 +21,7 @@ class OrdersRepo {
       final response = await _apiService.approve(formDataPost(data));
       return ApiResult.success(response);
     } catch (e) {
-      return ApiResult.failure(ErrorHandler.handle(e));
+      return ApiResult.failure(ApiErrorHandler.handle(e));
     }
   }
   //prepare
@@ -36,7 +36,7 @@ class OrdersRepo {
       final response = await _apiService.prepare(formDataPost(data));
       return ApiResult.success(response);
     } catch (e) {
-      return ApiResult.failure(ErrorHandler.handle(e));
+      return ApiResult.failure(ApiErrorHandler.handle(e));
     }
   } //done
 
@@ -49,7 +49,7 @@ class OrdersRepo {
       final response = await _apiService.done(formDataPost(data));
       return ApiResult.success(response);
     } catch (e) {
-      return ApiResult.failure(ErrorHandler.handle(e));
+      return ApiResult.failure(ApiErrorHandler.handle(e));
     }
   }
   //shipped
@@ -63,7 +63,7 @@ class OrdersRepo {
       final response = await _apiService.shipped(formDataPost(data));
       return ApiResult.success(response);
     } catch (e) {
-      return ApiResult.failure(ErrorHandler.handle(e));
+      return ApiResult.failure(ApiErrorHandler.handle(e));
     }
   }
 
@@ -80,7 +80,7 @@ class OrdersRepo {
 
       return ApiResult.success(response);
     } catch (e) {
-      return ApiResult.failure(ErrorHandler.handle(e));
+      return ApiResult.failure(ApiErrorHandler.handle(e));
     }
   }
 }

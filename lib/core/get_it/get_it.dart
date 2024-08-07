@@ -2,7 +2,6 @@ import 'package:untitled/Future/Drawer/CategoryScreen/logic/cubit/categories_cub
 import 'package:untitled/Future/Drawer/CouponCodeScreen/logic/cubit/coupon_cubit.dart';
 import 'package:untitled/Future/Drawer/DashboardScreen/data/repo.dart';
 import 'package:untitled/Future/Drawer/DashboardScreen/logic/cubit/dashboard_cubit.dart';
-import 'package:untitled/Future/Drawer/DashboardScreen/logic/cubit_d/dashboard_cubit.dart';
 
 import 'package:untitled/Future/Drawer/OrderScreen/logic/cubit/orders_cubit.dart';
 import 'package:untitled/Future/Drawer/PosterScreen/data/repo.dart';
@@ -33,8 +32,8 @@ void setupServise() {
 
   // Items
   getIt.registerLazySingleton<ItemsRepo>(() => ItemsRepo(getIt()));
-  getIt.registerFactory<DashboardCubit>(() => DashboardCubit(getIt()));
-  getIt.registerFactory<DashboardsCubit>(() => DashboardsCubit());
+  getIt.registerFactory<DashboardCubit>(() => DashboardCubit(getIt(), getIt()));
+  // getIt.registerFactory<DashboardsCubit>(() => DashboardsCubit());
 
   // Coupon
   getIt.registerLazySingleton<CouponRepo>(() => CouponRepo(getIt()));

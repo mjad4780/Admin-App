@@ -3,8 +3,8 @@ import 'package:untitled/core/extensions/extention_navigator.dart';
 
 import '../theming/styles.dart';
 
-void setupErrorState(BuildContext context, String error) {
-  context.pop();
+setupErrorState(BuildContext context, String error) {
+  // context.pop();
   showDialog(
     context: context,
     builder: (context) => AlertDialog(
