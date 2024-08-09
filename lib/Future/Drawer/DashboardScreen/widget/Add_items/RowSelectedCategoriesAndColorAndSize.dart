@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../../../core/function/validator.dart';
 import '../../../../../models/select_categories/select_categories.dart';
 import '../../../../../widgets/custom_dropdown.dart';
 import '../../../../../widgets/multi_select_drop_down.dart';

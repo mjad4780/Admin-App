@@ -1,9 +1,10 @@
-import '../../../../models/Item.dart';
 import 'package:flutter/material.dart';
 
+import '../../../../core/networking/api_constants.dart';
+import '../../../../models/response_items/datum.dart';
 import '../../../../utility/constants.dart';
 
-DataRow productDataRow(ItemsModel productInfo,
+DataRow productDataRow(ItemsData productInfo,
     {Function? edit, Function? delete}) {
   return DataRow(
     cells: [
@@ -11,31 +12,34 @@ DataRow productDataRow(ItemsModel productInfo,
         Row(
           children: [
             Image.network(
-              productInfo.itemsImage ?? '',
+              '${ApiConstants.imageItem}/${productInfo.itemImage} ',
               height: 30,
               width: 30,
               errorBuilder: (BuildContext context, Object exception,
                   StackTrace? stackTrace) {
-                return Icon(Icons.error);
+                return const Icon(Icons.error);
               },
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
-              child: Text(productInfo.itemsName ?? ''),
+              child: Text(
+                productInfo.itemName ?? '',
+                overflow: TextOverflow.ellipsis,
+              ),
             ),
           ],
         ),
       ),
       DataCell(Text(productInfo.categoriesName ?? '')),
-      DataCell(Text(productInfo.itemsCount.toString())),
+      DataCell(Text(productInfo.itemCount.toString())),
       DataCell(
-        Text('${productInfo.itemsPrice}'),
+        Text('${productInfo.itemPrice}'),
       ),
       DataCell(IconButton(
           onPressed: () {
             if (edit != null) edit();
           },
-          icon: Icon(
+          icon: const Icon(
             Icons.edit,
             color: Colors.white,
           ))),
@@ -43,7 +47,7 @@ DataRow productDataRow(ItemsModel productInfo,
           onPressed: () {
             if (delete != null) delete();
           },
-          icon: Icon(
+          icon: const Icon(
             Icons.delete,
             color: Colors.red,
           ))),

@@ -7,10 +7,10 @@ import 'package:gap/gap.dart';
 
 import '../../../utility/constants.dart';
 import '../../../widgets/Heder.dart';
-import 'widget/Add_items/add_items_bloc.dart';
 import 'widget/add_product_form.dart';
 
 import 'widget/show_add.dart';
+import 'widget/viewItems/viewitems_bloc.dart';
 
 class DashboardScreen extends StatelessWidget {
   const DashboardScreen({super.key});
@@ -18,7 +18,7 @@ class DashboardScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => getIt<DashboardCubit>(),
+      create: (context) => getIt<DashboardCubit>()..viewItems(),
       child: SafeArea(
           child: SingleChildScrollView(
         primary: false,
@@ -72,12 +72,13 @@ class DashboardScreen extends StatelessWidget {
                       const Gap(defaultPadding),
                       // const ProductSummerySection(),
                       const Gap(defaultPadding),
-                      // const ProductListSection(),
+                      const ItemsBlocBuilder(),
                     ],
                   ),
                 ),
 
                 const SizedBox(width: defaultPadding),
+
                 // const Expanded(
                 //   flex: 2,
                 //   child: OrderDetailsSection(),

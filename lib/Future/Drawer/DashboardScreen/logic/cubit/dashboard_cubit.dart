@@ -108,7 +108,7 @@ class DashboardCubit extends Cubit<DashboardState> {
       response.when(success: (data) {
         emit(const DashboardState.successAdd());
       }, failure: (error) {
-        emit(DashboardState.erorrAdd(erorr: error.messege ?? ''));
+        emit(DashboardState.erorrAdd(erorr: error.messege!));
       });
     } else {
       autovalidateMode = AutovalidateMode.always;
