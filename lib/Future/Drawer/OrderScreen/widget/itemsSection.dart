@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/constans/Color.dart';
+import '../../../../core/theming/colors.dart';
 import '../../../../models/response_detilas/datum.dart';
 import '../../../../utility/constants.dart';
 

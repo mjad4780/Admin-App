@@ -1,10 +1,12 @@
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
 
-import '../core/constans/Color.dart';
+import '../core/theming/colors.dart';
 import '/core/Navigator/Navigator.dart';
 
 class AdminPanel extends StatelessWidget {
+  const AdminPanel({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(

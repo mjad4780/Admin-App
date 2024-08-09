@@ -54,7 +54,6 @@ class CategoriesCubit extends Cubit<CategoriesState> {
           name: categories[i].categoriesName ?? '',
         ));
       }
-      print(',,,,,,,,,,,,,,,,,,,,,,,,,$itemCat');
       emit(CategoriesState.successview(data));
     }, failure: (error) {
       emit(CategoriesState.erorrview(erorr: error.messege ?? ''));

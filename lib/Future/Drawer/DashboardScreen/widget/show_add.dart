@@ -5,6 +5,7 @@ import 'package:untitled/Future/Drawer/DashboardScreen/logic/cubit/dashboard_cub
 
 import '../../../../core/get_it/get_it.dart';
 import '../../../../utility/constants.dart';
+import 'Add_items/add_items_bloc.dart';
 
 void showAddProductForm(BuildContext context, Widget widget) {
   showDialog(

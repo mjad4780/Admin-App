@@ -8,6 +8,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../utility/constants.dart';
 import '../../../../widgets/custom_text_field.dart';
 import 'Add_items/RowSelectedCategoriesAndColorAndSize.dart';
+import 'Add_items/add_items_bloc.dart';
+import 'Add_items/aprrove_items.dart';
 import 'row_add_images.dart';
 
 class ProductSubmitForm extends StatefulWidget {
@@ -30,7 +32,7 @@ class _ProductSubmitFormState extends State<ProductSubmitForm> {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return Form(
-      key: context.read<DashboardCubit>().formstateadd,
+      key: context.read<DashboardCubit>().formkey,
       child: Container(
         width: size.width * 0.7,
         padding: const EdgeInsets.all(defaultPadding),
@@ -51,8 +53,7 @@ class _ProductSubmitFormState extends State<ProductSubmitForm> {
                     labelText: 'Product Name',
                     onSave: (val) {},
                     validator: (value) {
-                      validator(value, 'Please enter name');
-                      return null;
+                      return validator(value, 'Please enter name');
                     },
                   ),
                 ),
@@ -62,8 +63,7 @@ class _ProductSubmitFormState extends State<ProductSubmitForm> {
                     labelText: 'Product NameAr',
                     onSave: (val) {},
                     validator: (value) {
-                      validator(value, 'Please enter nameAr');
-                      return null;
+                      return validator(value, 'Please enter nameAr');
                     },
                   ),
                 ),
@@ -76,8 +76,7 @@ class _ProductSubmitFormState extends State<ProductSubmitForm> {
               lineNumber: 1,
               onSave: (val) {},
               validator: (value) {
-                validator(value, 'Please enter Product Description');
-                return null;
+                return validator(value, 'Please enter Product Description');
               },
             ),
             CustomTextField(
@@ -86,8 +85,7 @@ class _ProductSubmitFormState extends State<ProductSubmitForm> {
               lineNumber: 1,
               onSave: (val) {},
               validator: (value) {
-                validator(value, 'Please enter Product DescriptionAr');
-                return null;
+                return validator(value, 'Please enter Product DescriptionAr');
               },
             ),
             const SizedBox(height: defaultPadding),
@@ -102,8 +100,7 @@ class _ProductSubmitFormState extends State<ProductSubmitForm> {
                     inputType: TextInputType.number,
                     onSave: (val) {},
                     validator: (value) {
-                      validator(value, 'Please enter price');
-                      return null;
+                      return validator(value, 'Please enter price');
                     },
                   ),
                 ),
@@ -113,6 +110,9 @@ class _ProductSubmitFormState extends State<ProductSubmitForm> {
                     labelText: 'Offer price',
                     inputType: TextInputType.number,
                     onSave: (val) {},
+                    validator: (value) {
+                      return validator(value, 'Please enter Offer price');
+                    },
                   ),
                 ),
                 Expanded(
@@ -122,18 +122,19 @@ class _ProductSubmitFormState extends State<ProductSubmitForm> {
                     inputType: TextInputType.number,
                     onSave: (val) {},
                     validator: (value) {
-                      validator(value, 'Please enter quantity');
-                      return null;
+                      return validator(value, 'Please enter quantity');
                     },
                   ),
                 ),
               ],
             ),
+            const ApproveItems(),
             const SizedBox(width: defaultPadding),
             const SizedBox(height: defaultPadding),
             RowBotttomAdd(onPressed: () {
-              // context.read<DashboardCubit>().addimahes();
+              context.read<DashboardCubit>().addItems(context);
             }),
+            const AddItemsBlocListener()
           ],
         ),
       ),
@@ -150,3 +151,4 @@ class _ProductSubmitFormState extends State<ProductSubmitForm> {
 //     return this![index];
 //   }
 // }
+

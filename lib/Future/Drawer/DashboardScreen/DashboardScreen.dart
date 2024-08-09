@@ -7,10 +7,9 @@ import 'package:gap/gap.dart';
 
 import '../../../utility/constants.dart';
 import '../../../widgets/Heder.dart';
+import 'widget/Add_items/add_items_bloc.dart';
 import 'widget/add_product_form.dart';
-import 'widget/order_details_section.dart';
-import 'widget/product_list_section.dart';
-import 'widget/product_summery_section.dart';
+
 import 'widget/show_add.dart';
 
 class DashboardScreen extends StatelessWidget {
@@ -77,6 +76,7 @@ class DashboardScreen extends StatelessWidget {
                     ],
                   ),
                 ),
+
                 const SizedBox(width: defaultPadding),
                 // const Expanded(
                 //   flex: 2,

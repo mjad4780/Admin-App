@@ -47,6 +47,14 @@ class DashboardState with _$DashboardState {
   const factory DashboardState.galer2() = Galer2;
   const factory DashboardState.galer3() = Galer3;
 
+  ///: remofegaler
+  const factory DashboardState.remofgaler() = remofgaler;
+  const factory DashboardState.removegaler2() = removegaler2;
+  const factory DashboardState.removegaler3() = removegaler3;
+
   ///: PushEdit
   const factory DashboardState.pushEdit() = PushEdit;
+
+  ///: approveitems
+  const factory DashboardState.approveitems() = ApproveiItems;
 }

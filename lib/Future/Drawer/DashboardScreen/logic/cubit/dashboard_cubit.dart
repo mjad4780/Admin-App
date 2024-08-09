@@ -27,10 +27,10 @@ class DashboardCubit extends Cubit<DashboardState> {
   TextEditingController decs = TextEditingController();
   TextEditingController decsar = TextEditingController();
   TextEditingController count = TextEditingController();
-  TextEditingController active = TextEditingController();
   TextEditingController price = TextEditingController();
   TextEditingController discount = TextEditingController();
   TextEditingController itemCategories = TextEditingController();
+  String active = '1';
   List<SelectCategories> itemCat = [];
   List<String> selectedcolors = [];
 
@@ -53,11 +53,13 @@ class DashboardCubit extends Cubit<DashboardState> {
 
   String? selestnamecategories;
 
-  GlobalKey<FormState> formstateadd = GlobalKey<FormState>();
+  GlobalKey<FormState> formkey = GlobalKey<FormState>();
 
   AutovalidateMode autovalidateMode = AutovalidateMode.disabled;
 
-  File? selectedMainImage, selectedSecondImage, selectedThirdImage;
+  File? selectedMainImage;
+  File? selectedSecondImage;
+  File? selectedThirdImage;
   List<File> images = [];
 
   List<ItemsData> items = [];
@@ -68,7 +70,7 @@ class DashboardCubit extends Cubit<DashboardState> {
   //   emit(const DashboardState.galer());
   // }
 
-  ///:viewItems
+  //////////////////////////////:viewItems/////////////////////////
   viewItems() async {
     emit(const DashboardState.loadingview());
     final response = await _itemrepo.viewItems();
@@ -80,34 +82,37 @@ class DashboardCubit extends Cubit<DashboardState> {
     });
   }
 
-  ///:AddItems
+  /////////////////////////////////:AddItems///////////////////////////
   addItems(BuildContext context) async {
     if (selectedMainImage == null &&
         selectedSecondImage == null &&
         selectedThirdImage == null) {
       return showMyDialog(context, "erorr", "please choose image");
     }
-
-    emit(const DashboardState.loadingAdd());
-    final response = await _itemrepo.addItems(
-        name.text,
-        namear.text,
-        selectedMainImage!,
-        decs.text,
-        decsar.text,
-        int.parse(count.text),
-        int.parse(active.text),
-        int.parse(price.text),
-        int.parse(discount.text),
-        int.parse(itemCategories.text),
-        selectedSize,
-        selectedcolors,
-        images);
-    response.when(success: (data) {
-      emit(const DashboardState.successAdd());
-    }, failure: (error) {
-      emit(DashboardState.erorrAdd(erorr: error.messege ?? ''));
-    });
+    if (formkey.currentState!.validate()) {
+      emit(const DashboardState.loadingAdd());
+      final response = await _itemrepo.addItems(
+          name.text,
+          namear.text,
+          selectedMainImage!,
+          decs.text,
+          decsar.text,
+          count.text,
+          active,
+          price.text,
+          discount.text,
+          itemCategories.text,
+          selectedSize,
+          selectedcolors,
+          images);
+      response.when(success: (data) {
+        emit(const DashboardState.successAdd());
+      }, failure: (error) {
+        emit(DashboardState.erorrAdd(erorr: error.messege ?? ''));
+      });
+    } else {
+      autovalidateMode = AutovalidateMode.always;
+    }
   }
 
   ///:editItems
@@ -119,11 +124,11 @@ class DashboardCubit extends Cubit<DashboardState> {
         namear.text,
         decs.text,
         decsar.text,
-        int.parse(count.text),
-        int.parse(active.text),
-        int.parse(price.text),
-        int.parse(discount.text),
-        int.parse(itemCategories.text),
+        count.text,
+        active,
+        price.text,
+        discount.text,
+        itemCategories.text,
         selectedSize,
         selectedcolors,
         selectedMainImage,
@@ -162,7 +167,8 @@ class DashboardCubit extends Cubit<DashboardState> {
       }
       emit(const DashboardState.successviewCat());
     }, failure: (error) {
-      emit(DashboardState.erorrviewCat(erorr: error.messege ?? ''));
+      print('jjjjjjjjjjjjjjjjjj${error.messege}');
+      emit(DashboardState.erorrviewCat(erorr: error.messege!));
     });
   }
 
@@ -172,7 +178,7 @@ class DashboardCubit extends Cubit<DashboardState> {
     decs.text = items.itemDecs ?? 'M';
     decsar.text = items.itemDecsAr ?? "";
     count.text = items.itemCount.toString();
-    active.text = items.itemActive.toString();
+    active = items.itemActive.toString();
     price.text = items.itemPrice.toString();
     discount.text = items.itemDiscount.toString();
     itemCategories.text = items.itemCategories.toString();
@@ -201,21 +207,47 @@ class DashboardCubit extends Cubit<DashboardState> {
   // totalOrder = pendingOrder + deliveredOrder + processingOrder + shippedOrder;
 
   ///////////////////////////////function
-  void pickImage({required int imageCardNumber}) async {
+  void pickImage({
+    required int imageCardNumber,
+  }) async {
     final File? image = await imageuploadgallery();
     if (image != null) {
       if (imageCardNumber == 1) {
         selectedMainImage = image;
+
+        emit(const DashboardState.galer());
       } else if (imageCardNumber == 2) {
         // selectedSecondImage = File(image.path);
         selectedSecondImage = image;
         images.add(selectedSecondImage!);
+        emit(const DashboardState.galer2());
       } else if (imageCardNumber == 3) {
         // selectedThirdImage = File(image.path);
         selectedThirdImage = image;
         images.add(selectedThirdImage!);
+        emit(const DashboardState.galer3());
       }
-      emit(const DashboardState.galer());
+      // emit(const DashboardState.galer());
+    }
+  }
+
+  hhhhhhh(int imageCardNumber) async {
+    if (imageCardNumber == 1) {
+      selectedMainImage = null;
+
+      emit(const DashboardState.remofgaler());
+    } else if (imageCardNumber == 2) {
+      // selectedSecondImage = File(image.path);
+      images.remove(selectedSecondImage!);
+      selectedSecondImage = null;
+
+      emit(const DashboardState.removegaler2());
+    } else if (imageCardNumber == 3) {
+      // selectedThirdImage = File(image.path);
+      images.remove(selectedThirdImage!);
+      selectedThirdImage = null;
+
+      emit(const DashboardState.removegaler3());
     }
   }
 

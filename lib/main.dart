@@ -17,5 +17,5 @@ void main() async {
   setupServise();
   Bloc.observer = MyBlocObserver();
   await getIt<CacheHelper>().init();
-  runApp(AdminPanel());
+  runApp(const AdminPanel());
 }

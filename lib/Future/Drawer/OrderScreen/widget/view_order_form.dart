@@ -78,10 +78,9 @@ class OrderSubmitForm extends StatelessWidget {
                     initialValue:
                         context.read<OrdersCubit>().selectedOrderStatus,
                     items: context.read<OrdersCubit>().item,
-                    displayItem: (val) => val ?? '',
+                    displayItem: (val) => val,
                     onChanged: (newValue) {
                       context.read<OrdersCubit>().updatestatus(newValue ?? '');
-                      print(context.read<OrdersCubit>().status);
                     },
                     validator: (value) {
                       validator(value, 'Please select status');

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../../../core/function/validator.dart';
 import '../../../../../models/select_categories/select_categories.dart';
 import '../../../../../widgets/custom_dropdown.dart';
 import '../../../../../widgets/multi_select_drop_down.dart';
@@ -19,28 +20,32 @@ class RowSelectedCategoriesAndColorAndSize extends StatelessWidget {
           children: [
             Expanded(
                 child: CustomDropdown<SelectCategories>(
+              validator: (value) {
+                if (value?.name == null || value!.name.isEmpty) {
+                  return 'Please enter selestnamecategories';
+                }
+                return null;
+              },
               hintText: context.read<DashboardCubit>().selestnamecategories ??
                   'Select category',
               items: context.read<DashboardCubit>().itemCat,
               displayItem: (SelectCategories? category) => category?.name ?? '',
               onChanged: (newValue) {
                 if (newValue != null) {
-                  // context.read<DashboardCubit>().selestname =
-                  //     newValue.name;
-                  print('ffffffffffff${newValue.id}');
+                  context.read<DashboardCubit>().itemCategories.text =
+                      newValue.id.toString();
                 }
               },
             )),
             Expanded(
               flex: 1,
               child: MultiSelectDropDown(
-                items: context.read<DashboardCubit>().selectedcolors,
+                items: context.read<DashboardCubit>().colors,
                 onSelectionChanged: (newValue) {
                   context.read<DashboardCubit>().selectedcolors = newValue;
-                  print(context.read<DashboardCubit>().selectedcolors);
                 },
                 displayItem: (String item) => item,
-                selectedItems: context.read<DashboardCubit>().colors,
+                selectedItems: context.read<DashboardCubit>().selectedcolors,
                 title: 'Selected Colors',
               ),
             ),
@@ -49,11 +54,10 @@ class RowSelectedCategoriesAndColorAndSize extends StatelessWidget {
               items: context.read<DashboardCubit>().sizes,
               onSelectionChanged: (newValue) {
                 context.read<DashboardCubit>().selectedSize = newValue;
-                print(context.read<DashboardCubit>().sizes);
               },
               displayItem: (String item) => item,
-              selectedItems: context.read<DashboardCubit>().sizes,
-              title: 'Selected Sizes',
+              selectedItems: context.read<DashboardCubit>().selectedSize,
+              title: 'selected Sizes',
             )),
           ],
         );
