@@ -17,8 +17,8 @@ class Tester2 extends StatelessWidget {
       child: ListView.builder(
           itemCount: products[5].size!.length,
           itemBuilder: (context, index) {
-            List<ItemSize> i = replacMapsIsEnpty(products[5].size!);
-            List<ItemSize> i2 = replacMaps2IsEnpty(products[5].size!);
+            List<ItemSize> i = replacMapsColorIsEnpty(products[5].size!);
+            List<ItemSize> i2 = replacMapsSizeIsEnpty(products[5].size!);
 
             print('jjjjjjjjjjjjjjj${i.length}');
 

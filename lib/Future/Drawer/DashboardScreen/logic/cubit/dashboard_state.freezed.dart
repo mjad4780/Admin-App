@@ -45,6 +45,7 @@ mixin _$DashboardState {
     required TResult Function() removegaler3,
     required TResult Function() pushEdit,
     required TResult Function() approveitems,
+    required TResult Function() removeControll,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -76,6 +77,7 @@ mixin _$DashboardState {
     TResult? Function()? removegaler3,
     TResult? Function()? pushEdit,
     TResult? Function()? approveitems,
+    TResult? Function()? removeControll,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -107,6 +109,7 @@ mixin _$DashboardState {
     TResult Function()? removegaler3,
     TResult Function()? pushEdit,
     TResult Function()? approveitems,
+    TResult Function()? removeControll,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -139,6 +142,7 @@ mixin _$DashboardState {
     required TResult Function(removegaler3 value) removegaler3,
     required TResult Function(PushEdit value) pushEdit,
     required TResult Function(ApproveiItems value) approveitems,
+    required TResult Function(RemoveControll value) removeControll,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -170,6 +174,7 @@ mixin _$DashboardState {
     TResult? Function(removegaler3 value)? removegaler3,
     TResult? Function(PushEdit value)? pushEdit,
     TResult? Function(ApproveiItems value)? approveitems,
+    TResult? Function(RemoveControll value)? removeControll,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -201,6 +206,7 @@ mixin _$DashboardState {
     TResult Function(removegaler3 value)? removegaler3,
     TResult Function(PushEdit value)? pushEdit,
     TResult Function(ApproveiItems value)? approveitems,
+    TResult Function(RemoveControll value)? removeControll,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -289,6 +295,7 @@ class _$InitialImpl implements _Initial {
     required TResult Function() removegaler3,
     required TResult Function() pushEdit,
     required TResult Function() approveitems,
+    required TResult Function() removeControll,
   }) {
     return initial();
   }
@@ -323,6 +330,7 @@ class _$InitialImpl implements _Initial {
     TResult? Function()? removegaler3,
     TResult? Function()? pushEdit,
     TResult? Function()? approveitems,
+    TResult? Function()? removeControll,
   }) {
     return initial?.call();
   }
@@ -357,6 +365,7 @@ class _$InitialImpl implements _Initial {
     TResult Function()? removegaler3,
     TResult Function()? pushEdit,
     TResult Function()? approveitems,
+    TResult Function()? removeControll,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -395,6 +404,7 @@ class _$InitialImpl implements _Initial {
     required TResult Function(removegaler3 value) removegaler3,
     required TResult Function(PushEdit value) pushEdit,
     required TResult Function(ApproveiItems value) approveitems,
+    required TResult Function(RemoveControll value) removeControll,
   }) {
     return initial(this);
   }
@@ -429,6 +439,7 @@ class _$InitialImpl implements _Initial {
     TResult? Function(removegaler3 value)? removegaler3,
     TResult? Function(PushEdit value)? pushEdit,
     TResult? Function(ApproveiItems value)? approveitems,
+    TResult? Function(RemoveControll value)? removeControll,
   }) {
     return initial?.call(this);
   }
@@ -463,6 +474,7 @@ class _$InitialImpl implements _Initial {
     TResult Function(removegaler3 value)? removegaler3,
     TResult Function(PushEdit value)? pushEdit,
     TResult Function(ApproveiItems value)? approveitems,
+    TResult Function(RemoveControll value)? removeControll,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -541,6 +553,7 @@ class _$LoadingviewImpl implements Loadingview {
     required TResult Function() removegaler3,
     required TResult Function() pushEdit,
     required TResult Function() approveitems,
+    required TResult Function() removeControll,
   }) {
     return loadingview();
   }
@@ -575,6 +588,7 @@ class _$LoadingviewImpl implements Loadingview {
     TResult? Function()? removegaler3,
     TResult? Function()? pushEdit,
     TResult? Function()? approveitems,
+    TResult? Function()? removeControll,
   }) {
     return loadingview?.call();
   }
@@ -609,6 +623,7 @@ class _$LoadingviewImpl implements Loadingview {
     TResult Function()? removegaler3,
     TResult Function()? pushEdit,
     TResult Function()? approveitems,
+    TResult Function()? removeControll,
     required TResult orElse(),
   }) {
     if (loadingview != null) {
@@ -647,6 +662,7 @@ class _$LoadingviewImpl implements Loadingview {
     required TResult Function(removegaler3 value) removegaler3,
     required TResult Function(PushEdit value) pushEdit,
     required TResult Function(ApproveiItems value) approveitems,
+    required TResult Function(RemoveControll value) removeControll,
   }) {
     return loadingview(this);
   }
@@ -681,6 +697,7 @@ class _$LoadingviewImpl implements Loadingview {
     TResult? Function(removegaler3 value)? removegaler3,
     TResult? Function(PushEdit value)? pushEdit,
     TResult? Function(ApproveiItems value)? approveitems,
+    TResult? Function(RemoveControll value)? removeControll,
   }) {
     return loadingview?.call(this);
   }
@@ -715,6 +732,7 @@ class _$LoadingviewImpl implements Loadingview {
     TResult Function(removegaler3 value)? removegaler3,
     TResult Function(PushEdit value)? pushEdit,
     TResult Function(ApproveiItems value)? approveitems,
+    TResult Function(RemoveControll value)? removeControll,
     required TResult orElse(),
   }) {
     if (loadingview != null) {
@@ -826,6 +844,7 @@ class _$SuccessviewImpl implements Successview {
     required TResult Function() removegaler3,
     required TResult Function() pushEdit,
     required TResult Function() approveitems,
+    required TResult Function() removeControll,
   }) {
     return successview(response);
   }
@@ -860,6 +879,7 @@ class _$SuccessviewImpl implements Successview {
     TResult? Function()? removegaler3,
     TResult? Function()? pushEdit,
     TResult? Function()? approveitems,
+    TResult? Function()? removeControll,
   }) {
     return successview?.call(response);
   }
@@ -894,6 +914,7 @@ class _$SuccessviewImpl implements Successview {
     TResult Function()? removegaler3,
     TResult Function()? pushEdit,
     TResult Function()? approveitems,
+    TResult Function()? removeControll,
     required TResult orElse(),
   }) {
     if (successview != null) {
@@ -932,6 +953,7 @@ class _$SuccessviewImpl implements Successview {
     required TResult Function(removegaler3 value) removegaler3,
     required TResult Function(PushEdit value) pushEdit,
     required TResult Function(ApproveiItems value) approveitems,
+    required TResult Function(RemoveControll value) removeControll,
   }) {
     return successview(this);
   }
@@ -966,6 +988,7 @@ class _$SuccessviewImpl implements Successview {
     TResult? Function(removegaler3 value)? removegaler3,
     TResult? Function(PushEdit value)? pushEdit,
     TResult? Function(ApproveiItems value)? approveitems,
+    TResult? Function(RemoveControll value)? removeControll,
   }) {
     return successview?.call(this);
   }
@@ -1000,6 +1023,7 @@ class _$SuccessviewImpl implements Successview {
     TResult Function(removegaler3 value)? removegaler3,
     TResult Function(PushEdit value)? pushEdit,
     TResult Function(ApproveiItems value)? approveitems,
+    TResult Function(RemoveControll value)? removeControll,
     required TResult orElse(),
   }) {
     if (successview != null) {
@@ -1109,6 +1133,7 @@ class _$ErorrviewImpl implements Erorrview {
     required TResult Function() removegaler3,
     required TResult Function() pushEdit,
     required TResult Function() approveitems,
+    required TResult Function() removeControll,
   }) {
     return erorrview(erorr);
   }
@@ -1143,6 +1168,7 @@ class _$ErorrviewImpl implements Erorrview {
     TResult? Function()? removegaler3,
     TResult? Function()? pushEdit,
     TResult? Function()? approveitems,
+    TResult? Function()? removeControll,
   }) {
     return erorrview?.call(erorr);
   }
@@ -1177,6 +1203,7 @@ class _$ErorrviewImpl implements Erorrview {
     TResult Function()? removegaler3,
     TResult Function()? pushEdit,
     TResult Function()? approveitems,
+    TResult Function()? removeControll,
     required TResult orElse(),
   }) {
     if (erorrview != null) {
@@ -1215,6 +1242,7 @@ class _$ErorrviewImpl implements Erorrview {
     required TResult Function(removegaler3 value) removegaler3,
     required TResult Function(PushEdit value) pushEdit,
     required TResult Function(ApproveiItems value) approveitems,
+    required TResult Function(RemoveControll value) removeControll,
   }) {
     return erorrview(this);
   }
@@ -1249,6 +1277,7 @@ class _$ErorrviewImpl implements Erorrview {
     TResult? Function(removegaler3 value)? removegaler3,
     TResult? Function(PushEdit value)? pushEdit,
     TResult? Function(ApproveiItems value)? approveitems,
+    TResult? Function(RemoveControll value)? removeControll,
   }) {
     return erorrview?.call(this);
   }
@@ -1283,6 +1312,7 @@ class _$ErorrviewImpl implements Erorrview {
     TResult Function(removegaler3 value)? removegaler3,
     TResult Function(PushEdit value)? pushEdit,
     TResult Function(ApproveiItems value)? approveitems,
+    TResult Function(RemoveControll value)? removeControll,
     required TResult orElse(),
   }) {
     if (erorrview != null) {
@@ -1366,6 +1396,7 @@ class _$LoadingAddImpl implements LoadingAdd {
     required TResult Function() removegaler3,
     required TResult Function() pushEdit,
     required TResult Function() approveitems,
+    required TResult Function() removeControll,
   }) {
     return loadingAdd();
   }
@@ -1400,6 +1431,7 @@ class _$LoadingAddImpl implements LoadingAdd {
     TResult? Function()? removegaler3,
     TResult? Function()? pushEdit,
     TResult? Function()? approveitems,
+    TResult? Function()? removeControll,
   }) {
     return loadingAdd?.call();
   }
@@ -1434,6 +1466,7 @@ class _$LoadingAddImpl implements LoadingAdd {
     TResult Function()? removegaler3,
     TResult Function()? pushEdit,
     TResult Function()? approveitems,
+    TResult Function()? removeControll,
     required TResult orElse(),
   }) {
     if (loadingAdd != null) {
@@ -1472,6 +1505,7 @@ class _$LoadingAddImpl implements LoadingAdd {
     required TResult Function(removegaler3 value) removegaler3,
     required TResult Function(PushEdit value) pushEdit,
     required TResult Function(ApproveiItems value) approveitems,
+    required TResult Function(RemoveControll value) removeControll,
   }) {
     return loadingAdd(this);
   }
@@ -1506,6 +1540,7 @@ class _$LoadingAddImpl implements LoadingAdd {
     TResult? Function(removegaler3 value)? removegaler3,
     TResult? Function(PushEdit value)? pushEdit,
     TResult? Function(ApproveiItems value)? approveitems,
+    TResult? Function(RemoveControll value)? removeControll,
   }) {
     return loadingAdd?.call(this);
   }
@@ -1540,6 +1575,7 @@ class _$LoadingAddImpl implements LoadingAdd {
     TResult Function(removegaler3 value)? removegaler3,
     TResult Function(PushEdit value)? pushEdit,
     TResult Function(ApproveiItems value)? approveitems,
+    TResult Function(RemoveControll value)? removeControll,
     required TResult orElse(),
   }) {
     if (loadingAdd != null) {
@@ -1618,6 +1654,7 @@ class _$SuccessAddImpl implements SuccessAdd {
     required TResult Function() removegaler3,
     required TResult Function() pushEdit,
     required TResult Function() approveitems,
+    required TResult Function() removeControll,
   }) {
     return successAdd();
   }
@@ -1652,6 +1689,7 @@ class _$SuccessAddImpl implements SuccessAdd {
     TResult? Function()? removegaler3,
     TResult? Function()? pushEdit,
     TResult? Function()? approveitems,
+    TResult? Function()? removeControll,
   }) {
     return successAdd?.call();
   }
@@ -1686,6 +1724,7 @@ class _$SuccessAddImpl implements SuccessAdd {
     TResult Function()? removegaler3,
     TResult Function()? pushEdit,
     TResult Function()? approveitems,
+    TResult Function()? removeControll,
     required TResult orElse(),
   }) {
     if (successAdd != null) {
@@ -1724,6 +1763,7 @@ class _$SuccessAddImpl implements SuccessAdd {
     required TResult Function(removegaler3 value) removegaler3,
     required TResult Function(PushEdit value) pushEdit,
     required TResult Function(ApproveiItems value) approveitems,
+    required TResult Function(RemoveControll value) removeControll,
   }) {
     return successAdd(this);
   }
@@ -1758,6 +1798,7 @@ class _$SuccessAddImpl implements SuccessAdd {
     TResult? Function(removegaler3 value)? removegaler3,
     TResult? Function(PushEdit value)? pushEdit,
     TResult? Function(ApproveiItems value)? approveitems,
+    TResult? Function(RemoveControll value)? removeControll,
   }) {
     return successAdd?.call(this);
   }
@@ -1792,6 +1833,7 @@ class _$SuccessAddImpl implements SuccessAdd {
     TResult Function(removegaler3 value)? removegaler3,
     TResult Function(PushEdit value)? pushEdit,
     TResult Function(ApproveiItems value)? approveitems,
+    TResult Function(RemoveControll value)? removeControll,
     required TResult orElse(),
   }) {
     if (successAdd != null) {
@@ -1896,6 +1938,7 @@ class _$ErorrAddImpl implements ErorrAdd {
     required TResult Function() removegaler3,
     required TResult Function() pushEdit,
     required TResult Function() approveitems,
+    required TResult Function() removeControll,
   }) {
     return erorrAdd(erorr);
   }
@@ -1930,6 +1973,7 @@ class _$ErorrAddImpl implements ErorrAdd {
     TResult? Function()? removegaler3,
     TResult? Function()? pushEdit,
     TResult? Function()? approveitems,
+    TResult? Function()? removeControll,
   }) {
     return erorrAdd?.call(erorr);
   }
@@ -1964,6 +2008,7 @@ class _$ErorrAddImpl implements ErorrAdd {
     TResult Function()? removegaler3,
     TResult Function()? pushEdit,
     TResult Function()? approveitems,
+    TResult Function()? removeControll,
     required TResult orElse(),
   }) {
     if (erorrAdd != null) {
@@ -2002,6 +2047,7 @@ class _$ErorrAddImpl implements ErorrAdd {
     required TResult Function(removegaler3 value) removegaler3,
     required TResult Function(PushEdit value) pushEdit,
     required TResult Function(ApproveiItems value) approveitems,
+    required TResult Function(RemoveControll value) removeControll,
   }) {
     return erorrAdd(this);
   }
@@ -2036,6 +2082,7 @@ class _$ErorrAddImpl implements ErorrAdd {
     TResult? Function(removegaler3 value)? removegaler3,
     TResult? Function(PushEdit value)? pushEdit,
     TResult? Function(ApproveiItems value)? approveitems,
+    TResult? Function(RemoveControll value)? removeControll,
   }) {
     return erorrAdd?.call(this);
   }
@@ -2070,6 +2117,7 @@ class _$ErorrAddImpl implements ErorrAdd {
     TResult Function(removegaler3 value)? removegaler3,
     TResult Function(PushEdit value)? pushEdit,
     TResult Function(ApproveiItems value)? approveitems,
+    TResult Function(RemoveControll value)? removeControll,
     required TResult orElse(),
   }) {
     if (erorrAdd != null) {
@@ -2153,6 +2201,7 @@ class _$LoadingeditImpl implements Loadingedit {
     required TResult Function() removegaler3,
     required TResult Function() pushEdit,
     required TResult Function() approveitems,
+    required TResult Function() removeControll,
   }) {
     return loadingedit();
   }
@@ -2187,6 +2236,7 @@ class _$LoadingeditImpl implements Loadingedit {
     TResult? Function()? removegaler3,
     TResult? Function()? pushEdit,
     TResult? Function()? approveitems,
+    TResult? Function()? removeControll,
   }) {
     return loadingedit?.call();
   }
@@ -2221,6 +2271,7 @@ class _$LoadingeditImpl implements Loadingedit {
     TResult Function()? removegaler3,
     TResult Function()? pushEdit,
     TResult Function()? approveitems,
+    TResult Function()? removeControll,
     required TResult orElse(),
   }) {
     if (loadingedit != null) {
@@ -2259,6 +2310,7 @@ class _$LoadingeditImpl implements Loadingedit {
     required TResult Function(removegaler3 value) removegaler3,
     required TResult Function(PushEdit value) pushEdit,
     required TResult Function(ApproveiItems value) approveitems,
+    required TResult Function(RemoveControll value) removeControll,
   }) {
     return loadingedit(this);
   }
@@ -2293,6 +2345,7 @@ class _$LoadingeditImpl implements Loadingedit {
     TResult? Function(removegaler3 value)? removegaler3,
     TResult? Function(PushEdit value)? pushEdit,
     TResult? Function(ApproveiItems value)? approveitems,
+    TResult? Function(RemoveControll value)? removeControll,
   }) {
     return loadingedit?.call(this);
   }
@@ -2327,6 +2380,7 @@ class _$LoadingeditImpl implements Loadingedit {
     TResult Function(removegaler3 value)? removegaler3,
     TResult Function(PushEdit value)? pushEdit,
     TResult Function(ApproveiItems value)? approveitems,
+    TResult Function(RemoveControll value)? removeControll,
     required TResult orElse(),
   }) {
     if (loadingedit != null) {
@@ -2405,6 +2459,7 @@ class _$SuccesseditImpl implements Successedit {
     required TResult Function() removegaler3,
     required TResult Function() pushEdit,
     required TResult Function() approveitems,
+    required TResult Function() removeControll,
   }) {
     return successedit();
   }
@@ -2439,6 +2494,7 @@ class _$SuccesseditImpl implements Successedit {
     TResult? Function()? removegaler3,
     TResult? Function()? pushEdit,
     TResult? Function()? approveitems,
+    TResult? Function()? removeControll,
   }) {
     return successedit?.call();
   }
@@ -2473,6 +2529,7 @@ class _$SuccesseditImpl implements Successedit {
     TResult Function()? removegaler3,
     TResult Function()? pushEdit,
     TResult Function()? approveitems,
+    TResult Function()? removeControll,
     required TResult orElse(),
   }) {
     if (successedit != null) {
@@ -2511,6 +2568,7 @@ class _$SuccesseditImpl implements Successedit {
     required TResult Function(removegaler3 value) removegaler3,
     required TResult Function(PushEdit value) pushEdit,
     required TResult Function(ApproveiItems value) approveitems,
+    required TResult Function(RemoveControll value) removeControll,
   }) {
     return successedit(this);
   }
@@ -2545,6 +2603,7 @@ class _$SuccesseditImpl implements Successedit {
     TResult? Function(removegaler3 value)? removegaler3,
     TResult? Function(PushEdit value)? pushEdit,
     TResult? Function(ApproveiItems value)? approveitems,
+    TResult? Function(RemoveControll value)? removeControll,
   }) {
     return successedit?.call(this);
   }
@@ -2579,6 +2638,7 @@ class _$SuccesseditImpl implements Successedit {
     TResult Function(removegaler3 value)? removegaler3,
     TResult Function(PushEdit value)? pushEdit,
     TResult Function(ApproveiItems value)? approveitems,
+    TResult Function(RemoveControll value)? removeControll,
     required TResult orElse(),
   }) {
     if (successedit != null) {
@@ -2683,6 +2743,7 @@ class _$ErorreditImpl implements Erorredit {
     required TResult Function() removegaler3,
     required TResult Function() pushEdit,
     required TResult Function() approveitems,
+    required TResult Function() removeControll,
   }) {
     return erorredit(erorr);
   }
@@ -2717,6 +2778,7 @@ class _$ErorreditImpl implements Erorredit {
     TResult? Function()? removegaler3,
     TResult? Function()? pushEdit,
     TResult? Function()? approveitems,
+    TResult? Function()? removeControll,
   }) {
     return erorredit?.call(erorr);
   }
@@ -2751,6 +2813,7 @@ class _$ErorreditImpl implements Erorredit {
     TResult Function()? removegaler3,
     TResult Function()? pushEdit,
     TResult Function()? approveitems,
+    TResult Function()? removeControll,
     required TResult orElse(),
   }) {
     if (erorredit != null) {
@@ -2789,6 +2852,7 @@ class _$ErorreditImpl implements Erorredit {
     required TResult Function(removegaler3 value) removegaler3,
     required TResult Function(PushEdit value) pushEdit,
     required TResult Function(ApproveiItems value) approveitems,
+    required TResult Function(RemoveControll value) removeControll,
   }) {
     return erorredit(this);
   }
@@ -2823,6 +2887,7 @@ class _$ErorreditImpl implements Erorredit {
     TResult? Function(removegaler3 value)? removegaler3,
     TResult? Function(PushEdit value)? pushEdit,
     TResult? Function(ApproveiItems value)? approveitems,
+    TResult? Function(RemoveControll value)? removeControll,
   }) {
     return erorredit?.call(this);
   }
@@ -2857,6 +2922,7 @@ class _$ErorreditImpl implements Erorredit {
     TResult Function(removegaler3 value)? removegaler3,
     TResult Function(PushEdit value)? pushEdit,
     TResult Function(ApproveiItems value)? approveitems,
+    TResult Function(RemoveControll value)? removeControll,
     required TResult orElse(),
   }) {
     if (erorredit != null) {
@@ -2940,6 +3006,7 @@ class _$LoadingdeleteImpl implements Loadingdelete {
     required TResult Function() removegaler3,
     required TResult Function() pushEdit,
     required TResult Function() approveitems,
+    required TResult Function() removeControll,
   }) {
     return loadingdelete();
   }
@@ -2974,6 +3041,7 @@ class _$LoadingdeleteImpl implements Loadingdelete {
     TResult? Function()? removegaler3,
     TResult? Function()? pushEdit,
     TResult? Function()? approveitems,
+    TResult? Function()? removeControll,
   }) {
     return loadingdelete?.call();
   }
@@ -3008,6 +3076,7 @@ class _$LoadingdeleteImpl implements Loadingdelete {
     TResult Function()? removegaler3,
     TResult Function()? pushEdit,
     TResult Function()? approveitems,
+    TResult Function()? removeControll,
     required TResult orElse(),
   }) {
     if (loadingdelete != null) {
@@ -3046,6 +3115,7 @@ class _$LoadingdeleteImpl implements Loadingdelete {
     required TResult Function(removegaler3 value) removegaler3,
     required TResult Function(PushEdit value) pushEdit,
     required TResult Function(ApproveiItems value) approveitems,
+    required TResult Function(RemoveControll value) removeControll,
   }) {
     return loadingdelete(this);
   }
@@ -3080,6 +3150,7 @@ class _$LoadingdeleteImpl implements Loadingdelete {
     TResult? Function(removegaler3 value)? removegaler3,
     TResult? Function(PushEdit value)? pushEdit,
     TResult? Function(ApproveiItems value)? approveitems,
+    TResult? Function(RemoveControll value)? removeControll,
   }) {
     return loadingdelete?.call(this);
   }
@@ -3114,6 +3185,7 @@ class _$LoadingdeleteImpl implements Loadingdelete {
     TResult Function(removegaler3 value)? removegaler3,
     TResult Function(PushEdit value)? pushEdit,
     TResult Function(ApproveiItems value)? approveitems,
+    TResult Function(RemoveControll value)? removeControll,
     required TResult orElse(),
   }) {
     if (loadingdelete != null) {
@@ -3192,6 +3264,7 @@ class _$SuccessdeleteImpl implements Successdelete {
     required TResult Function() removegaler3,
     required TResult Function() pushEdit,
     required TResult Function() approveitems,
+    required TResult Function() removeControll,
   }) {
     return successdelete();
   }
@@ -3226,6 +3299,7 @@ class _$SuccessdeleteImpl implements Successdelete {
     TResult? Function()? removegaler3,
     TResult? Function()? pushEdit,
     TResult? Function()? approveitems,
+    TResult? Function()? removeControll,
   }) {
     return successdelete?.call();
   }
@@ -3260,6 +3334,7 @@ class _$SuccessdeleteImpl implements Successdelete {
     TResult Function()? removegaler3,
     TResult Function()? pushEdit,
     TResult Function()? approveitems,
+    TResult Function()? removeControll,
     required TResult orElse(),
   }) {
     if (successdelete != null) {
@@ -3298,6 +3373,7 @@ class _$SuccessdeleteImpl implements Successdelete {
     required TResult Function(removegaler3 value) removegaler3,
     required TResult Function(PushEdit value) pushEdit,
     required TResult Function(ApproveiItems value) approveitems,
+    required TResult Function(RemoveControll value) removeControll,
   }) {
     return successdelete(this);
   }
@@ -3332,6 +3408,7 @@ class _$SuccessdeleteImpl implements Successdelete {
     TResult? Function(removegaler3 value)? removegaler3,
     TResult? Function(PushEdit value)? pushEdit,
     TResult? Function(ApproveiItems value)? approveitems,
+    TResult? Function(RemoveControll value)? removeControll,
   }) {
     return successdelete?.call(this);
   }
@@ -3366,6 +3443,7 @@ class _$SuccessdeleteImpl implements Successdelete {
     TResult Function(removegaler3 value)? removegaler3,
     TResult Function(PushEdit value)? pushEdit,
     TResult Function(ApproveiItems value)? approveitems,
+    TResult Function(RemoveControll value)? removeControll,
     required TResult orElse(),
   }) {
     if (successdelete != null) {
@@ -3470,6 +3548,7 @@ class _$ErorrdeleteImpl implements Erorrdelete {
     required TResult Function() removegaler3,
     required TResult Function() pushEdit,
     required TResult Function() approveitems,
+    required TResult Function() removeControll,
   }) {
     return erorrdelete(erorr);
   }
@@ -3504,6 +3583,7 @@ class _$ErorrdeleteImpl implements Erorrdelete {
     TResult? Function()? removegaler3,
     TResult? Function()? pushEdit,
     TResult? Function()? approveitems,
+    TResult? Function()? removeControll,
   }) {
     return erorrdelete?.call(erorr);
   }
@@ -3538,6 +3618,7 @@ class _$ErorrdeleteImpl implements Erorrdelete {
     TResult Function()? removegaler3,
     TResult Function()? pushEdit,
     TResult Function()? approveitems,
+    TResult Function()? removeControll,
     required TResult orElse(),
   }) {
     if (erorrdelete != null) {
@@ -3576,6 +3657,7 @@ class _$ErorrdeleteImpl implements Erorrdelete {
     required TResult Function(removegaler3 value) removegaler3,
     required TResult Function(PushEdit value) pushEdit,
     required TResult Function(ApproveiItems value) approveitems,
+    required TResult Function(RemoveControll value) removeControll,
   }) {
     return erorrdelete(this);
   }
@@ -3610,6 +3692,7 @@ class _$ErorrdeleteImpl implements Erorrdelete {
     TResult? Function(removegaler3 value)? removegaler3,
     TResult? Function(PushEdit value)? pushEdit,
     TResult? Function(ApproveiItems value)? approveitems,
+    TResult? Function(RemoveControll value)? removeControll,
   }) {
     return erorrdelete?.call(this);
   }
@@ -3644,6 +3727,7 @@ class _$ErorrdeleteImpl implements Erorrdelete {
     TResult Function(removegaler3 value)? removegaler3,
     TResult Function(PushEdit value)? pushEdit,
     TResult Function(ApproveiItems value)? approveitems,
+    TResult Function(RemoveControll value)? removeControll,
     required TResult orElse(),
   }) {
     if (erorrdelete != null) {
@@ -3727,6 +3811,7 @@ class _$LoadingviewCatImpl implements LoadingviewCat {
     required TResult Function() removegaler3,
     required TResult Function() pushEdit,
     required TResult Function() approveitems,
+    required TResult Function() removeControll,
   }) {
     return loadingviewCat();
   }
@@ -3761,6 +3846,7 @@ class _$LoadingviewCatImpl implements LoadingviewCat {
     TResult? Function()? removegaler3,
     TResult? Function()? pushEdit,
     TResult? Function()? approveitems,
+    TResult? Function()? removeControll,
   }) {
     return loadingviewCat?.call();
   }
@@ -3795,6 +3881,7 @@ class _$LoadingviewCatImpl implements LoadingviewCat {
     TResult Function()? removegaler3,
     TResult Function()? pushEdit,
     TResult Function()? approveitems,
+    TResult Function()? removeControll,
     required TResult orElse(),
   }) {
     if (loadingviewCat != null) {
@@ -3833,6 +3920,7 @@ class _$LoadingviewCatImpl implements LoadingviewCat {
     required TResult Function(removegaler3 value) removegaler3,
     required TResult Function(PushEdit value) pushEdit,
     required TResult Function(ApproveiItems value) approveitems,
+    required TResult Function(RemoveControll value) removeControll,
   }) {
     return loadingviewCat(this);
   }
@@ -3867,6 +3955,7 @@ class _$LoadingviewCatImpl implements LoadingviewCat {
     TResult? Function(removegaler3 value)? removegaler3,
     TResult? Function(PushEdit value)? pushEdit,
     TResult? Function(ApproveiItems value)? approveitems,
+    TResult? Function(RemoveControll value)? removeControll,
   }) {
     return loadingviewCat?.call(this);
   }
@@ -3901,6 +3990,7 @@ class _$LoadingviewCatImpl implements LoadingviewCat {
     TResult Function(removegaler3 value)? removegaler3,
     TResult Function(PushEdit value)? pushEdit,
     TResult Function(ApproveiItems value)? approveitems,
+    TResult Function(RemoveControll value)? removeControll,
     required TResult orElse(),
   }) {
     if (loadingviewCat != null) {
@@ -3979,6 +4069,7 @@ class _$SuccessviewCatImpl implements SuccessviewCat {
     required TResult Function() removegaler3,
     required TResult Function() pushEdit,
     required TResult Function() approveitems,
+    required TResult Function() removeControll,
   }) {
     return successviewCat();
   }
@@ -4013,6 +4104,7 @@ class _$SuccessviewCatImpl implements SuccessviewCat {
     TResult? Function()? removegaler3,
     TResult? Function()? pushEdit,
     TResult? Function()? approveitems,
+    TResult? Function()? removeControll,
   }) {
     return successviewCat?.call();
   }
@@ -4047,6 +4139,7 @@ class _$SuccessviewCatImpl implements SuccessviewCat {
     TResult Function()? removegaler3,
     TResult Function()? pushEdit,
     TResult Function()? approveitems,
+    TResult Function()? removeControll,
     required TResult orElse(),
   }) {
     if (successviewCat != null) {
@@ -4085,6 +4178,7 @@ class _$SuccessviewCatImpl implements SuccessviewCat {
     required TResult Function(removegaler3 value) removegaler3,
     required TResult Function(PushEdit value) pushEdit,
     required TResult Function(ApproveiItems value) approveitems,
+    required TResult Function(RemoveControll value) removeControll,
   }) {
     return successviewCat(this);
   }
@@ -4119,6 +4213,7 @@ class _$SuccessviewCatImpl implements SuccessviewCat {
     TResult? Function(removegaler3 value)? removegaler3,
     TResult? Function(PushEdit value)? pushEdit,
     TResult? Function(ApproveiItems value)? approveitems,
+    TResult? Function(RemoveControll value)? removeControll,
   }) {
     return successviewCat?.call(this);
   }
@@ -4153,6 +4248,7 @@ class _$SuccessviewCatImpl implements SuccessviewCat {
     TResult Function(removegaler3 value)? removegaler3,
     TResult Function(PushEdit value)? pushEdit,
     TResult Function(ApproveiItems value)? approveitems,
+    TResult Function(RemoveControll value)? removeControll,
     required TResult orElse(),
   }) {
     if (successviewCat != null) {
@@ -4257,6 +4353,7 @@ class _$ErorrviewCatImpl implements ErorrviewCat {
     required TResult Function() removegaler3,
     required TResult Function() pushEdit,
     required TResult Function() approveitems,
+    required TResult Function() removeControll,
   }) {
     return erorrviewCat(erorr);
   }
@@ -4291,6 +4388,7 @@ class _$ErorrviewCatImpl implements ErorrviewCat {
     TResult? Function()? removegaler3,
     TResult? Function()? pushEdit,
     TResult? Function()? approveitems,
+    TResult? Function()? removeControll,
   }) {
     return erorrviewCat?.call(erorr);
   }
@@ -4325,6 +4423,7 @@ class _$ErorrviewCatImpl implements ErorrviewCat {
     TResult Function()? removegaler3,
     TResult Function()? pushEdit,
     TResult Function()? approveitems,
+    TResult Function()? removeControll,
     required TResult orElse(),
   }) {
     if (erorrviewCat != null) {
@@ -4363,6 +4462,7 @@ class _$ErorrviewCatImpl implements ErorrviewCat {
     required TResult Function(removegaler3 value) removegaler3,
     required TResult Function(PushEdit value) pushEdit,
     required TResult Function(ApproveiItems value) approveitems,
+    required TResult Function(RemoveControll value) removeControll,
   }) {
     return erorrviewCat(this);
   }
@@ -4397,6 +4497,7 @@ class _$ErorrviewCatImpl implements ErorrviewCat {
     TResult? Function(removegaler3 value)? removegaler3,
     TResult? Function(PushEdit value)? pushEdit,
     TResult? Function(ApproveiItems value)? approveitems,
+    TResult? Function(RemoveControll value)? removeControll,
   }) {
     return erorrviewCat?.call(this);
   }
@@ -4431,6 +4532,7 @@ class _$ErorrviewCatImpl implements ErorrviewCat {
     TResult Function(removegaler3 value)? removegaler3,
     TResult Function(PushEdit value)? pushEdit,
     TResult Function(ApproveiItems value)? approveitems,
+    TResult Function(RemoveControll value)? removeControll,
     required TResult orElse(),
   }) {
     if (erorrviewCat != null) {
@@ -4515,6 +4617,7 @@ class _$LoadingimageImpl implements Loadingimage {
     required TResult Function() removegaler3,
     required TResult Function() pushEdit,
     required TResult Function() approveitems,
+    required TResult Function() removeControll,
   }) {
     return loadingvimage();
   }
@@ -4549,6 +4652,7 @@ class _$LoadingimageImpl implements Loadingimage {
     TResult? Function()? removegaler3,
     TResult? Function()? pushEdit,
     TResult? Function()? approveitems,
+    TResult? Function()? removeControll,
   }) {
     return loadingvimage?.call();
   }
@@ -4583,6 +4687,7 @@ class _$LoadingimageImpl implements Loadingimage {
     TResult Function()? removegaler3,
     TResult Function()? pushEdit,
     TResult Function()? approveitems,
+    TResult Function()? removeControll,
     required TResult orElse(),
   }) {
     if (loadingvimage != null) {
@@ -4621,6 +4726,7 @@ class _$LoadingimageImpl implements Loadingimage {
     required TResult Function(removegaler3 value) removegaler3,
     required TResult Function(PushEdit value) pushEdit,
     required TResult Function(ApproveiItems value) approveitems,
+    required TResult Function(RemoveControll value) removeControll,
   }) {
     return loadingvimage(this);
   }
@@ -4655,6 +4761,7 @@ class _$LoadingimageImpl implements Loadingimage {
     TResult? Function(removegaler3 value)? removegaler3,
     TResult? Function(PushEdit value)? pushEdit,
     TResult? Function(ApproveiItems value)? approveitems,
+    TResult? Function(RemoveControll value)? removeControll,
   }) {
     return loadingvimage?.call(this);
   }
@@ -4689,6 +4796,7 @@ class _$LoadingimageImpl implements Loadingimage {
     TResult Function(removegaler3 value)? removegaler3,
     TResult Function(PushEdit value)? pushEdit,
     TResult Function(ApproveiItems value)? approveitems,
+    TResult Function(RemoveControll value)? removeControll,
     required TResult orElse(),
   }) {
     if (loadingvimage != null) {
@@ -4767,6 +4875,7 @@ class _$SuccessimageImpl implements Successimage {
     required TResult Function() removegaler3,
     required TResult Function() pushEdit,
     required TResult Function() approveitems,
+    required TResult Function() removeControll,
   }) {
     return successimage();
   }
@@ -4801,6 +4910,7 @@ class _$SuccessimageImpl implements Successimage {
     TResult? Function()? removegaler3,
     TResult? Function()? pushEdit,
     TResult? Function()? approveitems,
+    TResult? Function()? removeControll,
   }) {
     return successimage?.call();
   }
@@ -4835,6 +4945,7 @@ class _$SuccessimageImpl implements Successimage {
     TResult Function()? removegaler3,
     TResult Function()? pushEdit,
     TResult Function()? approveitems,
+    TResult Function()? removeControll,
     required TResult orElse(),
   }) {
     if (successimage != null) {
@@ -4873,6 +4984,7 @@ class _$SuccessimageImpl implements Successimage {
     required TResult Function(removegaler3 value) removegaler3,
     required TResult Function(PushEdit value) pushEdit,
     required TResult Function(ApproveiItems value) approveitems,
+    required TResult Function(RemoveControll value) removeControll,
   }) {
     return successimage(this);
   }
@@ -4907,6 +5019,7 @@ class _$SuccessimageImpl implements Successimage {
     TResult? Function(removegaler3 value)? removegaler3,
     TResult? Function(PushEdit value)? pushEdit,
     TResult? Function(ApproveiItems value)? approveitems,
+    TResult? Function(RemoveControll value)? removeControll,
   }) {
     return successimage?.call(this);
   }
@@ -4941,6 +5054,7 @@ class _$SuccessimageImpl implements Successimage {
     TResult Function(removegaler3 value)? removegaler3,
     TResult Function(PushEdit value)? pushEdit,
     TResult Function(ApproveiItems value)? approveitems,
+    TResult Function(RemoveControll value)? removeControll,
     required TResult orElse(),
   }) {
     if (successimage != null) {
@@ -5045,6 +5159,7 @@ class _$ErorrimageImpl implements Erorrimage {
     required TResult Function() removegaler3,
     required TResult Function() pushEdit,
     required TResult Function() approveitems,
+    required TResult Function() removeControll,
   }) {
     return erorrvimage(erorr);
   }
@@ -5079,6 +5194,7 @@ class _$ErorrimageImpl implements Erorrimage {
     TResult? Function()? removegaler3,
     TResult? Function()? pushEdit,
     TResult? Function()? approveitems,
+    TResult? Function()? removeControll,
   }) {
     return erorrvimage?.call(erorr);
   }
@@ -5113,6 +5229,7 @@ class _$ErorrimageImpl implements Erorrimage {
     TResult Function()? removegaler3,
     TResult Function()? pushEdit,
     TResult Function()? approveitems,
+    TResult Function()? removeControll,
     required TResult orElse(),
   }) {
     if (erorrvimage != null) {
@@ -5151,6 +5268,7 @@ class _$ErorrimageImpl implements Erorrimage {
     required TResult Function(removegaler3 value) removegaler3,
     required TResult Function(PushEdit value) pushEdit,
     required TResult Function(ApproveiItems value) approveitems,
+    required TResult Function(RemoveControll value) removeControll,
   }) {
     return erorrvimage(this);
   }
@@ -5185,6 +5303,7 @@ class _$ErorrimageImpl implements Erorrimage {
     TResult? Function(removegaler3 value)? removegaler3,
     TResult? Function(PushEdit value)? pushEdit,
     TResult? Function(ApproveiItems value)? approveitems,
+    TResult? Function(RemoveControll value)? removeControll,
   }) {
     return erorrvimage?.call(this);
   }
@@ -5219,6 +5338,7 @@ class _$ErorrimageImpl implements Erorrimage {
     TResult Function(removegaler3 value)? removegaler3,
     TResult Function(PushEdit value)? pushEdit,
     TResult Function(ApproveiItems value)? approveitems,
+    TResult Function(RemoveControll value)? removeControll,
     required TResult orElse(),
   }) {
     if (erorrvimage != null) {
@@ -5302,6 +5422,7 @@ class _$GalerImpl implements Galer {
     required TResult Function() removegaler3,
     required TResult Function() pushEdit,
     required TResult Function() approveitems,
+    required TResult Function() removeControll,
   }) {
     return galer();
   }
@@ -5336,6 +5457,7 @@ class _$GalerImpl implements Galer {
     TResult? Function()? removegaler3,
     TResult? Function()? pushEdit,
     TResult? Function()? approveitems,
+    TResult? Function()? removeControll,
   }) {
     return galer?.call();
   }
@@ -5370,6 +5492,7 @@ class _$GalerImpl implements Galer {
     TResult Function()? removegaler3,
     TResult Function()? pushEdit,
     TResult Function()? approveitems,
+    TResult Function()? removeControll,
     required TResult orElse(),
   }) {
     if (galer != null) {
@@ -5408,6 +5531,7 @@ class _$GalerImpl implements Galer {
     required TResult Function(removegaler3 value) removegaler3,
     required TResult Function(PushEdit value) pushEdit,
     required TResult Function(ApproveiItems value) approveitems,
+    required TResult Function(RemoveControll value) removeControll,
   }) {
     return galer(this);
   }
@@ -5442,6 +5566,7 @@ class _$GalerImpl implements Galer {
     TResult? Function(removegaler3 value)? removegaler3,
     TResult? Function(PushEdit value)? pushEdit,
     TResult? Function(ApproveiItems value)? approveitems,
+    TResult? Function(RemoveControll value)? removeControll,
   }) {
     return galer?.call(this);
   }
@@ -5476,6 +5601,7 @@ class _$GalerImpl implements Galer {
     TResult Function(removegaler3 value)? removegaler3,
     TResult Function(PushEdit value)? pushEdit,
     TResult Function(ApproveiItems value)? approveitems,
+    TResult Function(RemoveControll value)? removeControll,
     required TResult orElse(),
   }) {
     if (galer != null) {
@@ -5554,6 +5680,7 @@ class _$Galer2Impl implements Galer2 {
     required TResult Function() removegaler3,
     required TResult Function() pushEdit,
     required TResult Function() approveitems,
+    required TResult Function() removeControll,
   }) {
     return galer2();
   }
@@ -5588,6 +5715,7 @@ class _$Galer2Impl implements Galer2 {
     TResult? Function()? removegaler3,
     TResult? Function()? pushEdit,
     TResult? Function()? approveitems,
+    TResult? Function()? removeControll,
   }) {
     return galer2?.call();
   }
@@ -5622,6 +5750,7 @@ class _$Galer2Impl implements Galer2 {
     TResult Function()? removegaler3,
     TResult Function()? pushEdit,
     TResult Function()? approveitems,
+    TResult Function()? removeControll,
     required TResult orElse(),
   }) {
     if (galer2 != null) {
@@ -5660,6 +5789,7 @@ class _$Galer2Impl implements Galer2 {
     required TResult Function(removegaler3 value) removegaler3,
     required TResult Function(PushEdit value) pushEdit,
     required TResult Function(ApproveiItems value) approveitems,
+    required TResult Function(RemoveControll value) removeControll,
   }) {
     return galer2(this);
   }
@@ -5694,6 +5824,7 @@ class _$Galer2Impl implements Galer2 {
     TResult? Function(removegaler3 value)? removegaler3,
     TResult? Function(PushEdit value)? pushEdit,
     TResult? Function(ApproveiItems value)? approveitems,
+    TResult? Function(RemoveControll value)? removeControll,
   }) {
     return galer2?.call(this);
   }
@@ -5728,6 +5859,7 @@ class _$Galer2Impl implements Galer2 {
     TResult Function(removegaler3 value)? removegaler3,
     TResult Function(PushEdit value)? pushEdit,
     TResult Function(ApproveiItems value)? approveitems,
+    TResult Function(RemoveControll value)? removeControll,
     required TResult orElse(),
   }) {
     if (galer2 != null) {
@@ -5806,6 +5938,7 @@ class _$Galer3Impl implements Galer3 {
     required TResult Function() removegaler3,
     required TResult Function() pushEdit,
     required TResult Function() approveitems,
+    required TResult Function() removeControll,
   }) {
     return galer3();
   }
@@ -5840,6 +5973,7 @@ class _$Galer3Impl implements Galer3 {
     TResult? Function()? removegaler3,
     TResult? Function()? pushEdit,
     TResult? Function()? approveitems,
+    TResult? Function()? removeControll,
   }) {
     return galer3?.call();
   }
@@ -5874,6 +6008,7 @@ class _$Galer3Impl implements Galer3 {
     TResult Function()? removegaler3,
     TResult Function()? pushEdit,
     TResult Function()? approveitems,
+    TResult Function()? removeControll,
     required TResult orElse(),
   }) {
     if (galer3 != null) {
@@ -5912,6 +6047,7 @@ class _$Galer3Impl implements Galer3 {
     required TResult Function(removegaler3 value) removegaler3,
     required TResult Function(PushEdit value) pushEdit,
     required TResult Function(ApproveiItems value) approveitems,
+    required TResult Function(RemoveControll value) removeControll,
   }) {
     return galer3(this);
   }
@@ -5946,6 +6082,7 @@ class _$Galer3Impl implements Galer3 {
     TResult? Function(removegaler3 value)? removegaler3,
     TResult? Function(PushEdit value)? pushEdit,
     TResult? Function(ApproveiItems value)? approveitems,
+    TResult? Function(RemoveControll value)? removeControll,
   }) {
     return galer3?.call(this);
   }
@@ -5980,6 +6117,7 @@ class _$Galer3Impl implements Galer3 {
     TResult Function(removegaler3 value)? removegaler3,
     TResult Function(PushEdit value)? pushEdit,
     TResult Function(ApproveiItems value)? approveitems,
+    TResult Function(RemoveControll value)? removeControll,
     required TResult orElse(),
   }) {
     if (galer3 != null) {
@@ -6058,6 +6196,7 @@ class _$remofgalerImpl implements remofgaler {
     required TResult Function() removegaler3,
     required TResult Function() pushEdit,
     required TResult Function() approveitems,
+    required TResult Function() removeControll,
   }) {
     return remofgaler();
   }
@@ -6092,6 +6231,7 @@ class _$remofgalerImpl implements remofgaler {
     TResult? Function()? removegaler3,
     TResult? Function()? pushEdit,
     TResult? Function()? approveitems,
+    TResult? Function()? removeControll,
   }) {
     return remofgaler?.call();
   }
@@ -6126,6 +6266,7 @@ class _$remofgalerImpl implements remofgaler {
     TResult Function()? removegaler3,
     TResult Function()? pushEdit,
     TResult Function()? approveitems,
+    TResult Function()? removeControll,
     required TResult orElse(),
   }) {
     if (remofgaler != null) {
@@ -6164,6 +6305,7 @@ class _$remofgalerImpl implements remofgaler {
     required TResult Function(removegaler3 value) removegaler3,
     required TResult Function(PushEdit value) pushEdit,
     required TResult Function(ApproveiItems value) approveitems,
+    required TResult Function(RemoveControll value) removeControll,
   }) {
     return remofgaler(this);
   }
@@ -6198,6 +6340,7 @@ class _$remofgalerImpl implements remofgaler {
     TResult? Function(removegaler3 value)? removegaler3,
     TResult? Function(PushEdit value)? pushEdit,
     TResult? Function(ApproveiItems value)? approveitems,
+    TResult? Function(RemoveControll value)? removeControll,
   }) {
     return remofgaler?.call(this);
   }
@@ -6232,6 +6375,7 @@ class _$remofgalerImpl implements remofgaler {
     TResult Function(removegaler3 value)? removegaler3,
     TResult Function(PushEdit value)? pushEdit,
     TResult Function(ApproveiItems value)? approveitems,
+    TResult Function(RemoveControll value)? removeControll,
     required TResult orElse(),
   }) {
     if (remofgaler != null) {
@@ -6310,6 +6454,7 @@ class _$removegaler2Impl implements removegaler2 {
     required TResult Function() removegaler3,
     required TResult Function() pushEdit,
     required TResult Function() approveitems,
+    required TResult Function() removeControll,
   }) {
     return removegaler2();
   }
@@ -6344,6 +6489,7 @@ class _$removegaler2Impl implements removegaler2 {
     TResult? Function()? removegaler3,
     TResult? Function()? pushEdit,
     TResult? Function()? approveitems,
+    TResult? Function()? removeControll,
   }) {
     return removegaler2?.call();
   }
@@ -6378,6 +6524,7 @@ class _$removegaler2Impl implements removegaler2 {
     TResult Function()? removegaler3,
     TResult Function()? pushEdit,
     TResult Function()? approveitems,
+    TResult Function()? removeControll,
     required TResult orElse(),
   }) {
     if (removegaler2 != null) {
@@ -6416,6 +6563,7 @@ class _$removegaler2Impl implements removegaler2 {
     required TResult Function(removegaler3 value) removegaler3,
     required TResult Function(PushEdit value) pushEdit,
     required TResult Function(ApproveiItems value) approveitems,
+    required TResult Function(RemoveControll value) removeControll,
   }) {
     return removegaler2(this);
   }
@@ -6450,6 +6598,7 @@ class _$removegaler2Impl implements removegaler2 {
     TResult? Function(removegaler3 value)? removegaler3,
     TResult? Function(PushEdit value)? pushEdit,
     TResult? Function(ApproveiItems value)? approveitems,
+    TResult? Function(RemoveControll value)? removeControll,
   }) {
     return removegaler2?.call(this);
   }
@@ -6484,6 +6633,7 @@ class _$removegaler2Impl implements removegaler2 {
     TResult Function(removegaler3 value)? removegaler3,
     TResult Function(PushEdit value)? pushEdit,
     TResult Function(ApproveiItems value)? approveitems,
+    TResult Function(RemoveControll value)? removeControll,
     required TResult orElse(),
   }) {
     if (removegaler2 != null) {
@@ -6562,6 +6712,7 @@ class _$removegaler3Impl implements removegaler3 {
     required TResult Function() removegaler3,
     required TResult Function() pushEdit,
     required TResult Function() approveitems,
+    required TResult Function() removeControll,
   }) {
     return removegaler3();
   }
@@ -6596,6 +6747,7 @@ class _$removegaler3Impl implements removegaler3 {
     TResult? Function()? removegaler3,
     TResult? Function()? pushEdit,
     TResult? Function()? approveitems,
+    TResult? Function()? removeControll,
   }) {
     return removegaler3?.call();
   }
@@ -6630,6 +6782,7 @@ class _$removegaler3Impl implements removegaler3 {
     TResult Function()? removegaler3,
     TResult Function()? pushEdit,
     TResult Function()? approveitems,
+    TResult Function()? removeControll,
     required TResult orElse(),
   }) {
     if (removegaler3 != null) {
@@ -6668,6 +6821,7 @@ class _$removegaler3Impl implements removegaler3 {
     required TResult Function(removegaler3 value) removegaler3,
     required TResult Function(PushEdit value) pushEdit,
     required TResult Function(ApproveiItems value) approveitems,
+    required TResult Function(RemoveControll value) removeControll,
   }) {
     return removegaler3(this);
   }
@@ -6702,6 +6856,7 @@ class _$removegaler3Impl implements removegaler3 {
     TResult? Function(removegaler3 value)? removegaler3,
     TResult? Function(PushEdit value)? pushEdit,
     TResult? Function(ApproveiItems value)? approveitems,
+    TResult? Function(RemoveControll value)? removeControll,
   }) {
     return removegaler3?.call(this);
   }
@@ -6736,6 +6891,7 @@ class _$removegaler3Impl implements removegaler3 {
     TResult Function(removegaler3 value)? removegaler3,
     TResult Function(PushEdit value)? pushEdit,
     TResult Function(ApproveiItems value)? approveitems,
+    TResult Function(RemoveControll value)? removeControll,
     required TResult orElse(),
   }) {
     if (removegaler3 != null) {
@@ -6814,6 +6970,7 @@ class _$PushEditImpl implements PushEdit {
     required TResult Function() removegaler3,
     required TResult Function() pushEdit,
     required TResult Function() approveitems,
+    required TResult Function() removeControll,
   }) {
     return pushEdit();
   }
@@ -6848,6 +7005,7 @@ class _$PushEditImpl implements PushEdit {
     TResult? Function()? removegaler3,
     TResult? Function()? pushEdit,
     TResult? Function()? approveitems,
+    TResult? Function()? removeControll,
   }) {
     return pushEdit?.call();
   }
@@ -6882,6 +7040,7 @@ class _$PushEditImpl implements PushEdit {
     TResult Function()? removegaler3,
     TResult Function()? pushEdit,
     TResult Function()? approveitems,
+    TResult Function()? removeControll,
     required TResult orElse(),
   }) {
     if (pushEdit != null) {
@@ -6920,6 +7079,7 @@ class _$PushEditImpl implements PushEdit {
     required TResult Function(removegaler3 value) removegaler3,
     required TResult Function(PushEdit value) pushEdit,
     required TResult Function(ApproveiItems value) approveitems,
+    required TResult Function(RemoveControll value) removeControll,
   }) {
     return pushEdit(this);
   }
@@ -6954,6 +7114,7 @@ class _$PushEditImpl implements PushEdit {
     TResult? Function(removegaler3 value)? removegaler3,
     TResult? Function(PushEdit value)? pushEdit,
     TResult? Function(ApproveiItems value)? approveitems,
+    TResult? Function(RemoveControll value)? removeControll,
   }) {
     return pushEdit?.call(this);
   }
@@ -6988,6 +7149,7 @@ class _$PushEditImpl implements PushEdit {
     TResult Function(removegaler3 value)? removegaler3,
     TResult Function(PushEdit value)? pushEdit,
     TResult Function(ApproveiItems value)? approveitems,
+    TResult Function(RemoveControll value)? removeControll,
     required TResult orElse(),
   }) {
     if (pushEdit != null) {
@@ -7066,6 +7228,7 @@ class _$ApproveiItemsImpl implements ApproveiItems {
     required TResult Function() removegaler3,
     required TResult Function() pushEdit,
     required TResult Function() approveitems,
+    required TResult Function() removeControll,
   }) {
     return approveitems();
   }
@@ -7100,6 +7263,7 @@ class _$ApproveiItemsImpl implements ApproveiItems {
     TResult? Function()? removegaler3,
     TResult? Function()? pushEdit,
     TResult? Function()? approveitems,
+    TResult? Function()? removeControll,
   }) {
     return approveitems?.call();
   }
@@ -7134,6 +7298,7 @@ class _$ApproveiItemsImpl implements ApproveiItems {
     TResult Function()? removegaler3,
     TResult Function()? pushEdit,
     TResult Function()? approveitems,
+    TResult Function()? removeControll,
     required TResult orElse(),
   }) {
     if (approveitems != null) {
@@ -7172,6 +7337,7 @@ class _$ApproveiItemsImpl implements ApproveiItems {
     required TResult Function(removegaler3 value) removegaler3,
     required TResult Function(PushEdit value) pushEdit,
     required TResult Function(ApproveiItems value) approveitems,
+    required TResult Function(RemoveControll value) removeControll,
   }) {
     return approveitems(this);
   }
@@ -7206,6 +7372,7 @@ class _$ApproveiItemsImpl implements ApproveiItems {
     TResult? Function(removegaler3 value)? removegaler3,
     TResult? Function(PushEdit value)? pushEdit,
     TResult? Function(ApproveiItems value)? approveitems,
+    TResult? Function(RemoveControll value)? removeControll,
   }) {
     return approveitems?.call(this);
   }
@@ -7240,6 +7407,7 @@ class _$ApproveiItemsImpl implements ApproveiItems {
     TResult Function(removegaler3 value)? removegaler3,
     TResult Function(PushEdit value)? pushEdit,
     TResult Function(ApproveiItems value)? approveitems,
+    TResult Function(RemoveControll value)? removeControll,
     required TResult orElse(),
   }) {
     if (approveitems != null) {
@@ -7251,4 +7419,262 @@ class _$ApproveiItemsImpl implements ApproveiItems {
 
 abstract class ApproveiItems implements DashboardState {
   const factory ApproveiItems() = _$ApproveiItemsImpl;
+}
+
+/// @nodoc
+abstract class _$$RemoveControllImplCopyWith<$Res> {
+  factory _$$RemoveControllImplCopyWith(_$RemoveControllImpl value,
+          $Res Function(_$RemoveControllImpl) then) =
+      __$$RemoveControllImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$RemoveControllImplCopyWithImpl<$Res>
+    extends _$DashboardStateCopyWithImpl<$Res, _$RemoveControllImpl>
+    implements _$$RemoveControllImplCopyWith<$Res> {
+  __$$RemoveControllImplCopyWithImpl(
+      _$RemoveControllImpl _value, $Res Function(_$RemoveControllImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$RemoveControllImpl implements RemoveControll {
+  const _$RemoveControllImpl();
+
+  @override
+  String toString() {
+    return 'DashboardState.removeControll()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$RemoveControllImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loadingview,
+    required TResult Function(List<ItemsData> response) successview,
+    required TResult Function(String erorr) erorrview,
+    required TResult Function() loadingAdd,
+    required TResult Function() successAdd,
+    required TResult Function(String erorr) erorrAdd,
+    required TResult Function() loadingedit,
+    required TResult Function() successedit,
+    required TResult Function(String erorr) erorredit,
+    required TResult Function() loadingdelete,
+    required TResult Function() successdelete,
+    required TResult Function(String erorr) erorrdelete,
+    required TResult Function() loadingviewCat,
+    required TResult Function() successviewCat,
+    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingvimage,
+    required TResult Function() successimage,
+    required TResult Function(String erorr) erorrvimage,
+    required TResult Function() galer,
+    required TResult Function() galer2,
+    required TResult Function() galer3,
+    required TResult Function() remofgaler,
+    required TResult Function() removegaler2,
+    required TResult Function() removegaler3,
+    required TResult Function() pushEdit,
+    required TResult Function() approveitems,
+    required TResult Function() removeControll,
+  }) {
+    return removeControll();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loadingview,
+    TResult? Function(List<ItemsData> response)? successview,
+    TResult? Function(String erorr)? erorrview,
+    TResult? Function()? loadingAdd,
+    TResult? Function()? successAdd,
+    TResult? Function(String erorr)? erorrAdd,
+    TResult? Function()? loadingedit,
+    TResult? Function()? successedit,
+    TResult? Function(String erorr)? erorredit,
+    TResult? Function()? loadingdelete,
+    TResult? Function()? successdelete,
+    TResult? Function(String erorr)? erorrdelete,
+    TResult? Function()? loadingviewCat,
+    TResult? Function()? successviewCat,
+    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingvimage,
+    TResult? Function()? successimage,
+    TResult? Function(String erorr)? erorrvimage,
+    TResult? Function()? galer,
+    TResult? Function()? galer2,
+    TResult? Function()? galer3,
+    TResult? Function()? remofgaler,
+    TResult? Function()? removegaler2,
+    TResult? Function()? removegaler3,
+    TResult? Function()? pushEdit,
+    TResult? Function()? approveitems,
+    TResult? Function()? removeControll,
+  }) {
+    return removeControll?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loadingview,
+    TResult Function(List<ItemsData> response)? successview,
+    TResult Function(String erorr)? erorrview,
+    TResult Function()? loadingAdd,
+    TResult Function()? successAdd,
+    TResult Function(String erorr)? erorrAdd,
+    TResult Function()? loadingedit,
+    TResult Function()? successedit,
+    TResult Function(String erorr)? erorredit,
+    TResult Function()? loadingdelete,
+    TResult Function()? successdelete,
+    TResult Function(String erorr)? erorrdelete,
+    TResult Function()? loadingviewCat,
+    TResult Function()? successviewCat,
+    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingvimage,
+    TResult Function()? successimage,
+    TResult Function(String erorr)? erorrvimage,
+    TResult Function()? galer,
+    TResult Function()? galer2,
+    TResult Function()? galer3,
+    TResult Function()? remofgaler,
+    TResult Function()? removegaler2,
+    TResult Function()? removegaler3,
+    TResult Function()? pushEdit,
+    TResult Function()? approveitems,
+    TResult Function()? removeControll,
+    required TResult orElse(),
+  }) {
+    if (removeControll != null) {
+      return removeControll();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(Loadingview value) loadingview,
+    required TResult Function(Successview value) successview,
+    required TResult Function(Erorrview value) erorrview,
+    required TResult Function(LoadingAdd value) loadingAdd,
+    required TResult Function(SuccessAdd value) successAdd,
+    required TResult Function(ErorrAdd value) erorrAdd,
+    required TResult Function(Loadingedit value) loadingedit,
+    required TResult Function(Successedit value) successedit,
+    required TResult Function(Erorredit value) erorredit,
+    required TResult Function(Loadingdelete value) loadingdelete,
+    required TResult Function(Successdelete value) successdelete,
+    required TResult Function(Erorrdelete value) erorrdelete,
+    required TResult Function(LoadingviewCat value) loadingviewCat,
+    required TResult Function(SuccessviewCat value) successviewCat,
+    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(Loadingimage value) loadingvimage,
+    required TResult Function(Successimage value) successimage,
+    required TResult Function(Erorrimage value) erorrvimage,
+    required TResult Function(Galer value) galer,
+    required TResult Function(Galer2 value) galer2,
+    required TResult Function(Galer3 value) galer3,
+    required TResult Function(remofgaler value) remofgaler,
+    required TResult Function(removegaler2 value) removegaler2,
+    required TResult Function(removegaler3 value) removegaler3,
+    required TResult Function(PushEdit value) pushEdit,
+    required TResult Function(ApproveiItems value) approveitems,
+    required TResult Function(RemoveControll value) removeControll,
+  }) {
+    return removeControll(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(Loadingview value)? loadingview,
+    TResult? Function(Successview value)? successview,
+    TResult? Function(Erorrview value)? erorrview,
+    TResult? Function(LoadingAdd value)? loadingAdd,
+    TResult? Function(SuccessAdd value)? successAdd,
+    TResult? Function(ErorrAdd value)? erorrAdd,
+    TResult? Function(Loadingedit value)? loadingedit,
+    TResult? Function(Successedit value)? successedit,
+    TResult? Function(Erorredit value)? erorredit,
+    TResult? Function(Loadingdelete value)? loadingdelete,
+    TResult? Function(Successdelete value)? successdelete,
+    TResult? Function(Erorrdelete value)? erorrdelete,
+    TResult? Function(LoadingviewCat value)? loadingviewCat,
+    TResult? Function(SuccessviewCat value)? successviewCat,
+    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(Loadingimage value)? loadingvimage,
+    TResult? Function(Successimage value)? successimage,
+    TResult? Function(Erorrimage value)? erorrvimage,
+    TResult? Function(Galer value)? galer,
+    TResult? Function(Galer2 value)? galer2,
+    TResult? Function(Galer3 value)? galer3,
+    TResult? Function(remofgaler value)? remofgaler,
+    TResult? Function(removegaler2 value)? removegaler2,
+    TResult? Function(removegaler3 value)? removegaler3,
+    TResult? Function(PushEdit value)? pushEdit,
+    TResult? Function(ApproveiItems value)? approveitems,
+    TResult? Function(RemoveControll value)? removeControll,
+  }) {
+    return removeControll?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(Loadingview value)? loadingview,
+    TResult Function(Successview value)? successview,
+    TResult Function(Erorrview value)? erorrview,
+    TResult Function(LoadingAdd value)? loadingAdd,
+    TResult Function(SuccessAdd value)? successAdd,
+    TResult Function(ErorrAdd value)? erorrAdd,
+    TResult Function(Loadingedit value)? loadingedit,
+    TResult Function(Successedit value)? successedit,
+    TResult Function(Erorredit value)? erorredit,
+    TResult Function(Loadingdelete value)? loadingdelete,
+    TResult Function(Successdelete value)? successdelete,
+    TResult Function(Erorrdelete value)? erorrdelete,
+    TResult Function(LoadingviewCat value)? loadingviewCat,
+    TResult Function(SuccessviewCat value)? successviewCat,
+    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(Loadingimage value)? loadingvimage,
+    TResult Function(Successimage value)? successimage,
+    TResult Function(Erorrimage value)? erorrvimage,
+    TResult Function(Galer value)? galer,
+    TResult Function(Galer2 value)? galer2,
+    TResult Function(Galer3 value)? galer3,
+    TResult Function(remofgaler value)? remofgaler,
+    TResult Function(removegaler2 value)? removegaler2,
+    TResult Function(removegaler3 value)? removegaler3,
+    TResult Function(PushEdit value)? pushEdit,
+    TResult Function(ApproveiItems value)? approveitems,
+    TResult Function(RemoveControll value)? removeControll,
+    required TResult orElse(),
+  }) {
+    if (removeControll != null) {
+      return removeControll(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class RemoveControll implements DashboardState {
+  const factory RemoveControll() = _$RemoveControllImpl;
 }

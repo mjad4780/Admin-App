@@ -107,17 +107,17 @@ class TextStyles {
     color: Colors.white,
   );
 
-  static TextStyle font14BlueSemiBold = TextStyle(
-    fontSize: 14.sp,
-    fontWeight: FontWeightHelper.semiBold,
-    color: AppColor.primaryColor,
-  );
+  // static TextStyle font14BlueSemiBold = TextStyle(
+  //   fontSize: 14.sp,
+  //   fontWeight: FontWeightHelper.semiBold,
+  //   color: AppColor.primaryColor,
+  // );
 
-  static TextStyle font15DarkBlueMedium = TextStyle(
-    fontSize: 15.sp,
-    fontWeight: FontWeightHelper.medium,
-    color: AppColor.darkBlue,
-  );
+  // static TextStyle font15DarkBlueMedium = TextStyle(
+  //   fontSize: 15.sp,
+  //   fontWeight: FontWeightHelper.medium,
+  //   color: AppColor.darkBlue,
+  // );
 
   static TextStyle font18DarkBlueBold = TextStyle(
     fontSize: 18.sp,

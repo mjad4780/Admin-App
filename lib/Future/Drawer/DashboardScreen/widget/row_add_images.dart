@@ -20,7 +20,8 @@ class RowAddImages extends StatelessWidget {
               ProductImageCard(
                 labelText: 'Main Image',
                 imageFile: context.read<DashboardCubit>().selectedMainImage,
-                imageUrlForUpdateImage: '${ApiConstants.imageItem}/null',
+                imageUrlForUpdateImage:
+                    '${ApiConstants.imageItem}/${context.read<DashboardCubit>().oldemainimage}',
                 //  '${ApiConstants.imageItem}/${context.read<DashboardCubit>().image}',
                 ifcondition: 'http://localhost/e-ecommerse/upload/item/null',
                 onTap: () {
@@ -33,8 +34,9 @@ class RowAddImages extends StatelessWidget {
               ProductImageCard(
                 labelText: 'Second image',
                 imageFile: context.read<DashboardCubit>().selectedSecondImage,
-                imageUrlForUpdateImage: '${ApiConstants.imageItem}/null',
-                ifcondition: 'http://localhost/e-ecommerse/upload/item/null',
+                imageUrlForUpdateImage:
+                    '${ApiConstants.imageItem}/${context.read<DashboardCubit>().oldimages[0]}',
+                ifcondition: 'http://localhost/e-ecommerse/upload/item/l',
                 onTap: () {
                   context.read<DashboardCubit>().pickImage(imageCardNumber: 2);
                 },
@@ -45,8 +47,9 @@ class RowAddImages extends StatelessWidget {
               ProductImageCard(
                 labelText: 'Third image',
                 imageFile: context.read<DashboardCubit>().selectedThirdImage,
-                imageUrlForUpdateImage: '${ApiConstants.imageItem}/null',
-                ifcondition: 'http://localhost/e-ecommerse/upload/item/null',
+                imageUrlForUpdateImage:
+                    '${ApiConstants.imageItem}/${context.read<DashboardCubit>().oldimages[1]}',
+                ifcondition: 'http://localhost/e-ecommerse/upload/item/m',
                 onTap: () {
                   context.read<DashboardCubit>().pickImage(imageCardNumber: 3);
                 },

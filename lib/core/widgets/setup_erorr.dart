@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:untitled/core/extensions/extention_navigator.dart';
 
-import '../theming/styles.dart';
-
 setupErrorState(BuildContext context, String error) {
   context.pop();
   showDialog(
@@ -15,16 +13,16 @@ setupErrorState(BuildContext context, String error) {
       ),
       content: Text(
         error,
-        style: TextStyles.font15DarkBlueMedium,
+        // style: TextStyles.font15DarkBlueMedium,
       ),
       actions: [
         TextButton(
           onPressed: () {
             context.pop();
           },
-          child: Text(
+          child: const Text(
             'Got it',
-            style: TextStyles.font14BlueSemiBold,
+            // style: TextStyles.font14BlueSemiBold,
           ),
         ),
       ],

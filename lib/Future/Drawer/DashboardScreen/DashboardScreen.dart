@@ -54,8 +54,16 @@ class DashboardScreen extends StatelessWidget {
                                 ),
                               ),
                               onPressed: () {
-                                showAddProductForm(
-                                    context, const ProductSubmitForm());
+                                context
+                                    .read<DashboardCubit>()
+                                    .removeControlerpushAdd();
+                                showAddProductForm(context, ProductSubmitForm(
+                                  onPressed: () {
+                                    context
+                                        .read<DashboardCubit>()
+                                        .addItems(context);
+                                  },
+                                ));
                               },
                               icon: const Icon(Icons.add),
                               label: const Text("Add New"),

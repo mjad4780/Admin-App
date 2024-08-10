@@ -2,13 +2,12 @@ import 'dart:io';
 
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
+import 'package:untitled/core/function/function_api/ssend_list_api.dart';
 
 import '../../../../../core/function/AlertDialog.dart';
 import '../../../../../core/function/function_api/upload_image.dart';
 import '../../../../../models/Item.dart';
 import '../../../../../models/response_items/datum.dart';
-import '../../../../../models/response_items/size.dart';
 import '../../../../../models/select_categories/select_categories.dart';
 import '../../../CategoryScreen/data/repo.dart';
 import '../../data/repo.dart';
@@ -32,7 +31,7 @@ class DashboardCubit extends Cubit<DashboardState> {
   TextEditingController itemCategories = TextEditingController();
   String active = '1';
   List<SelectCategories> itemCat = [];
-  List<String> selectedcolors = [];
+  List<String>? selectedcolors = [];
 
   List<String> colors = [
     'red',
@@ -41,7 +40,7 @@ class DashboardCubit extends Cubit<DashboardState> {
     'black',
   ];
 
-  List<String> selectedSize = [];
+  List<String>? selectedSize = [];
 
   List<String> sizes = [
     'MM',
@@ -49,7 +48,7 @@ class DashboardCubit extends Cubit<DashboardState> {
     'XXL',
     'RM',
   ];
-  List<String> oldimage = [];
+  List<String> oldimages = ['l', 'm'];
 
   String? selestnamecategories;
 
@@ -61,6 +60,7 @@ class DashboardCubit extends Cubit<DashboardState> {
   File? selectedSecondImage;
   File? selectedThirdImage;
   List<File> images = [];
+  String? oldemainimage;
 
   List<ItemsData> items = [];
 
@@ -102,8 +102,8 @@ class DashboardCubit extends Cubit<DashboardState> {
           price.text,
           discount.text,
           itemCategories.text,
-          selectedSize,
-          selectedcolors,
+          selectedSize!,
+          selectedcolors!,
           images);
       response.when(success: (data) {
         emit(const DashboardState.successAdd());
@@ -129,11 +129,12 @@ class DashboardCubit extends Cubit<DashboardState> {
         price.text,
         discount.text,
         itemCategories.text,
-        selectedSize,
-        selectedcolors,
+        selectedSize!,
+        selectedcolors!,
         selectedMainImage,
-        oldimage,
-        images);
+        oldimages,
+        images,
+        oldemainimage ?? '');
     response.when(success: (data) {
       emit(const DashboardState.successedit());
     }, failure: (error) {
@@ -172,17 +173,36 @@ class DashboardCubit extends Cubit<DashboardState> {
     });
   }
 
-  pushEdit(ItemsData items, BuildContext context, ItemSize size) {
-    name.text = items.itemName ?? 'M';
-    name.text = items.itemNameAr ?? "";
-    decs.text = items.itemDecs ?? 'M';
+  pushEdit(
+    ItemsData items,
+  ) async {
+    var i1 = replacMapsColorIsEnpty(items.size!);
+    var i2 = replacMapsSizeIsEnpty(items.size!);
+    List<String> i3 = replacListIsEnpty(items.images!);
+    selectedMainImage = null;
+    selectedSecondImage = null;
+    selectedThirdImage = null;
+    name.text = items.itemName ?? '';
+    namear.text = items.itemNameAr ?? "";
+    decs.text = items.itemDecs ?? '';
     decsar.text = items.itemDecsAr ?? "";
     count.text = items.itemCount.toString();
     active = items.itemActive.toString();
     price.text = items.itemPrice.toString();
     discount.text = items.itemDiscount.toString();
     itemCategories.text = items.itemCategories.toString();
-    context.push('');
+    selestnamecategories = items.categoriesName;
+    oldimages = i3;
+    oldemainimage = items.itemImage;
+    // oldetwoimage = items.itemImage?[0];
+    // oldethreeimage = items.itemImage?[1];
+
+    for (var i = 0; i < i1.length; i++) {
+      selectedcolors!.add(i1[i].color!);
+    }
+    for (var i = 0; i < i2.length; i++) {
+      selectedSize!.add(i2[i].size!);
+    }
     emit(const DashboardState.pushEdit());
   }
 
@@ -270,4 +290,23 @@ class DashboardCubit extends Cubit<DashboardState> {
   //     emit(DashboardState.erorrvimage(erorr: error.messege ?? ''));
   //   });
   // }
+  removeControlerpushAdd() {
+    name.clear();
+    namear.clear();
+    decs.clear();
+    decsar.clear();
+    count.clear();
+    price.clear();
+    discount.clear();
+    itemCategories.clear();
+    selestnamecategories = null;
+    selectedcolors?.clear();
+    selectedSize?.clear();
+    selectedMainImage = null;
+    oldemainimage = null;
+    images.clear();
+    oldimages = ['l', 'm'];
+
+    emit(const DashboardState.removeControll());
+  }
 }

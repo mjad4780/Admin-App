@@ -3,15 +3,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:untitled/Future/Drawer/DashboardScreen/logic/cubit/dashboard_cubit.dart';
 
-import '../../../../core/get_it/get_it.dart';
 import '../../../../utility/constants.dart';
 
 void showAddProductForm(BuildContext context, Widget widget) {
+  var get = context.read<DashboardCubit>();
+
   showDialog(
     context: context,
     builder: (BuildContext context) {
-      return BlocProvider(
-        create: (context) => getIt<DashboardCubit>(),
+      return BlocProvider.value(
+        value: get,
         child: AlertDialog(
           backgroundColor: bgColor,
           title: Center(

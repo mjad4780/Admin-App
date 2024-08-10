@@ -10,13 +10,15 @@ import '../../../../widgets/custom_text_field.dart';
 import 'Add_items/RowSelectedCategoriesAndColorAndSize.dart';
 import 'Add_items/add_items_bloc.dart';
 import 'Add_items/aprrove_items.dart';
+import 'edit_items/edit_itemsbloc.dart';
 import 'row_add_images.dart';
 
 class ProductSubmitForm extends StatefulWidget {
   const ProductSubmitForm({
     super.key,
+    required this.onPressed,
   });
-
+  final void Function()? onPressed;
   @override
   State<ProductSubmitForm> createState() => _ProductSubmitFormState();
 }
@@ -131,10 +133,11 @@ class _ProductSubmitFormState extends State<ProductSubmitForm> {
             const ApproveItems(),
             const SizedBox(width: defaultPadding),
             const SizedBox(height: defaultPadding),
-            RowBotttomAdd(onPressed: () {
-              context.read<DashboardCubit>().addItems(context);
-            }),
-            const AddItemsBlocListener()
+            RowBotttomAdd(
+              onPressed: widget.onPressed,
+            ),
+            const AddItemsBlocListener(),
+            const EditItemsBlocListener()
           ],
         ),
       ),

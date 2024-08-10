@@ -57,4 +57,7 @@ class DashboardState with _$DashboardState {
 
   ///: approveitems
   const factory DashboardState.approveitems() = ApproveiItems;
+
+  ///: removeControll
+  const factory DashboardState.removeControll() = RemoveControll;
 }

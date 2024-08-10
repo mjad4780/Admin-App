@@ -4,9 +4,9 @@ import '../utility/constants.dart';
 
 class MultiSelectDropDown<T> extends StatefulWidget {
   final List<T> items;
-  final Function(List<T>) onSelectionChanged;
-  final String Function(T) displayItem;
-  final List<T> selectedItems;
+  final Function(List<T?>) onSelectionChanged;
+  final String Function(T?) displayItem;
+  final List<T?> selectedItems;
   final String title;
   const MultiSelectDropDown({
     super.key,

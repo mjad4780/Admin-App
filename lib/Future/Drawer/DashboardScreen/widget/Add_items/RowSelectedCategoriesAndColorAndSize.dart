@@ -38,24 +38,27 @@ class RowSelectedCategoriesAndColorAndSize extends StatelessWidget {
             )),
             Expanded(
               flex: 1,
-              child: MultiSelectDropDown(
+              child: MultiSelectDropDown<String>(
                 items: context.read<DashboardCubit>().colors,
-                onSelectionChanged: (newValue) {
-                  context.read<DashboardCubit>().selectedcolors = newValue;
+                onSelectionChanged: (List<String?> newValue) {
+                  context.read<DashboardCubit>().selectedcolors =
+                      newValue.cast<String>();
                 },
-                displayItem: (String item) => item,
-                selectedItems: context.read<DashboardCubit>().selectedcolors,
+                displayItem: (String? item) => item!,
+                selectedItems:
+                    context.read<DashboardCubit>().selectedcolors ?? [],
                 title: 'Selected Colors',
               ),
             ),
             Expanded(
-                child: MultiSelectDropDown(
+                child: MultiSelectDropDown<String>(
               items: context.read<DashboardCubit>().sizes,
-              onSelectionChanged: (newValue) {
-                context.read<DashboardCubit>().selectedSize = newValue;
+              onSelectionChanged: (List<String?>? newValue) {
+                context.read<DashboardCubit>().selectedSize =
+                    newValue!.cast<String>();
               },
-              displayItem: (String item) => item,
-              selectedItems: context.read<DashboardCubit>().selectedSize,
+              displayItem: (String? item) => item!,
+              selectedItems: context.read<DashboardCubit>().selectedSize ?? [],
               title: 'selected Sizes',
             )),
           ],

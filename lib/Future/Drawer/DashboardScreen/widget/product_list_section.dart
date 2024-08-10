@@ -5,7 +5,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../utility/constants.dart';
 import 'package:flutter/material.dart';
 
+import 'add_product_form.dart';
 import 'productDataRow.dart';
+import 'show_add.dart';
 
 class ProductListSection extends StatelessWidget {
   const ProductListSection({
@@ -81,8 +83,14 @@ class ProductListSection extends StatelessWidget {
                       (index) => productDataRow(
                         items[index],
                         edit: () {
-                          // showAddProductForm(context,
-                          //     context.read<DashboardCubit>().products[index]);
+                          context.read<DashboardCubit>().pushEdit(items[index]);
+                          showAddProductForm(context, ProductSubmitForm(
+                            onPressed: () {
+                              context
+                                  .read<DashboardCubit>()
+                                  .editItems(items[index].itemId!);
+                            },
+                          ));
                         },
                         delete: () {
                           //TODO: should complete call deleteProduct
