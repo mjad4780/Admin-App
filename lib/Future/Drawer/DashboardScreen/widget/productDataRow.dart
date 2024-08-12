@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/networking/api_constants.dart';
-import '../../../../models/response_items/datum.dart';
+import '../../../../models/response_dashboard/datum.dart';
 import '../../../../utility/constants.dart';
 
 DataRow productDataRow(ItemsData productInfo,

@@ -1,6 +1,7 @@
 import 'package:untitled/Future/Drawer/CategoryScreen/logic/cubit/categories_cubit.dart';
 import 'package:untitled/Future/Drawer/CouponCodeScreen/logic/cubit/coupon_cubit.dart';
 import 'package:untitled/Future/Drawer/DashboardScreen/data/repo.dart';
+import 'package:untitled/Future/Drawer/DashboardScreen/data/repo_get_dashboard.dart';
 import 'package:untitled/Future/Drawer/DashboardScreen/logic/cubit/dashboard_cubit.dart';
 
 import 'package:untitled/Future/Drawer/OrderScreen/logic/cubit/orders_cubit.dart';
@@ -30,8 +31,10 @@ void setupServise() {
   getIt.registerLazySingleton<CategoriesRepo>(() => CategoriesRepo(getIt()));
   getIt.registerFactory<CategoriesCubit>(() => CategoriesCubit(getIt()));
 
-  // Items
+  // Dashboard
   getIt.registerLazySingleton<ItemsRepo>(() => ItemsRepo(getIt()));
+  getIt.registerLazySingleton<DashboardRepo>(() => DashboardRepo(getIt()));
+
   getIt.registerFactory<DashboardCubit>(() => DashboardCubit(getIt(), getIt()));
   // getIt.registerFactory<DashboardsCubit>(() => DashboardsCubit());
 

@@ -2,23 +2,23 @@ import 'dart:io';
 
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
+import 'package:untitled/Future/Drawer/DashboardScreen/data/repo_get_dashboard.dart';
 import 'package:untitled/core/function/function_api/ssend_list_api.dart';
 
 import '../../../../../core/function/AlertDialog.dart';
 import '../../../../../core/function/function_api/upload_image.dart';
 import '../../../../../models/Item.dart';
-import '../../../../../models/response_items/datum.dart';
+import '../../../../../models/response_dashboard/datum.dart';
 import '../../../../../models/select_categories/select_categories.dart';
-import '../../../CategoryScreen/data/repo.dart';
 import '../../data/repo.dart';
 import 'dashboard_state.dart';
 
 class DashboardCubit extends Cubit<DashboardState> {
-  DashboardCubit(this._itemrepo, this._categoriesRepo)
+  DashboardCubit(this._itemrepo, this._dashboardRepo)
       : super(const DashboardState.initial());
 
   final ItemsRepo _itemrepo;
-  final CategoriesRepo _categoriesRepo;
+  final DashboardRepo _dashboardRepo;
 
 ////////////////Add/////////////////////////
   TextEditingController name = TextEditingController();
@@ -62,7 +62,7 @@ class DashboardCubit extends Cubit<DashboardState> {
   List<File> images = [];
   String? oldemainimage;
 
-  List<ItemsData> items = [];
+  // List<ItemsData> items = [];
 
   ///:chooseimagegaler
   // chooseimagegaler() async {
@@ -71,16 +71,16 @@ class DashboardCubit extends Cubit<DashboardState> {
   // }
 
   //////////////////////////////:viewItems/////////////////////////
-  viewItems() async {
-    emit(const DashboardState.loadingview());
-    final response = await _itemrepo.viewItems();
-    response.when(success: (data) {
-      items = data.data ?? [];
-      emit(DashboardState.successview(data.data ?? []));
-    }, failure: (error) {
-      emit(DashboardState.erorrview(erorr: error.messege ?? ''));
-    });
-  }
+  // viewItems() async {
+  //   emit(const DashboardState.loadingview());
+  //   final response = await _itemrepo.viewItems();
+  //   response.when(success: (data) {
+  //     items = data.data ?? [];
+  //     emit(DashboardState.successview(data.data ?? []));
+  //   }, failure: (error) {
+  //     emit(DashboardState.erorrview(erorr: error.messege ?? ''));
+  //   });
+  // }
 
   /////////////////////////////////:AddItems///////////////////////////
   addItems(BuildContext context) async {
@@ -147,35 +147,37 @@ class DashboardCubit extends Cubit<DashboardState> {
     emit(const DashboardState.loadingdelete());
     final response = await _itemrepo.deleteItems(id, file);
     response.when(success: (data) {
-      items.removeWhere((element) => element.itemId == id);
+      // items.removeWhere((element) => element.itemId == id);
       emit(const DashboardState.successdelete());
     }, failure: (error) {
       emit(DashboardState.erorrdelete(erorr: error.messege ?? ''));
     });
   }
 
-  ///:viewCategories
-  viewCategories() async {
+  //:viewdashboard
+  viewashboard() async {
     itemCat.clear();
-    emit(const DashboardState.loadingviewCat());
-    final response = await _categoriesRepo.viewCategories();
+    emit(const DashboardState.loadingDashboard());
+    final response = await _dashboardRepo.viewdashboard();
     response.when(success: (data) {
-      for (var i = 0; i < data.data!.length; i++) {
+      for (var i = 0; i < data.categories!.length; i++) {
         itemCat.add(SelectCategories(
-          id: data.data![i].categoriesId ?? 0,
-          name: data.data![i].categoriesName ?? '',
+          id: data.categories![i].categoriesId ?? 0,
+          name: data.categories![i].categoriesName ?? '',
         ));
       }
-      emit(const DashboardState.successviewCat());
+      emit(DashboardState.successDashboard(data));
     }, failure: (error) {
-      print('jjjjjjjjjjjjjjjjjj${error.messege}');
-      emit(DashboardState.erorrviewCat(erorr: error.messege!));
+      emit(DashboardState.erorrDashboard(erorr: error.messege!));
     });
   }
 
   pushEdit(
     ItemsData items,
   ) async {
+    selectedcolors?.clear();
+    selectedSize?.clear();
+
     var i1 = replacMapsColorIsEnpty(items.size!);
     var i2 = replacMapsSizeIsEnpty(items.size!);
     List<String> i3 = replacListIsEnpty(items.images!);
@@ -271,25 +273,6 @@ class DashboardCubit extends Cubit<DashboardState> {
     }
   }
 
-  // /////////test
-  // ///:viewItems
-  // List<String> old = ["50531b3gggggg29.jpg", "50531b32ggggggg9.jpg"];
-  // List<String> colors = ['redy', 'blacky'];
-  // List<String> size = [
-  //   'MMk',
-  //   'LLr',
-  //   'EEE',
-  // ];
-
-  // addimahes() async {
-  //   emit(const DashboardState.loadingvimage());
-  //   final response = await _itemrepo.addimages(images, old, colors, size);
-  //   response.when(success: (data) {
-  //     emit(const DashboardState.successimage());
-  //   }, failure: (error) {
-  //     emit(DashboardState.erorrvimage(erorr: error.messege ?? ''));
-  //   });
-  // }
   removeControlerpushAdd() {
     name.clear();
     namear.clear();

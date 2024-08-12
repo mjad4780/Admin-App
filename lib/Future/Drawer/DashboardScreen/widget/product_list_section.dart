@@ -1,4 +1,4 @@
-import '../../../../models/response_items/datum.dart';
+import '../../../../models/response_dashboard/datum.dart';
 import '../logic/cubit/dashboard_cubit.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

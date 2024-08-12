@@ -38,7 +38,6 @@ Future<List<MultipartFile>> uploadMultiImageSToAPI(List<File> images) async {
   return da;
 }
 
-
 // fillle([issvg = false]) async {
 //   FilePickerResult? result = await FilePicker.platform.pickFiles(
 //       type: FileType.custom,

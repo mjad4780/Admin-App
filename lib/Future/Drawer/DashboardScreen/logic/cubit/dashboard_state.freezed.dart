@@ -31,9 +31,9 @@ mixin _$DashboardState {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
-    required TResult Function() loadingviewCat,
-    required TResult Function() successviewCat,
-    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingDashboard,
+    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(String erorr) erorrDashboard,
     required TResult Function() loadingvimage,
     required TResult Function() successimage,
     required TResult Function(String erorr) erorrvimage,
@@ -63,9 +63,9 @@ mixin _$DashboardState {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
-    TResult? Function()? loadingviewCat,
-    TResult? Function()? successviewCat,
-    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingDashboard,
+    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(String erorr)? erorrDashboard,
     TResult? Function()? loadingvimage,
     TResult? Function()? successimage,
     TResult? Function(String erorr)? erorrvimage,
@@ -95,9 +95,9 @@ mixin _$DashboardState {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
-    TResult Function()? loadingviewCat,
-    TResult Function()? successviewCat,
-    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingDashboard,
+    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(String erorr)? erorrDashboard,
     TResult Function()? loadingvimage,
     TResult Function()? successimage,
     TResult Function(String erorr)? erorrvimage,
@@ -128,9 +128,9 @@ mixin _$DashboardState {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
-    required TResult Function(LoadingviewCat value) loadingviewCat,
-    required TResult Function(SuccessviewCat value) successviewCat,
-    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(LoadingDashboard value) loadingDashboard,
+    required TResult Function(SuccessDashboard value) successDashboard,
+    required TResult Function(ErorrDashboard value) erorrDashboard,
     required TResult Function(Loadingimage value) loadingvimage,
     required TResult Function(Successimage value) successimage,
     required TResult Function(Erorrimage value) erorrvimage,
@@ -160,9 +160,9 @@ mixin _$DashboardState {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
-    TResult? Function(LoadingviewCat value)? loadingviewCat,
-    TResult? Function(SuccessviewCat value)? successviewCat,
-    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(LoadingDashboard value)? loadingDashboard,
+    TResult? Function(SuccessDashboard value)? successDashboard,
+    TResult? Function(ErorrDashboard value)? erorrDashboard,
     TResult? Function(Loadingimage value)? loadingvimage,
     TResult? Function(Successimage value)? successimage,
     TResult? Function(Erorrimage value)? erorrvimage,
@@ -192,9 +192,9 @@ mixin _$DashboardState {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
-    TResult Function(LoadingviewCat value)? loadingviewCat,
-    TResult Function(SuccessviewCat value)? successviewCat,
-    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(LoadingDashboard value)? loadingDashboard,
+    TResult Function(SuccessDashboard value)? successDashboard,
+    TResult Function(ErorrDashboard value)? erorrDashboard,
     TResult Function(Loadingimage value)? loadingvimage,
     TResult Function(Successimage value)? successimage,
     TResult Function(Erorrimage value)? erorrvimage,
@@ -281,9 +281,9 @@ class _$InitialImpl implements _Initial {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
-    required TResult Function() loadingviewCat,
-    required TResult Function() successviewCat,
-    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingDashboard,
+    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(String erorr) erorrDashboard,
     required TResult Function() loadingvimage,
     required TResult Function() successimage,
     required TResult Function(String erorr) erorrvimage,
@@ -316,9 +316,9 @@ class _$InitialImpl implements _Initial {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
-    TResult? Function()? loadingviewCat,
-    TResult? Function()? successviewCat,
-    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingDashboard,
+    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(String erorr)? erorrDashboard,
     TResult? Function()? loadingvimage,
     TResult? Function()? successimage,
     TResult? Function(String erorr)? erorrvimage,
@@ -351,9 +351,9 @@ class _$InitialImpl implements _Initial {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
-    TResult Function()? loadingviewCat,
-    TResult Function()? successviewCat,
-    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingDashboard,
+    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(String erorr)? erorrDashboard,
     TResult Function()? loadingvimage,
     TResult Function()? successimage,
     TResult Function(String erorr)? erorrvimage,
@@ -390,9 +390,9 @@ class _$InitialImpl implements _Initial {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
-    required TResult Function(LoadingviewCat value) loadingviewCat,
-    required TResult Function(SuccessviewCat value) successviewCat,
-    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(LoadingDashboard value) loadingDashboard,
+    required TResult Function(SuccessDashboard value) successDashboard,
+    required TResult Function(ErorrDashboard value) erorrDashboard,
     required TResult Function(Loadingimage value) loadingvimage,
     required TResult Function(Successimage value) successimage,
     required TResult Function(Erorrimage value) erorrvimage,
@@ -425,9 +425,9 @@ class _$InitialImpl implements _Initial {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
-    TResult? Function(LoadingviewCat value)? loadingviewCat,
-    TResult? Function(SuccessviewCat value)? successviewCat,
-    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(LoadingDashboard value)? loadingDashboard,
+    TResult? Function(SuccessDashboard value)? successDashboard,
+    TResult? Function(ErorrDashboard value)? erorrDashboard,
     TResult? Function(Loadingimage value)? loadingvimage,
     TResult? Function(Successimage value)? successimage,
     TResult? Function(Erorrimage value)? erorrvimage,
@@ -460,9 +460,9 @@ class _$InitialImpl implements _Initial {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
-    TResult Function(LoadingviewCat value)? loadingviewCat,
-    TResult Function(SuccessviewCat value)? successviewCat,
-    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(LoadingDashboard value)? loadingDashboard,
+    TResult Function(SuccessDashboard value)? successDashboard,
+    TResult Function(ErorrDashboard value)? erorrDashboard,
     TResult Function(Loadingimage value)? loadingvimage,
     TResult Function(Successimage value)? successimage,
     TResult Function(Erorrimage value)? erorrvimage,
@@ -539,9 +539,9 @@ class _$LoadingviewImpl implements Loadingview {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
-    required TResult Function() loadingviewCat,
-    required TResult Function() successviewCat,
-    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingDashboard,
+    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(String erorr) erorrDashboard,
     required TResult Function() loadingvimage,
     required TResult Function() successimage,
     required TResult Function(String erorr) erorrvimage,
@@ -574,9 +574,9 @@ class _$LoadingviewImpl implements Loadingview {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
-    TResult? Function()? loadingviewCat,
-    TResult? Function()? successviewCat,
-    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingDashboard,
+    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(String erorr)? erorrDashboard,
     TResult? Function()? loadingvimage,
     TResult? Function()? successimage,
     TResult? Function(String erorr)? erorrvimage,
@@ -609,9 +609,9 @@ class _$LoadingviewImpl implements Loadingview {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
-    TResult Function()? loadingviewCat,
-    TResult Function()? successviewCat,
-    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingDashboard,
+    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(String erorr)? erorrDashboard,
     TResult Function()? loadingvimage,
     TResult Function()? successimage,
     TResult Function(String erorr)? erorrvimage,
@@ -648,9 +648,9 @@ class _$LoadingviewImpl implements Loadingview {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
-    required TResult Function(LoadingviewCat value) loadingviewCat,
-    required TResult Function(SuccessviewCat value) successviewCat,
-    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(LoadingDashboard value) loadingDashboard,
+    required TResult Function(SuccessDashboard value) successDashboard,
+    required TResult Function(ErorrDashboard value) erorrDashboard,
     required TResult Function(Loadingimage value) loadingvimage,
     required TResult Function(Successimage value) successimage,
     required TResult Function(Erorrimage value) erorrvimage,
@@ -683,9 +683,9 @@ class _$LoadingviewImpl implements Loadingview {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
-    TResult? Function(LoadingviewCat value)? loadingviewCat,
-    TResult? Function(SuccessviewCat value)? successviewCat,
-    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(LoadingDashboard value)? loadingDashboard,
+    TResult? Function(SuccessDashboard value)? successDashboard,
+    TResult? Function(ErorrDashboard value)? erorrDashboard,
     TResult? Function(Loadingimage value)? loadingvimage,
     TResult? Function(Successimage value)? successimage,
     TResult? Function(Erorrimage value)? erorrvimage,
@@ -718,9 +718,9 @@ class _$LoadingviewImpl implements Loadingview {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
-    TResult Function(LoadingviewCat value)? loadingviewCat,
-    TResult Function(SuccessviewCat value)? successviewCat,
-    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(LoadingDashboard value)? loadingDashboard,
+    TResult Function(SuccessDashboard value)? successDashboard,
+    TResult Function(ErorrDashboard value)? erorrDashboard,
     TResult Function(Loadingimage value)? loadingvimage,
     TResult Function(Successimage value)? successimage,
     TResult Function(Erorrimage value)? erorrvimage,
@@ -830,9 +830,9 @@ class _$SuccessviewImpl implements Successview {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
-    required TResult Function() loadingviewCat,
-    required TResult Function() successviewCat,
-    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingDashboard,
+    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(String erorr) erorrDashboard,
     required TResult Function() loadingvimage,
     required TResult Function() successimage,
     required TResult Function(String erorr) erorrvimage,
@@ -865,9 +865,9 @@ class _$SuccessviewImpl implements Successview {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
-    TResult? Function()? loadingviewCat,
-    TResult? Function()? successviewCat,
-    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingDashboard,
+    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(String erorr)? erorrDashboard,
     TResult? Function()? loadingvimage,
     TResult? Function()? successimage,
     TResult? Function(String erorr)? erorrvimage,
@@ -900,9 +900,9 @@ class _$SuccessviewImpl implements Successview {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
-    TResult Function()? loadingviewCat,
-    TResult Function()? successviewCat,
-    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingDashboard,
+    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(String erorr)? erorrDashboard,
     TResult Function()? loadingvimage,
     TResult Function()? successimage,
     TResult Function(String erorr)? erorrvimage,
@@ -939,9 +939,9 @@ class _$SuccessviewImpl implements Successview {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
-    required TResult Function(LoadingviewCat value) loadingviewCat,
-    required TResult Function(SuccessviewCat value) successviewCat,
-    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(LoadingDashboard value) loadingDashboard,
+    required TResult Function(SuccessDashboard value) successDashboard,
+    required TResult Function(ErorrDashboard value) erorrDashboard,
     required TResult Function(Loadingimage value) loadingvimage,
     required TResult Function(Successimage value) successimage,
     required TResult Function(Erorrimage value) erorrvimage,
@@ -974,9 +974,9 @@ class _$SuccessviewImpl implements Successview {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
-    TResult? Function(LoadingviewCat value)? loadingviewCat,
-    TResult? Function(SuccessviewCat value)? successviewCat,
-    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(LoadingDashboard value)? loadingDashboard,
+    TResult? Function(SuccessDashboard value)? successDashboard,
+    TResult? Function(ErorrDashboard value)? erorrDashboard,
     TResult? Function(Loadingimage value)? loadingvimage,
     TResult? Function(Successimage value)? successimage,
     TResult? Function(Erorrimage value)? erorrvimage,
@@ -1009,9 +1009,9 @@ class _$SuccessviewImpl implements Successview {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
-    TResult Function(LoadingviewCat value)? loadingviewCat,
-    TResult Function(SuccessviewCat value)? successviewCat,
-    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(LoadingDashboard value)? loadingDashboard,
+    TResult Function(SuccessDashboard value)? successDashboard,
+    TResult Function(ErorrDashboard value)? erorrDashboard,
     TResult Function(Loadingimage value)? loadingvimage,
     TResult Function(Successimage value)? successimage,
     TResult Function(Erorrimage value)? erorrvimage,
@@ -1119,9 +1119,9 @@ class _$ErorrviewImpl implements Erorrview {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
-    required TResult Function() loadingviewCat,
-    required TResult Function() successviewCat,
-    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingDashboard,
+    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(String erorr) erorrDashboard,
     required TResult Function() loadingvimage,
     required TResult Function() successimage,
     required TResult Function(String erorr) erorrvimage,
@@ -1154,9 +1154,9 @@ class _$ErorrviewImpl implements Erorrview {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
-    TResult? Function()? loadingviewCat,
-    TResult? Function()? successviewCat,
-    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingDashboard,
+    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(String erorr)? erorrDashboard,
     TResult? Function()? loadingvimage,
     TResult? Function()? successimage,
     TResult? Function(String erorr)? erorrvimage,
@@ -1189,9 +1189,9 @@ class _$ErorrviewImpl implements Erorrview {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
-    TResult Function()? loadingviewCat,
-    TResult Function()? successviewCat,
-    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingDashboard,
+    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(String erorr)? erorrDashboard,
     TResult Function()? loadingvimage,
     TResult Function()? successimage,
     TResult Function(String erorr)? erorrvimage,
@@ -1228,9 +1228,9 @@ class _$ErorrviewImpl implements Erorrview {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
-    required TResult Function(LoadingviewCat value) loadingviewCat,
-    required TResult Function(SuccessviewCat value) successviewCat,
-    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(LoadingDashboard value) loadingDashboard,
+    required TResult Function(SuccessDashboard value) successDashboard,
+    required TResult Function(ErorrDashboard value) erorrDashboard,
     required TResult Function(Loadingimage value) loadingvimage,
     required TResult Function(Successimage value) successimage,
     required TResult Function(Erorrimage value) erorrvimage,
@@ -1263,9 +1263,9 @@ class _$ErorrviewImpl implements Erorrview {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
-    TResult? Function(LoadingviewCat value)? loadingviewCat,
-    TResult? Function(SuccessviewCat value)? successviewCat,
-    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(LoadingDashboard value)? loadingDashboard,
+    TResult? Function(SuccessDashboard value)? successDashboard,
+    TResult? Function(ErorrDashboard value)? erorrDashboard,
     TResult? Function(Loadingimage value)? loadingvimage,
     TResult? Function(Successimage value)? successimage,
     TResult? Function(Erorrimage value)? erorrvimage,
@@ -1298,9 +1298,9 @@ class _$ErorrviewImpl implements Erorrview {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
-    TResult Function(LoadingviewCat value)? loadingviewCat,
-    TResult Function(SuccessviewCat value)? successviewCat,
-    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(LoadingDashboard value)? loadingDashboard,
+    TResult Function(SuccessDashboard value)? successDashboard,
+    TResult Function(ErorrDashboard value)? erorrDashboard,
     TResult Function(Loadingimage value)? loadingvimage,
     TResult Function(Successimage value)? successimage,
     TResult Function(Erorrimage value)? erorrvimage,
@@ -1382,9 +1382,9 @@ class _$LoadingAddImpl implements LoadingAdd {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
-    required TResult Function() loadingviewCat,
-    required TResult Function() successviewCat,
-    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingDashboard,
+    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(String erorr) erorrDashboard,
     required TResult Function() loadingvimage,
     required TResult Function() successimage,
     required TResult Function(String erorr) erorrvimage,
@@ -1417,9 +1417,9 @@ class _$LoadingAddImpl implements LoadingAdd {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
-    TResult? Function()? loadingviewCat,
-    TResult? Function()? successviewCat,
-    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingDashboard,
+    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(String erorr)? erorrDashboard,
     TResult? Function()? loadingvimage,
     TResult? Function()? successimage,
     TResult? Function(String erorr)? erorrvimage,
@@ -1452,9 +1452,9 @@ class _$LoadingAddImpl implements LoadingAdd {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
-    TResult Function()? loadingviewCat,
-    TResult Function()? successviewCat,
-    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingDashboard,
+    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(String erorr)? erorrDashboard,
     TResult Function()? loadingvimage,
     TResult Function()? successimage,
     TResult Function(String erorr)? erorrvimage,
@@ -1491,9 +1491,9 @@ class _$LoadingAddImpl implements LoadingAdd {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
-    required TResult Function(LoadingviewCat value) loadingviewCat,
-    required TResult Function(SuccessviewCat value) successviewCat,
-    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(LoadingDashboard value) loadingDashboard,
+    required TResult Function(SuccessDashboard value) successDashboard,
+    required TResult Function(ErorrDashboard value) erorrDashboard,
     required TResult Function(Loadingimage value) loadingvimage,
     required TResult Function(Successimage value) successimage,
     required TResult Function(Erorrimage value) erorrvimage,
@@ -1526,9 +1526,9 @@ class _$LoadingAddImpl implements LoadingAdd {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
-    TResult? Function(LoadingviewCat value)? loadingviewCat,
-    TResult? Function(SuccessviewCat value)? successviewCat,
-    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(LoadingDashboard value)? loadingDashboard,
+    TResult? Function(SuccessDashboard value)? successDashboard,
+    TResult? Function(ErorrDashboard value)? erorrDashboard,
     TResult? Function(Loadingimage value)? loadingvimage,
     TResult? Function(Successimage value)? successimage,
     TResult? Function(Erorrimage value)? erorrvimage,
@@ -1561,9 +1561,9 @@ class _$LoadingAddImpl implements LoadingAdd {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
-    TResult Function(LoadingviewCat value)? loadingviewCat,
-    TResult Function(SuccessviewCat value)? successviewCat,
-    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(LoadingDashboard value)? loadingDashboard,
+    TResult Function(SuccessDashboard value)? successDashboard,
+    TResult Function(ErorrDashboard value)? erorrDashboard,
     TResult Function(Loadingimage value)? loadingvimage,
     TResult Function(Successimage value)? successimage,
     TResult Function(Erorrimage value)? erorrvimage,
@@ -1640,9 +1640,9 @@ class _$SuccessAddImpl implements SuccessAdd {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
-    required TResult Function() loadingviewCat,
-    required TResult Function() successviewCat,
-    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingDashboard,
+    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(String erorr) erorrDashboard,
     required TResult Function() loadingvimage,
     required TResult Function() successimage,
     required TResult Function(String erorr) erorrvimage,
@@ -1675,9 +1675,9 @@ class _$SuccessAddImpl implements SuccessAdd {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
-    TResult? Function()? loadingviewCat,
-    TResult? Function()? successviewCat,
-    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingDashboard,
+    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(String erorr)? erorrDashboard,
     TResult? Function()? loadingvimage,
     TResult? Function()? successimage,
     TResult? Function(String erorr)? erorrvimage,
@@ -1710,9 +1710,9 @@ class _$SuccessAddImpl implements SuccessAdd {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
-    TResult Function()? loadingviewCat,
-    TResult Function()? successviewCat,
-    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingDashboard,
+    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(String erorr)? erorrDashboard,
     TResult Function()? loadingvimage,
     TResult Function()? successimage,
     TResult Function(String erorr)? erorrvimage,
@@ -1749,9 +1749,9 @@ class _$SuccessAddImpl implements SuccessAdd {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
-    required TResult Function(LoadingviewCat value) loadingviewCat,
-    required TResult Function(SuccessviewCat value) successviewCat,
-    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(LoadingDashboard value) loadingDashboard,
+    required TResult Function(SuccessDashboard value) successDashboard,
+    required TResult Function(ErorrDashboard value) erorrDashboard,
     required TResult Function(Loadingimage value) loadingvimage,
     required TResult Function(Successimage value) successimage,
     required TResult Function(Erorrimage value) erorrvimage,
@@ -1784,9 +1784,9 @@ class _$SuccessAddImpl implements SuccessAdd {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
-    TResult? Function(LoadingviewCat value)? loadingviewCat,
-    TResult? Function(SuccessviewCat value)? successviewCat,
-    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(LoadingDashboard value)? loadingDashboard,
+    TResult? Function(SuccessDashboard value)? successDashboard,
+    TResult? Function(ErorrDashboard value)? erorrDashboard,
     TResult? Function(Loadingimage value)? loadingvimage,
     TResult? Function(Successimage value)? successimage,
     TResult? Function(Erorrimage value)? erorrvimage,
@@ -1819,9 +1819,9 @@ class _$SuccessAddImpl implements SuccessAdd {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
-    TResult Function(LoadingviewCat value)? loadingviewCat,
-    TResult Function(SuccessviewCat value)? successviewCat,
-    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(LoadingDashboard value)? loadingDashboard,
+    TResult Function(SuccessDashboard value)? successDashboard,
+    TResult Function(ErorrDashboard value)? erorrDashboard,
     TResult Function(Loadingimage value)? loadingvimage,
     TResult Function(Successimage value)? successimage,
     TResult Function(Erorrimage value)? erorrvimage,
@@ -1924,9 +1924,9 @@ class _$ErorrAddImpl implements ErorrAdd {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
-    required TResult Function() loadingviewCat,
-    required TResult Function() successviewCat,
-    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingDashboard,
+    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(String erorr) erorrDashboard,
     required TResult Function() loadingvimage,
     required TResult Function() successimage,
     required TResult Function(String erorr) erorrvimage,
@@ -1959,9 +1959,9 @@ class _$ErorrAddImpl implements ErorrAdd {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
-    TResult? Function()? loadingviewCat,
-    TResult? Function()? successviewCat,
-    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingDashboard,
+    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(String erorr)? erorrDashboard,
     TResult? Function()? loadingvimage,
     TResult? Function()? successimage,
     TResult? Function(String erorr)? erorrvimage,
@@ -1994,9 +1994,9 @@ class _$ErorrAddImpl implements ErorrAdd {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
-    TResult Function()? loadingviewCat,
-    TResult Function()? successviewCat,
-    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingDashboard,
+    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(String erorr)? erorrDashboard,
     TResult Function()? loadingvimage,
     TResult Function()? successimage,
     TResult Function(String erorr)? erorrvimage,
@@ -2033,9 +2033,9 @@ class _$ErorrAddImpl implements ErorrAdd {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
-    required TResult Function(LoadingviewCat value) loadingviewCat,
-    required TResult Function(SuccessviewCat value) successviewCat,
-    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(LoadingDashboard value) loadingDashboard,
+    required TResult Function(SuccessDashboard value) successDashboard,
+    required TResult Function(ErorrDashboard value) erorrDashboard,
     required TResult Function(Loadingimage value) loadingvimage,
     required TResult Function(Successimage value) successimage,
     required TResult Function(Erorrimage value) erorrvimage,
@@ -2068,9 +2068,9 @@ class _$ErorrAddImpl implements ErorrAdd {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
-    TResult? Function(LoadingviewCat value)? loadingviewCat,
-    TResult? Function(SuccessviewCat value)? successviewCat,
-    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(LoadingDashboard value)? loadingDashboard,
+    TResult? Function(SuccessDashboard value)? successDashboard,
+    TResult? Function(ErorrDashboard value)? erorrDashboard,
     TResult? Function(Loadingimage value)? loadingvimage,
     TResult? Function(Successimage value)? successimage,
     TResult? Function(Erorrimage value)? erorrvimage,
@@ -2103,9 +2103,9 @@ class _$ErorrAddImpl implements ErorrAdd {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
-    TResult Function(LoadingviewCat value)? loadingviewCat,
-    TResult Function(SuccessviewCat value)? successviewCat,
-    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(LoadingDashboard value)? loadingDashboard,
+    TResult Function(SuccessDashboard value)? successDashboard,
+    TResult Function(ErorrDashboard value)? erorrDashboard,
     TResult Function(Loadingimage value)? loadingvimage,
     TResult Function(Successimage value)? successimage,
     TResult Function(Erorrimage value)? erorrvimage,
@@ -2187,9 +2187,9 @@ class _$LoadingeditImpl implements Loadingedit {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
-    required TResult Function() loadingviewCat,
-    required TResult Function() successviewCat,
-    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingDashboard,
+    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(String erorr) erorrDashboard,
     required TResult Function() loadingvimage,
     required TResult Function() successimage,
     required TResult Function(String erorr) erorrvimage,
@@ -2222,9 +2222,9 @@ class _$LoadingeditImpl implements Loadingedit {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
-    TResult? Function()? loadingviewCat,
-    TResult? Function()? successviewCat,
-    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingDashboard,
+    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(String erorr)? erorrDashboard,
     TResult? Function()? loadingvimage,
     TResult? Function()? successimage,
     TResult? Function(String erorr)? erorrvimage,
@@ -2257,9 +2257,9 @@ class _$LoadingeditImpl implements Loadingedit {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
-    TResult Function()? loadingviewCat,
-    TResult Function()? successviewCat,
-    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingDashboard,
+    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(String erorr)? erorrDashboard,
     TResult Function()? loadingvimage,
     TResult Function()? successimage,
     TResult Function(String erorr)? erorrvimage,
@@ -2296,9 +2296,9 @@ class _$LoadingeditImpl implements Loadingedit {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
-    required TResult Function(LoadingviewCat value) loadingviewCat,
-    required TResult Function(SuccessviewCat value) successviewCat,
-    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(LoadingDashboard value) loadingDashboard,
+    required TResult Function(SuccessDashboard value) successDashboard,
+    required TResult Function(ErorrDashboard value) erorrDashboard,
     required TResult Function(Loadingimage value) loadingvimage,
     required TResult Function(Successimage value) successimage,
     required TResult Function(Erorrimage value) erorrvimage,
@@ -2331,9 +2331,9 @@ class _$LoadingeditImpl implements Loadingedit {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
-    TResult? Function(LoadingviewCat value)? loadingviewCat,
-    TResult? Function(SuccessviewCat value)? successviewCat,
-    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(LoadingDashboard value)? loadingDashboard,
+    TResult? Function(SuccessDashboard value)? successDashboard,
+    TResult? Function(ErorrDashboard value)? erorrDashboard,
     TResult? Function(Loadingimage value)? loadingvimage,
     TResult? Function(Successimage value)? successimage,
     TResult? Function(Erorrimage value)? erorrvimage,
@@ -2366,9 +2366,9 @@ class _$LoadingeditImpl implements Loadingedit {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
-    TResult Function(LoadingviewCat value)? loadingviewCat,
-    TResult Function(SuccessviewCat value)? successviewCat,
-    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(LoadingDashboard value)? loadingDashboard,
+    TResult Function(SuccessDashboard value)? successDashboard,
+    TResult Function(ErorrDashboard value)? erorrDashboard,
     TResult Function(Loadingimage value)? loadingvimage,
     TResult Function(Successimage value)? successimage,
     TResult Function(Erorrimage value)? erorrvimage,
@@ -2445,9 +2445,9 @@ class _$SuccesseditImpl implements Successedit {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
-    required TResult Function() loadingviewCat,
-    required TResult Function() successviewCat,
-    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingDashboard,
+    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(String erorr) erorrDashboard,
     required TResult Function() loadingvimage,
     required TResult Function() successimage,
     required TResult Function(String erorr) erorrvimage,
@@ -2480,9 +2480,9 @@ class _$SuccesseditImpl implements Successedit {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
-    TResult? Function()? loadingviewCat,
-    TResult? Function()? successviewCat,
-    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingDashboard,
+    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(String erorr)? erorrDashboard,
     TResult? Function()? loadingvimage,
     TResult? Function()? successimage,
     TResult? Function(String erorr)? erorrvimage,
@@ -2515,9 +2515,9 @@ class _$SuccesseditImpl implements Successedit {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
-    TResult Function()? loadingviewCat,
-    TResult Function()? successviewCat,
-    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingDashboard,
+    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(String erorr)? erorrDashboard,
     TResult Function()? loadingvimage,
     TResult Function()? successimage,
     TResult Function(String erorr)? erorrvimage,
@@ -2554,9 +2554,9 @@ class _$SuccesseditImpl implements Successedit {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
-    required TResult Function(LoadingviewCat value) loadingviewCat,
-    required TResult Function(SuccessviewCat value) successviewCat,
-    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(LoadingDashboard value) loadingDashboard,
+    required TResult Function(SuccessDashboard value) successDashboard,
+    required TResult Function(ErorrDashboard value) erorrDashboard,
     required TResult Function(Loadingimage value) loadingvimage,
     required TResult Function(Successimage value) successimage,
     required TResult Function(Erorrimage value) erorrvimage,
@@ -2589,9 +2589,9 @@ class _$SuccesseditImpl implements Successedit {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
-    TResult? Function(LoadingviewCat value)? loadingviewCat,
-    TResult? Function(SuccessviewCat value)? successviewCat,
-    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(LoadingDashboard value)? loadingDashboard,
+    TResult? Function(SuccessDashboard value)? successDashboard,
+    TResult? Function(ErorrDashboard value)? erorrDashboard,
     TResult? Function(Loadingimage value)? loadingvimage,
     TResult? Function(Successimage value)? successimage,
     TResult? Function(Erorrimage value)? erorrvimage,
@@ -2624,9 +2624,9 @@ class _$SuccesseditImpl implements Successedit {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
-    TResult Function(LoadingviewCat value)? loadingviewCat,
-    TResult Function(SuccessviewCat value)? successviewCat,
-    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(LoadingDashboard value)? loadingDashboard,
+    TResult Function(SuccessDashboard value)? successDashboard,
+    TResult Function(ErorrDashboard value)? erorrDashboard,
     TResult Function(Loadingimage value)? loadingvimage,
     TResult Function(Successimage value)? successimage,
     TResult Function(Erorrimage value)? erorrvimage,
@@ -2729,9 +2729,9 @@ class _$ErorreditImpl implements Erorredit {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
-    required TResult Function() loadingviewCat,
-    required TResult Function() successviewCat,
-    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingDashboard,
+    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(String erorr) erorrDashboard,
     required TResult Function() loadingvimage,
     required TResult Function() successimage,
     required TResult Function(String erorr) erorrvimage,
@@ -2764,9 +2764,9 @@ class _$ErorreditImpl implements Erorredit {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
-    TResult? Function()? loadingviewCat,
-    TResult? Function()? successviewCat,
-    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingDashboard,
+    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(String erorr)? erorrDashboard,
     TResult? Function()? loadingvimage,
     TResult? Function()? successimage,
     TResult? Function(String erorr)? erorrvimage,
@@ -2799,9 +2799,9 @@ class _$ErorreditImpl implements Erorredit {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
-    TResult Function()? loadingviewCat,
-    TResult Function()? successviewCat,
-    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingDashboard,
+    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(String erorr)? erorrDashboard,
     TResult Function()? loadingvimage,
     TResult Function()? successimage,
     TResult Function(String erorr)? erorrvimage,
@@ -2838,9 +2838,9 @@ class _$ErorreditImpl implements Erorredit {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
-    required TResult Function(LoadingviewCat value) loadingviewCat,
-    required TResult Function(SuccessviewCat value) successviewCat,
-    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(LoadingDashboard value) loadingDashboard,
+    required TResult Function(SuccessDashboard value) successDashboard,
+    required TResult Function(ErorrDashboard value) erorrDashboard,
     required TResult Function(Loadingimage value) loadingvimage,
     required TResult Function(Successimage value) successimage,
     required TResult Function(Erorrimage value) erorrvimage,
@@ -2873,9 +2873,9 @@ class _$ErorreditImpl implements Erorredit {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
-    TResult? Function(LoadingviewCat value)? loadingviewCat,
-    TResult? Function(SuccessviewCat value)? successviewCat,
-    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(LoadingDashboard value)? loadingDashboard,
+    TResult? Function(SuccessDashboard value)? successDashboard,
+    TResult? Function(ErorrDashboard value)? erorrDashboard,
     TResult? Function(Loadingimage value)? loadingvimage,
     TResult? Function(Successimage value)? successimage,
     TResult? Function(Erorrimage value)? erorrvimage,
@@ -2908,9 +2908,9 @@ class _$ErorreditImpl implements Erorredit {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
-    TResult Function(LoadingviewCat value)? loadingviewCat,
-    TResult Function(SuccessviewCat value)? successviewCat,
-    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(LoadingDashboard value)? loadingDashboard,
+    TResult Function(SuccessDashboard value)? successDashboard,
+    TResult Function(ErorrDashboard value)? erorrDashboard,
     TResult Function(Loadingimage value)? loadingvimage,
     TResult Function(Successimage value)? successimage,
     TResult Function(Erorrimage value)? erorrvimage,
@@ -2992,9 +2992,9 @@ class _$LoadingdeleteImpl implements Loadingdelete {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
-    required TResult Function() loadingviewCat,
-    required TResult Function() successviewCat,
-    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingDashboard,
+    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(String erorr) erorrDashboard,
     required TResult Function() loadingvimage,
     required TResult Function() successimage,
     required TResult Function(String erorr) erorrvimage,
@@ -3027,9 +3027,9 @@ class _$LoadingdeleteImpl implements Loadingdelete {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
-    TResult? Function()? loadingviewCat,
-    TResult? Function()? successviewCat,
-    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingDashboard,
+    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(String erorr)? erorrDashboard,
     TResult? Function()? loadingvimage,
     TResult? Function()? successimage,
     TResult? Function(String erorr)? erorrvimage,
@@ -3062,9 +3062,9 @@ class _$LoadingdeleteImpl implements Loadingdelete {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
-    TResult Function()? loadingviewCat,
-    TResult Function()? successviewCat,
-    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingDashboard,
+    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(String erorr)? erorrDashboard,
     TResult Function()? loadingvimage,
     TResult Function()? successimage,
     TResult Function(String erorr)? erorrvimage,
@@ -3101,9 +3101,9 @@ class _$LoadingdeleteImpl implements Loadingdelete {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
-    required TResult Function(LoadingviewCat value) loadingviewCat,
-    required TResult Function(SuccessviewCat value) successviewCat,
-    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(LoadingDashboard value) loadingDashboard,
+    required TResult Function(SuccessDashboard value) successDashboard,
+    required TResult Function(ErorrDashboard value) erorrDashboard,
     required TResult Function(Loadingimage value) loadingvimage,
     required TResult Function(Successimage value) successimage,
     required TResult Function(Erorrimage value) erorrvimage,
@@ -3136,9 +3136,9 @@ class _$LoadingdeleteImpl implements Loadingdelete {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
-    TResult? Function(LoadingviewCat value)? loadingviewCat,
-    TResult? Function(SuccessviewCat value)? successviewCat,
-    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(LoadingDashboard value)? loadingDashboard,
+    TResult? Function(SuccessDashboard value)? successDashboard,
+    TResult? Function(ErorrDashboard value)? erorrDashboard,
     TResult? Function(Loadingimage value)? loadingvimage,
     TResult? Function(Successimage value)? successimage,
     TResult? Function(Erorrimage value)? erorrvimage,
@@ -3171,9 +3171,9 @@ class _$LoadingdeleteImpl implements Loadingdelete {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
-    TResult Function(LoadingviewCat value)? loadingviewCat,
-    TResult Function(SuccessviewCat value)? successviewCat,
-    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(LoadingDashboard value)? loadingDashboard,
+    TResult Function(SuccessDashboard value)? successDashboard,
+    TResult Function(ErorrDashboard value)? erorrDashboard,
     TResult Function(Loadingimage value)? loadingvimage,
     TResult Function(Successimage value)? successimage,
     TResult Function(Erorrimage value)? erorrvimage,
@@ -3250,9 +3250,9 @@ class _$SuccessdeleteImpl implements Successdelete {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
-    required TResult Function() loadingviewCat,
-    required TResult Function() successviewCat,
-    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingDashboard,
+    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(String erorr) erorrDashboard,
     required TResult Function() loadingvimage,
     required TResult Function() successimage,
     required TResult Function(String erorr) erorrvimage,
@@ -3285,9 +3285,9 @@ class _$SuccessdeleteImpl implements Successdelete {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
-    TResult? Function()? loadingviewCat,
-    TResult? Function()? successviewCat,
-    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingDashboard,
+    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(String erorr)? erorrDashboard,
     TResult? Function()? loadingvimage,
     TResult? Function()? successimage,
     TResult? Function(String erorr)? erorrvimage,
@@ -3320,9 +3320,9 @@ class _$SuccessdeleteImpl implements Successdelete {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
-    TResult Function()? loadingviewCat,
-    TResult Function()? successviewCat,
-    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingDashboard,
+    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(String erorr)? erorrDashboard,
     TResult Function()? loadingvimage,
     TResult Function()? successimage,
     TResult Function(String erorr)? erorrvimage,
@@ -3359,9 +3359,9 @@ class _$SuccessdeleteImpl implements Successdelete {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
-    required TResult Function(LoadingviewCat value) loadingviewCat,
-    required TResult Function(SuccessviewCat value) successviewCat,
-    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(LoadingDashboard value) loadingDashboard,
+    required TResult Function(SuccessDashboard value) successDashboard,
+    required TResult Function(ErorrDashboard value) erorrDashboard,
     required TResult Function(Loadingimage value) loadingvimage,
     required TResult Function(Successimage value) successimage,
     required TResult Function(Erorrimage value) erorrvimage,
@@ -3394,9 +3394,9 @@ class _$SuccessdeleteImpl implements Successdelete {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
-    TResult? Function(LoadingviewCat value)? loadingviewCat,
-    TResult? Function(SuccessviewCat value)? successviewCat,
-    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(LoadingDashboard value)? loadingDashboard,
+    TResult? Function(SuccessDashboard value)? successDashboard,
+    TResult? Function(ErorrDashboard value)? erorrDashboard,
     TResult? Function(Loadingimage value)? loadingvimage,
     TResult? Function(Successimage value)? successimage,
     TResult? Function(Erorrimage value)? erorrvimage,
@@ -3429,9 +3429,9 @@ class _$SuccessdeleteImpl implements Successdelete {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
-    TResult Function(LoadingviewCat value)? loadingviewCat,
-    TResult Function(SuccessviewCat value)? successviewCat,
-    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(LoadingDashboard value)? loadingDashboard,
+    TResult Function(SuccessDashboard value)? successDashboard,
+    TResult Function(ErorrDashboard value)? erorrDashboard,
     TResult Function(Loadingimage value)? loadingvimage,
     TResult Function(Successimage value)? successimage,
     TResult Function(Erorrimage value)? erorrvimage,
@@ -3534,9 +3534,9 @@ class _$ErorrdeleteImpl implements Erorrdelete {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
-    required TResult Function() loadingviewCat,
-    required TResult Function() successviewCat,
-    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingDashboard,
+    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(String erorr) erorrDashboard,
     required TResult Function() loadingvimage,
     required TResult Function() successimage,
     required TResult Function(String erorr) erorrvimage,
@@ -3569,9 +3569,9 @@ class _$ErorrdeleteImpl implements Erorrdelete {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
-    TResult? Function()? loadingviewCat,
-    TResult? Function()? successviewCat,
-    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingDashboard,
+    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(String erorr)? erorrDashboard,
     TResult? Function()? loadingvimage,
     TResult? Function()? successimage,
     TResult? Function(String erorr)? erorrvimage,
@@ -3604,9 +3604,9 @@ class _$ErorrdeleteImpl implements Erorrdelete {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
-    TResult Function()? loadingviewCat,
-    TResult Function()? successviewCat,
-    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingDashboard,
+    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(String erorr)? erorrDashboard,
     TResult Function()? loadingvimage,
     TResult Function()? successimage,
     TResult Function(String erorr)? erorrvimage,
@@ -3643,9 +3643,9 @@ class _$ErorrdeleteImpl implements Erorrdelete {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
-    required TResult Function(LoadingviewCat value) loadingviewCat,
-    required TResult Function(SuccessviewCat value) successviewCat,
-    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(LoadingDashboard value) loadingDashboard,
+    required TResult Function(SuccessDashboard value) successDashboard,
+    required TResult Function(ErorrDashboard value) erorrDashboard,
     required TResult Function(Loadingimage value) loadingvimage,
     required TResult Function(Successimage value) successimage,
     required TResult Function(Erorrimage value) erorrvimage,
@@ -3678,9 +3678,9 @@ class _$ErorrdeleteImpl implements Erorrdelete {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
-    TResult? Function(LoadingviewCat value)? loadingviewCat,
-    TResult? Function(SuccessviewCat value)? successviewCat,
-    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(LoadingDashboard value)? loadingDashboard,
+    TResult? Function(SuccessDashboard value)? successDashboard,
+    TResult? Function(ErorrDashboard value)? erorrDashboard,
     TResult? Function(Loadingimage value)? loadingvimage,
     TResult? Function(Successimage value)? successimage,
     TResult? Function(Erorrimage value)? erorrvimage,
@@ -3713,9 +3713,9 @@ class _$ErorrdeleteImpl implements Erorrdelete {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
-    TResult Function(LoadingviewCat value)? loadingviewCat,
-    TResult Function(SuccessviewCat value)? successviewCat,
-    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(LoadingDashboard value)? loadingDashboard,
+    TResult Function(SuccessDashboard value)? successDashboard,
+    TResult Function(ErorrDashboard value)? erorrDashboard,
     TResult Function(Loadingimage value)? loadingvimage,
     TResult Function(Successimage value)? successimage,
     TResult Function(Erorrimage value)? erorrvimage,
@@ -3747,35 +3747,35 @@ abstract class Erorrdelete implements DashboardState {
 }
 
 /// @nodoc
-abstract class _$$LoadingviewCatImplCopyWith<$Res> {
-  factory _$$LoadingviewCatImplCopyWith(_$LoadingviewCatImpl value,
-          $Res Function(_$LoadingviewCatImpl) then) =
-      __$$LoadingviewCatImplCopyWithImpl<$Res>;
+abstract class _$$LoadingDashboardImplCopyWith<$Res> {
+  factory _$$LoadingDashboardImplCopyWith(_$LoadingDashboardImpl value,
+          $Res Function(_$LoadingDashboardImpl) then) =
+      __$$LoadingDashboardImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$LoadingviewCatImplCopyWithImpl<$Res>
-    extends _$DashboardStateCopyWithImpl<$Res, _$LoadingviewCatImpl>
-    implements _$$LoadingviewCatImplCopyWith<$Res> {
-  __$$LoadingviewCatImplCopyWithImpl(
-      _$LoadingviewCatImpl _value, $Res Function(_$LoadingviewCatImpl) _then)
+class __$$LoadingDashboardImplCopyWithImpl<$Res>
+    extends _$DashboardStateCopyWithImpl<$Res, _$LoadingDashboardImpl>
+    implements _$$LoadingDashboardImplCopyWith<$Res> {
+  __$$LoadingDashboardImplCopyWithImpl(_$LoadingDashboardImpl _value,
+      $Res Function(_$LoadingDashboardImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$LoadingviewCatImpl implements LoadingviewCat {
-  const _$LoadingviewCatImpl();
+class _$LoadingDashboardImpl implements LoadingDashboard {
+  const _$LoadingDashboardImpl();
 
   @override
   String toString() {
-    return 'DashboardState.loadingviewCat()';
+    return 'DashboardState.loadingDashboard()';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$LoadingviewCatImpl);
+        (other.runtimeType == runtimeType && other is _$LoadingDashboardImpl);
   }
 
   @override
@@ -3797,9 +3797,9 @@ class _$LoadingviewCatImpl implements LoadingviewCat {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
-    required TResult Function() loadingviewCat,
-    required TResult Function() successviewCat,
-    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingDashboard,
+    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(String erorr) erorrDashboard,
     required TResult Function() loadingvimage,
     required TResult Function() successimage,
     required TResult Function(String erorr) erorrvimage,
@@ -3813,7 +3813,7 @@ class _$LoadingviewCatImpl implements LoadingviewCat {
     required TResult Function() approveitems,
     required TResult Function() removeControll,
   }) {
-    return loadingviewCat();
+    return loadingDashboard();
   }
 
   @override
@@ -3832,9 +3832,9 @@ class _$LoadingviewCatImpl implements LoadingviewCat {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
-    TResult? Function()? loadingviewCat,
-    TResult? Function()? successviewCat,
-    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingDashboard,
+    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(String erorr)? erorrDashboard,
     TResult? Function()? loadingvimage,
     TResult? Function()? successimage,
     TResult? Function(String erorr)? erorrvimage,
@@ -3848,7 +3848,7 @@ class _$LoadingviewCatImpl implements LoadingviewCat {
     TResult? Function()? approveitems,
     TResult? Function()? removeControll,
   }) {
-    return loadingviewCat?.call();
+    return loadingDashboard?.call();
   }
 
   @override
@@ -3867,9 +3867,9 @@ class _$LoadingviewCatImpl implements LoadingviewCat {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
-    TResult Function()? loadingviewCat,
-    TResult Function()? successviewCat,
-    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingDashboard,
+    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(String erorr)? erorrDashboard,
     TResult Function()? loadingvimage,
     TResult Function()? successimage,
     TResult Function(String erorr)? erorrvimage,
@@ -3884,8 +3884,8 @@ class _$LoadingviewCatImpl implements LoadingviewCat {
     TResult Function()? removeControll,
     required TResult orElse(),
   }) {
-    if (loadingviewCat != null) {
-      return loadingviewCat();
+    if (loadingDashboard != null) {
+      return loadingDashboard();
     }
     return orElse();
   }
@@ -3906,9 +3906,9 @@ class _$LoadingviewCatImpl implements LoadingviewCat {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
-    required TResult Function(LoadingviewCat value) loadingviewCat,
-    required TResult Function(SuccessviewCat value) successviewCat,
-    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(LoadingDashboard value) loadingDashboard,
+    required TResult Function(SuccessDashboard value) successDashboard,
+    required TResult Function(ErorrDashboard value) erorrDashboard,
     required TResult Function(Loadingimage value) loadingvimage,
     required TResult Function(Successimage value) successimage,
     required TResult Function(Erorrimage value) erorrvimage,
@@ -3922,7 +3922,7 @@ class _$LoadingviewCatImpl implements LoadingviewCat {
     required TResult Function(ApproveiItems value) approveitems,
     required TResult Function(RemoveControll value) removeControll,
   }) {
-    return loadingviewCat(this);
+    return loadingDashboard(this);
   }
 
   @override
@@ -3941,9 +3941,9 @@ class _$LoadingviewCatImpl implements LoadingviewCat {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
-    TResult? Function(LoadingviewCat value)? loadingviewCat,
-    TResult? Function(SuccessviewCat value)? successviewCat,
-    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(LoadingDashboard value)? loadingDashboard,
+    TResult? Function(SuccessDashboard value)? successDashboard,
+    TResult? Function(ErorrDashboard value)? erorrDashboard,
     TResult? Function(Loadingimage value)? loadingvimage,
     TResult? Function(Successimage value)? successimage,
     TResult? Function(Erorrimage value)? erorrvimage,
@@ -3957,7 +3957,7 @@ class _$LoadingviewCatImpl implements LoadingviewCat {
     TResult? Function(ApproveiItems value)? approveitems,
     TResult? Function(RemoveControll value)? removeControll,
   }) {
-    return loadingviewCat?.call(this);
+    return loadingDashboard?.call(this);
   }
 
   @override
@@ -3976,9 +3976,9 @@ class _$LoadingviewCatImpl implements LoadingviewCat {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
-    TResult Function(LoadingviewCat value)? loadingviewCat,
-    TResult Function(SuccessviewCat value)? successviewCat,
-    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(LoadingDashboard value)? loadingDashboard,
+    TResult Function(SuccessDashboard value)? successDashboard,
+    TResult Function(ErorrDashboard value)? erorrDashboard,
     TResult Function(Loadingimage value)? loadingvimage,
     TResult Function(Successimage value)? successimage,
     TResult Function(Erorrimage value)? erorrvimage,
@@ -3993,51 +3993,79 @@ class _$LoadingviewCatImpl implements LoadingviewCat {
     TResult Function(RemoveControll value)? removeControll,
     required TResult orElse(),
   }) {
-    if (loadingviewCat != null) {
-      return loadingviewCat(this);
+    if (loadingDashboard != null) {
+      return loadingDashboard(this);
     }
     return orElse();
   }
 }
 
-abstract class LoadingviewCat implements DashboardState {
-  const factory LoadingviewCat() = _$LoadingviewCatImpl;
+abstract class LoadingDashboard implements DashboardState {
+  const factory LoadingDashboard() = _$LoadingDashboardImpl;
 }
 
 /// @nodoc
-abstract class _$$SuccessviewCatImplCopyWith<$Res> {
-  factory _$$SuccessviewCatImplCopyWith(_$SuccessviewCatImpl value,
-          $Res Function(_$SuccessviewCatImpl) then) =
-      __$$SuccessviewCatImplCopyWithImpl<$Res>;
+abstract class _$$SuccessDashboardImplCopyWith<$Res> {
+  factory _$$SuccessDashboardImplCopyWith(_$SuccessDashboardImpl value,
+          $Res Function(_$SuccessDashboardImpl) then) =
+      __$$SuccessDashboardImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({ResponseDashboard responses});
 }
 
 /// @nodoc
-class __$$SuccessviewCatImplCopyWithImpl<$Res>
-    extends _$DashboardStateCopyWithImpl<$Res, _$SuccessviewCatImpl>
-    implements _$$SuccessviewCatImplCopyWith<$Res> {
-  __$$SuccessviewCatImplCopyWithImpl(
-      _$SuccessviewCatImpl _value, $Res Function(_$SuccessviewCatImpl) _then)
+class __$$SuccessDashboardImplCopyWithImpl<$Res>
+    extends _$DashboardStateCopyWithImpl<$Res, _$SuccessDashboardImpl>
+    implements _$$SuccessDashboardImplCopyWith<$Res> {
+  __$$SuccessDashboardImplCopyWithImpl(_$SuccessDashboardImpl _value,
+      $Res Function(_$SuccessDashboardImpl) _then)
       : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? responses = null,
+  }) {
+    return _then(_$SuccessDashboardImpl(
+      null == responses
+          ? _value.responses
+          : responses // ignore: cast_nullable_to_non_nullable
+              as ResponseDashboard,
+    ));
+  }
 }
 
 /// @nodoc
 
-class _$SuccessviewCatImpl implements SuccessviewCat {
-  const _$SuccessviewCatImpl();
+class _$SuccessDashboardImpl implements SuccessDashboard {
+  const _$SuccessDashboardImpl(this.responses);
+
+  @override
+  final ResponseDashboard responses;
 
   @override
   String toString() {
-    return 'DashboardState.successviewCat()';
+    return 'DashboardState.successDashboard(responses: $responses)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$SuccessviewCatImpl);
+        (other.runtimeType == runtimeType &&
+            other is _$SuccessDashboardImpl &&
+            (identical(other.responses, responses) ||
+                other.responses == responses));
   }
 
   @override
-  int get hashCode => runtimeType.hashCode;
+  int get hashCode => Object.hash(runtimeType, responses);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$SuccessDashboardImplCopyWith<_$SuccessDashboardImpl> get copyWith =>
+      __$$SuccessDashboardImplCopyWithImpl<_$SuccessDashboardImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -4055,9 +4083,9 @@ class _$SuccessviewCatImpl implements SuccessviewCat {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
-    required TResult Function() loadingviewCat,
-    required TResult Function() successviewCat,
-    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingDashboard,
+    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(String erorr) erorrDashboard,
     required TResult Function() loadingvimage,
     required TResult Function() successimage,
     required TResult Function(String erorr) erorrvimage,
@@ -4071,7 +4099,7 @@ class _$SuccessviewCatImpl implements SuccessviewCat {
     required TResult Function() approveitems,
     required TResult Function() removeControll,
   }) {
-    return successviewCat();
+    return successDashboard(responses);
   }
 
   @override
@@ -4090,9 +4118,9 @@ class _$SuccessviewCatImpl implements SuccessviewCat {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
-    TResult? Function()? loadingviewCat,
-    TResult? Function()? successviewCat,
-    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingDashboard,
+    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(String erorr)? erorrDashboard,
     TResult? Function()? loadingvimage,
     TResult? Function()? successimage,
     TResult? Function(String erorr)? erorrvimage,
@@ -4106,7 +4134,7 @@ class _$SuccessviewCatImpl implements SuccessviewCat {
     TResult? Function()? approveitems,
     TResult? Function()? removeControll,
   }) {
-    return successviewCat?.call();
+    return successDashboard?.call(responses);
   }
 
   @override
@@ -4125,9 +4153,9 @@ class _$SuccessviewCatImpl implements SuccessviewCat {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
-    TResult Function()? loadingviewCat,
-    TResult Function()? successviewCat,
-    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingDashboard,
+    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(String erorr)? erorrDashboard,
     TResult Function()? loadingvimage,
     TResult Function()? successimage,
     TResult Function(String erorr)? erorrvimage,
@@ -4142,8 +4170,8 @@ class _$SuccessviewCatImpl implements SuccessviewCat {
     TResult Function()? removeControll,
     required TResult orElse(),
   }) {
-    if (successviewCat != null) {
-      return successviewCat();
+    if (successDashboard != null) {
+      return successDashboard(responses);
     }
     return orElse();
   }
@@ -4164,9 +4192,9 @@ class _$SuccessviewCatImpl implements SuccessviewCat {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
-    required TResult Function(LoadingviewCat value) loadingviewCat,
-    required TResult Function(SuccessviewCat value) successviewCat,
-    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(LoadingDashboard value) loadingDashboard,
+    required TResult Function(SuccessDashboard value) successDashboard,
+    required TResult Function(ErorrDashboard value) erorrDashboard,
     required TResult Function(Loadingimage value) loadingvimage,
     required TResult Function(Successimage value) successimage,
     required TResult Function(Erorrimage value) erorrvimage,
@@ -4180,7 +4208,7 @@ class _$SuccessviewCatImpl implements SuccessviewCat {
     required TResult Function(ApproveiItems value) approveitems,
     required TResult Function(RemoveControll value) removeControll,
   }) {
-    return successviewCat(this);
+    return successDashboard(this);
   }
 
   @override
@@ -4199,9 +4227,9 @@ class _$SuccessviewCatImpl implements SuccessviewCat {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
-    TResult? Function(LoadingviewCat value)? loadingviewCat,
-    TResult? Function(SuccessviewCat value)? successviewCat,
-    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(LoadingDashboard value)? loadingDashboard,
+    TResult? Function(SuccessDashboard value)? successDashboard,
+    TResult? Function(ErorrDashboard value)? erorrDashboard,
     TResult? Function(Loadingimage value)? loadingvimage,
     TResult? Function(Successimage value)? successimage,
     TResult? Function(Erorrimage value)? erorrvimage,
@@ -4215,7 +4243,7 @@ class _$SuccessviewCatImpl implements SuccessviewCat {
     TResult? Function(ApproveiItems value)? approveitems,
     TResult? Function(RemoveControll value)? removeControll,
   }) {
-    return successviewCat?.call(this);
+    return successDashboard?.call(this);
   }
 
   @override
@@ -4234,9 +4262,9 @@ class _$SuccessviewCatImpl implements SuccessviewCat {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
-    TResult Function(LoadingviewCat value)? loadingviewCat,
-    TResult Function(SuccessviewCat value)? successviewCat,
-    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(LoadingDashboard value)? loadingDashboard,
+    TResult Function(SuccessDashboard value)? successDashboard,
+    TResult Function(ErorrDashboard value)? erorrDashboard,
     TResult Function(Loadingimage value)? loadingvimage,
     TResult Function(Successimage value)? successimage,
     TResult Function(Erorrimage value)? erorrvimage,
@@ -4251,32 +4279,38 @@ class _$SuccessviewCatImpl implements SuccessviewCat {
     TResult Function(RemoveControll value)? removeControll,
     required TResult orElse(),
   }) {
-    if (successviewCat != null) {
-      return successviewCat(this);
+    if (successDashboard != null) {
+      return successDashboard(this);
     }
     return orElse();
   }
 }
 
-abstract class SuccessviewCat implements DashboardState {
-  const factory SuccessviewCat() = _$SuccessviewCatImpl;
+abstract class SuccessDashboard implements DashboardState {
+  const factory SuccessDashboard(final ResponseDashboard responses) =
+      _$SuccessDashboardImpl;
+
+  ResponseDashboard get responses;
+  @JsonKey(ignore: true)
+  _$$SuccessDashboardImplCopyWith<_$SuccessDashboardImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$ErorrviewCatImplCopyWith<$Res> {
-  factory _$$ErorrviewCatImplCopyWith(
-          _$ErorrviewCatImpl value, $Res Function(_$ErorrviewCatImpl) then) =
-      __$$ErorrviewCatImplCopyWithImpl<$Res>;
+abstract class _$$ErorrDashboardImplCopyWith<$Res> {
+  factory _$$ErorrDashboardImplCopyWith(_$ErorrDashboardImpl value,
+          $Res Function(_$ErorrDashboardImpl) then) =
+      __$$ErorrDashboardImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String erorr});
 }
 
 /// @nodoc
-class __$$ErorrviewCatImplCopyWithImpl<$Res>
-    extends _$DashboardStateCopyWithImpl<$Res, _$ErorrviewCatImpl>
-    implements _$$ErorrviewCatImplCopyWith<$Res> {
-  __$$ErorrviewCatImplCopyWithImpl(
-      _$ErorrviewCatImpl _value, $Res Function(_$ErorrviewCatImpl) _then)
+class __$$ErorrDashboardImplCopyWithImpl<$Res>
+    extends _$DashboardStateCopyWithImpl<$Res, _$ErorrDashboardImpl>
+    implements _$$ErorrDashboardImplCopyWith<$Res> {
+  __$$ErorrDashboardImplCopyWithImpl(
+      _$ErorrDashboardImpl _value, $Res Function(_$ErorrDashboardImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -4284,7 +4318,7 @@ class __$$ErorrviewCatImplCopyWithImpl<$Res>
   $Res call({
     Object? erorr = null,
   }) {
-    return _then(_$ErorrviewCatImpl(
+    return _then(_$ErorrDashboardImpl(
       erorr: null == erorr
           ? _value.erorr
           : erorr // ignore: cast_nullable_to_non_nullable
@@ -4295,22 +4329,22 @@ class __$$ErorrviewCatImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$ErorrviewCatImpl implements ErorrviewCat {
-  const _$ErorrviewCatImpl({required this.erorr});
+class _$ErorrDashboardImpl implements ErorrDashboard {
+  const _$ErorrDashboardImpl({required this.erorr});
 
   @override
   final String erorr;
 
   @override
   String toString() {
-    return 'DashboardState.erorrviewCat(erorr: $erorr)';
+    return 'DashboardState.erorrDashboard(erorr: $erorr)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ErorrviewCatImpl &&
+            other is _$ErorrDashboardImpl &&
             (identical(other.erorr, erorr) || other.erorr == erorr));
   }
 
@@ -4320,8 +4354,9 @@ class _$ErorrviewCatImpl implements ErorrviewCat {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$ErorrviewCatImplCopyWith<_$ErorrviewCatImpl> get copyWith =>
-      __$$ErorrviewCatImplCopyWithImpl<_$ErorrviewCatImpl>(this, _$identity);
+  _$$ErorrDashboardImplCopyWith<_$ErorrDashboardImpl> get copyWith =>
+      __$$ErorrDashboardImplCopyWithImpl<_$ErorrDashboardImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -4339,9 +4374,9 @@ class _$ErorrviewCatImpl implements ErorrviewCat {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
-    required TResult Function() loadingviewCat,
-    required TResult Function() successviewCat,
-    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingDashboard,
+    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(String erorr) erorrDashboard,
     required TResult Function() loadingvimage,
     required TResult Function() successimage,
     required TResult Function(String erorr) erorrvimage,
@@ -4355,7 +4390,7 @@ class _$ErorrviewCatImpl implements ErorrviewCat {
     required TResult Function() approveitems,
     required TResult Function() removeControll,
   }) {
-    return erorrviewCat(erorr);
+    return erorrDashboard(erorr);
   }
 
   @override
@@ -4374,9 +4409,9 @@ class _$ErorrviewCatImpl implements ErorrviewCat {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
-    TResult? Function()? loadingviewCat,
-    TResult? Function()? successviewCat,
-    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingDashboard,
+    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(String erorr)? erorrDashboard,
     TResult? Function()? loadingvimage,
     TResult? Function()? successimage,
     TResult? Function(String erorr)? erorrvimage,
@@ -4390,7 +4425,7 @@ class _$ErorrviewCatImpl implements ErorrviewCat {
     TResult? Function()? approveitems,
     TResult? Function()? removeControll,
   }) {
-    return erorrviewCat?.call(erorr);
+    return erorrDashboard?.call(erorr);
   }
 
   @override
@@ -4409,9 +4444,9 @@ class _$ErorrviewCatImpl implements ErorrviewCat {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
-    TResult Function()? loadingviewCat,
-    TResult Function()? successviewCat,
-    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingDashboard,
+    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(String erorr)? erorrDashboard,
     TResult Function()? loadingvimage,
     TResult Function()? successimage,
     TResult Function(String erorr)? erorrvimage,
@@ -4426,8 +4461,8 @@ class _$ErorrviewCatImpl implements ErorrviewCat {
     TResult Function()? removeControll,
     required TResult orElse(),
   }) {
-    if (erorrviewCat != null) {
-      return erorrviewCat(erorr);
+    if (erorrDashboard != null) {
+      return erorrDashboard(erorr);
     }
     return orElse();
   }
@@ -4448,9 +4483,9 @@ class _$ErorrviewCatImpl implements ErorrviewCat {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
-    required TResult Function(LoadingviewCat value) loadingviewCat,
-    required TResult Function(SuccessviewCat value) successviewCat,
-    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(LoadingDashboard value) loadingDashboard,
+    required TResult Function(SuccessDashboard value) successDashboard,
+    required TResult Function(ErorrDashboard value) erorrDashboard,
     required TResult Function(Loadingimage value) loadingvimage,
     required TResult Function(Successimage value) successimage,
     required TResult Function(Erorrimage value) erorrvimage,
@@ -4464,7 +4499,7 @@ class _$ErorrviewCatImpl implements ErorrviewCat {
     required TResult Function(ApproveiItems value) approveitems,
     required TResult Function(RemoveControll value) removeControll,
   }) {
-    return erorrviewCat(this);
+    return erorrDashboard(this);
   }
 
   @override
@@ -4483,9 +4518,9 @@ class _$ErorrviewCatImpl implements ErorrviewCat {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
-    TResult? Function(LoadingviewCat value)? loadingviewCat,
-    TResult? Function(SuccessviewCat value)? successviewCat,
-    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(LoadingDashboard value)? loadingDashboard,
+    TResult? Function(SuccessDashboard value)? successDashboard,
+    TResult? Function(ErorrDashboard value)? erorrDashboard,
     TResult? Function(Loadingimage value)? loadingvimage,
     TResult? Function(Successimage value)? successimage,
     TResult? Function(Erorrimage value)? erorrvimage,
@@ -4499,7 +4534,7 @@ class _$ErorrviewCatImpl implements ErorrviewCat {
     TResult? Function(ApproveiItems value)? approveitems,
     TResult? Function(RemoveControll value)? removeControll,
   }) {
-    return erorrviewCat?.call(this);
+    return erorrDashboard?.call(this);
   }
 
   @override
@@ -4518,9 +4553,9 @@ class _$ErorrviewCatImpl implements ErorrviewCat {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
-    TResult Function(LoadingviewCat value)? loadingviewCat,
-    TResult Function(SuccessviewCat value)? successviewCat,
-    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(LoadingDashboard value)? loadingDashboard,
+    TResult Function(SuccessDashboard value)? successDashboard,
+    TResult Function(ErorrDashboard value)? erorrDashboard,
     TResult Function(Loadingimage value)? loadingvimage,
     TResult Function(Successimage value)? successimage,
     TResult Function(Erorrimage value)? erorrvimage,
@@ -4535,20 +4570,20 @@ class _$ErorrviewCatImpl implements ErorrviewCat {
     TResult Function(RemoveControll value)? removeControll,
     required TResult orElse(),
   }) {
-    if (erorrviewCat != null) {
-      return erorrviewCat(this);
+    if (erorrDashboard != null) {
+      return erorrDashboard(this);
     }
     return orElse();
   }
 }
 
-abstract class ErorrviewCat implements DashboardState {
-  const factory ErorrviewCat({required final String erorr}) =
-      _$ErorrviewCatImpl;
+abstract class ErorrDashboard implements DashboardState {
+  const factory ErorrDashboard({required final String erorr}) =
+      _$ErorrDashboardImpl;
 
   String get erorr;
   @JsonKey(ignore: true)
-  _$$ErorrviewCatImplCopyWith<_$ErorrviewCatImpl> get copyWith =>
+  _$$ErorrDashboardImplCopyWith<_$ErorrDashboardImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -4603,9 +4638,9 @@ class _$LoadingimageImpl implements Loadingimage {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
-    required TResult Function() loadingviewCat,
-    required TResult Function() successviewCat,
-    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingDashboard,
+    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(String erorr) erorrDashboard,
     required TResult Function() loadingvimage,
     required TResult Function() successimage,
     required TResult Function(String erorr) erorrvimage,
@@ -4638,9 +4673,9 @@ class _$LoadingimageImpl implements Loadingimage {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
-    TResult? Function()? loadingviewCat,
-    TResult? Function()? successviewCat,
-    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingDashboard,
+    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(String erorr)? erorrDashboard,
     TResult? Function()? loadingvimage,
     TResult? Function()? successimage,
     TResult? Function(String erorr)? erorrvimage,
@@ -4673,9 +4708,9 @@ class _$LoadingimageImpl implements Loadingimage {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
-    TResult Function()? loadingviewCat,
-    TResult Function()? successviewCat,
-    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingDashboard,
+    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(String erorr)? erorrDashboard,
     TResult Function()? loadingvimage,
     TResult Function()? successimage,
     TResult Function(String erorr)? erorrvimage,
@@ -4712,9 +4747,9 @@ class _$LoadingimageImpl implements Loadingimage {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
-    required TResult Function(LoadingviewCat value) loadingviewCat,
-    required TResult Function(SuccessviewCat value) successviewCat,
-    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(LoadingDashboard value) loadingDashboard,
+    required TResult Function(SuccessDashboard value) successDashboard,
+    required TResult Function(ErorrDashboard value) erorrDashboard,
     required TResult Function(Loadingimage value) loadingvimage,
     required TResult Function(Successimage value) successimage,
     required TResult Function(Erorrimage value) erorrvimage,
@@ -4747,9 +4782,9 @@ class _$LoadingimageImpl implements Loadingimage {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
-    TResult? Function(LoadingviewCat value)? loadingviewCat,
-    TResult? Function(SuccessviewCat value)? successviewCat,
-    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(LoadingDashboard value)? loadingDashboard,
+    TResult? Function(SuccessDashboard value)? successDashboard,
+    TResult? Function(ErorrDashboard value)? erorrDashboard,
     TResult? Function(Loadingimage value)? loadingvimage,
     TResult? Function(Successimage value)? successimage,
     TResult? Function(Erorrimage value)? erorrvimage,
@@ -4782,9 +4817,9 @@ class _$LoadingimageImpl implements Loadingimage {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
-    TResult Function(LoadingviewCat value)? loadingviewCat,
-    TResult Function(SuccessviewCat value)? successviewCat,
-    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(LoadingDashboard value)? loadingDashboard,
+    TResult Function(SuccessDashboard value)? successDashboard,
+    TResult Function(ErorrDashboard value)? erorrDashboard,
     TResult Function(Loadingimage value)? loadingvimage,
     TResult Function(Successimage value)? successimage,
     TResult Function(Erorrimage value)? erorrvimage,
@@ -4861,9 +4896,9 @@ class _$SuccessimageImpl implements Successimage {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
-    required TResult Function() loadingviewCat,
-    required TResult Function() successviewCat,
-    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingDashboard,
+    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(String erorr) erorrDashboard,
     required TResult Function() loadingvimage,
     required TResult Function() successimage,
     required TResult Function(String erorr) erorrvimage,
@@ -4896,9 +4931,9 @@ class _$SuccessimageImpl implements Successimage {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
-    TResult? Function()? loadingviewCat,
-    TResult? Function()? successviewCat,
-    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingDashboard,
+    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(String erorr)? erorrDashboard,
     TResult? Function()? loadingvimage,
     TResult? Function()? successimage,
     TResult? Function(String erorr)? erorrvimage,
@@ -4931,9 +4966,9 @@ class _$SuccessimageImpl implements Successimage {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
-    TResult Function()? loadingviewCat,
-    TResult Function()? successviewCat,
-    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingDashboard,
+    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(String erorr)? erorrDashboard,
     TResult Function()? loadingvimage,
     TResult Function()? successimage,
     TResult Function(String erorr)? erorrvimage,
@@ -4970,9 +5005,9 @@ class _$SuccessimageImpl implements Successimage {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
-    required TResult Function(LoadingviewCat value) loadingviewCat,
-    required TResult Function(SuccessviewCat value) successviewCat,
-    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(LoadingDashboard value) loadingDashboard,
+    required TResult Function(SuccessDashboard value) successDashboard,
+    required TResult Function(ErorrDashboard value) erorrDashboard,
     required TResult Function(Loadingimage value) loadingvimage,
     required TResult Function(Successimage value) successimage,
     required TResult Function(Erorrimage value) erorrvimage,
@@ -5005,9 +5040,9 @@ class _$SuccessimageImpl implements Successimage {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
-    TResult? Function(LoadingviewCat value)? loadingviewCat,
-    TResult? Function(SuccessviewCat value)? successviewCat,
-    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(LoadingDashboard value)? loadingDashboard,
+    TResult? Function(SuccessDashboard value)? successDashboard,
+    TResult? Function(ErorrDashboard value)? erorrDashboard,
     TResult? Function(Loadingimage value)? loadingvimage,
     TResult? Function(Successimage value)? successimage,
     TResult? Function(Erorrimage value)? erorrvimage,
@@ -5040,9 +5075,9 @@ class _$SuccessimageImpl implements Successimage {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
-    TResult Function(LoadingviewCat value)? loadingviewCat,
-    TResult Function(SuccessviewCat value)? successviewCat,
-    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(LoadingDashboard value)? loadingDashboard,
+    TResult Function(SuccessDashboard value)? successDashboard,
+    TResult Function(ErorrDashboard value)? erorrDashboard,
     TResult Function(Loadingimage value)? loadingvimage,
     TResult Function(Successimage value)? successimage,
     TResult Function(Erorrimage value)? erorrvimage,
@@ -5145,9 +5180,9 @@ class _$ErorrimageImpl implements Erorrimage {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
-    required TResult Function() loadingviewCat,
-    required TResult Function() successviewCat,
-    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingDashboard,
+    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(String erorr) erorrDashboard,
     required TResult Function() loadingvimage,
     required TResult Function() successimage,
     required TResult Function(String erorr) erorrvimage,
@@ -5180,9 +5215,9 @@ class _$ErorrimageImpl implements Erorrimage {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
-    TResult? Function()? loadingviewCat,
-    TResult? Function()? successviewCat,
-    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingDashboard,
+    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(String erorr)? erorrDashboard,
     TResult? Function()? loadingvimage,
     TResult? Function()? successimage,
     TResult? Function(String erorr)? erorrvimage,
@@ -5215,9 +5250,9 @@ class _$ErorrimageImpl implements Erorrimage {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
-    TResult Function()? loadingviewCat,
-    TResult Function()? successviewCat,
-    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingDashboard,
+    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(String erorr)? erorrDashboard,
     TResult Function()? loadingvimage,
     TResult Function()? successimage,
     TResult Function(String erorr)? erorrvimage,
@@ -5254,9 +5289,9 @@ class _$ErorrimageImpl implements Erorrimage {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
-    required TResult Function(LoadingviewCat value) loadingviewCat,
-    required TResult Function(SuccessviewCat value) successviewCat,
-    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(LoadingDashboard value) loadingDashboard,
+    required TResult Function(SuccessDashboard value) successDashboard,
+    required TResult Function(ErorrDashboard value) erorrDashboard,
     required TResult Function(Loadingimage value) loadingvimage,
     required TResult Function(Successimage value) successimage,
     required TResult Function(Erorrimage value) erorrvimage,
@@ -5289,9 +5324,9 @@ class _$ErorrimageImpl implements Erorrimage {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
-    TResult? Function(LoadingviewCat value)? loadingviewCat,
-    TResult? Function(SuccessviewCat value)? successviewCat,
-    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(LoadingDashboard value)? loadingDashboard,
+    TResult? Function(SuccessDashboard value)? successDashboard,
+    TResult? Function(ErorrDashboard value)? erorrDashboard,
     TResult? Function(Loadingimage value)? loadingvimage,
     TResult? Function(Successimage value)? successimage,
     TResult? Function(Erorrimage value)? erorrvimage,
@@ -5324,9 +5359,9 @@ class _$ErorrimageImpl implements Erorrimage {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
-    TResult Function(LoadingviewCat value)? loadingviewCat,
-    TResult Function(SuccessviewCat value)? successviewCat,
-    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(LoadingDashboard value)? loadingDashboard,
+    TResult Function(SuccessDashboard value)? successDashboard,
+    TResult Function(ErorrDashboard value)? erorrDashboard,
     TResult Function(Loadingimage value)? loadingvimage,
     TResult Function(Successimage value)? successimage,
     TResult Function(Erorrimage value)? erorrvimage,
@@ -5408,9 +5443,9 @@ class _$GalerImpl implements Galer {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
-    required TResult Function() loadingviewCat,
-    required TResult Function() successviewCat,
-    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingDashboard,
+    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(String erorr) erorrDashboard,
     required TResult Function() loadingvimage,
     required TResult Function() successimage,
     required TResult Function(String erorr) erorrvimage,
@@ -5443,9 +5478,9 @@ class _$GalerImpl implements Galer {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
-    TResult? Function()? loadingviewCat,
-    TResult? Function()? successviewCat,
-    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingDashboard,
+    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(String erorr)? erorrDashboard,
     TResult? Function()? loadingvimage,
     TResult? Function()? successimage,
     TResult? Function(String erorr)? erorrvimage,
@@ -5478,9 +5513,9 @@ class _$GalerImpl implements Galer {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
-    TResult Function()? loadingviewCat,
-    TResult Function()? successviewCat,
-    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingDashboard,
+    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(String erorr)? erorrDashboard,
     TResult Function()? loadingvimage,
     TResult Function()? successimage,
     TResult Function(String erorr)? erorrvimage,
@@ -5517,9 +5552,9 @@ class _$GalerImpl implements Galer {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
-    required TResult Function(LoadingviewCat value) loadingviewCat,
-    required TResult Function(SuccessviewCat value) successviewCat,
-    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(LoadingDashboard value) loadingDashboard,
+    required TResult Function(SuccessDashboard value) successDashboard,
+    required TResult Function(ErorrDashboard value) erorrDashboard,
     required TResult Function(Loadingimage value) loadingvimage,
     required TResult Function(Successimage value) successimage,
     required TResult Function(Erorrimage value) erorrvimage,
@@ -5552,9 +5587,9 @@ class _$GalerImpl implements Galer {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
-    TResult? Function(LoadingviewCat value)? loadingviewCat,
-    TResult? Function(SuccessviewCat value)? successviewCat,
-    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(LoadingDashboard value)? loadingDashboard,
+    TResult? Function(SuccessDashboard value)? successDashboard,
+    TResult? Function(ErorrDashboard value)? erorrDashboard,
     TResult? Function(Loadingimage value)? loadingvimage,
     TResult? Function(Successimage value)? successimage,
     TResult? Function(Erorrimage value)? erorrvimage,
@@ -5587,9 +5622,9 @@ class _$GalerImpl implements Galer {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
-    TResult Function(LoadingviewCat value)? loadingviewCat,
-    TResult Function(SuccessviewCat value)? successviewCat,
-    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(LoadingDashboard value)? loadingDashboard,
+    TResult Function(SuccessDashboard value)? successDashboard,
+    TResult Function(ErorrDashboard value)? erorrDashboard,
     TResult Function(Loadingimage value)? loadingvimage,
     TResult Function(Successimage value)? successimage,
     TResult Function(Erorrimage value)? erorrvimage,
@@ -5666,9 +5701,9 @@ class _$Galer2Impl implements Galer2 {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
-    required TResult Function() loadingviewCat,
-    required TResult Function() successviewCat,
-    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingDashboard,
+    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(String erorr) erorrDashboard,
     required TResult Function() loadingvimage,
     required TResult Function() successimage,
     required TResult Function(String erorr) erorrvimage,
@@ -5701,9 +5736,9 @@ class _$Galer2Impl implements Galer2 {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
-    TResult? Function()? loadingviewCat,
-    TResult? Function()? successviewCat,
-    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingDashboard,
+    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(String erorr)? erorrDashboard,
     TResult? Function()? loadingvimage,
     TResult? Function()? successimage,
     TResult? Function(String erorr)? erorrvimage,
@@ -5736,9 +5771,9 @@ class _$Galer2Impl implements Galer2 {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
-    TResult Function()? loadingviewCat,
-    TResult Function()? successviewCat,
-    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingDashboard,
+    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(String erorr)? erorrDashboard,
     TResult Function()? loadingvimage,
     TResult Function()? successimage,
     TResult Function(String erorr)? erorrvimage,
@@ -5775,9 +5810,9 @@ class _$Galer2Impl implements Galer2 {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
-    required TResult Function(LoadingviewCat value) loadingviewCat,
-    required TResult Function(SuccessviewCat value) successviewCat,
-    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(LoadingDashboard value) loadingDashboard,
+    required TResult Function(SuccessDashboard value) successDashboard,
+    required TResult Function(ErorrDashboard value) erorrDashboard,
     required TResult Function(Loadingimage value) loadingvimage,
     required TResult Function(Successimage value) successimage,
     required TResult Function(Erorrimage value) erorrvimage,
@@ -5810,9 +5845,9 @@ class _$Galer2Impl implements Galer2 {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
-    TResult? Function(LoadingviewCat value)? loadingviewCat,
-    TResult? Function(SuccessviewCat value)? successviewCat,
-    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(LoadingDashboard value)? loadingDashboard,
+    TResult? Function(SuccessDashboard value)? successDashboard,
+    TResult? Function(ErorrDashboard value)? erorrDashboard,
     TResult? Function(Loadingimage value)? loadingvimage,
     TResult? Function(Successimage value)? successimage,
     TResult? Function(Erorrimage value)? erorrvimage,
@@ -5845,9 +5880,9 @@ class _$Galer2Impl implements Galer2 {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
-    TResult Function(LoadingviewCat value)? loadingviewCat,
-    TResult Function(SuccessviewCat value)? successviewCat,
-    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(LoadingDashboard value)? loadingDashboard,
+    TResult Function(SuccessDashboard value)? successDashboard,
+    TResult Function(ErorrDashboard value)? erorrDashboard,
     TResult Function(Loadingimage value)? loadingvimage,
     TResult Function(Successimage value)? successimage,
     TResult Function(Erorrimage value)? erorrvimage,
@@ -5924,9 +5959,9 @@ class _$Galer3Impl implements Galer3 {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
-    required TResult Function() loadingviewCat,
-    required TResult Function() successviewCat,
-    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingDashboard,
+    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(String erorr) erorrDashboard,
     required TResult Function() loadingvimage,
     required TResult Function() successimage,
     required TResult Function(String erorr) erorrvimage,
@@ -5959,9 +5994,9 @@ class _$Galer3Impl implements Galer3 {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
-    TResult? Function()? loadingviewCat,
-    TResult? Function()? successviewCat,
-    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingDashboard,
+    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(String erorr)? erorrDashboard,
     TResult? Function()? loadingvimage,
     TResult? Function()? successimage,
     TResult? Function(String erorr)? erorrvimage,
@@ -5994,9 +6029,9 @@ class _$Galer3Impl implements Galer3 {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
-    TResult Function()? loadingviewCat,
-    TResult Function()? successviewCat,
-    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingDashboard,
+    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(String erorr)? erorrDashboard,
     TResult Function()? loadingvimage,
     TResult Function()? successimage,
     TResult Function(String erorr)? erorrvimage,
@@ -6033,9 +6068,9 @@ class _$Galer3Impl implements Galer3 {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
-    required TResult Function(LoadingviewCat value) loadingviewCat,
-    required TResult Function(SuccessviewCat value) successviewCat,
-    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(LoadingDashboard value) loadingDashboard,
+    required TResult Function(SuccessDashboard value) successDashboard,
+    required TResult Function(ErorrDashboard value) erorrDashboard,
     required TResult Function(Loadingimage value) loadingvimage,
     required TResult Function(Successimage value) successimage,
     required TResult Function(Erorrimage value) erorrvimage,
@@ -6068,9 +6103,9 @@ class _$Galer3Impl implements Galer3 {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
-    TResult? Function(LoadingviewCat value)? loadingviewCat,
-    TResult? Function(SuccessviewCat value)? successviewCat,
-    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(LoadingDashboard value)? loadingDashboard,
+    TResult? Function(SuccessDashboard value)? successDashboard,
+    TResult? Function(ErorrDashboard value)? erorrDashboard,
     TResult? Function(Loadingimage value)? loadingvimage,
     TResult? Function(Successimage value)? successimage,
     TResult? Function(Erorrimage value)? erorrvimage,
@@ -6103,9 +6138,9 @@ class _$Galer3Impl implements Galer3 {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
-    TResult Function(LoadingviewCat value)? loadingviewCat,
-    TResult Function(SuccessviewCat value)? successviewCat,
-    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(LoadingDashboard value)? loadingDashboard,
+    TResult Function(SuccessDashboard value)? successDashboard,
+    TResult Function(ErorrDashboard value)? erorrDashboard,
     TResult Function(Loadingimage value)? loadingvimage,
     TResult Function(Successimage value)? successimage,
     TResult Function(Erorrimage value)? erorrvimage,
@@ -6182,9 +6217,9 @@ class _$remofgalerImpl implements remofgaler {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
-    required TResult Function() loadingviewCat,
-    required TResult Function() successviewCat,
-    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingDashboard,
+    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(String erorr) erorrDashboard,
     required TResult Function() loadingvimage,
     required TResult Function() successimage,
     required TResult Function(String erorr) erorrvimage,
@@ -6217,9 +6252,9 @@ class _$remofgalerImpl implements remofgaler {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
-    TResult? Function()? loadingviewCat,
-    TResult? Function()? successviewCat,
-    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingDashboard,
+    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(String erorr)? erorrDashboard,
     TResult? Function()? loadingvimage,
     TResult? Function()? successimage,
     TResult? Function(String erorr)? erorrvimage,
@@ -6252,9 +6287,9 @@ class _$remofgalerImpl implements remofgaler {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
-    TResult Function()? loadingviewCat,
-    TResult Function()? successviewCat,
-    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingDashboard,
+    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(String erorr)? erorrDashboard,
     TResult Function()? loadingvimage,
     TResult Function()? successimage,
     TResult Function(String erorr)? erorrvimage,
@@ -6291,9 +6326,9 @@ class _$remofgalerImpl implements remofgaler {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
-    required TResult Function(LoadingviewCat value) loadingviewCat,
-    required TResult Function(SuccessviewCat value) successviewCat,
-    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(LoadingDashboard value) loadingDashboard,
+    required TResult Function(SuccessDashboard value) successDashboard,
+    required TResult Function(ErorrDashboard value) erorrDashboard,
     required TResult Function(Loadingimage value) loadingvimage,
     required TResult Function(Successimage value) successimage,
     required TResult Function(Erorrimage value) erorrvimage,
@@ -6326,9 +6361,9 @@ class _$remofgalerImpl implements remofgaler {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
-    TResult? Function(LoadingviewCat value)? loadingviewCat,
-    TResult? Function(SuccessviewCat value)? successviewCat,
-    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(LoadingDashboard value)? loadingDashboard,
+    TResult? Function(SuccessDashboard value)? successDashboard,
+    TResult? Function(ErorrDashboard value)? erorrDashboard,
     TResult? Function(Loadingimage value)? loadingvimage,
     TResult? Function(Successimage value)? successimage,
     TResult? Function(Erorrimage value)? erorrvimage,
@@ -6361,9 +6396,9 @@ class _$remofgalerImpl implements remofgaler {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
-    TResult Function(LoadingviewCat value)? loadingviewCat,
-    TResult Function(SuccessviewCat value)? successviewCat,
-    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(LoadingDashboard value)? loadingDashboard,
+    TResult Function(SuccessDashboard value)? successDashboard,
+    TResult Function(ErorrDashboard value)? erorrDashboard,
     TResult Function(Loadingimage value)? loadingvimage,
     TResult Function(Successimage value)? successimage,
     TResult Function(Erorrimage value)? erorrvimage,
@@ -6440,9 +6475,9 @@ class _$removegaler2Impl implements removegaler2 {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
-    required TResult Function() loadingviewCat,
-    required TResult Function() successviewCat,
-    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingDashboard,
+    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(String erorr) erorrDashboard,
     required TResult Function() loadingvimage,
     required TResult Function() successimage,
     required TResult Function(String erorr) erorrvimage,
@@ -6475,9 +6510,9 @@ class _$removegaler2Impl implements removegaler2 {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
-    TResult? Function()? loadingviewCat,
-    TResult? Function()? successviewCat,
-    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingDashboard,
+    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(String erorr)? erorrDashboard,
     TResult? Function()? loadingvimage,
     TResult? Function()? successimage,
     TResult? Function(String erorr)? erorrvimage,
@@ -6510,9 +6545,9 @@ class _$removegaler2Impl implements removegaler2 {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
-    TResult Function()? loadingviewCat,
-    TResult Function()? successviewCat,
-    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingDashboard,
+    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(String erorr)? erorrDashboard,
     TResult Function()? loadingvimage,
     TResult Function()? successimage,
     TResult Function(String erorr)? erorrvimage,
@@ -6549,9 +6584,9 @@ class _$removegaler2Impl implements removegaler2 {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
-    required TResult Function(LoadingviewCat value) loadingviewCat,
-    required TResult Function(SuccessviewCat value) successviewCat,
-    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(LoadingDashboard value) loadingDashboard,
+    required TResult Function(SuccessDashboard value) successDashboard,
+    required TResult Function(ErorrDashboard value) erorrDashboard,
     required TResult Function(Loadingimage value) loadingvimage,
     required TResult Function(Successimage value) successimage,
     required TResult Function(Erorrimage value) erorrvimage,
@@ -6584,9 +6619,9 @@ class _$removegaler2Impl implements removegaler2 {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
-    TResult? Function(LoadingviewCat value)? loadingviewCat,
-    TResult? Function(SuccessviewCat value)? successviewCat,
-    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(LoadingDashboard value)? loadingDashboard,
+    TResult? Function(SuccessDashboard value)? successDashboard,
+    TResult? Function(ErorrDashboard value)? erorrDashboard,
     TResult? Function(Loadingimage value)? loadingvimage,
     TResult? Function(Successimage value)? successimage,
     TResult? Function(Erorrimage value)? erorrvimage,
@@ -6619,9 +6654,9 @@ class _$removegaler2Impl implements removegaler2 {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
-    TResult Function(LoadingviewCat value)? loadingviewCat,
-    TResult Function(SuccessviewCat value)? successviewCat,
-    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(LoadingDashboard value)? loadingDashboard,
+    TResult Function(SuccessDashboard value)? successDashboard,
+    TResult Function(ErorrDashboard value)? erorrDashboard,
     TResult Function(Loadingimage value)? loadingvimage,
     TResult Function(Successimage value)? successimage,
     TResult Function(Erorrimage value)? erorrvimage,
@@ -6698,9 +6733,9 @@ class _$removegaler3Impl implements removegaler3 {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
-    required TResult Function() loadingviewCat,
-    required TResult Function() successviewCat,
-    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingDashboard,
+    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(String erorr) erorrDashboard,
     required TResult Function() loadingvimage,
     required TResult Function() successimage,
     required TResult Function(String erorr) erorrvimage,
@@ -6733,9 +6768,9 @@ class _$removegaler3Impl implements removegaler3 {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
-    TResult? Function()? loadingviewCat,
-    TResult? Function()? successviewCat,
-    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingDashboard,
+    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(String erorr)? erorrDashboard,
     TResult? Function()? loadingvimage,
     TResult? Function()? successimage,
     TResult? Function(String erorr)? erorrvimage,
@@ -6768,9 +6803,9 @@ class _$removegaler3Impl implements removegaler3 {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
-    TResult Function()? loadingviewCat,
-    TResult Function()? successviewCat,
-    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingDashboard,
+    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(String erorr)? erorrDashboard,
     TResult Function()? loadingvimage,
     TResult Function()? successimage,
     TResult Function(String erorr)? erorrvimage,
@@ -6807,9 +6842,9 @@ class _$removegaler3Impl implements removegaler3 {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
-    required TResult Function(LoadingviewCat value) loadingviewCat,
-    required TResult Function(SuccessviewCat value) successviewCat,
-    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(LoadingDashboard value) loadingDashboard,
+    required TResult Function(SuccessDashboard value) successDashboard,
+    required TResult Function(ErorrDashboard value) erorrDashboard,
     required TResult Function(Loadingimage value) loadingvimage,
     required TResult Function(Successimage value) successimage,
     required TResult Function(Erorrimage value) erorrvimage,
@@ -6842,9 +6877,9 @@ class _$removegaler3Impl implements removegaler3 {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
-    TResult? Function(LoadingviewCat value)? loadingviewCat,
-    TResult? Function(SuccessviewCat value)? successviewCat,
-    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(LoadingDashboard value)? loadingDashboard,
+    TResult? Function(SuccessDashboard value)? successDashboard,
+    TResult? Function(ErorrDashboard value)? erorrDashboard,
     TResult? Function(Loadingimage value)? loadingvimage,
     TResult? Function(Successimage value)? successimage,
     TResult? Function(Erorrimage value)? erorrvimage,
@@ -6877,9 +6912,9 @@ class _$removegaler3Impl implements removegaler3 {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
-    TResult Function(LoadingviewCat value)? loadingviewCat,
-    TResult Function(SuccessviewCat value)? successviewCat,
-    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(LoadingDashboard value)? loadingDashboard,
+    TResult Function(SuccessDashboard value)? successDashboard,
+    TResult Function(ErorrDashboard value)? erorrDashboard,
     TResult Function(Loadingimage value)? loadingvimage,
     TResult Function(Successimage value)? successimage,
     TResult Function(Erorrimage value)? erorrvimage,
@@ -6956,9 +6991,9 @@ class _$PushEditImpl implements PushEdit {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
-    required TResult Function() loadingviewCat,
-    required TResult Function() successviewCat,
-    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingDashboard,
+    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(String erorr) erorrDashboard,
     required TResult Function() loadingvimage,
     required TResult Function() successimage,
     required TResult Function(String erorr) erorrvimage,
@@ -6991,9 +7026,9 @@ class _$PushEditImpl implements PushEdit {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
-    TResult? Function()? loadingviewCat,
-    TResult? Function()? successviewCat,
-    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingDashboard,
+    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(String erorr)? erorrDashboard,
     TResult? Function()? loadingvimage,
     TResult? Function()? successimage,
     TResult? Function(String erorr)? erorrvimage,
@@ -7026,9 +7061,9 @@ class _$PushEditImpl implements PushEdit {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
-    TResult Function()? loadingviewCat,
-    TResult Function()? successviewCat,
-    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingDashboard,
+    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(String erorr)? erorrDashboard,
     TResult Function()? loadingvimage,
     TResult Function()? successimage,
     TResult Function(String erorr)? erorrvimage,
@@ -7065,9 +7100,9 @@ class _$PushEditImpl implements PushEdit {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
-    required TResult Function(LoadingviewCat value) loadingviewCat,
-    required TResult Function(SuccessviewCat value) successviewCat,
-    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(LoadingDashboard value) loadingDashboard,
+    required TResult Function(SuccessDashboard value) successDashboard,
+    required TResult Function(ErorrDashboard value) erorrDashboard,
     required TResult Function(Loadingimage value) loadingvimage,
     required TResult Function(Successimage value) successimage,
     required TResult Function(Erorrimage value) erorrvimage,
@@ -7100,9 +7135,9 @@ class _$PushEditImpl implements PushEdit {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
-    TResult? Function(LoadingviewCat value)? loadingviewCat,
-    TResult? Function(SuccessviewCat value)? successviewCat,
-    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(LoadingDashboard value)? loadingDashboard,
+    TResult? Function(SuccessDashboard value)? successDashboard,
+    TResult? Function(ErorrDashboard value)? erorrDashboard,
     TResult? Function(Loadingimage value)? loadingvimage,
     TResult? Function(Successimage value)? successimage,
     TResult? Function(Erorrimage value)? erorrvimage,
@@ -7135,9 +7170,9 @@ class _$PushEditImpl implements PushEdit {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
-    TResult Function(LoadingviewCat value)? loadingviewCat,
-    TResult Function(SuccessviewCat value)? successviewCat,
-    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(LoadingDashboard value)? loadingDashboard,
+    TResult Function(SuccessDashboard value)? successDashboard,
+    TResult Function(ErorrDashboard value)? erorrDashboard,
     TResult Function(Loadingimage value)? loadingvimage,
     TResult Function(Successimage value)? successimage,
     TResult Function(Erorrimage value)? erorrvimage,
@@ -7214,9 +7249,9 @@ class _$ApproveiItemsImpl implements ApproveiItems {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
-    required TResult Function() loadingviewCat,
-    required TResult Function() successviewCat,
-    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingDashboard,
+    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(String erorr) erorrDashboard,
     required TResult Function() loadingvimage,
     required TResult Function() successimage,
     required TResult Function(String erorr) erorrvimage,
@@ -7249,9 +7284,9 @@ class _$ApproveiItemsImpl implements ApproveiItems {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
-    TResult? Function()? loadingviewCat,
-    TResult? Function()? successviewCat,
-    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingDashboard,
+    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(String erorr)? erorrDashboard,
     TResult? Function()? loadingvimage,
     TResult? Function()? successimage,
     TResult? Function(String erorr)? erorrvimage,
@@ -7284,9 +7319,9 @@ class _$ApproveiItemsImpl implements ApproveiItems {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
-    TResult Function()? loadingviewCat,
-    TResult Function()? successviewCat,
-    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingDashboard,
+    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(String erorr)? erorrDashboard,
     TResult Function()? loadingvimage,
     TResult Function()? successimage,
     TResult Function(String erorr)? erorrvimage,
@@ -7323,9 +7358,9 @@ class _$ApproveiItemsImpl implements ApproveiItems {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
-    required TResult Function(LoadingviewCat value) loadingviewCat,
-    required TResult Function(SuccessviewCat value) successviewCat,
-    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(LoadingDashboard value) loadingDashboard,
+    required TResult Function(SuccessDashboard value) successDashboard,
+    required TResult Function(ErorrDashboard value) erorrDashboard,
     required TResult Function(Loadingimage value) loadingvimage,
     required TResult Function(Successimage value) successimage,
     required TResult Function(Erorrimage value) erorrvimage,
@@ -7358,9 +7393,9 @@ class _$ApproveiItemsImpl implements ApproveiItems {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
-    TResult? Function(LoadingviewCat value)? loadingviewCat,
-    TResult? Function(SuccessviewCat value)? successviewCat,
-    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(LoadingDashboard value)? loadingDashboard,
+    TResult? Function(SuccessDashboard value)? successDashboard,
+    TResult? Function(ErorrDashboard value)? erorrDashboard,
     TResult? Function(Loadingimage value)? loadingvimage,
     TResult? Function(Successimage value)? successimage,
     TResult? Function(Erorrimage value)? erorrvimage,
@@ -7393,9 +7428,9 @@ class _$ApproveiItemsImpl implements ApproveiItems {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
-    TResult Function(LoadingviewCat value)? loadingviewCat,
-    TResult Function(SuccessviewCat value)? successviewCat,
-    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(LoadingDashboard value)? loadingDashboard,
+    TResult Function(SuccessDashboard value)? successDashboard,
+    TResult Function(ErorrDashboard value)? erorrDashboard,
     TResult Function(Loadingimage value)? loadingvimage,
     TResult Function(Successimage value)? successimage,
     TResult Function(Erorrimage value)? erorrvimage,
@@ -7472,9 +7507,9 @@ class _$RemoveControllImpl implements RemoveControll {
     required TResult Function() loadingdelete,
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
-    required TResult Function() loadingviewCat,
-    required TResult Function() successviewCat,
-    required TResult Function(String erorr) erorrviewCat,
+    required TResult Function() loadingDashboard,
+    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(String erorr) erorrDashboard,
     required TResult Function() loadingvimage,
     required TResult Function() successimage,
     required TResult Function(String erorr) erorrvimage,
@@ -7507,9 +7542,9 @@ class _$RemoveControllImpl implements RemoveControll {
     TResult? Function()? loadingdelete,
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
-    TResult? Function()? loadingviewCat,
-    TResult? Function()? successviewCat,
-    TResult? Function(String erorr)? erorrviewCat,
+    TResult? Function()? loadingDashboard,
+    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(String erorr)? erorrDashboard,
     TResult? Function()? loadingvimage,
     TResult? Function()? successimage,
     TResult? Function(String erorr)? erorrvimage,
@@ -7542,9 +7577,9 @@ class _$RemoveControllImpl implements RemoveControll {
     TResult Function()? loadingdelete,
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
-    TResult Function()? loadingviewCat,
-    TResult Function()? successviewCat,
-    TResult Function(String erorr)? erorrviewCat,
+    TResult Function()? loadingDashboard,
+    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(String erorr)? erorrDashboard,
     TResult Function()? loadingvimage,
     TResult Function()? successimage,
     TResult Function(String erorr)? erorrvimage,
@@ -7581,9 +7616,9 @@ class _$RemoveControllImpl implements RemoveControll {
     required TResult Function(Loadingdelete value) loadingdelete,
     required TResult Function(Successdelete value) successdelete,
     required TResult Function(Erorrdelete value) erorrdelete,
-    required TResult Function(LoadingviewCat value) loadingviewCat,
-    required TResult Function(SuccessviewCat value) successviewCat,
-    required TResult Function(ErorrviewCat value) erorrviewCat,
+    required TResult Function(LoadingDashboard value) loadingDashboard,
+    required TResult Function(SuccessDashboard value) successDashboard,
+    required TResult Function(ErorrDashboard value) erorrDashboard,
     required TResult Function(Loadingimage value) loadingvimage,
     required TResult Function(Successimage value) successimage,
     required TResult Function(Erorrimage value) erorrvimage,
@@ -7616,9 +7651,9 @@ class _$RemoveControllImpl implements RemoveControll {
     TResult? Function(Loadingdelete value)? loadingdelete,
     TResult? Function(Successdelete value)? successdelete,
     TResult? Function(Erorrdelete value)? erorrdelete,
-    TResult? Function(LoadingviewCat value)? loadingviewCat,
-    TResult? Function(SuccessviewCat value)? successviewCat,
-    TResult? Function(ErorrviewCat value)? erorrviewCat,
+    TResult? Function(LoadingDashboard value)? loadingDashboard,
+    TResult? Function(SuccessDashboard value)? successDashboard,
+    TResult? Function(ErorrDashboard value)? erorrDashboard,
     TResult? Function(Loadingimage value)? loadingvimage,
     TResult? Function(Successimage value)? successimage,
     TResult? Function(Erorrimage value)? erorrvimage,
@@ -7651,9 +7686,9 @@ class _$RemoveControllImpl implements RemoveControll {
     TResult Function(Loadingdelete value)? loadingdelete,
     TResult Function(Successdelete value)? successdelete,
     TResult Function(Erorrdelete value)? erorrdelete,
-    TResult Function(LoadingviewCat value)? loadingviewCat,
-    TResult Function(SuccessviewCat value)? successviewCat,
-    TResult Function(ErorrviewCat value)? erorrviewCat,
+    TResult Function(LoadingDashboard value)? loadingDashboard,
+    TResult Function(SuccessDashboard value)? successDashboard,
+    TResult Function(ErorrDashboard value)? erorrDashboard,
     TResult Function(Loadingimage value)? loadingvimage,
     TResult Function(Successimage value)? successimage,
     TResult Function(Erorrimage value)? erorrvimage,

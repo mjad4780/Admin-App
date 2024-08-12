@@ -1,5 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
+import '../../../../../models/response_dashboard/response_dashboard.dart';
 import '../../../../../models/response_items/datum.dart';
 part 'dashboard_state.freezed.dart';
 
@@ -31,10 +32,11 @@ class DashboardState with _$DashboardState {
       Erorrdelete;
 
   ///:view
-  const factory DashboardState.loadingviewCat() = LoadingviewCat;
-  const factory DashboardState.successviewCat() = SuccessviewCat;
-  const factory DashboardState.erorrviewCat({required String erorr}) =
-      ErorrviewCat;
+  const factory DashboardState.loadingDashboard() = LoadingDashboard;
+  const factory DashboardState.successDashboard(ResponseDashboard responses) =
+      SuccessDashboard;
+  const factory DashboardState.erorrDashboard({required String erorr}) =
+      ErorrDashboard;
 
   ///:view
   const factory DashboardState.loadingvimage() = Loadingimage;

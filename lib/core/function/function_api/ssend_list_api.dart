@@ -1,6 +1,6 @@
 import 'package:untitled/core/extensions/extention_navigator.dart';
 
-import '../../../models/response_items/size.dart';
+import '../../../models/response_dashboard/size.dart';
 
 sendListApi(String input) {
   return input.replaceAll('[', '').replaceAll(']', '');
@@ -16,8 +16,8 @@ List<String> replacListIsEnpty(List<String> data) {
   }
 }
 
-replacMapsColorIsEnpty(List<ItemSize> data) {
-  List<ItemSize> datas = [];
+replacMapsColorIsEnpty(List<Size> data) {
+  List<Size> datas = [];
   if (data.isNullOrEmpty()) {
     return datas;
   } else {
@@ -25,7 +25,7 @@ replacMapsColorIsEnpty(List<ItemSize> data) {
   }
 }
 
-replacMapsSizeIsEnpty(List<ItemSize> data) {
+replacMapsSizeIsEnpty(List<Size> data) {
   if (data.isNullOrEmpty()) {
     return [];
   } else {

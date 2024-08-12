@@ -1,0 +1,180 @@
+{
+    "status": "success",
+    "data": [
+        {
+            "item_id": 71,
+            "item_name": "behara",
+            "item_name_ar": "szgdhd",
+            "item_decs": "hfdxhjfg",
+            "item_decs_ar": "jfxgzdsg",
+            "item_image": "2013Screenshot 2024-03-04 105337.png",
+            "item_count": 424324,
+            "item_active": 1,
+            "item_price": 324,
+            "item_discount": 32767,
+            "item_data": "2024-08-09 12:48:54",
+            "item_categories": 15,
+            "categories_id": 15,
+            "categories_name": "mobile",
+            "images": [
+                "",
+                "",
+                "3930Screenshot (30).png",
+                "7117Screenshot 2024-03-04 105337.png",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "size": [
+                {
+                    "id": 303,
+                    "size": "",
+                    "quantity": 0,
+                    "color": "red"
+                },
+                {
+                    "id": 304,
+                    "size": "ML",
+                    "quantity": 0,
+                    "color": ""
+                },
+                {
+                    "id": 305,
+                    "size": "",
+                    "quantity": 0,
+                    "color": ""
+                },
+                {
+                    "id": 306,
+                    "size": "",
+                    "quantity": 0,
+                    "color": ""
+                },
+                {
+                    "id": 319,
+                    "size": "",
+                    "quantity": 0,
+                    "color": "orange"
+                },
+                {
+                    "id": 320,
+                    "size": "",
+                    "quantity": 0,
+                    "color": "blue"
+                },
+                {
+                    "id": 321,
+                    "size": "",
+                    "quantity": 0,
+                    "color": "black"
+                },
+                {
+                    "id": 322,
+                    "size": "MM",
+                    "quantity": 0,
+                    "color": ""
+                },
+                {
+                    "id": 323,
+                    "size": "XXL",
+                    "quantity": 0,
+                    "color": ""
+                }
+            ]
+        },
+        {
+            "item_id": 72,
+            "item_name": "Egypt",
+            "item_name_ar": "cairo",
+            "item_decs": "dturr",
+            "item_decs_ar": "ytfchtfuyf",
+            "item_image": "6856Screenshot (30).png",
+            "item_count": 212,
+            "item_active": 1,
+            "item_price": 33,
+            "item_discount": 123,
+            "item_data": "2024-08-09 14:56:40",
+            "item_categories": 12,
+            "categories_id": 15,
+            "categories_name": "mobile",
+            "images": [
+                "",
+                "",
+                "",
+                "",
+                "2138Screenshot 2024-03-04 105337.png",
+                "9792Screenshot_٢٠٢٣-٠٤-٠٢-١٣-٥٢-٤٤-٣٨_f9ee0578fe1cc94de7482bd41accb329.jpg"
+            ],
+            "size": [
+                {
+                    "id": 307,
+                    "size": "",
+                    "quantity": 0,
+                    "color": "red"
+                },
+                {
+                    "id": 308,
+                    "size": "",
+                    "quantity": 0,
+                    "color": "orange"
+                },
+                {
+                    "id": 309,
+                    "size": "MM",
+                    "quantity": 0,
+                    "color": ""
+                },
+                {
+                    "id": 310,
+                    "size": "ML",
+                    "quantity": 0,
+                    "color": ""
+                },
+                {
+                    "id": 311,
+                    "size": "",
+                    "quantity": 0,
+                    "color": ""
+                },
+                {
+                    "id": 312,
+                    "size": "",
+                    "quantity": 0,
+                    "color": ""
+                }
+            ]
+        }
+  
+    ],
+    "Categories":  [
+            {
+                "categories_id": 11,
+                "categories_name": "choise",
+                "categories_name_ar": "حذاء",
+                "categories_Image": "1300sneakers.png",
+                "categories_Data": "2024-03-20 10:10:08"
+            },
+            {
+                "categories_id": 12,
+                "categories_name": "camera",
+                "categories_name_ar": "كاميرا",
+                "categories_Image": "3852camera.png",
+                "categories_Data": "2024-03-20 10:10:59"
+            }
+      
+        ],
+    
+    "Orders": [
+        {
+            "TotalOrders": "8",
+            "TotalPending": "1",
+            "TotalApprove": "1",
+            "TotalPrepare": "1",
+            "TotalShipped": "2",
+            "TotalDone": "1",
+            "TotalCancel": "2"
+        }
+    ]
+}

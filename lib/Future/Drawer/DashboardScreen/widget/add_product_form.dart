@@ -27,7 +27,7 @@ class _ProductSubmitFormState extends State<ProductSubmitForm> {
   @override
   void initState() {
     super.initState();
-    context.read<DashboardCubit>().viewCategories();
+    // context.read<DashboardCubit>().viewCategories();
   }
 
   @override
@@ -154,4 +154,3 @@ class _ProductSubmitFormState extends State<ProductSubmitForm> {
 //     return this![index];
 //   }
 // }
-

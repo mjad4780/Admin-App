@@ -6,48 +6,35 @@ import 'package:untitled/Future/Drawer/DashboardScreen/logic/cubit/dashboard_sta
 import '../../../../../core/theming/colors.dart';
 import '../product_list_section.dart';
 
-class ItemsBlocBuilder extends StatelessWidget {
-  const ItemsBlocBuilder({super.key});
+class DasboardBlocBuilder extends StatelessWidget {
+  const DasboardBlocBuilder({super.key});
 
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<DashboardCubit, DashboardState>(
       buildWhen: (previous, current) =>
-          current is Loadingview ||
-          current is Successview ||
-          current is Erorrview,
+          current is LoadingDashboard ||
+          current is SuccessDashboard ||
+          current is ErorrDashboard,
       builder: (context, state) {
         return state.maybeWhen(
-          loadingview: () {
+          loadingDashboard: () {
             return const Center(
               child: CircularProgressIndicator(
                 color: AppColor.mainBlue,
               ),
             );
           },
-          successview: (products) {
+          successDashboard: (products) {
             return Column(
               children: [
                 ProductListSection(
-                  items: products,
+                  items: products.data ?? [],
                 ),
-                // Tester(
-                //   products: products,
-                // ),
-
-                // Text(
-                //   replacMapsIsEnpty(products[4].size!).toString(),
-                // ),
-                // Tester2(
-                //   products: products,
-                // )
               ],
             );
-            // CategoryListSection(
-            //   categories: products.data ?? [],
-            // );
           },
-          erorrview: (error) {
+          erorrDashboard: (error) {
             return Text(error);
           },
           orElse: () {

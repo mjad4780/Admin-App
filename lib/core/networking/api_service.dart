@@ -11,6 +11,7 @@ import 'package:dio/dio.dart';
 
 import 'package:retrofit/retrofit.dart';
 
+import '../../models/response_dashboard/response_dashboard.dart';
 import '../../models/response_detilas/response_detilas.dart';
 import 'api_constants.dart';
 
@@ -122,4 +123,8 @@ abstract class ApiService {
   //done
   @POST(ApiConstants.done)
   Future<dynamic> done(@Body() dynamic body);
+  ////////////////////dashboard////////
+  //viewdone
+  @GET(ApiConstants.viewdashboard)
+  Future<ResponseDashboard> viewdashboard();
 }
