@@ -5,7 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../models/product_summery_info.dart';
 import '../../../../utility/constants.dart';
 
-List<ProductSummeryInfo> ListCardSummeryInfo(BuildContext context) {
+List<ProductSummeryInfo> listCardSummeryInfo(BuildContext context) {
   List<ProductSummeryInfo> productSummeryItems = [
     ProductSummeryInfo(
       title: "All Product",

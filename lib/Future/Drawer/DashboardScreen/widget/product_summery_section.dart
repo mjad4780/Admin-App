@@ -23,7 +23,7 @@ class ProductSummerySection extends StatelessWidget {
           GridView.builder(
             physics: const NeverScrollableScrollPhysics(),
             shrinkWrap: true,
-            itemCount: ListCardSummeryInfo(context).length,
+            itemCount: listCardSummeryInfo(context).length,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 4,
               crossAxisSpacing: defaultPadding,
@@ -31,7 +31,7 @@ class ProductSummerySection extends StatelessWidget {
               childAspectRatio: size.width < 1400 ? 1.1 : 1.4,
             ),
             itemBuilder: (context, index) => ProductSummeryCard(
-              info: ListCardSummeryInfo(context)[index],
+              info: listCardSummeryInfo(context)[index],
               onTap: (productType) {
                 //TODO: should complete call filterProductsByQuantity
               },

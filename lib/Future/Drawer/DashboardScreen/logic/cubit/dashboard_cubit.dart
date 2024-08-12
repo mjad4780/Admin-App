@@ -64,24 +64,6 @@ class DashboardCubit extends Cubit<DashboardState> {
 
   // List<ItemsData> items = [];
 
-  ///:chooseimagegaler
-  // chooseimagegaler() async {
-  //   file = await imageuploadgallery();
-  //   emit(const DashboardState.galer());
-  // }
-
-  //////////////////////////////:viewItems/////////////////////////
-  // viewItems() async {
-  //   emit(const DashboardState.loadingview());
-  //   final response = await _itemrepo.viewItems();
-  //   response.when(success: (data) {
-  //     items = data.data ?? [];
-  //     emit(DashboardState.successview(data.data ?? []));
-  //   }, failure: (error) {
-  //     emit(DashboardState.erorrview(erorr: error.messege ?? ''));
-  //   });
-  // }
-
   /////////////////////////////////:AddItems///////////////////////////
   addItems(BuildContext context) async {
     if (selectedMainImage == null &&

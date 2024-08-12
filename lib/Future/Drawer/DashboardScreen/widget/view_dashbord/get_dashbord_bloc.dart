@@ -4,6 +4,8 @@ import 'package:untitled/Future/Drawer/DashboardScreen/logic/cubit/dashboard_cub
 import 'package:untitled/Future/Drawer/DashboardScreen/logic/cubit/dashboard_state.dart';
 
 import '../../../../../core/theming/colors.dart';
+import '../../DashboardScreen.dart';
+import '../order_details_section.dart';
 import '../product_list_section.dart';
 
 class DasboardBlocBuilder extends StatelessWidget {
@@ -26,12 +28,9 @@ class DasboardBlocBuilder extends StatelessWidget {
             );
           },
           successDashboard: (products) {
-            return Column(
-              children: [
-                ProductListSection(
-                  items: products.data ?? [],
-                ),
-              ],
+            return DashboardBody(
+              order: products.orders!.first,
+              items: products.data ?? [],
             );
           },
           erorrDashboard: (error) {
