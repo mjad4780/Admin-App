@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:untitled/core/extensions/extention_navigator.dart';
 
+import '../../../../core/function/show_dilaog/top_show_dialog.dart';
 import '../../../../core/theming/colors.dart';
 import '../../../../core/widgets/setup_erorr.dart';
 import '../logic/cubit/categories_cubit.dart';
@@ -32,6 +33,7 @@ class EditcategoriesBlocListener extends StatelessWidget {
           },
           successedit: () {
             context.pop();
+            topsnackbar(context, 'success edit Categories');
           },
           erorredit: (error) {
             setupErrorState(context, error);

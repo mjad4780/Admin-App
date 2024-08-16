@@ -12,7 +12,7 @@ class CouponRepo {
 
   //ViewCoupon
 
-  Future<ApiResult<ResponseCoupon>> ViewCoupon() async {
+  Future<ApiResult<ResponseCoupon>> viewCoupon() async {
     try {
       final response = await _apiService.getCoupon();
       return ApiResult.success(response);
@@ -23,8 +23,8 @@ class CouponRepo {
 
   //AddCoupon
 
-  Future<ApiResult<dynamic>> AddCoupon(String coupon, String startdata,
-      String endData, int count, String discount, String maxuser) async {
+  Future<ApiResult<dynamic>> addCoupon(String coupon, String startdata,
+      String endData, String count, String discount, String maxuser) async {
     Map<String, dynamic> data = {
       "coupon": coupon,
       "startdata": startdata,

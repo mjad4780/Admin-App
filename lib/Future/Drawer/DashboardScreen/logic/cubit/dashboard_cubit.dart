@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:untitled/Future/Drawer/DashboardScreen/data/repo_get_dashboard.dart';
 import 'package:untitled/core/function/function_api/ssend_list_api.dart';
 
-import '../../../../../core/function/AlertDialog.dart';
+import '../../../../../core/function/show_dilaog/AlertDialog.dart';
 import '../../../../../core/function/function_api/upload_image.dart';
 import '../../../../../models/Item.dart';
 import '../../../../../models/response_dashboard/datum.dart';

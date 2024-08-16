@@ -4,6 +4,7 @@ import 'package:untitled/Future/Drawer/DashboardScreen/logic/cubit/dashboard_cub
 import 'package:untitled/Future/Drawer/DashboardScreen/logic/cubit/dashboard_state.dart';
 import 'package:untitled/core/extensions/extention_navigator.dart';
 
+import '../../../../../core/function/show_dilaog/top_show_dialog.dart';
 import '../../../../../core/theming/colors.dart';
 import '../../../../../core/widgets/setup_erorr.dart';
 
@@ -32,6 +33,7 @@ class EditItemsBlocListener extends StatelessWidget {
           },
           successedit: () {
             context.pop();
+            topsnackbar(context, 'success edit Items');
           },
           erorredit: (error) {
             setupErrorState(context, error);

@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../../../core/function/AlertDialog.dart';
+import '../../../../../../core/function/show_dilaog/AlertDialog.dart';
 import '../../../../../../core/function/function_api/upload_image.dart';
 import '../../../data/repo.dart';
 import 'posters_state.dart';

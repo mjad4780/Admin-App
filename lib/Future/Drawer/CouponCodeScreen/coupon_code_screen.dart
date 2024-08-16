@@ -10,6 +10,8 @@ import 'package:gap/gap.dart';
 
 import 'widget/add_coupon_form.dart';
 import 'widget/coupon_list_section.dart';
+import 'widget/show_and_form_dialog.dart';
+import 'widget/view_coupon_bloc.dart';
 
 class CouponCodeScreen extends StatelessWidget {
   const CouponCodeScreen({super.key});
@@ -18,7 +20,7 @@ class CouponCodeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: BlocProvider(
-        create: (context) => getIt<CouponCubit>(),
+        create: (context) => getIt<CouponCubit>()..viewCoupon(),
         child: SingleChildScrollView(
           primary: false,
           padding: const EdgeInsets.all(defaultPadding),
@@ -52,8 +54,12 @@ class CouponCodeScreen extends StatelessWidget {
                                 ),
                               ),
                               onPressed: () {
-                                // showAddForm(
-                                //     context, "Add Coupon", CouponSubmitForm());
+                                showAddForm(context, "Add Coupon",
+                                    CouponSubmitForm(
+                                  onPressed: () {
+                                    context.read<CouponCubit>().addCoupon();
+                                  },
+                                ));
                               },
                               icon: const Icon(Icons.add),
                               label: const Text("Add New"),
@@ -67,9 +73,7 @@ class CouponCodeScreen extends StatelessWidget {
                           ],
                         ),
                         const Gap(defaultPadding),
-                        const CouponListSection(
-                          coupon: [],
-                        ),
+                        const CouponBlocBuilder()
                       ],
                     ),
                   ),

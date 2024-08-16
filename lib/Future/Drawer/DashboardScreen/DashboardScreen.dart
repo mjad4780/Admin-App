@@ -95,6 +95,7 @@ class DashboardBody extends StatelessWidget {
                       const Gap(20),
                       IconButton(
                           onPressed: () {
+                            context.read<DashboardCubit>().viewashboard();
                             //TODO: should complete call getAllProduct
                           },
                           icon: const Icon(Icons.refresh)),

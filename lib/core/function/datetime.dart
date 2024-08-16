@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:omni_datetime_picker/omni_datetime_picker.dart';
 
-Future<String> ShowDateTimePicker(BuildContext context) async {
+Future<String> showDateTimePicker(BuildContext context) async {
   DateTime? dateTime = await showOmniDateTimePicker(
     context: context,
     initialDate: DateTime.now(),

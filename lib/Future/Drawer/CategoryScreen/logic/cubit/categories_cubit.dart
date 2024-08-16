@@ -4,7 +4,7 @@ import 'package:untitled/Future/Drawer/CategoryScreen/data/repo.dart';
 import 'package:bloc/bloc.dart';
 import 'package:flutter/widgets.dart';
 
-import '../../../../../core/function/AlertDialog.dart';
+import '../../../../../core/function/show_dilaog/AlertDialog.dart';
 import '../../../../../core/function/function_api/upload_image.dart';
 import '../../../../../models/response_categories/datum.dart';
 import '../../../../../models/select_categories/select_categories.dart';

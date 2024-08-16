@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:untitled/Future/Drawer/PosterScreen/logic/cubit/cubit/posters_cubit.dart';
 import 'package:untitled/Future/Drawer/PosterScreen/logic/cubit/cubit/posters_state.dart';
 import 'package:untitled/core/extensions/extention_navigator.dart';
+import '../../../../core/function/show_dilaog/top_show_dialog.dart';
 import '../../../../core/widgets/setup_erorr.dart';
 
 import '../../../../core/theming/colors.dart';
@@ -31,6 +32,7 @@ class AddPostersBlocListener extends StatelessWidget {
           },
           successAdd: () {
             context.pop();
+            topsnackbar(context, 'success add Poster');
           },
           erorrAdd: (error) {
             setupErrorState(context, error);

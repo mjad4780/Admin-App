@@ -10,22 +10,10 @@ snacPar(BuildContext context, String text) {
   );
 }
 
-snacPar2(BuildContext context, String text) {
-  ScaffoldMessenger.of(context).showSnackBar(
-    SnackBar(
-      content: Column(
-        children: [
-          Text(text),
-        ],
-      ),
-    ),
-  );
-}
-
-show(BuildContext context, String text) {
+topsnackbar(BuildContext context, String text) {
   showTopSnackBar(
     Overlay.of(context),
-    CustomSnackBar.info(
+    CustomSnackBar.success(
       message: text,
     ),
   );

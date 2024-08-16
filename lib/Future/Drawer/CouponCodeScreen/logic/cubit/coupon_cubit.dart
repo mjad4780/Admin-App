@@ -13,24 +13,25 @@ class CouponCubit extends Cubit<CouponState> {
   final addCouponFormKey = GlobalKey<FormState>();
   TextEditingController couponname = TextEditingController();
   TextEditingController discount = TextEditingController();
-  TextEditingController StartDate = TextEditingController();
+  TextEditingController startDate = TextEditingController();
   TextEditingController endDateCtrl = TextEditingController();
   TextEditingController maxuser = TextEditingController();
+  TextEditingController count = TextEditingController();
 
   showstart(BuildContext context) async {
-    StartDate.text = await ShowDateTimePicker(context);
+    startDate.text = await showDateTimePicker(context);
     emit(const CouponState.start());
   }
 
   showend(BuildContext context) async {
-    endDateCtrl.text = await ShowDateTimePicker(context);
+    endDateCtrl.text = await showDateTimePicker(context);
     emit(const CouponState.end());
   }
 
   ///:ViewCoupon
   viewCoupon() async {
     emit(const CouponState.loadingview());
-    final response = await _couponRepo.ViewCoupon();
+    final response = await _couponRepo.viewCoupon();
     response.when(success: (data) {
       emit(CouponState.successview(data.data ?? []));
     }, failure: (error) {
@@ -39,10 +40,15 @@ class CouponCubit extends Cubit<CouponState> {
   }
 
   ///:AddCoupon
-  AddCoupon(int count) async {
+  addCoupon() async {
     emit(const CouponState.loadingAdd());
-    final response = await _couponRepo.AddCoupon(couponname.text,
-        StartDate.text, endDateCtrl.text, count, discount.text, maxuser.text);
+    final response = await _couponRepo.addCoupon(
+        couponname.text,
+        startDate.text,
+        endDateCtrl.text,
+        count.text,
+        discount.text,
+        maxuser.text);
     response.when(success: (data) {
       emit(const CouponState.successAdd());
     }, failure: (error) {
