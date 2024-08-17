@@ -42,7 +42,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = jsonDecode(_result.data);
+    final _value = _result.data;
     return _value;
   }
 
@@ -68,7 +68,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = jsonDecode(_result.data);
+    final _value = _result.data;
     return _value;
   }
 
@@ -94,7 +94,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = jsonDecode(_result.data);
+    final _value = _result.data;
     return _value;
   }
 
@@ -120,7 +120,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = jsonDecode(_result.data);
+    final _value = _result.data;
     return _value;
   }
 
@@ -146,7 +146,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = ResponseCategories.fromJson(jsonDecode(_result.data)!);
+    final _value = ResponseCategories.fromJson(jsonDecode(_result.data!));
     return _value;
   }
 
@@ -172,7 +172,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = jsonDecode(_result.data);
+    final _value = _result.data;
     return _value;
   }
 
@@ -198,7 +198,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = jsonDecode(_result.data);
+    final _value = _result.data;
     return _value;
   }
 
@@ -224,33 +224,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = jsonDecode(_result.data);
-    return _value;
-  }
-
-  @override
-  Future<ResponseItems> getItems() async {
-    final _extra = <String, dynamic>{};
-    final queryParameters = <String, dynamic>{};
-    final _headers = <String, dynamic>{};
-    const Map<String, dynamic>? _data = null;
-    final _result = await _dio.fetch(_setStreamType<ResponseItems>(Options(
-      method: 'GET',
-      headers: _headers,
-      extra: _extra,
-    )
-        .compose(
-          _dio.options,
-          'http://localhost/e-ecommerse/admin/items/view.php',
-          queryParameters: queryParameters,
-          data: _data,
-        )
-        .copyWith(
-            baseUrl: _combineBaseUrls(
-          _dio.options.baseUrl,
-          baseUrl,
-        ))));
-    final _value = ResponseItems.fromJson(jsonDecode(_result.data)!);
+    final _value = _result.data;
     return _value;
   }
 
@@ -276,7 +250,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = jsonDecode(_result.data);
+    final _value = _result.data;
     return _value;
   }
 
@@ -302,7 +276,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = ResponseCoupon.fromJson(jsonDecode(_result.data)!);
+    final _value = ResponseCoupon.fromJson(jsonDecode(_result.data!));
     return _value;
   }
 
@@ -328,7 +302,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = jsonDecode(_result.data);
+    final _value = _result.data;
     return _value;
   }
 
@@ -355,7 +329,7 @@ class _ApiService implements ApiService {
               _dio.options.baseUrl,
               baseUrl,
             ))));
-    final _value = ResponseNotifacation.fromJson(jsonDecode(_result.data)!);
+    final _value = ResponseNotifacation.fromJson(jsonDecode(_result.data!));
     return _value;
   }
 
@@ -381,7 +355,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = jsonDecode(_result.data);
+    final _value = _result.data;
     return _value;
   }
 
@@ -407,7 +381,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = ResponsePoster.fromJson(jsonDecode(_result.data)!);
+    final _value = ResponsePoster.fromJson(jsonDecode(_result.data!));
     return _value;
   }
 
@@ -433,7 +407,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = ResponseOrders.fromJson(jsonDecode(_result.data)!);
+    final _value = ResponseOrders.fromJson(jsonDecode(_result.data!));
     return _value;
   }
 
@@ -459,7 +433,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = ResponseOrders.fromJson(jsonDecode(_result.data)!);
+    final _value = ResponseOrders.fromJson(jsonDecode(_result.data!));
     return _value;
   }
 
@@ -485,7 +459,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = ResponseDetails.fromJson(jsonDecode(_result.data)!);
+    final _value = ResponseDetails.fromJson(jsonDecode(_result.data!));
     return _value;
   }
 
@@ -511,7 +485,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = ResponseOrders.fromJson(jsonDecode(_result.data)!);
+    final _value = ResponseOrders.fromJson(jsonDecode(_result.data!));
     return _value;
   }
 
@@ -537,7 +511,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = ResponseOrders.fromJson(jsonDecode(_result.data)!);
+    final _value = ResponseOrders.fromJson(jsonDecode(_result.data!));
     return _value;
   }
 
@@ -563,7 +537,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = ResponseOrders.fromJson(jsonDecode(_result.data)!);
+    final _value = ResponseOrders.fromJson(jsonDecode(_result.data!));
     return _value;
   }
 
@@ -589,7 +563,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = ResponseOrders.fromJson(jsonDecode(_result.data)!);
+    final _value = ResponseOrders.fromJson(jsonDecode(_result.data!));
     return _value;
   }
 
@@ -615,7 +589,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = jsonDecode(_result.data);
+    final _value = _result.data;
     return _value;
   }
 
@@ -641,7 +615,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = jsonDecode(_result.data);
+    final _value = _result.data;
     return _value;
   }
 
@@ -667,7 +641,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = jsonDecode(_result.data);
+    final _value = _result.data;
     return _value;
   }
 
@@ -693,17 +667,17 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = jsonDecode(_result.data);
+    final _value = _result.data;
     return _value;
   }
 
   @override
-  Future<ResponseDashboard> viewdashboard() async {
+  Future<ResponseDashpoard> viewdashboard() async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
     const Map<String, dynamic>? _data = null;
-    final _result = await _dio.fetch(_setStreamType<ResponseDashboard>(Options(
+    final _result = await _dio.fetch(_setStreamType<ResponseDashpoard>(Options(
       method: 'GET',
       headers: _headers,
       extra: _extra,
@@ -719,7 +693,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = ResponseDashboard.fromJson(jsonDecode(_result.data)!);
+    final _value = ResponseDashpoard.fromJson(jsonDecode(_result.data!));
     return _value;
   }
 

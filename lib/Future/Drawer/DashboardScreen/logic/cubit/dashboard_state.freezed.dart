@@ -19,9 +19,6 @@ mixin _$DashboardState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingview,
-    required TResult Function(List<ItemsData> response) successview,
-    required TResult Function(String erorr) erorrview,
     required TResult Function() loadingAdd,
     required TResult Function() successAdd,
     required TResult Function(String erorr) erorrAdd,
@@ -32,11 +29,8 @@ mixin _$DashboardState {
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
     required TResult Function() loadingDashboard,
-    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(ResponseDashpoard responses) successDashboard,
     required TResult Function(String erorr) erorrDashboard,
-    required TResult Function() loadingvimage,
-    required TResult Function() successimage,
-    required TResult Function(String erorr) erorrvimage,
     required TResult Function() galer,
     required TResult Function() galer2,
     required TResult Function() galer3,
@@ -51,9 +45,6 @@ mixin _$DashboardState {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingview,
-    TResult? Function(List<ItemsData> response)? successview,
-    TResult? Function(String erorr)? erorrview,
     TResult? Function()? loadingAdd,
     TResult? Function()? successAdd,
     TResult? Function(String erorr)? erorrAdd,
@@ -64,11 +55,8 @@ mixin _$DashboardState {
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
     TResult? Function()? loadingDashboard,
-    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(ResponseDashpoard responses)? successDashboard,
     TResult? Function(String erorr)? erorrDashboard,
-    TResult? Function()? loadingvimage,
-    TResult? Function()? successimage,
-    TResult? Function(String erorr)? erorrvimage,
     TResult? Function()? galer,
     TResult? Function()? galer2,
     TResult? Function()? galer3,
@@ -83,9 +71,6 @@ mixin _$DashboardState {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingview,
-    TResult Function(List<ItemsData> response)? successview,
-    TResult Function(String erorr)? erorrview,
     TResult Function()? loadingAdd,
     TResult Function()? successAdd,
     TResult Function(String erorr)? erorrAdd,
@@ -96,11 +81,8 @@ mixin _$DashboardState {
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
     TResult Function()? loadingDashboard,
-    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(ResponseDashpoard responses)? successDashboard,
     TResult Function(String erorr)? erorrDashboard,
-    TResult Function()? loadingvimage,
-    TResult Function()? successimage,
-    TResult Function(String erorr)? erorrvimage,
     TResult Function()? galer,
     TResult Function()? galer2,
     TResult Function()? galer3,
@@ -116,9 +98,6 @@ mixin _$DashboardState {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingview value) loadingview,
-    required TResult Function(Successview value) successview,
-    required TResult Function(Erorrview value) erorrview,
     required TResult Function(LoadingAdd value) loadingAdd,
     required TResult Function(SuccessAdd value) successAdd,
     required TResult Function(ErorrAdd value) erorrAdd,
@@ -131,9 +110,6 @@ mixin _$DashboardState {
     required TResult Function(LoadingDashboard value) loadingDashboard,
     required TResult Function(SuccessDashboard value) successDashboard,
     required TResult Function(ErorrDashboard value) erorrDashboard,
-    required TResult Function(Loadingimage value) loadingvimage,
-    required TResult Function(Successimage value) successimage,
-    required TResult Function(Erorrimage value) erorrvimage,
     required TResult Function(Galer value) galer,
     required TResult Function(Galer2 value) galer2,
     required TResult Function(Galer3 value) galer3,
@@ -148,9 +124,6 @@ mixin _$DashboardState {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingview value)? loadingview,
-    TResult? Function(Successview value)? successview,
-    TResult? Function(Erorrview value)? erorrview,
     TResult? Function(LoadingAdd value)? loadingAdd,
     TResult? Function(SuccessAdd value)? successAdd,
     TResult? Function(ErorrAdd value)? erorrAdd,
@@ -163,9 +136,6 @@ mixin _$DashboardState {
     TResult? Function(LoadingDashboard value)? loadingDashboard,
     TResult? Function(SuccessDashboard value)? successDashboard,
     TResult? Function(ErorrDashboard value)? erorrDashboard,
-    TResult? Function(Loadingimage value)? loadingvimage,
-    TResult? Function(Successimage value)? successimage,
-    TResult? Function(Erorrimage value)? erorrvimage,
     TResult? Function(Galer value)? galer,
     TResult? Function(Galer2 value)? galer2,
     TResult? Function(Galer3 value)? galer3,
@@ -180,9 +150,6 @@ mixin _$DashboardState {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingview value)? loadingview,
-    TResult Function(Successview value)? successview,
-    TResult Function(Erorrview value)? erorrview,
     TResult Function(LoadingAdd value)? loadingAdd,
     TResult Function(SuccessAdd value)? successAdd,
     TResult Function(ErorrAdd value)? erorrAdd,
@@ -195,9 +162,6 @@ mixin _$DashboardState {
     TResult Function(LoadingDashboard value)? loadingDashboard,
     TResult Function(SuccessDashboard value)? successDashboard,
     TResult Function(ErorrDashboard value)? erorrDashboard,
-    TResult Function(Loadingimage value)? loadingvimage,
-    TResult Function(Successimage value)? successimage,
-    TResult Function(Erorrimage value)? erorrvimage,
     TResult Function(Galer value)? galer,
     TResult Function(Galer2 value)? galer2,
     TResult Function(Galer3 value)? galer3,
@@ -269,9 +233,6 @@ class _$InitialImpl implements _Initial {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingview,
-    required TResult Function(List<ItemsData> response) successview,
-    required TResult Function(String erorr) erorrview,
     required TResult Function() loadingAdd,
     required TResult Function() successAdd,
     required TResult Function(String erorr) erorrAdd,
@@ -282,11 +243,8 @@ class _$InitialImpl implements _Initial {
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
     required TResult Function() loadingDashboard,
-    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(ResponseDashpoard responses) successDashboard,
     required TResult Function(String erorr) erorrDashboard,
-    required TResult Function() loadingvimage,
-    required TResult Function() successimage,
-    required TResult Function(String erorr) erorrvimage,
     required TResult Function() galer,
     required TResult Function() galer2,
     required TResult Function() galer3,
@@ -304,9 +262,6 @@ class _$InitialImpl implements _Initial {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingview,
-    TResult? Function(List<ItemsData> response)? successview,
-    TResult? Function(String erorr)? erorrview,
     TResult? Function()? loadingAdd,
     TResult? Function()? successAdd,
     TResult? Function(String erorr)? erorrAdd,
@@ -317,11 +272,8 @@ class _$InitialImpl implements _Initial {
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
     TResult? Function()? loadingDashboard,
-    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(ResponseDashpoard responses)? successDashboard,
     TResult? Function(String erorr)? erorrDashboard,
-    TResult? Function()? loadingvimage,
-    TResult? Function()? successimage,
-    TResult? Function(String erorr)? erorrvimage,
     TResult? Function()? galer,
     TResult? Function()? galer2,
     TResult? Function()? galer3,
@@ -339,9 +291,6 @@ class _$InitialImpl implements _Initial {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingview,
-    TResult Function(List<ItemsData> response)? successview,
-    TResult Function(String erorr)? erorrview,
     TResult Function()? loadingAdd,
     TResult Function()? successAdd,
     TResult Function(String erorr)? erorrAdd,
@@ -352,11 +301,8 @@ class _$InitialImpl implements _Initial {
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
     TResult Function()? loadingDashboard,
-    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(ResponseDashpoard responses)? successDashboard,
     TResult Function(String erorr)? erorrDashboard,
-    TResult Function()? loadingvimage,
-    TResult Function()? successimage,
-    TResult Function(String erorr)? erorrvimage,
     TResult Function()? galer,
     TResult Function()? galer2,
     TResult Function()? galer3,
@@ -378,9 +324,6 @@ class _$InitialImpl implements _Initial {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingview value) loadingview,
-    required TResult Function(Successview value) successview,
-    required TResult Function(Erorrview value) erorrview,
     required TResult Function(LoadingAdd value) loadingAdd,
     required TResult Function(SuccessAdd value) successAdd,
     required TResult Function(ErorrAdd value) erorrAdd,
@@ -393,9 +336,6 @@ class _$InitialImpl implements _Initial {
     required TResult Function(LoadingDashboard value) loadingDashboard,
     required TResult Function(SuccessDashboard value) successDashboard,
     required TResult Function(ErorrDashboard value) erorrDashboard,
-    required TResult Function(Loadingimage value) loadingvimage,
-    required TResult Function(Successimage value) successimage,
-    required TResult Function(Erorrimage value) erorrvimage,
     required TResult Function(Galer value) galer,
     required TResult Function(Galer2 value) galer2,
     required TResult Function(Galer3 value) galer3,
@@ -413,9 +353,6 @@ class _$InitialImpl implements _Initial {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingview value)? loadingview,
-    TResult? Function(Successview value)? successview,
-    TResult? Function(Erorrview value)? erorrview,
     TResult? Function(LoadingAdd value)? loadingAdd,
     TResult? Function(SuccessAdd value)? successAdd,
     TResult? Function(ErorrAdd value)? erorrAdd,
@@ -428,9 +365,6 @@ class _$InitialImpl implements _Initial {
     TResult? Function(LoadingDashboard value)? loadingDashboard,
     TResult? Function(SuccessDashboard value)? successDashboard,
     TResult? Function(ErorrDashboard value)? erorrDashboard,
-    TResult? Function(Loadingimage value)? loadingvimage,
-    TResult? Function(Successimage value)? successimage,
-    TResult? Function(Erorrimage value)? erorrvimage,
     TResult? Function(Galer value)? galer,
     TResult? Function(Galer2 value)? galer2,
     TResult? Function(Galer3 value)? galer3,
@@ -448,9 +382,6 @@ class _$InitialImpl implements _Initial {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingview value)? loadingview,
-    TResult Function(Successview value)? successview,
-    TResult Function(Erorrview value)? erorrview,
     TResult Function(LoadingAdd value)? loadingAdd,
     TResult Function(SuccessAdd value)? successAdd,
     TResult Function(ErorrAdd value)? erorrAdd,
@@ -463,9 +394,6 @@ class _$InitialImpl implements _Initial {
     TResult Function(LoadingDashboard value)? loadingDashboard,
     TResult Function(SuccessDashboard value)? successDashboard,
     TResult Function(ErorrDashboard value)? erorrDashboard,
-    TResult Function(Loadingimage value)? loadingvimage,
-    TResult Function(Successimage value)? successimage,
-    TResult Function(Erorrimage value)? erorrvimage,
     TResult Function(Galer value)? galer,
     TResult Function(Galer2 value)? galer2,
     TResult Function(Galer3 value)? galer3,
@@ -486,849 +414,6 @@ class _$InitialImpl implements _Initial {
 
 abstract class _Initial implements DashboardState {
   const factory _Initial() = _$InitialImpl;
-}
-
-/// @nodoc
-abstract class _$$LoadingviewImplCopyWith<$Res> {
-  factory _$$LoadingviewImplCopyWith(
-          _$LoadingviewImpl value, $Res Function(_$LoadingviewImpl) then) =
-      __$$LoadingviewImplCopyWithImpl<$Res>;
-}
-
-/// @nodoc
-class __$$LoadingviewImplCopyWithImpl<$Res>
-    extends _$DashboardStateCopyWithImpl<$Res, _$LoadingviewImpl>
-    implements _$$LoadingviewImplCopyWith<$Res> {
-  __$$LoadingviewImplCopyWithImpl(
-      _$LoadingviewImpl _value, $Res Function(_$LoadingviewImpl) _then)
-      : super(_value, _then);
-}
-
-/// @nodoc
-
-class _$LoadingviewImpl implements Loadingview {
-  const _$LoadingviewImpl();
-
-  @override
-  String toString() {
-    return 'DashboardState.loadingview()';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$LoadingviewImpl);
-  }
-
-  @override
-  int get hashCode => runtimeType.hashCode;
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initial,
-    required TResult Function() loadingview,
-    required TResult Function(List<ItemsData> response) successview,
-    required TResult Function(String erorr) erorrview,
-    required TResult Function() loadingAdd,
-    required TResult Function() successAdd,
-    required TResult Function(String erorr) erorrAdd,
-    required TResult Function() loadingedit,
-    required TResult Function() successedit,
-    required TResult Function(String erorr) erorredit,
-    required TResult Function() loadingdelete,
-    required TResult Function() successdelete,
-    required TResult Function(String erorr) erorrdelete,
-    required TResult Function() loadingDashboard,
-    required TResult Function(ResponseDashboard responses) successDashboard,
-    required TResult Function(String erorr) erorrDashboard,
-    required TResult Function() loadingvimage,
-    required TResult Function() successimage,
-    required TResult Function(String erorr) erorrvimage,
-    required TResult Function() galer,
-    required TResult Function() galer2,
-    required TResult Function() galer3,
-    required TResult Function() remofgaler,
-    required TResult Function() removegaler2,
-    required TResult Function() removegaler3,
-    required TResult Function() pushEdit,
-    required TResult Function() approveitems,
-    required TResult Function() removeControll,
-  }) {
-    return loadingview();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initial,
-    TResult? Function()? loadingview,
-    TResult? Function(List<ItemsData> response)? successview,
-    TResult? Function(String erorr)? erorrview,
-    TResult? Function()? loadingAdd,
-    TResult? Function()? successAdd,
-    TResult? Function(String erorr)? erorrAdd,
-    TResult? Function()? loadingedit,
-    TResult? Function()? successedit,
-    TResult? Function(String erorr)? erorredit,
-    TResult? Function()? loadingdelete,
-    TResult? Function()? successdelete,
-    TResult? Function(String erorr)? erorrdelete,
-    TResult? Function()? loadingDashboard,
-    TResult? Function(ResponseDashboard responses)? successDashboard,
-    TResult? Function(String erorr)? erorrDashboard,
-    TResult? Function()? loadingvimage,
-    TResult? Function()? successimage,
-    TResult? Function(String erorr)? erorrvimage,
-    TResult? Function()? galer,
-    TResult? Function()? galer2,
-    TResult? Function()? galer3,
-    TResult? Function()? remofgaler,
-    TResult? Function()? removegaler2,
-    TResult? Function()? removegaler3,
-    TResult? Function()? pushEdit,
-    TResult? Function()? approveitems,
-    TResult? Function()? removeControll,
-  }) {
-    return loadingview?.call();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? loadingview,
-    TResult Function(List<ItemsData> response)? successview,
-    TResult Function(String erorr)? erorrview,
-    TResult Function()? loadingAdd,
-    TResult Function()? successAdd,
-    TResult Function(String erorr)? erorrAdd,
-    TResult Function()? loadingedit,
-    TResult Function()? successedit,
-    TResult Function(String erorr)? erorredit,
-    TResult Function()? loadingdelete,
-    TResult Function()? successdelete,
-    TResult Function(String erorr)? erorrdelete,
-    TResult Function()? loadingDashboard,
-    TResult Function(ResponseDashboard responses)? successDashboard,
-    TResult Function(String erorr)? erorrDashboard,
-    TResult Function()? loadingvimage,
-    TResult Function()? successimage,
-    TResult Function(String erorr)? erorrvimage,
-    TResult Function()? galer,
-    TResult Function()? galer2,
-    TResult Function()? galer3,
-    TResult Function()? remofgaler,
-    TResult Function()? removegaler2,
-    TResult Function()? removegaler3,
-    TResult Function()? pushEdit,
-    TResult Function()? approveitems,
-    TResult Function()? removeControll,
-    required TResult orElse(),
-  }) {
-    if (loadingview != null) {
-      return loadingview();
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingview value) loadingview,
-    required TResult Function(Successview value) successview,
-    required TResult Function(Erorrview value) erorrview,
-    required TResult Function(LoadingAdd value) loadingAdd,
-    required TResult Function(SuccessAdd value) successAdd,
-    required TResult Function(ErorrAdd value) erorrAdd,
-    required TResult Function(Loadingedit value) loadingedit,
-    required TResult Function(Successedit value) successedit,
-    required TResult Function(Erorredit value) erorredit,
-    required TResult Function(Loadingdelete value) loadingdelete,
-    required TResult Function(Successdelete value) successdelete,
-    required TResult Function(Erorrdelete value) erorrdelete,
-    required TResult Function(LoadingDashboard value) loadingDashboard,
-    required TResult Function(SuccessDashboard value) successDashboard,
-    required TResult Function(ErorrDashboard value) erorrDashboard,
-    required TResult Function(Loadingimage value) loadingvimage,
-    required TResult Function(Successimage value) successimage,
-    required TResult Function(Erorrimage value) erorrvimage,
-    required TResult Function(Galer value) galer,
-    required TResult Function(Galer2 value) galer2,
-    required TResult Function(Galer3 value) galer3,
-    required TResult Function(remofgaler value) remofgaler,
-    required TResult Function(removegaler2 value) removegaler2,
-    required TResult Function(removegaler3 value) removegaler3,
-    required TResult Function(PushEdit value) pushEdit,
-    required TResult Function(ApproveiItems value) approveitems,
-    required TResult Function(RemoveControll value) removeControll,
-  }) {
-    return loadingview(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingview value)? loadingview,
-    TResult? Function(Successview value)? successview,
-    TResult? Function(Erorrview value)? erorrview,
-    TResult? Function(LoadingAdd value)? loadingAdd,
-    TResult? Function(SuccessAdd value)? successAdd,
-    TResult? Function(ErorrAdd value)? erorrAdd,
-    TResult? Function(Loadingedit value)? loadingedit,
-    TResult? Function(Successedit value)? successedit,
-    TResult? Function(Erorredit value)? erorredit,
-    TResult? Function(Loadingdelete value)? loadingdelete,
-    TResult? Function(Successdelete value)? successdelete,
-    TResult? Function(Erorrdelete value)? erorrdelete,
-    TResult? Function(LoadingDashboard value)? loadingDashboard,
-    TResult? Function(SuccessDashboard value)? successDashboard,
-    TResult? Function(ErorrDashboard value)? erorrDashboard,
-    TResult? Function(Loadingimage value)? loadingvimage,
-    TResult? Function(Successimage value)? successimage,
-    TResult? Function(Erorrimage value)? erorrvimage,
-    TResult? Function(Galer value)? galer,
-    TResult? Function(Galer2 value)? galer2,
-    TResult? Function(Galer3 value)? galer3,
-    TResult? Function(remofgaler value)? remofgaler,
-    TResult? Function(removegaler2 value)? removegaler2,
-    TResult? Function(removegaler3 value)? removegaler3,
-    TResult? Function(PushEdit value)? pushEdit,
-    TResult? Function(ApproveiItems value)? approveitems,
-    TResult? Function(RemoveControll value)? removeControll,
-  }) {
-    return loadingview?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(Loadingview value)? loadingview,
-    TResult Function(Successview value)? successview,
-    TResult Function(Erorrview value)? erorrview,
-    TResult Function(LoadingAdd value)? loadingAdd,
-    TResult Function(SuccessAdd value)? successAdd,
-    TResult Function(ErorrAdd value)? erorrAdd,
-    TResult Function(Loadingedit value)? loadingedit,
-    TResult Function(Successedit value)? successedit,
-    TResult Function(Erorredit value)? erorredit,
-    TResult Function(Loadingdelete value)? loadingdelete,
-    TResult Function(Successdelete value)? successdelete,
-    TResult Function(Erorrdelete value)? erorrdelete,
-    TResult Function(LoadingDashboard value)? loadingDashboard,
-    TResult Function(SuccessDashboard value)? successDashboard,
-    TResult Function(ErorrDashboard value)? erorrDashboard,
-    TResult Function(Loadingimage value)? loadingvimage,
-    TResult Function(Successimage value)? successimage,
-    TResult Function(Erorrimage value)? erorrvimage,
-    TResult Function(Galer value)? galer,
-    TResult Function(Galer2 value)? galer2,
-    TResult Function(Galer3 value)? galer3,
-    TResult Function(remofgaler value)? remofgaler,
-    TResult Function(removegaler2 value)? removegaler2,
-    TResult Function(removegaler3 value)? removegaler3,
-    TResult Function(PushEdit value)? pushEdit,
-    TResult Function(ApproveiItems value)? approveitems,
-    TResult Function(RemoveControll value)? removeControll,
-    required TResult orElse(),
-  }) {
-    if (loadingview != null) {
-      return loadingview(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class Loadingview implements DashboardState {
-  const factory Loadingview() = _$LoadingviewImpl;
-}
-
-/// @nodoc
-abstract class _$$SuccessviewImplCopyWith<$Res> {
-  factory _$$SuccessviewImplCopyWith(
-          _$SuccessviewImpl value, $Res Function(_$SuccessviewImpl) then) =
-      __$$SuccessviewImplCopyWithImpl<$Res>;
-  @useResult
-  $Res call({List<ItemsData> response});
-}
-
-/// @nodoc
-class __$$SuccessviewImplCopyWithImpl<$Res>
-    extends _$DashboardStateCopyWithImpl<$Res, _$SuccessviewImpl>
-    implements _$$SuccessviewImplCopyWith<$Res> {
-  __$$SuccessviewImplCopyWithImpl(
-      _$SuccessviewImpl _value, $Res Function(_$SuccessviewImpl) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? response = null,
-  }) {
-    return _then(_$SuccessviewImpl(
-      null == response
-          ? _value._response
-          : response // ignore: cast_nullable_to_non_nullable
-              as List<ItemsData>,
-    ));
-  }
-}
-
-/// @nodoc
-
-class _$SuccessviewImpl implements Successview {
-  const _$SuccessviewImpl(final List<ItemsData> response)
-      : _response = response;
-
-  final List<ItemsData> _response;
-  @override
-  List<ItemsData> get response {
-    if (_response is EqualUnmodifiableListView) return _response;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_response);
-  }
-
-  @override
-  String toString() {
-    return 'DashboardState.successview(response: $response)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$SuccessviewImpl &&
-            const DeepCollectionEquality().equals(other._response, _response));
-  }
-
-  @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(_response));
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$SuccessviewImplCopyWith<_$SuccessviewImpl> get copyWith =>
-      __$$SuccessviewImplCopyWithImpl<_$SuccessviewImpl>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initial,
-    required TResult Function() loadingview,
-    required TResult Function(List<ItemsData> response) successview,
-    required TResult Function(String erorr) erorrview,
-    required TResult Function() loadingAdd,
-    required TResult Function() successAdd,
-    required TResult Function(String erorr) erorrAdd,
-    required TResult Function() loadingedit,
-    required TResult Function() successedit,
-    required TResult Function(String erorr) erorredit,
-    required TResult Function() loadingdelete,
-    required TResult Function() successdelete,
-    required TResult Function(String erorr) erorrdelete,
-    required TResult Function() loadingDashboard,
-    required TResult Function(ResponseDashboard responses) successDashboard,
-    required TResult Function(String erorr) erorrDashboard,
-    required TResult Function() loadingvimage,
-    required TResult Function() successimage,
-    required TResult Function(String erorr) erorrvimage,
-    required TResult Function() galer,
-    required TResult Function() galer2,
-    required TResult Function() galer3,
-    required TResult Function() remofgaler,
-    required TResult Function() removegaler2,
-    required TResult Function() removegaler3,
-    required TResult Function() pushEdit,
-    required TResult Function() approveitems,
-    required TResult Function() removeControll,
-  }) {
-    return successview(response);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initial,
-    TResult? Function()? loadingview,
-    TResult? Function(List<ItemsData> response)? successview,
-    TResult? Function(String erorr)? erorrview,
-    TResult? Function()? loadingAdd,
-    TResult? Function()? successAdd,
-    TResult? Function(String erorr)? erorrAdd,
-    TResult? Function()? loadingedit,
-    TResult? Function()? successedit,
-    TResult? Function(String erorr)? erorredit,
-    TResult? Function()? loadingdelete,
-    TResult? Function()? successdelete,
-    TResult? Function(String erorr)? erorrdelete,
-    TResult? Function()? loadingDashboard,
-    TResult? Function(ResponseDashboard responses)? successDashboard,
-    TResult? Function(String erorr)? erorrDashboard,
-    TResult? Function()? loadingvimage,
-    TResult? Function()? successimage,
-    TResult? Function(String erorr)? erorrvimage,
-    TResult? Function()? galer,
-    TResult? Function()? galer2,
-    TResult? Function()? galer3,
-    TResult? Function()? remofgaler,
-    TResult? Function()? removegaler2,
-    TResult? Function()? removegaler3,
-    TResult? Function()? pushEdit,
-    TResult? Function()? approveitems,
-    TResult? Function()? removeControll,
-  }) {
-    return successview?.call(response);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? loadingview,
-    TResult Function(List<ItemsData> response)? successview,
-    TResult Function(String erorr)? erorrview,
-    TResult Function()? loadingAdd,
-    TResult Function()? successAdd,
-    TResult Function(String erorr)? erorrAdd,
-    TResult Function()? loadingedit,
-    TResult Function()? successedit,
-    TResult Function(String erorr)? erorredit,
-    TResult Function()? loadingdelete,
-    TResult Function()? successdelete,
-    TResult Function(String erorr)? erorrdelete,
-    TResult Function()? loadingDashboard,
-    TResult Function(ResponseDashboard responses)? successDashboard,
-    TResult Function(String erorr)? erorrDashboard,
-    TResult Function()? loadingvimage,
-    TResult Function()? successimage,
-    TResult Function(String erorr)? erorrvimage,
-    TResult Function()? galer,
-    TResult Function()? galer2,
-    TResult Function()? galer3,
-    TResult Function()? remofgaler,
-    TResult Function()? removegaler2,
-    TResult Function()? removegaler3,
-    TResult Function()? pushEdit,
-    TResult Function()? approveitems,
-    TResult Function()? removeControll,
-    required TResult orElse(),
-  }) {
-    if (successview != null) {
-      return successview(response);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingview value) loadingview,
-    required TResult Function(Successview value) successview,
-    required TResult Function(Erorrview value) erorrview,
-    required TResult Function(LoadingAdd value) loadingAdd,
-    required TResult Function(SuccessAdd value) successAdd,
-    required TResult Function(ErorrAdd value) erorrAdd,
-    required TResult Function(Loadingedit value) loadingedit,
-    required TResult Function(Successedit value) successedit,
-    required TResult Function(Erorredit value) erorredit,
-    required TResult Function(Loadingdelete value) loadingdelete,
-    required TResult Function(Successdelete value) successdelete,
-    required TResult Function(Erorrdelete value) erorrdelete,
-    required TResult Function(LoadingDashboard value) loadingDashboard,
-    required TResult Function(SuccessDashboard value) successDashboard,
-    required TResult Function(ErorrDashboard value) erorrDashboard,
-    required TResult Function(Loadingimage value) loadingvimage,
-    required TResult Function(Successimage value) successimage,
-    required TResult Function(Erorrimage value) erorrvimage,
-    required TResult Function(Galer value) galer,
-    required TResult Function(Galer2 value) galer2,
-    required TResult Function(Galer3 value) galer3,
-    required TResult Function(remofgaler value) remofgaler,
-    required TResult Function(removegaler2 value) removegaler2,
-    required TResult Function(removegaler3 value) removegaler3,
-    required TResult Function(PushEdit value) pushEdit,
-    required TResult Function(ApproveiItems value) approveitems,
-    required TResult Function(RemoveControll value) removeControll,
-  }) {
-    return successview(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingview value)? loadingview,
-    TResult? Function(Successview value)? successview,
-    TResult? Function(Erorrview value)? erorrview,
-    TResult? Function(LoadingAdd value)? loadingAdd,
-    TResult? Function(SuccessAdd value)? successAdd,
-    TResult? Function(ErorrAdd value)? erorrAdd,
-    TResult? Function(Loadingedit value)? loadingedit,
-    TResult? Function(Successedit value)? successedit,
-    TResult? Function(Erorredit value)? erorredit,
-    TResult? Function(Loadingdelete value)? loadingdelete,
-    TResult? Function(Successdelete value)? successdelete,
-    TResult? Function(Erorrdelete value)? erorrdelete,
-    TResult? Function(LoadingDashboard value)? loadingDashboard,
-    TResult? Function(SuccessDashboard value)? successDashboard,
-    TResult? Function(ErorrDashboard value)? erorrDashboard,
-    TResult? Function(Loadingimage value)? loadingvimage,
-    TResult? Function(Successimage value)? successimage,
-    TResult? Function(Erorrimage value)? erorrvimage,
-    TResult? Function(Galer value)? galer,
-    TResult? Function(Galer2 value)? galer2,
-    TResult? Function(Galer3 value)? galer3,
-    TResult? Function(remofgaler value)? remofgaler,
-    TResult? Function(removegaler2 value)? removegaler2,
-    TResult? Function(removegaler3 value)? removegaler3,
-    TResult? Function(PushEdit value)? pushEdit,
-    TResult? Function(ApproveiItems value)? approveitems,
-    TResult? Function(RemoveControll value)? removeControll,
-  }) {
-    return successview?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(Loadingview value)? loadingview,
-    TResult Function(Successview value)? successview,
-    TResult Function(Erorrview value)? erorrview,
-    TResult Function(LoadingAdd value)? loadingAdd,
-    TResult Function(SuccessAdd value)? successAdd,
-    TResult Function(ErorrAdd value)? erorrAdd,
-    TResult Function(Loadingedit value)? loadingedit,
-    TResult Function(Successedit value)? successedit,
-    TResult Function(Erorredit value)? erorredit,
-    TResult Function(Loadingdelete value)? loadingdelete,
-    TResult Function(Successdelete value)? successdelete,
-    TResult Function(Erorrdelete value)? erorrdelete,
-    TResult Function(LoadingDashboard value)? loadingDashboard,
-    TResult Function(SuccessDashboard value)? successDashboard,
-    TResult Function(ErorrDashboard value)? erorrDashboard,
-    TResult Function(Loadingimage value)? loadingvimage,
-    TResult Function(Successimage value)? successimage,
-    TResult Function(Erorrimage value)? erorrvimage,
-    TResult Function(Galer value)? galer,
-    TResult Function(Galer2 value)? galer2,
-    TResult Function(Galer3 value)? galer3,
-    TResult Function(remofgaler value)? remofgaler,
-    TResult Function(removegaler2 value)? removegaler2,
-    TResult Function(removegaler3 value)? removegaler3,
-    TResult Function(PushEdit value)? pushEdit,
-    TResult Function(ApproveiItems value)? approveitems,
-    TResult Function(RemoveControll value)? removeControll,
-    required TResult orElse(),
-  }) {
-    if (successview != null) {
-      return successview(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class Successview implements DashboardState {
-  const factory Successview(final List<ItemsData> response) = _$SuccessviewImpl;
-
-  List<ItemsData> get response;
-  @JsonKey(ignore: true)
-  _$$SuccessviewImplCopyWith<_$SuccessviewImpl> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class _$$ErorrviewImplCopyWith<$Res> {
-  factory _$$ErorrviewImplCopyWith(
-          _$ErorrviewImpl value, $Res Function(_$ErorrviewImpl) then) =
-      __$$ErorrviewImplCopyWithImpl<$Res>;
-  @useResult
-  $Res call({String erorr});
-}
-
-/// @nodoc
-class __$$ErorrviewImplCopyWithImpl<$Res>
-    extends _$DashboardStateCopyWithImpl<$Res, _$ErorrviewImpl>
-    implements _$$ErorrviewImplCopyWith<$Res> {
-  __$$ErorrviewImplCopyWithImpl(
-      _$ErorrviewImpl _value, $Res Function(_$ErorrviewImpl) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? erorr = null,
-  }) {
-    return _then(_$ErorrviewImpl(
-      erorr: null == erorr
-          ? _value.erorr
-          : erorr // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
-  }
-}
-
-/// @nodoc
-
-class _$ErorrviewImpl implements Erorrview {
-  const _$ErorrviewImpl({required this.erorr});
-
-  @override
-  final String erorr;
-
-  @override
-  String toString() {
-    return 'DashboardState.erorrview(erorr: $erorr)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$ErorrviewImpl &&
-            (identical(other.erorr, erorr) || other.erorr == erorr));
-  }
-
-  @override
-  int get hashCode => Object.hash(runtimeType, erorr);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$ErorrviewImplCopyWith<_$ErorrviewImpl> get copyWith =>
-      __$$ErorrviewImplCopyWithImpl<_$ErorrviewImpl>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initial,
-    required TResult Function() loadingview,
-    required TResult Function(List<ItemsData> response) successview,
-    required TResult Function(String erorr) erorrview,
-    required TResult Function() loadingAdd,
-    required TResult Function() successAdd,
-    required TResult Function(String erorr) erorrAdd,
-    required TResult Function() loadingedit,
-    required TResult Function() successedit,
-    required TResult Function(String erorr) erorredit,
-    required TResult Function() loadingdelete,
-    required TResult Function() successdelete,
-    required TResult Function(String erorr) erorrdelete,
-    required TResult Function() loadingDashboard,
-    required TResult Function(ResponseDashboard responses) successDashboard,
-    required TResult Function(String erorr) erorrDashboard,
-    required TResult Function() loadingvimage,
-    required TResult Function() successimage,
-    required TResult Function(String erorr) erorrvimage,
-    required TResult Function() galer,
-    required TResult Function() galer2,
-    required TResult Function() galer3,
-    required TResult Function() remofgaler,
-    required TResult Function() removegaler2,
-    required TResult Function() removegaler3,
-    required TResult Function() pushEdit,
-    required TResult Function() approveitems,
-    required TResult Function() removeControll,
-  }) {
-    return erorrview(erorr);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initial,
-    TResult? Function()? loadingview,
-    TResult? Function(List<ItemsData> response)? successview,
-    TResult? Function(String erorr)? erorrview,
-    TResult? Function()? loadingAdd,
-    TResult? Function()? successAdd,
-    TResult? Function(String erorr)? erorrAdd,
-    TResult? Function()? loadingedit,
-    TResult? Function()? successedit,
-    TResult? Function(String erorr)? erorredit,
-    TResult? Function()? loadingdelete,
-    TResult? Function()? successdelete,
-    TResult? Function(String erorr)? erorrdelete,
-    TResult? Function()? loadingDashboard,
-    TResult? Function(ResponseDashboard responses)? successDashboard,
-    TResult? Function(String erorr)? erorrDashboard,
-    TResult? Function()? loadingvimage,
-    TResult? Function()? successimage,
-    TResult? Function(String erorr)? erorrvimage,
-    TResult? Function()? galer,
-    TResult? Function()? galer2,
-    TResult? Function()? galer3,
-    TResult? Function()? remofgaler,
-    TResult? Function()? removegaler2,
-    TResult? Function()? removegaler3,
-    TResult? Function()? pushEdit,
-    TResult? Function()? approveitems,
-    TResult? Function()? removeControll,
-  }) {
-    return erorrview?.call(erorr);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? loadingview,
-    TResult Function(List<ItemsData> response)? successview,
-    TResult Function(String erorr)? erorrview,
-    TResult Function()? loadingAdd,
-    TResult Function()? successAdd,
-    TResult Function(String erorr)? erorrAdd,
-    TResult Function()? loadingedit,
-    TResult Function()? successedit,
-    TResult Function(String erorr)? erorredit,
-    TResult Function()? loadingdelete,
-    TResult Function()? successdelete,
-    TResult Function(String erorr)? erorrdelete,
-    TResult Function()? loadingDashboard,
-    TResult Function(ResponseDashboard responses)? successDashboard,
-    TResult Function(String erorr)? erorrDashboard,
-    TResult Function()? loadingvimage,
-    TResult Function()? successimage,
-    TResult Function(String erorr)? erorrvimage,
-    TResult Function()? galer,
-    TResult Function()? galer2,
-    TResult Function()? galer3,
-    TResult Function()? remofgaler,
-    TResult Function()? removegaler2,
-    TResult Function()? removegaler3,
-    TResult Function()? pushEdit,
-    TResult Function()? approveitems,
-    TResult Function()? removeControll,
-    required TResult orElse(),
-  }) {
-    if (erorrview != null) {
-      return erorrview(erorr);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingview value) loadingview,
-    required TResult Function(Successview value) successview,
-    required TResult Function(Erorrview value) erorrview,
-    required TResult Function(LoadingAdd value) loadingAdd,
-    required TResult Function(SuccessAdd value) successAdd,
-    required TResult Function(ErorrAdd value) erorrAdd,
-    required TResult Function(Loadingedit value) loadingedit,
-    required TResult Function(Successedit value) successedit,
-    required TResult Function(Erorredit value) erorredit,
-    required TResult Function(Loadingdelete value) loadingdelete,
-    required TResult Function(Successdelete value) successdelete,
-    required TResult Function(Erorrdelete value) erorrdelete,
-    required TResult Function(LoadingDashboard value) loadingDashboard,
-    required TResult Function(SuccessDashboard value) successDashboard,
-    required TResult Function(ErorrDashboard value) erorrDashboard,
-    required TResult Function(Loadingimage value) loadingvimage,
-    required TResult Function(Successimage value) successimage,
-    required TResult Function(Erorrimage value) erorrvimage,
-    required TResult Function(Galer value) galer,
-    required TResult Function(Galer2 value) galer2,
-    required TResult Function(Galer3 value) galer3,
-    required TResult Function(remofgaler value) remofgaler,
-    required TResult Function(removegaler2 value) removegaler2,
-    required TResult Function(removegaler3 value) removegaler3,
-    required TResult Function(PushEdit value) pushEdit,
-    required TResult Function(ApproveiItems value) approveitems,
-    required TResult Function(RemoveControll value) removeControll,
-  }) {
-    return erorrview(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingview value)? loadingview,
-    TResult? Function(Successview value)? successview,
-    TResult? Function(Erorrview value)? erorrview,
-    TResult? Function(LoadingAdd value)? loadingAdd,
-    TResult? Function(SuccessAdd value)? successAdd,
-    TResult? Function(ErorrAdd value)? erorrAdd,
-    TResult? Function(Loadingedit value)? loadingedit,
-    TResult? Function(Successedit value)? successedit,
-    TResult? Function(Erorredit value)? erorredit,
-    TResult? Function(Loadingdelete value)? loadingdelete,
-    TResult? Function(Successdelete value)? successdelete,
-    TResult? Function(Erorrdelete value)? erorrdelete,
-    TResult? Function(LoadingDashboard value)? loadingDashboard,
-    TResult? Function(SuccessDashboard value)? successDashboard,
-    TResult? Function(ErorrDashboard value)? erorrDashboard,
-    TResult? Function(Loadingimage value)? loadingvimage,
-    TResult? Function(Successimage value)? successimage,
-    TResult? Function(Erorrimage value)? erorrvimage,
-    TResult? Function(Galer value)? galer,
-    TResult? Function(Galer2 value)? galer2,
-    TResult? Function(Galer3 value)? galer3,
-    TResult? Function(remofgaler value)? remofgaler,
-    TResult? Function(removegaler2 value)? removegaler2,
-    TResult? Function(removegaler3 value)? removegaler3,
-    TResult? Function(PushEdit value)? pushEdit,
-    TResult? Function(ApproveiItems value)? approveitems,
-    TResult? Function(RemoveControll value)? removeControll,
-  }) {
-    return erorrview?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(Loadingview value)? loadingview,
-    TResult Function(Successview value)? successview,
-    TResult Function(Erorrview value)? erorrview,
-    TResult Function(LoadingAdd value)? loadingAdd,
-    TResult Function(SuccessAdd value)? successAdd,
-    TResult Function(ErorrAdd value)? erorrAdd,
-    TResult Function(Loadingedit value)? loadingedit,
-    TResult Function(Successedit value)? successedit,
-    TResult Function(Erorredit value)? erorredit,
-    TResult Function(Loadingdelete value)? loadingdelete,
-    TResult Function(Successdelete value)? successdelete,
-    TResult Function(Erorrdelete value)? erorrdelete,
-    TResult Function(LoadingDashboard value)? loadingDashboard,
-    TResult Function(SuccessDashboard value)? successDashboard,
-    TResult Function(ErorrDashboard value)? erorrDashboard,
-    TResult Function(Loadingimage value)? loadingvimage,
-    TResult Function(Successimage value)? successimage,
-    TResult Function(Erorrimage value)? erorrvimage,
-    TResult Function(Galer value)? galer,
-    TResult Function(Galer2 value)? galer2,
-    TResult Function(Galer3 value)? galer3,
-    TResult Function(remofgaler value)? remofgaler,
-    TResult Function(removegaler2 value)? removegaler2,
-    TResult Function(removegaler3 value)? removegaler3,
-    TResult Function(PushEdit value)? pushEdit,
-    TResult Function(ApproveiItems value)? approveitems,
-    TResult Function(RemoveControll value)? removeControll,
-    required TResult orElse(),
-  }) {
-    if (erorrview != null) {
-      return erorrview(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class Erorrview implements DashboardState {
-  const factory Erorrview({required final String erorr}) = _$ErorrviewImpl;
-
-  String get erorr;
-  @JsonKey(ignore: true)
-  _$$ErorrviewImplCopyWith<_$ErorrviewImpl> get copyWith =>
-      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -1370,9 +455,6 @@ class _$LoadingAddImpl implements LoadingAdd {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingview,
-    required TResult Function(List<ItemsData> response) successview,
-    required TResult Function(String erorr) erorrview,
     required TResult Function() loadingAdd,
     required TResult Function() successAdd,
     required TResult Function(String erorr) erorrAdd,
@@ -1383,11 +465,8 @@ class _$LoadingAddImpl implements LoadingAdd {
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
     required TResult Function() loadingDashboard,
-    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(ResponseDashpoard responses) successDashboard,
     required TResult Function(String erorr) erorrDashboard,
-    required TResult Function() loadingvimage,
-    required TResult Function() successimage,
-    required TResult Function(String erorr) erorrvimage,
     required TResult Function() galer,
     required TResult Function() galer2,
     required TResult Function() galer3,
@@ -1405,9 +484,6 @@ class _$LoadingAddImpl implements LoadingAdd {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingview,
-    TResult? Function(List<ItemsData> response)? successview,
-    TResult? Function(String erorr)? erorrview,
     TResult? Function()? loadingAdd,
     TResult? Function()? successAdd,
     TResult? Function(String erorr)? erorrAdd,
@@ -1418,11 +494,8 @@ class _$LoadingAddImpl implements LoadingAdd {
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
     TResult? Function()? loadingDashboard,
-    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(ResponseDashpoard responses)? successDashboard,
     TResult? Function(String erorr)? erorrDashboard,
-    TResult? Function()? loadingvimage,
-    TResult? Function()? successimage,
-    TResult? Function(String erorr)? erorrvimage,
     TResult? Function()? galer,
     TResult? Function()? galer2,
     TResult? Function()? galer3,
@@ -1440,9 +513,6 @@ class _$LoadingAddImpl implements LoadingAdd {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingview,
-    TResult Function(List<ItemsData> response)? successview,
-    TResult Function(String erorr)? erorrview,
     TResult Function()? loadingAdd,
     TResult Function()? successAdd,
     TResult Function(String erorr)? erorrAdd,
@@ -1453,11 +523,8 @@ class _$LoadingAddImpl implements LoadingAdd {
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
     TResult Function()? loadingDashboard,
-    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(ResponseDashpoard responses)? successDashboard,
     TResult Function(String erorr)? erorrDashboard,
-    TResult Function()? loadingvimage,
-    TResult Function()? successimage,
-    TResult Function(String erorr)? erorrvimage,
     TResult Function()? galer,
     TResult Function()? galer2,
     TResult Function()? galer3,
@@ -1479,9 +546,6 @@ class _$LoadingAddImpl implements LoadingAdd {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingview value) loadingview,
-    required TResult Function(Successview value) successview,
-    required TResult Function(Erorrview value) erorrview,
     required TResult Function(LoadingAdd value) loadingAdd,
     required TResult Function(SuccessAdd value) successAdd,
     required TResult Function(ErorrAdd value) erorrAdd,
@@ -1494,9 +558,6 @@ class _$LoadingAddImpl implements LoadingAdd {
     required TResult Function(LoadingDashboard value) loadingDashboard,
     required TResult Function(SuccessDashboard value) successDashboard,
     required TResult Function(ErorrDashboard value) erorrDashboard,
-    required TResult Function(Loadingimage value) loadingvimage,
-    required TResult Function(Successimage value) successimage,
-    required TResult Function(Erorrimage value) erorrvimage,
     required TResult Function(Galer value) galer,
     required TResult Function(Galer2 value) galer2,
     required TResult Function(Galer3 value) galer3,
@@ -1514,9 +575,6 @@ class _$LoadingAddImpl implements LoadingAdd {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingview value)? loadingview,
-    TResult? Function(Successview value)? successview,
-    TResult? Function(Erorrview value)? erorrview,
     TResult? Function(LoadingAdd value)? loadingAdd,
     TResult? Function(SuccessAdd value)? successAdd,
     TResult? Function(ErorrAdd value)? erorrAdd,
@@ -1529,9 +587,6 @@ class _$LoadingAddImpl implements LoadingAdd {
     TResult? Function(LoadingDashboard value)? loadingDashboard,
     TResult? Function(SuccessDashboard value)? successDashboard,
     TResult? Function(ErorrDashboard value)? erorrDashboard,
-    TResult? Function(Loadingimage value)? loadingvimage,
-    TResult? Function(Successimage value)? successimage,
-    TResult? Function(Erorrimage value)? erorrvimage,
     TResult? Function(Galer value)? galer,
     TResult? Function(Galer2 value)? galer2,
     TResult? Function(Galer3 value)? galer3,
@@ -1549,9 +604,6 @@ class _$LoadingAddImpl implements LoadingAdd {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingview value)? loadingview,
-    TResult Function(Successview value)? successview,
-    TResult Function(Erorrview value)? erorrview,
     TResult Function(LoadingAdd value)? loadingAdd,
     TResult Function(SuccessAdd value)? successAdd,
     TResult Function(ErorrAdd value)? erorrAdd,
@@ -1564,9 +616,6 @@ class _$LoadingAddImpl implements LoadingAdd {
     TResult Function(LoadingDashboard value)? loadingDashboard,
     TResult Function(SuccessDashboard value)? successDashboard,
     TResult Function(ErorrDashboard value)? erorrDashboard,
-    TResult Function(Loadingimage value)? loadingvimage,
-    TResult Function(Successimage value)? successimage,
-    TResult Function(Erorrimage value)? erorrvimage,
     TResult Function(Galer value)? galer,
     TResult Function(Galer2 value)? galer2,
     TResult Function(Galer3 value)? galer3,
@@ -1628,9 +677,6 @@ class _$SuccessAddImpl implements SuccessAdd {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingview,
-    required TResult Function(List<ItemsData> response) successview,
-    required TResult Function(String erorr) erorrview,
     required TResult Function() loadingAdd,
     required TResult Function() successAdd,
     required TResult Function(String erorr) erorrAdd,
@@ -1641,11 +687,8 @@ class _$SuccessAddImpl implements SuccessAdd {
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
     required TResult Function() loadingDashboard,
-    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(ResponseDashpoard responses) successDashboard,
     required TResult Function(String erorr) erorrDashboard,
-    required TResult Function() loadingvimage,
-    required TResult Function() successimage,
-    required TResult Function(String erorr) erorrvimage,
     required TResult Function() galer,
     required TResult Function() galer2,
     required TResult Function() galer3,
@@ -1663,9 +706,6 @@ class _$SuccessAddImpl implements SuccessAdd {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingview,
-    TResult? Function(List<ItemsData> response)? successview,
-    TResult? Function(String erorr)? erorrview,
     TResult? Function()? loadingAdd,
     TResult? Function()? successAdd,
     TResult? Function(String erorr)? erorrAdd,
@@ -1676,11 +716,8 @@ class _$SuccessAddImpl implements SuccessAdd {
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
     TResult? Function()? loadingDashboard,
-    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(ResponseDashpoard responses)? successDashboard,
     TResult? Function(String erorr)? erorrDashboard,
-    TResult? Function()? loadingvimage,
-    TResult? Function()? successimage,
-    TResult? Function(String erorr)? erorrvimage,
     TResult? Function()? galer,
     TResult? Function()? galer2,
     TResult? Function()? galer3,
@@ -1698,9 +735,6 @@ class _$SuccessAddImpl implements SuccessAdd {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingview,
-    TResult Function(List<ItemsData> response)? successview,
-    TResult Function(String erorr)? erorrview,
     TResult Function()? loadingAdd,
     TResult Function()? successAdd,
     TResult Function(String erorr)? erorrAdd,
@@ -1711,11 +745,8 @@ class _$SuccessAddImpl implements SuccessAdd {
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
     TResult Function()? loadingDashboard,
-    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(ResponseDashpoard responses)? successDashboard,
     TResult Function(String erorr)? erorrDashboard,
-    TResult Function()? loadingvimage,
-    TResult Function()? successimage,
-    TResult Function(String erorr)? erorrvimage,
     TResult Function()? galer,
     TResult Function()? galer2,
     TResult Function()? galer3,
@@ -1737,9 +768,6 @@ class _$SuccessAddImpl implements SuccessAdd {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingview value) loadingview,
-    required TResult Function(Successview value) successview,
-    required TResult Function(Erorrview value) erorrview,
     required TResult Function(LoadingAdd value) loadingAdd,
     required TResult Function(SuccessAdd value) successAdd,
     required TResult Function(ErorrAdd value) erorrAdd,
@@ -1752,9 +780,6 @@ class _$SuccessAddImpl implements SuccessAdd {
     required TResult Function(LoadingDashboard value) loadingDashboard,
     required TResult Function(SuccessDashboard value) successDashboard,
     required TResult Function(ErorrDashboard value) erorrDashboard,
-    required TResult Function(Loadingimage value) loadingvimage,
-    required TResult Function(Successimage value) successimage,
-    required TResult Function(Erorrimage value) erorrvimage,
     required TResult Function(Galer value) galer,
     required TResult Function(Galer2 value) galer2,
     required TResult Function(Galer3 value) galer3,
@@ -1772,9 +797,6 @@ class _$SuccessAddImpl implements SuccessAdd {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingview value)? loadingview,
-    TResult? Function(Successview value)? successview,
-    TResult? Function(Erorrview value)? erorrview,
     TResult? Function(LoadingAdd value)? loadingAdd,
     TResult? Function(SuccessAdd value)? successAdd,
     TResult? Function(ErorrAdd value)? erorrAdd,
@@ -1787,9 +809,6 @@ class _$SuccessAddImpl implements SuccessAdd {
     TResult? Function(LoadingDashboard value)? loadingDashboard,
     TResult? Function(SuccessDashboard value)? successDashboard,
     TResult? Function(ErorrDashboard value)? erorrDashboard,
-    TResult? Function(Loadingimage value)? loadingvimage,
-    TResult? Function(Successimage value)? successimage,
-    TResult? Function(Erorrimage value)? erorrvimage,
     TResult? Function(Galer value)? galer,
     TResult? Function(Galer2 value)? galer2,
     TResult? Function(Galer3 value)? galer3,
@@ -1807,9 +826,6 @@ class _$SuccessAddImpl implements SuccessAdd {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingview value)? loadingview,
-    TResult Function(Successview value)? successview,
-    TResult Function(Erorrview value)? erorrview,
     TResult Function(LoadingAdd value)? loadingAdd,
     TResult Function(SuccessAdd value)? successAdd,
     TResult Function(ErorrAdd value)? erorrAdd,
@@ -1822,9 +838,6 @@ class _$SuccessAddImpl implements SuccessAdd {
     TResult Function(LoadingDashboard value)? loadingDashboard,
     TResult Function(SuccessDashboard value)? successDashboard,
     TResult Function(ErorrDashboard value)? erorrDashboard,
-    TResult Function(Loadingimage value)? loadingvimage,
-    TResult Function(Successimage value)? successimage,
-    TResult Function(Erorrimage value)? erorrvimage,
     TResult Function(Galer value)? galer,
     TResult Function(Galer2 value)? galer2,
     TResult Function(Galer3 value)? galer3,
@@ -1912,9 +925,6 @@ class _$ErorrAddImpl implements ErorrAdd {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingview,
-    required TResult Function(List<ItemsData> response) successview,
-    required TResult Function(String erorr) erorrview,
     required TResult Function() loadingAdd,
     required TResult Function() successAdd,
     required TResult Function(String erorr) erorrAdd,
@@ -1925,11 +935,8 @@ class _$ErorrAddImpl implements ErorrAdd {
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
     required TResult Function() loadingDashboard,
-    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(ResponseDashpoard responses) successDashboard,
     required TResult Function(String erorr) erorrDashboard,
-    required TResult Function() loadingvimage,
-    required TResult Function() successimage,
-    required TResult Function(String erorr) erorrvimage,
     required TResult Function() galer,
     required TResult Function() galer2,
     required TResult Function() galer3,
@@ -1947,9 +954,6 @@ class _$ErorrAddImpl implements ErorrAdd {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingview,
-    TResult? Function(List<ItemsData> response)? successview,
-    TResult? Function(String erorr)? erorrview,
     TResult? Function()? loadingAdd,
     TResult? Function()? successAdd,
     TResult? Function(String erorr)? erorrAdd,
@@ -1960,11 +964,8 @@ class _$ErorrAddImpl implements ErorrAdd {
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
     TResult? Function()? loadingDashboard,
-    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(ResponseDashpoard responses)? successDashboard,
     TResult? Function(String erorr)? erorrDashboard,
-    TResult? Function()? loadingvimage,
-    TResult? Function()? successimage,
-    TResult? Function(String erorr)? erorrvimage,
     TResult? Function()? galer,
     TResult? Function()? galer2,
     TResult? Function()? galer3,
@@ -1982,9 +983,6 @@ class _$ErorrAddImpl implements ErorrAdd {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingview,
-    TResult Function(List<ItemsData> response)? successview,
-    TResult Function(String erorr)? erorrview,
     TResult Function()? loadingAdd,
     TResult Function()? successAdd,
     TResult Function(String erorr)? erorrAdd,
@@ -1995,11 +993,8 @@ class _$ErorrAddImpl implements ErorrAdd {
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
     TResult Function()? loadingDashboard,
-    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(ResponseDashpoard responses)? successDashboard,
     TResult Function(String erorr)? erorrDashboard,
-    TResult Function()? loadingvimage,
-    TResult Function()? successimage,
-    TResult Function(String erorr)? erorrvimage,
     TResult Function()? galer,
     TResult Function()? galer2,
     TResult Function()? galer3,
@@ -2021,9 +1016,6 @@ class _$ErorrAddImpl implements ErorrAdd {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingview value) loadingview,
-    required TResult Function(Successview value) successview,
-    required TResult Function(Erorrview value) erorrview,
     required TResult Function(LoadingAdd value) loadingAdd,
     required TResult Function(SuccessAdd value) successAdd,
     required TResult Function(ErorrAdd value) erorrAdd,
@@ -2036,9 +1028,6 @@ class _$ErorrAddImpl implements ErorrAdd {
     required TResult Function(LoadingDashboard value) loadingDashboard,
     required TResult Function(SuccessDashboard value) successDashboard,
     required TResult Function(ErorrDashboard value) erorrDashboard,
-    required TResult Function(Loadingimage value) loadingvimage,
-    required TResult Function(Successimage value) successimage,
-    required TResult Function(Erorrimage value) erorrvimage,
     required TResult Function(Galer value) galer,
     required TResult Function(Galer2 value) galer2,
     required TResult Function(Galer3 value) galer3,
@@ -2056,9 +1045,6 @@ class _$ErorrAddImpl implements ErorrAdd {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingview value)? loadingview,
-    TResult? Function(Successview value)? successview,
-    TResult? Function(Erorrview value)? erorrview,
     TResult? Function(LoadingAdd value)? loadingAdd,
     TResult? Function(SuccessAdd value)? successAdd,
     TResult? Function(ErorrAdd value)? erorrAdd,
@@ -2071,9 +1057,6 @@ class _$ErorrAddImpl implements ErorrAdd {
     TResult? Function(LoadingDashboard value)? loadingDashboard,
     TResult? Function(SuccessDashboard value)? successDashboard,
     TResult? Function(ErorrDashboard value)? erorrDashboard,
-    TResult? Function(Loadingimage value)? loadingvimage,
-    TResult? Function(Successimage value)? successimage,
-    TResult? Function(Erorrimage value)? erorrvimage,
     TResult? Function(Galer value)? galer,
     TResult? Function(Galer2 value)? galer2,
     TResult? Function(Galer3 value)? galer3,
@@ -2091,9 +1074,6 @@ class _$ErorrAddImpl implements ErorrAdd {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingview value)? loadingview,
-    TResult Function(Successview value)? successview,
-    TResult Function(Erorrview value)? erorrview,
     TResult Function(LoadingAdd value)? loadingAdd,
     TResult Function(SuccessAdd value)? successAdd,
     TResult Function(ErorrAdd value)? erorrAdd,
@@ -2106,9 +1086,6 @@ class _$ErorrAddImpl implements ErorrAdd {
     TResult Function(LoadingDashboard value)? loadingDashboard,
     TResult Function(SuccessDashboard value)? successDashboard,
     TResult Function(ErorrDashboard value)? erorrDashboard,
-    TResult Function(Loadingimage value)? loadingvimage,
-    TResult Function(Successimage value)? successimage,
-    TResult Function(Erorrimage value)? erorrvimage,
     TResult Function(Galer value)? galer,
     TResult Function(Galer2 value)? galer2,
     TResult Function(Galer3 value)? galer3,
@@ -2175,9 +1152,6 @@ class _$LoadingeditImpl implements Loadingedit {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingview,
-    required TResult Function(List<ItemsData> response) successview,
-    required TResult Function(String erorr) erorrview,
     required TResult Function() loadingAdd,
     required TResult Function() successAdd,
     required TResult Function(String erorr) erorrAdd,
@@ -2188,11 +1162,8 @@ class _$LoadingeditImpl implements Loadingedit {
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
     required TResult Function() loadingDashboard,
-    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(ResponseDashpoard responses) successDashboard,
     required TResult Function(String erorr) erorrDashboard,
-    required TResult Function() loadingvimage,
-    required TResult Function() successimage,
-    required TResult Function(String erorr) erorrvimage,
     required TResult Function() galer,
     required TResult Function() galer2,
     required TResult Function() galer3,
@@ -2210,9 +1181,6 @@ class _$LoadingeditImpl implements Loadingedit {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingview,
-    TResult? Function(List<ItemsData> response)? successview,
-    TResult? Function(String erorr)? erorrview,
     TResult? Function()? loadingAdd,
     TResult? Function()? successAdd,
     TResult? Function(String erorr)? erorrAdd,
@@ -2223,11 +1191,8 @@ class _$LoadingeditImpl implements Loadingedit {
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
     TResult? Function()? loadingDashboard,
-    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(ResponseDashpoard responses)? successDashboard,
     TResult? Function(String erorr)? erorrDashboard,
-    TResult? Function()? loadingvimage,
-    TResult? Function()? successimage,
-    TResult? Function(String erorr)? erorrvimage,
     TResult? Function()? galer,
     TResult? Function()? galer2,
     TResult? Function()? galer3,
@@ -2245,9 +1210,6 @@ class _$LoadingeditImpl implements Loadingedit {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingview,
-    TResult Function(List<ItemsData> response)? successview,
-    TResult Function(String erorr)? erorrview,
     TResult Function()? loadingAdd,
     TResult Function()? successAdd,
     TResult Function(String erorr)? erorrAdd,
@@ -2258,11 +1220,8 @@ class _$LoadingeditImpl implements Loadingedit {
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
     TResult Function()? loadingDashboard,
-    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(ResponseDashpoard responses)? successDashboard,
     TResult Function(String erorr)? erorrDashboard,
-    TResult Function()? loadingvimage,
-    TResult Function()? successimage,
-    TResult Function(String erorr)? erorrvimage,
     TResult Function()? galer,
     TResult Function()? galer2,
     TResult Function()? galer3,
@@ -2284,9 +1243,6 @@ class _$LoadingeditImpl implements Loadingedit {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingview value) loadingview,
-    required TResult Function(Successview value) successview,
-    required TResult Function(Erorrview value) erorrview,
     required TResult Function(LoadingAdd value) loadingAdd,
     required TResult Function(SuccessAdd value) successAdd,
     required TResult Function(ErorrAdd value) erorrAdd,
@@ -2299,9 +1255,6 @@ class _$LoadingeditImpl implements Loadingedit {
     required TResult Function(LoadingDashboard value) loadingDashboard,
     required TResult Function(SuccessDashboard value) successDashboard,
     required TResult Function(ErorrDashboard value) erorrDashboard,
-    required TResult Function(Loadingimage value) loadingvimage,
-    required TResult Function(Successimage value) successimage,
-    required TResult Function(Erorrimage value) erorrvimage,
     required TResult Function(Galer value) galer,
     required TResult Function(Galer2 value) galer2,
     required TResult Function(Galer3 value) galer3,
@@ -2319,9 +1272,6 @@ class _$LoadingeditImpl implements Loadingedit {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingview value)? loadingview,
-    TResult? Function(Successview value)? successview,
-    TResult? Function(Erorrview value)? erorrview,
     TResult? Function(LoadingAdd value)? loadingAdd,
     TResult? Function(SuccessAdd value)? successAdd,
     TResult? Function(ErorrAdd value)? erorrAdd,
@@ -2334,9 +1284,6 @@ class _$LoadingeditImpl implements Loadingedit {
     TResult? Function(LoadingDashboard value)? loadingDashboard,
     TResult? Function(SuccessDashboard value)? successDashboard,
     TResult? Function(ErorrDashboard value)? erorrDashboard,
-    TResult? Function(Loadingimage value)? loadingvimage,
-    TResult? Function(Successimage value)? successimage,
-    TResult? Function(Erorrimage value)? erorrvimage,
     TResult? Function(Galer value)? galer,
     TResult? Function(Galer2 value)? galer2,
     TResult? Function(Galer3 value)? galer3,
@@ -2354,9 +1301,6 @@ class _$LoadingeditImpl implements Loadingedit {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingview value)? loadingview,
-    TResult Function(Successview value)? successview,
-    TResult Function(Erorrview value)? erorrview,
     TResult Function(LoadingAdd value)? loadingAdd,
     TResult Function(SuccessAdd value)? successAdd,
     TResult Function(ErorrAdd value)? erorrAdd,
@@ -2369,9 +1313,6 @@ class _$LoadingeditImpl implements Loadingedit {
     TResult Function(LoadingDashboard value)? loadingDashboard,
     TResult Function(SuccessDashboard value)? successDashboard,
     TResult Function(ErorrDashboard value)? erorrDashboard,
-    TResult Function(Loadingimage value)? loadingvimage,
-    TResult Function(Successimage value)? successimage,
-    TResult Function(Erorrimage value)? erorrvimage,
     TResult Function(Galer value)? galer,
     TResult Function(Galer2 value)? galer2,
     TResult Function(Galer3 value)? galer3,
@@ -2433,9 +1374,6 @@ class _$SuccesseditImpl implements Successedit {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingview,
-    required TResult Function(List<ItemsData> response) successview,
-    required TResult Function(String erorr) erorrview,
     required TResult Function() loadingAdd,
     required TResult Function() successAdd,
     required TResult Function(String erorr) erorrAdd,
@@ -2446,11 +1384,8 @@ class _$SuccesseditImpl implements Successedit {
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
     required TResult Function() loadingDashboard,
-    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(ResponseDashpoard responses) successDashboard,
     required TResult Function(String erorr) erorrDashboard,
-    required TResult Function() loadingvimage,
-    required TResult Function() successimage,
-    required TResult Function(String erorr) erorrvimage,
     required TResult Function() galer,
     required TResult Function() galer2,
     required TResult Function() galer3,
@@ -2468,9 +1403,6 @@ class _$SuccesseditImpl implements Successedit {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingview,
-    TResult? Function(List<ItemsData> response)? successview,
-    TResult? Function(String erorr)? erorrview,
     TResult? Function()? loadingAdd,
     TResult? Function()? successAdd,
     TResult? Function(String erorr)? erorrAdd,
@@ -2481,11 +1413,8 @@ class _$SuccesseditImpl implements Successedit {
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
     TResult? Function()? loadingDashboard,
-    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(ResponseDashpoard responses)? successDashboard,
     TResult? Function(String erorr)? erorrDashboard,
-    TResult? Function()? loadingvimage,
-    TResult? Function()? successimage,
-    TResult? Function(String erorr)? erorrvimage,
     TResult? Function()? galer,
     TResult? Function()? galer2,
     TResult? Function()? galer3,
@@ -2503,9 +1432,6 @@ class _$SuccesseditImpl implements Successedit {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingview,
-    TResult Function(List<ItemsData> response)? successview,
-    TResult Function(String erorr)? erorrview,
     TResult Function()? loadingAdd,
     TResult Function()? successAdd,
     TResult Function(String erorr)? erorrAdd,
@@ -2516,11 +1442,8 @@ class _$SuccesseditImpl implements Successedit {
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
     TResult Function()? loadingDashboard,
-    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(ResponseDashpoard responses)? successDashboard,
     TResult Function(String erorr)? erorrDashboard,
-    TResult Function()? loadingvimage,
-    TResult Function()? successimage,
-    TResult Function(String erorr)? erorrvimage,
     TResult Function()? galer,
     TResult Function()? galer2,
     TResult Function()? galer3,
@@ -2542,9 +1465,6 @@ class _$SuccesseditImpl implements Successedit {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingview value) loadingview,
-    required TResult Function(Successview value) successview,
-    required TResult Function(Erorrview value) erorrview,
     required TResult Function(LoadingAdd value) loadingAdd,
     required TResult Function(SuccessAdd value) successAdd,
     required TResult Function(ErorrAdd value) erorrAdd,
@@ -2557,9 +1477,6 @@ class _$SuccesseditImpl implements Successedit {
     required TResult Function(LoadingDashboard value) loadingDashboard,
     required TResult Function(SuccessDashboard value) successDashboard,
     required TResult Function(ErorrDashboard value) erorrDashboard,
-    required TResult Function(Loadingimage value) loadingvimage,
-    required TResult Function(Successimage value) successimage,
-    required TResult Function(Erorrimage value) erorrvimage,
     required TResult Function(Galer value) galer,
     required TResult Function(Galer2 value) galer2,
     required TResult Function(Galer3 value) galer3,
@@ -2577,9 +1494,6 @@ class _$SuccesseditImpl implements Successedit {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingview value)? loadingview,
-    TResult? Function(Successview value)? successview,
-    TResult? Function(Erorrview value)? erorrview,
     TResult? Function(LoadingAdd value)? loadingAdd,
     TResult? Function(SuccessAdd value)? successAdd,
     TResult? Function(ErorrAdd value)? erorrAdd,
@@ -2592,9 +1506,6 @@ class _$SuccesseditImpl implements Successedit {
     TResult? Function(LoadingDashboard value)? loadingDashboard,
     TResult? Function(SuccessDashboard value)? successDashboard,
     TResult? Function(ErorrDashboard value)? erorrDashboard,
-    TResult? Function(Loadingimage value)? loadingvimage,
-    TResult? Function(Successimage value)? successimage,
-    TResult? Function(Erorrimage value)? erorrvimage,
     TResult? Function(Galer value)? galer,
     TResult? Function(Galer2 value)? galer2,
     TResult? Function(Galer3 value)? galer3,
@@ -2612,9 +1523,6 @@ class _$SuccesseditImpl implements Successedit {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingview value)? loadingview,
-    TResult Function(Successview value)? successview,
-    TResult Function(Erorrview value)? erorrview,
     TResult Function(LoadingAdd value)? loadingAdd,
     TResult Function(SuccessAdd value)? successAdd,
     TResult Function(ErorrAdd value)? erorrAdd,
@@ -2627,9 +1535,6 @@ class _$SuccesseditImpl implements Successedit {
     TResult Function(LoadingDashboard value)? loadingDashboard,
     TResult Function(SuccessDashboard value)? successDashboard,
     TResult Function(ErorrDashboard value)? erorrDashboard,
-    TResult Function(Loadingimage value)? loadingvimage,
-    TResult Function(Successimage value)? successimage,
-    TResult Function(Erorrimage value)? erorrvimage,
     TResult Function(Galer value)? galer,
     TResult Function(Galer2 value)? galer2,
     TResult Function(Galer3 value)? galer3,
@@ -2717,9 +1622,6 @@ class _$ErorreditImpl implements Erorredit {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingview,
-    required TResult Function(List<ItemsData> response) successview,
-    required TResult Function(String erorr) erorrview,
     required TResult Function() loadingAdd,
     required TResult Function() successAdd,
     required TResult Function(String erorr) erorrAdd,
@@ -2730,11 +1632,8 @@ class _$ErorreditImpl implements Erorredit {
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
     required TResult Function() loadingDashboard,
-    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(ResponseDashpoard responses) successDashboard,
     required TResult Function(String erorr) erorrDashboard,
-    required TResult Function() loadingvimage,
-    required TResult Function() successimage,
-    required TResult Function(String erorr) erorrvimage,
     required TResult Function() galer,
     required TResult Function() galer2,
     required TResult Function() galer3,
@@ -2752,9 +1651,6 @@ class _$ErorreditImpl implements Erorredit {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingview,
-    TResult? Function(List<ItemsData> response)? successview,
-    TResult? Function(String erorr)? erorrview,
     TResult? Function()? loadingAdd,
     TResult? Function()? successAdd,
     TResult? Function(String erorr)? erorrAdd,
@@ -2765,11 +1661,8 @@ class _$ErorreditImpl implements Erorredit {
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
     TResult? Function()? loadingDashboard,
-    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(ResponseDashpoard responses)? successDashboard,
     TResult? Function(String erorr)? erorrDashboard,
-    TResult? Function()? loadingvimage,
-    TResult? Function()? successimage,
-    TResult? Function(String erorr)? erorrvimage,
     TResult? Function()? galer,
     TResult? Function()? galer2,
     TResult? Function()? galer3,
@@ -2787,9 +1680,6 @@ class _$ErorreditImpl implements Erorredit {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingview,
-    TResult Function(List<ItemsData> response)? successview,
-    TResult Function(String erorr)? erorrview,
     TResult Function()? loadingAdd,
     TResult Function()? successAdd,
     TResult Function(String erorr)? erorrAdd,
@@ -2800,11 +1690,8 @@ class _$ErorreditImpl implements Erorredit {
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
     TResult Function()? loadingDashboard,
-    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(ResponseDashpoard responses)? successDashboard,
     TResult Function(String erorr)? erorrDashboard,
-    TResult Function()? loadingvimage,
-    TResult Function()? successimage,
-    TResult Function(String erorr)? erorrvimage,
     TResult Function()? galer,
     TResult Function()? galer2,
     TResult Function()? galer3,
@@ -2826,9 +1713,6 @@ class _$ErorreditImpl implements Erorredit {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingview value) loadingview,
-    required TResult Function(Successview value) successview,
-    required TResult Function(Erorrview value) erorrview,
     required TResult Function(LoadingAdd value) loadingAdd,
     required TResult Function(SuccessAdd value) successAdd,
     required TResult Function(ErorrAdd value) erorrAdd,
@@ -2841,9 +1725,6 @@ class _$ErorreditImpl implements Erorredit {
     required TResult Function(LoadingDashboard value) loadingDashboard,
     required TResult Function(SuccessDashboard value) successDashboard,
     required TResult Function(ErorrDashboard value) erorrDashboard,
-    required TResult Function(Loadingimage value) loadingvimage,
-    required TResult Function(Successimage value) successimage,
-    required TResult Function(Erorrimage value) erorrvimage,
     required TResult Function(Galer value) galer,
     required TResult Function(Galer2 value) galer2,
     required TResult Function(Galer3 value) galer3,
@@ -2861,9 +1742,6 @@ class _$ErorreditImpl implements Erorredit {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingview value)? loadingview,
-    TResult? Function(Successview value)? successview,
-    TResult? Function(Erorrview value)? erorrview,
     TResult? Function(LoadingAdd value)? loadingAdd,
     TResult? Function(SuccessAdd value)? successAdd,
     TResult? Function(ErorrAdd value)? erorrAdd,
@@ -2876,9 +1754,6 @@ class _$ErorreditImpl implements Erorredit {
     TResult? Function(LoadingDashboard value)? loadingDashboard,
     TResult? Function(SuccessDashboard value)? successDashboard,
     TResult? Function(ErorrDashboard value)? erorrDashboard,
-    TResult? Function(Loadingimage value)? loadingvimage,
-    TResult? Function(Successimage value)? successimage,
-    TResult? Function(Erorrimage value)? erorrvimage,
     TResult? Function(Galer value)? galer,
     TResult? Function(Galer2 value)? galer2,
     TResult? Function(Galer3 value)? galer3,
@@ -2896,9 +1771,6 @@ class _$ErorreditImpl implements Erorredit {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingview value)? loadingview,
-    TResult Function(Successview value)? successview,
-    TResult Function(Erorrview value)? erorrview,
     TResult Function(LoadingAdd value)? loadingAdd,
     TResult Function(SuccessAdd value)? successAdd,
     TResult Function(ErorrAdd value)? erorrAdd,
@@ -2911,9 +1783,6 @@ class _$ErorreditImpl implements Erorredit {
     TResult Function(LoadingDashboard value)? loadingDashboard,
     TResult Function(SuccessDashboard value)? successDashboard,
     TResult Function(ErorrDashboard value)? erorrDashboard,
-    TResult Function(Loadingimage value)? loadingvimage,
-    TResult Function(Successimage value)? successimage,
-    TResult Function(Erorrimage value)? erorrvimage,
     TResult Function(Galer value)? galer,
     TResult Function(Galer2 value)? galer2,
     TResult Function(Galer3 value)? galer3,
@@ -2980,9 +1849,6 @@ class _$LoadingdeleteImpl implements Loadingdelete {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingview,
-    required TResult Function(List<ItemsData> response) successview,
-    required TResult Function(String erorr) erorrview,
     required TResult Function() loadingAdd,
     required TResult Function() successAdd,
     required TResult Function(String erorr) erorrAdd,
@@ -2993,11 +1859,8 @@ class _$LoadingdeleteImpl implements Loadingdelete {
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
     required TResult Function() loadingDashboard,
-    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(ResponseDashpoard responses) successDashboard,
     required TResult Function(String erorr) erorrDashboard,
-    required TResult Function() loadingvimage,
-    required TResult Function() successimage,
-    required TResult Function(String erorr) erorrvimage,
     required TResult Function() galer,
     required TResult Function() galer2,
     required TResult Function() galer3,
@@ -3015,9 +1878,6 @@ class _$LoadingdeleteImpl implements Loadingdelete {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingview,
-    TResult? Function(List<ItemsData> response)? successview,
-    TResult? Function(String erorr)? erorrview,
     TResult? Function()? loadingAdd,
     TResult? Function()? successAdd,
     TResult? Function(String erorr)? erorrAdd,
@@ -3028,11 +1888,8 @@ class _$LoadingdeleteImpl implements Loadingdelete {
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
     TResult? Function()? loadingDashboard,
-    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(ResponseDashpoard responses)? successDashboard,
     TResult? Function(String erorr)? erorrDashboard,
-    TResult? Function()? loadingvimage,
-    TResult? Function()? successimage,
-    TResult? Function(String erorr)? erorrvimage,
     TResult? Function()? galer,
     TResult? Function()? galer2,
     TResult? Function()? galer3,
@@ -3050,9 +1907,6 @@ class _$LoadingdeleteImpl implements Loadingdelete {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingview,
-    TResult Function(List<ItemsData> response)? successview,
-    TResult Function(String erorr)? erorrview,
     TResult Function()? loadingAdd,
     TResult Function()? successAdd,
     TResult Function(String erorr)? erorrAdd,
@@ -3063,11 +1917,8 @@ class _$LoadingdeleteImpl implements Loadingdelete {
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
     TResult Function()? loadingDashboard,
-    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(ResponseDashpoard responses)? successDashboard,
     TResult Function(String erorr)? erorrDashboard,
-    TResult Function()? loadingvimage,
-    TResult Function()? successimage,
-    TResult Function(String erorr)? erorrvimage,
     TResult Function()? galer,
     TResult Function()? galer2,
     TResult Function()? galer3,
@@ -3089,9 +1940,6 @@ class _$LoadingdeleteImpl implements Loadingdelete {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingview value) loadingview,
-    required TResult Function(Successview value) successview,
-    required TResult Function(Erorrview value) erorrview,
     required TResult Function(LoadingAdd value) loadingAdd,
     required TResult Function(SuccessAdd value) successAdd,
     required TResult Function(ErorrAdd value) erorrAdd,
@@ -3104,9 +1952,6 @@ class _$LoadingdeleteImpl implements Loadingdelete {
     required TResult Function(LoadingDashboard value) loadingDashboard,
     required TResult Function(SuccessDashboard value) successDashboard,
     required TResult Function(ErorrDashboard value) erorrDashboard,
-    required TResult Function(Loadingimage value) loadingvimage,
-    required TResult Function(Successimage value) successimage,
-    required TResult Function(Erorrimage value) erorrvimage,
     required TResult Function(Galer value) galer,
     required TResult Function(Galer2 value) galer2,
     required TResult Function(Galer3 value) galer3,
@@ -3124,9 +1969,6 @@ class _$LoadingdeleteImpl implements Loadingdelete {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingview value)? loadingview,
-    TResult? Function(Successview value)? successview,
-    TResult? Function(Erorrview value)? erorrview,
     TResult? Function(LoadingAdd value)? loadingAdd,
     TResult? Function(SuccessAdd value)? successAdd,
     TResult? Function(ErorrAdd value)? erorrAdd,
@@ -3139,9 +1981,6 @@ class _$LoadingdeleteImpl implements Loadingdelete {
     TResult? Function(LoadingDashboard value)? loadingDashboard,
     TResult? Function(SuccessDashboard value)? successDashboard,
     TResult? Function(ErorrDashboard value)? erorrDashboard,
-    TResult? Function(Loadingimage value)? loadingvimage,
-    TResult? Function(Successimage value)? successimage,
-    TResult? Function(Erorrimage value)? erorrvimage,
     TResult? Function(Galer value)? galer,
     TResult? Function(Galer2 value)? galer2,
     TResult? Function(Galer3 value)? galer3,
@@ -3159,9 +1998,6 @@ class _$LoadingdeleteImpl implements Loadingdelete {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingview value)? loadingview,
-    TResult Function(Successview value)? successview,
-    TResult Function(Erorrview value)? erorrview,
     TResult Function(LoadingAdd value)? loadingAdd,
     TResult Function(SuccessAdd value)? successAdd,
     TResult Function(ErorrAdd value)? erorrAdd,
@@ -3174,9 +2010,6 @@ class _$LoadingdeleteImpl implements Loadingdelete {
     TResult Function(LoadingDashboard value)? loadingDashboard,
     TResult Function(SuccessDashboard value)? successDashboard,
     TResult Function(ErorrDashboard value)? erorrDashboard,
-    TResult Function(Loadingimage value)? loadingvimage,
-    TResult Function(Successimage value)? successimage,
-    TResult Function(Erorrimage value)? erorrvimage,
     TResult Function(Galer value)? galer,
     TResult Function(Galer2 value)? galer2,
     TResult Function(Galer3 value)? galer3,
@@ -3238,9 +2071,6 @@ class _$SuccessdeleteImpl implements Successdelete {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingview,
-    required TResult Function(List<ItemsData> response) successview,
-    required TResult Function(String erorr) erorrview,
     required TResult Function() loadingAdd,
     required TResult Function() successAdd,
     required TResult Function(String erorr) erorrAdd,
@@ -3251,11 +2081,8 @@ class _$SuccessdeleteImpl implements Successdelete {
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
     required TResult Function() loadingDashboard,
-    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(ResponseDashpoard responses) successDashboard,
     required TResult Function(String erorr) erorrDashboard,
-    required TResult Function() loadingvimage,
-    required TResult Function() successimage,
-    required TResult Function(String erorr) erorrvimage,
     required TResult Function() galer,
     required TResult Function() galer2,
     required TResult Function() galer3,
@@ -3273,9 +2100,6 @@ class _$SuccessdeleteImpl implements Successdelete {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingview,
-    TResult? Function(List<ItemsData> response)? successview,
-    TResult? Function(String erorr)? erorrview,
     TResult? Function()? loadingAdd,
     TResult? Function()? successAdd,
     TResult? Function(String erorr)? erorrAdd,
@@ -3286,11 +2110,8 @@ class _$SuccessdeleteImpl implements Successdelete {
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
     TResult? Function()? loadingDashboard,
-    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(ResponseDashpoard responses)? successDashboard,
     TResult? Function(String erorr)? erorrDashboard,
-    TResult? Function()? loadingvimage,
-    TResult? Function()? successimage,
-    TResult? Function(String erorr)? erorrvimage,
     TResult? Function()? galer,
     TResult? Function()? galer2,
     TResult? Function()? galer3,
@@ -3308,9 +2129,6 @@ class _$SuccessdeleteImpl implements Successdelete {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingview,
-    TResult Function(List<ItemsData> response)? successview,
-    TResult Function(String erorr)? erorrview,
     TResult Function()? loadingAdd,
     TResult Function()? successAdd,
     TResult Function(String erorr)? erorrAdd,
@@ -3321,11 +2139,8 @@ class _$SuccessdeleteImpl implements Successdelete {
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
     TResult Function()? loadingDashboard,
-    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(ResponseDashpoard responses)? successDashboard,
     TResult Function(String erorr)? erorrDashboard,
-    TResult Function()? loadingvimage,
-    TResult Function()? successimage,
-    TResult Function(String erorr)? erorrvimage,
     TResult Function()? galer,
     TResult Function()? galer2,
     TResult Function()? galer3,
@@ -3347,9 +2162,6 @@ class _$SuccessdeleteImpl implements Successdelete {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingview value) loadingview,
-    required TResult Function(Successview value) successview,
-    required TResult Function(Erorrview value) erorrview,
     required TResult Function(LoadingAdd value) loadingAdd,
     required TResult Function(SuccessAdd value) successAdd,
     required TResult Function(ErorrAdd value) erorrAdd,
@@ -3362,9 +2174,6 @@ class _$SuccessdeleteImpl implements Successdelete {
     required TResult Function(LoadingDashboard value) loadingDashboard,
     required TResult Function(SuccessDashboard value) successDashboard,
     required TResult Function(ErorrDashboard value) erorrDashboard,
-    required TResult Function(Loadingimage value) loadingvimage,
-    required TResult Function(Successimage value) successimage,
-    required TResult Function(Erorrimage value) erorrvimage,
     required TResult Function(Galer value) galer,
     required TResult Function(Galer2 value) galer2,
     required TResult Function(Galer3 value) galer3,
@@ -3382,9 +2191,6 @@ class _$SuccessdeleteImpl implements Successdelete {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingview value)? loadingview,
-    TResult? Function(Successview value)? successview,
-    TResult? Function(Erorrview value)? erorrview,
     TResult? Function(LoadingAdd value)? loadingAdd,
     TResult? Function(SuccessAdd value)? successAdd,
     TResult? Function(ErorrAdd value)? erorrAdd,
@@ -3397,9 +2203,6 @@ class _$SuccessdeleteImpl implements Successdelete {
     TResult? Function(LoadingDashboard value)? loadingDashboard,
     TResult? Function(SuccessDashboard value)? successDashboard,
     TResult? Function(ErorrDashboard value)? erorrDashboard,
-    TResult? Function(Loadingimage value)? loadingvimage,
-    TResult? Function(Successimage value)? successimage,
-    TResult? Function(Erorrimage value)? erorrvimage,
     TResult? Function(Galer value)? galer,
     TResult? Function(Galer2 value)? galer2,
     TResult? Function(Galer3 value)? galer3,
@@ -3417,9 +2220,6 @@ class _$SuccessdeleteImpl implements Successdelete {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingview value)? loadingview,
-    TResult Function(Successview value)? successview,
-    TResult Function(Erorrview value)? erorrview,
     TResult Function(LoadingAdd value)? loadingAdd,
     TResult Function(SuccessAdd value)? successAdd,
     TResult Function(ErorrAdd value)? erorrAdd,
@@ -3432,9 +2232,6 @@ class _$SuccessdeleteImpl implements Successdelete {
     TResult Function(LoadingDashboard value)? loadingDashboard,
     TResult Function(SuccessDashboard value)? successDashboard,
     TResult Function(ErorrDashboard value)? erorrDashboard,
-    TResult Function(Loadingimage value)? loadingvimage,
-    TResult Function(Successimage value)? successimage,
-    TResult Function(Erorrimage value)? erorrvimage,
     TResult Function(Galer value)? galer,
     TResult Function(Galer2 value)? galer2,
     TResult Function(Galer3 value)? galer3,
@@ -3522,9 +2319,6 @@ class _$ErorrdeleteImpl implements Erorrdelete {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingview,
-    required TResult Function(List<ItemsData> response) successview,
-    required TResult Function(String erorr) erorrview,
     required TResult Function() loadingAdd,
     required TResult Function() successAdd,
     required TResult Function(String erorr) erorrAdd,
@@ -3535,11 +2329,8 @@ class _$ErorrdeleteImpl implements Erorrdelete {
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
     required TResult Function() loadingDashboard,
-    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(ResponseDashpoard responses) successDashboard,
     required TResult Function(String erorr) erorrDashboard,
-    required TResult Function() loadingvimage,
-    required TResult Function() successimage,
-    required TResult Function(String erorr) erorrvimage,
     required TResult Function() galer,
     required TResult Function() galer2,
     required TResult Function() galer3,
@@ -3557,9 +2348,6 @@ class _$ErorrdeleteImpl implements Erorrdelete {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingview,
-    TResult? Function(List<ItemsData> response)? successview,
-    TResult? Function(String erorr)? erorrview,
     TResult? Function()? loadingAdd,
     TResult? Function()? successAdd,
     TResult? Function(String erorr)? erorrAdd,
@@ -3570,11 +2358,8 @@ class _$ErorrdeleteImpl implements Erorrdelete {
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
     TResult? Function()? loadingDashboard,
-    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(ResponseDashpoard responses)? successDashboard,
     TResult? Function(String erorr)? erorrDashboard,
-    TResult? Function()? loadingvimage,
-    TResult? Function()? successimage,
-    TResult? Function(String erorr)? erorrvimage,
     TResult? Function()? galer,
     TResult? Function()? galer2,
     TResult? Function()? galer3,
@@ -3592,9 +2377,6 @@ class _$ErorrdeleteImpl implements Erorrdelete {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingview,
-    TResult Function(List<ItemsData> response)? successview,
-    TResult Function(String erorr)? erorrview,
     TResult Function()? loadingAdd,
     TResult Function()? successAdd,
     TResult Function(String erorr)? erorrAdd,
@@ -3605,11 +2387,8 @@ class _$ErorrdeleteImpl implements Erorrdelete {
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
     TResult Function()? loadingDashboard,
-    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(ResponseDashpoard responses)? successDashboard,
     TResult Function(String erorr)? erorrDashboard,
-    TResult Function()? loadingvimage,
-    TResult Function()? successimage,
-    TResult Function(String erorr)? erorrvimage,
     TResult Function()? galer,
     TResult Function()? galer2,
     TResult Function()? galer3,
@@ -3631,9 +2410,6 @@ class _$ErorrdeleteImpl implements Erorrdelete {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingview value) loadingview,
-    required TResult Function(Successview value) successview,
-    required TResult Function(Erorrview value) erorrview,
     required TResult Function(LoadingAdd value) loadingAdd,
     required TResult Function(SuccessAdd value) successAdd,
     required TResult Function(ErorrAdd value) erorrAdd,
@@ -3646,9 +2422,6 @@ class _$ErorrdeleteImpl implements Erorrdelete {
     required TResult Function(LoadingDashboard value) loadingDashboard,
     required TResult Function(SuccessDashboard value) successDashboard,
     required TResult Function(ErorrDashboard value) erorrDashboard,
-    required TResult Function(Loadingimage value) loadingvimage,
-    required TResult Function(Successimage value) successimage,
-    required TResult Function(Erorrimage value) erorrvimage,
     required TResult Function(Galer value) galer,
     required TResult Function(Galer2 value) galer2,
     required TResult Function(Galer3 value) galer3,
@@ -3666,9 +2439,6 @@ class _$ErorrdeleteImpl implements Erorrdelete {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingview value)? loadingview,
-    TResult? Function(Successview value)? successview,
-    TResult? Function(Erorrview value)? erorrview,
     TResult? Function(LoadingAdd value)? loadingAdd,
     TResult? Function(SuccessAdd value)? successAdd,
     TResult? Function(ErorrAdd value)? erorrAdd,
@@ -3681,9 +2451,6 @@ class _$ErorrdeleteImpl implements Erorrdelete {
     TResult? Function(LoadingDashboard value)? loadingDashboard,
     TResult? Function(SuccessDashboard value)? successDashboard,
     TResult? Function(ErorrDashboard value)? erorrDashboard,
-    TResult? Function(Loadingimage value)? loadingvimage,
-    TResult? Function(Successimage value)? successimage,
-    TResult? Function(Erorrimage value)? erorrvimage,
     TResult? Function(Galer value)? galer,
     TResult? Function(Galer2 value)? galer2,
     TResult? Function(Galer3 value)? galer3,
@@ -3701,9 +2468,6 @@ class _$ErorrdeleteImpl implements Erorrdelete {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingview value)? loadingview,
-    TResult Function(Successview value)? successview,
-    TResult Function(Erorrview value)? erorrview,
     TResult Function(LoadingAdd value)? loadingAdd,
     TResult Function(SuccessAdd value)? successAdd,
     TResult Function(ErorrAdd value)? erorrAdd,
@@ -3716,9 +2480,6 @@ class _$ErorrdeleteImpl implements Erorrdelete {
     TResult Function(LoadingDashboard value)? loadingDashboard,
     TResult Function(SuccessDashboard value)? successDashboard,
     TResult Function(ErorrDashboard value)? erorrDashboard,
-    TResult Function(Loadingimage value)? loadingvimage,
-    TResult Function(Successimage value)? successimage,
-    TResult Function(Erorrimage value)? erorrvimage,
     TResult Function(Galer value)? galer,
     TResult Function(Galer2 value)? galer2,
     TResult Function(Galer3 value)? galer3,
@@ -3785,9 +2546,6 @@ class _$LoadingDashboardImpl implements LoadingDashboard {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingview,
-    required TResult Function(List<ItemsData> response) successview,
-    required TResult Function(String erorr) erorrview,
     required TResult Function() loadingAdd,
     required TResult Function() successAdd,
     required TResult Function(String erorr) erorrAdd,
@@ -3798,11 +2556,8 @@ class _$LoadingDashboardImpl implements LoadingDashboard {
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
     required TResult Function() loadingDashboard,
-    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(ResponseDashpoard responses) successDashboard,
     required TResult Function(String erorr) erorrDashboard,
-    required TResult Function() loadingvimage,
-    required TResult Function() successimage,
-    required TResult Function(String erorr) erorrvimage,
     required TResult Function() galer,
     required TResult Function() galer2,
     required TResult Function() galer3,
@@ -3820,9 +2575,6 @@ class _$LoadingDashboardImpl implements LoadingDashboard {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingview,
-    TResult? Function(List<ItemsData> response)? successview,
-    TResult? Function(String erorr)? erorrview,
     TResult? Function()? loadingAdd,
     TResult? Function()? successAdd,
     TResult? Function(String erorr)? erorrAdd,
@@ -3833,11 +2585,8 @@ class _$LoadingDashboardImpl implements LoadingDashboard {
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
     TResult? Function()? loadingDashboard,
-    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(ResponseDashpoard responses)? successDashboard,
     TResult? Function(String erorr)? erorrDashboard,
-    TResult? Function()? loadingvimage,
-    TResult? Function()? successimage,
-    TResult? Function(String erorr)? erorrvimage,
     TResult? Function()? galer,
     TResult? Function()? galer2,
     TResult? Function()? galer3,
@@ -3855,9 +2604,6 @@ class _$LoadingDashboardImpl implements LoadingDashboard {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingview,
-    TResult Function(List<ItemsData> response)? successview,
-    TResult Function(String erorr)? erorrview,
     TResult Function()? loadingAdd,
     TResult Function()? successAdd,
     TResult Function(String erorr)? erorrAdd,
@@ -3868,11 +2614,8 @@ class _$LoadingDashboardImpl implements LoadingDashboard {
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
     TResult Function()? loadingDashboard,
-    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(ResponseDashpoard responses)? successDashboard,
     TResult Function(String erorr)? erorrDashboard,
-    TResult Function()? loadingvimage,
-    TResult Function()? successimage,
-    TResult Function(String erorr)? erorrvimage,
     TResult Function()? galer,
     TResult Function()? galer2,
     TResult Function()? galer3,
@@ -3894,9 +2637,6 @@ class _$LoadingDashboardImpl implements LoadingDashboard {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingview value) loadingview,
-    required TResult Function(Successview value) successview,
-    required TResult Function(Erorrview value) erorrview,
     required TResult Function(LoadingAdd value) loadingAdd,
     required TResult Function(SuccessAdd value) successAdd,
     required TResult Function(ErorrAdd value) erorrAdd,
@@ -3909,9 +2649,6 @@ class _$LoadingDashboardImpl implements LoadingDashboard {
     required TResult Function(LoadingDashboard value) loadingDashboard,
     required TResult Function(SuccessDashboard value) successDashboard,
     required TResult Function(ErorrDashboard value) erorrDashboard,
-    required TResult Function(Loadingimage value) loadingvimage,
-    required TResult Function(Successimage value) successimage,
-    required TResult Function(Erorrimage value) erorrvimage,
     required TResult Function(Galer value) galer,
     required TResult Function(Galer2 value) galer2,
     required TResult Function(Galer3 value) galer3,
@@ -3929,9 +2666,6 @@ class _$LoadingDashboardImpl implements LoadingDashboard {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingview value)? loadingview,
-    TResult? Function(Successview value)? successview,
-    TResult? Function(Erorrview value)? erorrview,
     TResult? Function(LoadingAdd value)? loadingAdd,
     TResult? Function(SuccessAdd value)? successAdd,
     TResult? Function(ErorrAdd value)? erorrAdd,
@@ -3944,9 +2678,6 @@ class _$LoadingDashboardImpl implements LoadingDashboard {
     TResult? Function(LoadingDashboard value)? loadingDashboard,
     TResult? Function(SuccessDashboard value)? successDashboard,
     TResult? Function(ErorrDashboard value)? erorrDashboard,
-    TResult? Function(Loadingimage value)? loadingvimage,
-    TResult? Function(Successimage value)? successimage,
-    TResult? Function(Erorrimage value)? erorrvimage,
     TResult? Function(Galer value)? galer,
     TResult? Function(Galer2 value)? galer2,
     TResult? Function(Galer3 value)? galer3,
@@ -3964,9 +2695,6 @@ class _$LoadingDashboardImpl implements LoadingDashboard {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingview value)? loadingview,
-    TResult Function(Successview value)? successview,
-    TResult Function(Erorrview value)? erorrview,
     TResult Function(LoadingAdd value)? loadingAdd,
     TResult Function(SuccessAdd value)? successAdd,
     TResult Function(ErorrAdd value)? erorrAdd,
@@ -3979,9 +2707,6 @@ class _$LoadingDashboardImpl implements LoadingDashboard {
     TResult Function(LoadingDashboard value)? loadingDashboard,
     TResult Function(SuccessDashboard value)? successDashboard,
     TResult Function(ErorrDashboard value)? erorrDashboard,
-    TResult Function(Loadingimage value)? loadingvimage,
-    TResult Function(Successimage value)? successimage,
-    TResult Function(Erorrimage value)? erorrvimage,
     TResult Function(Galer value)? galer,
     TResult Function(Galer2 value)? galer2,
     TResult Function(Galer3 value)? galer3,
@@ -4010,7 +2735,7 @@ abstract class _$$SuccessDashboardImplCopyWith<$Res> {
           $Res Function(_$SuccessDashboardImpl) then) =
       __$$SuccessDashboardImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({ResponseDashboard responses});
+  $Res call({ResponseDashpoard responses});
 }
 
 /// @nodoc
@@ -4030,7 +2755,7 @@ class __$$SuccessDashboardImplCopyWithImpl<$Res>
       null == responses
           ? _value.responses
           : responses // ignore: cast_nullable_to_non_nullable
-              as ResponseDashboard,
+              as ResponseDashpoard,
     ));
   }
 }
@@ -4041,7 +2766,7 @@ class _$SuccessDashboardImpl implements SuccessDashboard {
   const _$SuccessDashboardImpl(this.responses);
 
   @override
-  final ResponseDashboard responses;
+  final ResponseDashpoard responses;
 
   @override
   String toString() {
@@ -4071,9 +2796,6 @@ class _$SuccessDashboardImpl implements SuccessDashboard {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingview,
-    required TResult Function(List<ItemsData> response) successview,
-    required TResult Function(String erorr) erorrview,
     required TResult Function() loadingAdd,
     required TResult Function() successAdd,
     required TResult Function(String erorr) erorrAdd,
@@ -4084,11 +2806,8 @@ class _$SuccessDashboardImpl implements SuccessDashboard {
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
     required TResult Function() loadingDashboard,
-    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(ResponseDashpoard responses) successDashboard,
     required TResult Function(String erorr) erorrDashboard,
-    required TResult Function() loadingvimage,
-    required TResult Function() successimage,
-    required TResult Function(String erorr) erorrvimage,
     required TResult Function() galer,
     required TResult Function() galer2,
     required TResult Function() galer3,
@@ -4106,9 +2825,6 @@ class _$SuccessDashboardImpl implements SuccessDashboard {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingview,
-    TResult? Function(List<ItemsData> response)? successview,
-    TResult? Function(String erorr)? erorrview,
     TResult? Function()? loadingAdd,
     TResult? Function()? successAdd,
     TResult? Function(String erorr)? erorrAdd,
@@ -4119,11 +2835,8 @@ class _$SuccessDashboardImpl implements SuccessDashboard {
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
     TResult? Function()? loadingDashboard,
-    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(ResponseDashpoard responses)? successDashboard,
     TResult? Function(String erorr)? erorrDashboard,
-    TResult? Function()? loadingvimage,
-    TResult? Function()? successimage,
-    TResult? Function(String erorr)? erorrvimage,
     TResult? Function()? galer,
     TResult? Function()? galer2,
     TResult? Function()? galer3,
@@ -4141,9 +2854,6 @@ class _$SuccessDashboardImpl implements SuccessDashboard {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingview,
-    TResult Function(List<ItemsData> response)? successview,
-    TResult Function(String erorr)? erorrview,
     TResult Function()? loadingAdd,
     TResult Function()? successAdd,
     TResult Function(String erorr)? erorrAdd,
@@ -4154,11 +2864,8 @@ class _$SuccessDashboardImpl implements SuccessDashboard {
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
     TResult Function()? loadingDashboard,
-    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(ResponseDashpoard responses)? successDashboard,
     TResult Function(String erorr)? erorrDashboard,
-    TResult Function()? loadingvimage,
-    TResult Function()? successimage,
-    TResult Function(String erorr)? erorrvimage,
     TResult Function()? galer,
     TResult Function()? galer2,
     TResult Function()? galer3,
@@ -4180,9 +2887,6 @@ class _$SuccessDashboardImpl implements SuccessDashboard {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingview value) loadingview,
-    required TResult Function(Successview value) successview,
-    required TResult Function(Erorrview value) erorrview,
     required TResult Function(LoadingAdd value) loadingAdd,
     required TResult Function(SuccessAdd value) successAdd,
     required TResult Function(ErorrAdd value) erorrAdd,
@@ -4195,9 +2899,6 @@ class _$SuccessDashboardImpl implements SuccessDashboard {
     required TResult Function(LoadingDashboard value) loadingDashboard,
     required TResult Function(SuccessDashboard value) successDashboard,
     required TResult Function(ErorrDashboard value) erorrDashboard,
-    required TResult Function(Loadingimage value) loadingvimage,
-    required TResult Function(Successimage value) successimage,
-    required TResult Function(Erorrimage value) erorrvimage,
     required TResult Function(Galer value) galer,
     required TResult Function(Galer2 value) galer2,
     required TResult Function(Galer3 value) galer3,
@@ -4215,9 +2916,6 @@ class _$SuccessDashboardImpl implements SuccessDashboard {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingview value)? loadingview,
-    TResult? Function(Successview value)? successview,
-    TResult? Function(Erorrview value)? erorrview,
     TResult? Function(LoadingAdd value)? loadingAdd,
     TResult? Function(SuccessAdd value)? successAdd,
     TResult? Function(ErorrAdd value)? erorrAdd,
@@ -4230,9 +2928,6 @@ class _$SuccessDashboardImpl implements SuccessDashboard {
     TResult? Function(LoadingDashboard value)? loadingDashboard,
     TResult? Function(SuccessDashboard value)? successDashboard,
     TResult? Function(ErorrDashboard value)? erorrDashboard,
-    TResult? Function(Loadingimage value)? loadingvimage,
-    TResult? Function(Successimage value)? successimage,
-    TResult? Function(Erorrimage value)? erorrvimage,
     TResult? Function(Galer value)? galer,
     TResult? Function(Galer2 value)? galer2,
     TResult? Function(Galer3 value)? galer3,
@@ -4250,9 +2945,6 @@ class _$SuccessDashboardImpl implements SuccessDashboard {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingview value)? loadingview,
-    TResult Function(Successview value)? successview,
-    TResult Function(Erorrview value)? erorrview,
     TResult Function(LoadingAdd value)? loadingAdd,
     TResult Function(SuccessAdd value)? successAdd,
     TResult Function(ErorrAdd value)? erorrAdd,
@@ -4265,9 +2957,6 @@ class _$SuccessDashboardImpl implements SuccessDashboard {
     TResult Function(LoadingDashboard value)? loadingDashboard,
     TResult Function(SuccessDashboard value)? successDashboard,
     TResult Function(ErorrDashboard value)? erorrDashboard,
-    TResult Function(Loadingimage value)? loadingvimage,
-    TResult Function(Successimage value)? successimage,
-    TResult Function(Erorrimage value)? erorrvimage,
     TResult Function(Galer value)? galer,
     TResult Function(Galer2 value)? galer2,
     TResult Function(Galer3 value)? galer3,
@@ -4287,10 +2976,10 @@ class _$SuccessDashboardImpl implements SuccessDashboard {
 }
 
 abstract class SuccessDashboard implements DashboardState {
-  const factory SuccessDashboard(final ResponseDashboard responses) =
+  const factory SuccessDashboard(final ResponseDashpoard responses) =
       _$SuccessDashboardImpl;
 
-  ResponseDashboard get responses;
+  ResponseDashpoard get responses;
   @JsonKey(ignore: true)
   _$$SuccessDashboardImplCopyWith<_$SuccessDashboardImpl> get copyWith =>
       throw _privateConstructorUsedError;
@@ -4362,9 +3051,6 @@ class _$ErorrDashboardImpl implements ErorrDashboard {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingview,
-    required TResult Function(List<ItemsData> response) successview,
-    required TResult Function(String erorr) erorrview,
     required TResult Function() loadingAdd,
     required TResult Function() successAdd,
     required TResult Function(String erorr) erorrAdd,
@@ -4375,11 +3061,8 @@ class _$ErorrDashboardImpl implements ErorrDashboard {
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
     required TResult Function() loadingDashboard,
-    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(ResponseDashpoard responses) successDashboard,
     required TResult Function(String erorr) erorrDashboard,
-    required TResult Function() loadingvimage,
-    required TResult Function() successimage,
-    required TResult Function(String erorr) erorrvimage,
     required TResult Function() galer,
     required TResult Function() galer2,
     required TResult Function() galer3,
@@ -4397,9 +3080,6 @@ class _$ErorrDashboardImpl implements ErorrDashboard {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingview,
-    TResult? Function(List<ItemsData> response)? successview,
-    TResult? Function(String erorr)? erorrview,
     TResult? Function()? loadingAdd,
     TResult? Function()? successAdd,
     TResult? Function(String erorr)? erorrAdd,
@@ -4410,11 +3090,8 @@ class _$ErorrDashboardImpl implements ErorrDashboard {
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
     TResult? Function()? loadingDashboard,
-    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(ResponseDashpoard responses)? successDashboard,
     TResult? Function(String erorr)? erorrDashboard,
-    TResult? Function()? loadingvimage,
-    TResult? Function()? successimage,
-    TResult? Function(String erorr)? erorrvimage,
     TResult? Function()? galer,
     TResult? Function()? galer2,
     TResult? Function()? galer3,
@@ -4432,9 +3109,6 @@ class _$ErorrDashboardImpl implements ErorrDashboard {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingview,
-    TResult Function(List<ItemsData> response)? successview,
-    TResult Function(String erorr)? erorrview,
     TResult Function()? loadingAdd,
     TResult Function()? successAdd,
     TResult Function(String erorr)? erorrAdd,
@@ -4445,11 +3119,8 @@ class _$ErorrDashboardImpl implements ErorrDashboard {
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
     TResult Function()? loadingDashboard,
-    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(ResponseDashpoard responses)? successDashboard,
     TResult Function(String erorr)? erorrDashboard,
-    TResult Function()? loadingvimage,
-    TResult Function()? successimage,
-    TResult Function(String erorr)? erorrvimage,
     TResult Function()? galer,
     TResult Function()? galer2,
     TResult Function()? galer3,
@@ -4471,9 +3142,6 @@ class _$ErorrDashboardImpl implements ErorrDashboard {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingview value) loadingview,
-    required TResult Function(Successview value) successview,
-    required TResult Function(Erorrview value) erorrview,
     required TResult Function(LoadingAdd value) loadingAdd,
     required TResult Function(SuccessAdd value) successAdd,
     required TResult Function(ErorrAdd value) erorrAdd,
@@ -4486,9 +3154,6 @@ class _$ErorrDashboardImpl implements ErorrDashboard {
     required TResult Function(LoadingDashboard value) loadingDashboard,
     required TResult Function(SuccessDashboard value) successDashboard,
     required TResult Function(ErorrDashboard value) erorrDashboard,
-    required TResult Function(Loadingimage value) loadingvimage,
-    required TResult Function(Successimage value) successimage,
-    required TResult Function(Erorrimage value) erorrvimage,
     required TResult Function(Galer value) galer,
     required TResult Function(Galer2 value) galer2,
     required TResult Function(Galer3 value) galer3,
@@ -4506,9 +3171,6 @@ class _$ErorrDashboardImpl implements ErorrDashboard {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingview value)? loadingview,
-    TResult? Function(Successview value)? successview,
-    TResult? Function(Erorrview value)? erorrview,
     TResult? Function(LoadingAdd value)? loadingAdd,
     TResult? Function(SuccessAdd value)? successAdd,
     TResult? Function(ErorrAdd value)? erorrAdd,
@@ -4521,9 +3183,6 @@ class _$ErorrDashboardImpl implements ErorrDashboard {
     TResult? Function(LoadingDashboard value)? loadingDashboard,
     TResult? Function(SuccessDashboard value)? successDashboard,
     TResult? Function(ErorrDashboard value)? erorrDashboard,
-    TResult? Function(Loadingimage value)? loadingvimage,
-    TResult? Function(Successimage value)? successimage,
-    TResult? Function(Erorrimage value)? erorrvimage,
     TResult? Function(Galer value)? galer,
     TResult? Function(Galer2 value)? galer2,
     TResult? Function(Galer3 value)? galer3,
@@ -4541,9 +3200,6 @@ class _$ErorrDashboardImpl implements ErorrDashboard {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingview value)? loadingview,
-    TResult Function(Successview value)? successview,
-    TResult Function(Erorrview value)? erorrview,
     TResult Function(LoadingAdd value)? loadingAdd,
     TResult Function(SuccessAdd value)? successAdd,
     TResult Function(ErorrAdd value)? erorrAdd,
@@ -4556,9 +3212,6 @@ class _$ErorrDashboardImpl implements ErorrDashboard {
     TResult Function(LoadingDashboard value)? loadingDashboard,
     TResult Function(SuccessDashboard value)? successDashboard,
     TResult Function(ErorrDashboard value)? erorrDashboard,
-    TResult Function(Loadingimage value)? loadingvimage,
-    TResult Function(Successimage value)? successimage,
-    TResult Function(Erorrimage value)? erorrvimage,
     TResult Function(Galer value)? galer,
     TResult Function(Galer2 value)? galer2,
     TResult Function(Galer3 value)? galer3,
@@ -4584,811 +3237,6 @@ abstract class ErorrDashboard implements DashboardState {
   String get erorr;
   @JsonKey(ignore: true)
   _$$ErorrDashboardImplCopyWith<_$ErorrDashboardImpl> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class _$$LoadingimageImplCopyWith<$Res> {
-  factory _$$LoadingimageImplCopyWith(
-          _$LoadingimageImpl value, $Res Function(_$LoadingimageImpl) then) =
-      __$$LoadingimageImplCopyWithImpl<$Res>;
-}
-
-/// @nodoc
-class __$$LoadingimageImplCopyWithImpl<$Res>
-    extends _$DashboardStateCopyWithImpl<$Res, _$LoadingimageImpl>
-    implements _$$LoadingimageImplCopyWith<$Res> {
-  __$$LoadingimageImplCopyWithImpl(
-      _$LoadingimageImpl _value, $Res Function(_$LoadingimageImpl) _then)
-      : super(_value, _then);
-}
-
-/// @nodoc
-
-class _$LoadingimageImpl implements Loadingimage {
-  const _$LoadingimageImpl();
-
-  @override
-  String toString() {
-    return 'DashboardState.loadingvimage()';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$LoadingimageImpl);
-  }
-
-  @override
-  int get hashCode => runtimeType.hashCode;
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initial,
-    required TResult Function() loadingview,
-    required TResult Function(List<ItemsData> response) successview,
-    required TResult Function(String erorr) erorrview,
-    required TResult Function() loadingAdd,
-    required TResult Function() successAdd,
-    required TResult Function(String erorr) erorrAdd,
-    required TResult Function() loadingedit,
-    required TResult Function() successedit,
-    required TResult Function(String erorr) erorredit,
-    required TResult Function() loadingdelete,
-    required TResult Function() successdelete,
-    required TResult Function(String erorr) erorrdelete,
-    required TResult Function() loadingDashboard,
-    required TResult Function(ResponseDashboard responses) successDashboard,
-    required TResult Function(String erorr) erorrDashboard,
-    required TResult Function() loadingvimage,
-    required TResult Function() successimage,
-    required TResult Function(String erorr) erorrvimage,
-    required TResult Function() galer,
-    required TResult Function() galer2,
-    required TResult Function() galer3,
-    required TResult Function() remofgaler,
-    required TResult Function() removegaler2,
-    required TResult Function() removegaler3,
-    required TResult Function() pushEdit,
-    required TResult Function() approveitems,
-    required TResult Function() removeControll,
-  }) {
-    return loadingvimage();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initial,
-    TResult? Function()? loadingview,
-    TResult? Function(List<ItemsData> response)? successview,
-    TResult? Function(String erorr)? erorrview,
-    TResult? Function()? loadingAdd,
-    TResult? Function()? successAdd,
-    TResult? Function(String erorr)? erorrAdd,
-    TResult? Function()? loadingedit,
-    TResult? Function()? successedit,
-    TResult? Function(String erorr)? erorredit,
-    TResult? Function()? loadingdelete,
-    TResult? Function()? successdelete,
-    TResult? Function(String erorr)? erorrdelete,
-    TResult? Function()? loadingDashboard,
-    TResult? Function(ResponseDashboard responses)? successDashboard,
-    TResult? Function(String erorr)? erorrDashboard,
-    TResult? Function()? loadingvimage,
-    TResult? Function()? successimage,
-    TResult? Function(String erorr)? erorrvimage,
-    TResult? Function()? galer,
-    TResult? Function()? galer2,
-    TResult? Function()? galer3,
-    TResult? Function()? remofgaler,
-    TResult? Function()? removegaler2,
-    TResult? Function()? removegaler3,
-    TResult? Function()? pushEdit,
-    TResult? Function()? approveitems,
-    TResult? Function()? removeControll,
-  }) {
-    return loadingvimage?.call();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? loadingview,
-    TResult Function(List<ItemsData> response)? successview,
-    TResult Function(String erorr)? erorrview,
-    TResult Function()? loadingAdd,
-    TResult Function()? successAdd,
-    TResult Function(String erorr)? erorrAdd,
-    TResult Function()? loadingedit,
-    TResult Function()? successedit,
-    TResult Function(String erorr)? erorredit,
-    TResult Function()? loadingdelete,
-    TResult Function()? successdelete,
-    TResult Function(String erorr)? erorrdelete,
-    TResult Function()? loadingDashboard,
-    TResult Function(ResponseDashboard responses)? successDashboard,
-    TResult Function(String erorr)? erorrDashboard,
-    TResult Function()? loadingvimage,
-    TResult Function()? successimage,
-    TResult Function(String erorr)? erorrvimage,
-    TResult Function()? galer,
-    TResult Function()? galer2,
-    TResult Function()? galer3,
-    TResult Function()? remofgaler,
-    TResult Function()? removegaler2,
-    TResult Function()? removegaler3,
-    TResult Function()? pushEdit,
-    TResult Function()? approveitems,
-    TResult Function()? removeControll,
-    required TResult orElse(),
-  }) {
-    if (loadingvimage != null) {
-      return loadingvimage();
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingview value) loadingview,
-    required TResult Function(Successview value) successview,
-    required TResult Function(Erorrview value) erorrview,
-    required TResult Function(LoadingAdd value) loadingAdd,
-    required TResult Function(SuccessAdd value) successAdd,
-    required TResult Function(ErorrAdd value) erorrAdd,
-    required TResult Function(Loadingedit value) loadingedit,
-    required TResult Function(Successedit value) successedit,
-    required TResult Function(Erorredit value) erorredit,
-    required TResult Function(Loadingdelete value) loadingdelete,
-    required TResult Function(Successdelete value) successdelete,
-    required TResult Function(Erorrdelete value) erorrdelete,
-    required TResult Function(LoadingDashboard value) loadingDashboard,
-    required TResult Function(SuccessDashboard value) successDashboard,
-    required TResult Function(ErorrDashboard value) erorrDashboard,
-    required TResult Function(Loadingimage value) loadingvimage,
-    required TResult Function(Successimage value) successimage,
-    required TResult Function(Erorrimage value) erorrvimage,
-    required TResult Function(Galer value) galer,
-    required TResult Function(Galer2 value) galer2,
-    required TResult Function(Galer3 value) galer3,
-    required TResult Function(remofgaler value) remofgaler,
-    required TResult Function(removegaler2 value) removegaler2,
-    required TResult Function(removegaler3 value) removegaler3,
-    required TResult Function(PushEdit value) pushEdit,
-    required TResult Function(ApproveiItems value) approveitems,
-    required TResult Function(RemoveControll value) removeControll,
-  }) {
-    return loadingvimage(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingview value)? loadingview,
-    TResult? Function(Successview value)? successview,
-    TResult? Function(Erorrview value)? erorrview,
-    TResult? Function(LoadingAdd value)? loadingAdd,
-    TResult? Function(SuccessAdd value)? successAdd,
-    TResult? Function(ErorrAdd value)? erorrAdd,
-    TResult? Function(Loadingedit value)? loadingedit,
-    TResult? Function(Successedit value)? successedit,
-    TResult? Function(Erorredit value)? erorredit,
-    TResult? Function(Loadingdelete value)? loadingdelete,
-    TResult? Function(Successdelete value)? successdelete,
-    TResult? Function(Erorrdelete value)? erorrdelete,
-    TResult? Function(LoadingDashboard value)? loadingDashboard,
-    TResult? Function(SuccessDashboard value)? successDashboard,
-    TResult? Function(ErorrDashboard value)? erorrDashboard,
-    TResult? Function(Loadingimage value)? loadingvimage,
-    TResult? Function(Successimage value)? successimage,
-    TResult? Function(Erorrimage value)? erorrvimage,
-    TResult? Function(Galer value)? galer,
-    TResult? Function(Galer2 value)? galer2,
-    TResult? Function(Galer3 value)? galer3,
-    TResult? Function(remofgaler value)? remofgaler,
-    TResult? Function(removegaler2 value)? removegaler2,
-    TResult? Function(removegaler3 value)? removegaler3,
-    TResult? Function(PushEdit value)? pushEdit,
-    TResult? Function(ApproveiItems value)? approveitems,
-    TResult? Function(RemoveControll value)? removeControll,
-  }) {
-    return loadingvimage?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(Loadingview value)? loadingview,
-    TResult Function(Successview value)? successview,
-    TResult Function(Erorrview value)? erorrview,
-    TResult Function(LoadingAdd value)? loadingAdd,
-    TResult Function(SuccessAdd value)? successAdd,
-    TResult Function(ErorrAdd value)? erorrAdd,
-    TResult Function(Loadingedit value)? loadingedit,
-    TResult Function(Successedit value)? successedit,
-    TResult Function(Erorredit value)? erorredit,
-    TResult Function(Loadingdelete value)? loadingdelete,
-    TResult Function(Successdelete value)? successdelete,
-    TResult Function(Erorrdelete value)? erorrdelete,
-    TResult Function(LoadingDashboard value)? loadingDashboard,
-    TResult Function(SuccessDashboard value)? successDashboard,
-    TResult Function(ErorrDashboard value)? erorrDashboard,
-    TResult Function(Loadingimage value)? loadingvimage,
-    TResult Function(Successimage value)? successimage,
-    TResult Function(Erorrimage value)? erorrvimage,
-    TResult Function(Galer value)? galer,
-    TResult Function(Galer2 value)? galer2,
-    TResult Function(Galer3 value)? galer3,
-    TResult Function(remofgaler value)? remofgaler,
-    TResult Function(removegaler2 value)? removegaler2,
-    TResult Function(removegaler3 value)? removegaler3,
-    TResult Function(PushEdit value)? pushEdit,
-    TResult Function(ApproveiItems value)? approveitems,
-    TResult Function(RemoveControll value)? removeControll,
-    required TResult orElse(),
-  }) {
-    if (loadingvimage != null) {
-      return loadingvimage(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class Loadingimage implements DashboardState {
-  const factory Loadingimage() = _$LoadingimageImpl;
-}
-
-/// @nodoc
-abstract class _$$SuccessimageImplCopyWith<$Res> {
-  factory _$$SuccessimageImplCopyWith(
-          _$SuccessimageImpl value, $Res Function(_$SuccessimageImpl) then) =
-      __$$SuccessimageImplCopyWithImpl<$Res>;
-}
-
-/// @nodoc
-class __$$SuccessimageImplCopyWithImpl<$Res>
-    extends _$DashboardStateCopyWithImpl<$Res, _$SuccessimageImpl>
-    implements _$$SuccessimageImplCopyWith<$Res> {
-  __$$SuccessimageImplCopyWithImpl(
-      _$SuccessimageImpl _value, $Res Function(_$SuccessimageImpl) _then)
-      : super(_value, _then);
-}
-
-/// @nodoc
-
-class _$SuccessimageImpl implements Successimage {
-  const _$SuccessimageImpl();
-
-  @override
-  String toString() {
-    return 'DashboardState.successimage()';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$SuccessimageImpl);
-  }
-
-  @override
-  int get hashCode => runtimeType.hashCode;
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initial,
-    required TResult Function() loadingview,
-    required TResult Function(List<ItemsData> response) successview,
-    required TResult Function(String erorr) erorrview,
-    required TResult Function() loadingAdd,
-    required TResult Function() successAdd,
-    required TResult Function(String erorr) erorrAdd,
-    required TResult Function() loadingedit,
-    required TResult Function() successedit,
-    required TResult Function(String erorr) erorredit,
-    required TResult Function() loadingdelete,
-    required TResult Function() successdelete,
-    required TResult Function(String erorr) erorrdelete,
-    required TResult Function() loadingDashboard,
-    required TResult Function(ResponseDashboard responses) successDashboard,
-    required TResult Function(String erorr) erorrDashboard,
-    required TResult Function() loadingvimage,
-    required TResult Function() successimage,
-    required TResult Function(String erorr) erorrvimage,
-    required TResult Function() galer,
-    required TResult Function() galer2,
-    required TResult Function() galer3,
-    required TResult Function() remofgaler,
-    required TResult Function() removegaler2,
-    required TResult Function() removegaler3,
-    required TResult Function() pushEdit,
-    required TResult Function() approveitems,
-    required TResult Function() removeControll,
-  }) {
-    return successimage();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initial,
-    TResult? Function()? loadingview,
-    TResult? Function(List<ItemsData> response)? successview,
-    TResult? Function(String erorr)? erorrview,
-    TResult? Function()? loadingAdd,
-    TResult? Function()? successAdd,
-    TResult? Function(String erorr)? erorrAdd,
-    TResult? Function()? loadingedit,
-    TResult? Function()? successedit,
-    TResult? Function(String erorr)? erorredit,
-    TResult? Function()? loadingdelete,
-    TResult? Function()? successdelete,
-    TResult? Function(String erorr)? erorrdelete,
-    TResult? Function()? loadingDashboard,
-    TResult? Function(ResponseDashboard responses)? successDashboard,
-    TResult? Function(String erorr)? erorrDashboard,
-    TResult? Function()? loadingvimage,
-    TResult? Function()? successimage,
-    TResult? Function(String erorr)? erorrvimage,
-    TResult? Function()? galer,
-    TResult? Function()? galer2,
-    TResult? Function()? galer3,
-    TResult? Function()? remofgaler,
-    TResult? Function()? removegaler2,
-    TResult? Function()? removegaler3,
-    TResult? Function()? pushEdit,
-    TResult? Function()? approveitems,
-    TResult? Function()? removeControll,
-  }) {
-    return successimage?.call();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? loadingview,
-    TResult Function(List<ItemsData> response)? successview,
-    TResult Function(String erorr)? erorrview,
-    TResult Function()? loadingAdd,
-    TResult Function()? successAdd,
-    TResult Function(String erorr)? erorrAdd,
-    TResult Function()? loadingedit,
-    TResult Function()? successedit,
-    TResult Function(String erorr)? erorredit,
-    TResult Function()? loadingdelete,
-    TResult Function()? successdelete,
-    TResult Function(String erorr)? erorrdelete,
-    TResult Function()? loadingDashboard,
-    TResult Function(ResponseDashboard responses)? successDashboard,
-    TResult Function(String erorr)? erorrDashboard,
-    TResult Function()? loadingvimage,
-    TResult Function()? successimage,
-    TResult Function(String erorr)? erorrvimage,
-    TResult Function()? galer,
-    TResult Function()? galer2,
-    TResult Function()? galer3,
-    TResult Function()? remofgaler,
-    TResult Function()? removegaler2,
-    TResult Function()? removegaler3,
-    TResult Function()? pushEdit,
-    TResult Function()? approveitems,
-    TResult Function()? removeControll,
-    required TResult orElse(),
-  }) {
-    if (successimage != null) {
-      return successimage();
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingview value) loadingview,
-    required TResult Function(Successview value) successview,
-    required TResult Function(Erorrview value) erorrview,
-    required TResult Function(LoadingAdd value) loadingAdd,
-    required TResult Function(SuccessAdd value) successAdd,
-    required TResult Function(ErorrAdd value) erorrAdd,
-    required TResult Function(Loadingedit value) loadingedit,
-    required TResult Function(Successedit value) successedit,
-    required TResult Function(Erorredit value) erorredit,
-    required TResult Function(Loadingdelete value) loadingdelete,
-    required TResult Function(Successdelete value) successdelete,
-    required TResult Function(Erorrdelete value) erorrdelete,
-    required TResult Function(LoadingDashboard value) loadingDashboard,
-    required TResult Function(SuccessDashboard value) successDashboard,
-    required TResult Function(ErorrDashboard value) erorrDashboard,
-    required TResult Function(Loadingimage value) loadingvimage,
-    required TResult Function(Successimage value) successimage,
-    required TResult Function(Erorrimage value) erorrvimage,
-    required TResult Function(Galer value) galer,
-    required TResult Function(Galer2 value) galer2,
-    required TResult Function(Galer3 value) galer3,
-    required TResult Function(remofgaler value) remofgaler,
-    required TResult Function(removegaler2 value) removegaler2,
-    required TResult Function(removegaler3 value) removegaler3,
-    required TResult Function(PushEdit value) pushEdit,
-    required TResult Function(ApproveiItems value) approveitems,
-    required TResult Function(RemoveControll value) removeControll,
-  }) {
-    return successimage(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingview value)? loadingview,
-    TResult? Function(Successview value)? successview,
-    TResult? Function(Erorrview value)? erorrview,
-    TResult? Function(LoadingAdd value)? loadingAdd,
-    TResult? Function(SuccessAdd value)? successAdd,
-    TResult? Function(ErorrAdd value)? erorrAdd,
-    TResult? Function(Loadingedit value)? loadingedit,
-    TResult? Function(Successedit value)? successedit,
-    TResult? Function(Erorredit value)? erorredit,
-    TResult? Function(Loadingdelete value)? loadingdelete,
-    TResult? Function(Successdelete value)? successdelete,
-    TResult? Function(Erorrdelete value)? erorrdelete,
-    TResult? Function(LoadingDashboard value)? loadingDashboard,
-    TResult? Function(SuccessDashboard value)? successDashboard,
-    TResult? Function(ErorrDashboard value)? erorrDashboard,
-    TResult? Function(Loadingimage value)? loadingvimage,
-    TResult? Function(Successimage value)? successimage,
-    TResult? Function(Erorrimage value)? erorrvimage,
-    TResult? Function(Galer value)? galer,
-    TResult? Function(Galer2 value)? galer2,
-    TResult? Function(Galer3 value)? galer3,
-    TResult? Function(remofgaler value)? remofgaler,
-    TResult? Function(removegaler2 value)? removegaler2,
-    TResult? Function(removegaler3 value)? removegaler3,
-    TResult? Function(PushEdit value)? pushEdit,
-    TResult? Function(ApproveiItems value)? approveitems,
-    TResult? Function(RemoveControll value)? removeControll,
-  }) {
-    return successimage?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(Loadingview value)? loadingview,
-    TResult Function(Successview value)? successview,
-    TResult Function(Erorrview value)? erorrview,
-    TResult Function(LoadingAdd value)? loadingAdd,
-    TResult Function(SuccessAdd value)? successAdd,
-    TResult Function(ErorrAdd value)? erorrAdd,
-    TResult Function(Loadingedit value)? loadingedit,
-    TResult Function(Successedit value)? successedit,
-    TResult Function(Erorredit value)? erorredit,
-    TResult Function(Loadingdelete value)? loadingdelete,
-    TResult Function(Successdelete value)? successdelete,
-    TResult Function(Erorrdelete value)? erorrdelete,
-    TResult Function(LoadingDashboard value)? loadingDashboard,
-    TResult Function(SuccessDashboard value)? successDashboard,
-    TResult Function(ErorrDashboard value)? erorrDashboard,
-    TResult Function(Loadingimage value)? loadingvimage,
-    TResult Function(Successimage value)? successimage,
-    TResult Function(Erorrimage value)? erorrvimage,
-    TResult Function(Galer value)? galer,
-    TResult Function(Galer2 value)? galer2,
-    TResult Function(Galer3 value)? galer3,
-    TResult Function(remofgaler value)? remofgaler,
-    TResult Function(removegaler2 value)? removegaler2,
-    TResult Function(removegaler3 value)? removegaler3,
-    TResult Function(PushEdit value)? pushEdit,
-    TResult Function(ApproveiItems value)? approveitems,
-    TResult Function(RemoveControll value)? removeControll,
-    required TResult orElse(),
-  }) {
-    if (successimage != null) {
-      return successimage(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class Successimage implements DashboardState {
-  const factory Successimage() = _$SuccessimageImpl;
-}
-
-/// @nodoc
-abstract class _$$ErorrimageImplCopyWith<$Res> {
-  factory _$$ErorrimageImplCopyWith(
-          _$ErorrimageImpl value, $Res Function(_$ErorrimageImpl) then) =
-      __$$ErorrimageImplCopyWithImpl<$Res>;
-  @useResult
-  $Res call({String erorr});
-}
-
-/// @nodoc
-class __$$ErorrimageImplCopyWithImpl<$Res>
-    extends _$DashboardStateCopyWithImpl<$Res, _$ErorrimageImpl>
-    implements _$$ErorrimageImplCopyWith<$Res> {
-  __$$ErorrimageImplCopyWithImpl(
-      _$ErorrimageImpl _value, $Res Function(_$ErorrimageImpl) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? erorr = null,
-  }) {
-    return _then(_$ErorrimageImpl(
-      erorr: null == erorr
-          ? _value.erorr
-          : erorr // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
-  }
-}
-
-/// @nodoc
-
-class _$ErorrimageImpl implements Erorrimage {
-  const _$ErorrimageImpl({required this.erorr});
-
-  @override
-  final String erorr;
-
-  @override
-  String toString() {
-    return 'DashboardState.erorrvimage(erorr: $erorr)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$ErorrimageImpl &&
-            (identical(other.erorr, erorr) || other.erorr == erorr));
-  }
-
-  @override
-  int get hashCode => Object.hash(runtimeType, erorr);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$ErorrimageImplCopyWith<_$ErorrimageImpl> get copyWith =>
-      __$$ErorrimageImplCopyWithImpl<_$ErorrimageImpl>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initial,
-    required TResult Function() loadingview,
-    required TResult Function(List<ItemsData> response) successview,
-    required TResult Function(String erorr) erorrview,
-    required TResult Function() loadingAdd,
-    required TResult Function() successAdd,
-    required TResult Function(String erorr) erorrAdd,
-    required TResult Function() loadingedit,
-    required TResult Function() successedit,
-    required TResult Function(String erorr) erorredit,
-    required TResult Function() loadingdelete,
-    required TResult Function() successdelete,
-    required TResult Function(String erorr) erorrdelete,
-    required TResult Function() loadingDashboard,
-    required TResult Function(ResponseDashboard responses) successDashboard,
-    required TResult Function(String erorr) erorrDashboard,
-    required TResult Function() loadingvimage,
-    required TResult Function() successimage,
-    required TResult Function(String erorr) erorrvimage,
-    required TResult Function() galer,
-    required TResult Function() galer2,
-    required TResult Function() galer3,
-    required TResult Function() remofgaler,
-    required TResult Function() removegaler2,
-    required TResult Function() removegaler3,
-    required TResult Function() pushEdit,
-    required TResult Function() approveitems,
-    required TResult Function() removeControll,
-  }) {
-    return erorrvimage(erorr);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initial,
-    TResult? Function()? loadingview,
-    TResult? Function(List<ItemsData> response)? successview,
-    TResult? Function(String erorr)? erorrview,
-    TResult? Function()? loadingAdd,
-    TResult? Function()? successAdd,
-    TResult? Function(String erorr)? erorrAdd,
-    TResult? Function()? loadingedit,
-    TResult? Function()? successedit,
-    TResult? Function(String erorr)? erorredit,
-    TResult? Function()? loadingdelete,
-    TResult? Function()? successdelete,
-    TResult? Function(String erorr)? erorrdelete,
-    TResult? Function()? loadingDashboard,
-    TResult? Function(ResponseDashboard responses)? successDashboard,
-    TResult? Function(String erorr)? erorrDashboard,
-    TResult? Function()? loadingvimage,
-    TResult? Function()? successimage,
-    TResult? Function(String erorr)? erorrvimage,
-    TResult? Function()? galer,
-    TResult? Function()? galer2,
-    TResult? Function()? galer3,
-    TResult? Function()? remofgaler,
-    TResult? Function()? removegaler2,
-    TResult? Function()? removegaler3,
-    TResult? Function()? pushEdit,
-    TResult? Function()? approveitems,
-    TResult? Function()? removeControll,
-  }) {
-    return erorrvimage?.call(erorr);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? loadingview,
-    TResult Function(List<ItemsData> response)? successview,
-    TResult Function(String erorr)? erorrview,
-    TResult Function()? loadingAdd,
-    TResult Function()? successAdd,
-    TResult Function(String erorr)? erorrAdd,
-    TResult Function()? loadingedit,
-    TResult Function()? successedit,
-    TResult Function(String erorr)? erorredit,
-    TResult Function()? loadingdelete,
-    TResult Function()? successdelete,
-    TResult Function(String erorr)? erorrdelete,
-    TResult Function()? loadingDashboard,
-    TResult Function(ResponseDashboard responses)? successDashboard,
-    TResult Function(String erorr)? erorrDashboard,
-    TResult Function()? loadingvimage,
-    TResult Function()? successimage,
-    TResult Function(String erorr)? erorrvimage,
-    TResult Function()? galer,
-    TResult Function()? galer2,
-    TResult Function()? galer3,
-    TResult Function()? remofgaler,
-    TResult Function()? removegaler2,
-    TResult Function()? removegaler3,
-    TResult Function()? pushEdit,
-    TResult Function()? approveitems,
-    TResult Function()? removeControll,
-    required TResult orElse(),
-  }) {
-    if (erorrvimage != null) {
-      return erorrvimage(erorr);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingview value) loadingview,
-    required TResult Function(Successview value) successview,
-    required TResult Function(Erorrview value) erorrview,
-    required TResult Function(LoadingAdd value) loadingAdd,
-    required TResult Function(SuccessAdd value) successAdd,
-    required TResult Function(ErorrAdd value) erorrAdd,
-    required TResult Function(Loadingedit value) loadingedit,
-    required TResult Function(Successedit value) successedit,
-    required TResult Function(Erorredit value) erorredit,
-    required TResult Function(Loadingdelete value) loadingdelete,
-    required TResult Function(Successdelete value) successdelete,
-    required TResult Function(Erorrdelete value) erorrdelete,
-    required TResult Function(LoadingDashboard value) loadingDashboard,
-    required TResult Function(SuccessDashboard value) successDashboard,
-    required TResult Function(ErorrDashboard value) erorrDashboard,
-    required TResult Function(Loadingimage value) loadingvimage,
-    required TResult Function(Successimage value) successimage,
-    required TResult Function(Erorrimage value) erorrvimage,
-    required TResult Function(Galer value) galer,
-    required TResult Function(Galer2 value) galer2,
-    required TResult Function(Galer3 value) galer3,
-    required TResult Function(remofgaler value) remofgaler,
-    required TResult Function(removegaler2 value) removegaler2,
-    required TResult Function(removegaler3 value) removegaler3,
-    required TResult Function(PushEdit value) pushEdit,
-    required TResult Function(ApproveiItems value) approveitems,
-    required TResult Function(RemoveControll value) removeControll,
-  }) {
-    return erorrvimage(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingview value)? loadingview,
-    TResult? Function(Successview value)? successview,
-    TResult? Function(Erorrview value)? erorrview,
-    TResult? Function(LoadingAdd value)? loadingAdd,
-    TResult? Function(SuccessAdd value)? successAdd,
-    TResult? Function(ErorrAdd value)? erorrAdd,
-    TResult? Function(Loadingedit value)? loadingedit,
-    TResult? Function(Successedit value)? successedit,
-    TResult? Function(Erorredit value)? erorredit,
-    TResult? Function(Loadingdelete value)? loadingdelete,
-    TResult? Function(Successdelete value)? successdelete,
-    TResult? Function(Erorrdelete value)? erorrdelete,
-    TResult? Function(LoadingDashboard value)? loadingDashboard,
-    TResult? Function(SuccessDashboard value)? successDashboard,
-    TResult? Function(ErorrDashboard value)? erorrDashboard,
-    TResult? Function(Loadingimage value)? loadingvimage,
-    TResult? Function(Successimage value)? successimage,
-    TResult? Function(Erorrimage value)? erorrvimage,
-    TResult? Function(Galer value)? galer,
-    TResult? Function(Galer2 value)? galer2,
-    TResult? Function(Galer3 value)? galer3,
-    TResult? Function(remofgaler value)? remofgaler,
-    TResult? Function(removegaler2 value)? removegaler2,
-    TResult? Function(removegaler3 value)? removegaler3,
-    TResult? Function(PushEdit value)? pushEdit,
-    TResult? Function(ApproveiItems value)? approveitems,
-    TResult? Function(RemoveControll value)? removeControll,
-  }) {
-    return erorrvimage?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(Loadingview value)? loadingview,
-    TResult Function(Successview value)? successview,
-    TResult Function(Erorrview value)? erorrview,
-    TResult Function(LoadingAdd value)? loadingAdd,
-    TResult Function(SuccessAdd value)? successAdd,
-    TResult Function(ErorrAdd value)? erorrAdd,
-    TResult Function(Loadingedit value)? loadingedit,
-    TResult Function(Successedit value)? successedit,
-    TResult Function(Erorredit value)? erorredit,
-    TResult Function(Loadingdelete value)? loadingdelete,
-    TResult Function(Successdelete value)? successdelete,
-    TResult Function(Erorrdelete value)? erorrdelete,
-    TResult Function(LoadingDashboard value)? loadingDashboard,
-    TResult Function(SuccessDashboard value)? successDashboard,
-    TResult Function(ErorrDashboard value)? erorrDashboard,
-    TResult Function(Loadingimage value)? loadingvimage,
-    TResult Function(Successimage value)? successimage,
-    TResult Function(Erorrimage value)? erorrvimage,
-    TResult Function(Galer value)? galer,
-    TResult Function(Galer2 value)? galer2,
-    TResult Function(Galer3 value)? galer3,
-    TResult Function(remofgaler value)? remofgaler,
-    TResult Function(removegaler2 value)? removegaler2,
-    TResult Function(removegaler3 value)? removegaler3,
-    TResult Function(PushEdit value)? pushEdit,
-    TResult Function(ApproveiItems value)? approveitems,
-    TResult Function(RemoveControll value)? removeControll,
-    required TResult orElse(),
-  }) {
-    if (erorrvimage != null) {
-      return erorrvimage(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class Erorrimage implements DashboardState {
-  const factory Erorrimage({required final String erorr}) = _$ErorrimageImpl;
-
-  String get erorr;
-  @JsonKey(ignore: true)
-  _$$ErorrimageImplCopyWith<_$ErorrimageImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -5431,9 +3279,6 @@ class _$GalerImpl implements Galer {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingview,
-    required TResult Function(List<ItemsData> response) successview,
-    required TResult Function(String erorr) erorrview,
     required TResult Function() loadingAdd,
     required TResult Function() successAdd,
     required TResult Function(String erorr) erorrAdd,
@@ -5444,11 +3289,8 @@ class _$GalerImpl implements Galer {
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
     required TResult Function() loadingDashboard,
-    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(ResponseDashpoard responses) successDashboard,
     required TResult Function(String erorr) erorrDashboard,
-    required TResult Function() loadingvimage,
-    required TResult Function() successimage,
-    required TResult Function(String erorr) erorrvimage,
     required TResult Function() galer,
     required TResult Function() galer2,
     required TResult Function() galer3,
@@ -5466,9 +3308,6 @@ class _$GalerImpl implements Galer {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingview,
-    TResult? Function(List<ItemsData> response)? successview,
-    TResult? Function(String erorr)? erorrview,
     TResult? Function()? loadingAdd,
     TResult? Function()? successAdd,
     TResult? Function(String erorr)? erorrAdd,
@@ -5479,11 +3318,8 @@ class _$GalerImpl implements Galer {
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
     TResult? Function()? loadingDashboard,
-    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(ResponseDashpoard responses)? successDashboard,
     TResult? Function(String erorr)? erorrDashboard,
-    TResult? Function()? loadingvimage,
-    TResult? Function()? successimage,
-    TResult? Function(String erorr)? erorrvimage,
     TResult? Function()? galer,
     TResult? Function()? galer2,
     TResult? Function()? galer3,
@@ -5501,9 +3337,6 @@ class _$GalerImpl implements Galer {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingview,
-    TResult Function(List<ItemsData> response)? successview,
-    TResult Function(String erorr)? erorrview,
     TResult Function()? loadingAdd,
     TResult Function()? successAdd,
     TResult Function(String erorr)? erorrAdd,
@@ -5514,11 +3347,8 @@ class _$GalerImpl implements Galer {
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
     TResult Function()? loadingDashboard,
-    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(ResponseDashpoard responses)? successDashboard,
     TResult Function(String erorr)? erorrDashboard,
-    TResult Function()? loadingvimage,
-    TResult Function()? successimage,
-    TResult Function(String erorr)? erorrvimage,
     TResult Function()? galer,
     TResult Function()? galer2,
     TResult Function()? galer3,
@@ -5540,9 +3370,6 @@ class _$GalerImpl implements Galer {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingview value) loadingview,
-    required TResult Function(Successview value) successview,
-    required TResult Function(Erorrview value) erorrview,
     required TResult Function(LoadingAdd value) loadingAdd,
     required TResult Function(SuccessAdd value) successAdd,
     required TResult Function(ErorrAdd value) erorrAdd,
@@ -5555,9 +3382,6 @@ class _$GalerImpl implements Galer {
     required TResult Function(LoadingDashboard value) loadingDashboard,
     required TResult Function(SuccessDashboard value) successDashboard,
     required TResult Function(ErorrDashboard value) erorrDashboard,
-    required TResult Function(Loadingimage value) loadingvimage,
-    required TResult Function(Successimage value) successimage,
-    required TResult Function(Erorrimage value) erorrvimage,
     required TResult Function(Galer value) galer,
     required TResult Function(Galer2 value) galer2,
     required TResult Function(Galer3 value) galer3,
@@ -5575,9 +3399,6 @@ class _$GalerImpl implements Galer {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingview value)? loadingview,
-    TResult? Function(Successview value)? successview,
-    TResult? Function(Erorrview value)? erorrview,
     TResult? Function(LoadingAdd value)? loadingAdd,
     TResult? Function(SuccessAdd value)? successAdd,
     TResult? Function(ErorrAdd value)? erorrAdd,
@@ -5590,9 +3411,6 @@ class _$GalerImpl implements Galer {
     TResult? Function(LoadingDashboard value)? loadingDashboard,
     TResult? Function(SuccessDashboard value)? successDashboard,
     TResult? Function(ErorrDashboard value)? erorrDashboard,
-    TResult? Function(Loadingimage value)? loadingvimage,
-    TResult? Function(Successimage value)? successimage,
-    TResult? Function(Erorrimage value)? erorrvimage,
     TResult? Function(Galer value)? galer,
     TResult? Function(Galer2 value)? galer2,
     TResult? Function(Galer3 value)? galer3,
@@ -5610,9 +3428,6 @@ class _$GalerImpl implements Galer {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingview value)? loadingview,
-    TResult Function(Successview value)? successview,
-    TResult Function(Erorrview value)? erorrview,
     TResult Function(LoadingAdd value)? loadingAdd,
     TResult Function(SuccessAdd value)? successAdd,
     TResult Function(ErorrAdd value)? erorrAdd,
@@ -5625,9 +3440,6 @@ class _$GalerImpl implements Galer {
     TResult Function(LoadingDashboard value)? loadingDashboard,
     TResult Function(SuccessDashboard value)? successDashboard,
     TResult Function(ErorrDashboard value)? erorrDashboard,
-    TResult Function(Loadingimage value)? loadingvimage,
-    TResult Function(Successimage value)? successimage,
-    TResult Function(Erorrimage value)? erorrvimage,
     TResult Function(Galer value)? galer,
     TResult Function(Galer2 value)? galer2,
     TResult Function(Galer3 value)? galer3,
@@ -5689,9 +3501,6 @@ class _$Galer2Impl implements Galer2 {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingview,
-    required TResult Function(List<ItemsData> response) successview,
-    required TResult Function(String erorr) erorrview,
     required TResult Function() loadingAdd,
     required TResult Function() successAdd,
     required TResult Function(String erorr) erorrAdd,
@@ -5702,11 +3511,8 @@ class _$Galer2Impl implements Galer2 {
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
     required TResult Function() loadingDashboard,
-    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(ResponseDashpoard responses) successDashboard,
     required TResult Function(String erorr) erorrDashboard,
-    required TResult Function() loadingvimage,
-    required TResult Function() successimage,
-    required TResult Function(String erorr) erorrvimage,
     required TResult Function() galer,
     required TResult Function() galer2,
     required TResult Function() galer3,
@@ -5724,9 +3530,6 @@ class _$Galer2Impl implements Galer2 {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingview,
-    TResult? Function(List<ItemsData> response)? successview,
-    TResult? Function(String erorr)? erorrview,
     TResult? Function()? loadingAdd,
     TResult? Function()? successAdd,
     TResult? Function(String erorr)? erorrAdd,
@@ -5737,11 +3540,8 @@ class _$Galer2Impl implements Galer2 {
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
     TResult? Function()? loadingDashboard,
-    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(ResponseDashpoard responses)? successDashboard,
     TResult? Function(String erorr)? erorrDashboard,
-    TResult? Function()? loadingvimage,
-    TResult? Function()? successimage,
-    TResult? Function(String erorr)? erorrvimage,
     TResult? Function()? galer,
     TResult? Function()? galer2,
     TResult? Function()? galer3,
@@ -5759,9 +3559,6 @@ class _$Galer2Impl implements Galer2 {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingview,
-    TResult Function(List<ItemsData> response)? successview,
-    TResult Function(String erorr)? erorrview,
     TResult Function()? loadingAdd,
     TResult Function()? successAdd,
     TResult Function(String erorr)? erorrAdd,
@@ -5772,11 +3569,8 @@ class _$Galer2Impl implements Galer2 {
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
     TResult Function()? loadingDashboard,
-    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(ResponseDashpoard responses)? successDashboard,
     TResult Function(String erorr)? erorrDashboard,
-    TResult Function()? loadingvimage,
-    TResult Function()? successimage,
-    TResult Function(String erorr)? erorrvimage,
     TResult Function()? galer,
     TResult Function()? galer2,
     TResult Function()? galer3,
@@ -5798,9 +3592,6 @@ class _$Galer2Impl implements Galer2 {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingview value) loadingview,
-    required TResult Function(Successview value) successview,
-    required TResult Function(Erorrview value) erorrview,
     required TResult Function(LoadingAdd value) loadingAdd,
     required TResult Function(SuccessAdd value) successAdd,
     required TResult Function(ErorrAdd value) erorrAdd,
@@ -5813,9 +3604,6 @@ class _$Galer2Impl implements Galer2 {
     required TResult Function(LoadingDashboard value) loadingDashboard,
     required TResult Function(SuccessDashboard value) successDashboard,
     required TResult Function(ErorrDashboard value) erorrDashboard,
-    required TResult Function(Loadingimage value) loadingvimage,
-    required TResult Function(Successimage value) successimage,
-    required TResult Function(Erorrimage value) erorrvimage,
     required TResult Function(Galer value) galer,
     required TResult Function(Galer2 value) galer2,
     required TResult Function(Galer3 value) galer3,
@@ -5833,9 +3621,6 @@ class _$Galer2Impl implements Galer2 {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingview value)? loadingview,
-    TResult? Function(Successview value)? successview,
-    TResult? Function(Erorrview value)? erorrview,
     TResult? Function(LoadingAdd value)? loadingAdd,
     TResult? Function(SuccessAdd value)? successAdd,
     TResult? Function(ErorrAdd value)? erorrAdd,
@@ -5848,9 +3633,6 @@ class _$Galer2Impl implements Galer2 {
     TResult? Function(LoadingDashboard value)? loadingDashboard,
     TResult? Function(SuccessDashboard value)? successDashboard,
     TResult? Function(ErorrDashboard value)? erorrDashboard,
-    TResult? Function(Loadingimage value)? loadingvimage,
-    TResult? Function(Successimage value)? successimage,
-    TResult? Function(Erorrimage value)? erorrvimage,
     TResult? Function(Galer value)? galer,
     TResult? Function(Galer2 value)? galer2,
     TResult? Function(Galer3 value)? galer3,
@@ -5868,9 +3650,6 @@ class _$Galer2Impl implements Galer2 {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingview value)? loadingview,
-    TResult Function(Successview value)? successview,
-    TResult Function(Erorrview value)? erorrview,
     TResult Function(LoadingAdd value)? loadingAdd,
     TResult Function(SuccessAdd value)? successAdd,
     TResult Function(ErorrAdd value)? erorrAdd,
@@ -5883,9 +3662,6 @@ class _$Galer2Impl implements Galer2 {
     TResult Function(LoadingDashboard value)? loadingDashboard,
     TResult Function(SuccessDashboard value)? successDashboard,
     TResult Function(ErorrDashboard value)? erorrDashboard,
-    TResult Function(Loadingimage value)? loadingvimage,
-    TResult Function(Successimage value)? successimage,
-    TResult Function(Erorrimage value)? erorrvimage,
     TResult Function(Galer value)? galer,
     TResult Function(Galer2 value)? galer2,
     TResult Function(Galer3 value)? galer3,
@@ -5947,9 +3723,6 @@ class _$Galer3Impl implements Galer3 {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingview,
-    required TResult Function(List<ItemsData> response) successview,
-    required TResult Function(String erorr) erorrview,
     required TResult Function() loadingAdd,
     required TResult Function() successAdd,
     required TResult Function(String erorr) erorrAdd,
@@ -5960,11 +3733,8 @@ class _$Galer3Impl implements Galer3 {
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
     required TResult Function() loadingDashboard,
-    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(ResponseDashpoard responses) successDashboard,
     required TResult Function(String erorr) erorrDashboard,
-    required TResult Function() loadingvimage,
-    required TResult Function() successimage,
-    required TResult Function(String erorr) erorrvimage,
     required TResult Function() galer,
     required TResult Function() galer2,
     required TResult Function() galer3,
@@ -5982,9 +3752,6 @@ class _$Galer3Impl implements Galer3 {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingview,
-    TResult? Function(List<ItemsData> response)? successview,
-    TResult? Function(String erorr)? erorrview,
     TResult? Function()? loadingAdd,
     TResult? Function()? successAdd,
     TResult? Function(String erorr)? erorrAdd,
@@ -5995,11 +3762,8 @@ class _$Galer3Impl implements Galer3 {
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
     TResult? Function()? loadingDashboard,
-    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(ResponseDashpoard responses)? successDashboard,
     TResult? Function(String erorr)? erorrDashboard,
-    TResult? Function()? loadingvimage,
-    TResult? Function()? successimage,
-    TResult? Function(String erorr)? erorrvimage,
     TResult? Function()? galer,
     TResult? Function()? galer2,
     TResult? Function()? galer3,
@@ -6017,9 +3781,6 @@ class _$Galer3Impl implements Galer3 {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingview,
-    TResult Function(List<ItemsData> response)? successview,
-    TResult Function(String erorr)? erorrview,
     TResult Function()? loadingAdd,
     TResult Function()? successAdd,
     TResult Function(String erorr)? erorrAdd,
@@ -6030,11 +3791,8 @@ class _$Galer3Impl implements Galer3 {
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
     TResult Function()? loadingDashboard,
-    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(ResponseDashpoard responses)? successDashboard,
     TResult Function(String erorr)? erorrDashboard,
-    TResult Function()? loadingvimage,
-    TResult Function()? successimage,
-    TResult Function(String erorr)? erorrvimage,
     TResult Function()? galer,
     TResult Function()? galer2,
     TResult Function()? galer3,
@@ -6056,9 +3814,6 @@ class _$Galer3Impl implements Galer3 {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingview value) loadingview,
-    required TResult Function(Successview value) successview,
-    required TResult Function(Erorrview value) erorrview,
     required TResult Function(LoadingAdd value) loadingAdd,
     required TResult Function(SuccessAdd value) successAdd,
     required TResult Function(ErorrAdd value) erorrAdd,
@@ -6071,9 +3826,6 @@ class _$Galer3Impl implements Galer3 {
     required TResult Function(LoadingDashboard value) loadingDashboard,
     required TResult Function(SuccessDashboard value) successDashboard,
     required TResult Function(ErorrDashboard value) erorrDashboard,
-    required TResult Function(Loadingimage value) loadingvimage,
-    required TResult Function(Successimage value) successimage,
-    required TResult Function(Erorrimage value) erorrvimage,
     required TResult Function(Galer value) galer,
     required TResult Function(Galer2 value) galer2,
     required TResult Function(Galer3 value) galer3,
@@ -6091,9 +3843,6 @@ class _$Galer3Impl implements Galer3 {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingview value)? loadingview,
-    TResult? Function(Successview value)? successview,
-    TResult? Function(Erorrview value)? erorrview,
     TResult? Function(LoadingAdd value)? loadingAdd,
     TResult? Function(SuccessAdd value)? successAdd,
     TResult? Function(ErorrAdd value)? erorrAdd,
@@ -6106,9 +3855,6 @@ class _$Galer3Impl implements Galer3 {
     TResult? Function(LoadingDashboard value)? loadingDashboard,
     TResult? Function(SuccessDashboard value)? successDashboard,
     TResult? Function(ErorrDashboard value)? erorrDashboard,
-    TResult? Function(Loadingimage value)? loadingvimage,
-    TResult? Function(Successimage value)? successimage,
-    TResult? Function(Erorrimage value)? erorrvimage,
     TResult? Function(Galer value)? galer,
     TResult? Function(Galer2 value)? galer2,
     TResult? Function(Galer3 value)? galer3,
@@ -6126,9 +3872,6 @@ class _$Galer3Impl implements Galer3 {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingview value)? loadingview,
-    TResult Function(Successview value)? successview,
-    TResult Function(Erorrview value)? erorrview,
     TResult Function(LoadingAdd value)? loadingAdd,
     TResult Function(SuccessAdd value)? successAdd,
     TResult Function(ErorrAdd value)? erorrAdd,
@@ -6141,9 +3884,6 @@ class _$Galer3Impl implements Galer3 {
     TResult Function(LoadingDashboard value)? loadingDashboard,
     TResult Function(SuccessDashboard value)? successDashboard,
     TResult Function(ErorrDashboard value)? erorrDashboard,
-    TResult Function(Loadingimage value)? loadingvimage,
-    TResult Function(Successimage value)? successimage,
-    TResult Function(Erorrimage value)? erorrvimage,
     TResult Function(Galer value)? galer,
     TResult Function(Galer2 value)? galer2,
     TResult Function(Galer3 value)? galer3,
@@ -6205,9 +3945,6 @@ class _$remofgalerImpl implements remofgaler {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingview,
-    required TResult Function(List<ItemsData> response) successview,
-    required TResult Function(String erorr) erorrview,
     required TResult Function() loadingAdd,
     required TResult Function() successAdd,
     required TResult Function(String erorr) erorrAdd,
@@ -6218,11 +3955,8 @@ class _$remofgalerImpl implements remofgaler {
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
     required TResult Function() loadingDashboard,
-    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(ResponseDashpoard responses) successDashboard,
     required TResult Function(String erorr) erorrDashboard,
-    required TResult Function() loadingvimage,
-    required TResult Function() successimage,
-    required TResult Function(String erorr) erorrvimage,
     required TResult Function() galer,
     required TResult Function() galer2,
     required TResult Function() galer3,
@@ -6240,9 +3974,6 @@ class _$remofgalerImpl implements remofgaler {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingview,
-    TResult? Function(List<ItemsData> response)? successview,
-    TResult? Function(String erorr)? erorrview,
     TResult? Function()? loadingAdd,
     TResult? Function()? successAdd,
     TResult? Function(String erorr)? erorrAdd,
@@ -6253,11 +3984,8 @@ class _$remofgalerImpl implements remofgaler {
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
     TResult? Function()? loadingDashboard,
-    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(ResponseDashpoard responses)? successDashboard,
     TResult? Function(String erorr)? erorrDashboard,
-    TResult? Function()? loadingvimage,
-    TResult? Function()? successimage,
-    TResult? Function(String erorr)? erorrvimage,
     TResult? Function()? galer,
     TResult? Function()? galer2,
     TResult? Function()? galer3,
@@ -6275,9 +4003,6 @@ class _$remofgalerImpl implements remofgaler {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingview,
-    TResult Function(List<ItemsData> response)? successview,
-    TResult Function(String erorr)? erorrview,
     TResult Function()? loadingAdd,
     TResult Function()? successAdd,
     TResult Function(String erorr)? erorrAdd,
@@ -6288,11 +4013,8 @@ class _$remofgalerImpl implements remofgaler {
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
     TResult Function()? loadingDashboard,
-    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(ResponseDashpoard responses)? successDashboard,
     TResult Function(String erorr)? erorrDashboard,
-    TResult Function()? loadingvimage,
-    TResult Function()? successimage,
-    TResult Function(String erorr)? erorrvimage,
     TResult Function()? galer,
     TResult Function()? galer2,
     TResult Function()? galer3,
@@ -6314,9 +4036,6 @@ class _$remofgalerImpl implements remofgaler {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingview value) loadingview,
-    required TResult Function(Successview value) successview,
-    required TResult Function(Erorrview value) erorrview,
     required TResult Function(LoadingAdd value) loadingAdd,
     required TResult Function(SuccessAdd value) successAdd,
     required TResult Function(ErorrAdd value) erorrAdd,
@@ -6329,9 +4048,6 @@ class _$remofgalerImpl implements remofgaler {
     required TResult Function(LoadingDashboard value) loadingDashboard,
     required TResult Function(SuccessDashboard value) successDashboard,
     required TResult Function(ErorrDashboard value) erorrDashboard,
-    required TResult Function(Loadingimage value) loadingvimage,
-    required TResult Function(Successimage value) successimage,
-    required TResult Function(Erorrimage value) erorrvimage,
     required TResult Function(Galer value) galer,
     required TResult Function(Galer2 value) galer2,
     required TResult Function(Galer3 value) galer3,
@@ -6349,9 +4065,6 @@ class _$remofgalerImpl implements remofgaler {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingview value)? loadingview,
-    TResult? Function(Successview value)? successview,
-    TResult? Function(Erorrview value)? erorrview,
     TResult? Function(LoadingAdd value)? loadingAdd,
     TResult? Function(SuccessAdd value)? successAdd,
     TResult? Function(ErorrAdd value)? erorrAdd,
@@ -6364,9 +4077,6 @@ class _$remofgalerImpl implements remofgaler {
     TResult? Function(LoadingDashboard value)? loadingDashboard,
     TResult? Function(SuccessDashboard value)? successDashboard,
     TResult? Function(ErorrDashboard value)? erorrDashboard,
-    TResult? Function(Loadingimage value)? loadingvimage,
-    TResult? Function(Successimage value)? successimage,
-    TResult? Function(Erorrimage value)? erorrvimage,
     TResult? Function(Galer value)? galer,
     TResult? Function(Galer2 value)? galer2,
     TResult? Function(Galer3 value)? galer3,
@@ -6384,9 +4094,6 @@ class _$remofgalerImpl implements remofgaler {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingview value)? loadingview,
-    TResult Function(Successview value)? successview,
-    TResult Function(Erorrview value)? erorrview,
     TResult Function(LoadingAdd value)? loadingAdd,
     TResult Function(SuccessAdd value)? successAdd,
     TResult Function(ErorrAdd value)? erorrAdd,
@@ -6399,9 +4106,6 @@ class _$remofgalerImpl implements remofgaler {
     TResult Function(LoadingDashboard value)? loadingDashboard,
     TResult Function(SuccessDashboard value)? successDashboard,
     TResult Function(ErorrDashboard value)? erorrDashboard,
-    TResult Function(Loadingimage value)? loadingvimage,
-    TResult Function(Successimage value)? successimage,
-    TResult Function(Erorrimage value)? erorrvimage,
     TResult Function(Galer value)? galer,
     TResult Function(Galer2 value)? galer2,
     TResult Function(Galer3 value)? galer3,
@@ -6463,9 +4167,6 @@ class _$removegaler2Impl implements removegaler2 {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingview,
-    required TResult Function(List<ItemsData> response) successview,
-    required TResult Function(String erorr) erorrview,
     required TResult Function() loadingAdd,
     required TResult Function() successAdd,
     required TResult Function(String erorr) erorrAdd,
@@ -6476,11 +4177,8 @@ class _$removegaler2Impl implements removegaler2 {
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
     required TResult Function() loadingDashboard,
-    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(ResponseDashpoard responses) successDashboard,
     required TResult Function(String erorr) erorrDashboard,
-    required TResult Function() loadingvimage,
-    required TResult Function() successimage,
-    required TResult Function(String erorr) erorrvimage,
     required TResult Function() galer,
     required TResult Function() galer2,
     required TResult Function() galer3,
@@ -6498,9 +4196,6 @@ class _$removegaler2Impl implements removegaler2 {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingview,
-    TResult? Function(List<ItemsData> response)? successview,
-    TResult? Function(String erorr)? erorrview,
     TResult? Function()? loadingAdd,
     TResult? Function()? successAdd,
     TResult? Function(String erorr)? erorrAdd,
@@ -6511,11 +4206,8 @@ class _$removegaler2Impl implements removegaler2 {
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
     TResult? Function()? loadingDashboard,
-    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(ResponseDashpoard responses)? successDashboard,
     TResult? Function(String erorr)? erorrDashboard,
-    TResult? Function()? loadingvimage,
-    TResult? Function()? successimage,
-    TResult? Function(String erorr)? erorrvimage,
     TResult? Function()? galer,
     TResult? Function()? galer2,
     TResult? Function()? galer3,
@@ -6533,9 +4225,6 @@ class _$removegaler2Impl implements removegaler2 {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingview,
-    TResult Function(List<ItemsData> response)? successview,
-    TResult Function(String erorr)? erorrview,
     TResult Function()? loadingAdd,
     TResult Function()? successAdd,
     TResult Function(String erorr)? erorrAdd,
@@ -6546,11 +4235,8 @@ class _$removegaler2Impl implements removegaler2 {
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
     TResult Function()? loadingDashboard,
-    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(ResponseDashpoard responses)? successDashboard,
     TResult Function(String erorr)? erorrDashboard,
-    TResult Function()? loadingvimage,
-    TResult Function()? successimage,
-    TResult Function(String erorr)? erorrvimage,
     TResult Function()? galer,
     TResult Function()? galer2,
     TResult Function()? galer3,
@@ -6572,9 +4258,6 @@ class _$removegaler2Impl implements removegaler2 {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingview value) loadingview,
-    required TResult Function(Successview value) successview,
-    required TResult Function(Erorrview value) erorrview,
     required TResult Function(LoadingAdd value) loadingAdd,
     required TResult Function(SuccessAdd value) successAdd,
     required TResult Function(ErorrAdd value) erorrAdd,
@@ -6587,9 +4270,6 @@ class _$removegaler2Impl implements removegaler2 {
     required TResult Function(LoadingDashboard value) loadingDashboard,
     required TResult Function(SuccessDashboard value) successDashboard,
     required TResult Function(ErorrDashboard value) erorrDashboard,
-    required TResult Function(Loadingimage value) loadingvimage,
-    required TResult Function(Successimage value) successimage,
-    required TResult Function(Erorrimage value) erorrvimage,
     required TResult Function(Galer value) galer,
     required TResult Function(Galer2 value) galer2,
     required TResult Function(Galer3 value) galer3,
@@ -6607,9 +4287,6 @@ class _$removegaler2Impl implements removegaler2 {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingview value)? loadingview,
-    TResult? Function(Successview value)? successview,
-    TResult? Function(Erorrview value)? erorrview,
     TResult? Function(LoadingAdd value)? loadingAdd,
     TResult? Function(SuccessAdd value)? successAdd,
     TResult? Function(ErorrAdd value)? erorrAdd,
@@ -6622,9 +4299,6 @@ class _$removegaler2Impl implements removegaler2 {
     TResult? Function(LoadingDashboard value)? loadingDashboard,
     TResult? Function(SuccessDashboard value)? successDashboard,
     TResult? Function(ErorrDashboard value)? erorrDashboard,
-    TResult? Function(Loadingimage value)? loadingvimage,
-    TResult? Function(Successimage value)? successimage,
-    TResult? Function(Erorrimage value)? erorrvimage,
     TResult? Function(Galer value)? galer,
     TResult? Function(Galer2 value)? galer2,
     TResult? Function(Galer3 value)? galer3,
@@ -6642,9 +4316,6 @@ class _$removegaler2Impl implements removegaler2 {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingview value)? loadingview,
-    TResult Function(Successview value)? successview,
-    TResult Function(Erorrview value)? erorrview,
     TResult Function(LoadingAdd value)? loadingAdd,
     TResult Function(SuccessAdd value)? successAdd,
     TResult Function(ErorrAdd value)? erorrAdd,
@@ -6657,9 +4328,6 @@ class _$removegaler2Impl implements removegaler2 {
     TResult Function(LoadingDashboard value)? loadingDashboard,
     TResult Function(SuccessDashboard value)? successDashboard,
     TResult Function(ErorrDashboard value)? erorrDashboard,
-    TResult Function(Loadingimage value)? loadingvimage,
-    TResult Function(Successimage value)? successimage,
-    TResult Function(Erorrimage value)? erorrvimage,
     TResult Function(Galer value)? galer,
     TResult Function(Galer2 value)? galer2,
     TResult Function(Galer3 value)? galer3,
@@ -6721,9 +4389,6 @@ class _$removegaler3Impl implements removegaler3 {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingview,
-    required TResult Function(List<ItemsData> response) successview,
-    required TResult Function(String erorr) erorrview,
     required TResult Function() loadingAdd,
     required TResult Function() successAdd,
     required TResult Function(String erorr) erorrAdd,
@@ -6734,11 +4399,8 @@ class _$removegaler3Impl implements removegaler3 {
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
     required TResult Function() loadingDashboard,
-    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(ResponseDashpoard responses) successDashboard,
     required TResult Function(String erorr) erorrDashboard,
-    required TResult Function() loadingvimage,
-    required TResult Function() successimage,
-    required TResult Function(String erorr) erorrvimage,
     required TResult Function() galer,
     required TResult Function() galer2,
     required TResult Function() galer3,
@@ -6756,9 +4418,6 @@ class _$removegaler3Impl implements removegaler3 {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingview,
-    TResult? Function(List<ItemsData> response)? successview,
-    TResult? Function(String erorr)? erorrview,
     TResult? Function()? loadingAdd,
     TResult? Function()? successAdd,
     TResult? Function(String erorr)? erorrAdd,
@@ -6769,11 +4428,8 @@ class _$removegaler3Impl implements removegaler3 {
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
     TResult? Function()? loadingDashboard,
-    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(ResponseDashpoard responses)? successDashboard,
     TResult? Function(String erorr)? erorrDashboard,
-    TResult? Function()? loadingvimage,
-    TResult? Function()? successimage,
-    TResult? Function(String erorr)? erorrvimage,
     TResult? Function()? galer,
     TResult? Function()? galer2,
     TResult? Function()? galer3,
@@ -6791,9 +4447,6 @@ class _$removegaler3Impl implements removegaler3 {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingview,
-    TResult Function(List<ItemsData> response)? successview,
-    TResult Function(String erorr)? erorrview,
     TResult Function()? loadingAdd,
     TResult Function()? successAdd,
     TResult Function(String erorr)? erorrAdd,
@@ -6804,11 +4457,8 @@ class _$removegaler3Impl implements removegaler3 {
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
     TResult Function()? loadingDashboard,
-    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(ResponseDashpoard responses)? successDashboard,
     TResult Function(String erorr)? erorrDashboard,
-    TResult Function()? loadingvimage,
-    TResult Function()? successimage,
-    TResult Function(String erorr)? erorrvimage,
     TResult Function()? galer,
     TResult Function()? galer2,
     TResult Function()? galer3,
@@ -6830,9 +4480,6 @@ class _$removegaler3Impl implements removegaler3 {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingview value) loadingview,
-    required TResult Function(Successview value) successview,
-    required TResult Function(Erorrview value) erorrview,
     required TResult Function(LoadingAdd value) loadingAdd,
     required TResult Function(SuccessAdd value) successAdd,
     required TResult Function(ErorrAdd value) erorrAdd,
@@ -6845,9 +4492,6 @@ class _$removegaler3Impl implements removegaler3 {
     required TResult Function(LoadingDashboard value) loadingDashboard,
     required TResult Function(SuccessDashboard value) successDashboard,
     required TResult Function(ErorrDashboard value) erorrDashboard,
-    required TResult Function(Loadingimage value) loadingvimage,
-    required TResult Function(Successimage value) successimage,
-    required TResult Function(Erorrimage value) erorrvimage,
     required TResult Function(Galer value) galer,
     required TResult Function(Galer2 value) galer2,
     required TResult Function(Galer3 value) galer3,
@@ -6865,9 +4509,6 @@ class _$removegaler3Impl implements removegaler3 {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingview value)? loadingview,
-    TResult? Function(Successview value)? successview,
-    TResult? Function(Erorrview value)? erorrview,
     TResult? Function(LoadingAdd value)? loadingAdd,
     TResult? Function(SuccessAdd value)? successAdd,
     TResult? Function(ErorrAdd value)? erorrAdd,
@@ -6880,9 +4521,6 @@ class _$removegaler3Impl implements removegaler3 {
     TResult? Function(LoadingDashboard value)? loadingDashboard,
     TResult? Function(SuccessDashboard value)? successDashboard,
     TResult? Function(ErorrDashboard value)? erorrDashboard,
-    TResult? Function(Loadingimage value)? loadingvimage,
-    TResult? Function(Successimage value)? successimage,
-    TResult? Function(Erorrimage value)? erorrvimage,
     TResult? Function(Galer value)? galer,
     TResult? Function(Galer2 value)? galer2,
     TResult? Function(Galer3 value)? galer3,
@@ -6900,9 +4538,6 @@ class _$removegaler3Impl implements removegaler3 {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingview value)? loadingview,
-    TResult Function(Successview value)? successview,
-    TResult Function(Erorrview value)? erorrview,
     TResult Function(LoadingAdd value)? loadingAdd,
     TResult Function(SuccessAdd value)? successAdd,
     TResult Function(ErorrAdd value)? erorrAdd,
@@ -6915,9 +4550,6 @@ class _$removegaler3Impl implements removegaler3 {
     TResult Function(LoadingDashboard value)? loadingDashboard,
     TResult Function(SuccessDashboard value)? successDashboard,
     TResult Function(ErorrDashboard value)? erorrDashboard,
-    TResult Function(Loadingimage value)? loadingvimage,
-    TResult Function(Successimage value)? successimage,
-    TResult Function(Erorrimage value)? erorrvimage,
     TResult Function(Galer value)? galer,
     TResult Function(Galer2 value)? galer2,
     TResult Function(Galer3 value)? galer3,
@@ -6979,9 +4611,6 @@ class _$PushEditImpl implements PushEdit {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingview,
-    required TResult Function(List<ItemsData> response) successview,
-    required TResult Function(String erorr) erorrview,
     required TResult Function() loadingAdd,
     required TResult Function() successAdd,
     required TResult Function(String erorr) erorrAdd,
@@ -6992,11 +4621,8 @@ class _$PushEditImpl implements PushEdit {
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
     required TResult Function() loadingDashboard,
-    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(ResponseDashpoard responses) successDashboard,
     required TResult Function(String erorr) erorrDashboard,
-    required TResult Function() loadingvimage,
-    required TResult Function() successimage,
-    required TResult Function(String erorr) erorrvimage,
     required TResult Function() galer,
     required TResult Function() galer2,
     required TResult Function() galer3,
@@ -7014,9 +4640,6 @@ class _$PushEditImpl implements PushEdit {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingview,
-    TResult? Function(List<ItemsData> response)? successview,
-    TResult? Function(String erorr)? erorrview,
     TResult? Function()? loadingAdd,
     TResult? Function()? successAdd,
     TResult? Function(String erorr)? erorrAdd,
@@ -7027,11 +4650,8 @@ class _$PushEditImpl implements PushEdit {
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
     TResult? Function()? loadingDashboard,
-    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(ResponseDashpoard responses)? successDashboard,
     TResult? Function(String erorr)? erorrDashboard,
-    TResult? Function()? loadingvimage,
-    TResult? Function()? successimage,
-    TResult? Function(String erorr)? erorrvimage,
     TResult? Function()? galer,
     TResult? Function()? galer2,
     TResult? Function()? galer3,
@@ -7049,9 +4669,6 @@ class _$PushEditImpl implements PushEdit {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingview,
-    TResult Function(List<ItemsData> response)? successview,
-    TResult Function(String erorr)? erorrview,
     TResult Function()? loadingAdd,
     TResult Function()? successAdd,
     TResult Function(String erorr)? erorrAdd,
@@ -7062,11 +4679,8 @@ class _$PushEditImpl implements PushEdit {
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
     TResult Function()? loadingDashboard,
-    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(ResponseDashpoard responses)? successDashboard,
     TResult Function(String erorr)? erorrDashboard,
-    TResult Function()? loadingvimage,
-    TResult Function()? successimage,
-    TResult Function(String erorr)? erorrvimage,
     TResult Function()? galer,
     TResult Function()? galer2,
     TResult Function()? galer3,
@@ -7088,9 +4702,6 @@ class _$PushEditImpl implements PushEdit {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingview value) loadingview,
-    required TResult Function(Successview value) successview,
-    required TResult Function(Erorrview value) erorrview,
     required TResult Function(LoadingAdd value) loadingAdd,
     required TResult Function(SuccessAdd value) successAdd,
     required TResult Function(ErorrAdd value) erorrAdd,
@@ -7103,9 +4714,6 @@ class _$PushEditImpl implements PushEdit {
     required TResult Function(LoadingDashboard value) loadingDashboard,
     required TResult Function(SuccessDashboard value) successDashboard,
     required TResult Function(ErorrDashboard value) erorrDashboard,
-    required TResult Function(Loadingimage value) loadingvimage,
-    required TResult Function(Successimage value) successimage,
-    required TResult Function(Erorrimage value) erorrvimage,
     required TResult Function(Galer value) galer,
     required TResult Function(Galer2 value) galer2,
     required TResult Function(Galer3 value) galer3,
@@ -7123,9 +4731,6 @@ class _$PushEditImpl implements PushEdit {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingview value)? loadingview,
-    TResult? Function(Successview value)? successview,
-    TResult? Function(Erorrview value)? erorrview,
     TResult? Function(LoadingAdd value)? loadingAdd,
     TResult? Function(SuccessAdd value)? successAdd,
     TResult? Function(ErorrAdd value)? erorrAdd,
@@ -7138,9 +4743,6 @@ class _$PushEditImpl implements PushEdit {
     TResult? Function(LoadingDashboard value)? loadingDashboard,
     TResult? Function(SuccessDashboard value)? successDashboard,
     TResult? Function(ErorrDashboard value)? erorrDashboard,
-    TResult? Function(Loadingimage value)? loadingvimage,
-    TResult? Function(Successimage value)? successimage,
-    TResult? Function(Erorrimage value)? erorrvimage,
     TResult? Function(Galer value)? galer,
     TResult? Function(Galer2 value)? galer2,
     TResult? Function(Galer3 value)? galer3,
@@ -7158,9 +4760,6 @@ class _$PushEditImpl implements PushEdit {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingview value)? loadingview,
-    TResult Function(Successview value)? successview,
-    TResult Function(Erorrview value)? erorrview,
     TResult Function(LoadingAdd value)? loadingAdd,
     TResult Function(SuccessAdd value)? successAdd,
     TResult Function(ErorrAdd value)? erorrAdd,
@@ -7173,9 +4772,6 @@ class _$PushEditImpl implements PushEdit {
     TResult Function(LoadingDashboard value)? loadingDashboard,
     TResult Function(SuccessDashboard value)? successDashboard,
     TResult Function(ErorrDashboard value)? erorrDashboard,
-    TResult Function(Loadingimage value)? loadingvimage,
-    TResult Function(Successimage value)? successimage,
-    TResult Function(Erorrimage value)? erorrvimage,
     TResult Function(Galer value)? galer,
     TResult Function(Galer2 value)? galer2,
     TResult Function(Galer3 value)? galer3,
@@ -7237,9 +4833,6 @@ class _$ApproveiItemsImpl implements ApproveiItems {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingview,
-    required TResult Function(List<ItemsData> response) successview,
-    required TResult Function(String erorr) erorrview,
     required TResult Function() loadingAdd,
     required TResult Function() successAdd,
     required TResult Function(String erorr) erorrAdd,
@@ -7250,11 +4843,8 @@ class _$ApproveiItemsImpl implements ApproveiItems {
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
     required TResult Function() loadingDashboard,
-    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(ResponseDashpoard responses) successDashboard,
     required TResult Function(String erorr) erorrDashboard,
-    required TResult Function() loadingvimage,
-    required TResult Function() successimage,
-    required TResult Function(String erorr) erorrvimage,
     required TResult Function() galer,
     required TResult Function() galer2,
     required TResult Function() galer3,
@@ -7272,9 +4862,6 @@ class _$ApproveiItemsImpl implements ApproveiItems {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingview,
-    TResult? Function(List<ItemsData> response)? successview,
-    TResult? Function(String erorr)? erorrview,
     TResult? Function()? loadingAdd,
     TResult? Function()? successAdd,
     TResult? Function(String erorr)? erorrAdd,
@@ -7285,11 +4872,8 @@ class _$ApproveiItemsImpl implements ApproveiItems {
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
     TResult? Function()? loadingDashboard,
-    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(ResponseDashpoard responses)? successDashboard,
     TResult? Function(String erorr)? erorrDashboard,
-    TResult? Function()? loadingvimage,
-    TResult? Function()? successimage,
-    TResult? Function(String erorr)? erorrvimage,
     TResult? Function()? galer,
     TResult? Function()? galer2,
     TResult? Function()? galer3,
@@ -7307,9 +4891,6 @@ class _$ApproveiItemsImpl implements ApproveiItems {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingview,
-    TResult Function(List<ItemsData> response)? successview,
-    TResult Function(String erorr)? erorrview,
     TResult Function()? loadingAdd,
     TResult Function()? successAdd,
     TResult Function(String erorr)? erorrAdd,
@@ -7320,11 +4901,8 @@ class _$ApproveiItemsImpl implements ApproveiItems {
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
     TResult Function()? loadingDashboard,
-    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(ResponseDashpoard responses)? successDashboard,
     TResult Function(String erorr)? erorrDashboard,
-    TResult Function()? loadingvimage,
-    TResult Function()? successimage,
-    TResult Function(String erorr)? erorrvimage,
     TResult Function()? galer,
     TResult Function()? galer2,
     TResult Function()? galer3,
@@ -7346,9 +4924,6 @@ class _$ApproveiItemsImpl implements ApproveiItems {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingview value) loadingview,
-    required TResult Function(Successview value) successview,
-    required TResult Function(Erorrview value) erorrview,
     required TResult Function(LoadingAdd value) loadingAdd,
     required TResult Function(SuccessAdd value) successAdd,
     required TResult Function(ErorrAdd value) erorrAdd,
@@ -7361,9 +4936,6 @@ class _$ApproveiItemsImpl implements ApproveiItems {
     required TResult Function(LoadingDashboard value) loadingDashboard,
     required TResult Function(SuccessDashboard value) successDashboard,
     required TResult Function(ErorrDashboard value) erorrDashboard,
-    required TResult Function(Loadingimage value) loadingvimage,
-    required TResult Function(Successimage value) successimage,
-    required TResult Function(Erorrimage value) erorrvimage,
     required TResult Function(Galer value) galer,
     required TResult Function(Galer2 value) galer2,
     required TResult Function(Galer3 value) galer3,
@@ -7381,9 +4953,6 @@ class _$ApproveiItemsImpl implements ApproveiItems {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingview value)? loadingview,
-    TResult? Function(Successview value)? successview,
-    TResult? Function(Erorrview value)? erorrview,
     TResult? Function(LoadingAdd value)? loadingAdd,
     TResult? Function(SuccessAdd value)? successAdd,
     TResult? Function(ErorrAdd value)? erorrAdd,
@@ -7396,9 +4965,6 @@ class _$ApproveiItemsImpl implements ApproveiItems {
     TResult? Function(LoadingDashboard value)? loadingDashboard,
     TResult? Function(SuccessDashboard value)? successDashboard,
     TResult? Function(ErorrDashboard value)? erorrDashboard,
-    TResult? Function(Loadingimage value)? loadingvimage,
-    TResult? Function(Successimage value)? successimage,
-    TResult? Function(Erorrimage value)? erorrvimage,
     TResult? Function(Galer value)? galer,
     TResult? Function(Galer2 value)? galer2,
     TResult? Function(Galer3 value)? galer3,
@@ -7416,9 +4982,6 @@ class _$ApproveiItemsImpl implements ApproveiItems {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingview value)? loadingview,
-    TResult Function(Successview value)? successview,
-    TResult Function(Erorrview value)? erorrview,
     TResult Function(LoadingAdd value)? loadingAdd,
     TResult Function(SuccessAdd value)? successAdd,
     TResult Function(ErorrAdd value)? erorrAdd,
@@ -7431,9 +4994,6 @@ class _$ApproveiItemsImpl implements ApproveiItems {
     TResult Function(LoadingDashboard value)? loadingDashboard,
     TResult Function(SuccessDashboard value)? successDashboard,
     TResult Function(ErorrDashboard value)? erorrDashboard,
-    TResult Function(Loadingimage value)? loadingvimage,
-    TResult Function(Successimage value)? successimage,
-    TResult Function(Erorrimage value)? erorrvimage,
     TResult Function(Galer value)? galer,
     TResult Function(Galer2 value)? galer2,
     TResult Function(Galer3 value)? galer3,
@@ -7495,9 +5055,6 @@ class _$RemoveControllImpl implements RemoveControll {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingview,
-    required TResult Function(List<ItemsData> response) successview,
-    required TResult Function(String erorr) erorrview,
     required TResult Function() loadingAdd,
     required TResult Function() successAdd,
     required TResult Function(String erorr) erorrAdd,
@@ -7508,11 +5065,8 @@ class _$RemoveControllImpl implements RemoveControll {
     required TResult Function() successdelete,
     required TResult Function(String erorr) erorrdelete,
     required TResult Function() loadingDashboard,
-    required TResult Function(ResponseDashboard responses) successDashboard,
+    required TResult Function(ResponseDashpoard responses) successDashboard,
     required TResult Function(String erorr) erorrDashboard,
-    required TResult Function() loadingvimage,
-    required TResult Function() successimage,
-    required TResult Function(String erorr) erorrvimage,
     required TResult Function() galer,
     required TResult Function() galer2,
     required TResult Function() galer3,
@@ -7530,9 +5084,6 @@ class _$RemoveControllImpl implements RemoveControll {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingview,
-    TResult? Function(List<ItemsData> response)? successview,
-    TResult? Function(String erorr)? erorrview,
     TResult? Function()? loadingAdd,
     TResult? Function()? successAdd,
     TResult? Function(String erorr)? erorrAdd,
@@ -7543,11 +5094,8 @@ class _$RemoveControllImpl implements RemoveControll {
     TResult? Function()? successdelete,
     TResult? Function(String erorr)? erorrdelete,
     TResult? Function()? loadingDashboard,
-    TResult? Function(ResponseDashboard responses)? successDashboard,
+    TResult? Function(ResponseDashpoard responses)? successDashboard,
     TResult? Function(String erorr)? erorrDashboard,
-    TResult? Function()? loadingvimage,
-    TResult? Function()? successimage,
-    TResult? Function(String erorr)? erorrvimage,
     TResult? Function()? galer,
     TResult? Function()? galer2,
     TResult? Function()? galer3,
@@ -7565,9 +5113,6 @@ class _$RemoveControllImpl implements RemoveControll {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingview,
-    TResult Function(List<ItemsData> response)? successview,
-    TResult Function(String erorr)? erorrview,
     TResult Function()? loadingAdd,
     TResult Function()? successAdd,
     TResult Function(String erorr)? erorrAdd,
@@ -7578,11 +5123,8 @@ class _$RemoveControllImpl implements RemoveControll {
     TResult Function()? successdelete,
     TResult Function(String erorr)? erorrdelete,
     TResult Function()? loadingDashboard,
-    TResult Function(ResponseDashboard responses)? successDashboard,
+    TResult Function(ResponseDashpoard responses)? successDashboard,
     TResult Function(String erorr)? erorrDashboard,
-    TResult Function()? loadingvimage,
-    TResult Function()? successimage,
-    TResult Function(String erorr)? erorrvimage,
     TResult Function()? galer,
     TResult Function()? galer2,
     TResult Function()? galer3,
@@ -7604,9 +5146,6 @@ class _$RemoveControllImpl implements RemoveControll {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingview value) loadingview,
-    required TResult Function(Successview value) successview,
-    required TResult Function(Erorrview value) erorrview,
     required TResult Function(LoadingAdd value) loadingAdd,
     required TResult Function(SuccessAdd value) successAdd,
     required TResult Function(ErorrAdd value) erorrAdd,
@@ -7619,9 +5158,6 @@ class _$RemoveControllImpl implements RemoveControll {
     required TResult Function(LoadingDashboard value) loadingDashboard,
     required TResult Function(SuccessDashboard value) successDashboard,
     required TResult Function(ErorrDashboard value) erorrDashboard,
-    required TResult Function(Loadingimage value) loadingvimage,
-    required TResult Function(Successimage value) successimage,
-    required TResult Function(Erorrimage value) erorrvimage,
     required TResult Function(Galer value) galer,
     required TResult Function(Galer2 value) galer2,
     required TResult Function(Galer3 value) galer3,
@@ -7639,9 +5175,6 @@ class _$RemoveControllImpl implements RemoveControll {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingview value)? loadingview,
-    TResult? Function(Successview value)? successview,
-    TResult? Function(Erorrview value)? erorrview,
     TResult? Function(LoadingAdd value)? loadingAdd,
     TResult? Function(SuccessAdd value)? successAdd,
     TResult? Function(ErorrAdd value)? erorrAdd,
@@ -7654,9 +5187,6 @@ class _$RemoveControllImpl implements RemoveControll {
     TResult? Function(LoadingDashboard value)? loadingDashboard,
     TResult? Function(SuccessDashboard value)? successDashboard,
     TResult? Function(ErorrDashboard value)? erorrDashboard,
-    TResult? Function(Loadingimage value)? loadingvimage,
-    TResult? Function(Successimage value)? successimage,
-    TResult? Function(Erorrimage value)? erorrvimage,
     TResult? Function(Galer value)? galer,
     TResult? Function(Galer2 value)? galer2,
     TResult? Function(Galer3 value)? galer3,
@@ -7674,9 +5204,6 @@ class _$RemoveControllImpl implements RemoveControll {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingview value)? loadingview,
-    TResult Function(Successview value)? successview,
-    TResult Function(Erorrview value)? erorrview,
     TResult Function(LoadingAdd value)? loadingAdd,
     TResult Function(SuccessAdd value)? successAdd,
     TResult Function(ErorrAdd value)? erorrAdd,
@@ -7689,9 +5216,6 @@ class _$RemoveControllImpl implements RemoveControll {
     TResult Function(LoadingDashboard value)? loadingDashboard,
     TResult Function(SuccessDashboard value)? successDashboard,
     TResult Function(ErorrDashboard value)? erorrDashboard,
-    TResult Function(Loadingimage value)? loadingvimage,
-    TResult Function(Successimage value)? successimage,
-    TResult Function(Erorrimage value)? erorrvimage,
     TResult Function(Galer value)? galer,
     TResult Function(Galer2 value)? galer2,
     TResult Function(Galer3 value)? galer3,

@@ -1,0 +1,22 @@
+{
+    "sourceFile": "lib/core/function/function_api/ssend_list_api.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1723829132240,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1723884199600,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,8 @@\n import 'package:untitled/core/extensions/extention_navigator.dart';\r\n \r\n import '../../../models/response_dashpoard/size.dart';\r\n \r\n-\r\n sendListApi(String input) {\r\n   return input.replaceAll('[', '').replaceAll(']', '');\r\n }\r\n \r\n"
+                }
+            ],
+            "date": 1723829132240,
+            "name": "Commit-0",
+            "content": "import 'package:untitled/core/extensions/extention_navigator.dart';\r\n\r\nimport '../../../models/response_dashpoard/size.dart';\r\n\r\n\r\nsendListApi(String input) {\r\n  return input.replaceAll('[', '').replaceAll(']', '');\r\n}\r\n\r\nList<String> replacListIsEnpty(List<String> data) {\r\n  List<String> datas = ['l', 'm'];\r\n  if (data.isNullOrEmpty()) {\r\n    return datas;\r\n  } else {\r\n    datas.clear();\r\n    return datas = data.where((image) => image.isNotEmpty).toList();\r\n  }\r\n}\r\n\r\nreplacMapsColorIsEnpty(List<Size> data) {\r\n  List<Size> datas = [];\r\n  if (data.isNullOrEmpty()) {\r\n    return datas;\r\n  } else {\r\n    return datas = data.where((item) => item.color!.isNotEmpty).toList();\r\n  }\r\n}\r\n\r\nreplacMapsSizeIsEnpty(List<Size> data) {\r\n  if (data.isNullOrEmpty()) {\r\n    return [];\r\n  } else {\r\n    return data.where((item) => item.size!.isNotEmpty).toList();\r\n  }\r\n}\r\n"
+        }
+    ]
+}

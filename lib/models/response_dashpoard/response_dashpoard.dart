@@ -5,29 +5,34 @@ import 'category.dart';
 import 'datum.dart';
 import 'order.dart';
 
-part 'response_dashboard.g.dart';
+part 'response_dashpoard.g.dart';
 
 @JsonSerializable()
-class ResponseDashboard {
-  String? status;
-  List<ItemsData>? data;
+class ResponseDashpoard {
+  final String? status;
+  final List<Datum>? data;
   @JsonKey(name: 'Categories')
-  List<Category>? categories;
+  final List<Category>? categories;
   @JsonKey(name: 'Orders')
-  List<Order>? orders;
+  final List<Order>? orders;
 
-  ResponseDashboard({this.status, this.data, this.categories, this.orders});
+  const ResponseDashpoard({
+    this.status,
+    this.data,
+    this.categories,
+    this.orders,
+  });
 
-  factory ResponseDashboard.fromJson(Map<String, dynamic> json) {
-    return _$ResponseDashboardFromJson(json);
+  factory ResponseDashpoard.fromJson(Map<String, dynamic> json) {
+    return _$ResponseDashpoardFromJson(json);
   }
 
-  Map<String, dynamic> toJson() => _$ResponseDashboardToJson(this);
+  Map<String, dynamic> toJson() => _$ResponseDashpoardToJson(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    if (other is! ResponseDashboard) return false;
+    if (other is! ResponseDashpoard) return false;
     final mapEquals = const DeepCollectionEquality().equals;
     return mapEquals(other.toJson(), toJson());
   }

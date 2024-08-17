@@ -1,16 +1,16 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'response_dashboard.dart';
+part of 'response_dashpoard.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-ResponseDashboard _$ResponseDashboardFromJson(Map<String, dynamic> json) =>
-    ResponseDashboard(
+ResponseDashpoard _$ResponseDashpoardFromJson(Map<String, dynamic> json) =>
+    ResponseDashpoard(
       status: json['status'] as String?,
       data: (json['data'] as List<dynamic>?)
-          ?.map((e) => ItemsData.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => Datum.fromJson(e as Map<String, dynamic>))
           .toList(),
       categories: (json['Categories'] as List<dynamic>?)
           ?.map((e) => Category.fromJson(e as Map<String, dynamic>))
@@ -20,7 +20,7 @@ ResponseDashboard _$ResponseDashboardFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$ResponseDashboardToJson(ResponseDashboard instance) =>
+Map<String, dynamic> _$ResponseDashpoardToJson(ResponseDashpoard instance) =>
     <String, dynamic>{
       'status': instance.status,
       'data': instance.data,

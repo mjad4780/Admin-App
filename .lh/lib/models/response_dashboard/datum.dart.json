@@ -1,0 +1,18 @@
+{
+    "sourceFile": "lib/models/response_dashboard/datum.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1723828408416,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1723828408416,
+            "name": "Commit-0",
+            "content": "import 'package:json_annotation/json_annotation.dart';\n\nimport 'size.dart';\n\npart 'datum.g.dart';\n\n@JsonSerializable()\nclass ItemsData {\n  @JsonKey(name: 'item_id')\n  int? itemId;\n  @JsonKey(name: 'item_name')\n  String? itemName;\n  @JsonKey(name: 'item_name_ar')\n  String? itemNameAr;\n  @JsonKey(name: 'item_decs')\n  String? itemDecs;\n  @JsonKey(name: 'item_decs_ar')\n  String? itemDecsAr;\n  @JsonKey(name: 'item_image')\n  String? itemImage;\n  @JsonKey(name: 'item_count')\n  int? itemCount;\n  @JsonKey(name: 'item_active')\n  int? itemActive;\n  @JsonKey(name: 'item_price')\n  int? itemPrice;\n  @JsonKey(name: 'item_discount')\n  int? itemDiscount;\n  @JsonKey(name: 'item_data')\n  String? itemData;\n  @JsonKey(name: 'item_categories')\n  int? itemCategories;\n  @JsonKey(name: 'categories_id')\n  int? categoriesId;\n  @JsonKey(name: 'categories_name')\n  String? categoriesName;\n  List<String>? images;\n  List<Size>? size;\n\n  ItemsData({\n    this.itemId,\n    this.itemName,\n    this.itemNameAr,\n    this.itemDecs,\n    this.itemDecsAr,\n    this.itemImage,\n    this.itemCount,\n    this.itemActive,\n    this.itemPrice,\n    this.itemDiscount,\n    this.itemData,\n    this.itemCategories,\n    this.categoriesId,\n    this.categoriesName,\n    this.images,\n    this.size,\n  });\n\n  factory ItemsData.fromJson(Map<String, dynamic> json) =>\n      _$ItemsDataFromJson(json);\n\n  Map<String, dynamic> toJson() => _$ItemsDataToJson(this);\n\n  \n}\n"
+        }
+    ]
+}

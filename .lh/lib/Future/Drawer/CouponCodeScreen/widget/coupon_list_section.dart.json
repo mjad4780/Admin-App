@@ -1,0 +1,18 @@
+{
+    "sourceFile": "lib/Future/Drawer/CouponCodeScreen/widget/coupon_list_section.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1723884918741,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1723884918741,
+            "name": "Commit-0",
+            "content": "import '../../../../models/response_coupon/datum.dart';\nimport 'couponDataRow.dart';\nimport '../../../../utility/constants.dart';\nimport 'package:flutter/material.dart';\n\nclass CouponListSection extends StatelessWidget {\n  const CouponListSection({\n    super.key,\n    required this.coupon,\n  });\n  final List<Datum> coupon;\n  @override\n  Widget build(BuildContext context) {\n    return Container(\n      padding: const EdgeInsets.all(defaultPadding),\n      decoration: const BoxDecoration(\n        color: secondaryColor,\n        borderRadius: BorderRadius.all(Radius.circular(10)),\n      ),\n      child: Column(\n        crossAxisAlignment: CrossAxisAlignment.start,\n        children: [\n          Text(\n            \"All Coupons\",\n            style: Theme.of(context).textTheme.titleMedium,\n          ),\n          SizedBox(\n              width: double.infinity,\n              child: DataTable(\n                columnSpacing: defaultPadding,\n                // minWidth: 600,\n                columns: const [\n                  DataColumn(\n                    label: Text(\"Coupon Name\"),\n                  ), DataColumn(\n                    label: Text(\"discount\"),\n                  ),\n                  DataColumn(\n                    label: Text(\"MaxUser\"),\n                  ),\n                  DataColumn(\n                    label: Text(\"StartDate\"),\n                  ),\n                  DataColumn(\n                    label: Text(\"EndDate\"),\n                  ),\n\n                ],\n                rows: List.generate(\n                  coupon.length,\n                  (index) => couponDataRow(\n                    coupon[index],\n                    index + 1,\n                    edit: () {\n                      // showAddForm(\n                      //     context,\n                      //     'Edit coupon',\n                      //     CouponSubmitForm(\n                      //       coupon: coupon[index],\n                      //     ));\n                    },\n                    delete: () {\n                      //TODO: should complete call deleteCoupon\n                    },\n                  ),\n                ),\n              )),\n        ],\n      ),\n    );\n  }\n}\n"
+        }
+    ]
+}

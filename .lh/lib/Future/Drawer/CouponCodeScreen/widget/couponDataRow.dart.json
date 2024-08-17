@@ -1,0 +1,18 @@
+{
+    "sourceFile": "lib/Future/Drawer/CouponCodeScreen/widget/couponDataRow.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1723884918742,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1723884918742,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\r\n\r\nimport '../../../../models/response_coupon/datum.dart';\r\nimport '../../../../utility/color_list.dart';\r\nimport '../../../../utility/constants.dart';\r\n\r\nDataRow couponDataRow(Datum coupon, int index,\r\n    {Function? edit, Function? delete}) {\r\n  return DataRow(\r\n    cells: [\r\n      DataCell(\r\n        Row(\r\n          children: [\r\n            Container(\r\n              height: 24,\r\n              width: 24,\r\n              decoration: BoxDecoration(\r\n                color: colors[index % colors.length],\r\n                shape: BoxShape.circle,\r\n              ),\r\n              child: Text(index.toString(), textAlign: TextAlign.center),\r\n            ),\r\n            Padding(\r\n              padding: const EdgeInsets.symmetric(horizontal: defaultPadding),\r\n              child: Text(coupon.couponName ?? ''),\r\n            ),\r\n          ],\r\n        ),\r\n      ),\r\n            DataCell(Text(coupon.couponDiscount.toString())),\r\n\r\n      DataCell(Text(coupon.coponMaxuser.toString())),\r\n      DataCell(Text(coupon.couponData ?? '')),\r\n      DataCell(Text(coupon.coponEndDate ?? '')),\r\n\r\n    ],\r\n  );\r\n}\r\n"
+        }
+    ]
+}

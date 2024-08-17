@@ -1,0 +1,18 @@
+{
+    "sourceFile": "lib/Future/Drawer/CouponCodeScreen/logic/cubit/coupon_cubit.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1723885309022,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1723885309022,
+            "name": "Commit-0",
+            "content": "import 'package:untitled/Future/Drawer/CouponCodeScreen/data/repo.dart';\nimport 'package:bloc/bloc.dart';\nimport 'package:flutter/material.dart';\n\nimport '../../../../../core/function/datetime.dart';\nimport 'coupon_state.dart';\n\nclass CouponCubit extends Cubit<CouponState> {\n  CouponCubit(this._couponRepo) : super(const CouponState.initial());\n\n  final CouponRepo _couponRepo;\n  AutovalidateMode autovalidateMode = AutovalidateMode.disabled;\n\n  final addCouponFormKey = GlobalKey<FormState>();\n  TextEditingController couponname = TextEditingController();\n  TextEditingController discount = TextEditingController();\n  TextEditingController startDate = TextEditingController();\n  TextEditingController endDateCtrl = TextEditingController();\n  TextEditingController maxuser = TextEditingController();\n  TextEditingController count = TextEditingController();\n\n  showstart(BuildContext context) async {\n    startDate.text = await showDateTimePicker(context);\n    emit(const CouponState.start());\n  }\n\n  showend(BuildContext context) async {\n    endDateCtrl.text = await showDateTimePicker(context);\n    emit(const CouponState.end());\n  }\n\n  ///:ViewCoupon\n  viewCoupon() async {\n    emit(const CouponState.loadingview());\n    final response = await _couponRepo.viewCoupon();\n    response.when(success: (data) {\n      emit(CouponState.successview(data.data ?? []));\n    }, failure: (error) {\n      emit(CouponState.erorrview(erorr: error.messege ?? ''));\n    });\n  }\n\n  ///:AddCoupon\n  addCoupon() async {\n    if (addCouponFormKey.currentState!.validate()) {\n      emit(const CouponState.loadingAdd());\n      final response = await _couponRepo.addCoupon(\n          couponname.text,\n          startDate.text,\n          endDateCtrl.text,\n          count.text,\n          discount.text,\n          maxuser.text);\n      response.when(success: (data) {\n        emit(const CouponState.successAdd());\n      }, failure: (error) {\n        emit(CouponState.erorrAdd(erorr: error.messege ?? ''));\n      });\n    }else{\n      \n    }\n  }\n}\n"
+        }
+    ]
+}

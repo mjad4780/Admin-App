@@ -3,7 +3,6 @@ import 'dart:convert';
 import 'package:retrofit/http.dart';
 import 'package:untitled/models/response_categories/response_categories.dart';
 import 'package:untitled/models/response_coupon/response_coupon.dart';
-import 'package:untitled/models/response_items/response_items.dart';
 import 'package:untitled/models/response_notifacation/response_notifacation.dart';
 import 'package:untitled/models/response_orders/response_orders.dart';
 import 'package:untitled/models/response_poster/response_poster.dart';
@@ -11,7 +10,7 @@ import 'package:dio/dio.dart';
 
 import 'package:retrofit/retrofit.dart';
 
-import '../../models/response_dashboard/response_dashboard.dart';
+import '../../models/response_dashpoard/response_dashpoard.dart';
 import '../../models/response_detilas/response_detilas.dart';
 import 'api_constants.dart';
 
@@ -54,9 +53,6 @@ abstract class ApiService {
   //delete
   @POST(ApiConstants.deleteItems)
   Future<dynamic> deleteItems(@Body() dynamic body);
-  //View
-  @GET(ApiConstants.getItems)
-  Future<ResponseItems> getItems();
 
   ///////////////COUPON/////////////
 
@@ -126,5 +122,5 @@ abstract class ApiService {
   ////////////////////dashboard////////
   //viewdone
   @GET(ApiConstants.viewdashboard)
-  Future<ResponseDashboard> viewdashboard();
+  Future<ResponseDashpoard> viewdashboard();
 }

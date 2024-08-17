@@ -9,6 +9,7 @@ class CouponCubit extends Cubit<CouponState> {
   CouponCubit(this._couponRepo) : super(const CouponState.initial());
 
   final CouponRepo _couponRepo;
+  AutovalidateMode autovalidateMode = AutovalidateMode.disabled;
 
   final addCouponFormKey = GlobalKey<FormState>();
   TextEditingController couponname = TextEditingController();
@@ -41,18 +42,20 @@ class CouponCubit extends Cubit<CouponState> {
 
   ///:AddCoupon
   addCoupon() async {
-    emit(const CouponState.loadingAdd());
-    final response = await _couponRepo.addCoupon(
-        couponname.text,
-        startDate.text,
-        endDateCtrl.text,
-        count.text,
-        discount.text,
-        maxuser.text);
-    response.when(success: (data) {
-      emit(const CouponState.successAdd());
-    }, failure: (error) {
-      emit(CouponState.erorrAdd(erorr: error.messege ?? ''));
-    });
+    if (addCouponFormKey.currentState!.validate()) {
+      emit(const CouponState.loadingAdd());
+      final response = await _couponRepo.addCoupon(
+          couponname.text,
+          startDate.text,
+          endDateCtrl.text,
+          count.text,
+          discount.text,
+          maxuser.text);
+      response.when(success: (data) {
+        emit(const CouponState.successAdd());
+      }, failure: (error) {
+        emit(CouponState.erorrAdd(erorr: error.messege ?? ''));
+      });
+    } else {}
   }
 }

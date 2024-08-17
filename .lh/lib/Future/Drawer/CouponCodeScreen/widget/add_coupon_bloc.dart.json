@@ -1,0 +1,26 @@
+{
+    "sourceFile": "lib/Future/Drawer/CouponCodeScreen/widget/add_coupon_bloc.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1723884562352,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1723884651238,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,11 +30,9 @@\n             );\r\n           },\r\n           successAdd: () {\r\n             context.pop();\r\n-            Future.delayed(const Duration(milliseconds: 1000), () {\r\n-              topsnackbar(context, 'success add coupon');\r\n-            });\r\n+            topsnackbar(context, 'success add coupon');\r\n           },\r\n           erorrAdd: (error) {\r\n             setupErrorState(context, error);\r\n           },\r\n"
+                },
+                {
+                    "date": 1723885489753,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             );\r\n           },\r\n           successAdd: () {\r\n             context.pop();\r\n-            topsnackbar(context, 'success add coupon');\r\n+            // topsnackbar(context, 'success add coupon');\r\n           },\r\n           erorrAdd: (error) {\r\n             setupErrorState(context, error);\r\n           },\r\n"
+                }
+            ],
+            "date": 1723884562352,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\r\nimport 'package:flutter_bloc/flutter_bloc.dart';\r\nimport 'package:untitled/Future/Drawer/CouponCodeScreen/logic/cubit/coupon_cubit.dart';\r\nimport 'package:untitled/Future/Drawer/CouponCodeScreen/logic/cubit/coupon_state.dart';\r\nimport 'package:untitled/core/extensions/extention_navigator.dart';\r\nimport '../../../../core/function/show_dilaog/top_show_dialog.dart';\r\nimport '../../../../core/widgets/setup_erorr.dart';\r\n\r\nimport '../../../../core/theming/colors.dart';\r\n\r\nclass AddCouponBlocListener extends StatelessWidget {\r\n  const AddCouponBlocListener({super.key});\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return BlocListener<CouponCubit, CouponState>(\r\n      listenWhen: (previous, current) =>\r\n          current is LoadingAdd || current is SuccessAdd || current is ErorrAdd,\r\n      listener: (context, state) {\r\n        state.whenOrNull(\r\n          loadingAdd: () {\r\n            context.pop();\r\n            showDialog(\r\n              context: context,\r\n              builder: (context) => const Center(\r\n                child: CircularProgressIndicator(\r\n                  color: AppColor.mainBlue,\r\n                ),\r\n              ),\r\n            );\r\n          },\r\n          successAdd: () {\r\n            context.pop();\r\n            Future.delayed(Duration(milliseconds: 1000),(){\r\n            topsnackbar(context, 'success add coupon');\r\n\r\n            });\r\n          },\r\n          erorrAdd: (error) {\r\n            setupErrorState(context, error);\r\n          },\r\n        );\r\n      },\r\n      child: const SizedBox.shrink(),\r\n    );\r\n  }\r\n}\r\n"
+        }
+    ]
+}

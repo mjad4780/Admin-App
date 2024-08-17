@@ -6,21 +6,21 @@ part 'order.g.dart';
 @JsonSerializable()
 class Order {
   @JsonKey(name: 'TotalOrders')
-  String? totalOrders;
+  final String? totalOrders;
   @JsonKey(name: 'TotalPending')
-  String? totalPending;
+  final String? totalPending;
   @JsonKey(name: 'TotalApprove')
-  String? totalApprove;
+  final String? totalApprove;
   @JsonKey(name: 'TotalPrepare')
-  String? totalPrepare;
+  final String? totalPrepare;
   @JsonKey(name: 'TotalShipped')
-  String? totalShipped;
+  final String? totalShipped;
   @JsonKey(name: 'TotalDone')
-  String? totalDone;
+  final String? totalDone;
   @JsonKey(name: 'TotalCancel')
-  String? totalCancel;
+  final String? totalCancel;
 
-  Order({
+  const Order({
     this.totalOrders,
     this.totalPending,
     this.totalApprove,

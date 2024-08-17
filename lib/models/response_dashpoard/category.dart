@@ -6,17 +6,17 @@ part 'category.g.dart';
 @JsonSerializable()
 class Category {
   @JsonKey(name: 'categories_id')
-  int? categoriesId;
+  final int? categoriesId;
   @JsonKey(name: 'categories_name')
-  String? categoriesName;
+  final String? categoriesName;
   @JsonKey(name: 'categories_name_ar')
-  String? categoriesNameAr;
+  final String? categoriesNameAr;
   @JsonKey(name: 'categories_Image')
-  String? categoriesImage;
+  final String? categoriesImage;
   @JsonKey(name: 'categories_Data')
-  String? categoriesData;
+  final String? categoriesData;
 
-  Category({
+  const Category({
     this.categoriesId,
     this.categoriesName,
     this.categoriesNameAr,

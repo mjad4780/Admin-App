@@ -1,0 +1,26 @@
+{
+    "sourceFile": "lib/core/function/show_dilaog/top_show_dialog.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1723884675485,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1723885536359,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,10 @@\n     ),\n   );\n }\n \n-topsnackbar(BuildContext context, String text) {\n-  Future.delayed(const Duration(milliseconds: 1000), () {\n+topsnackbar(BuildContext context, String text)async {\n+await  Future.delayed(const Duration(milliseconds: 1000), () {\n     showTopSnackBar(\n       Overlay.of(context),\n       CustomSnackBar.success(\n         message: text,\n"
+                },
+                {
+                    "date": 1723885806252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,10 @@\n     ),\n   );\n }\n \n-topsnackbar(BuildContext context, String text) async {\n-  await Future.delayed(const Duration(milliseconds: 1000), () {\n+ Future<void>  topsnackbar(BuildContext context, String text) async {\n+    Future.delayed(const Duration(milliseconds: 1000), () {\n     showTopSnackBar(\n       Overlay.of(context),\n       CustomSnackBar.success(\n         message: text,\n"
+                }
+            ],
+            "date": 1723884675485,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\nimport 'package:top_snackbar_flutter/custom_snack_bar.dart';\nimport 'package:top_snackbar_flutter/top_snack_bar.dart';\n\nsnacPar(BuildContext context, String text) {\n  ScaffoldMessenger.of(context).showSnackBar(\n    SnackBar(\n      content: Text(text),\n    ),\n  );\n}\n\ntopsnackbar(BuildContext context, String text)  {\n   Future.delayed(const Duration(milliseconds: 1000), () {\n    showTopSnackBar(\n      Overlay.of(context),\n      CustomSnackBar.success(\n        message: text,\n      ),\n    );\n  });\n}\n"
+        }
+    ]
+}

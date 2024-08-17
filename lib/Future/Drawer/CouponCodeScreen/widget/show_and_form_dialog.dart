@@ -6,7 +6,6 @@ import '/../../utility/constants.dart';
 
 void showAddForm(BuildContext context, String? text, Widget? widget) {
   var getcategories = context.read<CouponCubit>();
-
   showDialog(
     context: context,
     builder: (BuildContext context) {

@@ -1,0 +1,22 @@
+{
+    "sourceFile": "lib/Future/Drawer/DashboardScreen/data/repo_get_dashboard.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1723828746550,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1723829132269,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import '../../../../core/networking/api_error_handler.dart';\r\n import '../../../../core/networking/api_result.dart';\r\n import '../../../../core/networking/api_service.dart';\r\n-import '../../../../models/response_dashboard/response_dashboard.dart';\r\n+import '../../../../models/response_dashpoard/response_dashpoard.dart';\r\n \r\n class DashboardRepo {\r\n   final ApiService _apiService;\r\n \r\n"
+                }
+            ],
+            "date": 1723828746550,
+            "name": "Commit-0",
+            "content": "import '../../../../core/networking/api_error_handler.dart';\r\nimport '../../../../core/networking/api_result.dart';\r\nimport '../../../../core/networking/api_service.dart';\r\nimport '../../../../models/response_dashboard/response_dashboard.dart';\r\n\r\nclass DashboardRepo {\r\n  final ApiService _apiService;\r\n\r\n  DashboardRepo(this._apiService);\r\n\r\n  Future<ApiResult<ResponseDashpoard>> viewdashboard() async {\r\n    try {\r\n      final response = await _apiService.viewdashboard();\r\n      return ApiResult.success(response);\r\n    } catch (e) {\r\n      return ApiResult.failure(ApiErrorHandler.handle(e));\r\n    }\r\n  }\r\n}\r\n"
+        }
+    ]
+}

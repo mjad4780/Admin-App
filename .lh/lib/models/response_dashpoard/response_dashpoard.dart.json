@@ -1,0 +1,18 @@
+{
+    "sourceFile": "lib/models/response_dashpoard/response_dashpoard.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1723828838529,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1723828838529,
+            "name": "Commit-0",
+            "content": "import 'package:collection/collection.dart';\nimport 'package:json_annotation/json_annotation.dart';\n\nimport 'category.dart';\nimport 'datum.dart';\nimport 'order.dart';\n\npart 'response_dashpoard.g.dart';\n\n@JsonSerializable()\nclass ResponseDashpoard {\n  String? status;\n  List<ItemData>? data;\n  @JsonKey(name: 'Categories')\n  List<Category>? categories;\n  @JsonKey(name: 'Orders')\n  List<Order>? orders;\n\n  ResponseDashpoard({this.status, this.data, this.categories, this.orders});\n\n  factory ResponseDashpoard.fromJson(Map<String, dynamic> json) {\n    return _$ResponseDashpoardFromJson(json);\n  }\n\n  Map<String, dynamic> toJson() => _$ResponseDashpoardToJson(this);\n\n  @override\n  bool operator ==(Object other) {\n    if (identical(other, this)) return true;\n    if (other is! ResponseDashpoard) return false;\n    final mapEquals = const DeepCollectionEquality().equals;\n    return mapEquals(other.toJson(), toJson());\n  }\n\n  @override\n  int get hashCode =>\n      status.hashCode ^ data.hashCode ^ categories.hashCode ^ orders.hashCode;\n}\n"
+        }
+    ]
+}

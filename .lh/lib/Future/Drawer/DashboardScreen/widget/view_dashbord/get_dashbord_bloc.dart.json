@@ -1,0 +1,18 @@
+{
+    "sourceFile": "lib/Future/Drawer/DashboardScreen/widget/view_dashbord/get_dashbord_bloc.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1723829132240,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1723829132240,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\r\nimport 'package:flutter_bloc/flutter_bloc.dart';\r\nimport 'package:untitled/Future/Drawer/DashboardScreen/logic/cubit/dashboard_cubit.dart';\r\nimport 'package:untitled/Future/Drawer/DashboardScreen/logic/cubit/dashboard_state.dart';\r\n\r\nimport '../../../../../core/theming/colors.dart';\r\nimport '../../DashboardScreen.dart';\r\n\r\n\r\nclass DasboardBlocBuilder extends StatelessWidget {\r\n  const DasboardBlocBuilder({super.key});\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return BlocBuilder<DashboardCubit, DashboardState>(\r\n      buildWhen: (previous, current) =>\r\n          current is LoadingDashboard ||\r\n          current is SuccessDashboard ||\r\n          current is ErorrDashboard,\r\n      builder: (context, state) {\r\n        return state.maybeWhen(\r\n          loadingDashboard: () {\r\n            return const Center(\r\n              child: CircularProgressIndicator(\r\n                color: AppColor.mainBlue,\r\n              ),\r\n            );\r\n          },\r\n          successDashboard: (products) {\r\n            return DashboardBody(\r\n              order: products.orders!.first,\r\n              items: products.data ?? [],\r\n            );\r\n          },\r\n          erorrDashboard: (error) {\r\n            return Text(error);\r\n          },\r\n          orElse: () {\r\n            return const SizedBox.shrink();\r\n          },\r\n        );\r\n      },\r\n    );\r\n  }\r\n}\r\n"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "sourceFile": "lib/models/response_dashpoard/response_dashpoard.g.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1723828838532,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1723828838532,
+            "name": "Commit-0",
+            "content": "// GENERATED CODE - DO NOT MODIFY BY HAND\n\npart of 'response_dashpoard.dart';\n\n// **************************************************************************\n// JsonSerializableGenerator\n// **************************************************************************\n\nResponseDashpoard _$ResponseDashpoardFromJson(Map<String, dynamic> json) =>\n    ResponseDashpoard(\n      status: json['status'] as String?,\n      data: (json['data'] as List<dynamic>?)\n          ?.map((e) => ItemData.fromJson(e as Map<String, dynamic>))\n          .toList(),\n      categories: (json['Categories'] as List<dynamic>?)\n          ?.map((e) => Category.fromJson(e as Map<String, dynamic>))\n          .toList(),\n      orders: (json['Orders'] as List<dynamic>?)\n          ?.map((e) => Order.fromJson(e as Map<String, dynamic>))\n          .toList(),\n    );\n\nMap<String, dynamic> _$ResponseDashpoardToJson(ResponseDashpoard instance) =>\n    <String, dynamic>{\n      'status': instance.status,\n      'data': instance.data,\n      'Categories': instance.categories,\n      'Orders': instance.orders,\n    };\n"
+        }
+    ]
+}

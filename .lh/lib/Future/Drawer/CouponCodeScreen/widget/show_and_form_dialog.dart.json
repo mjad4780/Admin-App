@@ -1,0 +1,18 @@
+{
+    "sourceFile": "lib/Future/Drawer/CouponCodeScreen/widget/show_and_form_dialog.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1723885141171,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1723885141171,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\r\nimport 'package:flutter_bloc/flutter_bloc.dart';\r\nimport 'package:untitled/Future/Drawer/CouponCodeScreen/logic/cubit/coupon_cubit.dart';\r\n\r\nimport '/../../utility/constants.dart';\r\n\r\nvoid showAddForm(BuildContext context, String? text, Widget? widget) {\r\n  var getcategories = context.read<CouponCubit>();\r\n  showDialog(\r\n    context: context,\r\n    builder: (BuildContext context) {\r\n      return BlocProvider.value(\r\n        value: getcategories,\r\n        child: AlertDialog(\r\n            backgroundColor: bgColor,\r\n            title: Center(\r\n                child: Text(text!.toUpperCase(),\r\n                    style: const TextStyle(color: primaryColor))),\r\n            content: widget),\r\n      );\r\n    },\r\n  );\r\n}\r\n"
+        }
+    ]
+}

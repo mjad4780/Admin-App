@@ -1,0 +1,18 @@
+{
+    "sourceFile": "lib/models/response_dashpoard/datum.g.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1723828838531,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1723828838531,
+            "name": "Commit-0",
+            "content": "// GENERATED CODE - DO NOT MODIFY BY HAND\n\npart of 'datum.dart';\n\n// **************************************************************************\n// JsonSerializableGenerator\n// **************************************************************************\n\nItemData _$DatumFromJson(Map<String, dynamic> json) => ItemData(\n      itemId: (json['item_id'] as num?)?.toInt(),\n      itemName: json['item_name'] as String?,\n      itemNameAr: json['item_name_ar'] as String?,\n      itemDecs: json['item_decs'] as String?,\n      itemDecsAr: json['item_decs_ar'] as String?,\n      itemImage: json['item_image'] as String?,\n      itemCount: (json['item_count'] as num?)?.toInt(),\n      itemActive: (json['item_active'] as num?)?.toInt(),\n      itemPrice: (json['item_price'] as num?)?.toInt(),\n      itemDiscount: (json['item_discount'] as num?)?.toInt(),\n      itemData: json['item_data'] as String?,\n      itemCategories: (json['item_categories'] as num?)?.toInt(),\n      categoriesId: (json['categories_id'] as num?)?.toInt(),\n      categoriesName: json['categories_name'] as String?,\n      images:\n          (json['images'] as List<dynamic>?)?.map((e) => e as String).toList(),\n      size: (json['size'] as List<dynamic>?)\n          ?.map((e) => Size.fromJson(e as Map<String, dynamic>))\n          .toList(),\n    );\n\nMap<String, dynamic> _$DatumToJson(ItemData instance) => <String, dynamic>{\n      'item_id': instance.itemId,\n      'item_name': instance.itemName,\n      'item_name_ar': instance.itemNameAr,\n      'item_decs': instance.itemDecs,\n      'item_decs_ar': instance.itemDecsAr,\n      'item_image': instance.itemImage,\n      'item_count': instance.itemCount,\n      'item_active': instance.itemActive,\n      'item_price': instance.itemPrice,\n      'item_discount': instance.itemDiscount,\n      'item_data': instance.itemData,\n      'item_categories': instance.itemCategories,\n      'categories_id': instance.categoriesId,\n      'categories_name': instance.categoriesName,\n      'images': instance.images,\n      'size': instance.size,\n    };\n"
+        }
+    ]
+}

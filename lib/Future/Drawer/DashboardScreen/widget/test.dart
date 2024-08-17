@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/function/function_api/ssend_list_api.dart';
 import '../../../../core/networking/api_constants.dart';
-import '../../../../models/response_items/datum.dart';
+import '../../../../models/response_dashpoard/datum.dart';
 
 class Tester extends StatelessWidget {
   const Tester({super.key, required this.products});
 
-  final List<ItemsData> products;
+  final List<Datum> products;
   @override
   Widget build(BuildContext context) {
     return SizedBox(

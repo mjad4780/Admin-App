@@ -1,0 +1,26 @@
+{
+    "sourceFile": "lib/models/response_dashpoard/datum.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1723828838531,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1723829702260,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,11 +56,11 @@\n     this.images,\n     this.size,\n   });\n \n-  factory ItemData.fromJson(Map<String, dynamic> json) => _$DatumFromJson(json);\n+  factory ItemData.fromJson(Map<String, dynamic> json) => _$ItemDataFromJson(json);\n \n-  Map<String, dynamic> toJson() => _$DatumToJson(this);\n+  Map<String, dynamic> toJson() => _$ItemDataToJson(this);\n \n   @override\n   bool operator ==(Object other) {\n     if (identical(other, this)) return true;\n"
+                },
+                {
+                    "date": 1723830666588,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,10 @@\n     this.images,\n     this.size,\n   });\n \n-  factory ItemData.fromJson(Map<String, dynamic> json) => _$ItemDataFromJson(json);\n+  factory ItemData.fromJson(Map<String, dynamic> json) =>\n+      _$ItemDataFromJson(json);\n \n   Map<String, dynamic> toJson() => _$ItemDataToJson(this);\n \n   @override\n"
+                }
+            ],
+            "date": 1723828838531,
+            "name": "Commit-0",
+            "content": "import 'package:collection/collection.dart';\nimport 'package:json_annotation/json_annotation.dart';\n\nimport 'size.dart';\n\npart 'datum.g.dart';\n\n@JsonSerializable()\nclass ItemData {\n  @JsonKey(name: 'item_id')\n  int? itemId;\n  @JsonKey(name: 'item_name')\n  String? itemName;\n  @JsonKey(name: 'item_name_ar')\n  String? itemNameAr;\n  @JsonKey(name: 'item_decs')\n  String? itemDecs;\n  @JsonKey(name: 'item_decs_ar')\n  String? itemDecsAr;\n  @JsonKey(name: 'item_image')\n  String? itemImage;\n  @JsonKey(name: 'item_count')\n  int? itemCount;\n  @JsonKey(name: 'item_active')\n  int? itemActive;\n  @JsonKey(name: 'item_price')\n  int? itemPrice;\n  @JsonKey(name: 'item_discount')\n  int? itemDiscount;\n  @JsonKey(name: 'item_data')\n  String? itemData;\n  @JsonKey(name: 'item_categories')\n  int? itemCategories;\n  @JsonKey(name: 'categories_id')\n  int? categoriesId;\n  @JsonKey(name: 'categories_name')\n  String? categoriesName;\n  List<String>? images;\n  List<Size>? size;\n\n  ItemData({\n    this.itemId,\n    this.itemName,\n    this.itemNameAr,\n    this.itemDecs,\n    this.itemDecsAr,\n    this.itemImage,\n    this.itemCount,\n    this.itemActive,\n    this.itemPrice,\n    this.itemDiscount,\n    this.itemData,\n    this.itemCategories,\n    this.categoriesId,\n    this.categoriesName,\n    this.images,\n    this.size,\n  });\n\n  factory ItemData.fromJson(Map<String, dynamic> json) => _$DatumFromJson(json);\n\n  Map<String, dynamic> toJson() => _$DatumToJson(this);\n\n  @override\n  bool operator ==(Object other) {\n    if (identical(other, this)) return true;\n    if (other is! ItemData) return false;\n    final mapEquals = const DeepCollectionEquality().equals;\n    return mapEquals(other.toJson(), toJson());\n  }\n\n  @override\n  int get hashCode =>\n      itemId.hashCode ^\n      itemName.hashCode ^\n      itemNameAr.hashCode ^\n      itemDecs.hashCode ^\n      itemDecsAr.hashCode ^\n      itemImage.hashCode ^\n      itemCount.hashCode ^\n      itemActive.hashCode ^\n      itemPrice.hashCode ^\n      itemDiscount.hashCode ^\n      itemData.hashCode ^\n      itemCategories.hashCode ^\n      categoriesId.hashCode ^\n      categoriesName.hashCode ^\n      images.hashCode ^\n      size.hashCode;\n}\n"
+        }
+    ]
+}

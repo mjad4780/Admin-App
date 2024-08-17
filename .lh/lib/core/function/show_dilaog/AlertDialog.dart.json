@@ -1,0 +1,18 @@
+{
+    "sourceFile": "lib/core/function/show_dilaog/AlertDialog.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1723884165811,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1723884165811,
+            "name": "Commit-0",
+            "content": "\r\nimport 'package:flutter/material.dart';\r\nimport 'package:untitled/core/extensions/extention_navigator.dart';\r\n\r\nvoid showSuccessDialog(BuildContext context, String title) {\r\n  showDialog(\r\n    context: context,\r\n    builder: (BuildContext context) {\r\n      return AlertDialog(\r\n        title: Text(title),\r\n        content: const SingleChildScrollView(\r\n          child: ListBody(\r\n            children: <Widget>[\r\n              Text('Congratulations, you have successfully!'),\r\n            ],\r\n          ),\r\n        ),\r\n        actions: const <Widget>[\r\n          // TextButton(\r\n          //   style: TextButton.styleFrom(\r\n          //     foregroundColor: Colors.white,\r\n          //     backgroundColor: Colors.blue,\r\n          //     disabledForegroundColor: Colors.grey.withOpacity(0.38),\r\n          //   ),\r\n          //   child: const Text('Continue'),\r\n          // ),\r\n        ],\r\n      );\r\n    },\r\n  );\r\n}\r\n\r\nFuture<bool> showMyDialog(\r\n    BuildContext context, String title, String body) async {\r\n  showDialog(\r\n    context: context,\r\n    // barrierDismissible: true, // user must tap button!\r\n    builder: (BuildContext context) {\r\n      return AlertDialog(\r\n        // backgroundColor: Colors.white,\r\n        // elevation: 10,\r\n        // scrollable: true,\r\n        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),\r\n        title: Text(title),\r\n        content: SingleChildScrollView(\r\n          child: ListBody(\r\n            children: <Widget>[\r\n              Text(body),\r\n            ],\r\n          ),\r\n        ),\r\n        actions: <Widget>[\r\n          TextButton(\r\n            child: const Text(\r\n              'cancel',\r\n            ),\r\n            onPressed: () {\r\n              context.pop();\r\n            },\r\n          ),\r\n          TextButton(\r\n            child: const Text(\r\n              'Approve',\r\n            ),\r\n            onPressed: () {\r\n              context.pop();\r\n            },\r\n          ),\r\n        ],\r\n      );\r\n    },\r\n  );\r\n  return Future.value(false);\r\n}\r\n"
+        }
+    ]
+}

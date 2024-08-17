@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/networking/api_constants.dart';
-import '../../../../models/response_dashboard/datum.dart';
+import '../../../../models/response_dashpoard/datum.dart';
 import '../../../../utility/constants.dart';
 
-DataRow productDataRow(ItemsData productInfo,
-    {Function? edit, Function? delete}) {
+DataRow productDataRow(Datum productInfo, {Function? edit, Function? delete}) {
   return DataRow(
     cells: [
       DataCell(

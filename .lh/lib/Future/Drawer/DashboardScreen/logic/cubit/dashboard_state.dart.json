@@ -1,0 +1,26 @@
+{
+    "sourceFile": "lib/Future/Drawer/DashboardScreen/logic/cubit/dashboard_state.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1723828746549,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1723829132267,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import 'package:freezed_annotation/freezed_annotation.dart';\n \n-import '../../../../../models/response_dashboard/response_dashboard.dart';\n+import '../../../../../models/response_dashpoard/response_dashpoard.dart';\n import '../../../../../models/response_items/datum.dart';\n part 'dashboard_state.freezed.dart';\n \n @freezed\n"
+                },
+                {
+                    "date": 1723829702250,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,21 +1,16 @@\n import 'package:freezed_annotation/freezed_annotation.dart';\n \n import '../../../../../models/response_dashpoard/response_dashpoard.dart';\n-import '../../../../../models/response_items/datum.dart';\n part 'dashboard_state.freezed.dart';\n \n @freezed\n class DashboardState with _$DashboardState {\n   const factory DashboardState.initial() = _Initial;\n \n /////////////////items//////////////////\n-  ///:view\n-  const factory DashboardState.loadingview() = Loadingview;\n-  const factory DashboardState.successview(List<ItemsData> response) =\n-      Successview;\n-  const factory DashboardState.erorrview({required String erorr}) = Erorrview;\n \n+\n   ///:add\n   const factory DashboardState.loadingAdd() = LoadingAdd;\n   const factory DashboardState.successAdd() = SuccessAdd;\n   const factory DashboardState.erorrAdd({required String erorr}) = ErorrAdd;\n@@ -37,14 +32,10 @@\n       SuccessDashboard;\n   const factory DashboardState.erorrDashboard({required String erorr}) =\n       ErorrDashboard;\n \n-  ///:view\n-  const factory DashboardState.loadingvimage() = Loadingimage;\n-  const factory DashboardState.successimage() = Successimage;\n-  const factory DashboardState.erorrvimage({required String erorr}) =\n-      Erorrimage;\n \n+\n   ///: galer\n   const factory DashboardState.galer() = Galer;\n   const factory DashboardState.galer2() = Galer2;\n   const factory DashboardState.galer3() = Galer3;\n"
+                }
+            ],
+            "date": 1723828746549,
+            "name": "Commit-0",
+            "content": "import 'package:freezed_annotation/freezed_annotation.dart';\n\nimport '../../../../../models/response_dashboard/response_dashboard.dart';\nimport '../../../../../models/response_items/datum.dart';\npart 'dashboard_state.freezed.dart';\n\n@freezed\nclass DashboardState with _$DashboardState {\n  const factory DashboardState.initial() = _Initial;\n\n/////////////////items//////////////////\n  ///:view\n  const factory DashboardState.loadingview() = Loadingview;\n  const factory DashboardState.successview(List<ItemsData> response) =\n      Successview;\n  const factory DashboardState.erorrview({required String erorr}) = Erorrview;\n\n  ///:add\n  const factory DashboardState.loadingAdd() = LoadingAdd;\n  const factory DashboardState.successAdd() = SuccessAdd;\n  const factory DashboardState.erorrAdd({required String erorr}) = ErorrAdd;\n\n  ///:edit\n  const factory DashboardState.loadingedit() = Loadingedit;\n  const factory DashboardState.successedit() = Successedit;\n  const factory DashboardState.erorredit({required String erorr}) = Erorredit;\n\n  ///:delete\n  const factory DashboardState.loadingdelete() = Loadingdelete;\n  const factory DashboardState.successdelete() = Successdelete;\n  const factory DashboardState.erorrdelete({required String erorr}) =\n      Erorrdelete;\n\n  ///:view\n  const factory DashboardState.loadingDashboard() = LoadingDashboard;\n  const factory DashboardState.successDashboard(ResponseDashpoard responses) =\n      SuccessDashboard;\n  const factory DashboardState.erorrDashboard({required String erorr}) =\n      ErorrDashboard;\n\n  ///:view\n  const factory DashboardState.loadingvimage() = Loadingimage;\n  const factory DashboardState.successimage() = Successimage;\n  const factory DashboardState.erorrvimage({required String erorr}) =\n      Erorrimage;\n\n  ///: galer\n  const factory DashboardState.galer() = Galer;\n  const factory DashboardState.galer2() = Galer2;\n  const factory DashboardState.galer3() = Galer3;\n\n  ///: remofegaler\n  const factory DashboardState.remofgaler() = remofgaler;\n  const factory DashboardState.removegaler2() = removegaler2;\n  const factory DashboardState.removegaler3() = removegaler3;\n\n  ///: PushEdit\n  const factory DashboardState.pushEdit() = PushEdit;\n\n  ///: approveitems\n  const factory DashboardState.approveitems() = ApproveiItems;\n\n  ///: removeControll\n  const factory DashboardState.removeControll() = RemoveControll;\n}\n"
+        }
+    ]
+}

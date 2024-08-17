@@ -1,4 +1,4 @@
-import '../../../../models/response_dashboard/order.dart';
+import '../../../../models/response_dashpoard/order.dart';
 import '../logic/cubit/dashboard_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

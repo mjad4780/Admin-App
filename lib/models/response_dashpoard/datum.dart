@@ -6,39 +6,39 @@ import 'size.dart';
 part 'datum.g.dart';
 
 @JsonSerializable()
-class ItemsData {
+class Datum {
   @JsonKey(name: 'item_id')
-  int? itemId;
+  final int? itemId;
   @JsonKey(name: 'item_name')
-  String? itemName;
+  final String? itemName;
   @JsonKey(name: 'item_name_ar')
-  String? itemNameAr;
+  final String? itemNameAr;
   @JsonKey(name: 'item_decs')
-  String? itemDecs;
+  final String? itemDecs;
   @JsonKey(name: 'item_decs_ar')
-  String? itemDecsAr;
+  final String? itemDecsAr;
   @JsonKey(name: 'item_image')
-  String? itemImage;
+  final String? itemImage;
   @JsonKey(name: 'item_count')
-  int? itemCount;
+  final int? itemCount;
   @JsonKey(name: 'item_active')
-  int? itemActive;
+  final int? itemActive;
   @JsonKey(name: 'item_price')
-  int? itemPrice;
+  final int? itemPrice;
   @JsonKey(name: 'item_discount')
-  int? itemDiscount;
+  final int? itemDiscount;
   @JsonKey(name: 'item_data')
-  String? itemData;
+  final String? itemData;
   @JsonKey(name: 'item_categories')
-  int? itemCategories;
+  final int? itemCategories;
   @JsonKey(name: 'categories_id')
-  int? categoriesId;
+  final int? categoriesId;
   @JsonKey(name: 'categories_name')
-  String? categoriesName;
-  List<String>? images;
-  List<Size>? size;
+  final String? categoriesName;
+  final List<String>? images;
+  final List<Size>? size;
 
-  ItemsData({
+  const Datum({
     this.itemId,
     this.itemName,
     this.itemNameAr,
@@ -57,15 +57,14 @@ class ItemsData {
     this.size,
   });
 
-  factory ItemsData.fromJson(Map<String, dynamic> json) =>
-      _$ItemsDataFromJson(json);
+  factory Datum.fromJson(Map<String, dynamic> json) => _$DatumFromJson(json);
 
-  Map<String, dynamic> toJson() => _$ItemsDataToJson(this);
+  Map<String, dynamic> toJson() => _$DatumToJson(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    if (other is! ItemsData) return false;
+    if (other is! Datum) return false;
     final mapEquals = const DeepCollectionEquality().equals;
     return mapEquals(other.toJson(), toJson());
   }

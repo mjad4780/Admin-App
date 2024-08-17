@@ -1,7 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-import '../../../../../models/response_dashboard/response_dashboard.dart';
-import '../../../../../models/response_items/datum.dart';
+import '../../../../../models/response_dashpoard/response_dashpoard.dart';
 part 'dashboard_state.freezed.dart';
 
 @freezed
@@ -9,11 +8,6 @@ class DashboardState with _$DashboardState {
   const factory DashboardState.initial() = _Initial;
 
 /////////////////items//////////////////
-  ///:view
-  const factory DashboardState.loadingview() = Loadingview;
-  const factory DashboardState.successview(List<ItemsData> response) =
-      Successview;
-  const factory DashboardState.erorrview({required String erorr}) = Erorrview;
 
   ///:add
   const factory DashboardState.loadingAdd() = LoadingAdd;
@@ -33,16 +27,10 @@ class DashboardState with _$DashboardState {
 
   ///:view
   const factory DashboardState.loadingDashboard() = LoadingDashboard;
-  const factory DashboardState.successDashboard(ResponseDashboard responses) =
+  const factory DashboardState.successDashboard(ResponseDashpoard responses) =
       SuccessDashboard;
   const factory DashboardState.erorrDashboard({required String erorr}) =
       ErorrDashboard;
-
-  ///:view
-  const factory DashboardState.loadingvimage() = Loadingimage;
-  const factory DashboardState.successimage() = Successimage;
-  const factory DashboardState.erorrvimage({required String erorr}) =
-      Erorrimage;
 
   ///: galer
   const factory DashboardState.galer() = Galer;

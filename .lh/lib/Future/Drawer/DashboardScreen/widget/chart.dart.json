@@ -1,0 +1,18 @@
+{
+    "sourceFile": "lib/Future/Drawer/DashboardScreen/widget/chart.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1723829132240,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1723829132240,
+            "name": "Commit-0",
+            "content": "import 'package:fl_chart/fl_chart.dart';\nimport 'package:flutter/material.dart';\n\nimport '../../../../models/response_dashpoard/order.dart';\nimport '../../../../utility/constants.dart';\n\nclass Chart extends StatelessWidget {\n  const Chart({\n    super.key,\n    required this.order,\n  });\n  final Order order;\n  @override\n  Widget build(BuildContext context) {\n    return SizedBox(\n      height: 200,\n      child: Stack(\n        children: [\n          PieChart(\n            PieChartData(\n              sectionsSpace: 0,\n              centerSpaceRadius: 70,\n              startDegreeOffset: -90,\n              sections: _buildPieChartSelectionData(context, order),\n            ),\n          ),\n          Positioned.fill(\n            child: Column(\n              mainAxisAlignment: MainAxisAlignment.center,\n              children: [\n                const SizedBox(height: defaultPadding),\n                Text(\n                  '${order.totalOrders}', //TODO: should complete Make this order number dynamic bt calling calculateOrdersWithStatus\n                  style: Theme.of(context).textTheme.headlineMedium!.copyWith(\n                        color: Colors.white,\n                        fontWeight: FontWeight.w600,\n                        height: 0.5,\n                      ),\n                ),\n                const SizedBox(height: defaultPadding),\n                const Text(\"Order\")\n              ],\n            ),\n          ),\n        ],\n      ),\n    );\n  }\n\n  List<PieChartSectionData> _buildPieChartSelectionData(\n      BuildContext context, Order order) {\n    List<PieChartSectionData> pieChartSelectionData = [\n      PieChartSectionData(\n        color: const Color(0xFFFFCF26),\n        value: double.parse(order.totalPending!),\n        showTitle: false,\n        radius: 20,\n      ),\n      PieChartSectionData(\n        color: Colors.white,\n        value: double.parse(order.totalApprove!),\n        showTitle: false,\n        radius: 20,\n      ),\n      PieChartSectionData(\n        color: const Color(0xFF2697FF),\n        value: double.parse(order.totalShipped!),\n        showTitle: false,\n        radius: 20,\n      ),\n      PieChartSectionData(\n        color: const Color(0xFF26FF31),\n        value: double.parse(order.totalPrepare!),\n        showTitle: false,\n        radius: 20,\n      ),\n      PieChartSectionData(\n        color: Colors.white,\n        value: double.parse(order.totalDone!),\n        showTitle: false,\n        radius: 20,\n      ),\n      PieChartSectionData(\n        color: const Color(0xFFEE2727),\n        value: double.parse(order.totalCancel!),\n        showTitle: false,\n        radius: 20,\n      ),\n    ];\n\n    return pieChartSelectionData;\n  }\n}\n"
+        }
+    ]
+}

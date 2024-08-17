@@ -1,0 +1,22 @@
+{
+    "sourceFile": "lib/Future/Drawer/DashboardScreen/widget/test.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1723829702237,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1723830875030,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n \r\n class Tester extends StatelessWidget {\r\n   const Tester({super.key, required this.products});\r\n \r\n-  final List<ItemData> products;\r\n+  final List<Datum> products;\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return SizedBox(\r\n       // color: Colors.black,\r\n"
+                }
+            ],
+            "date": 1723829702237,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\r\n\r\nimport '../../../../core/function/function_api/ssend_list_api.dart';\r\nimport '../../../../core/networking/api_constants.dart';\r\nimport '../../../../models/response_dashpoard/datum.dart';\r\n\r\nclass Tester extends StatelessWidget {\r\n  const Tester({super.key, required this.products});\r\n\r\n  final List<ItemData> products;\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return SizedBox(\r\n      // color: Colors.black,\r\n      height: 500,\r\n      width: 400,\r\n      child: ListView.builder(\r\n          itemCount: products.length,\r\n          itemBuilder: (context, index) {\r\n            return name(\r\n              data: replacListIsEnpty(products[5].images!),\r\n            );\r\n            // return Image.network(\r\n            //   '${ApiConstants.imageItem}/${rtert(products[5].images!)[index]} ',\r\n            //   // color: Colors.red\r\n            // );\r\n          }),\r\n    );\r\n  }\r\n}\r\n\r\nclass name extends StatelessWidget {\r\n  const name({super.key, required this.data});\r\n  final List<String> data;\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return SizedBox(\r\n      height: 400,\r\n      width: 400,\r\n      child: ListView.builder(\r\n        itemCount: data.length,\r\n        itemBuilder: (BuildContext context, int index) {\r\n          return Image.network(\r\n            '${ApiConstants.imageItem}/${data[index]} ',\r\n            // color: Colors.red\r\n          );\r\n        },\r\n      ),\r\n    );\r\n  }\r\n}\r\n"
+        }
+    ]
+}

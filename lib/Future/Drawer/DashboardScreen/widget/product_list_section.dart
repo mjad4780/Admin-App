@@ -1,4 +1,4 @@
-import '../../../../models/response_dashboard/datum.dart';
+import '../../../../models/response_dashpoard/datum.dart';
 import '../logic/cubit/dashboard_cubit.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -14,7 +14,7 @@ class ProductListSection extends StatelessWidget {
     super.key,
     required this.items,
   });
-  final List<ItemsData> items;
+  final List<Datum> items;
   @override
   Widget build(BuildContext context) {
     return Builder(builder: (context) {

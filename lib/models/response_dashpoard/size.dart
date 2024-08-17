@@ -4,23 +4,22 @@ import 'package:json_annotation/json_annotation.dart';
 part 'size.g.dart';
 
 @JsonSerializable()
-class ItemSize {
-  int? id;
-  String? size;
-  int? quantity;
-  String? color;
+class Size {
+  final int? id;
+  final String? size;
+  final int? quantity;
+  final String? color;
 
-  ItemSize({this.id, this.size, this.quantity, this.color});
+  const Size({this.id, this.size, this.quantity, this.color});
 
-  factory ItemSize.fromJson(Map<String, dynamic> json) =>
-      _$ItemSizeFromJson(json);
+  factory Size.fromJson(Map<String, dynamic> json) => _$SizeFromJson(json);
 
-  Map<String, dynamic> toJson() => _$ItemSizeToJson(this);
+  Map<String, dynamic> toJson() => _$SizeToJson(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    if (other is! ItemSize) return false;
+    if (other is! Size) return false;
     final mapEquals = const DeepCollectionEquality().equals;
     return mapEquals(other.toJson(), toJson());
   }

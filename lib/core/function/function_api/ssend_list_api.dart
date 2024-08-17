@@ -1,6 +1,6 @@
 import 'package:untitled/core/extensions/extention_navigator.dart';
 
-import '../../../models/response_dashboard/size.dart';
+import '../../../models/response_dashpoard/size.dart';
 
 sendListApi(String input) {
   return input.replaceAll('[', '').replaceAll(']', '');

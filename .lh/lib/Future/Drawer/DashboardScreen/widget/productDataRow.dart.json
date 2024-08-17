@@ -1,0 +1,26 @@
+{
+    "sourceFile": "lib/Future/Drawer/DashboardScreen/widget/productDataRow.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1723829132240,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1723829702249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,11 @@\n import 'package:flutter/material.dart';\r\n \r\n import '../../../../core/networking/api_constants.dart';\r\n-import '../../../../models/response_items/datum.dart';\r\n+import '../../../../models/response_dashpoard/datum.dart';\r\n import '../../../../utility/constants.dart';\r\n \r\n-DataRow productDataRow(ItemsData productInfo,\r\n+DataRow productDataRow(ItemData productInfo,\r\n     {Function? edit, Function? delete}) {\r\n   return DataRow(\r\n     cells: [\r\n       DataCell(\r\n"
+                },
+                {
+                    "date": 1723830875030,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import '../../../../core/networking/api_constants.dart';\r\n import '../../../../models/response_dashpoard/datum.dart';\r\n import '../../../../utility/constants.dart';\r\n \r\n-DataRow productDataRow(ItemData productInfo,\r\n+DataRow productDataRow(Datum productInfo,\r\n     {Function? edit, Function? delete}) {\r\n   return DataRow(\r\n     cells: [\r\n       DataCell(\r\n"
+                }
+            ],
+            "date": 1723829132240,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\r\n\r\nimport '../../../../core/networking/api_constants.dart';\r\nimport '../../../../models/response_items/datum.dart';\r\nimport '../../../../utility/constants.dart';\r\n\r\nDataRow productDataRow(ItemsData productInfo,\r\n    {Function? edit, Function? delete}) {\r\n  return DataRow(\r\n    cells: [\r\n      DataCell(\r\n        Row(\r\n          children: [\r\n            Image.network(\r\n              '${ApiConstants.imageItem}/${productInfo.itemImage} ',\r\n              height: 30,\r\n              width: 30,\r\n              errorBuilder: (BuildContext context, Object exception,\r\n                  StackTrace? stackTrace) {\r\n                return const Icon(Icons.error);\r\n              },\r\n            ),\r\n            Padding(\r\n              padding: const EdgeInsets.symmetric(horizontal: defaultPadding),\r\n              child: Text(\r\n                productInfo.itemName ?? '',\r\n                overflow: TextOverflow.ellipsis,\r\n              ),\r\n            ),\r\n          ],\r\n        ),\r\n      ),\r\n      DataCell(Text(productInfo.categoriesName ?? '')),\r\n      DataCell(Text(productInfo.itemCount.toString())),\r\n      DataCell(\r\n        Text('${productInfo.itemPrice}'),\r\n      ),\r\n      DataCell(IconButton(\r\n          onPressed: () {\r\n            if (edit != null) edit();\r\n          },\r\n          icon: const Icon(\r\n            Icons.edit,\r\n            color: Colors.white,\r\n          ))),\r\n      DataCell(IconButton(\r\n          onPressed: () {\r\n            if (delete != null) delete();\r\n          },\r\n          icon: const Icon(\r\n            Icons.delete,\r\n            color: Colors.red,\r\n          ))),\r\n    ],\r\n  );\r\n}\r\n"
+        }
+    ]
+}

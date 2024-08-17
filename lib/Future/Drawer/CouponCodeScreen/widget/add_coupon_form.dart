@@ -12,7 +12,6 @@ import '../../../../widgets/custom_text_field.dart';
 import 'add_coupon_bloc.dart';
 
 class CouponSubmitForm extends StatelessWidget {
-  // final Datum? coupon;
   final Function()? onPressed;
   const CouponSubmitForm({
     super.key,
@@ -25,6 +24,7 @@ class CouponSubmitForm extends StatelessWidget {
     return SingleChildScrollView(
         child: Form(
       key: context.read<CouponCubit>().addCouponFormKey,
+      autovalidateMode: context.read<CouponCubit>().autovalidateMode,
       child: Container(
         width: size.width * 0.7,
         padding: const EdgeInsets.all(defaultPadding),

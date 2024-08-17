@@ -1,5 +1,4 @@
 import '../../../../models/response_coupon/datum.dart';
-import 'add_coupon_form.dart';
 import 'couponDataRow.dart';
 import '../../../../utility/constants.dart';
 import 'package:flutter/material.dart';
@@ -35,6 +34,9 @@ class CouponListSection extends StatelessWidget {
                     label: Text("Coupon Name"),
                   ),
                   DataColumn(
+                    label: Text("discount"),
+                  ),
+                  DataColumn(
                     label: Text("MaxUser"),
                   ),
                   DataColumn(
@@ -42,12 +44,6 @@ class CouponListSection extends StatelessWidget {
                   ),
                   DataColumn(
                     label: Text("EndDate"),
-                  ),
-                  DataColumn(
-                    label: Text("Edit"),
-                  ),
-                  DataColumn(
-                    label: Text("Delete"),
                   ),
                 ],
                 rows: List.generate(

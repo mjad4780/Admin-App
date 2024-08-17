@@ -27,26 +27,10 @@ DataRow couponDataRow(Datum coupon, int index,
           ],
         ),
       ),
+      DataCell(Text(coupon.couponDiscount.toString())),
       DataCell(Text(coupon.coponMaxuser.toString())),
       DataCell(Text(coupon.couponData ?? '')),
       DataCell(Text(coupon.coponEndDate ?? '')),
-      DataCell(Text(coupon.couponDiscount.toString())),
-      DataCell(IconButton(
-          onPressed: () {
-            if (edit != null) edit();
-          },
-          icon: Icon(
-            Icons.edit,
-            color: Colors.white,
-          ))),
-      DataCell(IconButton(
-          onPressed: () {
-            if (delete != null) delete();
-          },
-          icon: Icon(
-            Icons.delete,
-            color: Colors.red,
-          ))),
     ],
   );
 }

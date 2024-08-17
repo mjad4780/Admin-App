@@ -1,7 +1,5 @@
 import 'dart:io';
 
-import 'package:untitled/models/response_items/response_items.dart';
-
 import '../../../../core/function/function_api/formDataPost.dart';
 import '../../../../core/function/function_api/ssend_list_api.dart';
 import '../../../../core/function/function_api/upload_image.dart';
@@ -33,15 +31,6 @@ class ItemsRepo {
   }
 
   //ViewItems
-
-  Future<ApiResult<ResponseItems>> viewItems() async {
-    try {
-      final response = await _apiService.getItems();
-      return ApiResult.success(response);
-    } catch (e) {
-      return ApiResult.failure(ApiErrorHandler.handle(e));
-    }
-  }
 
   //AddItems
 

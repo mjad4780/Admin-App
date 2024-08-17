@@ -8,7 +8,7 @@ import 'package:untitled/core/function/function_api/ssend_list_api.dart';
 import '../../../../../core/function/show_dilaog/AlertDialog.dart';
 import '../../../../../core/function/function_api/upload_image.dart';
 import '../../../../../models/Item.dart';
-import '../../../../../models/response_dashboard/datum.dart';
+import '../../../../../models/response_dashpoard/datum.dart';
 import '../../../../../models/select_categories/select_categories.dart';
 import '../../data/repo.dart';
 import 'dashboard_state.dart';
@@ -155,7 +155,7 @@ class DashboardCubit extends Cubit<DashboardState> {
   }
 
   pushEdit(
-    ItemsData items,
+    Datum items,
   ) async {
     selectedcolors?.clear();
     selectedSize?.clear();
