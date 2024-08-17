@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 
@@ -12,7 +14,7 @@ class OrdersCubit extends Cubit<OrdersState> {
   final OrdersRepo _ordersRepo;
   final ViewOrdersRepo _viewOrdersRepo;
   List<Datum> itemorders = [];
-
+  AutovalidateMode autovalidateMode = AutovalidateMode.disabled;
   final orderFormKey = GlobalKey<FormState>();
   TextEditingController trackingUrlCtrl = TextEditingController();
   String selectedOrderStatus = 'pending';
@@ -28,9 +30,7 @@ class OrdersCubit extends Cubit<OrdersState> {
       ordersCoupon: 66,
     )
   ];
-  // List<CartModel> cartdata = [
-  //   CartModel(itemsName: 'hp', itemsPrice: 22, itemsCount: 2)
-  // ];
+
   List<String> item = [
     'All order',
     'pending',
@@ -40,18 +40,26 @@ class OrdersCubit extends Cubit<OrdersState> {
     'done',
     'Cancelled'
   ];
-
+  String? dataOrder = 'All order';
   filterOrders(String value) {
-    if (value == 'pending') {
+    if (value == 'All order') {
+      viewAllOrders();
+      dataOrder = value;
+    } else if (value == 'pending') {
       viewpending();
+      dataOrder = value;
     } else if (value == 'been approved') {
       viewapprove();
+      dataOrder = value;
     } else if (value == 'prepare') {
       viewprepare();
+      dataOrder = value;
     } else if (value == 'shipped') {
       viewshipped();
+      dataOrder = value;
     } else if (value == 'done') {
       viewdone();
+      dataOrder = value;
     } else {
       viewCancel();
     }
@@ -73,33 +81,35 @@ class OrdersCubit extends Cubit<OrdersState> {
     }
   }
 
-  String? status;
+  // String? updateStatus;
 
   updatestatus(String value) {
     if (value == 'pending') {
-      status = 'pending';
+      selectedOrderStatus = 'pending';
     } else if (value == 'been approved') {
-      status = 'been approved';
+      selectedOrderStatus = 'been approved';
     } else if (value == 'prepare') {
-      status = 'prepare';
+      selectedOrderStatus = 'prepare';
     } else if (value == 'shipped') {
-      status = 'shipped';
+      selectedOrderStatus = 'shipped';
     } else if (value == 'done') {
-      status = 'done';
+      selectedOrderStatus = 'done';
     } else {}
   }
 
   updateOrders(int orderid, int userid, int type) {
-    if (status == 'pending') {
-    } else if (status == 'been approved') {
+    if (selectedOrderStatus == 'pending') {
+    } else if (selectedOrderStatus == 'been approved') {
       approve(orderid, userid);
-    } else if (status == 'prepare') {
+    } else if (selectedOrderStatus == 'prepare') {
       prepare(orderid, userid, type);
-    } else if (status == 'shipped') {
+    } else if (selectedOrderStatus == 'shipped') {
       shipped(orderid, userid);
-    } else if (status == 'done') {
+    } else if (selectedOrderStatus == 'done') {
       done(orderid, userid);
-    } else {}
+    } else {
+      log('message');
+    }
   }
 
   ///:approve
@@ -156,6 +166,19 @@ class OrdersCubit extends Cubit<OrdersState> {
       emit(OrdersState.successviewdetails(data.data ?? []));
     }, failure: (error) {
       emit(OrdersState.erorrviewdetails(erorr: error.messege ?? ''));
+    });
+  }
+
+  ///:viewAllOrders
+  viewAllOrders() async {
+    itemorders.clear();
+    emit(const OrdersState.loadingviewAllOrders());
+    final response = await _viewOrdersRepo.viewAllOrders();
+    response.when(success: (data) {
+      itemorders = data.data ?? [];
+      emit(OrdersState.successviewAllOrders(data.data ?? []));
+    }, failure: (error) {
+      emit(OrdersState.erorrviewAllOrders(erorr: error.messege ?? ''));
     });
   }
 

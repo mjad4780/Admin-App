@@ -8,6 +8,17 @@ class ViewOrdersRepo {
 
   ViewOrdersRepo(this._apiService);
 
+  //viewAllOrders
+
+  Future<ApiResult<ResponseOrders>> viewAllOrders() async {
+    try {
+      final response = await _apiService.viewAllOrders();
+      return ApiResult.success(response);
+    } catch (e) {
+      return ApiResult.failure(ApiErrorHandler.handle(e));
+    }
+  }
+
   //viewapprove
 
   Future<ApiResult<ResponseOrders>> viewapprove() async {

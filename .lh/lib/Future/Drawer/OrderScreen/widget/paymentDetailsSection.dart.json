@@ -1,0 +1,22 @@
+{
+    "sourceFile": "lib/Future/Drawer/OrderScreen/widget/paymentDetailsSection.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1723887279251,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1723887746968,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,10 @@\n import 'package:flutter/material.dart';\r\n \r\n import '../../../../utility/constants.dart';\r\n \r\n-class paymentDetailsSection extends StatelessWidget {\r\n-  const paymentDetailsSection({super.key, required this.order});\r\n+class PaymentDetailsSection extends StatelessWidget {\r\n+  const PaymentDetailsSection({super.key, required this.order});\r\n   final Datum order;\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return Container(\r\n"
+                }
+            ],
+            "date": 1723887279251,
+            "name": "Commit-0",
+            "content": "import 'package:untitled/models/response_orders/datum.dart';\r\n\r\nimport 'FormRow.dart';\r\nimport 'package:flutter/material.dart';\r\n\r\nimport '../../../../utility/constants.dart';\r\n\r\nclass paymentDetailsSection extends StatelessWidget {\r\n  const paymentDetailsSection({super.key, required this.order});\r\n  final Datum order;\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return Container(\r\n      margin: const EdgeInsets.only(top: 20),\r\n      padding: const EdgeInsets.all(defaultPadding),\r\n      decoration: BoxDecoration(\r\n        color: secondaryColor,\r\n        border: Border.all(color: Colors.blueAccent),\r\n        boxShadow: [\r\n          BoxShadow(\r\n            color: Colors.grey.withOpacity(0.2),\r\n            spreadRadius: 1,\r\n            blurRadius: 3,\r\n            offset: const Offset(0, 1),\r\n          ),\r\n        ],\r\n        borderRadius: BorderRadius.circular(8.0),\r\n      ),\r\n      child: Column(\r\n        crossAxisAlignment: CrossAxisAlignment.start,\r\n        children: [\r\n          const Padding(\r\n            padding: EdgeInsets.symmetric(vertical: 8.0),\r\n            child: Text(\r\n              'Payment Details',\r\n              style: TextStyle(\r\n                  fontSize: 18,\r\n                  fontWeight: FontWeight.bold,\r\n                  color: primaryColor),\r\n            ),\r\n          ),\r\n          FormRow(\r\n              text: 'Payment Method:',\r\n              widget: Text(order.ordersPaymentmets.toString(),\r\n                  style: const TextStyle(fontSize: 16))),\r\n          // formRow(\r\n          //     'Coupon Code:',\r\n          //     Text(order?.ordersCoupon.toString() ?? 'N/A',\r\n          //         style: TextStyle(fontSize: 16))),\r\n          FormRow(\r\n              text: 'Order Sub Total:',\r\n              widget: Text(\r\n                  '\\$${order.ordersPrice?.toStringAsFixed(2) ?? 'N/A'}',\r\n                  style: const TextStyle(fontSize: 16))),\r\n          FormRow(\r\n              text: 'Discount:',\r\n              widget: Text(\r\n                  '\\$${order.ordersCoupon?.toStringAsFixed(2) ?? 'N/A'}',\r\n                  style: const TextStyle(fontSize: 16, color: Colors.red))),\r\n          FormRow(\r\n              text: 'Grand Total:',\r\n              widget: Text(\r\n                  '\\$${order.orderToatalprice?.toStringAsFixed(2) ?? 'N/A'}',\r\n                  style: const TextStyle(\r\n                      fontSize: 16, fontWeight: FontWeight.bold))),\r\n        ],\r\n      ),\r\n    );\r\n  }\r\n}\r\n"
+        }
+    ]
+}

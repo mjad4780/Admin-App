@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class CustomDropdown<T> extends StatelessWidget {
-  final T? initialValue;
   final List<T> items;
   final void Function(T?) onChanged;
   final String? Function(T?)? validator;
@@ -10,7 +9,6 @@ class CustomDropdown<T> extends StatelessWidget {
 
   const CustomDropdown({
     super.key,
-    this.initialValue,
     required this.items,
     required this.onChanged,
     this.validator,

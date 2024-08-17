@@ -44,6 +44,7 @@ class OrderSubmitForm extends StatelessWidget {
         ),
         child: Form(
           key: context.read<OrdersCubit>().orderFormKey,
+          autovalidateMode: context.read<OrdersCubit>().autovalidateMode,
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
@@ -68,23 +69,20 @@ class OrderSubmitForm extends StatelessWidget {
               // totalPrice: order?.orderToatalprice ?? 0),
               AddressSection(order: order),
               const Gap(10),
-              paymentDetailsSection(
+              PaymentDetailsSection(
                 order: order,
               ),
               FormRow(
                   text: 'Order Status:',
                   widget: CustomDropdown(
-                    hintText: 'Status',
-                    initialValue:
-                        context.read<OrdersCubit>().selectedOrderStatus,
+                    hintText: context.read<OrdersCubit>().selectedOrderStatus,
                     items: context.read<OrdersCubit>().item,
                     displayItem: (val) => val,
                     onChanged: (newValue) {
                       context.read<OrdersCubit>().updatestatus(newValue ?? '');
                     },
                     validator: (value) {
-                      validator(value, 'Please select status');
-                      return null;
+                      return validator(value, 'Please select status');
                     },
                   )),
               FormRow(

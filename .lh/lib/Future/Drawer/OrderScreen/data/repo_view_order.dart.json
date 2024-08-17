@@ -1,0 +1,18 @@
+{
+    "sourceFile": "lib/Future/Drawer/OrderScreen/data/repo_view_order.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1723887279253,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1723887279253,
+            "name": "Commit-0",
+            "content": "import '../../../../core/networking/api_error_handler.dart';\r\nimport '../../../../core/networking/api_result.dart';\r\nimport '../../../../core/networking/api_service.dart';\r\nimport '../../../../models/response_orders/response_orders.dart';\r\n\r\nclass ViewOrdersRepo {\r\n  final ApiService _apiService;\r\n\r\n  ViewOrdersRepo(this._apiService);\r\n\r\n\r\n\r\n\r\n\r\n    //viewAllOrders\r\n\r\n  Future<ApiResult<ResponseOrders>> viewAllOrders() async {\r\n    try {\r\n      final response = await _apiService.viewAllOrders();\r\n      return ApiResult.success(response);\r\n    } catch (e) {\r\n      return ApiResult.failure(ApiErrorHandler.handle(e));\r\n    }\r\n  }\r\n\r\n  //viewapprove\r\n\r\n  Future<ApiResult<ResponseOrders>> viewapprove() async {\r\n    try {\r\n      final response = await _apiService.viewapprove();\r\n      return ApiResult.success(response);\r\n    } catch (e) {\r\n      return ApiResult.failure(ApiErrorHandler.handle(e));\r\n    }\r\n  }\r\n  //viewCancel\r\n\r\n  Future<ApiResult<ResponseOrders>> viewCancel() async {\r\n    try {\r\n      final response = await _apiService.viewCancel();\r\n      return ApiResult.success(response);\r\n    } catch (e) {\r\n      return ApiResult.failure(ApiErrorHandler.handle(e));\r\n    }\r\n  } //viewdone\r\n\r\n  Future<ApiResult<ResponseOrders>> viewdone() async {\r\n    try {\r\n      final response = await _apiService.viewdone();\r\n      return ApiResult.success(response);\r\n    } catch (e) {\r\n      return ApiResult.failure(ApiErrorHandler.handle(e));\r\n    }\r\n  }\r\n  //viewpending\r\n\r\n  Future<ApiResult<ResponseOrders>> viewpending() async {\r\n    try {\r\n      final response = await _apiService.viewpending();\r\n      return ApiResult.success(response);\r\n    } catch (e) {\r\n      return ApiResult.failure(ApiErrorHandler.handle(e));\r\n    }\r\n  }\r\n  //viewprepare\r\n\r\n  Future<ApiResult<ResponseOrders>> viewprepare() async {\r\n    try {\r\n      final response = await _apiService.viewprepare();\r\n      return ApiResult.success(response);\r\n    } catch (e) {\r\n      return ApiResult.failure(ApiErrorHandler.handle(e));\r\n    }\r\n  }\r\n  //viewshipped\r\n\r\n  Future<ApiResult<ResponseOrders>> viewshipped() async {\r\n    try {\r\n      final response = await _apiService.viewshipped();\r\n      return ApiResult.success(response);\r\n    } catch (e) {\r\n      return ApiResult.failure(ApiErrorHandler.handle(e));\r\n    }\r\n  }\r\n}\r\n"
+        }
+    ]
+}

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 2,
+            "activePatchIndex": 3,
             "patches": [
                 {
                     "date": 1723828746552,
@@ -16,6 +16,10 @@
                 {
                     "date": 1723829767990,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,8 @@\n \n import 'package:retrofit/http.dart';\n import 'package:untitled/models/response_categories/response_categories.dart';\n import 'package:untitled/models/response_coupon/response_coupon.dart';\n-import 'package:untitled/models/response_items/response_items.dart';\n import 'package:untitled/models/response_notifacation/response_notifacation.dart';\n import 'package:untitled/models/response_orders/response_orders.dart';\n import 'package:untitled/models/response_poster/response_poster.dart';\n import 'package:dio/dio.dart';\n@@ -53,12 +52,10 @@\n   Future<dynamic> editItems(@Body() dynamic body);\n   //delete\n   @POST(ApiConstants.deleteItems)\n   Future<dynamic> deleteItems(@Body() dynamic body);\n-  //View\n-  @GET(ApiConstants.getItems)\n-  Future<ResponseItems> getItems();\n \n+\n   ///////////////COUPON/////////////\n \n   //Add\n   @POST(ApiConstants.addCoupon)\n"
+                },
+                {
+                    "date": 1723887279255,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,10 +81,12 @@\n   @GET(ApiConstants.getposter)\n   Future<ResponsePoster> getposter();\n \n   ///////////////VIEWORDERS/////////////\n-\n   //viewapprove\n+  @GET(ApiConstants.viewAllOrders)\n+  Future<ResponseOrders> viewAllOrders();\n+  //viewapprove\n   @GET(ApiConstants.viewapprove)\n   Future<ResponseOrders> viewapprove();\n   //viewCancel\n   @GET(ApiConstants.viewCancel)\n"
                 }
             ],
             "date": 1723828746552,

@@ -85,4 +85,11 @@ class OrdersState with _$OrdersState {
       successviewshipped;
   const factory OrdersState.erorrviewshipped({required String erorr}) =
       Erorrviewshipped;
+
+  ///:viewAllOrders
+  const factory OrdersState.loadingviewAllOrders() = LoadingviewAllOrders;
+  const factory OrdersState.successviewAllOrders(List<Datum> viewAllorders) =
+      successviewAllOrders;
+  const factory OrdersState.erorrviewAllOrders({required String erorr}) =
+      ErorrviewAllOrders;
 }

@@ -58,7 +58,7 @@ class MainCubit extends Cubit<MainState> {
         break;
       case 'Order':
         selectedScreen = BlocProvider(
-          create: (context) => getIt<OrdersCubit>(),
+          create: (context) => getIt<OrdersCubit>()..viewAllOrders(),
           child: const OrderScreen(),
         );
         break;

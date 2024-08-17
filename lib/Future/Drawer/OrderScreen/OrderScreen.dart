@@ -49,25 +49,27 @@ class OrderScreen extends StatelessWidget {
                               const Gap(20),
                               Expanded(
                                 child: CustomDropdown(
-                                  hintText: 'Filter Order By status',
-                                  initialValue: 'All order',
+                                  hintText: 'All order',
                                   items: context.read<OrdersCubit>().item,
-                                  displayItem: (val) => val ?? '',
+                                  displayItem: (val) => val,
                                   onChanged: (newValue) {
                                     context
                                         .read<OrdersCubit>()
                                         .filterOrders(newValue ?? '');
                                   },
                                   validator: (value) {
-                                    validator(value, 'Please select status');
-                                    return null;
-                                    // return null;
+                                    return validator(
+                                        value, 'Please select status');
                                   },
                                 ),
                               ),
                               const Gap(40),
                               IconButton(
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    context.read<OrdersCubit>().filterOrders(
+                                        context.read<OrdersCubit>().dataOrder ??
+                                            '');
+                                  },
                                   icon: const Icon(Icons.refresh)),
                             ],
                           ),

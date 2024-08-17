@@ -82,7 +82,9 @@ abstract class ApiService {
   Future<ResponsePoster> getposter();
 
   ///////////////VIEWORDERS/////////////
-
+  //viewapprove
+  @GET(ApiConstants.viewAllOrders)
+  Future<ResponseOrders> viewAllOrders();
   //viewapprove
   @GET(ApiConstants.viewapprove)
   Future<ResponseOrders> viewapprove();

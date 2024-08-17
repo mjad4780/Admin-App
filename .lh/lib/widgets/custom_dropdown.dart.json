@@ -1,0 +1,18 @@
+{
+    "sourceFile": "lib/widgets/custom_dropdown.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1723888835996,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1723888835996,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\n\nclass CustomDropdown<T> extends StatelessWidget {\n  final List<T> items;\n  final void Function(T?) onChanged;\n  final String? Function(T?)? validator;\n  final String hintText;\n  final String Function(T) displayItem;\n\n  const CustomDropdown({\n    super.key,\n    required this.items,\n    required this.onChanged,\n    this.validator,\n    this.hintText = 'Select an option',\n    required this.displayItem,\n  });\n\n  @override\n  Widget build(BuildContext context) {\n    return Padding(\n      padding: const EdgeInsets.all(8.0),\n      child: DropdownButtonFormField<T>(\n        decoration: InputDecoration(\n          labelText: hintText,\n          hintText: hintText,\n          border: OutlineInputBorder(\n            borderRadius: BorderRadius.circular(8.0),\n          ),\n        ),\n        items: items.map((T value) {\n          return DropdownMenuItem<T>(\n            \n            value: value,\n            child: Text(displayItem(value)), // Use displayItem to get the text\n          );\n        }).toList(),\n        onChanged: onChanged,\n        \n        validator: validator,\n      ),\n    );\n  }\n}\n"
+        }
+    ]
+}

@@ -3,11 +3,10 @@ import 'package:untitled/models/response_orders/datum.dart';
 import 'FormRow.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../models/ordersmodel.dart';
 import '../../../../utility/constants.dart';
 
-class paymentDetailsSection extends StatelessWidget {
-  const paymentDetailsSection({super.key, required this.order});
+class PaymentDetailsSection extends StatelessWidget {
+  const PaymentDetailsSection({super.key, required this.order});
   final Datum order;
   @override
   Widget build(BuildContext context) {

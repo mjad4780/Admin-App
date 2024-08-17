@@ -1,0 +1,18 @@
+{
+    "sourceFile": "lib/Future/mainScreen/logic/main_cubit/main_cubit.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1723887279251,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1723887279251,
+            "name": "Commit-0",
+            "content": "import 'package:untitled/Future/Drawer/CategoryScreen/logic/cubit/categories_cubit.dart';\n\nimport 'package:untitled/Future/Drawer/OrderScreen/logic/cubit/orders_cubit.dart';\nimport 'package:untitled/Future/Drawer/PosterScreen/logic/cubit/cubit/posters_cubit.dart';\nimport 'package:untitled/core/get_it/get_it.dart';\n\nimport 'package:flutter/material.dart';\nimport 'package:flutter_bloc/flutter_bloc.dart';\n\nimport '../../../Drawer/BrandScreen/ui/BrandScreen.dart';\nimport '../../../Drawer/CategoryScreen/CategoryScreen.dart';\nimport '../../../Drawer/CouponCodeScreen/coupon_code_screen.dart';\nimport '../../../Drawer/DashboardScreen/DashboardScreen.dart';\nimport '../../../Drawer/NotificationScreen/NotificationScreen.dart';\nimport '../../../Drawer/OrderScreen/OrderScreen.dart';\nimport '../../../Drawer/PosterScreen/PosterScreen.dart';\nimport '../../../Drawer/SubCategoryScreen/ui/SubCategoryScreen.dart';\nimport '../../../Drawer/VariantsScreen/ui/screem/VariantsScreen.dart';\nimport '../../../Drawer/VariantsTypeScreen/ui/screen/VariantsTypeScreen.dart';\n\npart 'main_state.dart';\n\nclass MainCubit extends Cubit<MainState> {\n  MainCubit() : super(MainInitial());\n  Widget selectedScreen = const DashboardScreen();\n\n  navigateToScreen(String screenName) {\n    switch (screenName) {\n      case 'Dashboard':\n        selectedScreen = const DashboardScreen();\n        break; // Break statement needed here\n      case 'Category':\n        selectedScreen = BlocProvider(\n          create: (context) => getIt<CategoriesCubit>()..viewCategories(),\n          child: const CategoryScreen(),\n        );\n        break;\n      case 'SubCategory':\n        selectedScreen = const SubCategoryScreen();\n        break;\n      case 'Brands':\n        selectedScreen = const BrandScreen();\n        break;\n      case 'VariantType':\n        selectedScreen = const VariantsTypeScreen();\n        break;\n      case 'Variants':\n        selectedScreen = const VariantsScreen();\n        break;\n      case 'Coupon':\n        selectedScreen = const CouponCodeScreen();\n        break;\n      case 'Poster':\n        selectedScreen = BlocProvider(\n          create: (context) => getIt<PostersCubit>()..viewPoster(),\n          child: const PosterScreen(),\n        );\n        break;\n      case 'Order':\n        selectedScreen = BlocProvider(\n          create: (context) => getIt<OrdersCubit>()..viewAllOrders(),\n          child: const OrderScreen(),\n        );\n        break;\n      case 'Notifications':\n        selectedScreen = NotificationScreen();\n        break;\n      default:\n        selectedScreen = const DashboardScreen();\n    }\n    emit(Navigator());\n  }\n}\n"
+        }
+    ]
+}

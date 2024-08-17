@@ -386,6 +386,32 @@ class _ApiService implements ApiService {
   }
 
   @override
+  Future<ResponseOrders> viewAllOrders() async {
+    final _extra = <String, dynamic>{};
+    final queryParameters = <String, dynamic>{};
+    final _headers = <String, dynamic>{};
+    const Map<String, dynamic>? _data = null;
+    final _result = await _dio.fetch(_setStreamType<ResponseOrders>(Options(
+      method: 'GET',
+      headers: _headers,
+      extra: _extra,
+    )
+        .compose(
+          _dio.options,
+          'http://localhost/e-ecommerse/admin/orders/all_orders.php',
+          queryParameters: queryParameters,
+          data: _data,
+        )
+        .copyWith(
+            baseUrl: _combineBaseUrls(
+          _dio.options.baseUrl,
+          baseUrl,
+        ))));
+    final _value = ResponseOrders.fromJson(jsonDecode(_result.data!));
+    return _value;
+  }
+
+  @override
   Future<ResponseOrders> viewapprove() async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};

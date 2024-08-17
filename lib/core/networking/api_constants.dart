@@ -42,8 +42,7 @@ class ApiConstants {
   static const String shipped = '$baseUrl/admin/orders/shipped.php';
 
   //viewOrders
-  static const String viewAllOrders =
-      '$baseUrl/admin/orders/view_all_orders.php';
+  static const String viewAllOrders = '$baseUrl/admin/orders/all_orders.php';
   static const String viewapprove = '$baseUrl/admin/orders/viewapprove.php';
   static const String viewdone = '$baseUrl/admin/orders/viewdone.php';
   static const String viewCancel = '$baseUrl/admin/orders/viewCancel.php';
