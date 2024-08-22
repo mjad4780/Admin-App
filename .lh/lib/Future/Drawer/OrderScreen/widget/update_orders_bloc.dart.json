@@ -1,0 +1,18 @@
+{
+    "sourceFile": "lib/Future/Drawer/OrderScreen/widget/update_orders_bloc.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1724066857959,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1724066857959,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\r\nimport 'package:flutter_bloc/flutter_bloc.dart';\r\n\r\nimport 'package:untitled/Future/Drawer/OrderScreen/logic/cubit/orders_cubit.dart';\r\nimport 'package:untitled/Future/Drawer/OrderScreen/logic/cubit/orders_state.dart';\r\nimport 'package:untitled/core/extensions/extention_navigator.dart';\r\nimport '../../../../core/function/show_dilaog/top_show_dialog.dart';\r\nimport '../../../../core/widgets/setup_erorr.dart';\r\n\r\nimport '../../../../core/theming/colors.dart';\r\n\r\n\r\nclass UpdateOrdersBlocListener extends StatelessWidget {\r\n  const UpdateOrdersBlocListener({super.key});\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return BlocListener<OrdersCubit, OrdersState>(\r\n      listenWhen: (previous, current) =>\r\n          current is LoadingUpdate || current is SuccessUpdate || current is ErorrUpdate,\r\n      listener: (context, state) {\r\n        state.whenOrNull(\r\n         loadingUpdate: () {\r\n            context.pop();\r\n            showDialog(\r\n              context: context,\r\n              builder: (context) => const Center(\r\n                child: CircularProgressIndicator(\r\n                  color: AppColor.mainBlue,\r\n                ),\r\n              ),\r\n            );\r\n          },\r\n          successUpdate: () {\r\n            context.pop();\r\n            topsnackbar(context, 'success Update Orders');\r\n          },\r\n          erorrUpdate: (error) {\r\n            setupErrorState(context, error);\r\n          },\r\n        );\r\n      },\r\n      child: const SizedBox.shrink(),\r\n    );\r\n  }\r\n}\r\n"
+        }
+    ]
+}

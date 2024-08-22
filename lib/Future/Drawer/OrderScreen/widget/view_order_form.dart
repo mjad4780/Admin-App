@@ -17,6 +17,7 @@ import 'FormRow.dart';
 import 'addressSection.dart';
 import 'details_orders_bloc.dart';
 import 'paymentDetailsSection.dart';
+import 'update_orders_bloc.dart';
 
 class OrderSubmitForm extends StatelessWidget {
   final Datum order;
@@ -98,7 +99,8 @@ class OrderSubmitForm extends StatelessWidget {
                   context.read<OrdersCubit>().updateOrders(
                       order.ordersId!, order.ordersUserid!, order.ordersType!);
                 },
-              )
+              ),
+              const UpdateOrdersBlocListener()
             ],
           ),
         ),

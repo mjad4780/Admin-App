@@ -44,6 +44,10 @@ class DataDetails {
   int? cartUserid;
   @JsonKey(name: 'cart_orders')
   int? cartOrders;
+  @JsonKey(name: 'cart_size')
+  String? cartSize;
+  @JsonKey(name: 'cart_color')
+  String? cartColor;
   List<String>? images;
   List<ItemSize>? size;
 
@@ -67,6 +71,8 @@ class DataDetails {
     this.cartItemid,
     this.cartUserid,
     this.cartOrders,
+    this.cartColor,
+    this.cartSize,
     this.images,
     this.size,
   });

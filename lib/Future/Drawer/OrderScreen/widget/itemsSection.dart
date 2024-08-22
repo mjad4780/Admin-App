@@ -35,26 +35,48 @@ class ItemSection extends StatelessWidget {
         children: [
           const TableRow(children: [
             Text("Item",
+                overflow: TextOverflow.ellipsis,
                 textAlign: TextAlign.center,
                 style: TextStyle(
                     color: AppColor.primaryColor, fontWeight: FontWeight.bold)),
             Text("Count",
+                overflow: TextOverflow.ellipsis,
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                    color: AppColor.primaryColor, fontWeight: FontWeight.bold)),
+            Text("Size",
+                overflow: TextOverflow.ellipsis,
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                    color: AppColor.primaryColor, fontWeight: FontWeight.bold)),
+            Text("Color",
+                overflow: TextOverflow.ellipsis,
                 textAlign: TextAlign.center,
                 style: TextStyle(
                     color: AppColor.primaryColor, fontWeight: FontWeight.bold)),
             Text("ItemPrice",
+                overflow: TextOverflow.ellipsis,
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                    color: AppColor.primaryColor, fontWeight: FontWeight.bold))
+                    color: AppColor.primaryColor, fontWeight: FontWeight.bold)),
           ]),
           ...List.generate(
               details.length,
               (index) => TableRow(children: [
                     Text('${details[index].itemName}',
+                        overflow: TextOverflow.ellipsis,
                         textAlign: TextAlign.center),
                     Text('${details[index].countitems}',
+                        overflow: TextOverflow.ellipsis,
+                        textAlign: TextAlign.center),
+                    Text('${details[index].cartSize}',
+                        overflow: TextOverflow.ellipsis,
+                        textAlign: TextAlign.center),
+                    Text('${details[index].cartColor}',
+                        overflow: TextOverflow.ellipsis,
                         textAlign: TextAlign.center),
                     Text('${details[index].itemPrice}',
+                        overflow: TextOverflow.ellipsis,
                         style: const TextStyle(color: Colors.black),
                         textAlign: TextAlign.center),
                   ])),

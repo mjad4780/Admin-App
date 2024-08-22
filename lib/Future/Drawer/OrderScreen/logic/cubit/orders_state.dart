@@ -11,29 +11,11 @@ class OrdersState with _$OrdersState {
 
   /////////////Orders///////////////////////////////
 
-  ///:approve
-  const factory OrdersState.loadingapprove() = Loadingapprove;
-  const factory OrdersState.successapprove() = Successapprove;
+  ///:update
+  const factory OrdersState.loadingUpdate() = LoadingUpdate;
+  const factory OrdersState.successUpdate() = SuccessUpdate;
 
-  const factory OrdersState.erorrapprove({required String erorr}) =
-      Erorrapprove;
-
-  ///:prepare
-  const factory OrdersState.loadingprepare() = Loadingprepare;
-  const factory OrdersState.successprepare() = Successprepare;
-  const factory OrdersState.erorrprepare({required String erorr}) =
-      Erorrprepare;
-
-  ///:done
-  const factory OrdersState.loadingdone() = Loadingdone;
-  const factory OrdersState.successdone() = Successdone;
-  const factory OrdersState.erorrdone({required String erorr}) = Erorrdone;
-
-  ///:shipped
-  const factory OrdersState.loadingshipped() = Loadingshipped;
-  const factory OrdersState.successshipped() = Successshipped;
-  const factory OrdersState.erorrshipped({required String erorr}) =
-      Erorrshipped;
+  const factory OrdersState.erorrUpdate({required String erorr}) = ErorrUpdate;
 
   ///:viewdetails
   const factory OrdersState.loadingviewdetails() = Loadingviewdetails;

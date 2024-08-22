@@ -19,18 +19,9 @@ mixin _$OrdersState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingapprove,
-    required TResult Function() successapprove,
-    required TResult Function(String erorr) erorrapprove,
-    required TResult Function() loadingprepare,
-    required TResult Function() successprepare,
-    required TResult Function(String erorr) erorrprepare,
-    required TResult Function() loadingdone,
-    required TResult Function() successdone,
-    required TResult Function(String erorr) erorrdone,
-    required TResult Function() loadingshipped,
-    required TResult Function() successshipped,
-    required TResult Function(String erorr) erorrshipped,
+    required TResult Function() loadingUpdate,
+    required TResult Function() successUpdate,
+    required TResult Function(String erorr) erorrUpdate,
     required TResult Function() loadingviewdetails,
     required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
@@ -61,18 +52,9 @@ mixin _$OrdersState {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingapprove,
-    TResult? Function()? successapprove,
-    TResult? Function(String erorr)? erorrapprove,
-    TResult? Function()? loadingprepare,
-    TResult? Function()? successprepare,
-    TResult? Function(String erorr)? erorrprepare,
-    TResult? Function()? loadingdone,
-    TResult? Function()? successdone,
-    TResult? Function(String erorr)? erorrdone,
-    TResult? Function()? loadingshipped,
-    TResult? Function()? successshipped,
-    TResult? Function(String erorr)? erorrshipped,
+    TResult? Function()? loadingUpdate,
+    TResult? Function()? successUpdate,
+    TResult? Function(String erorr)? erorrUpdate,
     TResult? Function()? loadingviewdetails,
     TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
@@ -102,18 +84,9 @@ mixin _$OrdersState {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingapprove,
-    TResult Function()? successapprove,
-    TResult Function(String erorr)? erorrapprove,
-    TResult Function()? loadingprepare,
-    TResult Function()? successprepare,
-    TResult Function(String erorr)? erorrprepare,
-    TResult Function()? loadingdone,
-    TResult Function()? successdone,
-    TResult Function(String erorr)? erorrdone,
-    TResult Function()? loadingshipped,
-    TResult Function()? successshipped,
-    TResult Function(String erorr)? erorrshipped,
+    TResult Function()? loadingUpdate,
+    TResult Function()? successUpdate,
+    TResult Function(String erorr)? erorrUpdate,
     TResult Function()? loadingviewdetails,
     TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
@@ -144,18 +117,9 @@ mixin _$OrdersState {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingapprove value) loadingapprove,
-    required TResult Function(Successapprove value) successapprove,
-    required TResult Function(Erorrapprove value) erorrapprove,
-    required TResult Function(Loadingprepare value) loadingprepare,
-    required TResult Function(Successprepare value) successprepare,
-    required TResult Function(Erorrprepare value) erorrprepare,
-    required TResult Function(Loadingdone value) loadingdone,
-    required TResult Function(Successdone value) successdone,
-    required TResult Function(Erorrdone value) erorrdone,
-    required TResult Function(Loadingshipped value) loadingshipped,
-    required TResult Function(Successshipped value) successshipped,
-    required TResult Function(Erorrshipped value) erorrshipped,
+    required TResult Function(LoadingUpdate value) loadingUpdate,
+    required TResult Function(SuccessUpdate value) successUpdate,
+    required TResult Function(ErorrUpdate value) erorrUpdate,
     required TResult Function(Loadingviewdetails value) loadingviewdetails,
     required TResult Function(successviewdetails value) successviewdetails,
     required TResult Function(Erorrviewdetails value) erorrviewdetails,
@@ -185,18 +149,9 @@ mixin _$OrdersState {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingapprove value)? loadingapprove,
-    TResult? Function(Successapprove value)? successapprove,
-    TResult? Function(Erorrapprove value)? erorrapprove,
-    TResult? Function(Loadingprepare value)? loadingprepare,
-    TResult? Function(Successprepare value)? successprepare,
-    TResult? Function(Erorrprepare value)? erorrprepare,
-    TResult? Function(Loadingdone value)? loadingdone,
-    TResult? Function(Successdone value)? successdone,
-    TResult? Function(Erorrdone value)? erorrdone,
-    TResult? Function(Loadingshipped value)? loadingshipped,
-    TResult? Function(Successshipped value)? successshipped,
-    TResult? Function(Erorrshipped value)? erorrshipped,
+    TResult? Function(LoadingUpdate value)? loadingUpdate,
+    TResult? Function(SuccessUpdate value)? successUpdate,
+    TResult? Function(ErorrUpdate value)? erorrUpdate,
     TResult? Function(Loadingviewdetails value)? loadingviewdetails,
     TResult? Function(successviewdetails value)? successviewdetails,
     TResult? Function(Erorrviewdetails value)? erorrviewdetails,
@@ -226,18 +181,9 @@ mixin _$OrdersState {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingapprove value)? loadingapprove,
-    TResult Function(Successapprove value)? successapprove,
-    TResult Function(Erorrapprove value)? erorrapprove,
-    TResult Function(Loadingprepare value)? loadingprepare,
-    TResult Function(Successprepare value)? successprepare,
-    TResult Function(Erorrprepare value)? erorrprepare,
-    TResult Function(Loadingdone value)? loadingdone,
-    TResult Function(Successdone value)? successdone,
-    TResult Function(Erorrdone value)? erorrdone,
-    TResult Function(Loadingshipped value)? loadingshipped,
-    TResult Function(Successshipped value)? successshipped,
-    TResult Function(Erorrshipped value)? erorrshipped,
+    TResult Function(LoadingUpdate value)? loadingUpdate,
+    TResult Function(SuccessUpdate value)? successUpdate,
+    TResult Function(ErorrUpdate value)? erorrUpdate,
     TResult Function(Loadingviewdetails value)? loadingviewdetails,
     TResult Function(successviewdetails value)? successviewdetails,
     TResult Function(Erorrviewdetails value)? erorrviewdetails,
@@ -324,18 +270,9 @@ class _$InitialImpl implements _Initial {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingapprove,
-    required TResult Function() successapprove,
-    required TResult Function(String erorr) erorrapprove,
-    required TResult Function() loadingprepare,
-    required TResult Function() successprepare,
-    required TResult Function(String erorr) erorrprepare,
-    required TResult Function() loadingdone,
-    required TResult Function() successdone,
-    required TResult Function(String erorr) erorrdone,
-    required TResult Function() loadingshipped,
-    required TResult Function() successshipped,
-    required TResult Function(String erorr) erorrshipped,
+    required TResult Function() loadingUpdate,
+    required TResult Function() successUpdate,
+    required TResult Function(String erorr) erorrUpdate,
     required TResult Function() loadingviewdetails,
     required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
@@ -369,18 +306,9 @@ class _$InitialImpl implements _Initial {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingapprove,
-    TResult? Function()? successapprove,
-    TResult? Function(String erorr)? erorrapprove,
-    TResult? Function()? loadingprepare,
-    TResult? Function()? successprepare,
-    TResult? Function(String erorr)? erorrprepare,
-    TResult? Function()? loadingdone,
-    TResult? Function()? successdone,
-    TResult? Function(String erorr)? erorrdone,
-    TResult? Function()? loadingshipped,
-    TResult? Function()? successshipped,
-    TResult? Function(String erorr)? erorrshipped,
+    TResult? Function()? loadingUpdate,
+    TResult? Function()? successUpdate,
+    TResult? Function(String erorr)? erorrUpdate,
     TResult? Function()? loadingviewdetails,
     TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
@@ -413,18 +341,9 @@ class _$InitialImpl implements _Initial {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingapprove,
-    TResult Function()? successapprove,
-    TResult Function(String erorr)? erorrapprove,
-    TResult Function()? loadingprepare,
-    TResult Function()? successprepare,
-    TResult Function(String erorr)? erorrprepare,
-    TResult Function()? loadingdone,
-    TResult Function()? successdone,
-    TResult Function(String erorr)? erorrdone,
-    TResult Function()? loadingshipped,
-    TResult Function()? successshipped,
-    TResult Function(String erorr)? erorrshipped,
+    TResult Function()? loadingUpdate,
+    TResult Function()? successUpdate,
+    TResult Function(String erorr)? erorrUpdate,
     TResult Function()? loadingviewdetails,
     TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
@@ -461,18 +380,9 @@ class _$InitialImpl implements _Initial {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingapprove value) loadingapprove,
-    required TResult Function(Successapprove value) successapprove,
-    required TResult Function(Erorrapprove value) erorrapprove,
-    required TResult Function(Loadingprepare value) loadingprepare,
-    required TResult Function(Successprepare value) successprepare,
-    required TResult Function(Erorrprepare value) erorrprepare,
-    required TResult Function(Loadingdone value) loadingdone,
-    required TResult Function(Successdone value) successdone,
-    required TResult Function(Erorrdone value) erorrdone,
-    required TResult Function(Loadingshipped value) loadingshipped,
-    required TResult Function(Successshipped value) successshipped,
-    required TResult Function(Erorrshipped value) erorrshipped,
+    required TResult Function(LoadingUpdate value) loadingUpdate,
+    required TResult Function(SuccessUpdate value) successUpdate,
+    required TResult Function(ErorrUpdate value) erorrUpdate,
     required TResult Function(Loadingviewdetails value) loadingviewdetails,
     required TResult Function(successviewdetails value) successviewdetails,
     required TResult Function(Erorrviewdetails value) erorrviewdetails,
@@ -505,18 +415,9 @@ class _$InitialImpl implements _Initial {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingapprove value)? loadingapprove,
-    TResult? Function(Successapprove value)? successapprove,
-    TResult? Function(Erorrapprove value)? erorrapprove,
-    TResult? Function(Loadingprepare value)? loadingprepare,
-    TResult? Function(Successprepare value)? successprepare,
-    TResult? Function(Erorrprepare value)? erorrprepare,
-    TResult? Function(Loadingdone value)? loadingdone,
-    TResult? Function(Successdone value)? successdone,
-    TResult? Function(Erorrdone value)? erorrdone,
-    TResult? Function(Loadingshipped value)? loadingshipped,
-    TResult? Function(Successshipped value)? successshipped,
-    TResult? Function(Erorrshipped value)? erorrshipped,
+    TResult? Function(LoadingUpdate value)? loadingUpdate,
+    TResult? Function(SuccessUpdate value)? successUpdate,
+    TResult? Function(ErorrUpdate value)? erorrUpdate,
     TResult? Function(Loadingviewdetails value)? loadingviewdetails,
     TResult? Function(successviewdetails value)? successviewdetails,
     TResult? Function(Erorrviewdetails value)? erorrviewdetails,
@@ -549,18 +450,9 @@ class _$InitialImpl implements _Initial {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingapprove value)? loadingapprove,
-    TResult Function(Successapprove value)? successapprove,
-    TResult Function(Erorrapprove value)? erorrapprove,
-    TResult Function(Loadingprepare value)? loadingprepare,
-    TResult Function(Successprepare value)? successprepare,
-    TResult Function(Erorrprepare value)? erorrprepare,
-    TResult Function(Loadingdone value)? loadingdone,
-    TResult Function(Successdone value)? successdone,
-    TResult Function(Erorrdone value)? erorrdone,
-    TResult Function(Loadingshipped value)? loadingshipped,
-    TResult Function(Successshipped value)? successshipped,
-    TResult Function(Erorrshipped value)? erorrshipped,
+    TResult Function(LoadingUpdate value)? loadingUpdate,
+    TResult Function(SuccessUpdate value)? successUpdate,
+    TResult Function(ErorrUpdate value)? erorrUpdate,
     TResult Function(Loadingviewdetails value)? loadingviewdetails,
     TResult Function(successviewdetails value)? successviewdetails,
     TResult Function(Erorrviewdetails value)? erorrviewdetails,
@@ -599,35 +491,35 @@ abstract class _Initial implements OrdersState {
 }
 
 /// @nodoc
-abstract class _$$LoadingapproveImplCopyWith<$Res> {
-  factory _$$LoadingapproveImplCopyWith(_$LoadingapproveImpl value,
-          $Res Function(_$LoadingapproveImpl) then) =
-      __$$LoadingapproveImplCopyWithImpl<$Res>;
+abstract class _$$LoadingUpdateImplCopyWith<$Res> {
+  factory _$$LoadingUpdateImplCopyWith(
+          _$LoadingUpdateImpl value, $Res Function(_$LoadingUpdateImpl) then) =
+      __$$LoadingUpdateImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$LoadingapproveImplCopyWithImpl<$Res>
-    extends _$OrdersStateCopyWithImpl<$Res, _$LoadingapproveImpl>
-    implements _$$LoadingapproveImplCopyWith<$Res> {
-  __$$LoadingapproveImplCopyWithImpl(
-      _$LoadingapproveImpl _value, $Res Function(_$LoadingapproveImpl) _then)
+class __$$LoadingUpdateImplCopyWithImpl<$Res>
+    extends _$OrdersStateCopyWithImpl<$Res, _$LoadingUpdateImpl>
+    implements _$$LoadingUpdateImplCopyWith<$Res> {
+  __$$LoadingUpdateImplCopyWithImpl(
+      _$LoadingUpdateImpl _value, $Res Function(_$LoadingUpdateImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$LoadingapproveImpl implements Loadingapprove {
-  const _$LoadingapproveImpl();
+class _$LoadingUpdateImpl implements LoadingUpdate {
+  const _$LoadingUpdateImpl();
 
   @override
   String toString() {
-    return 'OrdersState.loadingapprove()';
+    return 'OrdersState.loadingUpdate()';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$LoadingapproveImpl);
+        (other.runtimeType == runtimeType && other is _$LoadingUpdateImpl);
   }
 
   @override
@@ -637,18 +529,9 @@ class _$LoadingapproveImpl implements Loadingapprove {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingapprove,
-    required TResult Function() successapprove,
-    required TResult Function(String erorr) erorrapprove,
-    required TResult Function() loadingprepare,
-    required TResult Function() successprepare,
-    required TResult Function(String erorr) erorrprepare,
-    required TResult Function() loadingdone,
-    required TResult Function() successdone,
-    required TResult Function(String erorr) erorrdone,
-    required TResult Function() loadingshipped,
-    required TResult Function() successshipped,
-    required TResult Function(String erorr) erorrshipped,
+    required TResult Function() loadingUpdate,
+    required TResult Function() successUpdate,
+    required TResult Function(String erorr) erorrUpdate,
     required TResult Function() loadingviewdetails,
     required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
@@ -675,25 +558,16 @@ class _$LoadingapproveImpl implements Loadingapprove {
     required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
     required TResult Function(String erorr) erorrviewAllOrders,
   }) {
-    return loadingapprove();
+    return loadingUpdate();
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingapprove,
-    TResult? Function()? successapprove,
-    TResult? Function(String erorr)? erorrapprove,
-    TResult? Function()? loadingprepare,
-    TResult? Function()? successprepare,
-    TResult? Function(String erorr)? erorrprepare,
-    TResult? Function()? loadingdone,
-    TResult? Function()? successdone,
-    TResult? Function(String erorr)? erorrdone,
-    TResult? Function()? loadingshipped,
-    TResult? Function()? successshipped,
-    TResult? Function(String erorr)? erorrshipped,
+    TResult? Function()? loadingUpdate,
+    TResult? Function()? successUpdate,
+    TResult? Function(String erorr)? erorrUpdate,
     TResult? Function()? loadingviewdetails,
     TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
@@ -719,25 +593,16 @@ class _$LoadingapproveImpl implements Loadingapprove {
     TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult? Function(String erorr)? erorrviewAllOrders,
   }) {
-    return loadingapprove?.call();
+    return loadingUpdate?.call();
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingapprove,
-    TResult Function()? successapprove,
-    TResult Function(String erorr)? erorrapprove,
-    TResult Function()? loadingprepare,
-    TResult Function()? successprepare,
-    TResult Function(String erorr)? erorrprepare,
-    TResult Function()? loadingdone,
-    TResult Function()? successdone,
-    TResult Function(String erorr)? erorrdone,
-    TResult Function()? loadingshipped,
-    TResult Function()? successshipped,
-    TResult Function(String erorr)? erorrshipped,
+    TResult Function()? loadingUpdate,
+    TResult Function()? successUpdate,
+    TResult Function(String erorr)? erorrUpdate,
     TResult Function()? loadingviewdetails,
     TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
@@ -764,8 +629,8 @@ class _$LoadingapproveImpl implements Loadingapprove {
     TResult Function(String erorr)? erorrviewAllOrders,
     required TResult orElse(),
   }) {
-    if (loadingapprove != null) {
-      return loadingapprove();
+    if (loadingUpdate != null) {
+      return loadingUpdate();
     }
     return orElse();
   }
@@ -774,18 +639,9 @@ class _$LoadingapproveImpl implements Loadingapprove {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingapprove value) loadingapprove,
-    required TResult Function(Successapprove value) successapprove,
-    required TResult Function(Erorrapprove value) erorrapprove,
-    required TResult Function(Loadingprepare value) loadingprepare,
-    required TResult Function(Successprepare value) successprepare,
-    required TResult Function(Erorrprepare value) erorrprepare,
-    required TResult Function(Loadingdone value) loadingdone,
-    required TResult Function(Successdone value) successdone,
-    required TResult Function(Erorrdone value) erorrdone,
-    required TResult Function(Loadingshipped value) loadingshipped,
-    required TResult Function(Successshipped value) successshipped,
-    required TResult Function(Erorrshipped value) erorrshipped,
+    required TResult Function(LoadingUpdate value) loadingUpdate,
+    required TResult Function(SuccessUpdate value) successUpdate,
+    required TResult Function(ErorrUpdate value) erorrUpdate,
     required TResult Function(Loadingviewdetails value) loadingviewdetails,
     required TResult Function(successviewdetails value) successviewdetails,
     required TResult Function(Erorrviewdetails value) erorrviewdetails,
@@ -811,25 +667,16 @@ class _$LoadingapproveImpl implements Loadingapprove {
     required TResult Function(successviewAllOrders value) successviewAllOrders,
     required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
   }) {
-    return loadingapprove(this);
+    return loadingUpdate(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingapprove value)? loadingapprove,
-    TResult? Function(Successapprove value)? successapprove,
-    TResult? Function(Erorrapprove value)? erorrapprove,
-    TResult? Function(Loadingprepare value)? loadingprepare,
-    TResult? Function(Successprepare value)? successprepare,
-    TResult? Function(Erorrprepare value)? erorrprepare,
-    TResult? Function(Loadingdone value)? loadingdone,
-    TResult? Function(Successdone value)? successdone,
-    TResult? Function(Erorrdone value)? erorrdone,
-    TResult? Function(Loadingshipped value)? loadingshipped,
-    TResult? Function(Successshipped value)? successshipped,
-    TResult? Function(Erorrshipped value)? erorrshipped,
+    TResult? Function(LoadingUpdate value)? loadingUpdate,
+    TResult? Function(SuccessUpdate value)? successUpdate,
+    TResult? Function(ErorrUpdate value)? erorrUpdate,
     TResult? Function(Loadingviewdetails value)? loadingviewdetails,
     TResult? Function(successviewdetails value)? successviewdetails,
     TResult? Function(Erorrviewdetails value)? erorrviewdetails,
@@ -855,25 +702,16 @@ class _$LoadingapproveImpl implements Loadingapprove {
     TResult? Function(successviewAllOrders value)? successviewAllOrders,
     TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
   }) {
-    return loadingapprove?.call(this);
+    return loadingUpdate?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingapprove value)? loadingapprove,
-    TResult Function(Successapprove value)? successapprove,
-    TResult Function(Erorrapprove value)? erorrapprove,
-    TResult Function(Loadingprepare value)? loadingprepare,
-    TResult Function(Successprepare value)? successprepare,
-    TResult Function(Erorrprepare value)? erorrprepare,
-    TResult Function(Loadingdone value)? loadingdone,
-    TResult Function(Successdone value)? successdone,
-    TResult Function(Erorrdone value)? erorrdone,
-    TResult Function(Loadingshipped value)? loadingshipped,
-    TResult Function(Successshipped value)? successshipped,
-    TResult Function(Erorrshipped value)? erorrshipped,
+    TResult Function(LoadingUpdate value)? loadingUpdate,
+    TResult Function(SuccessUpdate value)? successUpdate,
+    TResult Function(ErorrUpdate value)? erorrUpdate,
     TResult Function(Loadingviewdetails value)? loadingviewdetails,
     TResult Function(successviewdetails value)? successviewdetails,
     TResult Function(Erorrviewdetails value)? erorrviewdetails,
@@ -900,47 +738,47 @@ class _$LoadingapproveImpl implements Loadingapprove {
     TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
     required TResult orElse(),
   }) {
-    if (loadingapprove != null) {
-      return loadingapprove(this);
+    if (loadingUpdate != null) {
+      return loadingUpdate(this);
     }
     return orElse();
   }
 }
 
-abstract class Loadingapprove implements OrdersState {
-  const factory Loadingapprove() = _$LoadingapproveImpl;
+abstract class LoadingUpdate implements OrdersState {
+  const factory LoadingUpdate() = _$LoadingUpdateImpl;
 }
 
 /// @nodoc
-abstract class _$$SuccessapproveImplCopyWith<$Res> {
-  factory _$$SuccessapproveImplCopyWith(_$SuccessapproveImpl value,
-          $Res Function(_$SuccessapproveImpl) then) =
-      __$$SuccessapproveImplCopyWithImpl<$Res>;
+abstract class _$$SuccessUpdateImplCopyWith<$Res> {
+  factory _$$SuccessUpdateImplCopyWith(
+          _$SuccessUpdateImpl value, $Res Function(_$SuccessUpdateImpl) then) =
+      __$$SuccessUpdateImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$SuccessapproveImplCopyWithImpl<$Res>
-    extends _$OrdersStateCopyWithImpl<$Res, _$SuccessapproveImpl>
-    implements _$$SuccessapproveImplCopyWith<$Res> {
-  __$$SuccessapproveImplCopyWithImpl(
-      _$SuccessapproveImpl _value, $Res Function(_$SuccessapproveImpl) _then)
+class __$$SuccessUpdateImplCopyWithImpl<$Res>
+    extends _$OrdersStateCopyWithImpl<$Res, _$SuccessUpdateImpl>
+    implements _$$SuccessUpdateImplCopyWith<$Res> {
+  __$$SuccessUpdateImplCopyWithImpl(
+      _$SuccessUpdateImpl _value, $Res Function(_$SuccessUpdateImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$SuccessapproveImpl implements Successapprove {
-  const _$SuccessapproveImpl();
+class _$SuccessUpdateImpl implements SuccessUpdate {
+  const _$SuccessUpdateImpl();
 
   @override
   String toString() {
-    return 'OrdersState.successapprove()';
+    return 'OrdersState.successUpdate()';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$SuccessapproveImpl);
+        (other.runtimeType == runtimeType && other is _$SuccessUpdateImpl);
   }
 
   @override
@@ -950,18 +788,9 @@ class _$SuccessapproveImpl implements Successapprove {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingapprove,
-    required TResult Function() successapprove,
-    required TResult Function(String erorr) erorrapprove,
-    required TResult Function() loadingprepare,
-    required TResult Function() successprepare,
-    required TResult Function(String erorr) erorrprepare,
-    required TResult Function() loadingdone,
-    required TResult Function() successdone,
-    required TResult Function(String erorr) erorrdone,
-    required TResult Function() loadingshipped,
-    required TResult Function() successshipped,
-    required TResult Function(String erorr) erorrshipped,
+    required TResult Function() loadingUpdate,
+    required TResult Function() successUpdate,
+    required TResult Function(String erorr) erorrUpdate,
     required TResult Function() loadingviewdetails,
     required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
@@ -988,25 +817,16 @@ class _$SuccessapproveImpl implements Successapprove {
     required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
     required TResult Function(String erorr) erorrviewAllOrders,
   }) {
-    return successapprove();
+    return successUpdate();
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingapprove,
-    TResult? Function()? successapprove,
-    TResult? Function(String erorr)? erorrapprove,
-    TResult? Function()? loadingprepare,
-    TResult? Function()? successprepare,
-    TResult? Function(String erorr)? erorrprepare,
-    TResult? Function()? loadingdone,
-    TResult? Function()? successdone,
-    TResult? Function(String erorr)? erorrdone,
-    TResult? Function()? loadingshipped,
-    TResult? Function()? successshipped,
-    TResult? Function(String erorr)? erorrshipped,
+    TResult? Function()? loadingUpdate,
+    TResult? Function()? successUpdate,
+    TResult? Function(String erorr)? erorrUpdate,
     TResult? Function()? loadingviewdetails,
     TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
@@ -1032,25 +852,16 @@ class _$SuccessapproveImpl implements Successapprove {
     TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult? Function(String erorr)? erorrviewAllOrders,
   }) {
-    return successapprove?.call();
+    return successUpdate?.call();
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingapprove,
-    TResult Function()? successapprove,
-    TResult Function(String erorr)? erorrapprove,
-    TResult Function()? loadingprepare,
-    TResult Function()? successprepare,
-    TResult Function(String erorr)? erorrprepare,
-    TResult Function()? loadingdone,
-    TResult Function()? successdone,
-    TResult Function(String erorr)? erorrdone,
-    TResult Function()? loadingshipped,
-    TResult Function()? successshipped,
-    TResult Function(String erorr)? erorrshipped,
+    TResult Function()? loadingUpdate,
+    TResult Function()? successUpdate,
+    TResult Function(String erorr)? erorrUpdate,
     TResult Function()? loadingviewdetails,
     TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
@@ -1077,8 +888,8 @@ class _$SuccessapproveImpl implements Successapprove {
     TResult Function(String erorr)? erorrviewAllOrders,
     required TResult orElse(),
   }) {
-    if (successapprove != null) {
-      return successapprove();
+    if (successUpdate != null) {
+      return successUpdate();
     }
     return orElse();
   }
@@ -1087,18 +898,9 @@ class _$SuccessapproveImpl implements Successapprove {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingapprove value) loadingapprove,
-    required TResult Function(Successapprove value) successapprove,
-    required TResult Function(Erorrapprove value) erorrapprove,
-    required TResult Function(Loadingprepare value) loadingprepare,
-    required TResult Function(Successprepare value) successprepare,
-    required TResult Function(Erorrprepare value) erorrprepare,
-    required TResult Function(Loadingdone value) loadingdone,
-    required TResult Function(Successdone value) successdone,
-    required TResult Function(Erorrdone value) erorrdone,
-    required TResult Function(Loadingshipped value) loadingshipped,
-    required TResult Function(Successshipped value) successshipped,
-    required TResult Function(Erorrshipped value) erorrshipped,
+    required TResult Function(LoadingUpdate value) loadingUpdate,
+    required TResult Function(SuccessUpdate value) successUpdate,
+    required TResult Function(ErorrUpdate value) erorrUpdate,
     required TResult Function(Loadingviewdetails value) loadingviewdetails,
     required TResult Function(successviewdetails value) successviewdetails,
     required TResult Function(Erorrviewdetails value) erorrviewdetails,
@@ -1124,25 +926,16 @@ class _$SuccessapproveImpl implements Successapprove {
     required TResult Function(successviewAllOrders value) successviewAllOrders,
     required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
   }) {
-    return successapprove(this);
+    return successUpdate(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingapprove value)? loadingapprove,
-    TResult? Function(Successapprove value)? successapprove,
-    TResult? Function(Erorrapprove value)? erorrapprove,
-    TResult? Function(Loadingprepare value)? loadingprepare,
-    TResult? Function(Successprepare value)? successprepare,
-    TResult? Function(Erorrprepare value)? erorrprepare,
-    TResult? Function(Loadingdone value)? loadingdone,
-    TResult? Function(Successdone value)? successdone,
-    TResult? Function(Erorrdone value)? erorrdone,
-    TResult? Function(Loadingshipped value)? loadingshipped,
-    TResult? Function(Successshipped value)? successshipped,
-    TResult? Function(Erorrshipped value)? erorrshipped,
+    TResult? Function(LoadingUpdate value)? loadingUpdate,
+    TResult? Function(SuccessUpdate value)? successUpdate,
+    TResult? Function(ErorrUpdate value)? erorrUpdate,
     TResult? Function(Loadingviewdetails value)? loadingviewdetails,
     TResult? Function(successviewdetails value)? successviewdetails,
     TResult? Function(Erorrviewdetails value)? erorrviewdetails,
@@ -1168,25 +961,16 @@ class _$SuccessapproveImpl implements Successapprove {
     TResult? Function(successviewAllOrders value)? successviewAllOrders,
     TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
   }) {
-    return successapprove?.call(this);
+    return successUpdate?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingapprove value)? loadingapprove,
-    TResult Function(Successapprove value)? successapprove,
-    TResult Function(Erorrapprove value)? erorrapprove,
-    TResult Function(Loadingprepare value)? loadingprepare,
-    TResult Function(Successprepare value)? successprepare,
-    TResult Function(Erorrprepare value)? erorrprepare,
-    TResult Function(Loadingdone value)? loadingdone,
-    TResult Function(Successdone value)? successdone,
-    TResult Function(Erorrdone value)? erorrdone,
-    TResult Function(Loadingshipped value)? loadingshipped,
-    TResult Function(Successshipped value)? successshipped,
-    TResult Function(Erorrshipped value)? erorrshipped,
+    TResult Function(LoadingUpdate value)? loadingUpdate,
+    TResult Function(SuccessUpdate value)? successUpdate,
+    TResult Function(ErorrUpdate value)? erorrUpdate,
     TResult Function(Loadingviewdetails value)? loadingviewdetails,
     TResult Function(successviewdetails value)? successviewdetails,
     TResult Function(Erorrviewdetails value)? erorrviewdetails,
@@ -1213,32 +997,32 @@ class _$SuccessapproveImpl implements Successapprove {
     TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
     required TResult orElse(),
   }) {
-    if (successapprove != null) {
-      return successapprove(this);
+    if (successUpdate != null) {
+      return successUpdate(this);
     }
     return orElse();
   }
 }
 
-abstract class Successapprove implements OrdersState {
-  const factory Successapprove() = _$SuccessapproveImpl;
+abstract class SuccessUpdate implements OrdersState {
+  const factory SuccessUpdate() = _$SuccessUpdateImpl;
 }
 
 /// @nodoc
-abstract class _$$ErorrapproveImplCopyWith<$Res> {
-  factory _$$ErorrapproveImplCopyWith(
-          _$ErorrapproveImpl value, $Res Function(_$ErorrapproveImpl) then) =
-      __$$ErorrapproveImplCopyWithImpl<$Res>;
+abstract class _$$ErorrUpdateImplCopyWith<$Res> {
+  factory _$$ErorrUpdateImplCopyWith(
+          _$ErorrUpdateImpl value, $Res Function(_$ErorrUpdateImpl) then) =
+      __$$ErorrUpdateImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String erorr});
 }
 
 /// @nodoc
-class __$$ErorrapproveImplCopyWithImpl<$Res>
-    extends _$OrdersStateCopyWithImpl<$Res, _$ErorrapproveImpl>
-    implements _$$ErorrapproveImplCopyWith<$Res> {
-  __$$ErorrapproveImplCopyWithImpl(
-      _$ErorrapproveImpl _value, $Res Function(_$ErorrapproveImpl) _then)
+class __$$ErorrUpdateImplCopyWithImpl<$Res>
+    extends _$OrdersStateCopyWithImpl<$Res, _$ErorrUpdateImpl>
+    implements _$$ErorrUpdateImplCopyWith<$Res> {
+  __$$ErorrUpdateImplCopyWithImpl(
+      _$ErorrUpdateImpl _value, $Res Function(_$ErorrUpdateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1246,7 +1030,7 @@ class __$$ErorrapproveImplCopyWithImpl<$Res>
   $Res call({
     Object? erorr = null,
   }) {
-    return _then(_$ErorrapproveImpl(
+    return _then(_$ErorrUpdateImpl(
       erorr: null == erorr
           ? _value.erorr
           : erorr // ignore: cast_nullable_to_non_nullable
@@ -1257,22 +1041,22 @@ class __$$ErorrapproveImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$ErorrapproveImpl implements Erorrapprove {
-  const _$ErorrapproveImpl({required this.erorr});
+class _$ErorrUpdateImpl implements ErorrUpdate {
+  const _$ErorrUpdateImpl({required this.erorr});
 
   @override
   final String erorr;
 
   @override
   String toString() {
-    return 'OrdersState.erorrapprove(erorr: $erorr)';
+    return 'OrdersState.erorrUpdate(erorr: $erorr)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ErorrapproveImpl &&
+            other is _$ErorrUpdateImpl &&
             (identical(other.erorr, erorr) || other.erorr == erorr));
   }
 
@@ -1282,25 +1066,16 @@ class _$ErorrapproveImpl implements Erorrapprove {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$ErorrapproveImplCopyWith<_$ErorrapproveImpl> get copyWith =>
-      __$$ErorrapproveImplCopyWithImpl<_$ErorrapproveImpl>(this, _$identity);
+  _$$ErorrUpdateImplCopyWith<_$ErorrUpdateImpl> get copyWith =>
+      __$$ErorrUpdateImplCopyWithImpl<_$ErorrUpdateImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingapprove,
-    required TResult Function() successapprove,
-    required TResult Function(String erorr) erorrapprove,
-    required TResult Function() loadingprepare,
-    required TResult Function() successprepare,
-    required TResult Function(String erorr) erorrprepare,
-    required TResult Function() loadingdone,
-    required TResult Function() successdone,
-    required TResult Function(String erorr) erorrdone,
-    required TResult Function() loadingshipped,
-    required TResult Function() successshipped,
-    required TResult Function(String erorr) erorrshipped,
+    required TResult Function() loadingUpdate,
+    required TResult Function() successUpdate,
+    required TResult Function(String erorr) erorrUpdate,
     required TResult Function() loadingviewdetails,
     required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
@@ -1327,25 +1102,16 @@ class _$ErorrapproveImpl implements Erorrapprove {
     required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
     required TResult Function(String erorr) erorrviewAllOrders,
   }) {
-    return erorrapprove(erorr);
+    return erorrUpdate(erorr);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingapprove,
-    TResult? Function()? successapprove,
-    TResult? Function(String erorr)? erorrapprove,
-    TResult? Function()? loadingprepare,
-    TResult? Function()? successprepare,
-    TResult? Function(String erorr)? erorrprepare,
-    TResult? Function()? loadingdone,
-    TResult? Function()? successdone,
-    TResult? Function(String erorr)? erorrdone,
-    TResult? Function()? loadingshipped,
-    TResult? Function()? successshipped,
-    TResult? Function(String erorr)? erorrshipped,
+    TResult? Function()? loadingUpdate,
+    TResult? Function()? successUpdate,
+    TResult? Function(String erorr)? erorrUpdate,
     TResult? Function()? loadingviewdetails,
     TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
@@ -1371,25 +1137,16 @@ class _$ErorrapproveImpl implements Erorrapprove {
     TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult? Function(String erorr)? erorrviewAllOrders,
   }) {
-    return erorrapprove?.call(erorr);
+    return erorrUpdate?.call(erorr);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingapprove,
-    TResult Function()? successapprove,
-    TResult Function(String erorr)? erorrapprove,
-    TResult Function()? loadingprepare,
-    TResult Function()? successprepare,
-    TResult Function(String erorr)? erorrprepare,
-    TResult Function()? loadingdone,
-    TResult Function()? successdone,
-    TResult Function(String erorr)? erorrdone,
-    TResult Function()? loadingshipped,
-    TResult Function()? successshipped,
-    TResult Function(String erorr)? erorrshipped,
+    TResult Function()? loadingUpdate,
+    TResult Function()? successUpdate,
+    TResult Function(String erorr)? erorrUpdate,
     TResult Function()? loadingviewdetails,
     TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
@@ -1416,8 +1173,8 @@ class _$ErorrapproveImpl implements Erorrapprove {
     TResult Function(String erorr)? erorrviewAllOrders,
     required TResult orElse(),
   }) {
-    if (erorrapprove != null) {
-      return erorrapprove(erorr);
+    if (erorrUpdate != null) {
+      return erorrUpdate(erorr);
     }
     return orElse();
   }
@@ -1426,18 +1183,9 @@ class _$ErorrapproveImpl implements Erorrapprove {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingapprove value) loadingapprove,
-    required TResult Function(Successapprove value) successapprove,
-    required TResult Function(Erorrapprove value) erorrapprove,
-    required TResult Function(Loadingprepare value) loadingprepare,
-    required TResult Function(Successprepare value) successprepare,
-    required TResult Function(Erorrprepare value) erorrprepare,
-    required TResult Function(Loadingdone value) loadingdone,
-    required TResult Function(Successdone value) successdone,
-    required TResult Function(Erorrdone value) erorrdone,
-    required TResult Function(Loadingshipped value) loadingshipped,
-    required TResult Function(Successshipped value) successshipped,
-    required TResult Function(Erorrshipped value) erorrshipped,
+    required TResult Function(LoadingUpdate value) loadingUpdate,
+    required TResult Function(SuccessUpdate value) successUpdate,
+    required TResult Function(ErorrUpdate value) erorrUpdate,
     required TResult Function(Loadingviewdetails value) loadingviewdetails,
     required TResult Function(successviewdetails value) successviewdetails,
     required TResult Function(Erorrviewdetails value) erorrviewdetails,
@@ -1463,25 +1211,16 @@ class _$ErorrapproveImpl implements Erorrapprove {
     required TResult Function(successviewAllOrders value) successviewAllOrders,
     required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
   }) {
-    return erorrapprove(this);
+    return erorrUpdate(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingapprove value)? loadingapprove,
-    TResult? Function(Successapprove value)? successapprove,
-    TResult? Function(Erorrapprove value)? erorrapprove,
-    TResult? Function(Loadingprepare value)? loadingprepare,
-    TResult? Function(Successprepare value)? successprepare,
-    TResult? Function(Erorrprepare value)? erorrprepare,
-    TResult? Function(Loadingdone value)? loadingdone,
-    TResult? Function(Successdone value)? successdone,
-    TResult? Function(Erorrdone value)? erorrdone,
-    TResult? Function(Loadingshipped value)? loadingshipped,
-    TResult? Function(Successshipped value)? successshipped,
-    TResult? Function(Erorrshipped value)? erorrshipped,
+    TResult? Function(LoadingUpdate value)? loadingUpdate,
+    TResult? Function(SuccessUpdate value)? successUpdate,
+    TResult? Function(ErorrUpdate value)? erorrUpdate,
     TResult? Function(Loadingviewdetails value)? loadingviewdetails,
     TResult? Function(successviewdetails value)? successviewdetails,
     TResult? Function(Erorrviewdetails value)? erorrviewdetails,
@@ -1507,25 +1246,16 @@ class _$ErorrapproveImpl implements Erorrapprove {
     TResult? Function(successviewAllOrders value)? successviewAllOrders,
     TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
   }) {
-    return erorrapprove?.call(this);
+    return erorrUpdate?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingapprove value)? loadingapprove,
-    TResult Function(Successapprove value)? successapprove,
-    TResult Function(Erorrapprove value)? erorrapprove,
-    TResult Function(Loadingprepare value)? loadingprepare,
-    TResult Function(Successprepare value)? successprepare,
-    TResult Function(Erorrprepare value)? erorrprepare,
-    TResult Function(Loadingdone value)? loadingdone,
-    TResult Function(Successdone value)? successdone,
-    TResult Function(Erorrdone value)? erorrdone,
-    TResult Function(Loadingshipped value)? loadingshipped,
-    TResult Function(Successshipped value)? successshipped,
-    TResult Function(Erorrshipped value)? erorrshipped,
+    TResult Function(LoadingUpdate value)? loadingUpdate,
+    TResult Function(SuccessUpdate value)? successUpdate,
+    TResult Function(ErorrUpdate value)? erorrUpdate,
     TResult Function(Loadingviewdetails value)? loadingviewdetails,
     TResult Function(successviewdetails value)? successviewdetails,
     TResult Function(Erorrviewdetails value)? erorrviewdetails,
@@ -1552,2932 +1282,19 @@ class _$ErorrapproveImpl implements Erorrapprove {
     TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
     required TResult orElse(),
   }) {
-    if (erorrapprove != null) {
-      return erorrapprove(this);
+    if (erorrUpdate != null) {
+      return erorrUpdate(this);
     }
     return orElse();
   }
 }
 
-abstract class Erorrapprove implements OrdersState {
-  const factory Erorrapprove({required final String erorr}) =
-      _$ErorrapproveImpl;
+abstract class ErorrUpdate implements OrdersState {
+  const factory ErorrUpdate({required final String erorr}) = _$ErorrUpdateImpl;
 
   String get erorr;
   @JsonKey(ignore: true)
-  _$$ErorrapproveImplCopyWith<_$ErorrapproveImpl> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class _$$LoadingprepareImplCopyWith<$Res> {
-  factory _$$LoadingprepareImplCopyWith(_$LoadingprepareImpl value,
-          $Res Function(_$LoadingprepareImpl) then) =
-      __$$LoadingprepareImplCopyWithImpl<$Res>;
-}
-
-/// @nodoc
-class __$$LoadingprepareImplCopyWithImpl<$Res>
-    extends _$OrdersStateCopyWithImpl<$Res, _$LoadingprepareImpl>
-    implements _$$LoadingprepareImplCopyWith<$Res> {
-  __$$LoadingprepareImplCopyWithImpl(
-      _$LoadingprepareImpl _value, $Res Function(_$LoadingprepareImpl) _then)
-      : super(_value, _then);
-}
-
-/// @nodoc
-
-class _$LoadingprepareImpl implements Loadingprepare {
-  const _$LoadingprepareImpl();
-
-  @override
-  String toString() {
-    return 'OrdersState.loadingprepare()';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$LoadingprepareImpl);
-  }
-
-  @override
-  int get hashCode => runtimeType.hashCode;
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initial,
-    required TResult Function() loadingapprove,
-    required TResult Function() successapprove,
-    required TResult Function(String erorr) erorrapprove,
-    required TResult Function() loadingprepare,
-    required TResult Function() successprepare,
-    required TResult Function(String erorr) erorrprepare,
-    required TResult Function() loadingdone,
-    required TResult Function() successdone,
-    required TResult Function(String erorr) erorrdone,
-    required TResult Function() loadingshipped,
-    required TResult Function() successshipped,
-    required TResult Function(String erorr) erorrshipped,
-    required TResult Function() loadingviewdetails,
-    required TResult Function(List<DataDetails> responseDetails)
-        successviewdetails,
-    required TResult Function(String erorr) erorrviewdetails,
-    required TResult Function() loadingviewapprove,
-    required TResult Function(List<Datum> vieworders) successviewapprove,
-    required TResult Function(String erorr) erorrviewapprove,
-    required TResult Function() loadingviewCancel,
-    required TResult Function(List<Datum> vieworders) successviewCancel,
-    required TResult Function(String erorr) erorrviewCancel,
-    required TResult Function() loadingviewdone,
-    required TResult Function(List<Datum> vieworders) successviewdone,
-    required TResult Function(String erorr) erorrviewdone,
-    required TResult Function() loadingviewpending,
-    required TResult Function(List<Datum> vieworders) successviewpending,
-    required TResult Function(String erorr) erorrviewpending,
-    required TResult Function() loadingviewprepare,
-    required TResult Function(List<Datum> viewprepareorders) successviewprepare,
-    required TResult Function(String erorr) erorrviewprepare,
-    required TResult Function() loadingviewshipped,
-    required TResult Function(List<Datum> vieworders) successviewshipped,
-    required TResult Function(String erorr) erorrviewshipped,
-    required TResult Function() loadingviewAllOrders,
-    required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
-    required TResult Function(String erorr) erorrviewAllOrders,
-  }) {
-    return loadingprepare();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initial,
-    TResult? Function()? loadingapprove,
-    TResult? Function()? successapprove,
-    TResult? Function(String erorr)? erorrapprove,
-    TResult? Function()? loadingprepare,
-    TResult? Function()? successprepare,
-    TResult? Function(String erorr)? erorrprepare,
-    TResult? Function()? loadingdone,
-    TResult? Function()? successdone,
-    TResult? Function(String erorr)? erorrdone,
-    TResult? Function()? loadingshipped,
-    TResult? Function()? successshipped,
-    TResult? Function(String erorr)? erorrshipped,
-    TResult? Function()? loadingviewdetails,
-    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
-    TResult? Function(String erorr)? erorrviewdetails,
-    TResult? Function()? loadingviewapprove,
-    TResult? Function(List<Datum> vieworders)? successviewapprove,
-    TResult? Function(String erorr)? erorrviewapprove,
-    TResult? Function()? loadingviewCancel,
-    TResult? Function(List<Datum> vieworders)? successviewCancel,
-    TResult? Function(String erorr)? erorrviewCancel,
-    TResult? Function()? loadingviewdone,
-    TResult? Function(List<Datum> vieworders)? successviewdone,
-    TResult? Function(String erorr)? erorrviewdone,
-    TResult? Function()? loadingviewpending,
-    TResult? Function(List<Datum> vieworders)? successviewpending,
-    TResult? Function(String erorr)? erorrviewpending,
-    TResult? Function()? loadingviewprepare,
-    TResult? Function(List<Datum> viewprepareorders)? successviewprepare,
-    TResult? Function(String erorr)? erorrviewprepare,
-    TResult? Function()? loadingviewshipped,
-    TResult? Function(List<Datum> vieworders)? successviewshipped,
-    TResult? Function(String erorr)? erorrviewshipped,
-    TResult? Function()? loadingviewAllOrders,
-    TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
-    TResult? Function(String erorr)? erorrviewAllOrders,
-  }) {
-    return loadingprepare?.call();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? loadingapprove,
-    TResult Function()? successapprove,
-    TResult Function(String erorr)? erorrapprove,
-    TResult Function()? loadingprepare,
-    TResult Function()? successprepare,
-    TResult Function(String erorr)? erorrprepare,
-    TResult Function()? loadingdone,
-    TResult Function()? successdone,
-    TResult Function(String erorr)? erorrdone,
-    TResult Function()? loadingshipped,
-    TResult Function()? successshipped,
-    TResult Function(String erorr)? erorrshipped,
-    TResult Function()? loadingviewdetails,
-    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
-    TResult Function(String erorr)? erorrviewdetails,
-    TResult Function()? loadingviewapprove,
-    TResult Function(List<Datum> vieworders)? successviewapprove,
-    TResult Function(String erorr)? erorrviewapprove,
-    TResult Function()? loadingviewCancel,
-    TResult Function(List<Datum> vieworders)? successviewCancel,
-    TResult Function(String erorr)? erorrviewCancel,
-    TResult Function()? loadingviewdone,
-    TResult Function(List<Datum> vieworders)? successviewdone,
-    TResult Function(String erorr)? erorrviewdone,
-    TResult Function()? loadingviewpending,
-    TResult Function(List<Datum> vieworders)? successviewpending,
-    TResult Function(String erorr)? erorrviewpending,
-    TResult Function()? loadingviewprepare,
-    TResult Function(List<Datum> viewprepareorders)? successviewprepare,
-    TResult Function(String erorr)? erorrviewprepare,
-    TResult Function()? loadingviewshipped,
-    TResult Function(List<Datum> vieworders)? successviewshipped,
-    TResult Function(String erorr)? erorrviewshipped,
-    TResult Function()? loadingviewAllOrders,
-    TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
-    TResult Function(String erorr)? erorrviewAllOrders,
-    required TResult orElse(),
-  }) {
-    if (loadingprepare != null) {
-      return loadingprepare();
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingapprove value) loadingapprove,
-    required TResult Function(Successapprove value) successapprove,
-    required TResult Function(Erorrapprove value) erorrapprove,
-    required TResult Function(Loadingprepare value) loadingprepare,
-    required TResult Function(Successprepare value) successprepare,
-    required TResult Function(Erorrprepare value) erorrprepare,
-    required TResult Function(Loadingdone value) loadingdone,
-    required TResult Function(Successdone value) successdone,
-    required TResult Function(Erorrdone value) erorrdone,
-    required TResult Function(Loadingshipped value) loadingshipped,
-    required TResult Function(Successshipped value) successshipped,
-    required TResult Function(Erorrshipped value) erorrshipped,
-    required TResult Function(Loadingviewdetails value) loadingviewdetails,
-    required TResult Function(successviewdetails value) successviewdetails,
-    required TResult Function(Erorrviewdetails value) erorrviewdetails,
-    required TResult Function(Loadingviewapprove value) loadingviewapprove,
-    required TResult Function(Successviewapprove value) successviewapprove,
-    required TResult Function(Erorrviewapprove value) erorrviewapprove,
-    required TResult Function(LoadingviewCancel value) loadingviewCancel,
-    required TResult Function(SuccessviewCancel value) successviewCancel,
-    required TResult Function(ErorrviewCancel value) erorrviewCancel,
-    required TResult Function(Loadingviewdone value) loadingviewdone,
-    required TResult Function(Successviewdone value) successviewdone,
-    required TResult Function(Erorrviewdone value) erorrviewdone,
-    required TResult Function(Loadingviewpending value) loadingviewpending,
-    required TResult Function(Successviewpending value) successviewpending,
-    required TResult Function(Erorrviewpending value) erorrviewpending,
-    required TResult Function(Loadingviewprepare value) loadingviewprepare,
-    required TResult Function(Successviewprepare value) successviewprepare,
-    required TResult Function(Erorrviewprepare value) erorrviewprepare,
-    required TResult Function(Loadingviewshipped value) loadingviewshipped,
-    required TResult Function(successviewshipped value) successviewshipped,
-    required TResult Function(Erorrviewshipped value) erorrviewshipped,
-    required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
-    required TResult Function(successviewAllOrders value) successviewAllOrders,
-    required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
-  }) {
-    return loadingprepare(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingapprove value)? loadingapprove,
-    TResult? Function(Successapprove value)? successapprove,
-    TResult? Function(Erorrapprove value)? erorrapprove,
-    TResult? Function(Loadingprepare value)? loadingprepare,
-    TResult? Function(Successprepare value)? successprepare,
-    TResult? Function(Erorrprepare value)? erorrprepare,
-    TResult? Function(Loadingdone value)? loadingdone,
-    TResult? Function(Successdone value)? successdone,
-    TResult? Function(Erorrdone value)? erorrdone,
-    TResult? Function(Loadingshipped value)? loadingshipped,
-    TResult? Function(Successshipped value)? successshipped,
-    TResult? Function(Erorrshipped value)? erorrshipped,
-    TResult? Function(Loadingviewdetails value)? loadingviewdetails,
-    TResult? Function(successviewdetails value)? successviewdetails,
-    TResult? Function(Erorrviewdetails value)? erorrviewdetails,
-    TResult? Function(Loadingviewapprove value)? loadingviewapprove,
-    TResult? Function(Successviewapprove value)? successviewapprove,
-    TResult? Function(Erorrviewapprove value)? erorrviewapprove,
-    TResult? Function(LoadingviewCancel value)? loadingviewCancel,
-    TResult? Function(SuccessviewCancel value)? successviewCancel,
-    TResult? Function(ErorrviewCancel value)? erorrviewCancel,
-    TResult? Function(Loadingviewdone value)? loadingviewdone,
-    TResult? Function(Successviewdone value)? successviewdone,
-    TResult? Function(Erorrviewdone value)? erorrviewdone,
-    TResult? Function(Loadingviewpending value)? loadingviewpending,
-    TResult? Function(Successviewpending value)? successviewpending,
-    TResult? Function(Erorrviewpending value)? erorrviewpending,
-    TResult? Function(Loadingviewprepare value)? loadingviewprepare,
-    TResult? Function(Successviewprepare value)? successviewprepare,
-    TResult? Function(Erorrviewprepare value)? erorrviewprepare,
-    TResult? Function(Loadingviewshipped value)? loadingviewshipped,
-    TResult? Function(successviewshipped value)? successviewshipped,
-    TResult? Function(Erorrviewshipped value)? erorrviewshipped,
-    TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
-    TResult? Function(successviewAllOrders value)? successviewAllOrders,
-    TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
-  }) {
-    return loadingprepare?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(Loadingapprove value)? loadingapprove,
-    TResult Function(Successapprove value)? successapprove,
-    TResult Function(Erorrapprove value)? erorrapprove,
-    TResult Function(Loadingprepare value)? loadingprepare,
-    TResult Function(Successprepare value)? successprepare,
-    TResult Function(Erorrprepare value)? erorrprepare,
-    TResult Function(Loadingdone value)? loadingdone,
-    TResult Function(Successdone value)? successdone,
-    TResult Function(Erorrdone value)? erorrdone,
-    TResult Function(Loadingshipped value)? loadingshipped,
-    TResult Function(Successshipped value)? successshipped,
-    TResult Function(Erorrshipped value)? erorrshipped,
-    TResult Function(Loadingviewdetails value)? loadingviewdetails,
-    TResult Function(successviewdetails value)? successviewdetails,
-    TResult Function(Erorrviewdetails value)? erorrviewdetails,
-    TResult Function(Loadingviewapprove value)? loadingviewapprove,
-    TResult Function(Successviewapprove value)? successviewapprove,
-    TResult Function(Erorrviewapprove value)? erorrviewapprove,
-    TResult Function(LoadingviewCancel value)? loadingviewCancel,
-    TResult Function(SuccessviewCancel value)? successviewCancel,
-    TResult Function(ErorrviewCancel value)? erorrviewCancel,
-    TResult Function(Loadingviewdone value)? loadingviewdone,
-    TResult Function(Successviewdone value)? successviewdone,
-    TResult Function(Erorrviewdone value)? erorrviewdone,
-    TResult Function(Loadingviewpending value)? loadingviewpending,
-    TResult Function(Successviewpending value)? successviewpending,
-    TResult Function(Erorrviewpending value)? erorrviewpending,
-    TResult Function(Loadingviewprepare value)? loadingviewprepare,
-    TResult Function(Successviewprepare value)? successviewprepare,
-    TResult Function(Erorrviewprepare value)? erorrviewprepare,
-    TResult Function(Loadingviewshipped value)? loadingviewshipped,
-    TResult Function(successviewshipped value)? successviewshipped,
-    TResult Function(Erorrviewshipped value)? erorrviewshipped,
-    TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
-    TResult Function(successviewAllOrders value)? successviewAllOrders,
-    TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
-    required TResult orElse(),
-  }) {
-    if (loadingprepare != null) {
-      return loadingprepare(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class Loadingprepare implements OrdersState {
-  const factory Loadingprepare() = _$LoadingprepareImpl;
-}
-
-/// @nodoc
-abstract class _$$SuccessprepareImplCopyWith<$Res> {
-  factory _$$SuccessprepareImplCopyWith(_$SuccessprepareImpl value,
-          $Res Function(_$SuccessprepareImpl) then) =
-      __$$SuccessprepareImplCopyWithImpl<$Res>;
-}
-
-/// @nodoc
-class __$$SuccessprepareImplCopyWithImpl<$Res>
-    extends _$OrdersStateCopyWithImpl<$Res, _$SuccessprepareImpl>
-    implements _$$SuccessprepareImplCopyWith<$Res> {
-  __$$SuccessprepareImplCopyWithImpl(
-      _$SuccessprepareImpl _value, $Res Function(_$SuccessprepareImpl) _then)
-      : super(_value, _then);
-}
-
-/// @nodoc
-
-class _$SuccessprepareImpl implements Successprepare {
-  const _$SuccessprepareImpl();
-
-  @override
-  String toString() {
-    return 'OrdersState.successprepare()';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$SuccessprepareImpl);
-  }
-
-  @override
-  int get hashCode => runtimeType.hashCode;
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initial,
-    required TResult Function() loadingapprove,
-    required TResult Function() successapprove,
-    required TResult Function(String erorr) erorrapprove,
-    required TResult Function() loadingprepare,
-    required TResult Function() successprepare,
-    required TResult Function(String erorr) erorrprepare,
-    required TResult Function() loadingdone,
-    required TResult Function() successdone,
-    required TResult Function(String erorr) erorrdone,
-    required TResult Function() loadingshipped,
-    required TResult Function() successshipped,
-    required TResult Function(String erorr) erorrshipped,
-    required TResult Function() loadingviewdetails,
-    required TResult Function(List<DataDetails> responseDetails)
-        successviewdetails,
-    required TResult Function(String erorr) erorrviewdetails,
-    required TResult Function() loadingviewapprove,
-    required TResult Function(List<Datum> vieworders) successviewapprove,
-    required TResult Function(String erorr) erorrviewapprove,
-    required TResult Function() loadingviewCancel,
-    required TResult Function(List<Datum> vieworders) successviewCancel,
-    required TResult Function(String erorr) erorrviewCancel,
-    required TResult Function() loadingviewdone,
-    required TResult Function(List<Datum> vieworders) successviewdone,
-    required TResult Function(String erorr) erorrviewdone,
-    required TResult Function() loadingviewpending,
-    required TResult Function(List<Datum> vieworders) successviewpending,
-    required TResult Function(String erorr) erorrviewpending,
-    required TResult Function() loadingviewprepare,
-    required TResult Function(List<Datum> viewprepareorders) successviewprepare,
-    required TResult Function(String erorr) erorrviewprepare,
-    required TResult Function() loadingviewshipped,
-    required TResult Function(List<Datum> vieworders) successviewshipped,
-    required TResult Function(String erorr) erorrviewshipped,
-    required TResult Function() loadingviewAllOrders,
-    required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
-    required TResult Function(String erorr) erorrviewAllOrders,
-  }) {
-    return successprepare();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initial,
-    TResult? Function()? loadingapprove,
-    TResult? Function()? successapprove,
-    TResult? Function(String erorr)? erorrapprove,
-    TResult? Function()? loadingprepare,
-    TResult? Function()? successprepare,
-    TResult? Function(String erorr)? erorrprepare,
-    TResult? Function()? loadingdone,
-    TResult? Function()? successdone,
-    TResult? Function(String erorr)? erorrdone,
-    TResult? Function()? loadingshipped,
-    TResult? Function()? successshipped,
-    TResult? Function(String erorr)? erorrshipped,
-    TResult? Function()? loadingviewdetails,
-    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
-    TResult? Function(String erorr)? erorrviewdetails,
-    TResult? Function()? loadingviewapprove,
-    TResult? Function(List<Datum> vieworders)? successviewapprove,
-    TResult? Function(String erorr)? erorrviewapprove,
-    TResult? Function()? loadingviewCancel,
-    TResult? Function(List<Datum> vieworders)? successviewCancel,
-    TResult? Function(String erorr)? erorrviewCancel,
-    TResult? Function()? loadingviewdone,
-    TResult? Function(List<Datum> vieworders)? successviewdone,
-    TResult? Function(String erorr)? erorrviewdone,
-    TResult? Function()? loadingviewpending,
-    TResult? Function(List<Datum> vieworders)? successviewpending,
-    TResult? Function(String erorr)? erorrviewpending,
-    TResult? Function()? loadingviewprepare,
-    TResult? Function(List<Datum> viewprepareorders)? successviewprepare,
-    TResult? Function(String erorr)? erorrviewprepare,
-    TResult? Function()? loadingviewshipped,
-    TResult? Function(List<Datum> vieworders)? successviewshipped,
-    TResult? Function(String erorr)? erorrviewshipped,
-    TResult? Function()? loadingviewAllOrders,
-    TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
-    TResult? Function(String erorr)? erorrviewAllOrders,
-  }) {
-    return successprepare?.call();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? loadingapprove,
-    TResult Function()? successapprove,
-    TResult Function(String erorr)? erorrapprove,
-    TResult Function()? loadingprepare,
-    TResult Function()? successprepare,
-    TResult Function(String erorr)? erorrprepare,
-    TResult Function()? loadingdone,
-    TResult Function()? successdone,
-    TResult Function(String erorr)? erorrdone,
-    TResult Function()? loadingshipped,
-    TResult Function()? successshipped,
-    TResult Function(String erorr)? erorrshipped,
-    TResult Function()? loadingviewdetails,
-    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
-    TResult Function(String erorr)? erorrviewdetails,
-    TResult Function()? loadingviewapprove,
-    TResult Function(List<Datum> vieworders)? successviewapprove,
-    TResult Function(String erorr)? erorrviewapprove,
-    TResult Function()? loadingviewCancel,
-    TResult Function(List<Datum> vieworders)? successviewCancel,
-    TResult Function(String erorr)? erorrviewCancel,
-    TResult Function()? loadingviewdone,
-    TResult Function(List<Datum> vieworders)? successviewdone,
-    TResult Function(String erorr)? erorrviewdone,
-    TResult Function()? loadingviewpending,
-    TResult Function(List<Datum> vieworders)? successviewpending,
-    TResult Function(String erorr)? erorrviewpending,
-    TResult Function()? loadingviewprepare,
-    TResult Function(List<Datum> viewprepareorders)? successviewprepare,
-    TResult Function(String erorr)? erorrviewprepare,
-    TResult Function()? loadingviewshipped,
-    TResult Function(List<Datum> vieworders)? successviewshipped,
-    TResult Function(String erorr)? erorrviewshipped,
-    TResult Function()? loadingviewAllOrders,
-    TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
-    TResult Function(String erorr)? erorrviewAllOrders,
-    required TResult orElse(),
-  }) {
-    if (successprepare != null) {
-      return successprepare();
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingapprove value) loadingapprove,
-    required TResult Function(Successapprove value) successapprove,
-    required TResult Function(Erorrapprove value) erorrapprove,
-    required TResult Function(Loadingprepare value) loadingprepare,
-    required TResult Function(Successprepare value) successprepare,
-    required TResult Function(Erorrprepare value) erorrprepare,
-    required TResult Function(Loadingdone value) loadingdone,
-    required TResult Function(Successdone value) successdone,
-    required TResult Function(Erorrdone value) erorrdone,
-    required TResult Function(Loadingshipped value) loadingshipped,
-    required TResult Function(Successshipped value) successshipped,
-    required TResult Function(Erorrshipped value) erorrshipped,
-    required TResult Function(Loadingviewdetails value) loadingviewdetails,
-    required TResult Function(successviewdetails value) successviewdetails,
-    required TResult Function(Erorrviewdetails value) erorrviewdetails,
-    required TResult Function(Loadingviewapprove value) loadingviewapprove,
-    required TResult Function(Successviewapprove value) successviewapprove,
-    required TResult Function(Erorrviewapprove value) erorrviewapprove,
-    required TResult Function(LoadingviewCancel value) loadingviewCancel,
-    required TResult Function(SuccessviewCancel value) successviewCancel,
-    required TResult Function(ErorrviewCancel value) erorrviewCancel,
-    required TResult Function(Loadingviewdone value) loadingviewdone,
-    required TResult Function(Successviewdone value) successviewdone,
-    required TResult Function(Erorrviewdone value) erorrviewdone,
-    required TResult Function(Loadingviewpending value) loadingviewpending,
-    required TResult Function(Successviewpending value) successviewpending,
-    required TResult Function(Erorrviewpending value) erorrviewpending,
-    required TResult Function(Loadingviewprepare value) loadingviewprepare,
-    required TResult Function(Successviewprepare value) successviewprepare,
-    required TResult Function(Erorrviewprepare value) erorrviewprepare,
-    required TResult Function(Loadingviewshipped value) loadingviewshipped,
-    required TResult Function(successviewshipped value) successviewshipped,
-    required TResult Function(Erorrviewshipped value) erorrviewshipped,
-    required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
-    required TResult Function(successviewAllOrders value) successviewAllOrders,
-    required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
-  }) {
-    return successprepare(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingapprove value)? loadingapprove,
-    TResult? Function(Successapprove value)? successapprove,
-    TResult? Function(Erorrapprove value)? erorrapprove,
-    TResult? Function(Loadingprepare value)? loadingprepare,
-    TResult? Function(Successprepare value)? successprepare,
-    TResult? Function(Erorrprepare value)? erorrprepare,
-    TResult? Function(Loadingdone value)? loadingdone,
-    TResult? Function(Successdone value)? successdone,
-    TResult? Function(Erorrdone value)? erorrdone,
-    TResult? Function(Loadingshipped value)? loadingshipped,
-    TResult? Function(Successshipped value)? successshipped,
-    TResult? Function(Erorrshipped value)? erorrshipped,
-    TResult? Function(Loadingviewdetails value)? loadingviewdetails,
-    TResult? Function(successviewdetails value)? successviewdetails,
-    TResult? Function(Erorrviewdetails value)? erorrviewdetails,
-    TResult? Function(Loadingviewapprove value)? loadingviewapprove,
-    TResult? Function(Successviewapprove value)? successviewapprove,
-    TResult? Function(Erorrviewapprove value)? erorrviewapprove,
-    TResult? Function(LoadingviewCancel value)? loadingviewCancel,
-    TResult? Function(SuccessviewCancel value)? successviewCancel,
-    TResult? Function(ErorrviewCancel value)? erorrviewCancel,
-    TResult? Function(Loadingviewdone value)? loadingviewdone,
-    TResult? Function(Successviewdone value)? successviewdone,
-    TResult? Function(Erorrviewdone value)? erorrviewdone,
-    TResult? Function(Loadingviewpending value)? loadingviewpending,
-    TResult? Function(Successviewpending value)? successviewpending,
-    TResult? Function(Erorrviewpending value)? erorrviewpending,
-    TResult? Function(Loadingviewprepare value)? loadingviewprepare,
-    TResult? Function(Successviewprepare value)? successviewprepare,
-    TResult? Function(Erorrviewprepare value)? erorrviewprepare,
-    TResult? Function(Loadingviewshipped value)? loadingviewshipped,
-    TResult? Function(successviewshipped value)? successviewshipped,
-    TResult? Function(Erorrviewshipped value)? erorrviewshipped,
-    TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
-    TResult? Function(successviewAllOrders value)? successviewAllOrders,
-    TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
-  }) {
-    return successprepare?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(Loadingapprove value)? loadingapprove,
-    TResult Function(Successapprove value)? successapprove,
-    TResult Function(Erorrapprove value)? erorrapprove,
-    TResult Function(Loadingprepare value)? loadingprepare,
-    TResult Function(Successprepare value)? successprepare,
-    TResult Function(Erorrprepare value)? erorrprepare,
-    TResult Function(Loadingdone value)? loadingdone,
-    TResult Function(Successdone value)? successdone,
-    TResult Function(Erorrdone value)? erorrdone,
-    TResult Function(Loadingshipped value)? loadingshipped,
-    TResult Function(Successshipped value)? successshipped,
-    TResult Function(Erorrshipped value)? erorrshipped,
-    TResult Function(Loadingviewdetails value)? loadingviewdetails,
-    TResult Function(successviewdetails value)? successviewdetails,
-    TResult Function(Erorrviewdetails value)? erorrviewdetails,
-    TResult Function(Loadingviewapprove value)? loadingviewapprove,
-    TResult Function(Successviewapprove value)? successviewapprove,
-    TResult Function(Erorrviewapprove value)? erorrviewapprove,
-    TResult Function(LoadingviewCancel value)? loadingviewCancel,
-    TResult Function(SuccessviewCancel value)? successviewCancel,
-    TResult Function(ErorrviewCancel value)? erorrviewCancel,
-    TResult Function(Loadingviewdone value)? loadingviewdone,
-    TResult Function(Successviewdone value)? successviewdone,
-    TResult Function(Erorrviewdone value)? erorrviewdone,
-    TResult Function(Loadingviewpending value)? loadingviewpending,
-    TResult Function(Successviewpending value)? successviewpending,
-    TResult Function(Erorrviewpending value)? erorrviewpending,
-    TResult Function(Loadingviewprepare value)? loadingviewprepare,
-    TResult Function(Successviewprepare value)? successviewprepare,
-    TResult Function(Erorrviewprepare value)? erorrviewprepare,
-    TResult Function(Loadingviewshipped value)? loadingviewshipped,
-    TResult Function(successviewshipped value)? successviewshipped,
-    TResult Function(Erorrviewshipped value)? erorrviewshipped,
-    TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
-    TResult Function(successviewAllOrders value)? successviewAllOrders,
-    TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
-    required TResult orElse(),
-  }) {
-    if (successprepare != null) {
-      return successprepare(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class Successprepare implements OrdersState {
-  const factory Successprepare() = _$SuccessprepareImpl;
-}
-
-/// @nodoc
-abstract class _$$ErorrprepareImplCopyWith<$Res> {
-  factory _$$ErorrprepareImplCopyWith(
-          _$ErorrprepareImpl value, $Res Function(_$ErorrprepareImpl) then) =
-      __$$ErorrprepareImplCopyWithImpl<$Res>;
-  @useResult
-  $Res call({String erorr});
-}
-
-/// @nodoc
-class __$$ErorrprepareImplCopyWithImpl<$Res>
-    extends _$OrdersStateCopyWithImpl<$Res, _$ErorrprepareImpl>
-    implements _$$ErorrprepareImplCopyWith<$Res> {
-  __$$ErorrprepareImplCopyWithImpl(
-      _$ErorrprepareImpl _value, $Res Function(_$ErorrprepareImpl) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? erorr = null,
-  }) {
-    return _then(_$ErorrprepareImpl(
-      erorr: null == erorr
-          ? _value.erorr
-          : erorr // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
-  }
-}
-
-/// @nodoc
-
-class _$ErorrprepareImpl implements Erorrprepare {
-  const _$ErorrprepareImpl({required this.erorr});
-
-  @override
-  final String erorr;
-
-  @override
-  String toString() {
-    return 'OrdersState.erorrprepare(erorr: $erorr)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$ErorrprepareImpl &&
-            (identical(other.erorr, erorr) || other.erorr == erorr));
-  }
-
-  @override
-  int get hashCode => Object.hash(runtimeType, erorr);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$ErorrprepareImplCopyWith<_$ErorrprepareImpl> get copyWith =>
-      __$$ErorrprepareImplCopyWithImpl<_$ErorrprepareImpl>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initial,
-    required TResult Function() loadingapprove,
-    required TResult Function() successapprove,
-    required TResult Function(String erorr) erorrapprove,
-    required TResult Function() loadingprepare,
-    required TResult Function() successprepare,
-    required TResult Function(String erorr) erorrprepare,
-    required TResult Function() loadingdone,
-    required TResult Function() successdone,
-    required TResult Function(String erorr) erorrdone,
-    required TResult Function() loadingshipped,
-    required TResult Function() successshipped,
-    required TResult Function(String erorr) erorrshipped,
-    required TResult Function() loadingviewdetails,
-    required TResult Function(List<DataDetails> responseDetails)
-        successviewdetails,
-    required TResult Function(String erorr) erorrviewdetails,
-    required TResult Function() loadingviewapprove,
-    required TResult Function(List<Datum> vieworders) successviewapprove,
-    required TResult Function(String erorr) erorrviewapprove,
-    required TResult Function() loadingviewCancel,
-    required TResult Function(List<Datum> vieworders) successviewCancel,
-    required TResult Function(String erorr) erorrviewCancel,
-    required TResult Function() loadingviewdone,
-    required TResult Function(List<Datum> vieworders) successviewdone,
-    required TResult Function(String erorr) erorrviewdone,
-    required TResult Function() loadingviewpending,
-    required TResult Function(List<Datum> vieworders) successviewpending,
-    required TResult Function(String erorr) erorrviewpending,
-    required TResult Function() loadingviewprepare,
-    required TResult Function(List<Datum> viewprepareorders) successviewprepare,
-    required TResult Function(String erorr) erorrviewprepare,
-    required TResult Function() loadingviewshipped,
-    required TResult Function(List<Datum> vieworders) successviewshipped,
-    required TResult Function(String erorr) erorrviewshipped,
-    required TResult Function() loadingviewAllOrders,
-    required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
-    required TResult Function(String erorr) erorrviewAllOrders,
-  }) {
-    return erorrprepare(erorr);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initial,
-    TResult? Function()? loadingapprove,
-    TResult? Function()? successapprove,
-    TResult? Function(String erorr)? erorrapprove,
-    TResult? Function()? loadingprepare,
-    TResult? Function()? successprepare,
-    TResult? Function(String erorr)? erorrprepare,
-    TResult? Function()? loadingdone,
-    TResult? Function()? successdone,
-    TResult? Function(String erorr)? erorrdone,
-    TResult? Function()? loadingshipped,
-    TResult? Function()? successshipped,
-    TResult? Function(String erorr)? erorrshipped,
-    TResult? Function()? loadingviewdetails,
-    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
-    TResult? Function(String erorr)? erorrviewdetails,
-    TResult? Function()? loadingviewapprove,
-    TResult? Function(List<Datum> vieworders)? successviewapprove,
-    TResult? Function(String erorr)? erorrviewapprove,
-    TResult? Function()? loadingviewCancel,
-    TResult? Function(List<Datum> vieworders)? successviewCancel,
-    TResult? Function(String erorr)? erorrviewCancel,
-    TResult? Function()? loadingviewdone,
-    TResult? Function(List<Datum> vieworders)? successviewdone,
-    TResult? Function(String erorr)? erorrviewdone,
-    TResult? Function()? loadingviewpending,
-    TResult? Function(List<Datum> vieworders)? successviewpending,
-    TResult? Function(String erorr)? erorrviewpending,
-    TResult? Function()? loadingviewprepare,
-    TResult? Function(List<Datum> viewprepareorders)? successviewprepare,
-    TResult? Function(String erorr)? erorrviewprepare,
-    TResult? Function()? loadingviewshipped,
-    TResult? Function(List<Datum> vieworders)? successviewshipped,
-    TResult? Function(String erorr)? erorrviewshipped,
-    TResult? Function()? loadingviewAllOrders,
-    TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
-    TResult? Function(String erorr)? erorrviewAllOrders,
-  }) {
-    return erorrprepare?.call(erorr);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? loadingapprove,
-    TResult Function()? successapprove,
-    TResult Function(String erorr)? erorrapprove,
-    TResult Function()? loadingprepare,
-    TResult Function()? successprepare,
-    TResult Function(String erorr)? erorrprepare,
-    TResult Function()? loadingdone,
-    TResult Function()? successdone,
-    TResult Function(String erorr)? erorrdone,
-    TResult Function()? loadingshipped,
-    TResult Function()? successshipped,
-    TResult Function(String erorr)? erorrshipped,
-    TResult Function()? loadingviewdetails,
-    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
-    TResult Function(String erorr)? erorrviewdetails,
-    TResult Function()? loadingviewapprove,
-    TResult Function(List<Datum> vieworders)? successviewapprove,
-    TResult Function(String erorr)? erorrviewapprove,
-    TResult Function()? loadingviewCancel,
-    TResult Function(List<Datum> vieworders)? successviewCancel,
-    TResult Function(String erorr)? erorrviewCancel,
-    TResult Function()? loadingviewdone,
-    TResult Function(List<Datum> vieworders)? successviewdone,
-    TResult Function(String erorr)? erorrviewdone,
-    TResult Function()? loadingviewpending,
-    TResult Function(List<Datum> vieworders)? successviewpending,
-    TResult Function(String erorr)? erorrviewpending,
-    TResult Function()? loadingviewprepare,
-    TResult Function(List<Datum> viewprepareorders)? successviewprepare,
-    TResult Function(String erorr)? erorrviewprepare,
-    TResult Function()? loadingviewshipped,
-    TResult Function(List<Datum> vieworders)? successviewshipped,
-    TResult Function(String erorr)? erorrviewshipped,
-    TResult Function()? loadingviewAllOrders,
-    TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
-    TResult Function(String erorr)? erorrviewAllOrders,
-    required TResult orElse(),
-  }) {
-    if (erorrprepare != null) {
-      return erorrprepare(erorr);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingapprove value) loadingapprove,
-    required TResult Function(Successapprove value) successapprove,
-    required TResult Function(Erorrapprove value) erorrapprove,
-    required TResult Function(Loadingprepare value) loadingprepare,
-    required TResult Function(Successprepare value) successprepare,
-    required TResult Function(Erorrprepare value) erorrprepare,
-    required TResult Function(Loadingdone value) loadingdone,
-    required TResult Function(Successdone value) successdone,
-    required TResult Function(Erorrdone value) erorrdone,
-    required TResult Function(Loadingshipped value) loadingshipped,
-    required TResult Function(Successshipped value) successshipped,
-    required TResult Function(Erorrshipped value) erorrshipped,
-    required TResult Function(Loadingviewdetails value) loadingviewdetails,
-    required TResult Function(successviewdetails value) successviewdetails,
-    required TResult Function(Erorrviewdetails value) erorrviewdetails,
-    required TResult Function(Loadingviewapprove value) loadingviewapprove,
-    required TResult Function(Successviewapprove value) successviewapprove,
-    required TResult Function(Erorrviewapprove value) erorrviewapprove,
-    required TResult Function(LoadingviewCancel value) loadingviewCancel,
-    required TResult Function(SuccessviewCancel value) successviewCancel,
-    required TResult Function(ErorrviewCancel value) erorrviewCancel,
-    required TResult Function(Loadingviewdone value) loadingviewdone,
-    required TResult Function(Successviewdone value) successviewdone,
-    required TResult Function(Erorrviewdone value) erorrviewdone,
-    required TResult Function(Loadingviewpending value) loadingviewpending,
-    required TResult Function(Successviewpending value) successviewpending,
-    required TResult Function(Erorrviewpending value) erorrviewpending,
-    required TResult Function(Loadingviewprepare value) loadingviewprepare,
-    required TResult Function(Successviewprepare value) successviewprepare,
-    required TResult Function(Erorrviewprepare value) erorrviewprepare,
-    required TResult Function(Loadingviewshipped value) loadingviewshipped,
-    required TResult Function(successviewshipped value) successviewshipped,
-    required TResult Function(Erorrviewshipped value) erorrviewshipped,
-    required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
-    required TResult Function(successviewAllOrders value) successviewAllOrders,
-    required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
-  }) {
-    return erorrprepare(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingapprove value)? loadingapprove,
-    TResult? Function(Successapprove value)? successapprove,
-    TResult? Function(Erorrapprove value)? erorrapprove,
-    TResult? Function(Loadingprepare value)? loadingprepare,
-    TResult? Function(Successprepare value)? successprepare,
-    TResult? Function(Erorrprepare value)? erorrprepare,
-    TResult? Function(Loadingdone value)? loadingdone,
-    TResult? Function(Successdone value)? successdone,
-    TResult? Function(Erorrdone value)? erorrdone,
-    TResult? Function(Loadingshipped value)? loadingshipped,
-    TResult? Function(Successshipped value)? successshipped,
-    TResult? Function(Erorrshipped value)? erorrshipped,
-    TResult? Function(Loadingviewdetails value)? loadingviewdetails,
-    TResult? Function(successviewdetails value)? successviewdetails,
-    TResult? Function(Erorrviewdetails value)? erorrviewdetails,
-    TResult? Function(Loadingviewapprove value)? loadingviewapprove,
-    TResult? Function(Successviewapprove value)? successviewapprove,
-    TResult? Function(Erorrviewapprove value)? erorrviewapprove,
-    TResult? Function(LoadingviewCancel value)? loadingviewCancel,
-    TResult? Function(SuccessviewCancel value)? successviewCancel,
-    TResult? Function(ErorrviewCancel value)? erorrviewCancel,
-    TResult? Function(Loadingviewdone value)? loadingviewdone,
-    TResult? Function(Successviewdone value)? successviewdone,
-    TResult? Function(Erorrviewdone value)? erorrviewdone,
-    TResult? Function(Loadingviewpending value)? loadingviewpending,
-    TResult? Function(Successviewpending value)? successviewpending,
-    TResult? Function(Erorrviewpending value)? erorrviewpending,
-    TResult? Function(Loadingviewprepare value)? loadingviewprepare,
-    TResult? Function(Successviewprepare value)? successviewprepare,
-    TResult? Function(Erorrviewprepare value)? erorrviewprepare,
-    TResult? Function(Loadingviewshipped value)? loadingviewshipped,
-    TResult? Function(successviewshipped value)? successviewshipped,
-    TResult? Function(Erorrviewshipped value)? erorrviewshipped,
-    TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
-    TResult? Function(successviewAllOrders value)? successviewAllOrders,
-    TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
-  }) {
-    return erorrprepare?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(Loadingapprove value)? loadingapprove,
-    TResult Function(Successapprove value)? successapprove,
-    TResult Function(Erorrapprove value)? erorrapprove,
-    TResult Function(Loadingprepare value)? loadingprepare,
-    TResult Function(Successprepare value)? successprepare,
-    TResult Function(Erorrprepare value)? erorrprepare,
-    TResult Function(Loadingdone value)? loadingdone,
-    TResult Function(Successdone value)? successdone,
-    TResult Function(Erorrdone value)? erorrdone,
-    TResult Function(Loadingshipped value)? loadingshipped,
-    TResult Function(Successshipped value)? successshipped,
-    TResult Function(Erorrshipped value)? erorrshipped,
-    TResult Function(Loadingviewdetails value)? loadingviewdetails,
-    TResult Function(successviewdetails value)? successviewdetails,
-    TResult Function(Erorrviewdetails value)? erorrviewdetails,
-    TResult Function(Loadingviewapprove value)? loadingviewapprove,
-    TResult Function(Successviewapprove value)? successviewapprove,
-    TResult Function(Erorrviewapprove value)? erorrviewapprove,
-    TResult Function(LoadingviewCancel value)? loadingviewCancel,
-    TResult Function(SuccessviewCancel value)? successviewCancel,
-    TResult Function(ErorrviewCancel value)? erorrviewCancel,
-    TResult Function(Loadingviewdone value)? loadingviewdone,
-    TResult Function(Successviewdone value)? successviewdone,
-    TResult Function(Erorrviewdone value)? erorrviewdone,
-    TResult Function(Loadingviewpending value)? loadingviewpending,
-    TResult Function(Successviewpending value)? successviewpending,
-    TResult Function(Erorrviewpending value)? erorrviewpending,
-    TResult Function(Loadingviewprepare value)? loadingviewprepare,
-    TResult Function(Successviewprepare value)? successviewprepare,
-    TResult Function(Erorrviewprepare value)? erorrviewprepare,
-    TResult Function(Loadingviewshipped value)? loadingviewshipped,
-    TResult Function(successviewshipped value)? successviewshipped,
-    TResult Function(Erorrviewshipped value)? erorrviewshipped,
-    TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
-    TResult Function(successviewAllOrders value)? successviewAllOrders,
-    TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
-    required TResult orElse(),
-  }) {
-    if (erorrprepare != null) {
-      return erorrprepare(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class Erorrprepare implements OrdersState {
-  const factory Erorrprepare({required final String erorr}) =
-      _$ErorrprepareImpl;
-
-  String get erorr;
-  @JsonKey(ignore: true)
-  _$$ErorrprepareImplCopyWith<_$ErorrprepareImpl> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class _$$LoadingdoneImplCopyWith<$Res> {
-  factory _$$LoadingdoneImplCopyWith(
-          _$LoadingdoneImpl value, $Res Function(_$LoadingdoneImpl) then) =
-      __$$LoadingdoneImplCopyWithImpl<$Res>;
-}
-
-/// @nodoc
-class __$$LoadingdoneImplCopyWithImpl<$Res>
-    extends _$OrdersStateCopyWithImpl<$Res, _$LoadingdoneImpl>
-    implements _$$LoadingdoneImplCopyWith<$Res> {
-  __$$LoadingdoneImplCopyWithImpl(
-      _$LoadingdoneImpl _value, $Res Function(_$LoadingdoneImpl) _then)
-      : super(_value, _then);
-}
-
-/// @nodoc
-
-class _$LoadingdoneImpl implements Loadingdone {
-  const _$LoadingdoneImpl();
-
-  @override
-  String toString() {
-    return 'OrdersState.loadingdone()';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$LoadingdoneImpl);
-  }
-
-  @override
-  int get hashCode => runtimeType.hashCode;
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initial,
-    required TResult Function() loadingapprove,
-    required TResult Function() successapprove,
-    required TResult Function(String erorr) erorrapprove,
-    required TResult Function() loadingprepare,
-    required TResult Function() successprepare,
-    required TResult Function(String erorr) erorrprepare,
-    required TResult Function() loadingdone,
-    required TResult Function() successdone,
-    required TResult Function(String erorr) erorrdone,
-    required TResult Function() loadingshipped,
-    required TResult Function() successshipped,
-    required TResult Function(String erorr) erorrshipped,
-    required TResult Function() loadingviewdetails,
-    required TResult Function(List<DataDetails> responseDetails)
-        successviewdetails,
-    required TResult Function(String erorr) erorrviewdetails,
-    required TResult Function() loadingviewapprove,
-    required TResult Function(List<Datum> vieworders) successviewapprove,
-    required TResult Function(String erorr) erorrviewapprove,
-    required TResult Function() loadingviewCancel,
-    required TResult Function(List<Datum> vieworders) successviewCancel,
-    required TResult Function(String erorr) erorrviewCancel,
-    required TResult Function() loadingviewdone,
-    required TResult Function(List<Datum> vieworders) successviewdone,
-    required TResult Function(String erorr) erorrviewdone,
-    required TResult Function() loadingviewpending,
-    required TResult Function(List<Datum> vieworders) successviewpending,
-    required TResult Function(String erorr) erorrviewpending,
-    required TResult Function() loadingviewprepare,
-    required TResult Function(List<Datum> viewprepareorders) successviewprepare,
-    required TResult Function(String erorr) erorrviewprepare,
-    required TResult Function() loadingviewshipped,
-    required TResult Function(List<Datum> vieworders) successviewshipped,
-    required TResult Function(String erorr) erorrviewshipped,
-    required TResult Function() loadingviewAllOrders,
-    required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
-    required TResult Function(String erorr) erorrviewAllOrders,
-  }) {
-    return loadingdone();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initial,
-    TResult? Function()? loadingapprove,
-    TResult? Function()? successapprove,
-    TResult? Function(String erorr)? erorrapprove,
-    TResult? Function()? loadingprepare,
-    TResult? Function()? successprepare,
-    TResult? Function(String erorr)? erorrprepare,
-    TResult? Function()? loadingdone,
-    TResult? Function()? successdone,
-    TResult? Function(String erorr)? erorrdone,
-    TResult? Function()? loadingshipped,
-    TResult? Function()? successshipped,
-    TResult? Function(String erorr)? erorrshipped,
-    TResult? Function()? loadingviewdetails,
-    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
-    TResult? Function(String erorr)? erorrviewdetails,
-    TResult? Function()? loadingviewapprove,
-    TResult? Function(List<Datum> vieworders)? successviewapprove,
-    TResult? Function(String erorr)? erorrviewapprove,
-    TResult? Function()? loadingviewCancel,
-    TResult? Function(List<Datum> vieworders)? successviewCancel,
-    TResult? Function(String erorr)? erorrviewCancel,
-    TResult? Function()? loadingviewdone,
-    TResult? Function(List<Datum> vieworders)? successviewdone,
-    TResult? Function(String erorr)? erorrviewdone,
-    TResult? Function()? loadingviewpending,
-    TResult? Function(List<Datum> vieworders)? successviewpending,
-    TResult? Function(String erorr)? erorrviewpending,
-    TResult? Function()? loadingviewprepare,
-    TResult? Function(List<Datum> viewprepareorders)? successviewprepare,
-    TResult? Function(String erorr)? erorrviewprepare,
-    TResult? Function()? loadingviewshipped,
-    TResult? Function(List<Datum> vieworders)? successviewshipped,
-    TResult? Function(String erorr)? erorrviewshipped,
-    TResult? Function()? loadingviewAllOrders,
-    TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
-    TResult? Function(String erorr)? erorrviewAllOrders,
-  }) {
-    return loadingdone?.call();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? loadingapprove,
-    TResult Function()? successapprove,
-    TResult Function(String erorr)? erorrapprove,
-    TResult Function()? loadingprepare,
-    TResult Function()? successprepare,
-    TResult Function(String erorr)? erorrprepare,
-    TResult Function()? loadingdone,
-    TResult Function()? successdone,
-    TResult Function(String erorr)? erorrdone,
-    TResult Function()? loadingshipped,
-    TResult Function()? successshipped,
-    TResult Function(String erorr)? erorrshipped,
-    TResult Function()? loadingviewdetails,
-    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
-    TResult Function(String erorr)? erorrviewdetails,
-    TResult Function()? loadingviewapprove,
-    TResult Function(List<Datum> vieworders)? successviewapprove,
-    TResult Function(String erorr)? erorrviewapprove,
-    TResult Function()? loadingviewCancel,
-    TResult Function(List<Datum> vieworders)? successviewCancel,
-    TResult Function(String erorr)? erorrviewCancel,
-    TResult Function()? loadingviewdone,
-    TResult Function(List<Datum> vieworders)? successviewdone,
-    TResult Function(String erorr)? erorrviewdone,
-    TResult Function()? loadingviewpending,
-    TResult Function(List<Datum> vieworders)? successviewpending,
-    TResult Function(String erorr)? erorrviewpending,
-    TResult Function()? loadingviewprepare,
-    TResult Function(List<Datum> viewprepareorders)? successviewprepare,
-    TResult Function(String erorr)? erorrviewprepare,
-    TResult Function()? loadingviewshipped,
-    TResult Function(List<Datum> vieworders)? successviewshipped,
-    TResult Function(String erorr)? erorrviewshipped,
-    TResult Function()? loadingviewAllOrders,
-    TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
-    TResult Function(String erorr)? erorrviewAllOrders,
-    required TResult orElse(),
-  }) {
-    if (loadingdone != null) {
-      return loadingdone();
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingapprove value) loadingapprove,
-    required TResult Function(Successapprove value) successapprove,
-    required TResult Function(Erorrapprove value) erorrapprove,
-    required TResult Function(Loadingprepare value) loadingprepare,
-    required TResult Function(Successprepare value) successprepare,
-    required TResult Function(Erorrprepare value) erorrprepare,
-    required TResult Function(Loadingdone value) loadingdone,
-    required TResult Function(Successdone value) successdone,
-    required TResult Function(Erorrdone value) erorrdone,
-    required TResult Function(Loadingshipped value) loadingshipped,
-    required TResult Function(Successshipped value) successshipped,
-    required TResult Function(Erorrshipped value) erorrshipped,
-    required TResult Function(Loadingviewdetails value) loadingviewdetails,
-    required TResult Function(successviewdetails value) successviewdetails,
-    required TResult Function(Erorrviewdetails value) erorrviewdetails,
-    required TResult Function(Loadingviewapprove value) loadingviewapprove,
-    required TResult Function(Successviewapprove value) successviewapprove,
-    required TResult Function(Erorrviewapprove value) erorrviewapprove,
-    required TResult Function(LoadingviewCancel value) loadingviewCancel,
-    required TResult Function(SuccessviewCancel value) successviewCancel,
-    required TResult Function(ErorrviewCancel value) erorrviewCancel,
-    required TResult Function(Loadingviewdone value) loadingviewdone,
-    required TResult Function(Successviewdone value) successviewdone,
-    required TResult Function(Erorrviewdone value) erorrviewdone,
-    required TResult Function(Loadingviewpending value) loadingviewpending,
-    required TResult Function(Successviewpending value) successviewpending,
-    required TResult Function(Erorrviewpending value) erorrviewpending,
-    required TResult Function(Loadingviewprepare value) loadingviewprepare,
-    required TResult Function(Successviewprepare value) successviewprepare,
-    required TResult Function(Erorrviewprepare value) erorrviewprepare,
-    required TResult Function(Loadingviewshipped value) loadingviewshipped,
-    required TResult Function(successviewshipped value) successviewshipped,
-    required TResult Function(Erorrviewshipped value) erorrviewshipped,
-    required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
-    required TResult Function(successviewAllOrders value) successviewAllOrders,
-    required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
-  }) {
-    return loadingdone(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingapprove value)? loadingapprove,
-    TResult? Function(Successapprove value)? successapprove,
-    TResult? Function(Erorrapprove value)? erorrapprove,
-    TResult? Function(Loadingprepare value)? loadingprepare,
-    TResult? Function(Successprepare value)? successprepare,
-    TResult? Function(Erorrprepare value)? erorrprepare,
-    TResult? Function(Loadingdone value)? loadingdone,
-    TResult? Function(Successdone value)? successdone,
-    TResult? Function(Erorrdone value)? erorrdone,
-    TResult? Function(Loadingshipped value)? loadingshipped,
-    TResult? Function(Successshipped value)? successshipped,
-    TResult? Function(Erorrshipped value)? erorrshipped,
-    TResult? Function(Loadingviewdetails value)? loadingviewdetails,
-    TResult? Function(successviewdetails value)? successviewdetails,
-    TResult? Function(Erorrviewdetails value)? erorrviewdetails,
-    TResult? Function(Loadingviewapprove value)? loadingviewapprove,
-    TResult? Function(Successviewapprove value)? successviewapprove,
-    TResult? Function(Erorrviewapprove value)? erorrviewapprove,
-    TResult? Function(LoadingviewCancel value)? loadingviewCancel,
-    TResult? Function(SuccessviewCancel value)? successviewCancel,
-    TResult? Function(ErorrviewCancel value)? erorrviewCancel,
-    TResult? Function(Loadingviewdone value)? loadingviewdone,
-    TResult? Function(Successviewdone value)? successviewdone,
-    TResult? Function(Erorrviewdone value)? erorrviewdone,
-    TResult? Function(Loadingviewpending value)? loadingviewpending,
-    TResult? Function(Successviewpending value)? successviewpending,
-    TResult? Function(Erorrviewpending value)? erorrviewpending,
-    TResult? Function(Loadingviewprepare value)? loadingviewprepare,
-    TResult? Function(Successviewprepare value)? successviewprepare,
-    TResult? Function(Erorrviewprepare value)? erorrviewprepare,
-    TResult? Function(Loadingviewshipped value)? loadingviewshipped,
-    TResult? Function(successviewshipped value)? successviewshipped,
-    TResult? Function(Erorrviewshipped value)? erorrviewshipped,
-    TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
-    TResult? Function(successviewAllOrders value)? successviewAllOrders,
-    TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
-  }) {
-    return loadingdone?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(Loadingapprove value)? loadingapprove,
-    TResult Function(Successapprove value)? successapprove,
-    TResult Function(Erorrapprove value)? erorrapprove,
-    TResult Function(Loadingprepare value)? loadingprepare,
-    TResult Function(Successprepare value)? successprepare,
-    TResult Function(Erorrprepare value)? erorrprepare,
-    TResult Function(Loadingdone value)? loadingdone,
-    TResult Function(Successdone value)? successdone,
-    TResult Function(Erorrdone value)? erorrdone,
-    TResult Function(Loadingshipped value)? loadingshipped,
-    TResult Function(Successshipped value)? successshipped,
-    TResult Function(Erorrshipped value)? erorrshipped,
-    TResult Function(Loadingviewdetails value)? loadingviewdetails,
-    TResult Function(successviewdetails value)? successviewdetails,
-    TResult Function(Erorrviewdetails value)? erorrviewdetails,
-    TResult Function(Loadingviewapprove value)? loadingviewapprove,
-    TResult Function(Successviewapprove value)? successviewapprove,
-    TResult Function(Erorrviewapprove value)? erorrviewapprove,
-    TResult Function(LoadingviewCancel value)? loadingviewCancel,
-    TResult Function(SuccessviewCancel value)? successviewCancel,
-    TResult Function(ErorrviewCancel value)? erorrviewCancel,
-    TResult Function(Loadingviewdone value)? loadingviewdone,
-    TResult Function(Successviewdone value)? successviewdone,
-    TResult Function(Erorrviewdone value)? erorrviewdone,
-    TResult Function(Loadingviewpending value)? loadingviewpending,
-    TResult Function(Successviewpending value)? successviewpending,
-    TResult Function(Erorrviewpending value)? erorrviewpending,
-    TResult Function(Loadingviewprepare value)? loadingviewprepare,
-    TResult Function(Successviewprepare value)? successviewprepare,
-    TResult Function(Erorrviewprepare value)? erorrviewprepare,
-    TResult Function(Loadingviewshipped value)? loadingviewshipped,
-    TResult Function(successviewshipped value)? successviewshipped,
-    TResult Function(Erorrviewshipped value)? erorrviewshipped,
-    TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
-    TResult Function(successviewAllOrders value)? successviewAllOrders,
-    TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
-    required TResult orElse(),
-  }) {
-    if (loadingdone != null) {
-      return loadingdone(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class Loadingdone implements OrdersState {
-  const factory Loadingdone() = _$LoadingdoneImpl;
-}
-
-/// @nodoc
-abstract class _$$SuccessdoneImplCopyWith<$Res> {
-  factory _$$SuccessdoneImplCopyWith(
-          _$SuccessdoneImpl value, $Res Function(_$SuccessdoneImpl) then) =
-      __$$SuccessdoneImplCopyWithImpl<$Res>;
-}
-
-/// @nodoc
-class __$$SuccessdoneImplCopyWithImpl<$Res>
-    extends _$OrdersStateCopyWithImpl<$Res, _$SuccessdoneImpl>
-    implements _$$SuccessdoneImplCopyWith<$Res> {
-  __$$SuccessdoneImplCopyWithImpl(
-      _$SuccessdoneImpl _value, $Res Function(_$SuccessdoneImpl) _then)
-      : super(_value, _then);
-}
-
-/// @nodoc
-
-class _$SuccessdoneImpl implements Successdone {
-  const _$SuccessdoneImpl();
-
-  @override
-  String toString() {
-    return 'OrdersState.successdone()';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$SuccessdoneImpl);
-  }
-
-  @override
-  int get hashCode => runtimeType.hashCode;
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initial,
-    required TResult Function() loadingapprove,
-    required TResult Function() successapprove,
-    required TResult Function(String erorr) erorrapprove,
-    required TResult Function() loadingprepare,
-    required TResult Function() successprepare,
-    required TResult Function(String erorr) erorrprepare,
-    required TResult Function() loadingdone,
-    required TResult Function() successdone,
-    required TResult Function(String erorr) erorrdone,
-    required TResult Function() loadingshipped,
-    required TResult Function() successshipped,
-    required TResult Function(String erorr) erorrshipped,
-    required TResult Function() loadingviewdetails,
-    required TResult Function(List<DataDetails> responseDetails)
-        successviewdetails,
-    required TResult Function(String erorr) erorrviewdetails,
-    required TResult Function() loadingviewapprove,
-    required TResult Function(List<Datum> vieworders) successviewapprove,
-    required TResult Function(String erorr) erorrviewapprove,
-    required TResult Function() loadingviewCancel,
-    required TResult Function(List<Datum> vieworders) successviewCancel,
-    required TResult Function(String erorr) erorrviewCancel,
-    required TResult Function() loadingviewdone,
-    required TResult Function(List<Datum> vieworders) successviewdone,
-    required TResult Function(String erorr) erorrviewdone,
-    required TResult Function() loadingviewpending,
-    required TResult Function(List<Datum> vieworders) successviewpending,
-    required TResult Function(String erorr) erorrviewpending,
-    required TResult Function() loadingviewprepare,
-    required TResult Function(List<Datum> viewprepareorders) successviewprepare,
-    required TResult Function(String erorr) erorrviewprepare,
-    required TResult Function() loadingviewshipped,
-    required TResult Function(List<Datum> vieworders) successviewshipped,
-    required TResult Function(String erorr) erorrviewshipped,
-    required TResult Function() loadingviewAllOrders,
-    required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
-    required TResult Function(String erorr) erorrviewAllOrders,
-  }) {
-    return successdone();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initial,
-    TResult? Function()? loadingapprove,
-    TResult? Function()? successapprove,
-    TResult? Function(String erorr)? erorrapprove,
-    TResult? Function()? loadingprepare,
-    TResult? Function()? successprepare,
-    TResult? Function(String erorr)? erorrprepare,
-    TResult? Function()? loadingdone,
-    TResult? Function()? successdone,
-    TResult? Function(String erorr)? erorrdone,
-    TResult? Function()? loadingshipped,
-    TResult? Function()? successshipped,
-    TResult? Function(String erorr)? erorrshipped,
-    TResult? Function()? loadingviewdetails,
-    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
-    TResult? Function(String erorr)? erorrviewdetails,
-    TResult? Function()? loadingviewapprove,
-    TResult? Function(List<Datum> vieworders)? successviewapprove,
-    TResult? Function(String erorr)? erorrviewapprove,
-    TResult? Function()? loadingviewCancel,
-    TResult? Function(List<Datum> vieworders)? successviewCancel,
-    TResult? Function(String erorr)? erorrviewCancel,
-    TResult? Function()? loadingviewdone,
-    TResult? Function(List<Datum> vieworders)? successviewdone,
-    TResult? Function(String erorr)? erorrviewdone,
-    TResult? Function()? loadingviewpending,
-    TResult? Function(List<Datum> vieworders)? successviewpending,
-    TResult? Function(String erorr)? erorrviewpending,
-    TResult? Function()? loadingviewprepare,
-    TResult? Function(List<Datum> viewprepareorders)? successviewprepare,
-    TResult? Function(String erorr)? erorrviewprepare,
-    TResult? Function()? loadingviewshipped,
-    TResult? Function(List<Datum> vieworders)? successviewshipped,
-    TResult? Function(String erorr)? erorrviewshipped,
-    TResult? Function()? loadingviewAllOrders,
-    TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
-    TResult? Function(String erorr)? erorrviewAllOrders,
-  }) {
-    return successdone?.call();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? loadingapprove,
-    TResult Function()? successapprove,
-    TResult Function(String erorr)? erorrapprove,
-    TResult Function()? loadingprepare,
-    TResult Function()? successprepare,
-    TResult Function(String erorr)? erorrprepare,
-    TResult Function()? loadingdone,
-    TResult Function()? successdone,
-    TResult Function(String erorr)? erorrdone,
-    TResult Function()? loadingshipped,
-    TResult Function()? successshipped,
-    TResult Function(String erorr)? erorrshipped,
-    TResult Function()? loadingviewdetails,
-    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
-    TResult Function(String erorr)? erorrviewdetails,
-    TResult Function()? loadingviewapprove,
-    TResult Function(List<Datum> vieworders)? successviewapprove,
-    TResult Function(String erorr)? erorrviewapprove,
-    TResult Function()? loadingviewCancel,
-    TResult Function(List<Datum> vieworders)? successviewCancel,
-    TResult Function(String erorr)? erorrviewCancel,
-    TResult Function()? loadingviewdone,
-    TResult Function(List<Datum> vieworders)? successviewdone,
-    TResult Function(String erorr)? erorrviewdone,
-    TResult Function()? loadingviewpending,
-    TResult Function(List<Datum> vieworders)? successviewpending,
-    TResult Function(String erorr)? erorrviewpending,
-    TResult Function()? loadingviewprepare,
-    TResult Function(List<Datum> viewprepareorders)? successviewprepare,
-    TResult Function(String erorr)? erorrviewprepare,
-    TResult Function()? loadingviewshipped,
-    TResult Function(List<Datum> vieworders)? successviewshipped,
-    TResult Function(String erorr)? erorrviewshipped,
-    TResult Function()? loadingviewAllOrders,
-    TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
-    TResult Function(String erorr)? erorrviewAllOrders,
-    required TResult orElse(),
-  }) {
-    if (successdone != null) {
-      return successdone();
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingapprove value) loadingapprove,
-    required TResult Function(Successapprove value) successapprove,
-    required TResult Function(Erorrapprove value) erorrapprove,
-    required TResult Function(Loadingprepare value) loadingprepare,
-    required TResult Function(Successprepare value) successprepare,
-    required TResult Function(Erorrprepare value) erorrprepare,
-    required TResult Function(Loadingdone value) loadingdone,
-    required TResult Function(Successdone value) successdone,
-    required TResult Function(Erorrdone value) erorrdone,
-    required TResult Function(Loadingshipped value) loadingshipped,
-    required TResult Function(Successshipped value) successshipped,
-    required TResult Function(Erorrshipped value) erorrshipped,
-    required TResult Function(Loadingviewdetails value) loadingviewdetails,
-    required TResult Function(successviewdetails value) successviewdetails,
-    required TResult Function(Erorrviewdetails value) erorrviewdetails,
-    required TResult Function(Loadingviewapprove value) loadingviewapprove,
-    required TResult Function(Successviewapprove value) successviewapprove,
-    required TResult Function(Erorrviewapprove value) erorrviewapprove,
-    required TResult Function(LoadingviewCancel value) loadingviewCancel,
-    required TResult Function(SuccessviewCancel value) successviewCancel,
-    required TResult Function(ErorrviewCancel value) erorrviewCancel,
-    required TResult Function(Loadingviewdone value) loadingviewdone,
-    required TResult Function(Successviewdone value) successviewdone,
-    required TResult Function(Erorrviewdone value) erorrviewdone,
-    required TResult Function(Loadingviewpending value) loadingviewpending,
-    required TResult Function(Successviewpending value) successviewpending,
-    required TResult Function(Erorrviewpending value) erorrviewpending,
-    required TResult Function(Loadingviewprepare value) loadingviewprepare,
-    required TResult Function(Successviewprepare value) successviewprepare,
-    required TResult Function(Erorrviewprepare value) erorrviewprepare,
-    required TResult Function(Loadingviewshipped value) loadingviewshipped,
-    required TResult Function(successviewshipped value) successviewshipped,
-    required TResult Function(Erorrviewshipped value) erorrviewshipped,
-    required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
-    required TResult Function(successviewAllOrders value) successviewAllOrders,
-    required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
-  }) {
-    return successdone(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingapprove value)? loadingapprove,
-    TResult? Function(Successapprove value)? successapprove,
-    TResult? Function(Erorrapprove value)? erorrapprove,
-    TResult? Function(Loadingprepare value)? loadingprepare,
-    TResult? Function(Successprepare value)? successprepare,
-    TResult? Function(Erorrprepare value)? erorrprepare,
-    TResult? Function(Loadingdone value)? loadingdone,
-    TResult? Function(Successdone value)? successdone,
-    TResult? Function(Erorrdone value)? erorrdone,
-    TResult? Function(Loadingshipped value)? loadingshipped,
-    TResult? Function(Successshipped value)? successshipped,
-    TResult? Function(Erorrshipped value)? erorrshipped,
-    TResult? Function(Loadingviewdetails value)? loadingviewdetails,
-    TResult? Function(successviewdetails value)? successviewdetails,
-    TResult? Function(Erorrviewdetails value)? erorrviewdetails,
-    TResult? Function(Loadingviewapprove value)? loadingviewapprove,
-    TResult? Function(Successviewapprove value)? successviewapprove,
-    TResult? Function(Erorrviewapprove value)? erorrviewapprove,
-    TResult? Function(LoadingviewCancel value)? loadingviewCancel,
-    TResult? Function(SuccessviewCancel value)? successviewCancel,
-    TResult? Function(ErorrviewCancel value)? erorrviewCancel,
-    TResult? Function(Loadingviewdone value)? loadingviewdone,
-    TResult? Function(Successviewdone value)? successviewdone,
-    TResult? Function(Erorrviewdone value)? erorrviewdone,
-    TResult? Function(Loadingviewpending value)? loadingviewpending,
-    TResult? Function(Successviewpending value)? successviewpending,
-    TResult? Function(Erorrviewpending value)? erorrviewpending,
-    TResult? Function(Loadingviewprepare value)? loadingviewprepare,
-    TResult? Function(Successviewprepare value)? successviewprepare,
-    TResult? Function(Erorrviewprepare value)? erorrviewprepare,
-    TResult? Function(Loadingviewshipped value)? loadingviewshipped,
-    TResult? Function(successviewshipped value)? successviewshipped,
-    TResult? Function(Erorrviewshipped value)? erorrviewshipped,
-    TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
-    TResult? Function(successviewAllOrders value)? successviewAllOrders,
-    TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
-  }) {
-    return successdone?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(Loadingapprove value)? loadingapprove,
-    TResult Function(Successapprove value)? successapprove,
-    TResult Function(Erorrapprove value)? erorrapprove,
-    TResult Function(Loadingprepare value)? loadingprepare,
-    TResult Function(Successprepare value)? successprepare,
-    TResult Function(Erorrprepare value)? erorrprepare,
-    TResult Function(Loadingdone value)? loadingdone,
-    TResult Function(Successdone value)? successdone,
-    TResult Function(Erorrdone value)? erorrdone,
-    TResult Function(Loadingshipped value)? loadingshipped,
-    TResult Function(Successshipped value)? successshipped,
-    TResult Function(Erorrshipped value)? erorrshipped,
-    TResult Function(Loadingviewdetails value)? loadingviewdetails,
-    TResult Function(successviewdetails value)? successviewdetails,
-    TResult Function(Erorrviewdetails value)? erorrviewdetails,
-    TResult Function(Loadingviewapprove value)? loadingviewapprove,
-    TResult Function(Successviewapprove value)? successviewapprove,
-    TResult Function(Erorrviewapprove value)? erorrviewapprove,
-    TResult Function(LoadingviewCancel value)? loadingviewCancel,
-    TResult Function(SuccessviewCancel value)? successviewCancel,
-    TResult Function(ErorrviewCancel value)? erorrviewCancel,
-    TResult Function(Loadingviewdone value)? loadingviewdone,
-    TResult Function(Successviewdone value)? successviewdone,
-    TResult Function(Erorrviewdone value)? erorrviewdone,
-    TResult Function(Loadingviewpending value)? loadingviewpending,
-    TResult Function(Successviewpending value)? successviewpending,
-    TResult Function(Erorrviewpending value)? erorrviewpending,
-    TResult Function(Loadingviewprepare value)? loadingviewprepare,
-    TResult Function(Successviewprepare value)? successviewprepare,
-    TResult Function(Erorrviewprepare value)? erorrviewprepare,
-    TResult Function(Loadingviewshipped value)? loadingviewshipped,
-    TResult Function(successviewshipped value)? successviewshipped,
-    TResult Function(Erorrviewshipped value)? erorrviewshipped,
-    TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
-    TResult Function(successviewAllOrders value)? successviewAllOrders,
-    TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
-    required TResult orElse(),
-  }) {
-    if (successdone != null) {
-      return successdone(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class Successdone implements OrdersState {
-  const factory Successdone() = _$SuccessdoneImpl;
-}
-
-/// @nodoc
-abstract class _$$ErorrdoneImplCopyWith<$Res> {
-  factory _$$ErorrdoneImplCopyWith(
-          _$ErorrdoneImpl value, $Res Function(_$ErorrdoneImpl) then) =
-      __$$ErorrdoneImplCopyWithImpl<$Res>;
-  @useResult
-  $Res call({String erorr});
-}
-
-/// @nodoc
-class __$$ErorrdoneImplCopyWithImpl<$Res>
-    extends _$OrdersStateCopyWithImpl<$Res, _$ErorrdoneImpl>
-    implements _$$ErorrdoneImplCopyWith<$Res> {
-  __$$ErorrdoneImplCopyWithImpl(
-      _$ErorrdoneImpl _value, $Res Function(_$ErorrdoneImpl) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? erorr = null,
-  }) {
-    return _then(_$ErorrdoneImpl(
-      erorr: null == erorr
-          ? _value.erorr
-          : erorr // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
-  }
-}
-
-/// @nodoc
-
-class _$ErorrdoneImpl implements Erorrdone {
-  const _$ErorrdoneImpl({required this.erorr});
-
-  @override
-  final String erorr;
-
-  @override
-  String toString() {
-    return 'OrdersState.erorrdone(erorr: $erorr)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$ErorrdoneImpl &&
-            (identical(other.erorr, erorr) || other.erorr == erorr));
-  }
-
-  @override
-  int get hashCode => Object.hash(runtimeType, erorr);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$ErorrdoneImplCopyWith<_$ErorrdoneImpl> get copyWith =>
-      __$$ErorrdoneImplCopyWithImpl<_$ErorrdoneImpl>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initial,
-    required TResult Function() loadingapprove,
-    required TResult Function() successapprove,
-    required TResult Function(String erorr) erorrapprove,
-    required TResult Function() loadingprepare,
-    required TResult Function() successprepare,
-    required TResult Function(String erorr) erorrprepare,
-    required TResult Function() loadingdone,
-    required TResult Function() successdone,
-    required TResult Function(String erorr) erorrdone,
-    required TResult Function() loadingshipped,
-    required TResult Function() successshipped,
-    required TResult Function(String erorr) erorrshipped,
-    required TResult Function() loadingviewdetails,
-    required TResult Function(List<DataDetails> responseDetails)
-        successviewdetails,
-    required TResult Function(String erorr) erorrviewdetails,
-    required TResult Function() loadingviewapprove,
-    required TResult Function(List<Datum> vieworders) successviewapprove,
-    required TResult Function(String erorr) erorrviewapprove,
-    required TResult Function() loadingviewCancel,
-    required TResult Function(List<Datum> vieworders) successviewCancel,
-    required TResult Function(String erorr) erorrviewCancel,
-    required TResult Function() loadingviewdone,
-    required TResult Function(List<Datum> vieworders) successviewdone,
-    required TResult Function(String erorr) erorrviewdone,
-    required TResult Function() loadingviewpending,
-    required TResult Function(List<Datum> vieworders) successviewpending,
-    required TResult Function(String erorr) erorrviewpending,
-    required TResult Function() loadingviewprepare,
-    required TResult Function(List<Datum> viewprepareorders) successviewprepare,
-    required TResult Function(String erorr) erorrviewprepare,
-    required TResult Function() loadingviewshipped,
-    required TResult Function(List<Datum> vieworders) successviewshipped,
-    required TResult Function(String erorr) erorrviewshipped,
-    required TResult Function() loadingviewAllOrders,
-    required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
-    required TResult Function(String erorr) erorrviewAllOrders,
-  }) {
-    return erorrdone(erorr);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initial,
-    TResult? Function()? loadingapprove,
-    TResult? Function()? successapprove,
-    TResult? Function(String erorr)? erorrapprove,
-    TResult? Function()? loadingprepare,
-    TResult? Function()? successprepare,
-    TResult? Function(String erorr)? erorrprepare,
-    TResult? Function()? loadingdone,
-    TResult? Function()? successdone,
-    TResult? Function(String erorr)? erorrdone,
-    TResult? Function()? loadingshipped,
-    TResult? Function()? successshipped,
-    TResult? Function(String erorr)? erorrshipped,
-    TResult? Function()? loadingviewdetails,
-    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
-    TResult? Function(String erorr)? erorrviewdetails,
-    TResult? Function()? loadingviewapprove,
-    TResult? Function(List<Datum> vieworders)? successviewapprove,
-    TResult? Function(String erorr)? erorrviewapprove,
-    TResult? Function()? loadingviewCancel,
-    TResult? Function(List<Datum> vieworders)? successviewCancel,
-    TResult? Function(String erorr)? erorrviewCancel,
-    TResult? Function()? loadingviewdone,
-    TResult? Function(List<Datum> vieworders)? successviewdone,
-    TResult? Function(String erorr)? erorrviewdone,
-    TResult? Function()? loadingviewpending,
-    TResult? Function(List<Datum> vieworders)? successviewpending,
-    TResult? Function(String erorr)? erorrviewpending,
-    TResult? Function()? loadingviewprepare,
-    TResult? Function(List<Datum> viewprepareorders)? successviewprepare,
-    TResult? Function(String erorr)? erorrviewprepare,
-    TResult? Function()? loadingviewshipped,
-    TResult? Function(List<Datum> vieworders)? successviewshipped,
-    TResult? Function(String erorr)? erorrviewshipped,
-    TResult? Function()? loadingviewAllOrders,
-    TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
-    TResult? Function(String erorr)? erorrviewAllOrders,
-  }) {
-    return erorrdone?.call(erorr);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? loadingapprove,
-    TResult Function()? successapprove,
-    TResult Function(String erorr)? erorrapprove,
-    TResult Function()? loadingprepare,
-    TResult Function()? successprepare,
-    TResult Function(String erorr)? erorrprepare,
-    TResult Function()? loadingdone,
-    TResult Function()? successdone,
-    TResult Function(String erorr)? erorrdone,
-    TResult Function()? loadingshipped,
-    TResult Function()? successshipped,
-    TResult Function(String erorr)? erorrshipped,
-    TResult Function()? loadingviewdetails,
-    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
-    TResult Function(String erorr)? erorrviewdetails,
-    TResult Function()? loadingviewapprove,
-    TResult Function(List<Datum> vieworders)? successviewapprove,
-    TResult Function(String erorr)? erorrviewapprove,
-    TResult Function()? loadingviewCancel,
-    TResult Function(List<Datum> vieworders)? successviewCancel,
-    TResult Function(String erorr)? erorrviewCancel,
-    TResult Function()? loadingviewdone,
-    TResult Function(List<Datum> vieworders)? successviewdone,
-    TResult Function(String erorr)? erorrviewdone,
-    TResult Function()? loadingviewpending,
-    TResult Function(List<Datum> vieworders)? successviewpending,
-    TResult Function(String erorr)? erorrviewpending,
-    TResult Function()? loadingviewprepare,
-    TResult Function(List<Datum> viewprepareorders)? successviewprepare,
-    TResult Function(String erorr)? erorrviewprepare,
-    TResult Function()? loadingviewshipped,
-    TResult Function(List<Datum> vieworders)? successviewshipped,
-    TResult Function(String erorr)? erorrviewshipped,
-    TResult Function()? loadingviewAllOrders,
-    TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
-    TResult Function(String erorr)? erorrviewAllOrders,
-    required TResult orElse(),
-  }) {
-    if (erorrdone != null) {
-      return erorrdone(erorr);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingapprove value) loadingapprove,
-    required TResult Function(Successapprove value) successapprove,
-    required TResult Function(Erorrapprove value) erorrapprove,
-    required TResult Function(Loadingprepare value) loadingprepare,
-    required TResult Function(Successprepare value) successprepare,
-    required TResult Function(Erorrprepare value) erorrprepare,
-    required TResult Function(Loadingdone value) loadingdone,
-    required TResult Function(Successdone value) successdone,
-    required TResult Function(Erorrdone value) erorrdone,
-    required TResult Function(Loadingshipped value) loadingshipped,
-    required TResult Function(Successshipped value) successshipped,
-    required TResult Function(Erorrshipped value) erorrshipped,
-    required TResult Function(Loadingviewdetails value) loadingviewdetails,
-    required TResult Function(successviewdetails value) successviewdetails,
-    required TResult Function(Erorrviewdetails value) erorrviewdetails,
-    required TResult Function(Loadingviewapprove value) loadingviewapprove,
-    required TResult Function(Successviewapprove value) successviewapprove,
-    required TResult Function(Erorrviewapprove value) erorrviewapprove,
-    required TResult Function(LoadingviewCancel value) loadingviewCancel,
-    required TResult Function(SuccessviewCancel value) successviewCancel,
-    required TResult Function(ErorrviewCancel value) erorrviewCancel,
-    required TResult Function(Loadingviewdone value) loadingviewdone,
-    required TResult Function(Successviewdone value) successviewdone,
-    required TResult Function(Erorrviewdone value) erorrviewdone,
-    required TResult Function(Loadingviewpending value) loadingviewpending,
-    required TResult Function(Successviewpending value) successviewpending,
-    required TResult Function(Erorrviewpending value) erorrviewpending,
-    required TResult Function(Loadingviewprepare value) loadingviewprepare,
-    required TResult Function(Successviewprepare value) successviewprepare,
-    required TResult Function(Erorrviewprepare value) erorrviewprepare,
-    required TResult Function(Loadingviewshipped value) loadingviewshipped,
-    required TResult Function(successviewshipped value) successviewshipped,
-    required TResult Function(Erorrviewshipped value) erorrviewshipped,
-    required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
-    required TResult Function(successviewAllOrders value) successviewAllOrders,
-    required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
-  }) {
-    return erorrdone(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingapprove value)? loadingapprove,
-    TResult? Function(Successapprove value)? successapprove,
-    TResult? Function(Erorrapprove value)? erorrapprove,
-    TResult? Function(Loadingprepare value)? loadingprepare,
-    TResult? Function(Successprepare value)? successprepare,
-    TResult? Function(Erorrprepare value)? erorrprepare,
-    TResult? Function(Loadingdone value)? loadingdone,
-    TResult? Function(Successdone value)? successdone,
-    TResult? Function(Erorrdone value)? erorrdone,
-    TResult? Function(Loadingshipped value)? loadingshipped,
-    TResult? Function(Successshipped value)? successshipped,
-    TResult? Function(Erorrshipped value)? erorrshipped,
-    TResult? Function(Loadingviewdetails value)? loadingviewdetails,
-    TResult? Function(successviewdetails value)? successviewdetails,
-    TResult? Function(Erorrviewdetails value)? erorrviewdetails,
-    TResult? Function(Loadingviewapprove value)? loadingviewapprove,
-    TResult? Function(Successviewapprove value)? successviewapprove,
-    TResult? Function(Erorrviewapprove value)? erorrviewapprove,
-    TResult? Function(LoadingviewCancel value)? loadingviewCancel,
-    TResult? Function(SuccessviewCancel value)? successviewCancel,
-    TResult? Function(ErorrviewCancel value)? erorrviewCancel,
-    TResult? Function(Loadingviewdone value)? loadingviewdone,
-    TResult? Function(Successviewdone value)? successviewdone,
-    TResult? Function(Erorrviewdone value)? erorrviewdone,
-    TResult? Function(Loadingviewpending value)? loadingviewpending,
-    TResult? Function(Successviewpending value)? successviewpending,
-    TResult? Function(Erorrviewpending value)? erorrviewpending,
-    TResult? Function(Loadingviewprepare value)? loadingviewprepare,
-    TResult? Function(Successviewprepare value)? successviewprepare,
-    TResult? Function(Erorrviewprepare value)? erorrviewprepare,
-    TResult? Function(Loadingviewshipped value)? loadingviewshipped,
-    TResult? Function(successviewshipped value)? successviewshipped,
-    TResult? Function(Erorrviewshipped value)? erorrviewshipped,
-    TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
-    TResult? Function(successviewAllOrders value)? successviewAllOrders,
-    TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
-  }) {
-    return erorrdone?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(Loadingapprove value)? loadingapprove,
-    TResult Function(Successapprove value)? successapprove,
-    TResult Function(Erorrapprove value)? erorrapprove,
-    TResult Function(Loadingprepare value)? loadingprepare,
-    TResult Function(Successprepare value)? successprepare,
-    TResult Function(Erorrprepare value)? erorrprepare,
-    TResult Function(Loadingdone value)? loadingdone,
-    TResult Function(Successdone value)? successdone,
-    TResult Function(Erorrdone value)? erorrdone,
-    TResult Function(Loadingshipped value)? loadingshipped,
-    TResult Function(Successshipped value)? successshipped,
-    TResult Function(Erorrshipped value)? erorrshipped,
-    TResult Function(Loadingviewdetails value)? loadingviewdetails,
-    TResult Function(successviewdetails value)? successviewdetails,
-    TResult Function(Erorrviewdetails value)? erorrviewdetails,
-    TResult Function(Loadingviewapprove value)? loadingviewapprove,
-    TResult Function(Successviewapprove value)? successviewapprove,
-    TResult Function(Erorrviewapprove value)? erorrviewapprove,
-    TResult Function(LoadingviewCancel value)? loadingviewCancel,
-    TResult Function(SuccessviewCancel value)? successviewCancel,
-    TResult Function(ErorrviewCancel value)? erorrviewCancel,
-    TResult Function(Loadingviewdone value)? loadingviewdone,
-    TResult Function(Successviewdone value)? successviewdone,
-    TResult Function(Erorrviewdone value)? erorrviewdone,
-    TResult Function(Loadingviewpending value)? loadingviewpending,
-    TResult Function(Successviewpending value)? successviewpending,
-    TResult Function(Erorrviewpending value)? erorrviewpending,
-    TResult Function(Loadingviewprepare value)? loadingviewprepare,
-    TResult Function(Successviewprepare value)? successviewprepare,
-    TResult Function(Erorrviewprepare value)? erorrviewprepare,
-    TResult Function(Loadingviewshipped value)? loadingviewshipped,
-    TResult Function(successviewshipped value)? successviewshipped,
-    TResult Function(Erorrviewshipped value)? erorrviewshipped,
-    TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
-    TResult Function(successviewAllOrders value)? successviewAllOrders,
-    TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
-    required TResult orElse(),
-  }) {
-    if (erorrdone != null) {
-      return erorrdone(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class Erorrdone implements OrdersState {
-  const factory Erorrdone({required final String erorr}) = _$ErorrdoneImpl;
-
-  String get erorr;
-  @JsonKey(ignore: true)
-  _$$ErorrdoneImplCopyWith<_$ErorrdoneImpl> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class _$$LoadingshippedImplCopyWith<$Res> {
-  factory _$$LoadingshippedImplCopyWith(_$LoadingshippedImpl value,
-          $Res Function(_$LoadingshippedImpl) then) =
-      __$$LoadingshippedImplCopyWithImpl<$Res>;
-}
-
-/// @nodoc
-class __$$LoadingshippedImplCopyWithImpl<$Res>
-    extends _$OrdersStateCopyWithImpl<$Res, _$LoadingshippedImpl>
-    implements _$$LoadingshippedImplCopyWith<$Res> {
-  __$$LoadingshippedImplCopyWithImpl(
-      _$LoadingshippedImpl _value, $Res Function(_$LoadingshippedImpl) _then)
-      : super(_value, _then);
-}
-
-/// @nodoc
-
-class _$LoadingshippedImpl implements Loadingshipped {
-  const _$LoadingshippedImpl();
-
-  @override
-  String toString() {
-    return 'OrdersState.loadingshipped()';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$LoadingshippedImpl);
-  }
-
-  @override
-  int get hashCode => runtimeType.hashCode;
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initial,
-    required TResult Function() loadingapprove,
-    required TResult Function() successapprove,
-    required TResult Function(String erorr) erorrapprove,
-    required TResult Function() loadingprepare,
-    required TResult Function() successprepare,
-    required TResult Function(String erorr) erorrprepare,
-    required TResult Function() loadingdone,
-    required TResult Function() successdone,
-    required TResult Function(String erorr) erorrdone,
-    required TResult Function() loadingshipped,
-    required TResult Function() successshipped,
-    required TResult Function(String erorr) erorrshipped,
-    required TResult Function() loadingviewdetails,
-    required TResult Function(List<DataDetails> responseDetails)
-        successviewdetails,
-    required TResult Function(String erorr) erorrviewdetails,
-    required TResult Function() loadingviewapprove,
-    required TResult Function(List<Datum> vieworders) successviewapprove,
-    required TResult Function(String erorr) erorrviewapprove,
-    required TResult Function() loadingviewCancel,
-    required TResult Function(List<Datum> vieworders) successviewCancel,
-    required TResult Function(String erorr) erorrviewCancel,
-    required TResult Function() loadingviewdone,
-    required TResult Function(List<Datum> vieworders) successviewdone,
-    required TResult Function(String erorr) erorrviewdone,
-    required TResult Function() loadingviewpending,
-    required TResult Function(List<Datum> vieworders) successviewpending,
-    required TResult Function(String erorr) erorrviewpending,
-    required TResult Function() loadingviewprepare,
-    required TResult Function(List<Datum> viewprepareorders) successviewprepare,
-    required TResult Function(String erorr) erorrviewprepare,
-    required TResult Function() loadingviewshipped,
-    required TResult Function(List<Datum> vieworders) successviewshipped,
-    required TResult Function(String erorr) erorrviewshipped,
-    required TResult Function() loadingviewAllOrders,
-    required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
-    required TResult Function(String erorr) erorrviewAllOrders,
-  }) {
-    return loadingshipped();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initial,
-    TResult? Function()? loadingapprove,
-    TResult? Function()? successapprove,
-    TResult? Function(String erorr)? erorrapprove,
-    TResult? Function()? loadingprepare,
-    TResult? Function()? successprepare,
-    TResult? Function(String erorr)? erorrprepare,
-    TResult? Function()? loadingdone,
-    TResult? Function()? successdone,
-    TResult? Function(String erorr)? erorrdone,
-    TResult? Function()? loadingshipped,
-    TResult? Function()? successshipped,
-    TResult? Function(String erorr)? erorrshipped,
-    TResult? Function()? loadingviewdetails,
-    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
-    TResult? Function(String erorr)? erorrviewdetails,
-    TResult? Function()? loadingviewapprove,
-    TResult? Function(List<Datum> vieworders)? successviewapprove,
-    TResult? Function(String erorr)? erorrviewapprove,
-    TResult? Function()? loadingviewCancel,
-    TResult? Function(List<Datum> vieworders)? successviewCancel,
-    TResult? Function(String erorr)? erorrviewCancel,
-    TResult? Function()? loadingviewdone,
-    TResult? Function(List<Datum> vieworders)? successviewdone,
-    TResult? Function(String erorr)? erorrviewdone,
-    TResult? Function()? loadingviewpending,
-    TResult? Function(List<Datum> vieworders)? successviewpending,
-    TResult? Function(String erorr)? erorrviewpending,
-    TResult? Function()? loadingviewprepare,
-    TResult? Function(List<Datum> viewprepareorders)? successviewprepare,
-    TResult? Function(String erorr)? erorrviewprepare,
-    TResult? Function()? loadingviewshipped,
-    TResult? Function(List<Datum> vieworders)? successviewshipped,
-    TResult? Function(String erorr)? erorrviewshipped,
-    TResult? Function()? loadingviewAllOrders,
-    TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
-    TResult? Function(String erorr)? erorrviewAllOrders,
-  }) {
-    return loadingshipped?.call();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? loadingapprove,
-    TResult Function()? successapprove,
-    TResult Function(String erorr)? erorrapprove,
-    TResult Function()? loadingprepare,
-    TResult Function()? successprepare,
-    TResult Function(String erorr)? erorrprepare,
-    TResult Function()? loadingdone,
-    TResult Function()? successdone,
-    TResult Function(String erorr)? erorrdone,
-    TResult Function()? loadingshipped,
-    TResult Function()? successshipped,
-    TResult Function(String erorr)? erorrshipped,
-    TResult Function()? loadingviewdetails,
-    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
-    TResult Function(String erorr)? erorrviewdetails,
-    TResult Function()? loadingviewapprove,
-    TResult Function(List<Datum> vieworders)? successviewapprove,
-    TResult Function(String erorr)? erorrviewapprove,
-    TResult Function()? loadingviewCancel,
-    TResult Function(List<Datum> vieworders)? successviewCancel,
-    TResult Function(String erorr)? erorrviewCancel,
-    TResult Function()? loadingviewdone,
-    TResult Function(List<Datum> vieworders)? successviewdone,
-    TResult Function(String erorr)? erorrviewdone,
-    TResult Function()? loadingviewpending,
-    TResult Function(List<Datum> vieworders)? successviewpending,
-    TResult Function(String erorr)? erorrviewpending,
-    TResult Function()? loadingviewprepare,
-    TResult Function(List<Datum> viewprepareorders)? successviewprepare,
-    TResult Function(String erorr)? erorrviewprepare,
-    TResult Function()? loadingviewshipped,
-    TResult Function(List<Datum> vieworders)? successviewshipped,
-    TResult Function(String erorr)? erorrviewshipped,
-    TResult Function()? loadingviewAllOrders,
-    TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
-    TResult Function(String erorr)? erorrviewAllOrders,
-    required TResult orElse(),
-  }) {
-    if (loadingshipped != null) {
-      return loadingshipped();
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingapprove value) loadingapprove,
-    required TResult Function(Successapprove value) successapprove,
-    required TResult Function(Erorrapprove value) erorrapprove,
-    required TResult Function(Loadingprepare value) loadingprepare,
-    required TResult Function(Successprepare value) successprepare,
-    required TResult Function(Erorrprepare value) erorrprepare,
-    required TResult Function(Loadingdone value) loadingdone,
-    required TResult Function(Successdone value) successdone,
-    required TResult Function(Erorrdone value) erorrdone,
-    required TResult Function(Loadingshipped value) loadingshipped,
-    required TResult Function(Successshipped value) successshipped,
-    required TResult Function(Erorrshipped value) erorrshipped,
-    required TResult Function(Loadingviewdetails value) loadingviewdetails,
-    required TResult Function(successviewdetails value) successviewdetails,
-    required TResult Function(Erorrviewdetails value) erorrviewdetails,
-    required TResult Function(Loadingviewapprove value) loadingviewapprove,
-    required TResult Function(Successviewapprove value) successviewapprove,
-    required TResult Function(Erorrviewapprove value) erorrviewapprove,
-    required TResult Function(LoadingviewCancel value) loadingviewCancel,
-    required TResult Function(SuccessviewCancel value) successviewCancel,
-    required TResult Function(ErorrviewCancel value) erorrviewCancel,
-    required TResult Function(Loadingviewdone value) loadingviewdone,
-    required TResult Function(Successviewdone value) successviewdone,
-    required TResult Function(Erorrviewdone value) erorrviewdone,
-    required TResult Function(Loadingviewpending value) loadingviewpending,
-    required TResult Function(Successviewpending value) successviewpending,
-    required TResult Function(Erorrviewpending value) erorrviewpending,
-    required TResult Function(Loadingviewprepare value) loadingviewprepare,
-    required TResult Function(Successviewprepare value) successviewprepare,
-    required TResult Function(Erorrviewprepare value) erorrviewprepare,
-    required TResult Function(Loadingviewshipped value) loadingviewshipped,
-    required TResult Function(successviewshipped value) successviewshipped,
-    required TResult Function(Erorrviewshipped value) erorrviewshipped,
-    required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
-    required TResult Function(successviewAllOrders value) successviewAllOrders,
-    required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
-  }) {
-    return loadingshipped(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingapprove value)? loadingapprove,
-    TResult? Function(Successapprove value)? successapprove,
-    TResult? Function(Erorrapprove value)? erorrapprove,
-    TResult? Function(Loadingprepare value)? loadingprepare,
-    TResult? Function(Successprepare value)? successprepare,
-    TResult? Function(Erorrprepare value)? erorrprepare,
-    TResult? Function(Loadingdone value)? loadingdone,
-    TResult? Function(Successdone value)? successdone,
-    TResult? Function(Erorrdone value)? erorrdone,
-    TResult? Function(Loadingshipped value)? loadingshipped,
-    TResult? Function(Successshipped value)? successshipped,
-    TResult? Function(Erorrshipped value)? erorrshipped,
-    TResult? Function(Loadingviewdetails value)? loadingviewdetails,
-    TResult? Function(successviewdetails value)? successviewdetails,
-    TResult? Function(Erorrviewdetails value)? erorrviewdetails,
-    TResult? Function(Loadingviewapprove value)? loadingviewapprove,
-    TResult? Function(Successviewapprove value)? successviewapprove,
-    TResult? Function(Erorrviewapprove value)? erorrviewapprove,
-    TResult? Function(LoadingviewCancel value)? loadingviewCancel,
-    TResult? Function(SuccessviewCancel value)? successviewCancel,
-    TResult? Function(ErorrviewCancel value)? erorrviewCancel,
-    TResult? Function(Loadingviewdone value)? loadingviewdone,
-    TResult? Function(Successviewdone value)? successviewdone,
-    TResult? Function(Erorrviewdone value)? erorrviewdone,
-    TResult? Function(Loadingviewpending value)? loadingviewpending,
-    TResult? Function(Successviewpending value)? successviewpending,
-    TResult? Function(Erorrviewpending value)? erorrviewpending,
-    TResult? Function(Loadingviewprepare value)? loadingviewprepare,
-    TResult? Function(Successviewprepare value)? successviewprepare,
-    TResult? Function(Erorrviewprepare value)? erorrviewprepare,
-    TResult? Function(Loadingviewshipped value)? loadingviewshipped,
-    TResult? Function(successviewshipped value)? successviewshipped,
-    TResult? Function(Erorrviewshipped value)? erorrviewshipped,
-    TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
-    TResult? Function(successviewAllOrders value)? successviewAllOrders,
-    TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
-  }) {
-    return loadingshipped?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(Loadingapprove value)? loadingapprove,
-    TResult Function(Successapprove value)? successapprove,
-    TResult Function(Erorrapprove value)? erorrapprove,
-    TResult Function(Loadingprepare value)? loadingprepare,
-    TResult Function(Successprepare value)? successprepare,
-    TResult Function(Erorrprepare value)? erorrprepare,
-    TResult Function(Loadingdone value)? loadingdone,
-    TResult Function(Successdone value)? successdone,
-    TResult Function(Erorrdone value)? erorrdone,
-    TResult Function(Loadingshipped value)? loadingshipped,
-    TResult Function(Successshipped value)? successshipped,
-    TResult Function(Erorrshipped value)? erorrshipped,
-    TResult Function(Loadingviewdetails value)? loadingviewdetails,
-    TResult Function(successviewdetails value)? successviewdetails,
-    TResult Function(Erorrviewdetails value)? erorrviewdetails,
-    TResult Function(Loadingviewapprove value)? loadingviewapprove,
-    TResult Function(Successviewapprove value)? successviewapprove,
-    TResult Function(Erorrviewapprove value)? erorrviewapprove,
-    TResult Function(LoadingviewCancel value)? loadingviewCancel,
-    TResult Function(SuccessviewCancel value)? successviewCancel,
-    TResult Function(ErorrviewCancel value)? erorrviewCancel,
-    TResult Function(Loadingviewdone value)? loadingviewdone,
-    TResult Function(Successviewdone value)? successviewdone,
-    TResult Function(Erorrviewdone value)? erorrviewdone,
-    TResult Function(Loadingviewpending value)? loadingviewpending,
-    TResult Function(Successviewpending value)? successviewpending,
-    TResult Function(Erorrviewpending value)? erorrviewpending,
-    TResult Function(Loadingviewprepare value)? loadingviewprepare,
-    TResult Function(Successviewprepare value)? successviewprepare,
-    TResult Function(Erorrviewprepare value)? erorrviewprepare,
-    TResult Function(Loadingviewshipped value)? loadingviewshipped,
-    TResult Function(successviewshipped value)? successviewshipped,
-    TResult Function(Erorrviewshipped value)? erorrviewshipped,
-    TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
-    TResult Function(successviewAllOrders value)? successviewAllOrders,
-    TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
-    required TResult orElse(),
-  }) {
-    if (loadingshipped != null) {
-      return loadingshipped(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class Loadingshipped implements OrdersState {
-  const factory Loadingshipped() = _$LoadingshippedImpl;
-}
-
-/// @nodoc
-abstract class _$$SuccessshippedImplCopyWith<$Res> {
-  factory _$$SuccessshippedImplCopyWith(_$SuccessshippedImpl value,
-          $Res Function(_$SuccessshippedImpl) then) =
-      __$$SuccessshippedImplCopyWithImpl<$Res>;
-}
-
-/// @nodoc
-class __$$SuccessshippedImplCopyWithImpl<$Res>
-    extends _$OrdersStateCopyWithImpl<$Res, _$SuccessshippedImpl>
-    implements _$$SuccessshippedImplCopyWith<$Res> {
-  __$$SuccessshippedImplCopyWithImpl(
-      _$SuccessshippedImpl _value, $Res Function(_$SuccessshippedImpl) _then)
-      : super(_value, _then);
-}
-
-/// @nodoc
-
-class _$SuccessshippedImpl implements Successshipped {
-  const _$SuccessshippedImpl();
-
-  @override
-  String toString() {
-    return 'OrdersState.successshipped()';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$SuccessshippedImpl);
-  }
-
-  @override
-  int get hashCode => runtimeType.hashCode;
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initial,
-    required TResult Function() loadingapprove,
-    required TResult Function() successapprove,
-    required TResult Function(String erorr) erorrapprove,
-    required TResult Function() loadingprepare,
-    required TResult Function() successprepare,
-    required TResult Function(String erorr) erorrprepare,
-    required TResult Function() loadingdone,
-    required TResult Function() successdone,
-    required TResult Function(String erorr) erorrdone,
-    required TResult Function() loadingshipped,
-    required TResult Function() successshipped,
-    required TResult Function(String erorr) erorrshipped,
-    required TResult Function() loadingviewdetails,
-    required TResult Function(List<DataDetails> responseDetails)
-        successviewdetails,
-    required TResult Function(String erorr) erorrviewdetails,
-    required TResult Function() loadingviewapprove,
-    required TResult Function(List<Datum> vieworders) successviewapprove,
-    required TResult Function(String erorr) erorrviewapprove,
-    required TResult Function() loadingviewCancel,
-    required TResult Function(List<Datum> vieworders) successviewCancel,
-    required TResult Function(String erorr) erorrviewCancel,
-    required TResult Function() loadingviewdone,
-    required TResult Function(List<Datum> vieworders) successviewdone,
-    required TResult Function(String erorr) erorrviewdone,
-    required TResult Function() loadingviewpending,
-    required TResult Function(List<Datum> vieworders) successviewpending,
-    required TResult Function(String erorr) erorrviewpending,
-    required TResult Function() loadingviewprepare,
-    required TResult Function(List<Datum> viewprepareorders) successviewprepare,
-    required TResult Function(String erorr) erorrviewprepare,
-    required TResult Function() loadingviewshipped,
-    required TResult Function(List<Datum> vieworders) successviewshipped,
-    required TResult Function(String erorr) erorrviewshipped,
-    required TResult Function() loadingviewAllOrders,
-    required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
-    required TResult Function(String erorr) erorrviewAllOrders,
-  }) {
-    return successshipped();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initial,
-    TResult? Function()? loadingapprove,
-    TResult? Function()? successapprove,
-    TResult? Function(String erorr)? erorrapprove,
-    TResult? Function()? loadingprepare,
-    TResult? Function()? successprepare,
-    TResult? Function(String erorr)? erorrprepare,
-    TResult? Function()? loadingdone,
-    TResult? Function()? successdone,
-    TResult? Function(String erorr)? erorrdone,
-    TResult? Function()? loadingshipped,
-    TResult? Function()? successshipped,
-    TResult? Function(String erorr)? erorrshipped,
-    TResult? Function()? loadingviewdetails,
-    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
-    TResult? Function(String erorr)? erorrviewdetails,
-    TResult? Function()? loadingviewapprove,
-    TResult? Function(List<Datum> vieworders)? successviewapprove,
-    TResult? Function(String erorr)? erorrviewapprove,
-    TResult? Function()? loadingviewCancel,
-    TResult? Function(List<Datum> vieworders)? successviewCancel,
-    TResult? Function(String erorr)? erorrviewCancel,
-    TResult? Function()? loadingviewdone,
-    TResult? Function(List<Datum> vieworders)? successviewdone,
-    TResult? Function(String erorr)? erorrviewdone,
-    TResult? Function()? loadingviewpending,
-    TResult? Function(List<Datum> vieworders)? successviewpending,
-    TResult? Function(String erorr)? erorrviewpending,
-    TResult? Function()? loadingviewprepare,
-    TResult? Function(List<Datum> viewprepareorders)? successviewprepare,
-    TResult? Function(String erorr)? erorrviewprepare,
-    TResult? Function()? loadingviewshipped,
-    TResult? Function(List<Datum> vieworders)? successviewshipped,
-    TResult? Function(String erorr)? erorrviewshipped,
-    TResult? Function()? loadingviewAllOrders,
-    TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
-    TResult? Function(String erorr)? erorrviewAllOrders,
-  }) {
-    return successshipped?.call();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? loadingapprove,
-    TResult Function()? successapprove,
-    TResult Function(String erorr)? erorrapprove,
-    TResult Function()? loadingprepare,
-    TResult Function()? successprepare,
-    TResult Function(String erorr)? erorrprepare,
-    TResult Function()? loadingdone,
-    TResult Function()? successdone,
-    TResult Function(String erorr)? erorrdone,
-    TResult Function()? loadingshipped,
-    TResult Function()? successshipped,
-    TResult Function(String erorr)? erorrshipped,
-    TResult Function()? loadingviewdetails,
-    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
-    TResult Function(String erorr)? erorrviewdetails,
-    TResult Function()? loadingviewapprove,
-    TResult Function(List<Datum> vieworders)? successviewapprove,
-    TResult Function(String erorr)? erorrviewapprove,
-    TResult Function()? loadingviewCancel,
-    TResult Function(List<Datum> vieworders)? successviewCancel,
-    TResult Function(String erorr)? erorrviewCancel,
-    TResult Function()? loadingviewdone,
-    TResult Function(List<Datum> vieworders)? successviewdone,
-    TResult Function(String erorr)? erorrviewdone,
-    TResult Function()? loadingviewpending,
-    TResult Function(List<Datum> vieworders)? successviewpending,
-    TResult Function(String erorr)? erorrviewpending,
-    TResult Function()? loadingviewprepare,
-    TResult Function(List<Datum> viewprepareorders)? successviewprepare,
-    TResult Function(String erorr)? erorrviewprepare,
-    TResult Function()? loadingviewshipped,
-    TResult Function(List<Datum> vieworders)? successviewshipped,
-    TResult Function(String erorr)? erorrviewshipped,
-    TResult Function()? loadingviewAllOrders,
-    TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
-    TResult Function(String erorr)? erorrviewAllOrders,
-    required TResult orElse(),
-  }) {
-    if (successshipped != null) {
-      return successshipped();
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingapprove value) loadingapprove,
-    required TResult Function(Successapprove value) successapprove,
-    required TResult Function(Erorrapprove value) erorrapprove,
-    required TResult Function(Loadingprepare value) loadingprepare,
-    required TResult Function(Successprepare value) successprepare,
-    required TResult Function(Erorrprepare value) erorrprepare,
-    required TResult Function(Loadingdone value) loadingdone,
-    required TResult Function(Successdone value) successdone,
-    required TResult Function(Erorrdone value) erorrdone,
-    required TResult Function(Loadingshipped value) loadingshipped,
-    required TResult Function(Successshipped value) successshipped,
-    required TResult Function(Erorrshipped value) erorrshipped,
-    required TResult Function(Loadingviewdetails value) loadingviewdetails,
-    required TResult Function(successviewdetails value) successviewdetails,
-    required TResult Function(Erorrviewdetails value) erorrviewdetails,
-    required TResult Function(Loadingviewapprove value) loadingviewapprove,
-    required TResult Function(Successviewapprove value) successviewapprove,
-    required TResult Function(Erorrviewapprove value) erorrviewapprove,
-    required TResult Function(LoadingviewCancel value) loadingviewCancel,
-    required TResult Function(SuccessviewCancel value) successviewCancel,
-    required TResult Function(ErorrviewCancel value) erorrviewCancel,
-    required TResult Function(Loadingviewdone value) loadingviewdone,
-    required TResult Function(Successviewdone value) successviewdone,
-    required TResult Function(Erorrviewdone value) erorrviewdone,
-    required TResult Function(Loadingviewpending value) loadingviewpending,
-    required TResult Function(Successviewpending value) successviewpending,
-    required TResult Function(Erorrviewpending value) erorrviewpending,
-    required TResult Function(Loadingviewprepare value) loadingviewprepare,
-    required TResult Function(Successviewprepare value) successviewprepare,
-    required TResult Function(Erorrviewprepare value) erorrviewprepare,
-    required TResult Function(Loadingviewshipped value) loadingviewshipped,
-    required TResult Function(successviewshipped value) successviewshipped,
-    required TResult Function(Erorrviewshipped value) erorrviewshipped,
-    required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
-    required TResult Function(successviewAllOrders value) successviewAllOrders,
-    required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
-  }) {
-    return successshipped(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingapprove value)? loadingapprove,
-    TResult? Function(Successapprove value)? successapprove,
-    TResult? Function(Erorrapprove value)? erorrapprove,
-    TResult? Function(Loadingprepare value)? loadingprepare,
-    TResult? Function(Successprepare value)? successprepare,
-    TResult? Function(Erorrprepare value)? erorrprepare,
-    TResult? Function(Loadingdone value)? loadingdone,
-    TResult? Function(Successdone value)? successdone,
-    TResult? Function(Erorrdone value)? erorrdone,
-    TResult? Function(Loadingshipped value)? loadingshipped,
-    TResult? Function(Successshipped value)? successshipped,
-    TResult? Function(Erorrshipped value)? erorrshipped,
-    TResult? Function(Loadingviewdetails value)? loadingviewdetails,
-    TResult? Function(successviewdetails value)? successviewdetails,
-    TResult? Function(Erorrviewdetails value)? erorrviewdetails,
-    TResult? Function(Loadingviewapprove value)? loadingviewapprove,
-    TResult? Function(Successviewapprove value)? successviewapprove,
-    TResult? Function(Erorrviewapprove value)? erorrviewapprove,
-    TResult? Function(LoadingviewCancel value)? loadingviewCancel,
-    TResult? Function(SuccessviewCancel value)? successviewCancel,
-    TResult? Function(ErorrviewCancel value)? erorrviewCancel,
-    TResult? Function(Loadingviewdone value)? loadingviewdone,
-    TResult? Function(Successviewdone value)? successviewdone,
-    TResult? Function(Erorrviewdone value)? erorrviewdone,
-    TResult? Function(Loadingviewpending value)? loadingviewpending,
-    TResult? Function(Successviewpending value)? successviewpending,
-    TResult? Function(Erorrviewpending value)? erorrviewpending,
-    TResult? Function(Loadingviewprepare value)? loadingviewprepare,
-    TResult? Function(Successviewprepare value)? successviewprepare,
-    TResult? Function(Erorrviewprepare value)? erorrviewprepare,
-    TResult? Function(Loadingviewshipped value)? loadingviewshipped,
-    TResult? Function(successviewshipped value)? successviewshipped,
-    TResult? Function(Erorrviewshipped value)? erorrviewshipped,
-    TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
-    TResult? Function(successviewAllOrders value)? successviewAllOrders,
-    TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
-  }) {
-    return successshipped?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(Loadingapprove value)? loadingapprove,
-    TResult Function(Successapprove value)? successapprove,
-    TResult Function(Erorrapprove value)? erorrapprove,
-    TResult Function(Loadingprepare value)? loadingprepare,
-    TResult Function(Successprepare value)? successprepare,
-    TResult Function(Erorrprepare value)? erorrprepare,
-    TResult Function(Loadingdone value)? loadingdone,
-    TResult Function(Successdone value)? successdone,
-    TResult Function(Erorrdone value)? erorrdone,
-    TResult Function(Loadingshipped value)? loadingshipped,
-    TResult Function(Successshipped value)? successshipped,
-    TResult Function(Erorrshipped value)? erorrshipped,
-    TResult Function(Loadingviewdetails value)? loadingviewdetails,
-    TResult Function(successviewdetails value)? successviewdetails,
-    TResult Function(Erorrviewdetails value)? erorrviewdetails,
-    TResult Function(Loadingviewapprove value)? loadingviewapprove,
-    TResult Function(Successviewapprove value)? successviewapprove,
-    TResult Function(Erorrviewapprove value)? erorrviewapprove,
-    TResult Function(LoadingviewCancel value)? loadingviewCancel,
-    TResult Function(SuccessviewCancel value)? successviewCancel,
-    TResult Function(ErorrviewCancel value)? erorrviewCancel,
-    TResult Function(Loadingviewdone value)? loadingviewdone,
-    TResult Function(Successviewdone value)? successviewdone,
-    TResult Function(Erorrviewdone value)? erorrviewdone,
-    TResult Function(Loadingviewpending value)? loadingviewpending,
-    TResult Function(Successviewpending value)? successviewpending,
-    TResult Function(Erorrviewpending value)? erorrviewpending,
-    TResult Function(Loadingviewprepare value)? loadingviewprepare,
-    TResult Function(Successviewprepare value)? successviewprepare,
-    TResult Function(Erorrviewprepare value)? erorrviewprepare,
-    TResult Function(Loadingviewshipped value)? loadingviewshipped,
-    TResult Function(successviewshipped value)? successviewshipped,
-    TResult Function(Erorrviewshipped value)? erorrviewshipped,
-    TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
-    TResult Function(successviewAllOrders value)? successviewAllOrders,
-    TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
-    required TResult orElse(),
-  }) {
-    if (successshipped != null) {
-      return successshipped(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class Successshipped implements OrdersState {
-  const factory Successshipped() = _$SuccessshippedImpl;
-}
-
-/// @nodoc
-abstract class _$$ErorrshippedImplCopyWith<$Res> {
-  factory _$$ErorrshippedImplCopyWith(
-          _$ErorrshippedImpl value, $Res Function(_$ErorrshippedImpl) then) =
-      __$$ErorrshippedImplCopyWithImpl<$Res>;
-  @useResult
-  $Res call({String erorr});
-}
-
-/// @nodoc
-class __$$ErorrshippedImplCopyWithImpl<$Res>
-    extends _$OrdersStateCopyWithImpl<$Res, _$ErorrshippedImpl>
-    implements _$$ErorrshippedImplCopyWith<$Res> {
-  __$$ErorrshippedImplCopyWithImpl(
-      _$ErorrshippedImpl _value, $Res Function(_$ErorrshippedImpl) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? erorr = null,
-  }) {
-    return _then(_$ErorrshippedImpl(
-      erorr: null == erorr
-          ? _value.erorr
-          : erorr // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
-  }
-}
-
-/// @nodoc
-
-class _$ErorrshippedImpl implements Erorrshipped {
-  const _$ErorrshippedImpl({required this.erorr});
-
-  @override
-  final String erorr;
-
-  @override
-  String toString() {
-    return 'OrdersState.erorrshipped(erorr: $erorr)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$ErorrshippedImpl &&
-            (identical(other.erorr, erorr) || other.erorr == erorr));
-  }
-
-  @override
-  int get hashCode => Object.hash(runtimeType, erorr);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$ErorrshippedImplCopyWith<_$ErorrshippedImpl> get copyWith =>
-      __$$ErorrshippedImplCopyWithImpl<_$ErorrshippedImpl>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initial,
-    required TResult Function() loadingapprove,
-    required TResult Function() successapprove,
-    required TResult Function(String erorr) erorrapprove,
-    required TResult Function() loadingprepare,
-    required TResult Function() successprepare,
-    required TResult Function(String erorr) erorrprepare,
-    required TResult Function() loadingdone,
-    required TResult Function() successdone,
-    required TResult Function(String erorr) erorrdone,
-    required TResult Function() loadingshipped,
-    required TResult Function() successshipped,
-    required TResult Function(String erorr) erorrshipped,
-    required TResult Function() loadingviewdetails,
-    required TResult Function(List<DataDetails> responseDetails)
-        successviewdetails,
-    required TResult Function(String erorr) erorrviewdetails,
-    required TResult Function() loadingviewapprove,
-    required TResult Function(List<Datum> vieworders) successviewapprove,
-    required TResult Function(String erorr) erorrviewapprove,
-    required TResult Function() loadingviewCancel,
-    required TResult Function(List<Datum> vieworders) successviewCancel,
-    required TResult Function(String erorr) erorrviewCancel,
-    required TResult Function() loadingviewdone,
-    required TResult Function(List<Datum> vieworders) successviewdone,
-    required TResult Function(String erorr) erorrviewdone,
-    required TResult Function() loadingviewpending,
-    required TResult Function(List<Datum> vieworders) successviewpending,
-    required TResult Function(String erorr) erorrviewpending,
-    required TResult Function() loadingviewprepare,
-    required TResult Function(List<Datum> viewprepareorders) successviewprepare,
-    required TResult Function(String erorr) erorrviewprepare,
-    required TResult Function() loadingviewshipped,
-    required TResult Function(List<Datum> vieworders) successviewshipped,
-    required TResult Function(String erorr) erorrviewshipped,
-    required TResult Function() loadingviewAllOrders,
-    required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
-    required TResult Function(String erorr) erorrviewAllOrders,
-  }) {
-    return erorrshipped(erorr);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initial,
-    TResult? Function()? loadingapprove,
-    TResult? Function()? successapprove,
-    TResult? Function(String erorr)? erorrapprove,
-    TResult? Function()? loadingprepare,
-    TResult? Function()? successprepare,
-    TResult? Function(String erorr)? erorrprepare,
-    TResult? Function()? loadingdone,
-    TResult? Function()? successdone,
-    TResult? Function(String erorr)? erorrdone,
-    TResult? Function()? loadingshipped,
-    TResult? Function()? successshipped,
-    TResult? Function(String erorr)? erorrshipped,
-    TResult? Function()? loadingviewdetails,
-    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
-    TResult? Function(String erorr)? erorrviewdetails,
-    TResult? Function()? loadingviewapprove,
-    TResult? Function(List<Datum> vieworders)? successviewapprove,
-    TResult? Function(String erorr)? erorrviewapprove,
-    TResult? Function()? loadingviewCancel,
-    TResult? Function(List<Datum> vieworders)? successviewCancel,
-    TResult? Function(String erorr)? erorrviewCancel,
-    TResult? Function()? loadingviewdone,
-    TResult? Function(List<Datum> vieworders)? successviewdone,
-    TResult? Function(String erorr)? erorrviewdone,
-    TResult? Function()? loadingviewpending,
-    TResult? Function(List<Datum> vieworders)? successviewpending,
-    TResult? Function(String erorr)? erorrviewpending,
-    TResult? Function()? loadingviewprepare,
-    TResult? Function(List<Datum> viewprepareorders)? successviewprepare,
-    TResult? Function(String erorr)? erorrviewprepare,
-    TResult? Function()? loadingviewshipped,
-    TResult? Function(List<Datum> vieworders)? successviewshipped,
-    TResult? Function(String erorr)? erorrviewshipped,
-    TResult? Function()? loadingviewAllOrders,
-    TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
-    TResult? Function(String erorr)? erorrviewAllOrders,
-  }) {
-    return erorrshipped?.call(erorr);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? loadingapprove,
-    TResult Function()? successapprove,
-    TResult Function(String erorr)? erorrapprove,
-    TResult Function()? loadingprepare,
-    TResult Function()? successprepare,
-    TResult Function(String erorr)? erorrprepare,
-    TResult Function()? loadingdone,
-    TResult Function()? successdone,
-    TResult Function(String erorr)? erorrdone,
-    TResult Function()? loadingshipped,
-    TResult Function()? successshipped,
-    TResult Function(String erorr)? erorrshipped,
-    TResult Function()? loadingviewdetails,
-    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
-    TResult Function(String erorr)? erorrviewdetails,
-    TResult Function()? loadingviewapprove,
-    TResult Function(List<Datum> vieworders)? successviewapprove,
-    TResult Function(String erorr)? erorrviewapprove,
-    TResult Function()? loadingviewCancel,
-    TResult Function(List<Datum> vieworders)? successviewCancel,
-    TResult Function(String erorr)? erorrviewCancel,
-    TResult Function()? loadingviewdone,
-    TResult Function(List<Datum> vieworders)? successviewdone,
-    TResult Function(String erorr)? erorrviewdone,
-    TResult Function()? loadingviewpending,
-    TResult Function(List<Datum> vieworders)? successviewpending,
-    TResult Function(String erorr)? erorrviewpending,
-    TResult Function()? loadingviewprepare,
-    TResult Function(List<Datum> viewprepareorders)? successviewprepare,
-    TResult Function(String erorr)? erorrviewprepare,
-    TResult Function()? loadingviewshipped,
-    TResult Function(List<Datum> vieworders)? successviewshipped,
-    TResult Function(String erorr)? erorrviewshipped,
-    TResult Function()? loadingviewAllOrders,
-    TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
-    TResult Function(String erorr)? erorrviewAllOrders,
-    required TResult orElse(),
-  }) {
-    if (erorrshipped != null) {
-      return erorrshipped(erorr);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingapprove value) loadingapprove,
-    required TResult Function(Successapprove value) successapprove,
-    required TResult Function(Erorrapprove value) erorrapprove,
-    required TResult Function(Loadingprepare value) loadingprepare,
-    required TResult Function(Successprepare value) successprepare,
-    required TResult Function(Erorrprepare value) erorrprepare,
-    required TResult Function(Loadingdone value) loadingdone,
-    required TResult Function(Successdone value) successdone,
-    required TResult Function(Erorrdone value) erorrdone,
-    required TResult Function(Loadingshipped value) loadingshipped,
-    required TResult Function(Successshipped value) successshipped,
-    required TResult Function(Erorrshipped value) erorrshipped,
-    required TResult Function(Loadingviewdetails value) loadingviewdetails,
-    required TResult Function(successviewdetails value) successviewdetails,
-    required TResult Function(Erorrviewdetails value) erorrviewdetails,
-    required TResult Function(Loadingviewapprove value) loadingviewapprove,
-    required TResult Function(Successviewapprove value) successviewapprove,
-    required TResult Function(Erorrviewapprove value) erorrviewapprove,
-    required TResult Function(LoadingviewCancel value) loadingviewCancel,
-    required TResult Function(SuccessviewCancel value) successviewCancel,
-    required TResult Function(ErorrviewCancel value) erorrviewCancel,
-    required TResult Function(Loadingviewdone value) loadingviewdone,
-    required TResult Function(Successviewdone value) successviewdone,
-    required TResult Function(Erorrviewdone value) erorrviewdone,
-    required TResult Function(Loadingviewpending value) loadingviewpending,
-    required TResult Function(Successviewpending value) successviewpending,
-    required TResult Function(Erorrviewpending value) erorrviewpending,
-    required TResult Function(Loadingviewprepare value) loadingviewprepare,
-    required TResult Function(Successviewprepare value) successviewprepare,
-    required TResult Function(Erorrviewprepare value) erorrviewprepare,
-    required TResult Function(Loadingviewshipped value) loadingviewshipped,
-    required TResult Function(successviewshipped value) successviewshipped,
-    required TResult Function(Erorrviewshipped value) erorrviewshipped,
-    required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
-    required TResult Function(successviewAllOrders value) successviewAllOrders,
-    required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
-  }) {
-    return erorrshipped(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingapprove value)? loadingapprove,
-    TResult? Function(Successapprove value)? successapprove,
-    TResult? Function(Erorrapprove value)? erorrapprove,
-    TResult? Function(Loadingprepare value)? loadingprepare,
-    TResult? Function(Successprepare value)? successprepare,
-    TResult? Function(Erorrprepare value)? erorrprepare,
-    TResult? Function(Loadingdone value)? loadingdone,
-    TResult? Function(Successdone value)? successdone,
-    TResult? Function(Erorrdone value)? erorrdone,
-    TResult? Function(Loadingshipped value)? loadingshipped,
-    TResult? Function(Successshipped value)? successshipped,
-    TResult? Function(Erorrshipped value)? erorrshipped,
-    TResult? Function(Loadingviewdetails value)? loadingviewdetails,
-    TResult? Function(successviewdetails value)? successviewdetails,
-    TResult? Function(Erorrviewdetails value)? erorrviewdetails,
-    TResult? Function(Loadingviewapprove value)? loadingviewapprove,
-    TResult? Function(Successviewapprove value)? successviewapprove,
-    TResult? Function(Erorrviewapprove value)? erorrviewapprove,
-    TResult? Function(LoadingviewCancel value)? loadingviewCancel,
-    TResult? Function(SuccessviewCancel value)? successviewCancel,
-    TResult? Function(ErorrviewCancel value)? erorrviewCancel,
-    TResult? Function(Loadingviewdone value)? loadingviewdone,
-    TResult? Function(Successviewdone value)? successviewdone,
-    TResult? Function(Erorrviewdone value)? erorrviewdone,
-    TResult? Function(Loadingviewpending value)? loadingviewpending,
-    TResult? Function(Successviewpending value)? successviewpending,
-    TResult? Function(Erorrviewpending value)? erorrviewpending,
-    TResult? Function(Loadingviewprepare value)? loadingviewprepare,
-    TResult? Function(Successviewprepare value)? successviewprepare,
-    TResult? Function(Erorrviewprepare value)? erorrviewprepare,
-    TResult? Function(Loadingviewshipped value)? loadingviewshipped,
-    TResult? Function(successviewshipped value)? successviewshipped,
-    TResult? Function(Erorrviewshipped value)? erorrviewshipped,
-    TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
-    TResult? Function(successviewAllOrders value)? successviewAllOrders,
-    TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
-  }) {
-    return erorrshipped?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(Loadingapprove value)? loadingapprove,
-    TResult Function(Successapprove value)? successapprove,
-    TResult Function(Erorrapprove value)? erorrapprove,
-    TResult Function(Loadingprepare value)? loadingprepare,
-    TResult Function(Successprepare value)? successprepare,
-    TResult Function(Erorrprepare value)? erorrprepare,
-    TResult Function(Loadingdone value)? loadingdone,
-    TResult Function(Successdone value)? successdone,
-    TResult Function(Erorrdone value)? erorrdone,
-    TResult Function(Loadingshipped value)? loadingshipped,
-    TResult Function(Successshipped value)? successshipped,
-    TResult Function(Erorrshipped value)? erorrshipped,
-    TResult Function(Loadingviewdetails value)? loadingviewdetails,
-    TResult Function(successviewdetails value)? successviewdetails,
-    TResult Function(Erorrviewdetails value)? erorrviewdetails,
-    TResult Function(Loadingviewapprove value)? loadingviewapprove,
-    TResult Function(Successviewapprove value)? successviewapprove,
-    TResult Function(Erorrviewapprove value)? erorrviewapprove,
-    TResult Function(LoadingviewCancel value)? loadingviewCancel,
-    TResult Function(SuccessviewCancel value)? successviewCancel,
-    TResult Function(ErorrviewCancel value)? erorrviewCancel,
-    TResult Function(Loadingviewdone value)? loadingviewdone,
-    TResult Function(Successviewdone value)? successviewdone,
-    TResult Function(Erorrviewdone value)? erorrviewdone,
-    TResult Function(Loadingviewpending value)? loadingviewpending,
-    TResult Function(Successviewpending value)? successviewpending,
-    TResult Function(Erorrviewpending value)? erorrviewpending,
-    TResult Function(Loadingviewprepare value)? loadingviewprepare,
-    TResult Function(Successviewprepare value)? successviewprepare,
-    TResult Function(Erorrviewprepare value)? erorrviewprepare,
-    TResult Function(Loadingviewshipped value)? loadingviewshipped,
-    TResult Function(successviewshipped value)? successviewshipped,
-    TResult Function(Erorrviewshipped value)? erorrviewshipped,
-    TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
-    TResult Function(successviewAllOrders value)? successviewAllOrders,
-    TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
-    required TResult orElse(),
-  }) {
-    if (erorrshipped != null) {
-      return erorrshipped(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class Erorrshipped implements OrdersState {
-  const factory Erorrshipped({required final String erorr}) =
-      _$ErorrshippedImpl;
-
-  String get erorr;
-  @JsonKey(ignore: true)
-  _$$ErorrshippedImplCopyWith<_$ErorrshippedImpl> get copyWith =>
+  _$$ErorrUpdateImplCopyWith<_$ErorrUpdateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -4520,18 +1337,9 @@ class _$LoadingviewdetailsImpl implements Loadingviewdetails {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingapprove,
-    required TResult Function() successapprove,
-    required TResult Function(String erorr) erorrapprove,
-    required TResult Function() loadingprepare,
-    required TResult Function() successprepare,
-    required TResult Function(String erorr) erorrprepare,
-    required TResult Function() loadingdone,
-    required TResult Function() successdone,
-    required TResult Function(String erorr) erorrdone,
-    required TResult Function() loadingshipped,
-    required TResult Function() successshipped,
-    required TResult Function(String erorr) erorrshipped,
+    required TResult Function() loadingUpdate,
+    required TResult Function() successUpdate,
+    required TResult Function(String erorr) erorrUpdate,
     required TResult Function() loadingviewdetails,
     required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
@@ -4565,18 +1373,9 @@ class _$LoadingviewdetailsImpl implements Loadingviewdetails {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingapprove,
-    TResult? Function()? successapprove,
-    TResult? Function(String erorr)? erorrapprove,
-    TResult? Function()? loadingprepare,
-    TResult? Function()? successprepare,
-    TResult? Function(String erorr)? erorrprepare,
-    TResult? Function()? loadingdone,
-    TResult? Function()? successdone,
-    TResult? Function(String erorr)? erorrdone,
-    TResult? Function()? loadingshipped,
-    TResult? Function()? successshipped,
-    TResult? Function(String erorr)? erorrshipped,
+    TResult? Function()? loadingUpdate,
+    TResult? Function()? successUpdate,
+    TResult? Function(String erorr)? erorrUpdate,
     TResult? Function()? loadingviewdetails,
     TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
@@ -4609,18 +1408,9 @@ class _$LoadingviewdetailsImpl implements Loadingviewdetails {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingapprove,
-    TResult Function()? successapprove,
-    TResult Function(String erorr)? erorrapprove,
-    TResult Function()? loadingprepare,
-    TResult Function()? successprepare,
-    TResult Function(String erorr)? erorrprepare,
-    TResult Function()? loadingdone,
-    TResult Function()? successdone,
-    TResult Function(String erorr)? erorrdone,
-    TResult Function()? loadingshipped,
-    TResult Function()? successshipped,
-    TResult Function(String erorr)? erorrshipped,
+    TResult Function()? loadingUpdate,
+    TResult Function()? successUpdate,
+    TResult Function(String erorr)? erorrUpdate,
     TResult Function()? loadingviewdetails,
     TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
@@ -4657,18 +1447,9 @@ class _$LoadingviewdetailsImpl implements Loadingviewdetails {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingapprove value) loadingapprove,
-    required TResult Function(Successapprove value) successapprove,
-    required TResult Function(Erorrapprove value) erorrapprove,
-    required TResult Function(Loadingprepare value) loadingprepare,
-    required TResult Function(Successprepare value) successprepare,
-    required TResult Function(Erorrprepare value) erorrprepare,
-    required TResult Function(Loadingdone value) loadingdone,
-    required TResult Function(Successdone value) successdone,
-    required TResult Function(Erorrdone value) erorrdone,
-    required TResult Function(Loadingshipped value) loadingshipped,
-    required TResult Function(Successshipped value) successshipped,
-    required TResult Function(Erorrshipped value) erorrshipped,
+    required TResult Function(LoadingUpdate value) loadingUpdate,
+    required TResult Function(SuccessUpdate value) successUpdate,
+    required TResult Function(ErorrUpdate value) erorrUpdate,
     required TResult Function(Loadingviewdetails value) loadingviewdetails,
     required TResult Function(successviewdetails value) successviewdetails,
     required TResult Function(Erorrviewdetails value) erorrviewdetails,
@@ -4701,18 +1482,9 @@ class _$LoadingviewdetailsImpl implements Loadingviewdetails {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingapprove value)? loadingapprove,
-    TResult? Function(Successapprove value)? successapprove,
-    TResult? Function(Erorrapprove value)? erorrapprove,
-    TResult? Function(Loadingprepare value)? loadingprepare,
-    TResult? Function(Successprepare value)? successprepare,
-    TResult? Function(Erorrprepare value)? erorrprepare,
-    TResult? Function(Loadingdone value)? loadingdone,
-    TResult? Function(Successdone value)? successdone,
-    TResult? Function(Erorrdone value)? erorrdone,
-    TResult? Function(Loadingshipped value)? loadingshipped,
-    TResult? Function(Successshipped value)? successshipped,
-    TResult? Function(Erorrshipped value)? erorrshipped,
+    TResult? Function(LoadingUpdate value)? loadingUpdate,
+    TResult? Function(SuccessUpdate value)? successUpdate,
+    TResult? Function(ErorrUpdate value)? erorrUpdate,
     TResult? Function(Loadingviewdetails value)? loadingviewdetails,
     TResult? Function(successviewdetails value)? successviewdetails,
     TResult? Function(Erorrviewdetails value)? erorrviewdetails,
@@ -4745,18 +1517,9 @@ class _$LoadingviewdetailsImpl implements Loadingviewdetails {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingapprove value)? loadingapprove,
-    TResult Function(Successapprove value)? successapprove,
-    TResult Function(Erorrapprove value)? erorrapprove,
-    TResult Function(Loadingprepare value)? loadingprepare,
-    TResult Function(Successprepare value)? successprepare,
-    TResult Function(Erorrprepare value)? erorrprepare,
-    TResult Function(Loadingdone value)? loadingdone,
-    TResult Function(Successdone value)? successdone,
-    TResult Function(Erorrdone value)? erorrdone,
-    TResult Function(Loadingshipped value)? loadingshipped,
-    TResult Function(Successshipped value)? successshipped,
-    TResult Function(Erorrshipped value)? erorrshipped,
+    TResult Function(LoadingUpdate value)? loadingUpdate,
+    TResult Function(SuccessUpdate value)? successUpdate,
+    TResult Function(ErorrUpdate value)? erorrUpdate,
     TResult Function(Loadingviewdetails value)? loadingviewdetails,
     TResult Function(successviewdetails value)? successviewdetails,
     TResult Function(Erorrviewdetails value)? erorrviewdetails,
@@ -4868,18 +1631,9 @@ class _$successviewdetailsImpl implements successviewdetails {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingapprove,
-    required TResult Function() successapprove,
-    required TResult Function(String erorr) erorrapprove,
-    required TResult Function() loadingprepare,
-    required TResult Function() successprepare,
-    required TResult Function(String erorr) erorrprepare,
-    required TResult Function() loadingdone,
-    required TResult Function() successdone,
-    required TResult Function(String erorr) erorrdone,
-    required TResult Function() loadingshipped,
-    required TResult Function() successshipped,
-    required TResult Function(String erorr) erorrshipped,
+    required TResult Function() loadingUpdate,
+    required TResult Function() successUpdate,
+    required TResult Function(String erorr) erorrUpdate,
     required TResult Function() loadingviewdetails,
     required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
@@ -4913,18 +1667,9 @@ class _$successviewdetailsImpl implements successviewdetails {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingapprove,
-    TResult? Function()? successapprove,
-    TResult? Function(String erorr)? erorrapprove,
-    TResult? Function()? loadingprepare,
-    TResult? Function()? successprepare,
-    TResult? Function(String erorr)? erorrprepare,
-    TResult? Function()? loadingdone,
-    TResult? Function()? successdone,
-    TResult? Function(String erorr)? erorrdone,
-    TResult? Function()? loadingshipped,
-    TResult? Function()? successshipped,
-    TResult? Function(String erorr)? erorrshipped,
+    TResult? Function()? loadingUpdate,
+    TResult? Function()? successUpdate,
+    TResult? Function(String erorr)? erorrUpdate,
     TResult? Function()? loadingviewdetails,
     TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
@@ -4957,18 +1702,9 @@ class _$successviewdetailsImpl implements successviewdetails {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingapprove,
-    TResult Function()? successapprove,
-    TResult Function(String erorr)? erorrapprove,
-    TResult Function()? loadingprepare,
-    TResult Function()? successprepare,
-    TResult Function(String erorr)? erorrprepare,
-    TResult Function()? loadingdone,
-    TResult Function()? successdone,
-    TResult Function(String erorr)? erorrdone,
-    TResult Function()? loadingshipped,
-    TResult Function()? successshipped,
-    TResult Function(String erorr)? erorrshipped,
+    TResult Function()? loadingUpdate,
+    TResult Function()? successUpdate,
+    TResult Function(String erorr)? erorrUpdate,
     TResult Function()? loadingviewdetails,
     TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
@@ -5005,18 +1741,9 @@ class _$successviewdetailsImpl implements successviewdetails {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingapprove value) loadingapprove,
-    required TResult Function(Successapprove value) successapprove,
-    required TResult Function(Erorrapprove value) erorrapprove,
-    required TResult Function(Loadingprepare value) loadingprepare,
-    required TResult Function(Successprepare value) successprepare,
-    required TResult Function(Erorrprepare value) erorrprepare,
-    required TResult Function(Loadingdone value) loadingdone,
-    required TResult Function(Successdone value) successdone,
-    required TResult Function(Erorrdone value) erorrdone,
-    required TResult Function(Loadingshipped value) loadingshipped,
-    required TResult Function(Successshipped value) successshipped,
-    required TResult Function(Erorrshipped value) erorrshipped,
+    required TResult Function(LoadingUpdate value) loadingUpdate,
+    required TResult Function(SuccessUpdate value) successUpdate,
+    required TResult Function(ErorrUpdate value) erorrUpdate,
     required TResult Function(Loadingviewdetails value) loadingviewdetails,
     required TResult Function(successviewdetails value) successviewdetails,
     required TResult Function(Erorrviewdetails value) erorrviewdetails,
@@ -5049,18 +1776,9 @@ class _$successviewdetailsImpl implements successviewdetails {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingapprove value)? loadingapprove,
-    TResult? Function(Successapprove value)? successapprove,
-    TResult? Function(Erorrapprove value)? erorrapprove,
-    TResult? Function(Loadingprepare value)? loadingprepare,
-    TResult? Function(Successprepare value)? successprepare,
-    TResult? Function(Erorrprepare value)? erorrprepare,
-    TResult? Function(Loadingdone value)? loadingdone,
-    TResult? Function(Successdone value)? successdone,
-    TResult? Function(Erorrdone value)? erorrdone,
-    TResult? Function(Loadingshipped value)? loadingshipped,
-    TResult? Function(Successshipped value)? successshipped,
-    TResult? Function(Erorrshipped value)? erorrshipped,
+    TResult? Function(LoadingUpdate value)? loadingUpdate,
+    TResult? Function(SuccessUpdate value)? successUpdate,
+    TResult? Function(ErorrUpdate value)? erorrUpdate,
     TResult? Function(Loadingviewdetails value)? loadingviewdetails,
     TResult? Function(successviewdetails value)? successviewdetails,
     TResult? Function(Erorrviewdetails value)? erorrviewdetails,
@@ -5093,18 +1811,9 @@ class _$successviewdetailsImpl implements successviewdetails {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingapprove value)? loadingapprove,
-    TResult Function(Successapprove value)? successapprove,
-    TResult Function(Erorrapprove value)? erorrapprove,
-    TResult Function(Loadingprepare value)? loadingprepare,
-    TResult Function(Successprepare value)? successprepare,
-    TResult Function(Erorrprepare value)? erorrprepare,
-    TResult Function(Loadingdone value)? loadingdone,
-    TResult Function(Successdone value)? successdone,
-    TResult Function(Erorrdone value)? erorrdone,
-    TResult Function(Loadingshipped value)? loadingshipped,
-    TResult Function(Successshipped value)? successshipped,
-    TResult Function(Erorrshipped value)? erorrshipped,
+    TResult Function(LoadingUpdate value)? loadingUpdate,
+    TResult Function(SuccessUpdate value)? successUpdate,
+    TResult Function(ErorrUpdate value)? erorrUpdate,
     TResult Function(Loadingviewdetails value)? loadingviewdetails,
     TResult Function(successviewdetails value)? successviewdetails,
     TResult Function(Erorrviewdetails value)? erorrviewdetails,
@@ -5214,18 +1923,9 @@ class _$ErorrviewdetailsImpl implements Erorrviewdetails {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingapprove,
-    required TResult Function() successapprove,
-    required TResult Function(String erorr) erorrapprove,
-    required TResult Function() loadingprepare,
-    required TResult Function() successprepare,
-    required TResult Function(String erorr) erorrprepare,
-    required TResult Function() loadingdone,
-    required TResult Function() successdone,
-    required TResult Function(String erorr) erorrdone,
-    required TResult Function() loadingshipped,
-    required TResult Function() successshipped,
-    required TResult Function(String erorr) erorrshipped,
+    required TResult Function() loadingUpdate,
+    required TResult Function() successUpdate,
+    required TResult Function(String erorr) erorrUpdate,
     required TResult Function() loadingviewdetails,
     required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
@@ -5259,18 +1959,9 @@ class _$ErorrviewdetailsImpl implements Erorrviewdetails {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingapprove,
-    TResult? Function()? successapprove,
-    TResult? Function(String erorr)? erorrapprove,
-    TResult? Function()? loadingprepare,
-    TResult? Function()? successprepare,
-    TResult? Function(String erorr)? erorrprepare,
-    TResult? Function()? loadingdone,
-    TResult? Function()? successdone,
-    TResult? Function(String erorr)? erorrdone,
-    TResult? Function()? loadingshipped,
-    TResult? Function()? successshipped,
-    TResult? Function(String erorr)? erorrshipped,
+    TResult? Function()? loadingUpdate,
+    TResult? Function()? successUpdate,
+    TResult? Function(String erorr)? erorrUpdate,
     TResult? Function()? loadingviewdetails,
     TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
@@ -5303,18 +1994,9 @@ class _$ErorrviewdetailsImpl implements Erorrviewdetails {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingapprove,
-    TResult Function()? successapprove,
-    TResult Function(String erorr)? erorrapprove,
-    TResult Function()? loadingprepare,
-    TResult Function()? successprepare,
-    TResult Function(String erorr)? erorrprepare,
-    TResult Function()? loadingdone,
-    TResult Function()? successdone,
-    TResult Function(String erorr)? erorrdone,
-    TResult Function()? loadingshipped,
-    TResult Function()? successshipped,
-    TResult Function(String erorr)? erorrshipped,
+    TResult Function()? loadingUpdate,
+    TResult Function()? successUpdate,
+    TResult Function(String erorr)? erorrUpdate,
     TResult Function()? loadingviewdetails,
     TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
@@ -5351,18 +2033,9 @@ class _$ErorrviewdetailsImpl implements Erorrviewdetails {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingapprove value) loadingapprove,
-    required TResult Function(Successapprove value) successapprove,
-    required TResult Function(Erorrapprove value) erorrapprove,
-    required TResult Function(Loadingprepare value) loadingprepare,
-    required TResult Function(Successprepare value) successprepare,
-    required TResult Function(Erorrprepare value) erorrprepare,
-    required TResult Function(Loadingdone value) loadingdone,
-    required TResult Function(Successdone value) successdone,
-    required TResult Function(Erorrdone value) erorrdone,
-    required TResult Function(Loadingshipped value) loadingshipped,
-    required TResult Function(Successshipped value) successshipped,
-    required TResult Function(Erorrshipped value) erorrshipped,
+    required TResult Function(LoadingUpdate value) loadingUpdate,
+    required TResult Function(SuccessUpdate value) successUpdate,
+    required TResult Function(ErorrUpdate value) erorrUpdate,
     required TResult Function(Loadingviewdetails value) loadingviewdetails,
     required TResult Function(successviewdetails value) successviewdetails,
     required TResult Function(Erorrviewdetails value) erorrviewdetails,
@@ -5395,18 +2068,9 @@ class _$ErorrviewdetailsImpl implements Erorrviewdetails {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingapprove value)? loadingapprove,
-    TResult? Function(Successapprove value)? successapprove,
-    TResult? Function(Erorrapprove value)? erorrapprove,
-    TResult? Function(Loadingprepare value)? loadingprepare,
-    TResult? Function(Successprepare value)? successprepare,
-    TResult? Function(Erorrprepare value)? erorrprepare,
-    TResult? Function(Loadingdone value)? loadingdone,
-    TResult? Function(Successdone value)? successdone,
-    TResult? Function(Erorrdone value)? erorrdone,
-    TResult? Function(Loadingshipped value)? loadingshipped,
-    TResult? Function(Successshipped value)? successshipped,
-    TResult? Function(Erorrshipped value)? erorrshipped,
+    TResult? Function(LoadingUpdate value)? loadingUpdate,
+    TResult? Function(SuccessUpdate value)? successUpdate,
+    TResult? Function(ErorrUpdate value)? erorrUpdate,
     TResult? Function(Loadingviewdetails value)? loadingviewdetails,
     TResult? Function(successviewdetails value)? successviewdetails,
     TResult? Function(Erorrviewdetails value)? erorrviewdetails,
@@ -5439,18 +2103,9 @@ class _$ErorrviewdetailsImpl implements Erorrviewdetails {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingapprove value)? loadingapprove,
-    TResult Function(Successapprove value)? successapprove,
-    TResult Function(Erorrapprove value)? erorrapprove,
-    TResult Function(Loadingprepare value)? loadingprepare,
-    TResult Function(Successprepare value)? successprepare,
-    TResult Function(Erorrprepare value)? erorrprepare,
-    TResult Function(Loadingdone value)? loadingdone,
-    TResult Function(Successdone value)? successdone,
-    TResult Function(Erorrdone value)? erorrdone,
-    TResult Function(Loadingshipped value)? loadingshipped,
-    TResult Function(Successshipped value)? successshipped,
-    TResult Function(Erorrshipped value)? erorrshipped,
+    TResult Function(LoadingUpdate value)? loadingUpdate,
+    TResult Function(SuccessUpdate value)? successUpdate,
+    TResult Function(ErorrUpdate value)? erorrUpdate,
     TResult Function(Loadingviewdetails value)? loadingviewdetails,
     TResult Function(successviewdetails value)? successviewdetails,
     TResult Function(Erorrviewdetails value)? erorrviewdetails,
@@ -5533,18 +2188,9 @@ class _$LoadingviewapproveImpl implements Loadingviewapprove {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingapprove,
-    required TResult Function() successapprove,
-    required TResult Function(String erorr) erorrapprove,
-    required TResult Function() loadingprepare,
-    required TResult Function() successprepare,
-    required TResult Function(String erorr) erorrprepare,
-    required TResult Function() loadingdone,
-    required TResult Function() successdone,
-    required TResult Function(String erorr) erorrdone,
-    required TResult Function() loadingshipped,
-    required TResult Function() successshipped,
-    required TResult Function(String erorr) erorrshipped,
+    required TResult Function() loadingUpdate,
+    required TResult Function() successUpdate,
+    required TResult Function(String erorr) erorrUpdate,
     required TResult Function() loadingviewdetails,
     required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
@@ -5578,18 +2224,9 @@ class _$LoadingviewapproveImpl implements Loadingviewapprove {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingapprove,
-    TResult? Function()? successapprove,
-    TResult? Function(String erorr)? erorrapprove,
-    TResult? Function()? loadingprepare,
-    TResult? Function()? successprepare,
-    TResult? Function(String erorr)? erorrprepare,
-    TResult? Function()? loadingdone,
-    TResult? Function()? successdone,
-    TResult? Function(String erorr)? erorrdone,
-    TResult? Function()? loadingshipped,
-    TResult? Function()? successshipped,
-    TResult? Function(String erorr)? erorrshipped,
+    TResult? Function()? loadingUpdate,
+    TResult? Function()? successUpdate,
+    TResult? Function(String erorr)? erorrUpdate,
     TResult? Function()? loadingviewdetails,
     TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
@@ -5622,18 +2259,9 @@ class _$LoadingviewapproveImpl implements Loadingviewapprove {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingapprove,
-    TResult Function()? successapprove,
-    TResult Function(String erorr)? erorrapprove,
-    TResult Function()? loadingprepare,
-    TResult Function()? successprepare,
-    TResult Function(String erorr)? erorrprepare,
-    TResult Function()? loadingdone,
-    TResult Function()? successdone,
-    TResult Function(String erorr)? erorrdone,
-    TResult Function()? loadingshipped,
-    TResult Function()? successshipped,
-    TResult Function(String erorr)? erorrshipped,
+    TResult Function()? loadingUpdate,
+    TResult Function()? successUpdate,
+    TResult Function(String erorr)? erorrUpdate,
     TResult Function()? loadingviewdetails,
     TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
@@ -5670,18 +2298,9 @@ class _$LoadingviewapproveImpl implements Loadingviewapprove {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingapprove value) loadingapprove,
-    required TResult Function(Successapprove value) successapprove,
-    required TResult Function(Erorrapprove value) erorrapprove,
-    required TResult Function(Loadingprepare value) loadingprepare,
-    required TResult Function(Successprepare value) successprepare,
-    required TResult Function(Erorrprepare value) erorrprepare,
-    required TResult Function(Loadingdone value) loadingdone,
-    required TResult Function(Successdone value) successdone,
-    required TResult Function(Erorrdone value) erorrdone,
-    required TResult Function(Loadingshipped value) loadingshipped,
-    required TResult Function(Successshipped value) successshipped,
-    required TResult Function(Erorrshipped value) erorrshipped,
+    required TResult Function(LoadingUpdate value) loadingUpdate,
+    required TResult Function(SuccessUpdate value) successUpdate,
+    required TResult Function(ErorrUpdate value) erorrUpdate,
     required TResult Function(Loadingviewdetails value) loadingviewdetails,
     required TResult Function(successviewdetails value) successviewdetails,
     required TResult Function(Erorrviewdetails value) erorrviewdetails,
@@ -5714,18 +2333,9 @@ class _$LoadingviewapproveImpl implements Loadingviewapprove {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingapprove value)? loadingapprove,
-    TResult? Function(Successapprove value)? successapprove,
-    TResult? Function(Erorrapprove value)? erorrapprove,
-    TResult? Function(Loadingprepare value)? loadingprepare,
-    TResult? Function(Successprepare value)? successprepare,
-    TResult? Function(Erorrprepare value)? erorrprepare,
-    TResult? Function(Loadingdone value)? loadingdone,
-    TResult? Function(Successdone value)? successdone,
-    TResult? Function(Erorrdone value)? erorrdone,
-    TResult? Function(Loadingshipped value)? loadingshipped,
-    TResult? Function(Successshipped value)? successshipped,
-    TResult? Function(Erorrshipped value)? erorrshipped,
+    TResult? Function(LoadingUpdate value)? loadingUpdate,
+    TResult? Function(SuccessUpdate value)? successUpdate,
+    TResult? Function(ErorrUpdate value)? erorrUpdate,
     TResult? Function(Loadingviewdetails value)? loadingviewdetails,
     TResult? Function(successviewdetails value)? successviewdetails,
     TResult? Function(Erorrviewdetails value)? erorrviewdetails,
@@ -5758,18 +2368,9 @@ class _$LoadingviewapproveImpl implements Loadingviewapprove {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingapprove value)? loadingapprove,
-    TResult Function(Successapprove value)? successapprove,
-    TResult Function(Erorrapprove value)? erorrapprove,
-    TResult Function(Loadingprepare value)? loadingprepare,
-    TResult Function(Successprepare value)? successprepare,
-    TResult Function(Erorrprepare value)? erorrprepare,
-    TResult Function(Loadingdone value)? loadingdone,
-    TResult Function(Successdone value)? successdone,
-    TResult Function(Erorrdone value)? erorrdone,
-    TResult Function(Loadingshipped value)? loadingshipped,
-    TResult Function(Successshipped value)? successshipped,
-    TResult Function(Erorrshipped value)? erorrshipped,
+    TResult Function(LoadingUpdate value)? loadingUpdate,
+    TResult Function(SuccessUpdate value)? successUpdate,
+    TResult Function(ErorrUpdate value)? erorrUpdate,
     TResult Function(Loadingviewdetails value)? loadingviewdetails,
     TResult Function(successviewdetails value)? successviewdetails,
     TResult Function(Erorrviewdetails value)? erorrviewdetails,
@@ -5881,18 +2482,9 @@ class _$SuccessviewapproveImpl implements Successviewapprove {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingapprove,
-    required TResult Function() successapprove,
-    required TResult Function(String erorr) erorrapprove,
-    required TResult Function() loadingprepare,
-    required TResult Function() successprepare,
-    required TResult Function(String erorr) erorrprepare,
-    required TResult Function() loadingdone,
-    required TResult Function() successdone,
-    required TResult Function(String erorr) erorrdone,
-    required TResult Function() loadingshipped,
-    required TResult Function() successshipped,
-    required TResult Function(String erorr) erorrshipped,
+    required TResult Function() loadingUpdate,
+    required TResult Function() successUpdate,
+    required TResult Function(String erorr) erorrUpdate,
     required TResult Function() loadingviewdetails,
     required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
@@ -5926,18 +2518,9 @@ class _$SuccessviewapproveImpl implements Successviewapprove {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingapprove,
-    TResult? Function()? successapprove,
-    TResult? Function(String erorr)? erorrapprove,
-    TResult? Function()? loadingprepare,
-    TResult? Function()? successprepare,
-    TResult? Function(String erorr)? erorrprepare,
-    TResult? Function()? loadingdone,
-    TResult? Function()? successdone,
-    TResult? Function(String erorr)? erorrdone,
-    TResult? Function()? loadingshipped,
-    TResult? Function()? successshipped,
-    TResult? Function(String erorr)? erorrshipped,
+    TResult? Function()? loadingUpdate,
+    TResult? Function()? successUpdate,
+    TResult? Function(String erorr)? erorrUpdate,
     TResult? Function()? loadingviewdetails,
     TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
@@ -5970,18 +2553,9 @@ class _$SuccessviewapproveImpl implements Successviewapprove {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingapprove,
-    TResult Function()? successapprove,
-    TResult Function(String erorr)? erorrapprove,
-    TResult Function()? loadingprepare,
-    TResult Function()? successprepare,
-    TResult Function(String erorr)? erorrprepare,
-    TResult Function()? loadingdone,
-    TResult Function()? successdone,
-    TResult Function(String erorr)? erorrdone,
-    TResult Function()? loadingshipped,
-    TResult Function()? successshipped,
-    TResult Function(String erorr)? erorrshipped,
+    TResult Function()? loadingUpdate,
+    TResult Function()? successUpdate,
+    TResult Function(String erorr)? erorrUpdate,
     TResult Function()? loadingviewdetails,
     TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
@@ -6018,18 +2592,9 @@ class _$SuccessviewapproveImpl implements Successviewapprove {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingapprove value) loadingapprove,
-    required TResult Function(Successapprove value) successapprove,
-    required TResult Function(Erorrapprove value) erorrapprove,
-    required TResult Function(Loadingprepare value) loadingprepare,
-    required TResult Function(Successprepare value) successprepare,
-    required TResult Function(Erorrprepare value) erorrprepare,
-    required TResult Function(Loadingdone value) loadingdone,
-    required TResult Function(Successdone value) successdone,
-    required TResult Function(Erorrdone value) erorrdone,
-    required TResult Function(Loadingshipped value) loadingshipped,
-    required TResult Function(Successshipped value) successshipped,
-    required TResult Function(Erorrshipped value) erorrshipped,
+    required TResult Function(LoadingUpdate value) loadingUpdate,
+    required TResult Function(SuccessUpdate value) successUpdate,
+    required TResult Function(ErorrUpdate value) erorrUpdate,
     required TResult Function(Loadingviewdetails value) loadingviewdetails,
     required TResult Function(successviewdetails value) successviewdetails,
     required TResult Function(Erorrviewdetails value) erorrviewdetails,
@@ -6062,18 +2627,9 @@ class _$SuccessviewapproveImpl implements Successviewapprove {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingapprove value)? loadingapprove,
-    TResult? Function(Successapprove value)? successapprove,
-    TResult? Function(Erorrapprove value)? erorrapprove,
-    TResult? Function(Loadingprepare value)? loadingprepare,
-    TResult? Function(Successprepare value)? successprepare,
-    TResult? Function(Erorrprepare value)? erorrprepare,
-    TResult? Function(Loadingdone value)? loadingdone,
-    TResult? Function(Successdone value)? successdone,
-    TResult? Function(Erorrdone value)? erorrdone,
-    TResult? Function(Loadingshipped value)? loadingshipped,
-    TResult? Function(Successshipped value)? successshipped,
-    TResult? Function(Erorrshipped value)? erorrshipped,
+    TResult? Function(LoadingUpdate value)? loadingUpdate,
+    TResult? Function(SuccessUpdate value)? successUpdate,
+    TResult? Function(ErorrUpdate value)? erorrUpdate,
     TResult? Function(Loadingviewdetails value)? loadingviewdetails,
     TResult? Function(successviewdetails value)? successviewdetails,
     TResult? Function(Erorrviewdetails value)? erorrviewdetails,
@@ -6106,18 +2662,9 @@ class _$SuccessviewapproveImpl implements Successviewapprove {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingapprove value)? loadingapprove,
-    TResult Function(Successapprove value)? successapprove,
-    TResult Function(Erorrapprove value)? erorrapprove,
-    TResult Function(Loadingprepare value)? loadingprepare,
-    TResult Function(Successprepare value)? successprepare,
-    TResult Function(Erorrprepare value)? erorrprepare,
-    TResult Function(Loadingdone value)? loadingdone,
-    TResult Function(Successdone value)? successdone,
-    TResult Function(Erorrdone value)? erorrdone,
-    TResult Function(Loadingshipped value)? loadingshipped,
-    TResult Function(Successshipped value)? successshipped,
-    TResult Function(Erorrshipped value)? erorrshipped,
+    TResult Function(LoadingUpdate value)? loadingUpdate,
+    TResult Function(SuccessUpdate value)? successUpdate,
+    TResult Function(ErorrUpdate value)? erorrUpdate,
     TResult Function(Loadingviewdetails value)? loadingviewdetails,
     TResult Function(successviewdetails value)? successviewdetails,
     TResult Function(Erorrviewdetails value)? erorrviewdetails,
@@ -6227,18 +2774,9 @@ class _$ErorrviewapproveImpl implements Erorrviewapprove {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingapprove,
-    required TResult Function() successapprove,
-    required TResult Function(String erorr) erorrapprove,
-    required TResult Function() loadingprepare,
-    required TResult Function() successprepare,
-    required TResult Function(String erorr) erorrprepare,
-    required TResult Function() loadingdone,
-    required TResult Function() successdone,
-    required TResult Function(String erorr) erorrdone,
-    required TResult Function() loadingshipped,
-    required TResult Function() successshipped,
-    required TResult Function(String erorr) erorrshipped,
+    required TResult Function() loadingUpdate,
+    required TResult Function() successUpdate,
+    required TResult Function(String erorr) erorrUpdate,
     required TResult Function() loadingviewdetails,
     required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
@@ -6272,18 +2810,9 @@ class _$ErorrviewapproveImpl implements Erorrviewapprove {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingapprove,
-    TResult? Function()? successapprove,
-    TResult? Function(String erorr)? erorrapprove,
-    TResult? Function()? loadingprepare,
-    TResult? Function()? successprepare,
-    TResult? Function(String erorr)? erorrprepare,
-    TResult? Function()? loadingdone,
-    TResult? Function()? successdone,
-    TResult? Function(String erorr)? erorrdone,
-    TResult? Function()? loadingshipped,
-    TResult? Function()? successshipped,
-    TResult? Function(String erorr)? erorrshipped,
+    TResult? Function()? loadingUpdate,
+    TResult? Function()? successUpdate,
+    TResult? Function(String erorr)? erorrUpdate,
     TResult? Function()? loadingviewdetails,
     TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
@@ -6316,18 +2845,9 @@ class _$ErorrviewapproveImpl implements Erorrviewapprove {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingapprove,
-    TResult Function()? successapprove,
-    TResult Function(String erorr)? erorrapprove,
-    TResult Function()? loadingprepare,
-    TResult Function()? successprepare,
-    TResult Function(String erorr)? erorrprepare,
-    TResult Function()? loadingdone,
-    TResult Function()? successdone,
-    TResult Function(String erorr)? erorrdone,
-    TResult Function()? loadingshipped,
-    TResult Function()? successshipped,
-    TResult Function(String erorr)? erorrshipped,
+    TResult Function()? loadingUpdate,
+    TResult Function()? successUpdate,
+    TResult Function(String erorr)? erorrUpdate,
     TResult Function()? loadingviewdetails,
     TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
@@ -6364,18 +2884,9 @@ class _$ErorrviewapproveImpl implements Erorrviewapprove {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingapprove value) loadingapprove,
-    required TResult Function(Successapprove value) successapprove,
-    required TResult Function(Erorrapprove value) erorrapprove,
-    required TResult Function(Loadingprepare value) loadingprepare,
-    required TResult Function(Successprepare value) successprepare,
-    required TResult Function(Erorrprepare value) erorrprepare,
-    required TResult Function(Loadingdone value) loadingdone,
-    required TResult Function(Successdone value) successdone,
-    required TResult Function(Erorrdone value) erorrdone,
-    required TResult Function(Loadingshipped value) loadingshipped,
-    required TResult Function(Successshipped value) successshipped,
-    required TResult Function(Erorrshipped value) erorrshipped,
+    required TResult Function(LoadingUpdate value) loadingUpdate,
+    required TResult Function(SuccessUpdate value) successUpdate,
+    required TResult Function(ErorrUpdate value) erorrUpdate,
     required TResult Function(Loadingviewdetails value) loadingviewdetails,
     required TResult Function(successviewdetails value) successviewdetails,
     required TResult Function(Erorrviewdetails value) erorrviewdetails,
@@ -6408,18 +2919,9 @@ class _$ErorrviewapproveImpl implements Erorrviewapprove {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingapprove value)? loadingapprove,
-    TResult? Function(Successapprove value)? successapprove,
-    TResult? Function(Erorrapprove value)? erorrapprove,
-    TResult? Function(Loadingprepare value)? loadingprepare,
-    TResult? Function(Successprepare value)? successprepare,
-    TResult? Function(Erorrprepare value)? erorrprepare,
-    TResult? Function(Loadingdone value)? loadingdone,
-    TResult? Function(Successdone value)? successdone,
-    TResult? Function(Erorrdone value)? erorrdone,
-    TResult? Function(Loadingshipped value)? loadingshipped,
-    TResult? Function(Successshipped value)? successshipped,
-    TResult? Function(Erorrshipped value)? erorrshipped,
+    TResult? Function(LoadingUpdate value)? loadingUpdate,
+    TResult? Function(SuccessUpdate value)? successUpdate,
+    TResult? Function(ErorrUpdate value)? erorrUpdate,
     TResult? Function(Loadingviewdetails value)? loadingviewdetails,
     TResult? Function(successviewdetails value)? successviewdetails,
     TResult? Function(Erorrviewdetails value)? erorrviewdetails,
@@ -6452,18 +2954,9 @@ class _$ErorrviewapproveImpl implements Erorrviewapprove {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingapprove value)? loadingapprove,
-    TResult Function(Successapprove value)? successapprove,
-    TResult Function(Erorrapprove value)? erorrapprove,
-    TResult Function(Loadingprepare value)? loadingprepare,
-    TResult Function(Successprepare value)? successprepare,
-    TResult Function(Erorrprepare value)? erorrprepare,
-    TResult Function(Loadingdone value)? loadingdone,
-    TResult Function(Successdone value)? successdone,
-    TResult Function(Erorrdone value)? erorrdone,
-    TResult Function(Loadingshipped value)? loadingshipped,
-    TResult Function(Successshipped value)? successshipped,
-    TResult Function(Erorrshipped value)? erorrshipped,
+    TResult Function(LoadingUpdate value)? loadingUpdate,
+    TResult Function(SuccessUpdate value)? successUpdate,
+    TResult Function(ErorrUpdate value)? erorrUpdate,
     TResult Function(Loadingviewdetails value)? loadingviewdetails,
     TResult Function(successviewdetails value)? successviewdetails,
     TResult Function(Erorrviewdetails value)? erorrviewdetails,
@@ -6546,18 +3039,9 @@ class _$LoadingviewCancelImpl implements LoadingviewCancel {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingapprove,
-    required TResult Function() successapprove,
-    required TResult Function(String erorr) erorrapprove,
-    required TResult Function() loadingprepare,
-    required TResult Function() successprepare,
-    required TResult Function(String erorr) erorrprepare,
-    required TResult Function() loadingdone,
-    required TResult Function() successdone,
-    required TResult Function(String erorr) erorrdone,
-    required TResult Function() loadingshipped,
-    required TResult Function() successshipped,
-    required TResult Function(String erorr) erorrshipped,
+    required TResult Function() loadingUpdate,
+    required TResult Function() successUpdate,
+    required TResult Function(String erorr) erorrUpdate,
     required TResult Function() loadingviewdetails,
     required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
@@ -6591,18 +3075,9 @@ class _$LoadingviewCancelImpl implements LoadingviewCancel {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingapprove,
-    TResult? Function()? successapprove,
-    TResult? Function(String erorr)? erorrapprove,
-    TResult? Function()? loadingprepare,
-    TResult? Function()? successprepare,
-    TResult? Function(String erorr)? erorrprepare,
-    TResult? Function()? loadingdone,
-    TResult? Function()? successdone,
-    TResult? Function(String erorr)? erorrdone,
-    TResult? Function()? loadingshipped,
-    TResult? Function()? successshipped,
-    TResult? Function(String erorr)? erorrshipped,
+    TResult? Function()? loadingUpdate,
+    TResult? Function()? successUpdate,
+    TResult? Function(String erorr)? erorrUpdate,
     TResult? Function()? loadingviewdetails,
     TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
@@ -6635,18 +3110,9 @@ class _$LoadingviewCancelImpl implements LoadingviewCancel {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingapprove,
-    TResult Function()? successapprove,
-    TResult Function(String erorr)? erorrapprove,
-    TResult Function()? loadingprepare,
-    TResult Function()? successprepare,
-    TResult Function(String erorr)? erorrprepare,
-    TResult Function()? loadingdone,
-    TResult Function()? successdone,
-    TResult Function(String erorr)? erorrdone,
-    TResult Function()? loadingshipped,
-    TResult Function()? successshipped,
-    TResult Function(String erorr)? erorrshipped,
+    TResult Function()? loadingUpdate,
+    TResult Function()? successUpdate,
+    TResult Function(String erorr)? erorrUpdate,
     TResult Function()? loadingviewdetails,
     TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
@@ -6683,18 +3149,9 @@ class _$LoadingviewCancelImpl implements LoadingviewCancel {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingapprove value) loadingapprove,
-    required TResult Function(Successapprove value) successapprove,
-    required TResult Function(Erorrapprove value) erorrapprove,
-    required TResult Function(Loadingprepare value) loadingprepare,
-    required TResult Function(Successprepare value) successprepare,
-    required TResult Function(Erorrprepare value) erorrprepare,
-    required TResult Function(Loadingdone value) loadingdone,
-    required TResult Function(Successdone value) successdone,
-    required TResult Function(Erorrdone value) erorrdone,
-    required TResult Function(Loadingshipped value) loadingshipped,
-    required TResult Function(Successshipped value) successshipped,
-    required TResult Function(Erorrshipped value) erorrshipped,
+    required TResult Function(LoadingUpdate value) loadingUpdate,
+    required TResult Function(SuccessUpdate value) successUpdate,
+    required TResult Function(ErorrUpdate value) erorrUpdate,
     required TResult Function(Loadingviewdetails value) loadingviewdetails,
     required TResult Function(successviewdetails value) successviewdetails,
     required TResult Function(Erorrviewdetails value) erorrviewdetails,
@@ -6727,18 +3184,9 @@ class _$LoadingviewCancelImpl implements LoadingviewCancel {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingapprove value)? loadingapprove,
-    TResult? Function(Successapprove value)? successapprove,
-    TResult? Function(Erorrapprove value)? erorrapprove,
-    TResult? Function(Loadingprepare value)? loadingprepare,
-    TResult? Function(Successprepare value)? successprepare,
-    TResult? Function(Erorrprepare value)? erorrprepare,
-    TResult? Function(Loadingdone value)? loadingdone,
-    TResult? Function(Successdone value)? successdone,
-    TResult? Function(Erorrdone value)? erorrdone,
-    TResult? Function(Loadingshipped value)? loadingshipped,
-    TResult? Function(Successshipped value)? successshipped,
-    TResult? Function(Erorrshipped value)? erorrshipped,
+    TResult? Function(LoadingUpdate value)? loadingUpdate,
+    TResult? Function(SuccessUpdate value)? successUpdate,
+    TResult? Function(ErorrUpdate value)? erorrUpdate,
     TResult? Function(Loadingviewdetails value)? loadingviewdetails,
     TResult? Function(successviewdetails value)? successviewdetails,
     TResult? Function(Erorrviewdetails value)? erorrviewdetails,
@@ -6771,18 +3219,9 @@ class _$LoadingviewCancelImpl implements LoadingviewCancel {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingapprove value)? loadingapprove,
-    TResult Function(Successapprove value)? successapprove,
-    TResult Function(Erorrapprove value)? erorrapprove,
-    TResult Function(Loadingprepare value)? loadingprepare,
-    TResult Function(Successprepare value)? successprepare,
-    TResult Function(Erorrprepare value)? erorrprepare,
-    TResult Function(Loadingdone value)? loadingdone,
-    TResult Function(Successdone value)? successdone,
-    TResult Function(Erorrdone value)? erorrdone,
-    TResult Function(Loadingshipped value)? loadingshipped,
-    TResult Function(Successshipped value)? successshipped,
-    TResult Function(Erorrshipped value)? erorrshipped,
+    TResult Function(LoadingUpdate value)? loadingUpdate,
+    TResult Function(SuccessUpdate value)? successUpdate,
+    TResult Function(ErorrUpdate value)? erorrUpdate,
     TResult Function(Loadingviewdetails value)? loadingviewdetails,
     TResult Function(successviewdetails value)? successviewdetails,
     TResult Function(Erorrviewdetails value)? erorrviewdetails,
@@ -6894,18 +3333,9 @@ class _$SuccessviewCancelImpl implements SuccessviewCancel {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingapprove,
-    required TResult Function() successapprove,
-    required TResult Function(String erorr) erorrapprove,
-    required TResult Function() loadingprepare,
-    required TResult Function() successprepare,
-    required TResult Function(String erorr) erorrprepare,
-    required TResult Function() loadingdone,
-    required TResult Function() successdone,
-    required TResult Function(String erorr) erorrdone,
-    required TResult Function() loadingshipped,
-    required TResult Function() successshipped,
-    required TResult Function(String erorr) erorrshipped,
+    required TResult Function() loadingUpdate,
+    required TResult Function() successUpdate,
+    required TResult Function(String erorr) erorrUpdate,
     required TResult Function() loadingviewdetails,
     required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
@@ -6939,18 +3369,9 @@ class _$SuccessviewCancelImpl implements SuccessviewCancel {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingapprove,
-    TResult? Function()? successapprove,
-    TResult? Function(String erorr)? erorrapprove,
-    TResult? Function()? loadingprepare,
-    TResult? Function()? successprepare,
-    TResult? Function(String erorr)? erorrprepare,
-    TResult? Function()? loadingdone,
-    TResult? Function()? successdone,
-    TResult? Function(String erorr)? erorrdone,
-    TResult? Function()? loadingshipped,
-    TResult? Function()? successshipped,
-    TResult? Function(String erorr)? erorrshipped,
+    TResult? Function()? loadingUpdate,
+    TResult? Function()? successUpdate,
+    TResult? Function(String erorr)? erorrUpdate,
     TResult? Function()? loadingviewdetails,
     TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
@@ -6983,18 +3404,9 @@ class _$SuccessviewCancelImpl implements SuccessviewCancel {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingapprove,
-    TResult Function()? successapprove,
-    TResult Function(String erorr)? erorrapprove,
-    TResult Function()? loadingprepare,
-    TResult Function()? successprepare,
-    TResult Function(String erorr)? erorrprepare,
-    TResult Function()? loadingdone,
-    TResult Function()? successdone,
-    TResult Function(String erorr)? erorrdone,
-    TResult Function()? loadingshipped,
-    TResult Function()? successshipped,
-    TResult Function(String erorr)? erorrshipped,
+    TResult Function()? loadingUpdate,
+    TResult Function()? successUpdate,
+    TResult Function(String erorr)? erorrUpdate,
     TResult Function()? loadingviewdetails,
     TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
@@ -7031,18 +3443,9 @@ class _$SuccessviewCancelImpl implements SuccessviewCancel {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingapprove value) loadingapprove,
-    required TResult Function(Successapprove value) successapprove,
-    required TResult Function(Erorrapprove value) erorrapprove,
-    required TResult Function(Loadingprepare value) loadingprepare,
-    required TResult Function(Successprepare value) successprepare,
-    required TResult Function(Erorrprepare value) erorrprepare,
-    required TResult Function(Loadingdone value) loadingdone,
-    required TResult Function(Successdone value) successdone,
-    required TResult Function(Erorrdone value) erorrdone,
-    required TResult Function(Loadingshipped value) loadingshipped,
-    required TResult Function(Successshipped value) successshipped,
-    required TResult Function(Erorrshipped value) erorrshipped,
+    required TResult Function(LoadingUpdate value) loadingUpdate,
+    required TResult Function(SuccessUpdate value) successUpdate,
+    required TResult Function(ErorrUpdate value) erorrUpdate,
     required TResult Function(Loadingviewdetails value) loadingviewdetails,
     required TResult Function(successviewdetails value) successviewdetails,
     required TResult Function(Erorrviewdetails value) erorrviewdetails,
@@ -7075,18 +3478,9 @@ class _$SuccessviewCancelImpl implements SuccessviewCancel {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingapprove value)? loadingapprove,
-    TResult? Function(Successapprove value)? successapprove,
-    TResult? Function(Erorrapprove value)? erorrapprove,
-    TResult? Function(Loadingprepare value)? loadingprepare,
-    TResult? Function(Successprepare value)? successprepare,
-    TResult? Function(Erorrprepare value)? erorrprepare,
-    TResult? Function(Loadingdone value)? loadingdone,
-    TResult? Function(Successdone value)? successdone,
-    TResult? Function(Erorrdone value)? erorrdone,
-    TResult? Function(Loadingshipped value)? loadingshipped,
-    TResult? Function(Successshipped value)? successshipped,
-    TResult? Function(Erorrshipped value)? erorrshipped,
+    TResult? Function(LoadingUpdate value)? loadingUpdate,
+    TResult? Function(SuccessUpdate value)? successUpdate,
+    TResult? Function(ErorrUpdate value)? erorrUpdate,
     TResult? Function(Loadingviewdetails value)? loadingviewdetails,
     TResult? Function(successviewdetails value)? successviewdetails,
     TResult? Function(Erorrviewdetails value)? erorrviewdetails,
@@ -7119,18 +3513,9 @@ class _$SuccessviewCancelImpl implements SuccessviewCancel {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingapprove value)? loadingapprove,
-    TResult Function(Successapprove value)? successapprove,
-    TResult Function(Erorrapprove value)? erorrapprove,
-    TResult Function(Loadingprepare value)? loadingprepare,
-    TResult Function(Successprepare value)? successprepare,
-    TResult Function(Erorrprepare value)? erorrprepare,
-    TResult Function(Loadingdone value)? loadingdone,
-    TResult Function(Successdone value)? successdone,
-    TResult Function(Erorrdone value)? erorrdone,
-    TResult Function(Loadingshipped value)? loadingshipped,
-    TResult Function(Successshipped value)? successshipped,
-    TResult Function(Erorrshipped value)? erorrshipped,
+    TResult Function(LoadingUpdate value)? loadingUpdate,
+    TResult Function(SuccessUpdate value)? successUpdate,
+    TResult Function(ErorrUpdate value)? erorrUpdate,
     TResult Function(Loadingviewdetails value)? loadingviewdetails,
     TResult Function(successviewdetails value)? successviewdetails,
     TResult Function(Erorrviewdetails value)? erorrviewdetails,
@@ -7240,18 +3625,9 @@ class _$ErorrviewCancelImpl implements ErorrviewCancel {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingapprove,
-    required TResult Function() successapprove,
-    required TResult Function(String erorr) erorrapprove,
-    required TResult Function() loadingprepare,
-    required TResult Function() successprepare,
-    required TResult Function(String erorr) erorrprepare,
-    required TResult Function() loadingdone,
-    required TResult Function() successdone,
-    required TResult Function(String erorr) erorrdone,
-    required TResult Function() loadingshipped,
-    required TResult Function() successshipped,
-    required TResult Function(String erorr) erorrshipped,
+    required TResult Function() loadingUpdate,
+    required TResult Function() successUpdate,
+    required TResult Function(String erorr) erorrUpdate,
     required TResult Function() loadingviewdetails,
     required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
@@ -7285,18 +3661,9 @@ class _$ErorrviewCancelImpl implements ErorrviewCancel {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingapprove,
-    TResult? Function()? successapprove,
-    TResult? Function(String erorr)? erorrapprove,
-    TResult? Function()? loadingprepare,
-    TResult? Function()? successprepare,
-    TResult? Function(String erorr)? erorrprepare,
-    TResult? Function()? loadingdone,
-    TResult? Function()? successdone,
-    TResult? Function(String erorr)? erorrdone,
-    TResult? Function()? loadingshipped,
-    TResult? Function()? successshipped,
-    TResult? Function(String erorr)? erorrshipped,
+    TResult? Function()? loadingUpdate,
+    TResult? Function()? successUpdate,
+    TResult? Function(String erorr)? erorrUpdate,
     TResult? Function()? loadingviewdetails,
     TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
@@ -7329,18 +3696,9 @@ class _$ErorrviewCancelImpl implements ErorrviewCancel {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingapprove,
-    TResult Function()? successapprove,
-    TResult Function(String erorr)? erorrapprove,
-    TResult Function()? loadingprepare,
-    TResult Function()? successprepare,
-    TResult Function(String erorr)? erorrprepare,
-    TResult Function()? loadingdone,
-    TResult Function()? successdone,
-    TResult Function(String erorr)? erorrdone,
-    TResult Function()? loadingshipped,
-    TResult Function()? successshipped,
-    TResult Function(String erorr)? erorrshipped,
+    TResult Function()? loadingUpdate,
+    TResult Function()? successUpdate,
+    TResult Function(String erorr)? erorrUpdate,
     TResult Function()? loadingviewdetails,
     TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
@@ -7377,18 +3735,9 @@ class _$ErorrviewCancelImpl implements ErorrviewCancel {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingapprove value) loadingapprove,
-    required TResult Function(Successapprove value) successapprove,
-    required TResult Function(Erorrapprove value) erorrapprove,
-    required TResult Function(Loadingprepare value) loadingprepare,
-    required TResult Function(Successprepare value) successprepare,
-    required TResult Function(Erorrprepare value) erorrprepare,
-    required TResult Function(Loadingdone value) loadingdone,
-    required TResult Function(Successdone value) successdone,
-    required TResult Function(Erorrdone value) erorrdone,
-    required TResult Function(Loadingshipped value) loadingshipped,
-    required TResult Function(Successshipped value) successshipped,
-    required TResult Function(Erorrshipped value) erorrshipped,
+    required TResult Function(LoadingUpdate value) loadingUpdate,
+    required TResult Function(SuccessUpdate value) successUpdate,
+    required TResult Function(ErorrUpdate value) erorrUpdate,
     required TResult Function(Loadingviewdetails value) loadingviewdetails,
     required TResult Function(successviewdetails value) successviewdetails,
     required TResult Function(Erorrviewdetails value) erorrviewdetails,
@@ -7421,18 +3770,9 @@ class _$ErorrviewCancelImpl implements ErorrviewCancel {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingapprove value)? loadingapprove,
-    TResult? Function(Successapprove value)? successapprove,
-    TResult? Function(Erorrapprove value)? erorrapprove,
-    TResult? Function(Loadingprepare value)? loadingprepare,
-    TResult? Function(Successprepare value)? successprepare,
-    TResult? Function(Erorrprepare value)? erorrprepare,
-    TResult? Function(Loadingdone value)? loadingdone,
-    TResult? Function(Successdone value)? successdone,
-    TResult? Function(Erorrdone value)? erorrdone,
-    TResult? Function(Loadingshipped value)? loadingshipped,
-    TResult? Function(Successshipped value)? successshipped,
-    TResult? Function(Erorrshipped value)? erorrshipped,
+    TResult? Function(LoadingUpdate value)? loadingUpdate,
+    TResult? Function(SuccessUpdate value)? successUpdate,
+    TResult? Function(ErorrUpdate value)? erorrUpdate,
     TResult? Function(Loadingviewdetails value)? loadingviewdetails,
     TResult? Function(successviewdetails value)? successviewdetails,
     TResult? Function(Erorrviewdetails value)? erorrviewdetails,
@@ -7465,18 +3805,9 @@ class _$ErorrviewCancelImpl implements ErorrviewCancel {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingapprove value)? loadingapprove,
-    TResult Function(Successapprove value)? successapprove,
-    TResult Function(Erorrapprove value)? erorrapprove,
-    TResult Function(Loadingprepare value)? loadingprepare,
-    TResult Function(Successprepare value)? successprepare,
-    TResult Function(Erorrprepare value)? erorrprepare,
-    TResult Function(Loadingdone value)? loadingdone,
-    TResult Function(Successdone value)? successdone,
-    TResult Function(Erorrdone value)? erorrdone,
-    TResult Function(Loadingshipped value)? loadingshipped,
-    TResult Function(Successshipped value)? successshipped,
-    TResult Function(Erorrshipped value)? erorrshipped,
+    TResult Function(LoadingUpdate value)? loadingUpdate,
+    TResult Function(SuccessUpdate value)? successUpdate,
+    TResult Function(ErorrUpdate value)? erorrUpdate,
     TResult Function(Loadingviewdetails value)? loadingviewdetails,
     TResult Function(successviewdetails value)? successviewdetails,
     TResult Function(Erorrviewdetails value)? erorrviewdetails,
@@ -7559,18 +3890,9 @@ class _$LoadingviewdoneImpl implements Loadingviewdone {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingapprove,
-    required TResult Function() successapprove,
-    required TResult Function(String erorr) erorrapprove,
-    required TResult Function() loadingprepare,
-    required TResult Function() successprepare,
-    required TResult Function(String erorr) erorrprepare,
-    required TResult Function() loadingdone,
-    required TResult Function() successdone,
-    required TResult Function(String erorr) erorrdone,
-    required TResult Function() loadingshipped,
-    required TResult Function() successshipped,
-    required TResult Function(String erorr) erorrshipped,
+    required TResult Function() loadingUpdate,
+    required TResult Function() successUpdate,
+    required TResult Function(String erorr) erorrUpdate,
     required TResult Function() loadingviewdetails,
     required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
@@ -7604,18 +3926,9 @@ class _$LoadingviewdoneImpl implements Loadingviewdone {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingapprove,
-    TResult? Function()? successapprove,
-    TResult? Function(String erorr)? erorrapprove,
-    TResult? Function()? loadingprepare,
-    TResult? Function()? successprepare,
-    TResult? Function(String erorr)? erorrprepare,
-    TResult? Function()? loadingdone,
-    TResult? Function()? successdone,
-    TResult? Function(String erorr)? erorrdone,
-    TResult? Function()? loadingshipped,
-    TResult? Function()? successshipped,
-    TResult? Function(String erorr)? erorrshipped,
+    TResult? Function()? loadingUpdate,
+    TResult? Function()? successUpdate,
+    TResult? Function(String erorr)? erorrUpdate,
     TResult? Function()? loadingviewdetails,
     TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
@@ -7648,18 +3961,9 @@ class _$LoadingviewdoneImpl implements Loadingviewdone {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingapprove,
-    TResult Function()? successapprove,
-    TResult Function(String erorr)? erorrapprove,
-    TResult Function()? loadingprepare,
-    TResult Function()? successprepare,
-    TResult Function(String erorr)? erorrprepare,
-    TResult Function()? loadingdone,
-    TResult Function()? successdone,
-    TResult Function(String erorr)? erorrdone,
-    TResult Function()? loadingshipped,
-    TResult Function()? successshipped,
-    TResult Function(String erorr)? erorrshipped,
+    TResult Function()? loadingUpdate,
+    TResult Function()? successUpdate,
+    TResult Function(String erorr)? erorrUpdate,
     TResult Function()? loadingviewdetails,
     TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
@@ -7696,18 +4000,9 @@ class _$LoadingviewdoneImpl implements Loadingviewdone {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingapprove value) loadingapprove,
-    required TResult Function(Successapprove value) successapprove,
-    required TResult Function(Erorrapprove value) erorrapprove,
-    required TResult Function(Loadingprepare value) loadingprepare,
-    required TResult Function(Successprepare value) successprepare,
-    required TResult Function(Erorrprepare value) erorrprepare,
-    required TResult Function(Loadingdone value) loadingdone,
-    required TResult Function(Successdone value) successdone,
-    required TResult Function(Erorrdone value) erorrdone,
-    required TResult Function(Loadingshipped value) loadingshipped,
-    required TResult Function(Successshipped value) successshipped,
-    required TResult Function(Erorrshipped value) erorrshipped,
+    required TResult Function(LoadingUpdate value) loadingUpdate,
+    required TResult Function(SuccessUpdate value) successUpdate,
+    required TResult Function(ErorrUpdate value) erorrUpdate,
     required TResult Function(Loadingviewdetails value) loadingviewdetails,
     required TResult Function(successviewdetails value) successviewdetails,
     required TResult Function(Erorrviewdetails value) erorrviewdetails,
@@ -7740,18 +4035,9 @@ class _$LoadingviewdoneImpl implements Loadingviewdone {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingapprove value)? loadingapprove,
-    TResult? Function(Successapprove value)? successapprove,
-    TResult? Function(Erorrapprove value)? erorrapprove,
-    TResult? Function(Loadingprepare value)? loadingprepare,
-    TResult? Function(Successprepare value)? successprepare,
-    TResult? Function(Erorrprepare value)? erorrprepare,
-    TResult? Function(Loadingdone value)? loadingdone,
-    TResult? Function(Successdone value)? successdone,
-    TResult? Function(Erorrdone value)? erorrdone,
-    TResult? Function(Loadingshipped value)? loadingshipped,
-    TResult? Function(Successshipped value)? successshipped,
-    TResult? Function(Erorrshipped value)? erorrshipped,
+    TResult? Function(LoadingUpdate value)? loadingUpdate,
+    TResult? Function(SuccessUpdate value)? successUpdate,
+    TResult? Function(ErorrUpdate value)? erorrUpdate,
     TResult? Function(Loadingviewdetails value)? loadingviewdetails,
     TResult? Function(successviewdetails value)? successviewdetails,
     TResult? Function(Erorrviewdetails value)? erorrviewdetails,
@@ -7784,18 +4070,9 @@ class _$LoadingviewdoneImpl implements Loadingviewdone {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingapprove value)? loadingapprove,
-    TResult Function(Successapprove value)? successapprove,
-    TResult Function(Erorrapprove value)? erorrapprove,
-    TResult Function(Loadingprepare value)? loadingprepare,
-    TResult Function(Successprepare value)? successprepare,
-    TResult Function(Erorrprepare value)? erorrprepare,
-    TResult Function(Loadingdone value)? loadingdone,
-    TResult Function(Successdone value)? successdone,
-    TResult Function(Erorrdone value)? erorrdone,
-    TResult Function(Loadingshipped value)? loadingshipped,
-    TResult Function(Successshipped value)? successshipped,
-    TResult Function(Erorrshipped value)? erorrshipped,
+    TResult Function(LoadingUpdate value)? loadingUpdate,
+    TResult Function(SuccessUpdate value)? successUpdate,
+    TResult Function(ErorrUpdate value)? erorrUpdate,
     TResult Function(Loadingviewdetails value)? loadingviewdetails,
     TResult Function(successviewdetails value)? successviewdetails,
     TResult Function(Erorrviewdetails value)? erorrviewdetails,
@@ -7907,18 +4184,9 @@ class _$SuccessviewdoneImpl implements Successviewdone {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingapprove,
-    required TResult Function() successapprove,
-    required TResult Function(String erorr) erorrapprove,
-    required TResult Function() loadingprepare,
-    required TResult Function() successprepare,
-    required TResult Function(String erorr) erorrprepare,
-    required TResult Function() loadingdone,
-    required TResult Function() successdone,
-    required TResult Function(String erorr) erorrdone,
-    required TResult Function() loadingshipped,
-    required TResult Function() successshipped,
-    required TResult Function(String erorr) erorrshipped,
+    required TResult Function() loadingUpdate,
+    required TResult Function() successUpdate,
+    required TResult Function(String erorr) erorrUpdate,
     required TResult Function() loadingviewdetails,
     required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
@@ -7952,18 +4220,9 @@ class _$SuccessviewdoneImpl implements Successviewdone {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingapprove,
-    TResult? Function()? successapprove,
-    TResult? Function(String erorr)? erorrapprove,
-    TResult? Function()? loadingprepare,
-    TResult? Function()? successprepare,
-    TResult? Function(String erorr)? erorrprepare,
-    TResult? Function()? loadingdone,
-    TResult? Function()? successdone,
-    TResult? Function(String erorr)? erorrdone,
-    TResult? Function()? loadingshipped,
-    TResult? Function()? successshipped,
-    TResult? Function(String erorr)? erorrshipped,
+    TResult? Function()? loadingUpdate,
+    TResult? Function()? successUpdate,
+    TResult? Function(String erorr)? erorrUpdate,
     TResult? Function()? loadingviewdetails,
     TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
@@ -7996,18 +4255,9 @@ class _$SuccessviewdoneImpl implements Successviewdone {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingapprove,
-    TResult Function()? successapprove,
-    TResult Function(String erorr)? erorrapprove,
-    TResult Function()? loadingprepare,
-    TResult Function()? successprepare,
-    TResult Function(String erorr)? erorrprepare,
-    TResult Function()? loadingdone,
-    TResult Function()? successdone,
-    TResult Function(String erorr)? erorrdone,
-    TResult Function()? loadingshipped,
-    TResult Function()? successshipped,
-    TResult Function(String erorr)? erorrshipped,
+    TResult Function()? loadingUpdate,
+    TResult Function()? successUpdate,
+    TResult Function(String erorr)? erorrUpdate,
     TResult Function()? loadingviewdetails,
     TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
@@ -8044,18 +4294,9 @@ class _$SuccessviewdoneImpl implements Successviewdone {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingapprove value) loadingapprove,
-    required TResult Function(Successapprove value) successapprove,
-    required TResult Function(Erorrapprove value) erorrapprove,
-    required TResult Function(Loadingprepare value) loadingprepare,
-    required TResult Function(Successprepare value) successprepare,
-    required TResult Function(Erorrprepare value) erorrprepare,
-    required TResult Function(Loadingdone value) loadingdone,
-    required TResult Function(Successdone value) successdone,
-    required TResult Function(Erorrdone value) erorrdone,
-    required TResult Function(Loadingshipped value) loadingshipped,
-    required TResult Function(Successshipped value) successshipped,
-    required TResult Function(Erorrshipped value) erorrshipped,
+    required TResult Function(LoadingUpdate value) loadingUpdate,
+    required TResult Function(SuccessUpdate value) successUpdate,
+    required TResult Function(ErorrUpdate value) erorrUpdate,
     required TResult Function(Loadingviewdetails value) loadingviewdetails,
     required TResult Function(successviewdetails value) successviewdetails,
     required TResult Function(Erorrviewdetails value) erorrviewdetails,
@@ -8088,18 +4329,9 @@ class _$SuccessviewdoneImpl implements Successviewdone {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingapprove value)? loadingapprove,
-    TResult? Function(Successapprove value)? successapprove,
-    TResult? Function(Erorrapprove value)? erorrapprove,
-    TResult? Function(Loadingprepare value)? loadingprepare,
-    TResult? Function(Successprepare value)? successprepare,
-    TResult? Function(Erorrprepare value)? erorrprepare,
-    TResult? Function(Loadingdone value)? loadingdone,
-    TResult? Function(Successdone value)? successdone,
-    TResult? Function(Erorrdone value)? erorrdone,
-    TResult? Function(Loadingshipped value)? loadingshipped,
-    TResult? Function(Successshipped value)? successshipped,
-    TResult? Function(Erorrshipped value)? erorrshipped,
+    TResult? Function(LoadingUpdate value)? loadingUpdate,
+    TResult? Function(SuccessUpdate value)? successUpdate,
+    TResult? Function(ErorrUpdate value)? erorrUpdate,
     TResult? Function(Loadingviewdetails value)? loadingviewdetails,
     TResult? Function(successviewdetails value)? successviewdetails,
     TResult? Function(Erorrviewdetails value)? erorrviewdetails,
@@ -8132,18 +4364,9 @@ class _$SuccessviewdoneImpl implements Successviewdone {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingapprove value)? loadingapprove,
-    TResult Function(Successapprove value)? successapprove,
-    TResult Function(Erorrapprove value)? erorrapprove,
-    TResult Function(Loadingprepare value)? loadingprepare,
-    TResult Function(Successprepare value)? successprepare,
-    TResult Function(Erorrprepare value)? erorrprepare,
-    TResult Function(Loadingdone value)? loadingdone,
-    TResult Function(Successdone value)? successdone,
-    TResult Function(Erorrdone value)? erorrdone,
-    TResult Function(Loadingshipped value)? loadingshipped,
-    TResult Function(Successshipped value)? successshipped,
-    TResult Function(Erorrshipped value)? erorrshipped,
+    TResult Function(LoadingUpdate value)? loadingUpdate,
+    TResult Function(SuccessUpdate value)? successUpdate,
+    TResult Function(ErorrUpdate value)? erorrUpdate,
     TResult Function(Loadingviewdetails value)? loadingviewdetails,
     TResult Function(successviewdetails value)? successviewdetails,
     TResult Function(Erorrviewdetails value)? erorrviewdetails,
@@ -8252,18 +4475,9 @@ class _$ErorrviewdoneImpl implements Erorrviewdone {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingapprove,
-    required TResult Function() successapprove,
-    required TResult Function(String erorr) erorrapprove,
-    required TResult Function() loadingprepare,
-    required TResult Function() successprepare,
-    required TResult Function(String erorr) erorrprepare,
-    required TResult Function() loadingdone,
-    required TResult Function() successdone,
-    required TResult Function(String erorr) erorrdone,
-    required TResult Function() loadingshipped,
-    required TResult Function() successshipped,
-    required TResult Function(String erorr) erorrshipped,
+    required TResult Function() loadingUpdate,
+    required TResult Function() successUpdate,
+    required TResult Function(String erorr) erorrUpdate,
     required TResult Function() loadingviewdetails,
     required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
@@ -8297,18 +4511,9 @@ class _$ErorrviewdoneImpl implements Erorrviewdone {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingapprove,
-    TResult? Function()? successapprove,
-    TResult? Function(String erorr)? erorrapprove,
-    TResult? Function()? loadingprepare,
-    TResult? Function()? successprepare,
-    TResult? Function(String erorr)? erorrprepare,
-    TResult? Function()? loadingdone,
-    TResult? Function()? successdone,
-    TResult? Function(String erorr)? erorrdone,
-    TResult? Function()? loadingshipped,
-    TResult? Function()? successshipped,
-    TResult? Function(String erorr)? erorrshipped,
+    TResult? Function()? loadingUpdate,
+    TResult? Function()? successUpdate,
+    TResult? Function(String erorr)? erorrUpdate,
     TResult? Function()? loadingviewdetails,
     TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
@@ -8341,18 +4546,9 @@ class _$ErorrviewdoneImpl implements Erorrviewdone {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingapprove,
-    TResult Function()? successapprove,
-    TResult Function(String erorr)? erorrapprove,
-    TResult Function()? loadingprepare,
-    TResult Function()? successprepare,
-    TResult Function(String erorr)? erorrprepare,
-    TResult Function()? loadingdone,
-    TResult Function()? successdone,
-    TResult Function(String erorr)? erorrdone,
-    TResult Function()? loadingshipped,
-    TResult Function()? successshipped,
-    TResult Function(String erorr)? erorrshipped,
+    TResult Function()? loadingUpdate,
+    TResult Function()? successUpdate,
+    TResult Function(String erorr)? erorrUpdate,
     TResult Function()? loadingviewdetails,
     TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
@@ -8389,18 +4585,9 @@ class _$ErorrviewdoneImpl implements Erorrviewdone {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingapprove value) loadingapprove,
-    required TResult Function(Successapprove value) successapprove,
-    required TResult Function(Erorrapprove value) erorrapprove,
-    required TResult Function(Loadingprepare value) loadingprepare,
-    required TResult Function(Successprepare value) successprepare,
-    required TResult Function(Erorrprepare value) erorrprepare,
-    required TResult Function(Loadingdone value) loadingdone,
-    required TResult Function(Successdone value) successdone,
-    required TResult Function(Erorrdone value) erorrdone,
-    required TResult Function(Loadingshipped value) loadingshipped,
-    required TResult Function(Successshipped value) successshipped,
-    required TResult Function(Erorrshipped value) erorrshipped,
+    required TResult Function(LoadingUpdate value) loadingUpdate,
+    required TResult Function(SuccessUpdate value) successUpdate,
+    required TResult Function(ErorrUpdate value) erorrUpdate,
     required TResult Function(Loadingviewdetails value) loadingviewdetails,
     required TResult Function(successviewdetails value) successviewdetails,
     required TResult Function(Erorrviewdetails value) erorrviewdetails,
@@ -8433,18 +4620,9 @@ class _$ErorrviewdoneImpl implements Erorrviewdone {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingapprove value)? loadingapprove,
-    TResult? Function(Successapprove value)? successapprove,
-    TResult? Function(Erorrapprove value)? erorrapprove,
-    TResult? Function(Loadingprepare value)? loadingprepare,
-    TResult? Function(Successprepare value)? successprepare,
-    TResult? Function(Erorrprepare value)? erorrprepare,
-    TResult? Function(Loadingdone value)? loadingdone,
-    TResult? Function(Successdone value)? successdone,
-    TResult? Function(Erorrdone value)? erorrdone,
-    TResult? Function(Loadingshipped value)? loadingshipped,
-    TResult? Function(Successshipped value)? successshipped,
-    TResult? Function(Erorrshipped value)? erorrshipped,
+    TResult? Function(LoadingUpdate value)? loadingUpdate,
+    TResult? Function(SuccessUpdate value)? successUpdate,
+    TResult? Function(ErorrUpdate value)? erorrUpdate,
     TResult? Function(Loadingviewdetails value)? loadingviewdetails,
     TResult? Function(successviewdetails value)? successviewdetails,
     TResult? Function(Erorrviewdetails value)? erorrviewdetails,
@@ -8477,18 +4655,9 @@ class _$ErorrviewdoneImpl implements Erorrviewdone {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingapprove value)? loadingapprove,
-    TResult Function(Successapprove value)? successapprove,
-    TResult Function(Erorrapprove value)? erorrapprove,
-    TResult Function(Loadingprepare value)? loadingprepare,
-    TResult Function(Successprepare value)? successprepare,
-    TResult Function(Erorrprepare value)? erorrprepare,
-    TResult Function(Loadingdone value)? loadingdone,
-    TResult Function(Successdone value)? successdone,
-    TResult Function(Erorrdone value)? erorrdone,
-    TResult Function(Loadingshipped value)? loadingshipped,
-    TResult Function(Successshipped value)? successshipped,
-    TResult Function(Erorrshipped value)? erorrshipped,
+    TResult Function(LoadingUpdate value)? loadingUpdate,
+    TResult Function(SuccessUpdate value)? successUpdate,
+    TResult Function(ErorrUpdate value)? erorrUpdate,
     TResult Function(Loadingviewdetails value)? loadingviewdetails,
     TResult Function(successviewdetails value)? successviewdetails,
     TResult Function(Erorrviewdetails value)? erorrviewdetails,
@@ -8571,18 +4740,9 @@ class _$LoadingviewpendingImpl implements Loadingviewpending {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingapprove,
-    required TResult Function() successapprove,
-    required TResult Function(String erorr) erorrapprove,
-    required TResult Function() loadingprepare,
-    required TResult Function() successprepare,
-    required TResult Function(String erorr) erorrprepare,
-    required TResult Function() loadingdone,
-    required TResult Function() successdone,
-    required TResult Function(String erorr) erorrdone,
-    required TResult Function() loadingshipped,
-    required TResult Function() successshipped,
-    required TResult Function(String erorr) erorrshipped,
+    required TResult Function() loadingUpdate,
+    required TResult Function() successUpdate,
+    required TResult Function(String erorr) erorrUpdate,
     required TResult Function() loadingviewdetails,
     required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
@@ -8616,18 +4776,9 @@ class _$LoadingviewpendingImpl implements Loadingviewpending {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingapprove,
-    TResult? Function()? successapprove,
-    TResult? Function(String erorr)? erorrapprove,
-    TResult? Function()? loadingprepare,
-    TResult? Function()? successprepare,
-    TResult? Function(String erorr)? erorrprepare,
-    TResult? Function()? loadingdone,
-    TResult? Function()? successdone,
-    TResult? Function(String erorr)? erorrdone,
-    TResult? Function()? loadingshipped,
-    TResult? Function()? successshipped,
-    TResult? Function(String erorr)? erorrshipped,
+    TResult? Function()? loadingUpdate,
+    TResult? Function()? successUpdate,
+    TResult? Function(String erorr)? erorrUpdate,
     TResult? Function()? loadingviewdetails,
     TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
@@ -8660,18 +4811,9 @@ class _$LoadingviewpendingImpl implements Loadingviewpending {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingapprove,
-    TResult Function()? successapprove,
-    TResult Function(String erorr)? erorrapprove,
-    TResult Function()? loadingprepare,
-    TResult Function()? successprepare,
-    TResult Function(String erorr)? erorrprepare,
-    TResult Function()? loadingdone,
-    TResult Function()? successdone,
-    TResult Function(String erorr)? erorrdone,
-    TResult Function()? loadingshipped,
-    TResult Function()? successshipped,
-    TResult Function(String erorr)? erorrshipped,
+    TResult Function()? loadingUpdate,
+    TResult Function()? successUpdate,
+    TResult Function(String erorr)? erorrUpdate,
     TResult Function()? loadingviewdetails,
     TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
@@ -8708,18 +4850,9 @@ class _$LoadingviewpendingImpl implements Loadingviewpending {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingapprove value) loadingapprove,
-    required TResult Function(Successapprove value) successapprove,
-    required TResult Function(Erorrapprove value) erorrapprove,
-    required TResult Function(Loadingprepare value) loadingprepare,
-    required TResult Function(Successprepare value) successprepare,
-    required TResult Function(Erorrprepare value) erorrprepare,
-    required TResult Function(Loadingdone value) loadingdone,
-    required TResult Function(Successdone value) successdone,
-    required TResult Function(Erorrdone value) erorrdone,
-    required TResult Function(Loadingshipped value) loadingshipped,
-    required TResult Function(Successshipped value) successshipped,
-    required TResult Function(Erorrshipped value) erorrshipped,
+    required TResult Function(LoadingUpdate value) loadingUpdate,
+    required TResult Function(SuccessUpdate value) successUpdate,
+    required TResult Function(ErorrUpdate value) erorrUpdate,
     required TResult Function(Loadingviewdetails value) loadingviewdetails,
     required TResult Function(successviewdetails value) successviewdetails,
     required TResult Function(Erorrviewdetails value) erorrviewdetails,
@@ -8752,18 +4885,9 @@ class _$LoadingviewpendingImpl implements Loadingviewpending {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingapprove value)? loadingapprove,
-    TResult? Function(Successapprove value)? successapprove,
-    TResult? Function(Erorrapprove value)? erorrapprove,
-    TResult? Function(Loadingprepare value)? loadingprepare,
-    TResult? Function(Successprepare value)? successprepare,
-    TResult? Function(Erorrprepare value)? erorrprepare,
-    TResult? Function(Loadingdone value)? loadingdone,
-    TResult? Function(Successdone value)? successdone,
-    TResult? Function(Erorrdone value)? erorrdone,
-    TResult? Function(Loadingshipped value)? loadingshipped,
-    TResult? Function(Successshipped value)? successshipped,
-    TResult? Function(Erorrshipped value)? erorrshipped,
+    TResult? Function(LoadingUpdate value)? loadingUpdate,
+    TResult? Function(SuccessUpdate value)? successUpdate,
+    TResult? Function(ErorrUpdate value)? erorrUpdate,
     TResult? Function(Loadingviewdetails value)? loadingviewdetails,
     TResult? Function(successviewdetails value)? successviewdetails,
     TResult? Function(Erorrviewdetails value)? erorrviewdetails,
@@ -8796,18 +4920,9 @@ class _$LoadingviewpendingImpl implements Loadingviewpending {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingapprove value)? loadingapprove,
-    TResult Function(Successapprove value)? successapprove,
-    TResult Function(Erorrapprove value)? erorrapprove,
-    TResult Function(Loadingprepare value)? loadingprepare,
-    TResult Function(Successprepare value)? successprepare,
-    TResult Function(Erorrprepare value)? erorrprepare,
-    TResult Function(Loadingdone value)? loadingdone,
-    TResult Function(Successdone value)? successdone,
-    TResult Function(Erorrdone value)? erorrdone,
-    TResult Function(Loadingshipped value)? loadingshipped,
-    TResult Function(Successshipped value)? successshipped,
-    TResult Function(Erorrshipped value)? erorrshipped,
+    TResult Function(LoadingUpdate value)? loadingUpdate,
+    TResult Function(SuccessUpdate value)? successUpdate,
+    TResult Function(ErorrUpdate value)? erorrUpdate,
     TResult Function(Loadingviewdetails value)? loadingviewdetails,
     TResult Function(successviewdetails value)? successviewdetails,
     TResult Function(Erorrviewdetails value)? erorrviewdetails,
@@ -8919,18 +5034,9 @@ class _$SuccessviewpendingImpl implements Successviewpending {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingapprove,
-    required TResult Function() successapprove,
-    required TResult Function(String erorr) erorrapprove,
-    required TResult Function() loadingprepare,
-    required TResult Function() successprepare,
-    required TResult Function(String erorr) erorrprepare,
-    required TResult Function() loadingdone,
-    required TResult Function() successdone,
-    required TResult Function(String erorr) erorrdone,
-    required TResult Function() loadingshipped,
-    required TResult Function() successshipped,
-    required TResult Function(String erorr) erorrshipped,
+    required TResult Function() loadingUpdate,
+    required TResult Function() successUpdate,
+    required TResult Function(String erorr) erorrUpdate,
     required TResult Function() loadingviewdetails,
     required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
@@ -8964,18 +5070,9 @@ class _$SuccessviewpendingImpl implements Successviewpending {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingapprove,
-    TResult? Function()? successapprove,
-    TResult? Function(String erorr)? erorrapprove,
-    TResult? Function()? loadingprepare,
-    TResult? Function()? successprepare,
-    TResult? Function(String erorr)? erorrprepare,
-    TResult? Function()? loadingdone,
-    TResult? Function()? successdone,
-    TResult? Function(String erorr)? erorrdone,
-    TResult? Function()? loadingshipped,
-    TResult? Function()? successshipped,
-    TResult? Function(String erorr)? erorrshipped,
+    TResult? Function()? loadingUpdate,
+    TResult? Function()? successUpdate,
+    TResult? Function(String erorr)? erorrUpdate,
     TResult? Function()? loadingviewdetails,
     TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
@@ -9008,18 +5105,9 @@ class _$SuccessviewpendingImpl implements Successviewpending {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingapprove,
-    TResult Function()? successapprove,
-    TResult Function(String erorr)? erorrapprove,
-    TResult Function()? loadingprepare,
-    TResult Function()? successprepare,
-    TResult Function(String erorr)? erorrprepare,
-    TResult Function()? loadingdone,
-    TResult Function()? successdone,
-    TResult Function(String erorr)? erorrdone,
-    TResult Function()? loadingshipped,
-    TResult Function()? successshipped,
-    TResult Function(String erorr)? erorrshipped,
+    TResult Function()? loadingUpdate,
+    TResult Function()? successUpdate,
+    TResult Function(String erorr)? erorrUpdate,
     TResult Function()? loadingviewdetails,
     TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
@@ -9056,18 +5144,9 @@ class _$SuccessviewpendingImpl implements Successviewpending {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingapprove value) loadingapprove,
-    required TResult Function(Successapprove value) successapprove,
-    required TResult Function(Erorrapprove value) erorrapprove,
-    required TResult Function(Loadingprepare value) loadingprepare,
-    required TResult Function(Successprepare value) successprepare,
-    required TResult Function(Erorrprepare value) erorrprepare,
-    required TResult Function(Loadingdone value) loadingdone,
-    required TResult Function(Successdone value) successdone,
-    required TResult Function(Erorrdone value) erorrdone,
-    required TResult Function(Loadingshipped value) loadingshipped,
-    required TResult Function(Successshipped value) successshipped,
-    required TResult Function(Erorrshipped value) erorrshipped,
+    required TResult Function(LoadingUpdate value) loadingUpdate,
+    required TResult Function(SuccessUpdate value) successUpdate,
+    required TResult Function(ErorrUpdate value) erorrUpdate,
     required TResult Function(Loadingviewdetails value) loadingviewdetails,
     required TResult Function(successviewdetails value) successviewdetails,
     required TResult Function(Erorrviewdetails value) erorrviewdetails,
@@ -9100,18 +5179,9 @@ class _$SuccessviewpendingImpl implements Successviewpending {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingapprove value)? loadingapprove,
-    TResult? Function(Successapprove value)? successapprove,
-    TResult? Function(Erorrapprove value)? erorrapprove,
-    TResult? Function(Loadingprepare value)? loadingprepare,
-    TResult? Function(Successprepare value)? successprepare,
-    TResult? Function(Erorrprepare value)? erorrprepare,
-    TResult? Function(Loadingdone value)? loadingdone,
-    TResult? Function(Successdone value)? successdone,
-    TResult? Function(Erorrdone value)? erorrdone,
-    TResult? Function(Loadingshipped value)? loadingshipped,
-    TResult? Function(Successshipped value)? successshipped,
-    TResult? Function(Erorrshipped value)? erorrshipped,
+    TResult? Function(LoadingUpdate value)? loadingUpdate,
+    TResult? Function(SuccessUpdate value)? successUpdate,
+    TResult? Function(ErorrUpdate value)? erorrUpdate,
     TResult? Function(Loadingviewdetails value)? loadingviewdetails,
     TResult? Function(successviewdetails value)? successviewdetails,
     TResult? Function(Erorrviewdetails value)? erorrviewdetails,
@@ -9144,18 +5214,9 @@ class _$SuccessviewpendingImpl implements Successviewpending {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingapprove value)? loadingapprove,
-    TResult Function(Successapprove value)? successapprove,
-    TResult Function(Erorrapprove value)? erorrapprove,
-    TResult Function(Loadingprepare value)? loadingprepare,
-    TResult Function(Successprepare value)? successprepare,
-    TResult Function(Erorrprepare value)? erorrprepare,
-    TResult Function(Loadingdone value)? loadingdone,
-    TResult Function(Successdone value)? successdone,
-    TResult Function(Erorrdone value)? erorrdone,
-    TResult Function(Loadingshipped value)? loadingshipped,
-    TResult Function(Successshipped value)? successshipped,
-    TResult Function(Erorrshipped value)? erorrshipped,
+    TResult Function(LoadingUpdate value)? loadingUpdate,
+    TResult Function(SuccessUpdate value)? successUpdate,
+    TResult Function(ErorrUpdate value)? erorrUpdate,
     TResult Function(Loadingviewdetails value)? loadingviewdetails,
     TResult Function(successviewdetails value)? successviewdetails,
     TResult Function(Erorrviewdetails value)? erorrviewdetails,
@@ -9265,18 +5326,9 @@ class _$ErorrviewpendingImpl implements Erorrviewpending {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingapprove,
-    required TResult Function() successapprove,
-    required TResult Function(String erorr) erorrapprove,
-    required TResult Function() loadingprepare,
-    required TResult Function() successprepare,
-    required TResult Function(String erorr) erorrprepare,
-    required TResult Function() loadingdone,
-    required TResult Function() successdone,
-    required TResult Function(String erorr) erorrdone,
-    required TResult Function() loadingshipped,
-    required TResult Function() successshipped,
-    required TResult Function(String erorr) erorrshipped,
+    required TResult Function() loadingUpdate,
+    required TResult Function() successUpdate,
+    required TResult Function(String erorr) erorrUpdate,
     required TResult Function() loadingviewdetails,
     required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
@@ -9310,18 +5362,9 @@ class _$ErorrviewpendingImpl implements Erorrviewpending {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingapprove,
-    TResult? Function()? successapprove,
-    TResult? Function(String erorr)? erorrapprove,
-    TResult? Function()? loadingprepare,
-    TResult? Function()? successprepare,
-    TResult? Function(String erorr)? erorrprepare,
-    TResult? Function()? loadingdone,
-    TResult? Function()? successdone,
-    TResult? Function(String erorr)? erorrdone,
-    TResult? Function()? loadingshipped,
-    TResult? Function()? successshipped,
-    TResult? Function(String erorr)? erorrshipped,
+    TResult? Function()? loadingUpdate,
+    TResult? Function()? successUpdate,
+    TResult? Function(String erorr)? erorrUpdate,
     TResult? Function()? loadingviewdetails,
     TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
@@ -9354,18 +5397,9 @@ class _$ErorrviewpendingImpl implements Erorrviewpending {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingapprove,
-    TResult Function()? successapprove,
-    TResult Function(String erorr)? erorrapprove,
-    TResult Function()? loadingprepare,
-    TResult Function()? successprepare,
-    TResult Function(String erorr)? erorrprepare,
-    TResult Function()? loadingdone,
-    TResult Function()? successdone,
-    TResult Function(String erorr)? erorrdone,
-    TResult Function()? loadingshipped,
-    TResult Function()? successshipped,
-    TResult Function(String erorr)? erorrshipped,
+    TResult Function()? loadingUpdate,
+    TResult Function()? successUpdate,
+    TResult Function(String erorr)? erorrUpdate,
     TResult Function()? loadingviewdetails,
     TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
@@ -9402,18 +5436,9 @@ class _$ErorrviewpendingImpl implements Erorrviewpending {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingapprove value) loadingapprove,
-    required TResult Function(Successapprove value) successapprove,
-    required TResult Function(Erorrapprove value) erorrapprove,
-    required TResult Function(Loadingprepare value) loadingprepare,
-    required TResult Function(Successprepare value) successprepare,
-    required TResult Function(Erorrprepare value) erorrprepare,
-    required TResult Function(Loadingdone value) loadingdone,
-    required TResult Function(Successdone value) successdone,
-    required TResult Function(Erorrdone value) erorrdone,
-    required TResult Function(Loadingshipped value) loadingshipped,
-    required TResult Function(Successshipped value) successshipped,
-    required TResult Function(Erorrshipped value) erorrshipped,
+    required TResult Function(LoadingUpdate value) loadingUpdate,
+    required TResult Function(SuccessUpdate value) successUpdate,
+    required TResult Function(ErorrUpdate value) erorrUpdate,
     required TResult Function(Loadingviewdetails value) loadingviewdetails,
     required TResult Function(successviewdetails value) successviewdetails,
     required TResult Function(Erorrviewdetails value) erorrviewdetails,
@@ -9446,18 +5471,9 @@ class _$ErorrviewpendingImpl implements Erorrviewpending {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingapprove value)? loadingapprove,
-    TResult? Function(Successapprove value)? successapprove,
-    TResult? Function(Erorrapprove value)? erorrapprove,
-    TResult? Function(Loadingprepare value)? loadingprepare,
-    TResult? Function(Successprepare value)? successprepare,
-    TResult? Function(Erorrprepare value)? erorrprepare,
-    TResult? Function(Loadingdone value)? loadingdone,
-    TResult? Function(Successdone value)? successdone,
-    TResult? Function(Erorrdone value)? erorrdone,
-    TResult? Function(Loadingshipped value)? loadingshipped,
-    TResult? Function(Successshipped value)? successshipped,
-    TResult? Function(Erorrshipped value)? erorrshipped,
+    TResult? Function(LoadingUpdate value)? loadingUpdate,
+    TResult? Function(SuccessUpdate value)? successUpdate,
+    TResult? Function(ErorrUpdate value)? erorrUpdate,
     TResult? Function(Loadingviewdetails value)? loadingviewdetails,
     TResult? Function(successviewdetails value)? successviewdetails,
     TResult? Function(Erorrviewdetails value)? erorrviewdetails,
@@ -9490,18 +5506,9 @@ class _$ErorrviewpendingImpl implements Erorrviewpending {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingapprove value)? loadingapprove,
-    TResult Function(Successapprove value)? successapprove,
-    TResult Function(Erorrapprove value)? erorrapprove,
-    TResult Function(Loadingprepare value)? loadingprepare,
-    TResult Function(Successprepare value)? successprepare,
-    TResult Function(Erorrprepare value)? erorrprepare,
-    TResult Function(Loadingdone value)? loadingdone,
-    TResult Function(Successdone value)? successdone,
-    TResult Function(Erorrdone value)? erorrdone,
-    TResult Function(Loadingshipped value)? loadingshipped,
-    TResult Function(Successshipped value)? successshipped,
-    TResult Function(Erorrshipped value)? erorrshipped,
+    TResult Function(LoadingUpdate value)? loadingUpdate,
+    TResult Function(SuccessUpdate value)? successUpdate,
+    TResult Function(ErorrUpdate value)? erorrUpdate,
     TResult Function(Loadingviewdetails value)? loadingviewdetails,
     TResult Function(successviewdetails value)? successviewdetails,
     TResult Function(Erorrviewdetails value)? erorrviewdetails,
@@ -9584,18 +5591,9 @@ class _$LoadingviewprepareImpl implements Loadingviewprepare {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingapprove,
-    required TResult Function() successapprove,
-    required TResult Function(String erorr) erorrapprove,
-    required TResult Function() loadingprepare,
-    required TResult Function() successprepare,
-    required TResult Function(String erorr) erorrprepare,
-    required TResult Function() loadingdone,
-    required TResult Function() successdone,
-    required TResult Function(String erorr) erorrdone,
-    required TResult Function() loadingshipped,
-    required TResult Function() successshipped,
-    required TResult Function(String erorr) erorrshipped,
+    required TResult Function() loadingUpdate,
+    required TResult Function() successUpdate,
+    required TResult Function(String erorr) erorrUpdate,
     required TResult Function() loadingviewdetails,
     required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
@@ -9629,18 +5627,9 @@ class _$LoadingviewprepareImpl implements Loadingviewprepare {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingapprove,
-    TResult? Function()? successapprove,
-    TResult? Function(String erorr)? erorrapprove,
-    TResult? Function()? loadingprepare,
-    TResult? Function()? successprepare,
-    TResult? Function(String erorr)? erorrprepare,
-    TResult? Function()? loadingdone,
-    TResult? Function()? successdone,
-    TResult? Function(String erorr)? erorrdone,
-    TResult? Function()? loadingshipped,
-    TResult? Function()? successshipped,
-    TResult? Function(String erorr)? erorrshipped,
+    TResult? Function()? loadingUpdate,
+    TResult? Function()? successUpdate,
+    TResult? Function(String erorr)? erorrUpdate,
     TResult? Function()? loadingviewdetails,
     TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
@@ -9673,18 +5662,9 @@ class _$LoadingviewprepareImpl implements Loadingviewprepare {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingapprove,
-    TResult Function()? successapprove,
-    TResult Function(String erorr)? erorrapprove,
-    TResult Function()? loadingprepare,
-    TResult Function()? successprepare,
-    TResult Function(String erorr)? erorrprepare,
-    TResult Function()? loadingdone,
-    TResult Function()? successdone,
-    TResult Function(String erorr)? erorrdone,
-    TResult Function()? loadingshipped,
-    TResult Function()? successshipped,
-    TResult Function(String erorr)? erorrshipped,
+    TResult Function()? loadingUpdate,
+    TResult Function()? successUpdate,
+    TResult Function(String erorr)? erorrUpdate,
     TResult Function()? loadingviewdetails,
     TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
@@ -9721,18 +5701,9 @@ class _$LoadingviewprepareImpl implements Loadingviewprepare {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingapprove value) loadingapprove,
-    required TResult Function(Successapprove value) successapprove,
-    required TResult Function(Erorrapprove value) erorrapprove,
-    required TResult Function(Loadingprepare value) loadingprepare,
-    required TResult Function(Successprepare value) successprepare,
-    required TResult Function(Erorrprepare value) erorrprepare,
-    required TResult Function(Loadingdone value) loadingdone,
-    required TResult Function(Successdone value) successdone,
-    required TResult Function(Erorrdone value) erorrdone,
-    required TResult Function(Loadingshipped value) loadingshipped,
-    required TResult Function(Successshipped value) successshipped,
-    required TResult Function(Erorrshipped value) erorrshipped,
+    required TResult Function(LoadingUpdate value) loadingUpdate,
+    required TResult Function(SuccessUpdate value) successUpdate,
+    required TResult Function(ErorrUpdate value) erorrUpdate,
     required TResult Function(Loadingviewdetails value) loadingviewdetails,
     required TResult Function(successviewdetails value) successviewdetails,
     required TResult Function(Erorrviewdetails value) erorrviewdetails,
@@ -9765,18 +5736,9 @@ class _$LoadingviewprepareImpl implements Loadingviewprepare {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingapprove value)? loadingapprove,
-    TResult? Function(Successapprove value)? successapprove,
-    TResult? Function(Erorrapprove value)? erorrapprove,
-    TResult? Function(Loadingprepare value)? loadingprepare,
-    TResult? Function(Successprepare value)? successprepare,
-    TResult? Function(Erorrprepare value)? erorrprepare,
-    TResult? Function(Loadingdone value)? loadingdone,
-    TResult? Function(Successdone value)? successdone,
-    TResult? Function(Erorrdone value)? erorrdone,
-    TResult? Function(Loadingshipped value)? loadingshipped,
-    TResult? Function(Successshipped value)? successshipped,
-    TResult? Function(Erorrshipped value)? erorrshipped,
+    TResult? Function(LoadingUpdate value)? loadingUpdate,
+    TResult? Function(SuccessUpdate value)? successUpdate,
+    TResult? Function(ErorrUpdate value)? erorrUpdate,
     TResult? Function(Loadingviewdetails value)? loadingviewdetails,
     TResult? Function(successviewdetails value)? successviewdetails,
     TResult? Function(Erorrviewdetails value)? erorrviewdetails,
@@ -9809,18 +5771,9 @@ class _$LoadingviewprepareImpl implements Loadingviewprepare {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingapprove value)? loadingapprove,
-    TResult Function(Successapprove value)? successapprove,
-    TResult Function(Erorrapprove value)? erorrapprove,
-    TResult Function(Loadingprepare value)? loadingprepare,
-    TResult Function(Successprepare value)? successprepare,
-    TResult Function(Erorrprepare value)? erorrprepare,
-    TResult Function(Loadingdone value)? loadingdone,
-    TResult Function(Successdone value)? successdone,
-    TResult Function(Erorrdone value)? erorrdone,
-    TResult Function(Loadingshipped value)? loadingshipped,
-    TResult Function(Successshipped value)? successshipped,
-    TResult Function(Erorrshipped value)? erorrshipped,
+    TResult Function(LoadingUpdate value)? loadingUpdate,
+    TResult Function(SuccessUpdate value)? successUpdate,
+    TResult Function(ErorrUpdate value)? erorrUpdate,
     TResult Function(Loadingviewdetails value)? loadingviewdetails,
     TResult Function(successviewdetails value)? successviewdetails,
     TResult Function(Erorrviewdetails value)? erorrviewdetails,
@@ -9933,18 +5886,9 @@ class _$SuccessviewprepareImpl implements Successviewprepare {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingapprove,
-    required TResult Function() successapprove,
-    required TResult Function(String erorr) erorrapprove,
-    required TResult Function() loadingprepare,
-    required TResult Function() successprepare,
-    required TResult Function(String erorr) erorrprepare,
-    required TResult Function() loadingdone,
-    required TResult Function() successdone,
-    required TResult Function(String erorr) erorrdone,
-    required TResult Function() loadingshipped,
-    required TResult Function() successshipped,
-    required TResult Function(String erorr) erorrshipped,
+    required TResult Function() loadingUpdate,
+    required TResult Function() successUpdate,
+    required TResult Function(String erorr) erorrUpdate,
     required TResult Function() loadingviewdetails,
     required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
@@ -9978,18 +5922,9 @@ class _$SuccessviewprepareImpl implements Successviewprepare {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingapprove,
-    TResult? Function()? successapprove,
-    TResult? Function(String erorr)? erorrapprove,
-    TResult? Function()? loadingprepare,
-    TResult? Function()? successprepare,
-    TResult? Function(String erorr)? erorrprepare,
-    TResult? Function()? loadingdone,
-    TResult? Function()? successdone,
-    TResult? Function(String erorr)? erorrdone,
-    TResult? Function()? loadingshipped,
-    TResult? Function()? successshipped,
-    TResult? Function(String erorr)? erorrshipped,
+    TResult? Function()? loadingUpdate,
+    TResult? Function()? successUpdate,
+    TResult? Function(String erorr)? erorrUpdate,
     TResult? Function()? loadingviewdetails,
     TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
@@ -10022,18 +5957,9 @@ class _$SuccessviewprepareImpl implements Successviewprepare {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingapprove,
-    TResult Function()? successapprove,
-    TResult Function(String erorr)? erorrapprove,
-    TResult Function()? loadingprepare,
-    TResult Function()? successprepare,
-    TResult Function(String erorr)? erorrprepare,
-    TResult Function()? loadingdone,
-    TResult Function()? successdone,
-    TResult Function(String erorr)? erorrdone,
-    TResult Function()? loadingshipped,
-    TResult Function()? successshipped,
-    TResult Function(String erorr)? erorrshipped,
+    TResult Function()? loadingUpdate,
+    TResult Function()? successUpdate,
+    TResult Function(String erorr)? erorrUpdate,
     TResult Function()? loadingviewdetails,
     TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
@@ -10070,18 +5996,9 @@ class _$SuccessviewprepareImpl implements Successviewprepare {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingapprove value) loadingapprove,
-    required TResult Function(Successapprove value) successapprove,
-    required TResult Function(Erorrapprove value) erorrapprove,
-    required TResult Function(Loadingprepare value) loadingprepare,
-    required TResult Function(Successprepare value) successprepare,
-    required TResult Function(Erorrprepare value) erorrprepare,
-    required TResult Function(Loadingdone value) loadingdone,
-    required TResult Function(Successdone value) successdone,
-    required TResult Function(Erorrdone value) erorrdone,
-    required TResult Function(Loadingshipped value) loadingshipped,
-    required TResult Function(Successshipped value) successshipped,
-    required TResult Function(Erorrshipped value) erorrshipped,
+    required TResult Function(LoadingUpdate value) loadingUpdate,
+    required TResult Function(SuccessUpdate value) successUpdate,
+    required TResult Function(ErorrUpdate value) erorrUpdate,
     required TResult Function(Loadingviewdetails value) loadingviewdetails,
     required TResult Function(successviewdetails value) successviewdetails,
     required TResult Function(Erorrviewdetails value) erorrviewdetails,
@@ -10114,18 +6031,9 @@ class _$SuccessviewprepareImpl implements Successviewprepare {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingapprove value)? loadingapprove,
-    TResult? Function(Successapprove value)? successapprove,
-    TResult? Function(Erorrapprove value)? erorrapprove,
-    TResult? Function(Loadingprepare value)? loadingprepare,
-    TResult? Function(Successprepare value)? successprepare,
-    TResult? Function(Erorrprepare value)? erorrprepare,
-    TResult? Function(Loadingdone value)? loadingdone,
-    TResult? Function(Successdone value)? successdone,
-    TResult? Function(Erorrdone value)? erorrdone,
-    TResult? Function(Loadingshipped value)? loadingshipped,
-    TResult? Function(Successshipped value)? successshipped,
-    TResult? Function(Erorrshipped value)? erorrshipped,
+    TResult? Function(LoadingUpdate value)? loadingUpdate,
+    TResult? Function(SuccessUpdate value)? successUpdate,
+    TResult? Function(ErorrUpdate value)? erorrUpdate,
     TResult? Function(Loadingviewdetails value)? loadingviewdetails,
     TResult? Function(successviewdetails value)? successviewdetails,
     TResult? Function(Erorrviewdetails value)? erorrviewdetails,
@@ -10158,18 +6066,9 @@ class _$SuccessviewprepareImpl implements Successviewprepare {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingapprove value)? loadingapprove,
-    TResult Function(Successapprove value)? successapprove,
-    TResult Function(Erorrapprove value)? erorrapprove,
-    TResult Function(Loadingprepare value)? loadingprepare,
-    TResult Function(Successprepare value)? successprepare,
-    TResult Function(Erorrprepare value)? erorrprepare,
-    TResult Function(Loadingdone value)? loadingdone,
-    TResult Function(Successdone value)? successdone,
-    TResult Function(Erorrdone value)? erorrdone,
-    TResult Function(Loadingshipped value)? loadingshipped,
-    TResult Function(Successshipped value)? successshipped,
-    TResult Function(Erorrshipped value)? erorrshipped,
+    TResult Function(LoadingUpdate value)? loadingUpdate,
+    TResult Function(SuccessUpdate value)? successUpdate,
+    TResult Function(ErorrUpdate value)? erorrUpdate,
     TResult Function(Loadingviewdetails value)? loadingviewdetails,
     TResult Function(successviewdetails value)? successviewdetails,
     TResult Function(Erorrviewdetails value)? erorrviewdetails,
@@ -10279,18 +6178,9 @@ class _$ErorrviewprepareImpl implements Erorrviewprepare {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingapprove,
-    required TResult Function() successapprove,
-    required TResult Function(String erorr) erorrapprove,
-    required TResult Function() loadingprepare,
-    required TResult Function() successprepare,
-    required TResult Function(String erorr) erorrprepare,
-    required TResult Function() loadingdone,
-    required TResult Function() successdone,
-    required TResult Function(String erorr) erorrdone,
-    required TResult Function() loadingshipped,
-    required TResult Function() successshipped,
-    required TResult Function(String erorr) erorrshipped,
+    required TResult Function() loadingUpdate,
+    required TResult Function() successUpdate,
+    required TResult Function(String erorr) erorrUpdate,
     required TResult Function() loadingviewdetails,
     required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
@@ -10324,18 +6214,9 @@ class _$ErorrviewprepareImpl implements Erorrviewprepare {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingapprove,
-    TResult? Function()? successapprove,
-    TResult? Function(String erorr)? erorrapprove,
-    TResult? Function()? loadingprepare,
-    TResult? Function()? successprepare,
-    TResult? Function(String erorr)? erorrprepare,
-    TResult? Function()? loadingdone,
-    TResult? Function()? successdone,
-    TResult? Function(String erorr)? erorrdone,
-    TResult? Function()? loadingshipped,
-    TResult? Function()? successshipped,
-    TResult? Function(String erorr)? erorrshipped,
+    TResult? Function()? loadingUpdate,
+    TResult? Function()? successUpdate,
+    TResult? Function(String erorr)? erorrUpdate,
     TResult? Function()? loadingviewdetails,
     TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
@@ -10368,18 +6249,9 @@ class _$ErorrviewprepareImpl implements Erorrviewprepare {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingapprove,
-    TResult Function()? successapprove,
-    TResult Function(String erorr)? erorrapprove,
-    TResult Function()? loadingprepare,
-    TResult Function()? successprepare,
-    TResult Function(String erorr)? erorrprepare,
-    TResult Function()? loadingdone,
-    TResult Function()? successdone,
-    TResult Function(String erorr)? erorrdone,
-    TResult Function()? loadingshipped,
-    TResult Function()? successshipped,
-    TResult Function(String erorr)? erorrshipped,
+    TResult Function()? loadingUpdate,
+    TResult Function()? successUpdate,
+    TResult Function(String erorr)? erorrUpdate,
     TResult Function()? loadingviewdetails,
     TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
@@ -10416,18 +6288,9 @@ class _$ErorrviewprepareImpl implements Erorrviewprepare {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingapprove value) loadingapprove,
-    required TResult Function(Successapprove value) successapprove,
-    required TResult Function(Erorrapprove value) erorrapprove,
-    required TResult Function(Loadingprepare value) loadingprepare,
-    required TResult Function(Successprepare value) successprepare,
-    required TResult Function(Erorrprepare value) erorrprepare,
-    required TResult Function(Loadingdone value) loadingdone,
-    required TResult Function(Successdone value) successdone,
-    required TResult Function(Erorrdone value) erorrdone,
-    required TResult Function(Loadingshipped value) loadingshipped,
-    required TResult Function(Successshipped value) successshipped,
-    required TResult Function(Erorrshipped value) erorrshipped,
+    required TResult Function(LoadingUpdate value) loadingUpdate,
+    required TResult Function(SuccessUpdate value) successUpdate,
+    required TResult Function(ErorrUpdate value) erorrUpdate,
     required TResult Function(Loadingviewdetails value) loadingviewdetails,
     required TResult Function(successviewdetails value) successviewdetails,
     required TResult Function(Erorrviewdetails value) erorrviewdetails,
@@ -10460,18 +6323,9 @@ class _$ErorrviewprepareImpl implements Erorrviewprepare {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingapprove value)? loadingapprove,
-    TResult? Function(Successapprove value)? successapprove,
-    TResult? Function(Erorrapprove value)? erorrapprove,
-    TResult? Function(Loadingprepare value)? loadingprepare,
-    TResult? Function(Successprepare value)? successprepare,
-    TResult? Function(Erorrprepare value)? erorrprepare,
-    TResult? Function(Loadingdone value)? loadingdone,
-    TResult? Function(Successdone value)? successdone,
-    TResult? Function(Erorrdone value)? erorrdone,
-    TResult? Function(Loadingshipped value)? loadingshipped,
-    TResult? Function(Successshipped value)? successshipped,
-    TResult? Function(Erorrshipped value)? erorrshipped,
+    TResult? Function(LoadingUpdate value)? loadingUpdate,
+    TResult? Function(SuccessUpdate value)? successUpdate,
+    TResult? Function(ErorrUpdate value)? erorrUpdate,
     TResult? Function(Loadingviewdetails value)? loadingviewdetails,
     TResult? Function(successviewdetails value)? successviewdetails,
     TResult? Function(Erorrviewdetails value)? erorrviewdetails,
@@ -10504,18 +6358,9 @@ class _$ErorrviewprepareImpl implements Erorrviewprepare {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingapprove value)? loadingapprove,
-    TResult Function(Successapprove value)? successapprove,
-    TResult Function(Erorrapprove value)? erorrapprove,
-    TResult Function(Loadingprepare value)? loadingprepare,
-    TResult Function(Successprepare value)? successprepare,
-    TResult Function(Erorrprepare value)? erorrprepare,
-    TResult Function(Loadingdone value)? loadingdone,
-    TResult Function(Successdone value)? successdone,
-    TResult Function(Erorrdone value)? erorrdone,
-    TResult Function(Loadingshipped value)? loadingshipped,
-    TResult Function(Successshipped value)? successshipped,
-    TResult Function(Erorrshipped value)? erorrshipped,
+    TResult Function(LoadingUpdate value)? loadingUpdate,
+    TResult Function(SuccessUpdate value)? successUpdate,
+    TResult Function(ErorrUpdate value)? erorrUpdate,
     TResult Function(Loadingviewdetails value)? loadingviewdetails,
     TResult Function(successviewdetails value)? successviewdetails,
     TResult Function(Erorrviewdetails value)? erorrviewdetails,
@@ -10598,18 +6443,9 @@ class _$LoadingviewshippedImpl implements Loadingviewshipped {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingapprove,
-    required TResult Function() successapprove,
-    required TResult Function(String erorr) erorrapprove,
-    required TResult Function() loadingprepare,
-    required TResult Function() successprepare,
-    required TResult Function(String erorr) erorrprepare,
-    required TResult Function() loadingdone,
-    required TResult Function() successdone,
-    required TResult Function(String erorr) erorrdone,
-    required TResult Function() loadingshipped,
-    required TResult Function() successshipped,
-    required TResult Function(String erorr) erorrshipped,
+    required TResult Function() loadingUpdate,
+    required TResult Function() successUpdate,
+    required TResult Function(String erorr) erorrUpdate,
     required TResult Function() loadingviewdetails,
     required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
@@ -10643,18 +6479,9 @@ class _$LoadingviewshippedImpl implements Loadingviewshipped {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingapprove,
-    TResult? Function()? successapprove,
-    TResult? Function(String erorr)? erorrapprove,
-    TResult? Function()? loadingprepare,
-    TResult? Function()? successprepare,
-    TResult? Function(String erorr)? erorrprepare,
-    TResult? Function()? loadingdone,
-    TResult? Function()? successdone,
-    TResult? Function(String erorr)? erorrdone,
-    TResult? Function()? loadingshipped,
-    TResult? Function()? successshipped,
-    TResult? Function(String erorr)? erorrshipped,
+    TResult? Function()? loadingUpdate,
+    TResult? Function()? successUpdate,
+    TResult? Function(String erorr)? erorrUpdate,
     TResult? Function()? loadingviewdetails,
     TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
@@ -10687,18 +6514,9 @@ class _$LoadingviewshippedImpl implements Loadingviewshipped {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingapprove,
-    TResult Function()? successapprove,
-    TResult Function(String erorr)? erorrapprove,
-    TResult Function()? loadingprepare,
-    TResult Function()? successprepare,
-    TResult Function(String erorr)? erorrprepare,
-    TResult Function()? loadingdone,
-    TResult Function()? successdone,
-    TResult Function(String erorr)? erorrdone,
-    TResult Function()? loadingshipped,
-    TResult Function()? successshipped,
-    TResult Function(String erorr)? erorrshipped,
+    TResult Function()? loadingUpdate,
+    TResult Function()? successUpdate,
+    TResult Function(String erorr)? erorrUpdate,
     TResult Function()? loadingviewdetails,
     TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
@@ -10735,18 +6553,9 @@ class _$LoadingviewshippedImpl implements Loadingviewshipped {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingapprove value) loadingapprove,
-    required TResult Function(Successapprove value) successapprove,
-    required TResult Function(Erorrapprove value) erorrapprove,
-    required TResult Function(Loadingprepare value) loadingprepare,
-    required TResult Function(Successprepare value) successprepare,
-    required TResult Function(Erorrprepare value) erorrprepare,
-    required TResult Function(Loadingdone value) loadingdone,
-    required TResult Function(Successdone value) successdone,
-    required TResult Function(Erorrdone value) erorrdone,
-    required TResult Function(Loadingshipped value) loadingshipped,
-    required TResult Function(Successshipped value) successshipped,
-    required TResult Function(Erorrshipped value) erorrshipped,
+    required TResult Function(LoadingUpdate value) loadingUpdate,
+    required TResult Function(SuccessUpdate value) successUpdate,
+    required TResult Function(ErorrUpdate value) erorrUpdate,
     required TResult Function(Loadingviewdetails value) loadingviewdetails,
     required TResult Function(successviewdetails value) successviewdetails,
     required TResult Function(Erorrviewdetails value) erorrviewdetails,
@@ -10779,18 +6588,9 @@ class _$LoadingviewshippedImpl implements Loadingviewshipped {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingapprove value)? loadingapprove,
-    TResult? Function(Successapprove value)? successapprove,
-    TResult? Function(Erorrapprove value)? erorrapprove,
-    TResult? Function(Loadingprepare value)? loadingprepare,
-    TResult? Function(Successprepare value)? successprepare,
-    TResult? Function(Erorrprepare value)? erorrprepare,
-    TResult? Function(Loadingdone value)? loadingdone,
-    TResult? Function(Successdone value)? successdone,
-    TResult? Function(Erorrdone value)? erorrdone,
-    TResult? Function(Loadingshipped value)? loadingshipped,
-    TResult? Function(Successshipped value)? successshipped,
-    TResult? Function(Erorrshipped value)? erorrshipped,
+    TResult? Function(LoadingUpdate value)? loadingUpdate,
+    TResult? Function(SuccessUpdate value)? successUpdate,
+    TResult? Function(ErorrUpdate value)? erorrUpdate,
     TResult? Function(Loadingviewdetails value)? loadingviewdetails,
     TResult? Function(successviewdetails value)? successviewdetails,
     TResult? Function(Erorrviewdetails value)? erorrviewdetails,
@@ -10823,18 +6623,9 @@ class _$LoadingviewshippedImpl implements Loadingviewshipped {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingapprove value)? loadingapprove,
-    TResult Function(Successapprove value)? successapprove,
-    TResult Function(Erorrapprove value)? erorrapprove,
-    TResult Function(Loadingprepare value)? loadingprepare,
-    TResult Function(Successprepare value)? successprepare,
-    TResult Function(Erorrprepare value)? erorrprepare,
-    TResult Function(Loadingdone value)? loadingdone,
-    TResult Function(Successdone value)? successdone,
-    TResult Function(Erorrdone value)? erorrdone,
-    TResult Function(Loadingshipped value)? loadingshipped,
-    TResult Function(Successshipped value)? successshipped,
-    TResult Function(Erorrshipped value)? erorrshipped,
+    TResult Function(LoadingUpdate value)? loadingUpdate,
+    TResult Function(SuccessUpdate value)? successUpdate,
+    TResult Function(ErorrUpdate value)? erorrUpdate,
     TResult Function(Loadingviewdetails value)? loadingviewdetails,
     TResult Function(successviewdetails value)? successviewdetails,
     TResult Function(Erorrviewdetails value)? erorrviewdetails,
@@ -10946,18 +6737,9 @@ class _$successviewshippedImpl implements successviewshipped {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingapprove,
-    required TResult Function() successapprove,
-    required TResult Function(String erorr) erorrapprove,
-    required TResult Function() loadingprepare,
-    required TResult Function() successprepare,
-    required TResult Function(String erorr) erorrprepare,
-    required TResult Function() loadingdone,
-    required TResult Function() successdone,
-    required TResult Function(String erorr) erorrdone,
-    required TResult Function() loadingshipped,
-    required TResult Function() successshipped,
-    required TResult Function(String erorr) erorrshipped,
+    required TResult Function() loadingUpdate,
+    required TResult Function() successUpdate,
+    required TResult Function(String erorr) erorrUpdate,
     required TResult Function() loadingviewdetails,
     required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
@@ -10991,18 +6773,9 @@ class _$successviewshippedImpl implements successviewshipped {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingapprove,
-    TResult? Function()? successapprove,
-    TResult? Function(String erorr)? erorrapprove,
-    TResult? Function()? loadingprepare,
-    TResult? Function()? successprepare,
-    TResult? Function(String erorr)? erorrprepare,
-    TResult? Function()? loadingdone,
-    TResult? Function()? successdone,
-    TResult? Function(String erorr)? erorrdone,
-    TResult? Function()? loadingshipped,
-    TResult? Function()? successshipped,
-    TResult? Function(String erorr)? erorrshipped,
+    TResult? Function()? loadingUpdate,
+    TResult? Function()? successUpdate,
+    TResult? Function(String erorr)? erorrUpdate,
     TResult? Function()? loadingviewdetails,
     TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
@@ -11035,18 +6808,9 @@ class _$successviewshippedImpl implements successviewshipped {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingapprove,
-    TResult Function()? successapprove,
-    TResult Function(String erorr)? erorrapprove,
-    TResult Function()? loadingprepare,
-    TResult Function()? successprepare,
-    TResult Function(String erorr)? erorrprepare,
-    TResult Function()? loadingdone,
-    TResult Function()? successdone,
-    TResult Function(String erorr)? erorrdone,
-    TResult Function()? loadingshipped,
-    TResult Function()? successshipped,
-    TResult Function(String erorr)? erorrshipped,
+    TResult Function()? loadingUpdate,
+    TResult Function()? successUpdate,
+    TResult Function(String erorr)? erorrUpdate,
     TResult Function()? loadingviewdetails,
     TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
@@ -11083,18 +6847,9 @@ class _$successviewshippedImpl implements successviewshipped {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingapprove value) loadingapprove,
-    required TResult Function(Successapprove value) successapprove,
-    required TResult Function(Erorrapprove value) erorrapprove,
-    required TResult Function(Loadingprepare value) loadingprepare,
-    required TResult Function(Successprepare value) successprepare,
-    required TResult Function(Erorrprepare value) erorrprepare,
-    required TResult Function(Loadingdone value) loadingdone,
-    required TResult Function(Successdone value) successdone,
-    required TResult Function(Erorrdone value) erorrdone,
-    required TResult Function(Loadingshipped value) loadingshipped,
-    required TResult Function(Successshipped value) successshipped,
-    required TResult Function(Erorrshipped value) erorrshipped,
+    required TResult Function(LoadingUpdate value) loadingUpdate,
+    required TResult Function(SuccessUpdate value) successUpdate,
+    required TResult Function(ErorrUpdate value) erorrUpdate,
     required TResult Function(Loadingviewdetails value) loadingviewdetails,
     required TResult Function(successviewdetails value) successviewdetails,
     required TResult Function(Erorrviewdetails value) erorrviewdetails,
@@ -11127,18 +6882,9 @@ class _$successviewshippedImpl implements successviewshipped {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingapprove value)? loadingapprove,
-    TResult? Function(Successapprove value)? successapprove,
-    TResult? Function(Erorrapprove value)? erorrapprove,
-    TResult? Function(Loadingprepare value)? loadingprepare,
-    TResult? Function(Successprepare value)? successprepare,
-    TResult? Function(Erorrprepare value)? erorrprepare,
-    TResult? Function(Loadingdone value)? loadingdone,
-    TResult? Function(Successdone value)? successdone,
-    TResult? Function(Erorrdone value)? erorrdone,
-    TResult? Function(Loadingshipped value)? loadingshipped,
-    TResult? Function(Successshipped value)? successshipped,
-    TResult? Function(Erorrshipped value)? erorrshipped,
+    TResult? Function(LoadingUpdate value)? loadingUpdate,
+    TResult? Function(SuccessUpdate value)? successUpdate,
+    TResult? Function(ErorrUpdate value)? erorrUpdate,
     TResult? Function(Loadingviewdetails value)? loadingviewdetails,
     TResult? Function(successviewdetails value)? successviewdetails,
     TResult? Function(Erorrviewdetails value)? erorrviewdetails,
@@ -11171,18 +6917,9 @@ class _$successviewshippedImpl implements successviewshipped {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingapprove value)? loadingapprove,
-    TResult Function(Successapprove value)? successapprove,
-    TResult Function(Erorrapprove value)? erorrapprove,
-    TResult Function(Loadingprepare value)? loadingprepare,
-    TResult Function(Successprepare value)? successprepare,
-    TResult Function(Erorrprepare value)? erorrprepare,
-    TResult Function(Loadingdone value)? loadingdone,
-    TResult Function(Successdone value)? successdone,
-    TResult Function(Erorrdone value)? erorrdone,
-    TResult Function(Loadingshipped value)? loadingshipped,
-    TResult Function(Successshipped value)? successshipped,
-    TResult Function(Erorrshipped value)? erorrshipped,
+    TResult Function(LoadingUpdate value)? loadingUpdate,
+    TResult Function(SuccessUpdate value)? successUpdate,
+    TResult Function(ErorrUpdate value)? erorrUpdate,
     TResult Function(Loadingviewdetails value)? loadingviewdetails,
     TResult Function(successviewdetails value)? successviewdetails,
     TResult Function(Erorrviewdetails value)? erorrviewdetails,
@@ -11292,18 +7029,9 @@ class _$ErorrviewshippedImpl implements Erorrviewshipped {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingapprove,
-    required TResult Function() successapprove,
-    required TResult Function(String erorr) erorrapprove,
-    required TResult Function() loadingprepare,
-    required TResult Function() successprepare,
-    required TResult Function(String erorr) erorrprepare,
-    required TResult Function() loadingdone,
-    required TResult Function() successdone,
-    required TResult Function(String erorr) erorrdone,
-    required TResult Function() loadingshipped,
-    required TResult Function() successshipped,
-    required TResult Function(String erorr) erorrshipped,
+    required TResult Function() loadingUpdate,
+    required TResult Function() successUpdate,
+    required TResult Function(String erorr) erorrUpdate,
     required TResult Function() loadingviewdetails,
     required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
@@ -11337,18 +7065,9 @@ class _$ErorrviewshippedImpl implements Erorrviewshipped {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingapprove,
-    TResult? Function()? successapprove,
-    TResult? Function(String erorr)? erorrapprove,
-    TResult? Function()? loadingprepare,
-    TResult? Function()? successprepare,
-    TResult? Function(String erorr)? erorrprepare,
-    TResult? Function()? loadingdone,
-    TResult? Function()? successdone,
-    TResult? Function(String erorr)? erorrdone,
-    TResult? Function()? loadingshipped,
-    TResult? Function()? successshipped,
-    TResult? Function(String erorr)? erorrshipped,
+    TResult? Function()? loadingUpdate,
+    TResult? Function()? successUpdate,
+    TResult? Function(String erorr)? erorrUpdate,
     TResult? Function()? loadingviewdetails,
     TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
@@ -11381,18 +7100,9 @@ class _$ErorrviewshippedImpl implements Erorrviewshipped {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingapprove,
-    TResult Function()? successapprove,
-    TResult Function(String erorr)? erorrapprove,
-    TResult Function()? loadingprepare,
-    TResult Function()? successprepare,
-    TResult Function(String erorr)? erorrprepare,
-    TResult Function()? loadingdone,
-    TResult Function()? successdone,
-    TResult Function(String erorr)? erorrdone,
-    TResult Function()? loadingshipped,
-    TResult Function()? successshipped,
-    TResult Function(String erorr)? erorrshipped,
+    TResult Function()? loadingUpdate,
+    TResult Function()? successUpdate,
+    TResult Function(String erorr)? erorrUpdate,
     TResult Function()? loadingviewdetails,
     TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
@@ -11429,18 +7139,9 @@ class _$ErorrviewshippedImpl implements Erorrviewshipped {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingapprove value) loadingapprove,
-    required TResult Function(Successapprove value) successapprove,
-    required TResult Function(Erorrapprove value) erorrapprove,
-    required TResult Function(Loadingprepare value) loadingprepare,
-    required TResult Function(Successprepare value) successprepare,
-    required TResult Function(Erorrprepare value) erorrprepare,
-    required TResult Function(Loadingdone value) loadingdone,
-    required TResult Function(Successdone value) successdone,
-    required TResult Function(Erorrdone value) erorrdone,
-    required TResult Function(Loadingshipped value) loadingshipped,
-    required TResult Function(Successshipped value) successshipped,
-    required TResult Function(Erorrshipped value) erorrshipped,
+    required TResult Function(LoadingUpdate value) loadingUpdate,
+    required TResult Function(SuccessUpdate value) successUpdate,
+    required TResult Function(ErorrUpdate value) erorrUpdate,
     required TResult Function(Loadingviewdetails value) loadingviewdetails,
     required TResult Function(successviewdetails value) successviewdetails,
     required TResult Function(Erorrviewdetails value) erorrviewdetails,
@@ -11473,18 +7174,9 @@ class _$ErorrviewshippedImpl implements Erorrviewshipped {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingapprove value)? loadingapprove,
-    TResult? Function(Successapprove value)? successapprove,
-    TResult? Function(Erorrapprove value)? erorrapprove,
-    TResult? Function(Loadingprepare value)? loadingprepare,
-    TResult? Function(Successprepare value)? successprepare,
-    TResult? Function(Erorrprepare value)? erorrprepare,
-    TResult? Function(Loadingdone value)? loadingdone,
-    TResult? Function(Successdone value)? successdone,
-    TResult? Function(Erorrdone value)? erorrdone,
-    TResult? Function(Loadingshipped value)? loadingshipped,
-    TResult? Function(Successshipped value)? successshipped,
-    TResult? Function(Erorrshipped value)? erorrshipped,
+    TResult? Function(LoadingUpdate value)? loadingUpdate,
+    TResult? Function(SuccessUpdate value)? successUpdate,
+    TResult? Function(ErorrUpdate value)? erorrUpdate,
     TResult? Function(Loadingviewdetails value)? loadingviewdetails,
     TResult? Function(successviewdetails value)? successviewdetails,
     TResult? Function(Erorrviewdetails value)? erorrviewdetails,
@@ -11517,18 +7209,9 @@ class _$ErorrviewshippedImpl implements Erorrviewshipped {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingapprove value)? loadingapprove,
-    TResult Function(Successapprove value)? successapprove,
-    TResult Function(Erorrapprove value)? erorrapprove,
-    TResult Function(Loadingprepare value)? loadingprepare,
-    TResult Function(Successprepare value)? successprepare,
-    TResult Function(Erorrprepare value)? erorrprepare,
-    TResult Function(Loadingdone value)? loadingdone,
-    TResult Function(Successdone value)? successdone,
-    TResult Function(Erorrdone value)? erorrdone,
-    TResult Function(Loadingshipped value)? loadingshipped,
-    TResult Function(Successshipped value)? successshipped,
-    TResult Function(Erorrshipped value)? erorrshipped,
+    TResult Function(LoadingUpdate value)? loadingUpdate,
+    TResult Function(SuccessUpdate value)? successUpdate,
+    TResult Function(ErorrUpdate value)? erorrUpdate,
     TResult Function(Loadingviewdetails value)? loadingviewdetails,
     TResult Function(successviewdetails value)? successviewdetails,
     TResult Function(Erorrviewdetails value)? erorrviewdetails,
@@ -11612,18 +7295,9 @@ class _$LoadingviewAllOrdersImpl implements LoadingviewAllOrders {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingapprove,
-    required TResult Function() successapprove,
-    required TResult Function(String erorr) erorrapprove,
-    required TResult Function() loadingprepare,
-    required TResult Function() successprepare,
-    required TResult Function(String erorr) erorrprepare,
-    required TResult Function() loadingdone,
-    required TResult Function() successdone,
-    required TResult Function(String erorr) erorrdone,
-    required TResult Function() loadingshipped,
-    required TResult Function() successshipped,
-    required TResult Function(String erorr) erorrshipped,
+    required TResult Function() loadingUpdate,
+    required TResult Function() successUpdate,
+    required TResult Function(String erorr) erorrUpdate,
     required TResult Function() loadingviewdetails,
     required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
@@ -11657,18 +7331,9 @@ class _$LoadingviewAllOrdersImpl implements LoadingviewAllOrders {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingapprove,
-    TResult? Function()? successapprove,
-    TResult? Function(String erorr)? erorrapprove,
-    TResult? Function()? loadingprepare,
-    TResult? Function()? successprepare,
-    TResult? Function(String erorr)? erorrprepare,
-    TResult? Function()? loadingdone,
-    TResult? Function()? successdone,
-    TResult? Function(String erorr)? erorrdone,
-    TResult? Function()? loadingshipped,
-    TResult? Function()? successshipped,
-    TResult? Function(String erorr)? erorrshipped,
+    TResult? Function()? loadingUpdate,
+    TResult? Function()? successUpdate,
+    TResult? Function(String erorr)? erorrUpdate,
     TResult? Function()? loadingviewdetails,
     TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
@@ -11701,18 +7366,9 @@ class _$LoadingviewAllOrdersImpl implements LoadingviewAllOrders {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingapprove,
-    TResult Function()? successapprove,
-    TResult Function(String erorr)? erorrapprove,
-    TResult Function()? loadingprepare,
-    TResult Function()? successprepare,
-    TResult Function(String erorr)? erorrprepare,
-    TResult Function()? loadingdone,
-    TResult Function()? successdone,
-    TResult Function(String erorr)? erorrdone,
-    TResult Function()? loadingshipped,
-    TResult Function()? successshipped,
-    TResult Function(String erorr)? erorrshipped,
+    TResult Function()? loadingUpdate,
+    TResult Function()? successUpdate,
+    TResult Function(String erorr)? erorrUpdate,
     TResult Function()? loadingviewdetails,
     TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
@@ -11749,18 +7405,9 @@ class _$LoadingviewAllOrdersImpl implements LoadingviewAllOrders {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingapprove value) loadingapprove,
-    required TResult Function(Successapprove value) successapprove,
-    required TResult Function(Erorrapprove value) erorrapprove,
-    required TResult Function(Loadingprepare value) loadingprepare,
-    required TResult Function(Successprepare value) successprepare,
-    required TResult Function(Erorrprepare value) erorrprepare,
-    required TResult Function(Loadingdone value) loadingdone,
-    required TResult Function(Successdone value) successdone,
-    required TResult Function(Erorrdone value) erorrdone,
-    required TResult Function(Loadingshipped value) loadingshipped,
-    required TResult Function(Successshipped value) successshipped,
-    required TResult Function(Erorrshipped value) erorrshipped,
+    required TResult Function(LoadingUpdate value) loadingUpdate,
+    required TResult Function(SuccessUpdate value) successUpdate,
+    required TResult Function(ErorrUpdate value) erorrUpdate,
     required TResult Function(Loadingviewdetails value) loadingviewdetails,
     required TResult Function(successviewdetails value) successviewdetails,
     required TResult Function(Erorrviewdetails value) erorrviewdetails,
@@ -11793,18 +7440,9 @@ class _$LoadingviewAllOrdersImpl implements LoadingviewAllOrders {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingapprove value)? loadingapprove,
-    TResult? Function(Successapprove value)? successapprove,
-    TResult? Function(Erorrapprove value)? erorrapprove,
-    TResult? Function(Loadingprepare value)? loadingprepare,
-    TResult? Function(Successprepare value)? successprepare,
-    TResult? Function(Erorrprepare value)? erorrprepare,
-    TResult? Function(Loadingdone value)? loadingdone,
-    TResult? Function(Successdone value)? successdone,
-    TResult? Function(Erorrdone value)? erorrdone,
-    TResult? Function(Loadingshipped value)? loadingshipped,
-    TResult? Function(Successshipped value)? successshipped,
-    TResult? Function(Erorrshipped value)? erorrshipped,
+    TResult? Function(LoadingUpdate value)? loadingUpdate,
+    TResult? Function(SuccessUpdate value)? successUpdate,
+    TResult? Function(ErorrUpdate value)? erorrUpdate,
     TResult? Function(Loadingviewdetails value)? loadingviewdetails,
     TResult? Function(successviewdetails value)? successviewdetails,
     TResult? Function(Erorrviewdetails value)? erorrviewdetails,
@@ -11837,18 +7475,9 @@ class _$LoadingviewAllOrdersImpl implements LoadingviewAllOrders {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingapprove value)? loadingapprove,
-    TResult Function(Successapprove value)? successapprove,
-    TResult Function(Erorrapprove value)? erorrapprove,
-    TResult Function(Loadingprepare value)? loadingprepare,
-    TResult Function(Successprepare value)? successprepare,
-    TResult Function(Erorrprepare value)? erorrprepare,
-    TResult Function(Loadingdone value)? loadingdone,
-    TResult Function(Successdone value)? successdone,
-    TResult Function(Erorrdone value)? erorrdone,
-    TResult Function(Loadingshipped value)? loadingshipped,
-    TResult Function(Successshipped value)? successshipped,
-    TResult Function(Erorrshipped value)? erorrshipped,
+    TResult Function(LoadingUpdate value)? loadingUpdate,
+    TResult Function(SuccessUpdate value)? successUpdate,
+    TResult Function(ErorrUpdate value)? erorrUpdate,
     TResult Function(Loadingviewdetails value)? loadingviewdetails,
     TResult Function(successviewdetails value)? successviewdetails,
     TResult Function(Erorrviewdetails value)? erorrviewdetails,
@@ -11961,18 +7590,9 @@ class _$successviewAllOrdersImpl implements successviewAllOrders {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingapprove,
-    required TResult Function() successapprove,
-    required TResult Function(String erorr) erorrapprove,
-    required TResult Function() loadingprepare,
-    required TResult Function() successprepare,
-    required TResult Function(String erorr) erorrprepare,
-    required TResult Function() loadingdone,
-    required TResult Function() successdone,
-    required TResult Function(String erorr) erorrdone,
-    required TResult Function() loadingshipped,
-    required TResult Function() successshipped,
-    required TResult Function(String erorr) erorrshipped,
+    required TResult Function() loadingUpdate,
+    required TResult Function() successUpdate,
+    required TResult Function(String erorr) erorrUpdate,
     required TResult Function() loadingviewdetails,
     required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
@@ -12006,18 +7626,9 @@ class _$successviewAllOrdersImpl implements successviewAllOrders {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingapprove,
-    TResult? Function()? successapprove,
-    TResult? Function(String erorr)? erorrapprove,
-    TResult? Function()? loadingprepare,
-    TResult? Function()? successprepare,
-    TResult? Function(String erorr)? erorrprepare,
-    TResult? Function()? loadingdone,
-    TResult? Function()? successdone,
-    TResult? Function(String erorr)? erorrdone,
-    TResult? Function()? loadingshipped,
-    TResult? Function()? successshipped,
-    TResult? Function(String erorr)? erorrshipped,
+    TResult? Function()? loadingUpdate,
+    TResult? Function()? successUpdate,
+    TResult? Function(String erorr)? erorrUpdate,
     TResult? Function()? loadingviewdetails,
     TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
@@ -12050,18 +7661,9 @@ class _$successviewAllOrdersImpl implements successviewAllOrders {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingapprove,
-    TResult Function()? successapprove,
-    TResult Function(String erorr)? erorrapprove,
-    TResult Function()? loadingprepare,
-    TResult Function()? successprepare,
-    TResult Function(String erorr)? erorrprepare,
-    TResult Function()? loadingdone,
-    TResult Function()? successdone,
-    TResult Function(String erorr)? erorrdone,
-    TResult Function()? loadingshipped,
-    TResult Function()? successshipped,
-    TResult Function(String erorr)? erorrshipped,
+    TResult Function()? loadingUpdate,
+    TResult Function()? successUpdate,
+    TResult Function(String erorr)? erorrUpdate,
     TResult Function()? loadingviewdetails,
     TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
@@ -12098,18 +7700,9 @@ class _$successviewAllOrdersImpl implements successviewAllOrders {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingapprove value) loadingapprove,
-    required TResult Function(Successapprove value) successapprove,
-    required TResult Function(Erorrapprove value) erorrapprove,
-    required TResult Function(Loadingprepare value) loadingprepare,
-    required TResult Function(Successprepare value) successprepare,
-    required TResult Function(Erorrprepare value) erorrprepare,
-    required TResult Function(Loadingdone value) loadingdone,
-    required TResult Function(Successdone value) successdone,
-    required TResult Function(Erorrdone value) erorrdone,
-    required TResult Function(Loadingshipped value) loadingshipped,
-    required TResult Function(Successshipped value) successshipped,
-    required TResult Function(Erorrshipped value) erorrshipped,
+    required TResult Function(LoadingUpdate value) loadingUpdate,
+    required TResult Function(SuccessUpdate value) successUpdate,
+    required TResult Function(ErorrUpdate value) erorrUpdate,
     required TResult Function(Loadingviewdetails value) loadingviewdetails,
     required TResult Function(successviewdetails value) successviewdetails,
     required TResult Function(Erorrviewdetails value) erorrviewdetails,
@@ -12142,18 +7735,9 @@ class _$successviewAllOrdersImpl implements successviewAllOrders {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingapprove value)? loadingapprove,
-    TResult? Function(Successapprove value)? successapprove,
-    TResult? Function(Erorrapprove value)? erorrapprove,
-    TResult? Function(Loadingprepare value)? loadingprepare,
-    TResult? Function(Successprepare value)? successprepare,
-    TResult? Function(Erorrprepare value)? erorrprepare,
-    TResult? Function(Loadingdone value)? loadingdone,
-    TResult? Function(Successdone value)? successdone,
-    TResult? Function(Erorrdone value)? erorrdone,
-    TResult? Function(Loadingshipped value)? loadingshipped,
-    TResult? Function(Successshipped value)? successshipped,
-    TResult? Function(Erorrshipped value)? erorrshipped,
+    TResult? Function(LoadingUpdate value)? loadingUpdate,
+    TResult? Function(SuccessUpdate value)? successUpdate,
+    TResult? Function(ErorrUpdate value)? erorrUpdate,
     TResult? Function(Loadingviewdetails value)? loadingviewdetails,
     TResult? Function(successviewdetails value)? successviewdetails,
     TResult? Function(Erorrviewdetails value)? erorrviewdetails,
@@ -12186,18 +7770,9 @@ class _$successviewAllOrdersImpl implements successviewAllOrders {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingapprove value)? loadingapprove,
-    TResult Function(Successapprove value)? successapprove,
-    TResult Function(Erorrapprove value)? erorrapprove,
-    TResult Function(Loadingprepare value)? loadingprepare,
-    TResult Function(Successprepare value)? successprepare,
-    TResult Function(Erorrprepare value)? erorrprepare,
-    TResult Function(Loadingdone value)? loadingdone,
-    TResult Function(Successdone value)? successdone,
-    TResult Function(Erorrdone value)? erorrdone,
-    TResult Function(Loadingshipped value)? loadingshipped,
-    TResult Function(Successshipped value)? successshipped,
-    TResult Function(Erorrshipped value)? erorrshipped,
+    TResult Function(LoadingUpdate value)? loadingUpdate,
+    TResult Function(SuccessUpdate value)? successUpdate,
+    TResult Function(ErorrUpdate value)? erorrUpdate,
     TResult Function(Loadingviewdetails value)? loadingviewdetails,
     TResult Function(successviewdetails value)? successviewdetails,
     TResult Function(Erorrviewdetails value)? erorrviewdetails,
@@ -12307,18 +7882,9 @@ class _$ErorrviewAllOrdersImpl implements ErorrviewAllOrders {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() loadingapprove,
-    required TResult Function() successapprove,
-    required TResult Function(String erorr) erorrapprove,
-    required TResult Function() loadingprepare,
-    required TResult Function() successprepare,
-    required TResult Function(String erorr) erorrprepare,
-    required TResult Function() loadingdone,
-    required TResult Function() successdone,
-    required TResult Function(String erorr) erorrdone,
-    required TResult Function() loadingshipped,
-    required TResult Function() successshipped,
-    required TResult Function(String erorr) erorrshipped,
+    required TResult Function() loadingUpdate,
+    required TResult Function() successUpdate,
+    required TResult Function(String erorr) erorrUpdate,
     required TResult Function() loadingviewdetails,
     required TResult Function(List<DataDetails> responseDetails)
         successviewdetails,
@@ -12352,18 +7918,9 @@ class _$ErorrviewAllOrdersImpl implements ErorrviewAllOrders {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? loadingapprove,
-    TResult? Function()? successapprove,
-    TResult? Function(String erorr)? erorrapprove,
-    TResult? Function()? loadingprepare,
-    TResult? Function()? successprepare,
-    TResult? Function(String erorr)? erorrprepare,
-    TResult? Function()? loadingdone,
-    TResult? Function()? successdone,
-    TResult? Function(String erorr)? erorrdone,
-    TResult? Function()? loadingshipped,
-    TResult? Function()? successshipped,
-    TResult? Function(String erorr)? erorrshipped,
+    TResult? Function()? loadingUpdate,
+    TResult? Function()? successUpdate,
+    TResult? Function(String erorr)? erorrUpdate,
     TResult? Function()? loadingviewdetails,
     TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult? Function(String erorr)? erorrviewdetails,
@@ -12396,18 +7953,9 @@ class _$ErorrviewAllOrdersImpl implements ErorrviewAllOrders {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? loadingapprove,
-    TResult Function()? successapprove,
-    TResult Function(String erorr)? erorrapprove,
-    TResult Function()? loadingprepare,
-    TResult Function()? successprepare,
-    TResult Function(String erorr)? erorrprepare,
-    TResult Function()? loadingdone,
-    TResult Function()? successdone,
-    TResult Function(String erorr)? erorrdone,
-    TResult Function()? loadingshipped,
-    TResult Function()? successshipped,
-    TResult Function(String erorr)? erorrshipped,
+    TResult Function()? loadingUpdate,
+    TResult Function()? successUpdate,
+    TResult Function(String erorr)? erorrUpdate,
     TResult Function()? loadingviewdetails,
     TResult Function(List<DataDetails> responseDetails)? successviewdetails,
     TResult Function(String erorr)? erorrviewdetails,
@@ -12444,18 +7992,9 @@ class _$ErorrviewAllOrdersImpl implements ErorrviewAllOrders {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(Loadingapprove value) loadingapprove,
-    required TResult Function(Successapprove value) successapprove,
-    required TResult Function(Erorrapprove value) erorrapprove,
-    required TResult Function(Loadingprepare value) loadingprepare,
-    required TResult Function(Successprepare value) successprepare,
-    required TResult Function(Erorrprepare value) erorrprepare,
-    required TResult Function(Loadingdone value) loadingdone,
-    required TResult Function(Successdone value) successdone,
-    required TResult Function(Erorrdone value) erorrdone,
-    required TResult Function(Loadingshipped value) loadingshipped,
-    required TResult Function(Successshipped value) successshipped,
-    required TResult Function(Erorrshipped value) erorrshipped,
+    required TResult Function(LoadingUpdate value) loadingUpdate,
+    required TResult Function(SuccessUpdate value) successUpdate,
+    required TResult Function(ErorrUpdate value) erorrUpdate,
     required TResult Function(Loadingviewdetails value) loadingviewdetails,
     required TResult Function(successviewdetails value) successviewdetails,
     required TResult Function(Erorrviewdetails value) erorrviewdetails,
@@ -12488,18 +8027,9 @@ class _$ErorrviewAllOrdersImpl implements ErorrviewAllOrders {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(Loadingapprove value)? loadingapprove,
-    TResult? Function(Successapprove value)? successapprove,
-    TResult? Function(Erorrapprove value)? erorrapprove,
-    TResult? Function(Loadingprepare value)? loadingprepare,
-    TResult? Function(Successprepare value)? successprepare,
-    TResult? Function(Erorrprepare value)? erorrprepare,
-    TResult? Function(Loadingdone value)? loadingdone,
-    TResult? Function(Successdone value)? successdone,
-    TResult? Function(Erorrdone value)? erorrdone,
-    TResult? Function(Loadingshipped value)? loadingshipped,
-    TResult? Function(Successshipped value)? successshipped,
-    TResult? Function(Erorrshipped value)? erorrshipped,
+    TResult? Function(LoadingUpdate value)? loadingUpdate,
+    TResult? Function(SuccessUpdate value)? successUpdate,
+    TResult? Function(ErorrUpdate value)? erorrUpdate,
     TResult? Function(Loadingviewdetails value)? loadingviewdetails,
     TResult? Function(successviewdetails value)? successviewdetails,
     TResult? Function(Erorrviewdetails value)? erorrviewdetails,
@@ -12532,18 +8062,9 @@ class _$ErorrviewAllOrdersImpl implements ErorrviewAllOrders {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(Loadingapprove value)? loadingapprove,
-    TResult Function(Successapprove value)? successapprove,
-    TResult Function(Erorrapprove value)? erorrapprove,
-    TResult Function(Loadingprepare value)? loadingprepare,
-    TResult Function(Successprepare value)? successprepare,
-    TResult Function(Erorrprepare value)? erorrprepare,
-    TResult Function(Loadingdone value)? loadingdone,
-    TResult Function(Successdone value)? successdone,
-    TResult Function(Erorrdone value)? erorrdone,
-    TResult Function(Loadingshipped value)? loadingshipped,
-    TResult Function(Successshipped value)? successshipped,
-    TResult Function(Erorrshipped value)? erorrshipped,
+    TResult Function(LoadingUpdate value)? loadingUpdate,
+    TResult Function(SuccessUpdate value)? successUpdate,
+    TResult Function(ErorrUpdate value)? erorrUpdate,
     TResult Function(Loadingviewdetails value)? loadingviewdetails,
     TResult Function(successviewdetails value)? successviewdetails,
     TResult Function(Erorrviewdetails value)? erorrviewdetails,

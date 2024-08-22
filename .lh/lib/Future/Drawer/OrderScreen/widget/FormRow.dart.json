@@ -1,0 +1,18 @@
+{
+    "sourceFile": "lib/Future/Drawer/OrderScreen/widget/FormRow.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1724066129519,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1724066129518,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\r\n\r\nclass FormRow extends StatelessWidget {\r\n  const FormRow({\r\n    super.key,\r\n    required this.text,\r\n    required this.widget,\r\n  });\r\n  final String text;\r\n  final Widget widget;\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return Padding(\r\n      padding: const EdgeInsets.symmetric(vertical: 8),\r\n      child: Row(\r\n        mainAxisAlignment: MainAxisAlignment.spaceBetween,\r\n        children: [\r\n          Expanded(\r\n              flex: 1,\r\n              child: Text(text,\r\n              overflow: TextOverflow.ellipsis,\r\n                  style: const TextStyle(\r\n                      fontWeight: FontWeight.bold, fontSize: 16))),\r\n          Expanded(flex: 2, child: widget),\r\n        ],\r\n      ),\r\n    );\r\n  }\r\n}\r\n"
+        }
+    ]
+}

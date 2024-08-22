@@ -114,45 +114,45 @@ class OrdersCubit extends Cubit<OrdersState> {
 
   ///:approve
   approve(int orderid, int userid) async {
-    emit(const OrdersState.loadingapprove());
+    emit(const OrdersState.loadingUpdate());
     final response = await _ordersRepo.approve(orderid, userid);
     response.when(success: (data) {
-      emit(const OrdersState.successapprove());
+      emit(const OrdersState.successUpdate());
     }, failure: (error) {
-      emit(OrdersState.erorrapprove(erorr: error.messege ?? ''));
+      emit(OrdersState.erorrUpdate(erorr: error.messege ?? ''));
     });
   }
 
   ///:prepare
   prepare(int orderid, int userid, int type) async {
-    emit(const OrdersState.loadingprepare());
+    emit(const OrdersState.loadingUpdate());
     final response = await _ordersRepo.prepare(type, orderid, userid);
     response.when(success: (data) {
-      emit(const OrdersState.successprepare());
+      emit(const OrdersState.successUpdate());
     }, failure: (error) {
-      emit(OrdersState.erorrprepare(erorr: error.messege ?? ''));
+      emit(OrdersState.erorrUpdate(erorr: error.messege ?? ''));
     });
   }
 
   ///:done
   done(int orderid, int userid) async {
-    emit(const OrdersState.loadingdone());
+    emit(const OrdersState.loadingUpdate());
     final response = await _ordersRepo.done(orderid, userid);
     response.when(success: (data) {
-      emit(const OrdersState.successdone());
+      emit(const OrdersState.successUpdate());
     }, failure: (error) {
-      emit(OrdersState.erorrdone(erorr: error.messege ?? ''));
+      emit(OrdersState.erorrUpdate(erorr: error.messege ?? ''));
     });
   }
 
   ///:shipped
   shipped(int orderid, int userid) async {
-    emit(const OrdersState.loadingshipped());
+    emit(const OrdersState.loadingUpdate());
     final response = await _ordersRepo.shipped(orderid, userid);
     response.when(success: (data) {
-      emit(const OrdersState.successshipped());
+      emit(const OrdersState.successUpdate());
     }, failure: (error) {
-      emit(OrdersState.erorrshipped(erorr: error.messege ?? ''));
+      emit(OrdersState.erorrUpdate(erorr: error.messege ?? ''));
     });
   }
 
@@ -221,7 +221,7 @@ class OrdersCubit extends Cubit<OrdersState> {
 
       emit(OrdersState.successviewdone(data.data ?? []));
     }, failure: (error) {
-      emit(OrdersState.erorrdone(erorr: error.messege ?? ''));
+      emit(OrdersState.erorrviewdone(erorr: error.messege ?? ''));
     });
   }
 
