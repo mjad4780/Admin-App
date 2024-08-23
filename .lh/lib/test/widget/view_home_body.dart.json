@@ -1,0 +1,26 @@
+{
+    "sourceFile": "lib/test/widget/view_home_body.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1724323923617,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1724323955076,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,14 @@\n import 'package:flutter/material.dart';\r\n \r\n+import 'sliver_card.dart';\r\n+\r\n class ViewHomeBody extends StatelessWidget {\r\n   const ViewHomeBody({super.key});\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return const CustomScrollView(\r\n-      slivers: [],\r\n+      slivers: [SliverCard()],\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1724324219333,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,14 @@\n   const ViewHomeBody({super.key});\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return const CustomScrollView(\r\n-      slivers: [SliverCard()],\r\n+    return Padding(\r\n+      padding: const EdgeInsets.symmetric(horizontal: 16),\r\n+      child: const CustomScrollView(\r\n+        slivers: [\r\n+          SliverToBoxAdapter(child: SizedBox(height: 16,),),\r\n+          SliverCard()],\r\n+      ),\r\n     );\r\n   }\r\n }\r\n"
+                }
+            ],
+            "date": 1724323923617,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\r\n\r\nclass ViewHomeBody extends StatelessWidget {\r\n  const ViewHomeBody({super.key});\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return CustomScrollView(slivers: [],);\r\n  }\r\n}"
+        }
+    ]
+}

@@ -15,10 +15,9 @@ class RowSelectedCategoriesAndColorAndSize extends StatelessWidget {
     return BlocConsumer<DashboardCubit, DashboardState>(
       listener: (context, state) {},
       builder: (context, state) {
-        return Row(
+        return Column(
           children: [
-            Expanded(
-                child: CustomDropdown<SelectCategories>(
+            CustomDropdown<SelectCategories>(
               validator: (value) {
                 if (value?.name == null || value!.name.isEmpty) {
                   return 'Please enter selestnamecategories';
@@ -35,23 +34,19 @@ class RowSelectedCategoriesAndColorAndSize extends StatelessWidget {
                       newValue.id.toString();
                 }
               },
-            )),
-            Expanded(
-              flex: 1,
-              child: MultiSelectDropDown<String>(
-                items: context.read<DashboardCubit>().colors,
-                onSelectionChanged: (List<String?> newValue) {
-                  context.read<DashboardCubit>().selectedcolors =
-                      newValue.cast<String>();
-                },
-                displayItem: (String? item) => item!,
-                selectedItems:
-                    context.read<DashboardCubit>().selectedcolors ?? [],
-                title: 'Selected Colors',
-              ),
             ),
-            Expanded(
-                child: MultiSelectDropDown<String>(
+            MultiSelectDropDown<String>(
+              items: context.read<DashboardCubit>().colors,
+              onSelectionChanged: (List<String?> newValue) {
+                context.read<DashboardCubit>().selectedcolors =
+                    newValue.cast<String>();
+              },
+              displayItem: (String? item) => item!,
+              selectedItems:
+                  context.read<DashboardCubit>().selectedcolors ?? [],
+              title: 'Selected Colors',
+            ),
+            MultiSelectDropDown<String>(
               items: context.read<DashboardCubit>().sizes,
               onSelectionChanged: (List<String?>? newValue) {
                 context.read<DashboardCubit>().selectedSize =
@@ -60,7 +55,7 @@ class RowSelectedCategoriesAndColorAndSize extends StatelessWidget {
               displayItem: (String? item) => item!,
               selectedItems: context.read<DashboardCubit>().selectedSize ?? [],
               title: 'selected Sizes',
-            )),
+            ),
           ],
         );
       },

@@ -1,0 +1,26 @@
+{
+    "sourceFile": "lib/test_responsive.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1724316207529,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1724316330177,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   const TestResponsive({super.key});\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return const MaterialApp(\r\n-      home: Scaffold(),\r\n+    return  MaterialApp(\r\n+      home: Scaffold(body: Center(child:  Text('hello world')),),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1724316751052,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,11 +4,13 @@\n   const TestResponsive({super.key});\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return const MaterialApp(\r\n+    return  MaterialApp(\r\n       home: Scaffold(\r\n-        body: Center(child: Text('hello world')),\r\n+        body: Column(\r\n+          children: [Container(width: 200,height: 200,color: Colors.red,)],\r\n+        )\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                }
+            ],
+            "date": 1724316207529,
+            "name": "Commit-0",
+            "content": "\r\n\r\nimport 'package:flutter/material.dart';\r\n\r\n\r\nclass TestResponsive extends StatelessWidget {\r\n  const TestResponsive({super.key});\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return MaterialApp(\r\n     \r\n    home: Scaffold(),\r\n    );\r\n  }\r\n}\r\n"
+        }
+    ]
+}

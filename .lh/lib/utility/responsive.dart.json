@@ -1,0 +1,18 @@
+{
+    "sourceFile": "lib/utility/responsive.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1724317688916,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1724317688916,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\n\nclass Responsive extends StatelessWidget {\n  final Widget mobile;\n  final Widget? tablet;\n  final Widget desktop;\n\n  const Responsive({\n    Key? key,\n    required this.mobile,\n    this.tablet,\n    required this.desktop,\n  }) : super(key: key);\n\n// This size work fine on my design, maybe you need some customization depends on your design\n\n  // This isMobile, isTablet, isDesktop help us later\n  static bool isMobile(BuildContext context) =>\n      MediaQuery.of(context).size.width < 850;\n\n  static bool isTablet(BuildContext context) =>\n      MediaQuery.of(context).size.width < 1100 &&\n      MediaQuery.of(context).size.width >= 850;\n\n  static bool isDesktop(BuildContext context) =>\n      MediaQuery.of(context).size.width >= 1100;\n\n  @override\n  Widget build(BuildContext context) {\n    final Size _size = MediaQuery.of(context).size;\n    // If our width is more than 1100 then we consider it a desktop\n    if (_size.width >= 1100) {\n      return desktop;\n    }\n    // If width it less then 1100 and more then 850 we consider it as tablet\n    else if (_size.width >= 850 && tablet != null) {\n      return tablet!;\n    }\n    // Or less then that we called it mobile\n    else {\n      return mobile;\n    }\n  }\n}\n"
+        }
+    ]
+}

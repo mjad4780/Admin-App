@@ -1,0 +1,22 @@
+{
+    "sourceFile": "lib/main.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1724316207527,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1724323464505,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n import 'package:untitled/firebase_options.dart';\r\n import 'package:firebase_core/firebase_core.dart';\r\n import 'package:flutter/material.dart';\r\n import 'package:flutter_bloc/flutter_bloc.dart';\r\n+import 'package:untitled/test/view_home.dart';\r\n \r\n // import 'app/admin_app.dart';\r\n import 'core/class/observer.dart';\r\n \r\n@@ -17,6 +18,6 @@\n   );\r\n   setupServise();\r\n   Bloc.observer = MyBlocObserver();\r\n   await getIt<CacheHelper>().init();\r\n-  runApp(const TestResponsive());\r\n+  runApp(const Home());\r\n }\r\n"
+                }
+            ],
+            "date": 1724316207527,
+            "name": "Commit-0",
+            "content": "import 'package:untitled/firebase_options.dart';\r\nimport 'package:firebase_core/firebase_core.dart';\r\nimport 'package:flutter/material.dart';\r\nimport 'package:flutter_bloc/flutter_bloc.dart';\r\n\r\n// import 'app/admin_app.dart';\r\nimport 'core/class/observer.dart';\r\n\r\nimport 'core/class/cache_helper.dart';\r\nimport 'core/get_it/get_it.dart';\r\nimport 'test_responsive.dart';\r\n\r\nvoid main() async {\r\n  WidgetsFlutterBinding.ensureInitialized();\r\n  await Firebase.initializeApp(\r\n    options: DefaultFirebaseOptions.currentPlatform,\r\n  );\r\n  setupServise();\r\n  Bloc.observer = MyBlocObserver();\r\n  await getIt<CacheHelper>().init();\r\n  runApp(const TestResponsive());\r\n}\r\n"
+        }
+    ]
+}

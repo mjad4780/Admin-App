@@ -1,8 +1,11 @@
+import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../Future/mainScreen/logic/main_cubit/main_cubit.dart';
 import '../core/constans/icons.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import '../utility/constants.dart';
+import '../utility/size_config.dart';
 
 class Header extends StatelessWidget {
   const Header({
@@ -11,58 +14,47 @@ class Header extends StatelessWidget {
   });
 
   final String title;
+
+  // final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Text(
-          title,
-          style: Theme.of(context).textTheme.titleLarge,
+        Row(
+          children: [
+            if (MediaQuery.sizeOf(context).width <= SizeConfig.desktop)
+              // if (MediaQuery.sizeOf(context).width <= SizeConfig.tablet)
+              IconButton(
+                  onPressed: () {
+                    context
+                        .read<MainCubit>()
+                        .scaffoldKey
+                        .currentState!
+                        .openDrawer();
+                  },
+                  icon: const Icon(Icons.menu)),
+            if (MediaQuery.sizeOf(context).width > 400)
+              Text(
+                title,
+                style: Theme.of(context).textTheme.titleLarge,
+              ),
+          ],
         ),
-        const Spacer(flex: 2),
-        Expanded(child: SearchField(
-          onChange: (val) {
-            //TODO: should complete call filterCategories
-          },
-        )),
-        const ProfileCard()
+        const SizedBox(
+          width: 11,
+        ),
+        const Spacer(
+          flex: 1,
+        ),
+        Expanded(
+            flex: 2,
+            child: SearchField(
+              onChange: (val) {
+                //TODO: should complete call filterCategories
+              },
+            )),
+        // const ProfileCard()
       ],
-    );
-  }
-}
-
-class ProfileCard extends StatelessWidget {
-  const ProfileCard({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.only(left: defaultPadding),
-      padding: const EdgeInsets.symmetric(
-        horizontal: defaultPadding,
-        vertical: defaultPadding / 2,
-      ),
-      decoration: BoxDecoration(
-        color: secondaryColor,
-        borderRadius: const BorderRadius.all(Radius.circular(10)),
-        border: Border.all(color: Colors.white10),
-      ),
-      child: Row(
-        children: [
-          Image.asset(
-            "assets/images/profile_pic.png",
-            height: 38,
-          ),
-          const Padding(
-            padding: EdgeInsets.symmetric(horizontal: defaultPadding / 2),
-            child: Text("Angelina Jolie"),
-          ),
-          IconButton(
-              onPressed: () {}, icon: const Icon(Icons.keyboard_arrow_down)),
-        ],
-      ),
     );
   }
 }

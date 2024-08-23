@@ -9,11 +9,12 @@ class ProductImageCard extends StatelessWidget {
   final VoidCallback onTap;
   final VoidCallback? onRemoveImage;
   final String ifcondition;
-
+  final double? size;
   const ProductImageCard({
     super.key,
     required this.labelText,
     this.imageFile,
+    this.size,
     required this.onTap,
     this.imageUrlForUpdateImage,
     this.onRemoveImage,
@@ -22,14 +23,14 @@ class ProductImageCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var size = MediaQuery.of(context).size;
+    var size1 = MediaQuery.of(context).size;
     return Stack(
       alignment: Alignment.topRight,
       children: [
         Card(
           child: Container(
             height: 130,
-            width: size.width * 0.12,
+            width: size ?? size1.width * 0.10,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(8),
               color: Colors.grey[200],

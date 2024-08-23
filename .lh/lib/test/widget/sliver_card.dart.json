@@ -1,0 +1,26 @@
+{
+    "sourceFile": "lib/test/widget/sliver_card.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1724323800197,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1724323864220,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     return SliverGrid.builder(\r\n       gridDelegate:\r\n           const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),\r\n       itemBuilder: (BuildContext context, int index) {\r\n-        return null;\r\n+        return Container(padding: EdgeInsets.all(11),color: Colors.white30,);\r\n       },\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1724323923630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,10 @@\n           const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),\r\n       itemBuilder: (BuildContext context, int index) {\r\n         return Container(\r\n           padding: const EdgeInsets.all(11),\r\n-          color: Colors.white30,\r\n+          decoration: BoxDecoration(   borderRadius: BorderRadius.circular(20),       color: Colors.white30,\r\n+),\r\n         );\r\n       },\r\n     );\r\n   }\r\n"
+                }
+            ],
+            "date": 1724323800197,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\r\n\r\nclass SliverCard extends StatelessWidget {\r\n  const SliverCard({super.key});\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return SliverGrid.builder(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2), itemBuilder: (BuildContext context, int index) {  },);\r\n  }\r\n}"
+        }
+    ]
+}

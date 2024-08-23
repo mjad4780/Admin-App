@@ -1,0 +1,26 @@
+{
+    "sourceFile": "lib/test/view_home.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1724323464450,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1724323493567,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,13 +6,13 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return MaterialApp(\r\n         home: Scaffold(\r\n-      backgroundColor: Colors.black,\r\n+      backgroundColor: Colors.white60,\r\n       appBar: AppBar(\r\n         leading: const Icon(\r\n           Icons.menu,\r\n-          color: Colors.white,\r\n+          color: Colors.black,\r\n         ),\r\n       ),\r\n     ));\r\n   }\r\n"
+                },
+                {
+                    "date": 1724323502301,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return MaterialApp(\r\n         home: Scaffold(\r\n-      backgroundColor: Colors.white60,\r\n+      backgroundColor: Colors.white30,\r\n       appBar: AppBar(\r\n         leading: const Icon(\r\n           Icons.menu,\r\n           color: Colors.black,\r\n"
+                }
+            ],
+            "date": 1724323464450,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\r\n\r\nclass Home extends StatelessWidget {\r\n  const Home({super.key});\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return MaterialApp(\r\n        home: Scaffold(\r\n          backgroundColor: Colors.black,\r\n          appBar: AppBar(leading: Icon(Icons.menu,color: Colors.white,),),\r\n          )\r\n    );\r\n  }\r\n}\r\n\r\n"
+        }
+    ]
+}

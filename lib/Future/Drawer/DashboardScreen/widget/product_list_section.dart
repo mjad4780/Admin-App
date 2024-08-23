@@ -5,6 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../utility/constants.dart';
 import 'package:flutter/material.dart';
 
+import 'add_product2.dart';
 import 'add_product_form.dart';
 import 'productDataRow.dart';
 import 'show_add.dart';
@@ -23,7 +24,8 @@ class ProductListSection extends StatelessWidget {
       return BlocProvider.value(
         value: dashpord,
         child: Container(
-          padding: const EdgeInsets.all(defaultPadding),
+          padding: EdgeInsets.all(
+              MediaQuery.sizeOf(context).width >= 425 ? defaultPadding : 2),
           decoration: const BoxDecoration(
             color: secondaryColor,
             borderRadius: BorderRadius.all(Radius.circular(10)),
@@ -47,24 +49,18 @@ class ProductListSection extends StatelessWidget {
                           overflow: TextOverflow.ellipsis,
                         ),
                       ),
-                      DataColumn(
-                        label: Text(
-                          "Category",
-                          overflow: TextOverflow.ellipsis,
-                        ),
-                      ),
-                      DataColumn(
-                        label: Text(
-                          " Items Count",
-                          overflow: TextOverflow.ellipsis,
-                        ),
-                      ),
-                      DataColumn(
-                        label: Text(
-                          "Price",
-                          overflow: TextOverflow.ellipsis,
-                        ),
-                      ),
+                      // DataColumn(
+                      //   label: Text(
+                      //     " Items Count",
+                      //     overflow: TextOverflow.ellipsis,
+                      //   ),
+                      // ),
+                      // DataColumn(
+                      //   label: Text(
+                      //     "Price",
+                      //     overflow: TextOverflow.ellipsis,
+                      //   ),
+                      // ),
                       DataColumn(
                         label: Text(
                           "Edit",
@@ -81,16 +77,27 @@ class ProductListSection extends StatelessWidget {
                     rows: List.generate(
                       items.length,
                       (index) => productDataRow(
+                        context,
                         items[index],
                         edit: () {
                           context.read<DashboardCubit>().pushEdit(items[index]);
-                          showAddProductForm(context, ProductSubmitForm(
-                            onPressed: () {
-                              context
-                                  .read<DashboardCubit>()
-                                  .editItems(items[index].itemId!);
-                            },
-                          ));
+                          showAddProductForm(
+                              context,
+                              MediaQuery.sizeOf(context).width <= 500
+                                  ? ProductSubmitForm2(
+                                      onPressed: () {
+                                        context
+                                            .read<DashboardCubit>()
+                                            .editItems(items[index].itemId!);
+                                      },
+                                    )
+                                  : ProductSubmitForm(
+                                      onPressed: () {
+                                        context
+                                            .read<DashboardCubit>()
+                                            .editItems(items[index].itemId!);
+                                      },
+                                    ));
                         },
                         delete: () {
                           //TODO: should complete call deleteProduct

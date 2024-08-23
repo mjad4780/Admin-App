@@ -25,7 +25,7 @@ class ProductSummerySection extends StatelessWidget {
             shrinkWrap: true,
             itemCount: listCardSummeryInfo(context).length,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 4,
+              crossAxisCount: MediaQuery.sizeOf(context).width >= 585 ? 4 : 2,
               crossAxisSpacing: defaultPadding,
               mainAxisSpacing: defaultPadding,
               childAspectRatio: size.width < 1400 ? 1.1 : 1.4,
