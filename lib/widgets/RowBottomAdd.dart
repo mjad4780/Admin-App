@@ -8,29 +8,34 @@ class RowBotttomAdd extends StatelessWidget {
   final void Function()? onPressed;
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        ElevatedButton(
-          style: ElevatedButton.styleFrom(
-            foregroundColor: Colors.white,
-            backgroundColor: secondaryColor,
+    return SingleChildScrollView(
+      scrollDirection: MediaQuery.sizeOf(context).width >= 450
+          ? Axis.vertical
+          : Axis.horizontal,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              foregroundColor: Colors.white,
+              backgroundColor: secondaryColor,
+            ),
+            onPressed: () {
+              Navigator.of(context).pop(); // Close the popup
+            },
+            child: const Text('Cancel'),
           ),
-          onPressed: () {
-            Navigator.of(context).pop(); // Close the popup
-          },
-          child: Text('Cancel'),
-        ),
-        Gap(defaultPadding),
-        ElevatedButton(
-          style: ElevatedButton.styleFrom(
-            foregroundColor: Colors.white,
-            backgroundColor: primaryColor,
+          const Gap(defaultPadding),
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              foregroundColor: Colors.white,
+              backgroundColor: primaryColor,
+            ),
+            onPressed: onPressed,
+            child: const Text('Submit'),
           ),
-          onPressed: onPressed,
-          child: Text('Submit'),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }

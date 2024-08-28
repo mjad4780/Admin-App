@@ -9,6 +9,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../utility/constants.dart';
 import '../../../../widgets/custom_text_field.dart';
+import '../logic/cubit/dashboard_state.dart';
 import 'Add_items/RowSelectedCategoriesAndColorAndSize.dart';
 import 'Add_items/add_items_bloc.dart';
 import 'Add_items/aprrove_items.dart';
@@ -36,21 +37,7 @@ class ProductSubmitForm2 extends StatelessWidget {
           child: Column(
             children: [
               const SizedBox(height: defaultPadding),
-              ProductImageCard(
-                size: 150,
-                labelText: 'Main Image',
-                imageFile: context.read<DashboardCubit>().selectedMainImage,
-                imageUrlForUpdateImage:
-                    '${ApiConstants.imageItem}/${context.read<DashboardCubit>().oldemainimage}',
-                //  '${ApiConstants.imageItem}/${context.read<DashboardCubit>().image}',
-                ifcondition: 'http://localhost/e-ecommerse/upload/item/null',
-                onTap: () {
-                  context.read<DashboardCubit>().pickImage(imageCardNumber: 1);
-                },
-                onRemoveImage: () {
-                  context.read<DashboardCubit>().hhhhhhh(1);
-                },
-              ),
+              mainImage(context),
               const SizedBox(height: defaultPadding),
               CustomTextField(
                 controller: context.read<DashboardCubit>().name,
@@ -129,6 +116,30 @@ class ProductSubmitForm2 extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  BlocConsumer<DashboardCubit, DashboardState> mainImage(BuildContext context) {
+    return BlocConsumer<DashboardCubit, DashboardState>(
+        listener: (context, state) {},
+        buildWhen: (previous, current) =>
+            current is Galer || current is remofgaler,
+        builder: (context, state) {
+          return ProductImageCard(
+            size: 150,
+            labelText: 'Main Image',
+            imageFile: context.read<DashboardCubit>().selectedMainImage,
+            imageUrlForUpdateImage:
+                '${ApiConstants.imageItem}/${context.read<DashboardCubit>().oldemainimage}',
+            //  '${ApiConstants.imageItem}/${context.read<DashboardCubit>().image}',
+            ifcondition: 'http://localhost/e-ecommerse/upload/item/null',
+            onTap: () {
+              context.read<DashboardCubit>().pickImage(imageCardNumber: 1);
+            },
+            onRemoveImage: () {
+              context.read<DashboardCubit>().removeImages(1);
+            },
+          );
+        });
   }
 }
 

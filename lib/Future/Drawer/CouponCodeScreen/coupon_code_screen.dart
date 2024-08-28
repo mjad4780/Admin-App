@@ -54,12 +54,24 @@ class CouponCodeScreen extends StatelessWidget {
                                   ),
                                 ),
                                 onPressed: () {
-                                  showAddForm(context, "Add Coupon",
-                                      CouponSubmitForm(
-                                    onPressed: () {
-                                      context.read<CouponCubit>().addCoupon();
-                                    },
-                                  ));
+                                  showAddForm(
+                                      context,
+                                      "Add Coupon",
+                                      MediaQuery.sizeOf(context).width >= 592.0
+                                          ? CouponSubmitForm(
+                                              onPressed: () {
+                                                context
+                                                    .read<CouponCubit>()
+                                                    .addCoupon();
+                                              },
+                                            )
+                                          : CouponSubmitFormMobile(
+                                              onPressed: () {
+                                                context
+                                                    .read<CouponCubit>()
+                                                    .addCoupon();
+                                              },
+                                            ));
                                 },
                                 icon: const Icon(Icons.add),
                                 label: const Text("Add New"),

@@ -28,7 +28,7 @@ class RowAddImages extends StatelessWidget {
                   context.read<DashboardCubit>().pickImage(imageCardNumber: 1);
                 },
                 onRemoveImage: () {
-                  context.read<DashboardCubit>().hhhhhhh(1);
+                  context.read<DashboardCubit>().removeImages(1);
                 },
               ),
               ProductImageCard(
@@ -41,7 +41,7 @@ class RowAddImages extends StatelessWidget {
                   context.read<DashboardCubit>().pickImage(imageCardNumber: 2);
                 },
                 onRemoveImage: () {
-                  context.read<DashboardCubit>().hhhhhhh(2);
+                  context.read<DashboardCubit>().removeImages(2);
                 },
               ),
               ProductImageCard(
@@ -54,7 +54,7 @@ class RowAddImages extends StatelessWidget {
                   context.read<DashboardCubit>().pickImage(imageCardNumber: 3);
                 },
                 onRemoveImage: () {
-                  context.read<DashboardCubit>().hhhhhhh(3);
+                  context.read<DashboardCubit>().removeImages(3);
                 },
               ),
             ]);

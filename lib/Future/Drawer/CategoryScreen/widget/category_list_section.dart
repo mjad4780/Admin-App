@@ -33,43 +33,45 @@ class CategoryListSection extends StatelessWidget {
           ),
           SizedBox(
             width: double.infinity,
-            child: DataTable(
-              columnSpacing: defaultPadding,
-              // minWidth: 600,
-              columns: const [
-                DataColumn(
-                  label: Text("Category Name"),
+            child: SingleChildScrollView(
+              scrollDirection: MediaQuery.sizeOf(context).width >= 565
+                  ? Axis.vertical
+                  : Axis.horizontal,
+              child: DataTable(
+                columnSpacing: defaultPadding,
+                // minWidth: 600,
+                columns: const [
+                  DataColumn(
+                    label: Text("Category Name"),
+                  ),
+                  DataColumn(
+                    label: Text("Added Date"),
+                  ),
+                  DataColumn(
+                    label: Text("Edit"),
+                  ),
+                  DataColumn(
+                    label: Text("Delete"),
+                  ),
+                ],
+                rows: List.generate(
+                  categories.length,
+                  (index) => categoryDataRow(categories[index], delete: () {},
+                      edit: () {
+                    context
+                        .read<CategoriesCubit>()
+                        .setDataForUpdateCategory(categories[index], context);
+                    showAddForm(
+                      context,
+                      'Edit Categories',
+                      CategorySubmitForm(
+                        onPressed: () => context
+                            .read<CategoriesCubit>()
+                            .editCategories(categories[index].categoriesId!),
+                      ),
+                    );
+                  }),
                 ),
-                DataColumn(
-                  label: Text("Category Name Ar"),
-                ),
-                DataColumn(
-                  label: Text("Added Date"),
-                ),
-                DataColumn(
-                  label: Text("Edit"),
-                ),
-                DataColumn(
-                  label: Text("Delete"),
-                ),
-              ],
-              rows: List.generate(
-                categories.length,
-                (index) =>
-                    categoryDataRow(categories[index], delete: () {}, edit: () {
-                  context
-                      .read<CategoriesCubit>()
-                      .setDataForUpdateCategory(categories[index], context);
-                  showAddForm(
-                    context,
-                    'Edit Categories',
-                    CategorySubmitForm(
-                      onPressed: () => context
-                          .read<CategoriesCubit>()
-                          .editCategories(categories[index].categoriesId!),
-                    ),
-                  );
-                }),
               ),
             ),
           ),

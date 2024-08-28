@@ -9,8 +9,8 @@ import 'package:gap/gap.dart';
 import '../../../../core/networking/api_constants.dart';
 import '../../../../utility/constants.dart';
 import '../../../../widgets/RowBottomAdd.dart';
-import '../../../../core/widgets/category_image_card.dart';
 import '../../../../widgets/custom_text_field.dart';
+import '../../../../widgets/product_image_card.dart';
 
 class PosterSubmitForm extends StatelessWidget {
   const PosterSubmitForm({
@@ -24,11 +24,13 @@ class PosterSubmitForm extends StatelessWidget {
       child: Form(
         key: context.read<PostersCubit>().formstate,
         child: Container(
-          padding: const EdgeInsets.all(defaultPadding),
-          width: size.width * 0.3,
+          // padding: const EdgeInsets.all(defaultPadding),
+          width: MediaQuery.sizeOf(context).width >= 834.0
+              ? size.width * 0.3
+              : size.width,
           decoration: BoxDecoration(
             color: bgColor,
-            borderRadius: BorderRadius.circular(12.0),
+            borderRadius: BorderRadius.circular(9.0),
           ),
           child: Column(
             mainAxisSize: MainAxisSize.min,
@@ -71,7 +73,8 @@ class PosterSubmitForm extends StatelessWidget {
     return BlocConsumer<PostersCubit, PostersState>(
       listener: (context, state) {},
       builder: (context, state) {
-        return CategoryImageCard(
+        return ProductImageCard(
+          size: 150,
           labelText: "Category",
           imageFile: context.read<PostersCubit>().file,
           onTap: () {

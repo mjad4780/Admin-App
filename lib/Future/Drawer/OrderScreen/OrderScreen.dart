@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import '../../../core/function/validator.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -19,8 +17,6 @@ class OrderScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var size = MediaQuery.of(context).size.width;
-    log(size.toString());
     return SafeArea(
         child: SingleChildScrollView(
             // primary: false,

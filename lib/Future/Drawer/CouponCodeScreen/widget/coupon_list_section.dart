@@ -26,42 +26,47 @@ class CouponListSection extends StatelessWidget {
           ),
           SizedBox(
               width: double.infinity,
-              child: DataTable(
-                columnSpacing: defaultPadding,
-                // minWidth: 600,
-                columns: const [
-                  DataColumn(
-                    label: Text("Coupon Name"),
-                  ),
-                  DataColumn(
-                    label: Text("discount"),
-                  ),
-                  DataColumn(
-                    label: Text("MaxUser"),
-                  ),
-                  DataColumn(
-                    label: Text("StartDate"),
-                  ),
-                  DataColumn(
-                    label: Text("EndDate"),
-                  ),
-                ],
-                rows: List.generate(
-                  coupon.length,
-                  (index) => couponDataRow(
-                    coupon[index],
-                    index + 1,
-                    edit: () {
-                      // showAddForm(
-                      //     context,
-                      //     'Edit coupon',
-                      //     CouponSubmitForm(
-                      //       coupon: coupon[index],
-                      //     ));
-                    },
-                    delete: () {
-                      //TODO: should complete call deleteCoupon
-                    },
+              child: SingleChildScrollView(
+                scrollDirection: MediaQuery.sizeOf(context).width >= 750
+                    ? Axis.vertical
+                    : Axis.horizontal,
+                child: DataTable(
+                  columnSpacing: defaultPadding,
+                  // minWidth: 600,
+                  columns: const [
+                    DataColumn(
+                      label: Text("Coupon Name"),
+                    ),
+                    DataColumn(
+                      label: Text("discount"),
+                    ),
+                    DataColumn(
+                      label: Text("MaxUser"),
+                    ),
+                    DataColumn(
+                      label: Text("StartDate"),
+                    ),
+                    DataColumn(
+                      label: Text("EndDate"),
+                    ),
+                  ],
+                  rows: List.generate(
+                    coupon.length,
+                    (index) => couponDataRow(
+                      coupon[index],
+                      index + 1,
+                      edit: () {
+                        // showAddForm(
+                        //     context,
+                        //     'Edit coupon',
+                        //     CouponSubmitForm(
+                        //       coupon: coupon[index],
+                        //     ));
+                      },
+                      delete: () {
+                        //TODO: should complete call deleteCoupon
+                      },
+                    ),
                   ),
                 ),
               )),

@@ -5,12 +5,12 @@ import '../../../../core/function/validator.dart';
 import '../../../../core/networking/api_constants.dart';
 import '../../../../utility/constants.dart';
 import '../../../../widgets/RowBottomAdd.dart';
-import '../../../../core/widgets/category_image_card.dart';
 import '../../../../widgets/custom_text_field.dart';
 
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
+import '../../../../widgets/product_image_card.dart';
 import '../logic/cubit/categories_cubit.dart';
 
 class CategorySubmitForm extends StatelessWidget {
@@ -27,11 +27,13 @@ class CategorySubmitForm extends StatelessWidget {
       child: Form(
         key: context.read<CategoriesCubit>().addCategoryFormKey,
         child: Container(
-          padding: const EdgeInsets.all(defaultPadding),
-          width: size.width * 0.3,
+          // padding: const EdgeInsets.all(defaultPadding),
+          width: MediaQuery.sizeOf(context).width >= 834.0
+              ? size.width * 0.3
+              : size.width,
           decoration: BoxDecoration(
             color: bgColor,
-            borderRadius: BorderRadius.circular(12.0),
+            borderRadius: BorderRadius.circular(10.0),
           ),
           child: Column(
             mainAxisSize: MainAxisSize.min,
@@ -70,7 +72,8 @@ class CategorySubmitForm extends StatelessWidget {
     return BlocConsumer<CategoriesCubit, CategoriesState>(
       listener: (context, state) {},
       builder: (context, state) {
-        return CategoryImageCard(
+        return ProductImageCard(
+          size: 150,
           labelText: "Category",
           imageFile: context.read<CategoriesCubit>().file,
           onTap: () {

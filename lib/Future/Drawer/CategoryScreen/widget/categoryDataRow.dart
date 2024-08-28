@@ -24,12 +24,6 @@ DataRow categoryDataRow(Datum categories, {Function? edit, Function? delete}) {
           ],
         ),
       ),
-      DataCell(
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
-          child: Text(categories.categoriesNameAr ?? ' '),
-        ),
-      ),
       DataCell(Text(categories.categoriesData ?? ' ')),
       DataCell(IconButton(
           onPressed: () {

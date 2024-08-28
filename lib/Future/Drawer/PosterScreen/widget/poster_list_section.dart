@@ -27,24 +27,29 @@ class PosterListSection extends StatelessWidget {
           ),
           SizedBox(
               width: double.infinity,
-              child: DataTable(
-                columnSpacing: defaultPadding,
-                // minWidth: 600,
-                columns: const [
-                  DataColumn(
-                    label: Text("image "),
-                  ),
-                  DataColumn(
-                    label: Text("title"),
-                  ),
-                  DataColumn(
-                    label: Text("body"),
-                  ),
-                ],
-                rows: List.generate(
-                  poster.length,
-                  (index) => posterDataRow(
-                    poster[index],
+              child: SingleChildScrollView(
+                scrollDirection: MediaQuery.sizeOf(context).width >= 450
+                    ? Axis.vertical
+                    : Axis.horizontal,
+                child: DataTable(
+                  columnSpacing: defaultPadding,
+                  // minWidth: 600,
+                  columns: const [
+                    DataColumn(
+                      label: Text("image "),
+                    ),
+                    DataColumn(
+                      label: Text("title"),
+                    ),
+                    DataColumn(
+                      label: Text("body"),
+                    ),
+                  ],
+                  rows: List.generate(
+                    poster.length,
+                    (index) => posterDataRow(
+                      poster[index],
+                    ),
                   ),
                 ),
               )),

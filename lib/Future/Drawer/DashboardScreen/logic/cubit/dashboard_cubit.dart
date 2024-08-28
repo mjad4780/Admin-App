@@ -235,7 +235,7 @@ class DashboardCubit extends Cubit<DashboardState> {
     }
   }
 
-  hhhhhhh(int imageCardNumber) async {
+  removeImages(int imageCardNumber) async {
     if (imageCardNumber == 1) {
       selectedMainImage = null;
 
