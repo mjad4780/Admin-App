@@ -13,7 +13,6 @@ import 'Add_items/RowSelectedCategoriesAndColorAndSize.dart';
 import 'Add_items/add_items_bloc.dart';
 import 'Add_items/aprrove_items.dart';
 import 'edit_items/edit_itemsbloc.dart';
-import 'row_add_images.dart';
 
 class ProductSubmitForm2 extends StatelessWidget {
   const ProductSubmitForm2({

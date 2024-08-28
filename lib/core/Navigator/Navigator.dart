@@ -3,12 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 final GoRouter router = GoRouter(routes: [
-  GoRoute(path: "/", builder: (context, state) => MainScreen()),
-
-  // GoRoute(
-  //   path: "/Login",
-  //   builder: (context, state) => const Login(),
-  // ),
+  GoRoute(path: "/", builder: (context, state) => const MainScreen()),
 
   // NotificationView
 ]);

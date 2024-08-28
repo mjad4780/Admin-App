@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import '../../../core/function/validator.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -17,12 +19,12 @@ class OrderScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // var size = MediaQuery.of(context).size;
-
+    var size = MediaQuery.of(context).size.width;
+    log(size.toString());
     return SafeArea(
         child: SingleChildScrollView(
-            primary: false,
-            padding: const EdgeInsets.all(defaultPadding),
+            // primary: false,
+            padding: const EdgeInsets.all(4),
             child: Column(
               children: [
                 const Header(
@@ -39,15 +41,17 @@ class OrderScreen extends StatelessWidget {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: [
-                              Expanded(
-                                child: Text(
-                                  "My Orders",
-                                  style:
-                                      Theme.of(context).textTheme.titleMedium,
+                              if (MediaQuery.sizeOf(context).width > 500)
+                                Expanded(
+                                  child: Text(
+                                    "My Orders",
+                                    style:
+                                        Theme.of(context).textTheme.titleMedium,
+                                  ),
                                 ),
-                              ),
                               const Gap(20),
                               Expanded(
+                                flex: 3,
                                 child: CustomDropdown(
                                   hintText: 'All order',
                                   items: context.read<OrdersCubit>().item,

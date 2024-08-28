@@ -1,4 +1,7 @@
+import 'package:untitled/core/extensions/extention_navigator.dart';
+
 import '../../../../models/response_orders/datum.dart';
+import '../../../../utility/size_config.dart';
 import '../logic/cubit/orders_cubit.dart';
 
 import '../../../../utility/constants.dart';
@@ -31,54 +34,60 @@ class OrderListSection extends StatelessWidget {
             style: Theme.of(context).textTheme.titleMedium,
           ),
           SizedBox(
-              width: double.infinity,
-              child: DataTable(
-                columnSpacing: defaultPadding,
-                columns: const [
-                  DataColumn(
-                    label: Text(
-                      "Customer Name",
-                      overflow: TextOverflow.ellipsis,
+              width: double.infinity * 0.1,
+              child: SingleChildScrollView(
+                scrollDirection:
+                    MediaQuery.sizeOf(context).width >= SizeConfig.tablet
+                        ? Axis.vertical
+                        : Axis.horizontal,
+                child: DataTable(
+                  columnSpacing: defaultPadding,
+                  columns: const [
+                    DataColumn(
+                      label: Text(
+                        "Customer Name",
+                        overflow: TextOverflow.ellipsis,
+                      ),
                     ),
-                  ),
-                  DataColumn(
-                    label: Text(
-                      "Total Price Order",
-                      overflow: TextOverflow.ellipsis,
+                    DataColumn(
+                      label: Text(
+                        "Total Price Order",
+                        overflow: TextOverflow.ellipsis,
+                      ),
                     ),
-                  ),
-                  DataColumn(
-                    label: Text(
-                      "Payment",
-                      overflow: TextOverflow.ellipsis,
+                    DataColumn(
+                      label: Text(
+                        "Payment",
+                        overflow: TextOverflow.ellipsis,
+                      ),
                     ),
-                  ),
-                  DataColumn(
-                    label: Text(
-                      "Status",
-                      overflow: TextOverflow.ellipsis,
+                    DataColumn(
+                      label: Text(
+                        "Status",
+                        overflow: TextOverflow.ellipsis,
+                      ),
                     ),
-                  ),
-                  DataColumn(
-                    label: Text(
-                      "Date",
-                      overflow: TextOverflow.ellipsis,
+                    DataColumn(
+                      label: Text(
+                        "Date",
+                        overflow: TextOverflow.ellipsis,
+                      ),
                     ),
-                  ),
-                  DataColumn(
-                    label: Text(
-                      "Edit",
-                      overflow: TextOverflow.ellipsis,
+                    DataColumn(
+                      label: Text(
+                        "Edit",
+                        overflow: TextOverflow.ellipsis,
+                      ),
                     ),
-                  ),
-                  DataColumn(
-                    label: Text(
-                      "Delete",
-                      overflow: TextOverflow.ellipsis,
+                    DataColumn(
+                      label: Text(
+                        "Delete",
+                        overflow: TextOverflow.ellipsis,
+                      ),
                     ),
-                  ),
-                ],
-                rows: rowtable(context),
+                  ],
+                  rows: rowtable(context),
+                ),
               )),
         ],
       ),
@@ -93,10 +102,12 @@ class OrderListSection extends StatelessWidget {
             .read<OrdersCubit>()
             .viewdetails(order[index].ordersId!, order[index].adressUserid!);
         context.read<OrdersCubit>().orderStatus(order[index].ordersStatus!);
-        showOrderForm(
-          context,
-          OrderSubmitForm(order: order[index]),
-        );
+        MediaQuery.sizeOf(context).width >= SizeConfig.tablet
+            ? showOrderForm(
+                context,
+                OrderSubmitForm(order: order[index]),
+              )
+            : context.pushN(context, OrderSubmitForm(order: order[index]));
       }),
     );
   }

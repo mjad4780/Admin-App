@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:untitled/models/response_orders/datum.dart';
 
+import '../../../../core/theming/styles.dart';
 import '../../../../utility/constants.dart';
 import 'FormRow.dart';
 
@@ -21,31 +22,26 @@ class AddressSection extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Padding(
-            padding: EdgeInsets.symmetric(vertical: 8.0),
-            child: Text(
-              'Shipping Address',
-              style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.blueAccent),
-            ),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 8.0),
+            child: Text('Shipping Address', style: TextStyles.adress(context)),
           ),
-          const FormRow(
+          FormRow(
               text: 'Phone:',
-              widget: Text('0128888888', style: TextStyle(fontSize: 16))),
+              widget: Text('0128888888',
+                  style: TextStyles.stylesectionreqler(context))),
           FormRow(
               text: 'Street:',
               widget: Text(order.adressStreet ?? 'N/A',
-                  style: const TextStyle(fontSize: 16))),
+                  style: TextStyles.stylesectionreqler(context))),
           FormRow(
               text: 'City:',
               widget: Text(order.adressCity ?? 'N/A',
-                  style: const TextStyle(fontSize: 16))),
+                  style: TextStyles.stylesectionreqler(context))),
           FormRow(
               text: 'Country:',
               widget: Text(order.adressName ?? 'N/A',
-                  style: const TextStyle(fontSize: 16))),
+                  style: TextStyles.stylesectionreqler(context))),
         ],
       ),
     );

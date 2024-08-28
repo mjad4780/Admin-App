@@ -19,7 +19,6 @@ class FormRow extends StatelessWidget {
           Expanded(
               flex: 1,
               child: Text(text,
-                  overflow: TextOverflow.ellipsis,
                   style: const TextStyle(
                       fontWeight: FontWeight.bold, fontSize: 16))),
           Expanded(flex: 2, child: widget),

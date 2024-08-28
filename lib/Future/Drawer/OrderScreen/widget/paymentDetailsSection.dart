@@ -1,3 +1,4 @@
+import 'package:untitled/core/theming/styles.dart';
 import 'package:untitled/models/response_orders/datum.dart';
 
 import 'FormRow.dart';
@@ -29,20 +30,17 @@ class PaymentDetailsSection extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Padding(
-            padding: EdgeInsets.symmetric(vertical: 8.0),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 8.0),
             child: Text(
               'Payment Details',
-              style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                  color: primaryColor),
+              style: TextStyles.adress(context),
             ),
           ),
           FormRow(
               text: 'Payment Method:',
               widget: Text(order.ordersPaymentmets.toString(),
-                  style: const TextStyle(fontSize: 16))),
+                  style: TextStyles.stylesectionreqler(context))),
           // formRow(
           //     'Coupon Code:',
           //     Text(order?.ordersCoupon.toString() ?? 'N/A',
@@ -51,18 +49,17 @@ class PaymentDetailsSection extends StatelessWidget {
               text: 'Order Sub Total:',
               widget: Text(
                   '\$${order.ordersPrice?.toStringAsFixed(2) ?? 'N/A'}',
-                  style: const TextStyle(fontSize: 16))),
+                  style: TextStyles.stylesectionreqler(context))),
           FormRow(
               text: 'Discount:',
               widget: Text(
                   '\$${order.ordersCoupon?.toStringAsFixed(2) ?? 'N/A'}',
-                  style: const TextStyle(fontSize: 16, color: Colors.red))),
+                  style: TextStyles.stylesection(context))),
           FormRow(
               text: 'Grand Total:',
               widget: Text(
                   '\$${order.orderToatalprice?.toStringAsFixed(2) ?? 'N/A'}',
-                  style: const TextStyle(
-                      fontSize: 16, fontWeight: FontWeight.bold))),
+                  style: TextStyles.stylesectionreqler(context))),
         ],
       ),
     );

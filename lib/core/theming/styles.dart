@@ -1,93 +1,59 @@
-import 'package:untitled/core/theming/colors.dart';
 import 'package:flutter/material.dart';
-
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
+import '../../utility/size_config.dart';
+import 'colors.dart';
 import 'font_weight_helper.dart';
 
-class TextStyles {
-  static TextStyle font24BlackBold = TextStyle(
-    fontSize: 24.sp,
-    fontWeight: FontWeightHelper.bold,
-    color: Colors.black,
-  );
+abstract class TextStyles {
+  static TextStyle styleRegular16(context) {
+    return const TextStyle(
+      // color: const Color(0xFF064060),
+      // fontSize: getResponsiveFontSize(context, fontSize: 16),
+      // fontFamily: 'Montserrat',
+      fontWeight: FontWeight.w400,
+    );
+  }
 
-  static TextStyle font32BlueBold = TextStyle(
-    fontSize: 32.sp,
-    fontWeight: FontWeightHelper.bold,
-    color: AppColor.primaryColor,
-  );
+  static TextStyle stylesection(context) {
+    return const TextStyle(
+      color: AppColor.primaryColor, fontWeight: FontWeight.bold,
+      // color: const Color(0xFF064060),
+      // fontSize: getResponsiveFontSize(context, fontSize: 16),
+      // fontFamily: 'Montserrat',
+    );
+  }
 
-  static TextStyle font13BlueSemiBold = TextStyle(
-    fontSize: 13.sp,
-    fontWeight: FontWeightHelper.semiBold,
-    color: AppColor.primaryColor,
-  );
+  static TextStyle itemprice(context) {
+    return const TextStyle(
+      color: AppColor.black, fontWeight: FontWeight.bold,
+      // color: const Color(0xFF064060),
+      // fontSize: getResponsiveFontSize(context, fontSize: 16),
+      // fontFamily: 'Montserrat',
+    );
+  }
 
-  static TextStyle font13DarkBlueMedium = TextStyle(
-    fontSize: 13.sp,
-    fontWeight: FontWeightHelper.medium,
-    color: AppColor.darkBlue,
-  );
+  static TextStyle adress(context) {
+    return const TextStyle(
+      color: Colors.blueAccent, fontWeight: FontWeight.bold,
+      // color: const Color(0xFF064060),
+      // fontSize: getResponsiveFontSize(context, fontSize: 18),
+      // fontFamily: 'Montserrat',
+    );
+  }
 
-  static TextStyle font13DarkBlueRegular = TextStyle(
-    fontSize: 13.sp,
-    fontWeight: FontWeightHelper.regular,
-    color: AppColor.darkBlue,
-  );
+  static TextStyle stylesectionreqler(context) {
+    return const TextStyle(
+      fontWeight: FontWeight.bold,
+      // color: const Color(0xFF064060),
+      // fontSize: getResponsiveFontSize(context, fontSize: 16),
+      // fontFamily: 'Montserrat',
+    );
+  }
 
-  static TextStyle font24BlueBold = TextStyle(
-    fontSize: 24.sp,
-    fontWeight: FontWeightHelper.bold,
-    color: AppColor.secondColor,
-  );
-
-  static TextStyle font16WhiteSemiBold = TextStyle(
-    fontSize: 16.sp,
-    fontWeight: FontWeightHelper.semiBold,
-    color: Colors.white,
-  );
-
-  static TextStyle font13GrayRegular = TextStyle(
-    fontSize: 13.sp,
-    fontWeight: FontWeightHelper.regular,
-    color: AppColor.gray,
-  );
-
-  static TextStyle font12GrayRegular = TextStyle(
-    fontSize: 12.sp,
-    fontWeight: FontWeightHelper.regular,
-    color: AppColor.gray,
-  );
-
-  static TextStyle font12GrayMedium = TextStyle(
-    fontSize: 12.sp,
-    fontWeight: FontWeightHelper.medium,
-    color: AppColor.gray,
-  );
-
-  static TextStyle font12DarkBlueRegular = TextStyle(
-    fontSize: 12.sp,
-    fontWeight: FontWeightHelper.regular,
-    color: AppColor.darkBlue,
-  );
-
-  static TextStyle font12BlueRegular = TextStyle(
-    fontSize: 12.sp,
-    fontWeight: FontWeightHelper.regular,
-    color: AppColor.primaryColor,
-  );
-
-  static TextStyle font13BlueRegular = TextStyle(
-    fontSize: 16.sp,
-    fontWeight: FontWeightHelper.regular,
-    color: AppColor.primaryColor,
-  );
-
-  static TextStyle font14GrayRegular = TextStyle(
+  static TextStyle font14DarkBlueMedium = TextStyle(
     fontSize: 14.sp,
-    fontWeight: FontWeightHelper.regular,
-    color: AppColor.gray,
+    fontWeight: FontWeightHelper.medium,
+    color: AppColor.darkBlue,
   );
 
   static TextStyle font14LightGrayRegular = TextStyle(
@@ -95,59 +61,33 @@ class TextStyles {
     fontWeight: FontWeightHelper.regular,
     color: AppColor.lightGray,
   );
+}
 
-  static TextStyle font14DarkBlueMedium = TextStyle(
-    fontSize: 14.sp,
-    fontWeight: FontWeightHelper.medium,
-    color: AppColor.darkBlue,
-  );
-  static TextStyle font16WhiteMedium = TextStyle(
-    fontSize: 16.sp,
-    fontWeight: FontWeightHelper.medium,
-    color: Colors.white,
-  );
+// sacleFactor
+// responsive font size
+// (min , max) fontsize
+double getResponsiveFontSize(context, {required double fontSize}) {
+  double scaleFactor = getScaleFactor(context);
+  double responsiveFontSize = fontSize * scaleFactor;
 
-  // static TextStyle font14BlueSemiBold = TextStyle(
-  //   fontSize: 14.sp,
-  //   fontWeight: FontWeightHelper.semiBold,
-  //   color: AppColor.primaryColor,
-  // );
+  double lowerLimit = fontSize * .8;
+  double upperLimit = fontSize * 1.2;
 
-  // static TextStyle font15DarkBlueMedium = TextStyle(
-  //   fontSize: 15.sp,
-  //   fontWeight: FontWeightHelper.medium,
-  //   color: AppColor.darkBlue,
-  // );
+  return responsiveFontSize.clamp(lowerLimit, upperLimit);
+}
 
-  static TextStyle font18DarkBlueBold = TextStyle(
-    fontSize: 18.sp,
-    fontWeight: FontWeightHelper.bold,
-    color: AppColor.darkBlue,
-  );
+double getScaleFactor(context) {
+  // var dispatcher = PlatformDispatcher.instance;
+  // var physicalWidth = dispatcher.views.first.physicalSize.width;
+  // var devicePixelRatio = dispatcher.views.first.devicePixelRatio;
+  // double width = physicalWidth / devicePixelRatio;
 
-  static TextStyle font18DarkBlueSemiBold = TextStyle(
-    fontSize: 18.sp,
-    fontWeight: FontWeightHelper.semiBold,
-    color: AppColor.darkBlue,
-  );
-
-  static TextStyle font18WhiteMedium = TextStyle(
-    fontSize: 18.sp,
-    fontWeight: FontWeightHelper.medium,
-    color: Colors.white,
-  );
-
-  static TextStyle appBarLogin = TextStyle(
-    fontSize: 33.sp,
-    fontWeight: FontWeightHelper.medium,
-  );
-  static TextStyle signUp = TextStyle(
-      fontSize: 16.sp,
-      fontWeight: FontWeightHelper.medium,
-      color: AppColor.primaryColor);
-
-  static TextStyle checkEmail = TextStyle(
-      fontSize: 20.sp,
-      fontWeight: FontWeightHelper.semiBold,
-      color: AppColor.primaryColor);
+  double width = MediaQuery.sizeOf(context).width;
+  if (width < SizeConfig.tablet) {
+    return width / 550;
+  } else if (width < SizeConfig.desktop) {
+    return width / 1000;
+  } else {
+    return width / 1920;
+  }
 }

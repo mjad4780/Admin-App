@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:untitled/core/theming/styles.dart';
 
-import '../../../../core/theming/colors.dart';
 import '../../../../models/response_detilas/datum.dart';
 import '../../../../utility/constants.dart';
 
@@ -33,51 +33,40 @@ class ItemSection extends StatelessWidget {
       ),
       child: Table(
         children: [
-          const TableRow(children: [
+          TableRow(children: [
             Text("Item",
-                overflow: TextOverflow.ellipsis,
                 textAlign: TextAlign.center,
-                style: TextStyle(
-                    color: AppColor.primaryColor, fontWeight: FontWeight.bold)),
+                style: TextStyles.stylesectionreqler(context)),
             Text("Count",
-                overflow: TextOverflow.ellipsis,
                 textAlign: TextAlign.center,
-                style: TextStyle(
-                    color: AppColor.primaryColor, fontWeight: FontWeight.bold)),
+                style: TextStyles.stylesectionreqler(context)),
             Text("Size",
-                overflow: TextOverflow.ellipsis,
                 textAlign: TextAlign.center,
-                style: TextStyle(
-                    color: AppColor.primaryColor, fontWeight: FontWeight.bold)),
+                style: TextStyles.stylesectionreqler(context)),
             Text("Color",
-                overflow: TextOverflow.ellipsis,
                 textAlign: TextAlign.center,
-                style: TextStyle(
-                    color: AppColor.primaryColor, fontWeight: FontWeight.bold)),
+                style: TextStyles.stylesectionreqler(context)),
             Text("ItemPrice",
-                overflow: TextOverflow.ellipsis,
                 textAlign: TextAlign.center,
-                style: TextStyle(
-                    color: AppColor.primaryColor, fontWeight: FontWeight.bold)),
+                style: TextStyles.stylesectionreqler(context)),
           ]),
           ...List.generate(
               details.length,
               (index) => TableRow(children: [
                     Text('${details[index].itemName}',
-                        overflow: TextOverflow.ellipsis,
+                        style: TextStyles.stylesectionreqler(context),
                         textAlign: TextAlign.center),
                     Text('${details[index].countitems}',
-                        overflow: TextOverflow.ellipsis,
+                        style: TextStyles.stylesectionreqler(context),
                         textAlign: TextAlign.center),
                     Text('${details[index].cartSize}',
-                        overflow: TextOverflow.ellipsis,
+                        style: TextStyles.stylesectionreqler(context),
                         textAlign: TextAlign.center),
                     Text('${details[index].cartColor}',
-                        overflow: TextOverflow.ellipsis,
+                        style: TextStyles.stylesectionreqler(context),
                         textAlign: TextAlign.center),
                     Text('${details[index].itemPrice}',
-                        overflow: TextOverflow.ellipsis,
-                        style: const TextStyle(color: Colors.black),
+                        style: TextStyles.itemprice(context),
                         textAlign: TextAlign.center),
                   ])),
         ],
