@@ -42,7 +42,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = _result.data;
+    final _value = jsonDecode(_result.data!);
     return _value;
   }
 
@@ -68,7 +68,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = _result.data;
+    final _value = jsonDecode(_result.data!);
     return _value;
   }
 
@@ -94,7 +94,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = _result.data;
+    final _value = jsonDecode(_result.data!);
     return _value;
   }
 
@@ -120,7 +120,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = _result.data;
+    final _value = jsonDecode(_result.data!);
     return _value;
   }
 
@@ -146,7 +146,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = ResponseCategories.fromJson(jsonDecode(_result.data!));
+    final _value = ResponseCategories.fromJson(jsonDecode(_result.data!)!);
     return _value;
   }
 
@@ -172,7 +172,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = _result.data;
+    final _value = jsonDecode(_result.data!);
     return _value;
   }
 
@@ -198,7 +198,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = _result.data;
+    final _value = jsonDecode(_result.data!);
     return _value;
   }
 
@@ -224,7 +224,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = _result.data;
+    final _value = jsonDecode(_result.data!);
     return _value;
   }
 
@@ -250,7 +250,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = _result.data;
+    final _value = jsonDecode(_result.data!);
     return _value;
   }
 
@@ -276,7 +276,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = ResponseCoupon.fromJson(jsonDecode(_result.data!));
+    final _value = ResponseCoupon.fromJson(jsonDecode(_result.data!)!);
     return _value;
   }
 
@@ -302,18 +302,18 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = _result.data;
+    final _value = jsonDecode(_result.data!);
     return _value;
   }
 
   @override
-  Future<ResponseNotifacation> getnotification() async {
+  Future<ResponseNotification> getnotification() async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
     const Map<String, dynamic>? _data = null;
     final _result =
-        await _dio.fetch(_setStreamType<ResponseNotifacation>(Options(
+        await _dio.fetch(_setStreamType<ResponseNotification>(Options(
       method: 'GET',
       headers: _headers,
       extra: _extra,
@@ -329,7 +329,35 @@ class _ApiService implements ApiService {
               _dio.options.baseUrl,
               baseUrl,
             ))));
-    final _value = ResponseNotifacation.fromJson(jsonDecode(_result.data!));
+    final _value = ResponseNotification.fromJson(jsonDecode(_result.data!)!);
+    return _value;
+  }
+
+  @override
+  Future<NotificationAnalysisModel> viewAnalysis(dynamic body) async {
+    final _extra = <String, dynamic>{};
+    final queryParameters = <String, dynamic>{};
+    final _headers = <String, dynamic>{};
+    final _data = body;
+    final _result =
+        await _dio.fetch(_setStreamType<NotificationAnalysisModel>(Options(
+      method: 'POST',
+      headers: _headers,
+      extra: _extra,
+    )
+            .compose(
+              _dio.options,
+              'http://localhost/e-ecommerse/admin/notification/get_analysis.php',
+              queryParameters: queryParameters,
+              data: _data,
+            )
+            .copyWith(
+                baseUrl: _combineBaseUrls(
+              _dio.options.baseUrl,
+              baseUrl,
+            ))));
+    final _value =
+        NotificationAnalysisModel.fromJson(jsonDecode(_result.data!)!);
     return _value;
   }
 
@@ -355,7 +383,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = _result.data;
+    final _value = jsonDecode(_result.data!);
     return _value;
   }
 
@@ -381,7 +409,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = ResponsePoster.fromJson(jsonDecode(_result.data!));
+    final _value = ResponsePoster.fromJson(jsonDecode(_result.data!)!);
     return _value;
   }
 
@@ -407,7 +435,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = ResponseOrders.fromJson(jsonDecode(_result.data!));
+    final _value = ResponseOrders.fromJson(jsonDecode(_result.data!)!);
     return _value;
   }
 
@@ -433,7 +461,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = ResponseOrders.fromJson(jsonDecode(_result.data!));
+    final _value = ResponseOrders.fromJson(jsonDecode(_result.data!)!);
     return _value;
   }
 
@@ -459,7 +487,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = ResponseOrders.fromJson(jsonDecode(_result.data!));
+    final _value = ResponseOrders.fromJson(jsonDecode(_result.data!)!);
     return _value;
   }
 
@@ -485,7 +513,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = ResponseDetails.fromJson(jsonDecode(_result.data!));
+    final _value = ResponseDetails.fromJson(jsonDecode(_result.data!)!);
     return _value;
   }
 
@@ -511,7 +539,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = ResponseOrders.fromJson(jsonDecode(_result.data!));
+    final _value = ResponseOrders.fromJson(jsonDecode(_result.data!)!);
     return _value;
   }
 
@@ -537,7 +565,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = ResponseOrders.fromJson(jsonDecode(_result.data!));
+    final _value = ResponseOrders.fromJson(jsonDecode(_result.data!)!);
     return _value;
   }
 
@@ -563,7 +591,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = ResponseOrders.fromJson(jsonDecode(_result.data!));
+    final _value = ResponseOrders.fromJson(jsonDecode(_result.data!)!);
     return _value;
   }
 
@@ -589,7 +617,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = ResponseOrders.fromJson(jsonDecode(_result.data!));
+    final _value = ResponseOrders.fromJson(jsonDecode(_result.data!)!);
     return _value;
   }
 
@@ -615,7 +643,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = _result.data;
+    final _value = jsonDecode(_result.data!);
     return _value;
   }
 
@@ -641,7 +669,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = _result.data;
+    final _value = jsonDecode(_result.data!);
     return _value;
   }
 
@@ -667,7 +695,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = _result.data;
+    final _value = jsonDecode(_result.data!);
     return _value;
   }
 
@@ -693,7 +721,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = _result.data;
+    final _value = jsonDecode(_result.data!);
     return _value;
   }
 
@@ -719,7 +747,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = ResponseDashpoard.fromJson(jsonDecode(_result.data!));
+    final _value = ResponseDashpoard.fromJson(jsonDecode(_result.data!)!);
     return _value;
   }
 

@@ -23,8 +23,10 @@ import 'update_orders_bloc.dart';
 
 class OrderSubmitForm extends StatelessWidget {
   final Datum order;
-
-  const OrderSubmitForm({super.key, required this.order});
+  const OrderSubmitForm({
+    super.key,
+    required this.order,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -39,10 +41,12 @@ class OrderSubmitForm extends StatelessWidget {
                 order: order,
               ),
             ))
-        : CustemSubmint(
-            size: size,
-            order: order,
-          );
+        : BlocProvider(
+            create: (context) => getIt<OrdersCubit>(),
+            child: CustemSubmint(
+              size: size,
+              order: order,
+            ));
   }
 }
 
@@ -55,26 +59,25 @@ class CustemSubmint extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Container(
-        padding: const EdgeInsets.all(defaultPadding),
-        width: size.width >= SizeConfig.tablet
-            ? size.width * 0.5
-            : size.width, // Adjust width based on screen size
-        decoration: BoxDecoration(
-          color: bgColor,
-          borderRadius: BorderRadius.circular(12.0),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black.withOpacity(0.1),
-              spreadRadius: 5,
-              blurRadius: 7,
-              offset: const Offset(0, 3),
-            ),
-          ],
-        ),
-        child: Builder(builder: (context) {
-          return Form(
-            key: context.read<OrdersCubit>().orderFormKey,
-            autovalidateMode: context.read<OrdersCubit>().autovalidateMode,
+          padding: const EdgeInsets.all(defaultPadding),
+          width: size.width >= SizeConfig.tablet
+              ? size.width * 0.5
+              : size.width, // Adjust width based on screen size
+          decoration: BoxDecoration(
+            color: bgColor,
+            borderRadius: BorderRadius.circular(12.0),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black.withOpacity(0.1),
+                spreadRadius: 5,
+                blurRadius: 7,
+                offset: const Offset(0, 3),
+              ),
+            ],
+          ),
+          child: Form(
+            // key: context.read<OrdersCubit>().orderFormKey,
+            // autovalidateMode: context.read<OrdersCubit>().autovalidateMode,
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
@@ -95,8 +98,6 @@ class CustemSubmint extends StatelessWidget {
                 DetailsBlocBuilder(
                   tatalPrice: order.orderToatalprice ?? 0,
                 ),
-                // ItemSection(
-                // totalPrice: order?.orderToatalprice ?? 0),
                 AddressSection(order: order),
                 const Gap(10),
                 PaymentDetailsSection(
@@ -127,16 +128,17 @@ class CustemSubmint extends StatelessWidget {
                 const Gap(defaultPadding * 2),
                 RowBotttomAdd(
                   onPressed: () {
-                    context.read<OrdersCubit>().updateOrders(order.ordersId!,
-                        order.ordersUserid!, order.ordersType!);
+                    context.read<OrdersCubit>().updateOrders(
+                        order.ordersId!,
+                        order.ordersUserid!,
+                        order.ordersType!,
+                        order.playerId!);
                   },
                 ),
                 const UpdateOrdersBlocListener()
               ],
             ),
-          );
-        }),
-      ),
+          )),
     );
   }
 }

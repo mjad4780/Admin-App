@@ -6,25 +6,31 @@ part 'datum.g.dart';
 @JsonSerializable()
 class Datum {
   @JsonKey(name: 'notification_id')
-  final int? notificationId;
+  int? notificationId;
   @JsonKey(name: 'notification_title')
-  final String? notificationTitle;
+  String? notificationTitle;
   @JsonKey(name: 'notification_body')
-  final String? notificationBody;
+  String? notificationBody;
   @JsonKey(name: 'notification_userid')
-  final int? notificationUserid;
+  int? notificationUserid;
   @JsonKey(name: 'notification_datetime')
-  final String? notificationDatetime;
+  String? notificationDatetime;
   @JsonKey(name: 'notification_image')
-  final String? notificationImage;
+  String? notificationImage;
+  @JsonKey(name: 'notification_all')
+  int? notificationAll;
+  @JsonKey(name: 'notification_id_signal')
+  String? notificationIdSignal;
 
-  const Datum({
+  Datum({
+    this.notificationIdSignal,
     this.notificationId,
     this.notificationTitle,
     this.notificationBody,
     this.notificationUserid,
     this.notificationDatetime,
     this.notificationImage,
+    this.notificationAll,
   });
 
   factory Datum.fromJson(Map<String, dynamic> json) => _$DatumFromJson(json);
@@ -46,5 +52,6 @@ class Datum {
       notificationBody.hashCode ^
       notificationUserid.hashCode ^
       notificationDatetime.hashCode ^
-      notificationImage.hashCode;
+      notificationImage.hashCode ^
+      notificationAll.hashCode;
 }

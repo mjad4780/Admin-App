@@ -6,8 +6,9 @@ import 'package:gap/gap.dart';
 
 import '../../../utility/constants.dart';
 import 'logic/cubit/notification_cubit.dart';
-import 'widget/notification_list_section.dart';
+import 'widget/notification_bloc_builder.dart';
 import 'widget/send_notification_form.dart';
+import 'widget/show_add_notification.dart';
 
 class NotificationScreen extends StatelessWidget {
   const NotificationScreen({super.key});
@@ -16,7 +17,7 @@ class NotificationScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
         child: BlocProvider(
-      create: (context) => getIt<NotificationCubit>(),
+      create: (context) => getIt<NotificationCubit>()..viewNotification(),
       child: SingleChildScrollView(
         primary: false,
         padding: const EdgeInsets.all(defaultPadding),
@@ -40,33 +41,39 @@ class NotificationScreen extends StatelessWidget {
                               style: Theme.of(context).textTheme.titleMedium,
                             ),
                           ),
-                          ElevatedButton.icon(
-                            style: TextButton.styleFrom(
-                              padding: const EdgeInsets.symmetric(
-                                horizontal: defaultPadding * 1.5,
-                                vertical: defaultPadding,
+                          Builder(builder: (context) {
+                            return ElevatedButton.icon(
+                              style: TextButton.styleFrom(
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: defaultPadding * 1.5,
+                                  vertical: defaultPadding,
+                                ),
                               ),
-                            ),
-                            onPressed: () {
-                              showAddFormnoti(
-                                context,
-                                'Send Notification',
-                              );
-                              // sendNotificationFormForm(context);
-                            },
-                            icon: const Icon(Icons.add),
-                            label: const Text("Send New"),
-                          ),
-                          const Gap(20),
-                          IconButton(
                               onPressed: () {
-                                //TODO: should complete call getAllNotifications
+                                showSendNotification(
+                                    context,
+                                    'Send Notification',
+                                    const SendNotificationForm());
+                                // const SendNotificationBloc();
                               },
-                              icon: const Icon(Icons.refresh)),
+                              icon: const Icon(Icons.add),
+                              label: const Text("Send New"),
+                            );
+                          }),
+                          const Gap(20),
+                          Builder(builder: (context) {
+                            return IconButton(
+                                onPressed: () {
+                                  context
+                                      .read<NotificationCubit>()
+                                      .viewNotification();
+                                },
+                                icon: const Icon(Icons.refresh));
+                          }),
                         ],
                       ),
                       const Gap(defaultPadding),
-                      const NotificationListSection(),
+                      const NotificationBlocBuilder(),
                     ],
                   ),
                 ),

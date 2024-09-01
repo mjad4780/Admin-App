@@ -2,20 +2,22 @@
     "status": "success",
     "data": [
         {
-            "notification_id": 87,
-            "notification_title": "succes",
-            "notification_body": "mohamed",
-            "notification_userid": 100,
-            "notification_datetime": "2024-05-26 21:59:16",
-            "notification_image": ""
+            "notification_id": 95,
+            "notification_title": "ffffffff",
+            "notification_body": "ddddddd",
+            "notification_userid": 104,
+            "notification_datetime": "2024-08-28 16:51:37",
+            "notification_image": "nnnnnnnnnn",
+            "notification_all": 0
         },
         {
-            "notification_id": 88,
-            "notification_title": "succes",
-            "notification_body": "mohamed",
-            "notification_userid": 100,
-            "notification_datetime": "2024-05-26 22:00:01",
-            "notification_image": ""
+            "notification_id": 96,
+            "notification_title": "hello",
+            "notification_body": "hi",
+            "notification_userid": 1,
+            "notification_datetime": "2024-08-29 08:50:26",
+            "notification_image": "https://letsenhance.io/static/03620c83508fc72c6d2b218c7e304ba5/11499/UpscalerAfter.jpg",
+            "notification_all": 1
         }
     ]
 }

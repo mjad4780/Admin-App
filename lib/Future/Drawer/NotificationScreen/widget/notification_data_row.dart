@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-
-import '../../../../models/Notification.dart';
+import 'package:untitled/models/response_notification/datum.dart';
 import '../../../../utility/color_list.dart';
 import '../../../../utility/constants.dart';
 
-DataRow notificationDataRow(NotificationModel notificationInfo, int index,
+DataRow notificationDataRow(Datum notificationInfo, int index,
     {Function? edit, Function? delete}) {
   return DataRow(
     cells: [
@@ -21,19 +20,19 @@ DataRow notificationDataRow(NotificationModel notificationInfo, int index,
               child: Text(index.toString(), textAlign: TextAlign.center),
             ),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: defaultPadding),
-              child: Text(notificationInfo.title ?? ''),
+              padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
+              child: Text(notificationInfo.notificationTitle ?? ''),
             ),
           ],
         ),
       ),
-      DataCell(Text(notificationInfo.body ?? '')),
-      DataCell(Text(notificationInfo.datetime ?? '')),
+      DataCell(Text(notificationInfo.notificationBody ?? '')),
+      DataCell(Text(notificationInfo.notificationDatetime ?? '')),
       DataCell(IconButton(
           onPressed: () {
             if (edit != null) edit();
           },
-          icon: Icon(
+          icon: const Icon(
             Icons.remove_red_eye_sharp,
             color: Colors.white,
           ))),
@@ -41,7 +40,7 @@ DataRow notificationDataRow(NotificationModel notificationInfo, int index,
           onPressed: () {
             if (delete != null) delete();
           },
-          icon: Icon(
+          icon: const Icon(
             Icons.delete,
             color: Colors.red,
           ))),

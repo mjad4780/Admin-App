@@ -11,10 +11,12 @@ class OrdersRepo {
 
   //approve
 
-  Future<ApiResult<dynamic>> approve(int orderid, int userid) async {
+  Future<ApiResult<dynamic>> approve(
+      int orderid, int userid, String playerId) async {
     Map<String, dynamic> data = {
       "orderid": orderid,
       "userid": userid,
+      "playerId": playerId
     };
 
     try {
@@ -26,11 +28,13 @@ class OrdersRepo {
   }
   //prepare
 
-  Future<ApiResult<dynamic>> prepare(int type, int orderid, int userid) async {
+  Future<ApiResult<dynamic>> prepare(
+      int type, int orderid, int userid, String playerId) async {
     Map<String, dynamic> data = {
       "orderid": orderid,
       "userid": userid,
       "type": type,
+      "playerId": playerId
     };
     try {
       final response = await _apiService.prepare(formDataPost(data));
@@ -40,10 +44,12 @@ class OrdersRepo {
     }
   } //done
 
-  Future<ApiResult<dynamic>> done(int orderid, int userid) async {
+  Future<ApiResult<dynamic>> done(
+      int orderid, int userid, String playerId) async {
     Map<String, dynamic> data = {
       "orderid": orderid,
       "userid": userid,
+      "playerId": playerId
     };
     try {
       final response = await _apiService.done(formDataPost(data));
@@ -54,8 +60,10 @@ class OrdersRepo {
   }
   //shipped
 
-  Future<ApiResult<dynamic>> shipped(int orderid, int userid) async {
+  Future<ApiResult<dynamic>> shipped(
+      int orderid, int userid, String playerId) async {
     Map<String, dynamic> data = {
+      "playerId": playerId,
       "orderid": orderid,
       "userid": userid,
     };

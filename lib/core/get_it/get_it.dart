@@ -3,6 +3,8 @@ import 'package:untitled/Future/Drawer/CouponCodeScreen/logic/cubit/coupon_cubit
 import 'package:untitled/Future/Drawer/DashboardScreen/data/repo.dart';
 import 'package:untitled/Future/Drawer/DashboardScreen/data/repo_get_dashboard.dart';
 import 'package:untitled/Future/Drawer/DashboardScreen/logic/cubit/dashboard_cubit.dart';
+import 'package:untitled/Future/Drawer/NotificationScreen/data/repo.dart';
+import 'package:untitled/Future/Drawer/NotificationScreen/logic/cubit/notification_cubit.dart';
 
 import 'package:untitled/Future/Drawer/OrderScreen/logic/cubit/orders_cubit.dart';
 import 'package:untitled/Future/Drawer/PosterScreen/data/repo.dart';
@@ -49,4 +51,9 @@ void setupServise() {
   getIt.registerLazySingleton<PosterRepo>(() => PosterRepo(getIt()));
   getIt.registerFactory<PostersCubit>(() => PostersCubit(getIt()));
   getIt.registerFactory<MainCubit>(() => MainCubit());
+
+  // Notification
+  getIt
+      .registerLazySingleton<NotificationRepo>(() => NotificationRepo(getIt()));
+  getIt.registerFactory<NotificationCubit>(() => NotificationCubit(getIt()));
 }

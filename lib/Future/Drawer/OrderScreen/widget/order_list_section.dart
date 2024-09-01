@@ -102,10 +102,13 @@ class OrderListSection extends StatelessWidget {
             .read<OrdersCubit>()
             .viewdetails(order[index].ordersId!, order[index].adressUserid!);
         context.read<OrdersCubit>().orderStatus(order[index].ordersStatus!);
+
         MediaQuery.sizeOf(context).width >= SizeConfig.tablet
             ? showOrderForm(
                 context,
-                OrderSubmitForm(order: order[index]),
+                OrderSubmitForm(
+                  order: order[index],
+                ),
               )
             : context.pushN(context, OrderSubmitForm(order: order[index]));
       }),

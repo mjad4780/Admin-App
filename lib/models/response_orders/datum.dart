@@ -33,6 +33,8 @@ class Datum {
   final int? ordersStatus;
   @JsonKey(name: 'orders_delivery')
   final int? ordersDelivery;
+  @JsonKey(name: 'player_id')
+  final String? playerId;
   @JsonKey(name: 'adress_id')
   final int? adressId;
   @JsonKey(name: 'adress_userid')
@@ -49,6 +51,7 @@ class Datum {
   final String? adressLong;
 
   const Datum({
+    this.playerId,
     this.ordersId,
     this.ordersUserid,
     this.ordersAdress,

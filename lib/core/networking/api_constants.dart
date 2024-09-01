@@ -10,6 +10,8 @@ class ApiConstants {
   static const String getnotification =
       '$baseUrl/admin/notification/get_notification.php';
 
+  static const String getnotificationAnalysis =
+      '$baseUrl/admin/notification/get_analysis.php';
 //image
   static const String imageCat = '$baseUrl/upload/categories';
   static const String imageItem = '$baseUrl/upload/item';

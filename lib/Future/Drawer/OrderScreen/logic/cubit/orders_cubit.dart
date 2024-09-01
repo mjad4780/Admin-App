@@ -18,6 +18,7 @@ class OrdersCubit extends Cubit<OrdersState> {
   final orderFormKey = GlobalKey<FormState>();
   TextEditingController trackingUrlCtrl = TextEditingController();
   String selectedOrderStatus = 'pending';
+  String playerId = '';
   List<Datum> orderData = [
     const Datum(
       ordersUserid: 100,
@@ -97,25 +98,25 @@ class OrdersCubit extends Cubit<OrdersState> {
     } else {}
   }
 
-  updateOrders(int orderid, int userid, int type) {
+  updateOrders(int orderid, int userid, int type, String playerId) {
     if (selectedOrderStatus == 'pending') {
     } else if (selectedOrderStatus == 'been approved') {
-      approve(orderid, userid);
+      approve(orderid, userid, playerId);
     } else if (selectedOrderStatus == 'prepare') {
-      prepare(orderid, userid, type);
+      prepare(orderid, userid, type, playerId);
     } else if (selectedOrderStatus == 'shipped') {
-      shipped(orderid, userid);
+      shipped(orderid, userid, playerId);
     } else if (selectedOrderStatus == 'done') {
-      done(orderid, userid);
+      done(orderid, userid, playerId);
     } else {
       log('message');
     }
   }
 
   ///:approve
-  approve(int orderid, int userid) async {
+  approve(int orderid, int userid, String playerId) async {
     emit(const OrdersState.loadingUpdate());
-    final response = await _ordersRepo.approve(orderid, userid);
+    final response = await _ordersRepo.approve(orderid, userid, playerId);
     response.when(success: (data) {
       emit(const OrdersState.successUpdate());
     }, failure: (error) {
@@ -124,9 +125,9 @@ class OrdersCubit extends Cubit<OrdersState> {
   }
 
   ///:prepare
-  prepare(int orderid, int userid, int type) async {
+  prepare(int orderid, int userid, int type, String playerId) async {
     emit(const OrdersState.loadingUpdate());
-    final response = await _ordersRepo.prepare(type, orderid, userid);
+    final response = await _ordersRepo.prepare(type, orderid, userid, playerId);
     response.when(success: (data) {
       emit(const OrdersState.successUpdate());
     }, failure: (error) {
@@ -135,9 +136,9 @@ class OrdersCubit extends Cubit<OrdersState> {
   }
 
   ///:done
-  done(int orderid, int userid) async {
+  done(int orderid, int userid, String playerId) async {
     emit(const OrdersState.loadingUpdate());
-    final response = await _ordersRepo.done(orderid, userid);
+    final response = await _ordersRepo.done(orderid, userid, playerId);
     response.when(success: (data) {
       emit(const OrdersState.successUpdate());
     }, failure: (error) {
@@ -146,9 +147,9 @@ class OrdersCubit extends Cubit<OrdersState> {
   }
 
   ///:shipped
-  shipped(int orderid, int userid) async {
+  shipped(int orderid, int userid, String playerId) async {
     emit(const OrdersState.loadingUpdate());
-    final response = await _ordersRepo.shipped(orderid, userid);
+    final response = await _ordersRepo.shipped(orderid, userid, playerId);
     response.when(success: (data) {
       emit(const OrdersState.successUpdate());
     }, failure: (error) {

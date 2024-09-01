@@ -1,9 +1,9 @@
 import 'dart:convert';
 
 import 'package:retrofit/http.dart';
+import 'package:untitled/models/notification_analysis/notification_analysis_model.dart';
 import 'package:untitled/models/response_categories/response_categories.dart';
 import 'package:untitled/models/response_coupon/response_coupon.dart';
-import 'package:untitled/models/response_notifacation/response_notifacation.dart';
 import 'package:untitled/models/response_orders/response_orders.dart';
 import 'package:untitled/models/response_poster/response_poster.dart';
 import 'package:dio/dio.dart';
@@ -12,6 +12,7 @@ import 'package:retrofit/retrofit.dart';
 
 import '../../models/response_dashpoard/response_dashpoard.dart';
 import '../../models/response_detilas/response_detilas.dart';
+import '../../models/response_notification/response_notification.dart';
 import 'api_constants.dart';
 
 part 'api_service.g.dart';
@@ -70,7 +71,11 @@ abstract class ApiService {
   Future<dynamic> addnotification(@Body() dynamic body);
   //View
   @GET(ApiConstants.getnotification)
-  Future<ResponseNotifacation> getnotification();
+  Future<ResponseNotification> getnotification();
+
+  //viewAnalysis
+  @POST(ApiConstants.getnotificationAnalysis)
+  Future<NotificationAnalysisModel> viewAnalysis(@Body() dynamic body);
 
   ///////////////POSTER/////////////
 

@@ -152,5 +152,3 @@ class ProductSubmitForm2 extends StatelessWidget {
 //     return this![index];
 //   }
 // }
-
-

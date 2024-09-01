@@ -1,42 +1,56 @@
-// import '../../../../core/function/formDataPost.dart';
-// import '../../../../core/networking/api_error_handler.dart';
-// import '../../../../core/networking/api_result.dart';
-// import '../../../../core/networking/api_service.dart';
-// import '../../../../models/response_notifacation/response_notifacation.dart';
+import '../../../../core/function/function_api/formDataPost.dart';
+import '../../../../core/networking/api_error_handler.dart';
+import '../../../../core/networking/api_result.dart';
+import '../../../../core/networking/api_service.dart';
+import '../../../../models/notification_analysis/notification_analysis_model.dart';
+import '../../../../models/response_notification/response_notification.dart';
 
-// class NotificationRepo {
-//   final ApiService _apiService;
+class NotificationRepo {
+  final ApiService _apiService;
 
-//   NotificationRepo(this._apiService);
+  NotificationRepo(this._apiService);
 
-//   //ViewNotification
+  //ViewNotification
 
-//   Future<ApiResult<ResponseNotifacation >> ViewNotification() async {
-//     try {
-//       final response = await _apiService.getnotification();
-//       return ApiResult.success(response);
-//     } catch (e) {
-//       return ApiResult.failure(ApiErrorHandler.handle(e));
-//     }
-//   }
+  Future<ApiResult<ResponseNotification>> viewNotification() async {
+    try {
+      final response = await _apiService.getnotification();
+      return ApiResult.success(response);
+    } catch (e) {
+      return ApiResult.failure(ApiErrorHandler.handle(e));
+    }
+  }
 
-//   //AddNotification
+  //AddNotification
 
-//   Future<ApiResult<dynamic>> AddNotification(String coupon, String startdata,
-//       String endData, int count, String discount, String maxuser) async {
-//     Map<String, dynamic> data = {
-//       "userid": ,
-//       "startdata": startdata,
-//       "endData": endData,
-//       "count": count,
-//       "discount": discount,
-//       "maxuser": maxuser,
-//     };
-//     try {
-//       final response = await _apiService.addnotification(formDataPost(data));
-//       return ApiResult.success(response);
-//     } catch (e) {
-//       return ApiResult.failure(ApiErrorHandler.handle(e));
-//     }
-//   }
-// }
+  Future<ApiResult<dynamic>> addNotification(
+      String title, String body, String image) async {
+    Map<String, dynamic> data = {
+      "title": title,
+      "body": body,
+      "image": image,
+    };
+    try {
+      final response = await _apiService.addnotification(formDataPost(data));
+      return ApiResult.success(response);
+    } catch (e) {
+      return ApiResult.failure(ApiErrorHandler.handle(e));
+    }
+  }
+
+  //ViewNotificationAnalysis
+
+  Future<ApiResult<NotificationAnalysisModel>> viewAnalysis(
+    String id,
+  ) async {
+    Map<String, dynamic> data = {
+      "id": id,
+    };
+    try {
+      final response = await _apiService.viewAnalysis(formDataPost(data));
+      return ApiResult.success(response);
+    } catch (e) {
+      return ApiResult.failure(ApiErrorHandler.handle(e));
+    }
+  }
+}

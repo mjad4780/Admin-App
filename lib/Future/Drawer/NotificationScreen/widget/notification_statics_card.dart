@@ -11,20 +11,20 @@ class NotificationCard extends StatelessWidget {
   final double percentage;
 
   const NotificationCard({
-    Key? key,
+    super.key,
     required this.text,
     required this.color,
     required this.number,
     required this.percentage,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 5),
-      decoration: BoxDecoration(
+      padding: const EdgeInsets.symmetric(vertical: 5),
+      decoration: const BoxDecoration(
         color: secondaryColor,
-        borderRadius: const BorderRadius.all(Radius.circular(10)),
+        borderRadius: BorderRadius.all(Radius.circular(10)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -34,7 +34,7 @@ class NotificationCard extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
-                padding: EdgeInsets.all(defaultPadding * 0.75),
+                padding: const EdgeInsets.all(defaultPadding * 0.75),
                 height: 40,
                 width: 40,
                 decoration: BoxDecoration(
@@ -49,7 +49,7 @@ class NotificationCard extends StatelessWidget {
             ],
           ),
           Text(
-            "${number}",
+            "$number",
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
           ),
@@ -57,12 +57,12 @@ class NotificationCard extends StatelessWidget {
             color: color,
             percentage: percentage,
           ),
-          Gap(5),
+          const Gap(5),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                "$text",
+                text,
                 style: Theme.of(context)
                     .textTheme
                     .bodySmall!
@@ -78,10 +78,10 @@ class NotificationCard extends StatelessWidget {
 
 class ProgressLine extends StatelessWidget {
   const ProgressLine({
-    Key? key,
+    super.key,
     this.color = primaryColor,
     required this.percentage,
-  }) : super(key: key);
+  });
 
   final Color? color;
   final double? percentage;
@@ -95,17 +95,15 @@ class ProgressLine extends StatelessWidget {
           height: 5,
           decoration: BoxDecoration(
             color: color!.withOpacity(0.1),
-            borderRadius: BorderRadius.all(Radius.circular(10)),
+            borderRadius: const BorderRadius.all(Radius.circular(10)),
           ),
         ),
-        LayoutBuilder(
-          builder: (context, constraints) => Container(
-            width: constraints.maxWidth * (percentage! / 100),
-            height: 5,
-            decoration: BoxDecoration(
-              color: color,
-              borderRadius: BorderRadius.all(Radius.circular(10)),
-            ),
+        Container(
+          width: MediaQuery.sizeOf(context).width * (percentage! / 100),
+          height: 5,
+          decoration: BoxDecoration(
+            color: color,
+            borderRadius: const BorderRadius.all(Radius.circular(10)),
           ),
         ),
       ],

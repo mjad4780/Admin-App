@@ -7,6 +7,7 @@ part of 'datum.dart';
 // **************************************************************************
 
 DataDetails _$DataDetailsFromJson(Map<String, dynamic> json) => DataDetails(
+      playerId: json['player_id'] as String?,
       itemId: (json['item_id'] as num?)?.toInt(),
       itemName: json['item_name'] as String?,
       itemNameAr: json['item_name_ar'] as String?,
@@ -58,6 +59,7 @@ Map<String, dynamic> _$DataDetailsToJson(DataDetails instance) =>
       'cart_orders': instance.cartOrders,
       'cart_size': instance.cartSize,
       'cart_color': instance.cartColor,
+      'player_id': instance.playerId,
       'images': instance.images,
       'size': instance.size,
     };
