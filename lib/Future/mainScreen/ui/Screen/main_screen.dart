@@ -11,7 +11,6 @@ class MainScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // log('bbbbb${MediaQuery.sizeOf(context).width.toString()}');
     return BlocProvider(
       create: (context) => getIt<MainCubit>(),
       child: BlocConsumer<MainCubit, MainState>(

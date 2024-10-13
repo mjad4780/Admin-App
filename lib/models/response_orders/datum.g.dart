@@ -46,6 +46,7 @@ Map<String, dynamic> _$DatumToJson(Datum instance) => <String, dynamic>{
       'orders_paymentmets': instance.ordersPaymentmets,
       'orders_status': instance.ordersStatus,
       'orders_delivery': instance.ordersDelivery,
+      'player_id': instance.playerId,
       'adress_id': instance.adressId,
       'adress_userid': instance.adressUserid,
       'adress_city': instance.adressCity,

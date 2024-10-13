@@ -1,3 +1,5 @@
+import 'package:untitled/Future/Drawer/NotificationScreen/logic/cubit/notification_state.dart';
+
 import '../../../../core/function/validator.dart';
 import '../../../../widgets/RowBottomAdd.dart';
 import 'package:flutter/material.dart';
@@ -57,9 +59,15 @@ class SendNotificationForm extends StatelessWidget {
                 },
               ),
               const Gap(defaultPadding * 2),
-              RowBotttomAdd(
-                onPressed: () {
-                  context.read<NotificationCubit>().addNotification();
+              BlocConsumer<NotificationCubit, NotificationState>(
+                listener: (context, state) {},
+                builder: (context, state) {
+                  return RowBotttomAdd(
+                    loading: state is LoadingAdd ? true : false,
+                    onPressed: () {
+                      context.read<NotificationCubit>().addNotification();
+                    },
+                  );
                 },
               ),
               const SendNotificationBloc()

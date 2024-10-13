@@ -47,6 +47,8 @@ mixin _$OrdersState {
     required TResult Function() loadingviewAllOrders,
     required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
     required TResult Function(String erorr) erorrviewAllOrders,
+    required TResult Function() updateInt,
+    required TResult Function() updateString,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -79,6 +81,8 @@ mixin _$OrdersState {
     TResult? Function()? loadingviewAllOrders,
     TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult? Function(String erorr)? erorrviewAllOrders,
+    TResult? Function()? updateInt,
+    TResult? Function()? updateString,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -111,6 +115,8 @@ mixin _$OrdersState {
     TResult Function()? loadingviewAllOrders,
     TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult Function(String erorr)? erorrviewAllOrders,
+    TResult Function()? updateInt,
+    TResult Function()? updateString,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -144,6 +150,8 @@ mixin _$OrdersState {
     required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
     required TResult Function(successviewAllOrders value) successviewAllOrders,
     required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
+    required TResult Function(updateInt value) updateInt,
+    required TResult Function(updateString value) updateString,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -176,6 +184,8 @@ mixin _$OrdersState {
     TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult? Function(successviewAllOrders value)? successviewAllOrders,
     TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult? Function(updateInt value)? updateInt,
+    TResult? Function(updateString value)? updateString,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -208,6 +218,8 @@ mixin _$OrdersState {
     TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult Function(successviewAllOrders value)? successviewAllOrders,
     TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult Function(updateInt value)? updateInt,
+    TResult Function(updateString value)? updateString,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -298,6 +310,8 @@ class _$InitialImpl implements _Initial {
     required TResult Function() loadingviewAllOrders,
     required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
     required TResult Function(String erorr) erorrviewAllOrders,
+    required TResult Function() updateInt,
+    required TResult Function() updateString,
   }) {
     return initial();
   }
@@ -333,6 +347,8 @@ class _$InitialImpl implements _Initial {
     TResult? Function()? loadingviewAllOrders,
     TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult? Function(String erorr)? erorrviewAllOrders,
+    TResult? Function()? updateInt,
+    TResult? Function()? updateString,
   }) {
     return initial?.call();
   }
@@ -368,6 +384,8 @@ class _$InitialImpl implements _Initial {
     TResult Function()? loadingviewAllOrders,
     TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult Function(String erorr)? erorrviewAllOrders,
+    TResult Function()? updateInt,
+    TResult Function()? updateString,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -407,6 +425,8 @@ class _$InitialImpl implements _Initial {
     required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
     required TResult Function(successviewAllOrders value) successviewAllOrders,
     required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
+    required TResult Function(updateInt value) updateInt,
+    required TResult Function(updateString value) updateString,
   }) {
     return initial(this);
   }
@@ -442,6 +462,8 @@ class _$InitialImpl implements _Initial {
     TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult? Function(successviewAllOrders value)? successviewAllOrders,
     TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult? Function(updateInt value)? updateInt,
+    TResult? Function(updateString value)? updateString,
   }) {
     return initial?.call(this);
   }
@@ -477,6 +499,8 @@ class _$InitialImpl implements _Initial {
     TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult Function(successviewAllOrders value)? successviewAllOrders,
     TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult Function(updateInt value)? updateInt,
+    TResult Function(updateString value)? updateString,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -557,6 +581,8 @@ class _$LoadingUpdateImpl implements LoadingUpdate {
     required TResult Function() loadingviewAllOrders,
     required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
     required TResult Function(String erorr) erorrviewAllOrders,
+    required TResult Function() updateInt,
+    required TResult Function() updateString,
   }) {
     return loadingUpdate();
   }
@@ -592,6 +618,8 @@ class _$LoadingUpdateImpl implements LoadingUpdate {
     TResult? Function()? loadingviewAllOrders,
     TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult? Function(String erorr)? erorrviewAllOrders,
+    TResult? Function()? updateInt,
+    TResult? Function()? updateString,
   }) {
     return loadingUpdate?.call();
   }
@@ -627,6 +655,8 @@ class _$LoadingUpdateImpl implements LoadingUpdate {
     TResult Function()? loadingviewAllOrders,
     TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult Function(String erorr)? erorrviewAllOrders,
+    TResult Function()? updateInt,
+    TResult Function()? updateString,
     required TResult orElse(),
   }) {
     if (loadingUpdate != null) {
@@ -666,6 +696,8 @@ class _$LoadingUpdateImpl implements LoadingUpdate {
     required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
     required TResult Function(successviewAllOrders value) successviewAllOrders,
     required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
+    required TResult Function(updateInt value) updateInt,
+    required TResult Function(updateString value) updateString,
   }) {
     return loadingUpdate(this);
   }
@@ -701,6 +733,8 @@ class _$LoadingUpdateImpl implements LoadingUpdate {
     TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult? Function(successviewAllOrders value)? successviewAllOrders,
     TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult? Function(updateInt value)? updateInt,
+    TResult? Function(updateString value)? updateString,
   }) {
     return loadingUpdate?.call(this);
   }
@@ -736,6 +770,8 @@ class _$LoadingUpdateImpl implements LoadingUpdate {
     TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult Function(successviewAllOrders value)? successviewAllOrders,
     TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult Function(updateInt value)? updateInt,
+    TResult Function(updateString value)? updateString,
     required TResult orElse(),
   }) {
     if (loadingUpdate != null) {
@@ -816,6 +852,8 @@ class _$SuccessUpdateImpl implements SuccessUpdate {
     required TResult Function() loadingviewAllOrders,
     required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
     required TResult Function(String erorr) erorrviewAllOrders,
+    required TResult Function() updateInt,
+    required TResult Function() updateString,
   }) {
     return successUpdate();
   }
@@ -851,6 +889,8 @@ class _$SuccessUpdateImpl implements SuccessUpdate {
     TResult? Function()? loadingviewAllOrders,
     TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult? Function(String erorr)? erorrviewAllOrders,
+    TResult? Function()? updateInt,
+    TResult? Function()? updateString,
   }) {
     return successUpdate?.call();
   }
@@ -886,6 +926,8 @@ class _$SuccessUpdateImpl implements SuccessUpdate {
     TResult Function()? loadingviewAllOrders,
     TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult Function(String erorr)? erorrviewAllOrders,
+    TResult Function()? updateInt,
+    TResult Function()? updateString,
     required TResult orElse(),
   }) {
     if (successUpdate != null) {
@@ -925,6 +967,8 @@ class _$SuccessUpdateImpl implements SuccessUpdate {
     required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
     required TResult Function(successviewAllOrders value) successviewAllOrders,
     required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
+    required TResult Function(updateInt value) updateInt,
+    required TResult Function(updateString value) updateString,
   }) {
     return successUpdate(this);
   }
@@ -960,6 +1004,8 @@ class _$SuccessUpdateImpl implements SuccessUpdate {
     TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult? Function(successviewAllOrders value)? successviewAllOrders,
     TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult? Function(updateInt value)? updateInt,
+    TResult? Function(updateString value)? updateString,
   }) {
     return successUpdate?.call(this);
   }
@@ -995,6 +1041,8 @@ class _$SuccessUpdateImpl implements SuccessUpdate {
     TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult Function(successviewAllOrders value)? successviewAllOrders,
     TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult Function(updateInt value)? updateInt,
+    TResult Function(updateString value)? updateString,
     required TResult orElse(),
   }) {
     if (successUpdate != null) {
@@ -1101,6 +1149,8 @@ class _$ErorrUpdateImpl implements ErorrUpdate {
     required TResult Function() loadingviewAllOrders,
     required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
     required TResult Function(String erorr) erorrviewAllOrders,
+    required TResult Function() updateInt,
+    required TResult Function() updateString,
   }) {
     return erorrUpdate(erorr);
   }
@@ -1136,6 +1186,8 @@ class _$ErorrUpdateImpl implements ErorrUpdate {
     TResult? Function()? loadingviewAllOrders,
     TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult? Function(String erorr)? erorrviewAllOrders,
+    TResult? Function()? updateInt,
+    TResult? Function()? updateString,
   }) {
     return erorrUpdate?.call(erorr);
   }
@@ -1171,6 +1223,8 @@ class _$ErorrUpdateImpl implements ErorrUpdate {
     TResult Function()? loadingviewAllOrders,
     TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult Function(String erorr)? erorrviewAllOrders,
+    TResult Function()? updateInt,
+    TResult Function()? updateString,
     required TResult orElse(),
   }) {
     if (erorrUpdate != null) {
@@ -1210,6 +1264,8 @@ class _$ErorrUpdateImpl implements ErorrUpdate {
     required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
     required TResult Function(successviewAllOrders value) successviewAllOrders,
     required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
+    required TResult Function(updateInt value) updateInt,
+    required TResult Function(updateString value) updateString,
   }) {
     return erorrUpdate(this);
   }
@@ -1245,6 +1301,8 @@ class _$ErorrUpdateImpl implements ErorrUpdate {
     TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult? Function(successviewAllOrders value)? successviewAllOrders,
     TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult? Function(updateInt value)? updateInt,
+    TResult? Function(updateString value)? updateString,
   }) {
     return erorrUpdate?.call(this);
   }
@@ -1280,6 +1338,8 @@ class _$ErorrUpdateImpl implements ErorrUpdate {
     TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult Function(successviewAllOrders value)? successviewAllOrders,
     TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult Function(updateInt value)? updateInt,
+    TResult Function(updateString value)? updateString,
     required TResult orElse(),
   }) {
     if (erorrUpdate != null) {
@@ -1365,6 +1425,8 @@ class _$LoadingviewdetailsImpl implements Loadingviewdetails {
     required TResult Function() loadingviewAllOrders,
     required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
     required TResult Function(String erorr) erorrviewAllOrders,
+    required TResult Function() updateInt,
+    required TResult Function() updateString,
   }) {
     return loadingviewdetails();
   }
@@ -1400,6 +1462,8 @@ class _$LoadingviewdetailsImpl implements Loadingviewdetails {
     TResult? Function()? loadingviewAllOrders,
     TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult? Function(String erorr)? erorrviewAllOrders,
+    TResult? Function()? updateInt,
+    TResult? Function()? updateString,
   }) {
     return loadingviewdetails?.call();
   }
@@ -1435,6 +1499,8 @@ class _$LoadingviewdetailsImpl implements Loadingviewdetails {
     TResult Function()? loadingviewAllOrders,
     TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult Function(String erorr)? erorrviewAllOrders,
+    TResult Function()? updateInt,
+    TResult Function()? updateString,
     required TResult orElse(),
   }) {
     if (loadingviewdetails != null) {
@@ -1474,6 +1540,8 @@ class _$LoadingviewdetailsImpl implements Loadingviewdetails {
     required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
     required TResult Function(successviewAllOrders value) successviewAllOrders,
     required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
+    required TResult Function(updateInt value) updateInt,
+    required TResult Function(updateString value) updateString,
   }) {
     return loadingviewdetails(this);
   }
@@ -1509,6 +1577,8 @@ class _$LoadingviewdetailsImpl implements Loadingviewdetails {
     TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult? Function(successviewAllOrders value)? successviewAllOrders,
     TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult? Function(updateInt value)? updateInt,
+    TResult? Function(updateString value)? updateString,
   }) {
     return loadingviewdetails?.call(this);
   }
@@ -1544,6 +1614,8 @@ class _$LoadingviewdetailsImpl implements Loadingviewdetails {
     TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult Function(successviewAllOrders value)? successviewAllOrders,
     TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult Function(updateInt value)? updateInt,
+    TResult Function(updateString value)? updateString,
     required TResult orElse(),
   }) {
     if (loadingviewdetails != null) {
@@ -1659,6 +1731,8 @@ class _$successviewdetailsImpl implements successviewdetails {
     required TResult Function() loadingviewAllOrders,
     required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
     required TResult Function(String erorr) erorrviewAllOrders,
+    required TResult Function() updateInt,
+    required TResult Function() updateString,
   }) {
     return successviewdetails(responseDetails);
   }
@@ -1694,6 +1768,8 @@ class _$successviewdetailsImpl implements successviewdetails {
     TResult? Function()? loadingviewAllOrders,
     TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult? Function(String erorr)? erorrviewAllOrders,
+    TResult? Function()? updateInt,
+    TResult? Function()? updateString,
   }) {
     return successviewdetails?.call(responseDetails);
   }
@@ -1729,6 +1805,8 @@ class _$successviewdetailsImpl implements successviewdetails {
     TResult Function()? loadingviewAllOrders,
     TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult Function(String erorr)? erorrviewAllOrders,
+    TResult Function()? updateInt,
+    TResult Function()? updateString,
     required TResult orElse(),
   }) {
     if (successviewdetails != null) {
@@ -1768,6 +1846,8 @@ class _$successviewdetailsImpl implements successviewdetails {
     required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
     required TResult Function(successviewAllOrders value) successviewAllOrders,
     required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
+    required TResult Function(updateInt value) updateInt,
+    required TResult Function(updateString value) updateString,
   }) {
     return successviewdetails(this);
   }
@@ -1803,6 +1883,8 @@ class _$successviewdetailsImpl implements successviewdetails {
     TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult? Function(successviewAllOrders value)? successviewAllOrders,
     TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult? Function(updateInt value)? updateInt,
+    TResult? Function(updateString value)? updateString,
   }) {
     return successviewdetails?.call(this);
   }
@@ -1838,6 +1920,8 @@ class _$successviewdetailsImpl implements successviewdetails {
     TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult Function(successviewAllOrders value)? successviewAllOrders,
     TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult Function(updateInt value)? updateInt,
+    TResult Function(updateString value)? updateString,
     required TResult orElse(),
   }) {
     if (successviewdetails != null) {
@@ -1951,6 +2035,8 @@ class _$ErorrviewdetailsImpl implements Erorrviewdetails {
     required TResult Function() loadingviewAllOrders,
     required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
     required TResult Function(String erorr) erorrviewAllOrders,
+    required TResult Function() updateInt,
+    required TResult Function() updateString,
   }) {
     return erorrviewdetails(erorr);
   }
@@ -1986,6 +2072,8 @@ class _$ErorrviewdetailsImpl implements Erorrviewdetails {
     TResult? Function()? loadingviewAllOrders,
     TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult? Function(String erorr)? erorrviewAllOrders,
+    TResult? Function()? updateInt,
+    TResult? Function()? updateString,
   }) {
     return erorrviewdetails?.call(erorr);
   }
@@ -2021,6 +2109,8 @@ class _$ErorrviewdetailsImpl implements Erorrviewdetails {
     TResult Function()? loadingviewAllOrders,
     TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult Function(String erorr)? erorrviewAllOrders,
+    TResult Function()? updateInt,
+    TResult Function()? updateString,
     required TResult orElse(),
   }) {
     if (erorrviewdetails != null) {
@@ -2060,6 +2150,8 @@ class _$ErorrviewdetailsImpl implements Erorrviewdetails {
     required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
     required TResult Function(successviewAllOrders value) successviewAllOrders,
     required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
+    required TResult Function(updateInt value) updateInt,
+    required TResult Function(updateString value) updateString,
   }) {
     return erorrviewdetails(this);
   }
@@ -2095,6 +2187,8 @@ class _$ErorrviewdetailsImpl implements Erorrviewdetails {
     TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult? Function(successviewAllOrders value)? successviewAllOrders,
     TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult? Function(updateInt value)? updateInt,
+    TResult? Function(updateString value)? updateString,
   }) {
     return erorrviewdetails?.call(this);
   }
@@ -2130,6 +2224,8 @@ class _$ErorrviewdetailsImpl implements Erorrviewdetails {
     TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult Function(successviewAllOrders value)? successviewAllOrders,
     TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult Function(updateInt value)? updateInt,
+    TResult Function(updateString value)? updateString,
     required TResult orElse(),
   }) {
     if (erorrviewdetails != null) {
@@ -2216,6 +2312,8 @@ class _$LoadingviewapproveImpl implements Loadingviewapprove {
     required TResult Function() loadingviewAllOrders,
     required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
     required TResult Function(String erorr) erorrviewAllOrders,
+    required TResult Function() updateInt,
+    required TResult Function() updateString,
   }) {
     return loadingviewapprove();
   }
@@ -2251,6 +2349,8 @@ class _$LoadingviewapproveImpl implements Loadingviewapprove {
     TResult? Function()? loadingviewAllOrders,
     TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult? Function(String erorr)? erorrviewAllOrders,
+    TResult? Function()? updateInt,
+    TResult? Function()? updateString,
   }) {
     return loadingviewapprove?.call();
   }
@@ -2286,6 +2386,8 @@ class _$LoadingviewapproveImpl implements Loadingviewapprove {
     TResult Function()? loadingviewAllOrders,
     TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult Function(String erorr)? erorrviewAllOrders,
+    TResult Function()? updateInt,
+    TResult Function()? updateString,
     required TResult orElse(),
   }) {
     if (loadingviewapprove != null) {
@@ -2325,6 +2427,8 @@ class _$LoadingviewapproveImpl implements Loadingviewapprove {
     required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
     required TResult Function(successviewAllOrders value) successviewAllOrders,
     required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
+    required TResult Function(updateInt value) updateInt,
+    required TResult Function(updateString value) updateString,
   }) {
     return loadingviewapprove(this);
   }
@@ -2360,6 +2464,8 @@ class _$LoadingviewapproveImpl implements Loadingviewapprove {
     TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult? Function(successviewAllOrders value)? successviewAllOrders,
     TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult? Function(updateInt value)? updateInt,
+    TResult? Function(updateString value)? updateString,
   }) {
     return loadingviewapprove?.call(this);
   }
@@ -2395,6 +2501,8 @@ class _$LoadingviewapproveImpl implements Loadingviewapprove {
     TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult Function(successviewAllOrders value)? successviewAllOrders,
     TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult Function(updateInt value)? updateInt,
+    TResult Function(updateString value)? updateString,
     required TResult orElse(),
   }) {
     if (loadingviewapprove != null) {
@@ -2510,6 +2618,8 @@ class _$SuccessviewapproveImpl implements Successviewapprove {
     required TResult Function() loadingviewAllOrders,
     required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
     required TResult Function(String erorr) erorrviewAllOrders,
+    required TResult Function() updateInt,
+    required TResult Function() updateString,
   }) {
     return successviewapprove(vieworders);
   }
@@ -2545,6 +2655,8 @@ class _$SuccessviewapproveImpl implements Successviewapprove {
     TResult? Function()? loadingviewAllOrders,
     TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult? Function(String erorr)? erorrviewAllOrders,
+    TResult? Function()? updateInt,
+    TResult? Function()? updateString,
   }) {
     return successviewapprove?.call(vieworders);
   }
@@ -2580,6 +2692,8 @@ class _$SuccessviewapproveImpl implements Successviewapprove {
     TResult Function()? loadingviewAllOrders,
     TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult Function(String erorr)? erorrviewAllOrders,
+    TResult Function()? updateInt,
+    TResult Function()? updateString,
     required TResult orElse(),
   }) {
     if (successviewapprove != null) {
@@ -2619,6 +2733,8 @@ class _$SuccessviewapproveImpl implements Successviewapprove {
     required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
     required TResult Function(successviewAllOrders value) successviewAllOrders,
     required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
+    required TResult Function(updateInt value) updateInt,
+    required TResult Function(updateString value) updateString,
   }) {
     return successviewapprove(this);
   }
@@ -2654,6 +2770,8 @@ class _$SuccessviewapproveImpl implements Successviewapprove {
     TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult? Function(successviewAllOrders value)? successviewAllOrders,
     TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult? Function(updateInt value)? updateInt,
+    TResult? Function(updateString value)? updateString,
   }) {
     return successviewapprove?.call(this);
   }
@@ -2689,6 +2807,8 @@ class _$SuccessviewapproveImpl implements Successviewapprove {
     TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult Function(successviewAllOrders value)? successviewAllOrders,
     TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult Function(updateInt value)? updateInt,
+    TResult Function(updateString value)? updateString,
     required TResult orElse(),
   }) {
     if (successviewapprove != null) {
@@ -2802,6 +2922,8 @@ class _$ErorrviewapproveImpl implements Erorrviewapprove {
     required TResult Function() loadingviewAllOrders,
     required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
     required TResult Function(String erorr) erorrviewAllOrders,
+    required TResult Function() updateInt,
+    required TResult Function() updateString,
   }) {
     return erorrviewapprove(erorr);
   }
@@ -2837,6 +2959,8 @@ class _$ErorrviewapproveImpl implements Erorrviewapprove {
     TResult? Function()? loadingviewAllOrders,
     TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult? Function(String erorr)? erorrviewAllOrders,
+    TResult? Function()? updateInt,
+    TResult? Function()? updateString,
   }) {
     return erorrviewapprove?.call(erorr);
   }
@@ -2872,6 +2996,8 @@ class _$ErorrviewapproveImpl implements Erorrviewapprove {
     TResult Function()? loadingviewAllOrders,
     TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult Function(String erorr)? erorrviewAllOrders,
+    TResult Function()? updateInt,
+    TResult Function()? updateString,
     required TResult orElse(),
   }) {
     if (erorrviewapprove != null) {
@@ -2911,6 +3037,8 @@ class _$ErorrviewapproveImpl implements Erorrviewapprove {
     required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
     required TResult Function(successviewAllOrders value) successviewAllOrders,
     required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
+    required TResult Function(updateInt value) updateInt,
+    required TResult Function(updateString value) updateString,
   }) {
     return erorrviewapprove(this);
   }
@@ -2946,6 +3074,8 @@ class _$ErorrviewapproveImpl implements Erorrviewapprove {
     TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult? Function(successviewAllOrders value)? successviewAllOrders,
     TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult? Function(updateInt value)? updateInt,
+    TResult? Function(updateString value)? updateString,
   }) {
     return erorrviewapprove?.call(this);
   }
@@ -2981,6 +3111,8 @@ class _$ErorrviewapproveImpl implements Erorrviewapprove {
     TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult Function(successviewAllOrders value)? successviewAllOrders,
     TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult Function(updateInt value)? updateInt,
+    TResult Function(updateString value)? updateString,
     required TResult orElse(),
   }) {
     if (erorrviewapprove != null) {
@@ -3067,6 +3199,8 @@ class _$LoadingviewCancelImpl implements LoadingviewCancel {
     required TResult Function() loadingviewAllOrders,
     required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
     required TResult Function(String erorr) erorrviewAllOrders,
+    required TResult Function() updateInt,
+    required TResult Function() updateString,
   }) {
     return loadingviewCancel();
   }
@@ -3102,6 +3236,8 @@ class _$LoadingviewCancelImpl implements LoadingviewCancel {
     TResult? Function()? loadingviewAllOrders,
     TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult? Function(String erorr)? erorrviewAllOrders,
+    TResult? Function()? updateInt,
+    TResult? Function()? updateString,
   }) {
     return loadingviewCancel?.call();
   }
@@ -3137,6 +3273,8 @@ class _$LoadingviewCancelImpl implements LoadingviewCancel {
     TResult Function()? loadingviewAllOrders,
     TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult Function(String erorr)? erorrviewAllOrders,
+    TResult Function()? updateInt,
+    TResult Function()? updateString,
     required TResult orElse(),
   }) {
     if (loadingviewCancel != null) {
@@ -3176,6 +3314,8 @@ class _$LoadingviewCancelImpl implements LoadingviewCancel {
     required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
     required TResult Function(successviewAllOrders value) successviewAllOrders,
     required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
+    required TResult Function(updateInt value) updateInt,
+    required TResult Function(updateString value) updateString,
   }) {
     return loadingviewCancel(this);
   }
@@ -3211,6 +3351,8 @@ class _$LoadingviewCancelImpl implements LoadingviewCancel {
     TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult? Function(successviewAllOrders value)? successviewAllOrders,
     TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult? Function(updateInt value)? updateInt,
+    TResult? Function(updateString value)? updateString,
   }) {
     return loadingviewCancel?.call(this);
   }
@@ -3246,6 +3388,8 @@ class _$LoadingviewCancelImpl implements LoadingviewCancel {
     TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult Function(successviewAllOrders value)? successviewAllOrders,
     TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult Function(updateInt value)? updateInt,
+    TResult Function(updateString value)? updateString,
     required TResult orElse(),
   }) {
     if (loadingviewCancel != null) {
@@ -3361,6 +3505,8 @@ class _$SuccessviewCancelImpl implements SuccessviewCancel {
     required TResult Function() loadingviewAllOrders,
     required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
     required TResult Function(String erorr) erorrviewAllOrders,
+    required TResult Function() updateInt,
+    required TResult Function() updateString,
   }) {
     return successviewCancel(vieworders);
   }
@@ -3396,6 +3542,8 @@ class _$SuccessviewCancelImpl implements SuccessviewCancel {
     TResult? Function()? loadingviewAllOrders,
     TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult? Function(String erorr)? erorrviewAllOrders,
+    TResult? Function()? updateInt,
+    TResult? Function()? updateString,
   }) {
     return successviewCancel?.call(vieworders);
   }
@@ -3431,6 +3579,8 @@ class _$SuccessviewCancelImpl implements SuccessviewCancel {
     TResult Function()? loadingviewAllOrders,
     TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult Function(String erorr)? erorrviewAllOrders,
+    TResult Function()? updateInt,
+    TResult Function()? updateString,
     required TResult orElse(),
   }) {
     if (successviewCancel != null) {
@@ -3470,6 +3620,8 @@ class _$SuccessviewCancelImpl implements SuccessviewCancel {
     required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
     required TResult Function(successviewAllOrders value) successviewAllOrders,
     required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
+    required TResult Function(updateInt value) updateInt,
+    required TResult Function(updateString value) updateString,
   }) {
     return successviewCancel(this);
   }
@@ -3505,6 +3657,8 @@ class _$SuccessviewCancelImpl implements SuccessviewCancel {
     TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult? Function(successviewAllOrders value)? successviewAllOrders,
     TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult? Function(updateInt value)? updateInt,
+    TResult? Function(updateString value)? updateString,
   }) {
     return successviewCancel?.call(this);
   }
@@ -3540,6 +3694,8 @@ class _$SuccessviewCancelImpl implements SuccessviewCancel {
     TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult Function(successviewAllOrders value)? successviewAllOrders,
     TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult Function(updateInt value)? updateInt,
+    TResult Function(updateString value)? updateString,
     required TResult orElse(),
   }) {
     if (successviewCancel != null) {
@@ -3653,6 +3809,8 @@ class _$ErorrviewCancelImpl implements ErorrviewCancel {
     required TResult Function() loadingviewAllOrders,
     required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
     required TResult Function(String erorr) erorrviewAllOrders,
+    required TResult Function() updateInt,
+    required TResult Function() updateString,
   }) {
     return erorrviewCancel(erorr);
   }
@@ -3688,6 +3846,8 @@ class _$ErorrviewCancelImpl implements ErorrviewCancel {
     TResult? Function()? loadingviewAllOrders,
     TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult? Function(String erorr)? erorrviewAllOrders,
+    TResult? Function()? updateInt,
+    TResult? Function()? updateString,
   }) {
     return erorrviewCancel?.call(erorr);
   }
@@ -3723,6 +3883,8 @@ class _$ErorrviewCancelImpl implements ErorrviewCancel {
     TResult Function()? loadingviewAllOrders,
     TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult Function(String erorr)? erorrviewAllOrders,
+    TResult Function()? updateInt,
+    TResult Function()? updateString,
     required TResult orElse(),
   }) {
     if (erorrviewCancel != null) {
@@ -3762,6 +3924,8 @@ class _$ErorrviewCancelImpl implements ErorrviewCancel {
     required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
     required TResult Function(successviewAllOrders value) successviewAllOrders,
     required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
+    required TResult Function(updateInt value) updateInt,
+    required TResult Function(updateString value) updateString,
   }) {
     return erorrviewCancel(this);
   }
@@ -3797,6 +3961,8 @@ class _$ErorrviewCancelImpl implements ErorrviewCancel {
     TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult? Function(successviewAllOrders value)? successviewAllOrders,
     TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult? Function(updateInt value)? updateInt,
+    TResult? Function(updateString value)? updateString,
   }) {
     return erorrviewCancel?.call(this);
   }
@@ -3832,6 +3998,8 @@ class _$ErorrviewCancelImpl implements ErorrviewCancel {
     TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult Function(successviewAllOrders value)? successviewAllOrders,
     TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult Function(updateInt value)? updateInt,
+    TResult Function(updateString value)? updateString,
     required TResult orElse(),
   }) {
     if (erorrviewCancel != null) {
@@ -3918,6 +4086,8 @@ class _$LoadingviewdoneImpl implements Loadingviewdone {
     required TResult Function() loadingviewAllOrders,
     required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
     required TResult Function(String erorr) erorrviewAllOrders,
+    required TResult Function() updateInt,
+    required TResult Function() updateString,
   }) {
     return loadingviewdone();
   }
@@ -3953,6 +4123,8 @@ class _$LoadingviewdoneImpl implements Loadingviewdone {
     TResult? Function()? loadingviewAllOrders,
     TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult? Function(String erorr)? erorrviewAllOrders,
+    TResult? Function()? updateInt,
+    TResult? Function()? updateString,
   }) {
     return loadingviewdone?.call();
   }
@@ -3988,6 +4160,8 @@ class _$LoadingviewdoneImpl implements Loadingviewdone {
     TResult Function()? loadingviewAllOrders,
     TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult Function(String erorr)? erorrviewAllOrders,
+    TResult Function()? updateInt,
+    TResult Function()? updateString,
     required TResult orElse(),
   }) {
     if (loadingviewdone != null) {
@@ -4027,6 +4201,8 @@ class _$LoadingviewdoneImpl implements Loadingviewdone {
     required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
     required TResult Function(successviewAllOrders value) successviewAllOrders,
     required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
+    required TResult Function(updateInt value) updateInt,
+    required TResult Function(updateString value) updateString,
   }) {
     return loadingviewdone(this);
   }
@@ -4062,6 +4238,8 @@ class _$LoadingviewdoneImpl implements Loadingviewdone {
     TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult? Function(successviewAllOrders value)? successviewAllOrders,
     TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult? Function(updateInt value)? updateInt,
+    TResult? Function(updateString value)? updateString,
   }) {
     return loadingviewdone?.call(this);
   }
@@ -4097,6 +4275,8 @@ class _$LoadingviewdoneImpl implements Loadingviewdone {
     TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult Function(successviewAllOrders value)? successviewAllOrders,
     TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult Function(updateInt value)? updateInt,
+    TResult Function(updateString value)? updateString,
     required TResult orElse(),
   }) {
     if (loadingviewdone != null) {
@@ -4212,6 +4392,8 @@ class _$SuccessviewdoneImpl implements Successviewdone {
     required TResult Function() loadingviewAllOrders,
     required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
     required TResult Function(String erorr) erorrviewAllOrders,
+    required TResult Function() updateInt,
+    required TResult Function() updateString,
   }) {
     return successviewdone(vieworders);
   }
@@ -4247,6 +4429,8 @@ class _$SuccessviewdoneImpl implements Successviewdone {
     TResult? Function()? loadingviewAllOrders,
     TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult? Function(String erorr)? erorrviewAllOrders,
+    TResult? Function()? updateInt,
+    TResult? Function()? updateString,
   }) {
     return successviewdone?.call(vieworders);
   }
@@ -4282,6 +4466,8 @@ class _$SuccessviewdoneImpl implements Successviewdone {
     TResult Function()? loadingviewAllOrders,
     TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult Function(String erorr)? erorrviewAllOrders,
+    TResult Function()? updateInt,
+    TResult Function()? updateString,
     required TResult orElse(),
   }) {
     if (successviewdone != null) {
@@ -4321,6 +4507,8 @@ class _$SuccessviewdoneImpl implements Successviewdone {
     required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
     required TResult Function(successviewAllOrders value) successviewAllOrders,
     required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
+    required TResult Function(updateInt value) updateInt,
+    required TResult Function(updateString value) updateString,
   }) {
     return successviewdone(this);
   }
@@ -4356,6 +4544,8 @@ class _$SuccessviewdoneImpl implements Successviewdone {
     TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult? Function(successviewAllOrders value)? successviewAllOrders,
     TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult? Function(updateInt value)? updateInt,
+    TResult? Function(updateString value)? updateString,
   }) {
     return successviewdone?.call(this);
   }
@@ -4391,6 +4581,8 @@ class _$SuccessviewdoneImpl implements Successviewdone {
     TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult Function(successviewAllOrders value)? successviewAllOrders,
     TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult Function(updateInt value)? updateInt,
+    TResult Function(updateString value)? updateString,
     required TResult orElse(),
   }) {
     if (successviewdone != null) {
@@ -4503,6 +4695,8 @@ class _$ErorrviewdoneImpl implements Erorrviewdone {
     required TResult Function() loadingviewAllOrders,
     required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
     required TResult Function(String erorr) erorrviewAllOrders,
+    required TResult Function() updateInt,
+    required TResult Function() updateString,
   }) {
     return erorrviewdone(erorr);
   }
@@ -4538,6 +4732,8 @@ class _$ErorrviewdoneImpl implements Erorrviewdone {
     TResult? Function()? loadingviewAllOrders,
     TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult? Function(String erorr)? erorrviewAllOrders,
+    TResult? Function()? updateInt,
+    TResult? Function()? updateString,
   }) {
     return erorrviewdone?.call(erorr);
   }
@@ -4573,6 +4769,8 @@ class _$ErorrviewdoneImpl implements Erorrviewdone {
     TResult Function()? loadingviewAllOrders,
     TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult Function(String erorr)? erorrviewAllOrders,
+    TResult Function()? updateInt,
+    TResult Function()? updateString,
     required TResult orElse(),
   }) {
     if (erorrviewdone != null) {
@@ -4612,6 +4810,8 @@ class _$ErorrviewdoneImpl implements Erorrviewdone {
     required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
     required TResult Function(successviewAllOrders value) successviewAllOrders,
     required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
+    required TResult Function(updateInt value) updateInt,
+    required TResult Function(updateString value) updateString,
   }) {
     return erorrviewdone(this);
   }
@@ -4647,6 +4847,8 @@ class _$ErorrviewdoneImpl implements Erorrviewdone {
     TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult? Function(successviewAllOrders value)? successviewAllOrders,
     TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult? Function(updateInt value)? updateInt,
+    TResult? Function(updateString value)? updateString,
   }) {
     return erorrviewdone?.call(this);
   }
@@ -4682,6 +4884,8 @@ class _$ErorrviewdoneImpl implements Erorrviewdone {
     TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult Function(successviewAllOrders value)? successviewAllOrders,
     TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult Function(updateInt value)? updateInt,
+    TResult Function(updateString value)? updateString,
     required TResult orElse(),
   }) {
     if (erorrviewdone != null) {
@@ -4768,6 +4972,8 @@ class _$LoadingviewpendingImpl implements Loadingviewpending {
     required TResult Function() loadingviewAllOrders,
     required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
     required TResult Function(String erorr) erorrviewAllOrders,
+    required TResult Function() updateInt,
+    required TResult Function() updateString,
   }) {
     return loadingviewpending();
   }
@@ -4803,6 +5009,8 @@ class _$LoadingviewpendingImpl implements Loadingviewpending {
     TResult? Function()? loadingviewAllOrders,
     TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult? Function(String erorr)? erorrviewAllOrders,
+    TResult? Function()? updateInt,
+    TResult? Function()? updateString,
   }) {
     return loadingviewpending?.call();
   }
@@ -4838,6 +5046,8 @@ class _$LoadingviewpendingImpl implements Loadingviewpending {
     TResult Function()? loadingviewAllOrders,
     TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult Function(String erorr)? erorrviewAllOrders,
+    TResult Function()? updateInt,
+    TResult Function()? updateString,
     required TResult orElse(),
   }) {
     if (loadingviewpending != null) {
@@ -4877,6 +5087,8 @@ class _$LoadingviewpendingImpl implements Loadingviewpending {
     required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
     required TResult Function(successviewAllOrders value) successviewAllOrders,
     required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
+    required TResult Function(updateInt value) updateInt,
+    required TResult Function(updateString value) updateString,
   }) {
     return loadingviewpending(this);
   }
@@ -4912,6 +5124,8 @@ class _$LoadingviewpendingImpl implements Loadingviewpending {
     TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult? Function(successviewAllOrders value)? successviewAllOrders,
     TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult? Function(updateInt value)? updateInt,
+    TResult? Function(updateString value)? updateString,
   }) {
     return loadingviewpending?.call(this);
   }
@@ -4947,6 +5161,8 @@ class _$LoadingviewpendingImpl implements Loadingviewpending {
     TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult Function(successviewAllOrders value)? successviewAllOrders,
     TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult Function(updateInt value)? updateInt,
+    TResult Function(updateString value)? updateString,
     required TResult orElse(),
   }) {
     if (loadingviewpending != null) {
@@ -5062,6 +5278,8 @@ class _$SuccessviewpendingImpl implements Successviewpending {
     required TResult Function() loadingviewAllOrders,
     required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
     required TResult Function(String erorr) erorrviewAllOrders,
+    required TResult Function() updateInt,
+    required TResult Function() updateString,
   }) {
     return successviewpending(vieworders);
   }
@@ -5097,6 +5315,8 @@ class _$SuccessviewpendingImpl implements Successviewpending {
     TResult? Function()? loadingviewAllOrders,
     TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult? Function(String erorr)? erorrviewAllOrders,
+    TResult? Function()? updateInt,
+    TResult? Function()? updateString,
   }) {
     return successviewpending?.call(vieworders);
   }
@@ -5132,6 +5352,8 @@ class _$SuccessviewpendingImpl implements Successviewpending {
     TResult Function()? loadingviewAllOrders,
     TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult Function(String erorr)? erorrviewAllOrders,
+    TResult Function()? updateInt,
+    TResult Function()? updateString,
     required TResult orElse(),
   }) {
     if (successviewpending != null) {
@@ -5171,6 +5393,8 @@ class _$SuccessviewpendingImpl implements Successviewpending {
     required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
     required TResult Function(successviewAllOrders value) successviewAllOrders,
     required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
+    required TResult Function(updateInt value) updateInt,
+    required TResult Function(updateString value) updateString,
   }) {
     return successviewpending(this);
   }
@@ -5206,6 +5430,8 @@ class _$SuccessviewpendingImpl implements Successviewpending {
     TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult? Function(successviewAllOrders value)? successviewAllOrders,
     TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult? Function(updateInt value)? updateInt,
+    TResult? Function(updateString value)? updateString,
   }) {
     return successviewpending?.call(this);
   }
@@ -5241,6 +5467,8 @@ class _$SuccessviewpendingImpl implements Successviewpending {
     TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult Function(successviewAllOrders value)? successviewAllOrders,
     TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult Function(updateInt value)? updateInt,
+    TResult Function(updateString value)? updateString,
     required TResult orElse(),
   }) {
     if (successviewpending != null) {
@@ -5354,6 +5582,8 @@ class _$ErorrviewpendingImpl implements Erorrviewpending {
     required TResult Function() loadingviewAllOrders,
     required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
     required TResult Function(String erorr) erorrviewAllOrders,
+    required TResult Function() updateInt,
+    required TResult Function() updateString,
   }) {
     return erorrviewpending(erorr);
   }
@@ -5389,6 +5619,8 @@ class _$ErorrviewpendingImpl implements Erorrviewpending {
     TResult? Function()? loadingviewAllOrders,
     TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult? Function(String erorr)? erorrviewAllOrders,
+    TResult? Function()? updateInt,
+    TResult? Function()? updateString,
   }) {
     return erorrviewpending?.call(erorr);
   }
@@ -5424,6 +5656,8 @@ class _$ErorrviewpendingImpl implements Erorrviewpending {
     TResult Function()? loadingviewAllOrders,
     TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult Function(String erorr)? erorrviewAllOrders,
+    TResult Function()? updateInt,
+    TResult Function()? updateString,
     required TResult orElse(),
   }) {
     if (erorrviewpending != null) {
@@ -5463,6 +5697,8 @@ class _$ErorrviewpendingImpl implements Erorrviewpending {
     required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
     required TResult Function(successviewAllOrders value) successviewAllOrders,
     required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
+    required TResult Function(updateInt value) updateInt,
+    required TResult Function(updateString value) updateString,
   }) {
     return erorrviewpending(this);
   }
@@ -5498,6 +5734,8 @@ class _$ErorrviewpendingImpl implements Erorrviewpending {
     TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult? Function(successviewAllOrders value)? successviewAllOrders,
     TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult? Function(updateInt value)? updateInt,
+    TResult? Function(updateString value)? updateString,
   }) {
     return erorrviewpending?.call(this);
   }
@@ -5533,6 +5771,8 @@ class _$ErorrviewpendingImpl implements Erorrviewpending {
     TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult Function(successviewAllOrders value)? successviewAllOrders,
     TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult Function(updateInt value)? updateInt,
+    TResult Function(updateString value)? updateString,
     required TResult orElse(),
   }) {
     if (erorrviewpending != null) {
@@ -5619,6 +5859,8 @@ class _$LoadingviewprepareImpl implements Loadingviewprepare {
     required TResult Function() loadingviewAllOrders,
     required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
     required TResult Function(String erorr) erorrviewAllOrders,
+    required TResult Function() updateInt,
+    required TResult Function() updateString,
   }) {
     return loadingviewprepare();
   }
@@ -5654,6 +5896,8 @@ class _$LoadingviewprepareImpl implements Loadingviewprepare {
     TResult? Function()? loadingviewAllOrders,
     TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult? Function(String erorr)? erorrviewAllOrders,
+    TResult? Function()? updateInt,
+    TResult? Function()? updateString,
   }) {
     return loadingviewprepare?.call();
   }
@@ -5689,6 +5933,8 @@ class _$LoadingviewprepareImpl implements Loadingviewprepare {
     TResult Function()? loadingviewAllOrders,
     TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult Function(String erorr)? erorrviewAllOrders,
+    TResult Function()? updateInt,
+    TResult Function()? updateString,
     required TResult orElse(),
   }) {
     if (loadingviewprepare != null) {
@@ -5728,6 +5974,8 @@ class _$LoadingviewprepareImpl implements Loadingviewprepare {
     required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
     required TResult Function(successviewAllOrders value) successviewAllOrders,
     required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
+    required TResult Function(updateInt value) updateInt,
+    required TResult Function(updateString value) updateString,
   }) {
     return loadingviewprepare(this);
   }
@@ -5763,6 +6011,8 @@ class _$LoadingviewprepareImpl implements Loadingviewprepare {
     TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult? Function(successviewAllOrders value)? successviewAllOrders,
     TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult? Function(updateInt value)? updateInt,
+    TResult? Function(updateString value)? updateString,
   }) {
     return loadingviewprepare?.call(this);
   }
@@ -5798,6 +6048,8 @@ class _$LoadingviewprepareImpl implements Loadingviewprepare {
     TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult Function(successviewAllOrders value)? successviewAllOrders,
     TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult Function(updateInt value)? updateInt,
+    TResult Function(updateString value)? updateString,
     required TResult orElse(),
   }) {
     if (loadingviewprepare != null) {
@@ -5914,6 +6166,8 @@ class _$SuccessviewprepareImpl implements Successviewprepare {
     required TResult Function() loadingviewAllOrders,
     required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
     required TResult Function(String erorr) erorrviewAllOrders,
+    required TResult Function() updateInt,
+    required TResult Function() updateString,
   }) {
     return successviewprepare(viewprepareorders);
   }
@@ -5949,6 +6203,8 @@ class _$SuccessviewprepareImpl implements Successviewprepare {
     TResult? Function()? loadingviewAllOrders,
     TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult? Function(String erorr)? erorrviewAllOrders,
+    TResult? Function()? updateInt,
+    TResult? Function()? updateString,
   }) {
     return successviewprepare?.call(viewprepareorders);
   }
@@ -5984,6 +6240,8 @@ class _$SuccessviewprepareImpl implements Successviewprepare {
     TResult Function()? loadingviewAllOrders,
     TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult Function(String erorr)? erorrviewAllOrders,
+    TResult Function()? updateInt,
+    TResult Function()? updateString,
     required TResult orElse(),
   }) {
     if (successviewprepare != null) {
@@ -6023,6 +6281,8 @@ class _$SuccessviewprepareImpl implements Successviewprepare {
     required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
     required TResult Function(successviewAllOrders value) successviewAllOrders,
     required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
+    required TResult Function(updateInt value) updateInt,
+    required TResult Function(updateString value) updateString,
   }) {
     return successviewprepare(this);
   }
@@ -6058,6 +6318,8 @@ class _$SuccessviewprepareImpl implements Successviewprepare {
     TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult? Function(successviewAllOrders value)? successviewAllOrders,
     TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult? Function(updateInt value)? updateInt,
+    TResult? Function(updateString value)? updateString,
   }) {
     return successviewprepare?.call(this);
   }
@@ -6093,6 +6355,8 @@ class _$SuccessviewprepareImpl implements Successviewprepare {
     TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult Function(successviewAllOrders value)? successviewAllOrders,
     TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult Function(updateInt value)? updateInt,
+    TResult Function(updateString value)? updateString,
     required TResult orElse(),
   }) {
     if (successviewprepare != null) {
@@ -6206,6 +6470,8 @@ class _$ErorrviewprepareImpl implements Erorrviewprepare {
     required TResult Function() loadingviewAllOrders,
     required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
     required TResult Function(String erorr) erorrviewAllOrders,
+    required TResult Function() updateInt,
+    required TResult Function() updateString,
   }) {
     return erorrviewprepare(erorr);
   }
@@ -6241,6 +6507,8 @@ class _$ErorrviewprepareImpl implements Erorrviewprepare {
     TResult? Function()? loadingviewAllOrders,
     TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult? Function(String erorr)? erorrviewAllOrders,
+    TResult? Function()? updateInt,
+    TResult? Function()? updateString,
   }) {
     return erorrviewprepare?.call(erorr);
   }
@@ -6276,6 +6544,8 @@ class _$ErorrviewprepareImpl implements Erorrviewprepare {
     TResult Function()? loadingviewAllOrders,
     TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult Function(String erorr)? erorrviewAllOrders,
+    TResult Function()? updateInt,
+    TResult Function()? updateString,
     required TResult orElse(),
   }) {
     if (erorrviewprepare != null) {
@@ -6315,6 +6585,8 @@ class _$ErorrviewprepareImpl implements Erorrviewprepare {
     required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
     required TResult Function(successviewAllOrders value) successviewAllOrders,
     required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
+    required TResult Function(updateInt value) updateInt,
+    required TResult Function(updateString value) updateString,
   }) {
     return erorrviewprepare(this);
   }
@@ -6350,6 +6622,8 @@ class _$ErorrviewprepareImpl implements Erorrviewprepare {
     TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult? Function(successviewAllOrders value)? successviewAllOrders,
     TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult? Function(updateInt value)? updateInt,
+    TResult? Function(updateString value)? updateString,
   }) {
     return erorrviewprepare?.call(this);
   }
@@ -6385,6 +6659,8 @@ class _$ErorrviewprepareImpl implements Erorrviewprepare {
     TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult Function(successviewAllOrders value)? successviewAllOrders,
     TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult Function(updateInt value)? updateInt,
+    TResult Function(updateString value)? updateString,
     required TResult orElse(),
   }) {
     if (erorrviewprepare != null) {
@@ -6471,6 +6747,8 @@ class _$LoadingviewshippedImpl implements Loadingviewshipped {
     required TResult Function() loadingviewAllOrders,
     required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
     required TResult Function(String erorr) erorrviewAllOrders,
+    required TResult Function() updateInt,
+    required TResult Function() updateString,
   }) {
     return loadingviewshipped();
   }
@@ -6506,6 +6784,8 @@ class _$LoadingviewshippedImpl implements Loadingviewshipped {
     TResult? Function()? loadingviewAllOrders,
     TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult? Function(String erorr)? erorrviewAllOrders,
+    TResult? Function()? updateInt,
+    TResult? Function()? updateString,
   }) {
     return loadingviewshipped?.call();
   }
@@ -6541,6 +6821,8 @@ class _$LoadingviewshippedImpl implements Loadingviewshipped {
     TResult Function()? loadingviewAllOrders,
     TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult Function(String erorr)? erorrviewAllOrders,
+    TResult Function()? updateInt,
+    TResult Function()? updateString,
     required TResult orElse(),
   }) {
     if (loadingviewshipped != null) {
@@ -6580,6 +6862,8 @@ class _$LoadingviewshippedImpl implements Loadingviewshipped {
     required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
     required TResult Function(successviewAllOrders value) successviewAllOrders,
     required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
+    required TResult Function(updateInt value) updateInt,
+    required TResult Function(updateString value) updateString,
   }) {
     return loadingviewshipped(this);
   }
@@ -6615,6 +6899,8 @@ class _$LoadingviewshippedImpl implements Loadingviewshipped {
     TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult? Function(successviewAllOrders value)? successviewAllOrders,
     TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult? Function(updateInt value)? updateInt,
+    TResult? Function(updateString value)? updateString,
   }) {
     return loadingviewshipped?.call(this);
   }
@@ -6650,6 +6936,8 @@ class _$LoadingviewshippedImpl implements Loadingviewshipped {
     TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult Function(successviewAllOrders value)? successviewAllOrders,
     TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult Function(updateInt value)? updateInt,
+    TResult Function(updateString value)? updateString,
     required TResult orElse(),
   }) {
     if (loadingviewshipped != null) {
@@ -6765,6 +7053,8 @@ class _$successviewshippedImpl implements successviewshipped {
     required TResult Function() loadingviewAllOrders,
     required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
     required TResult Function(String erorr) erorrviewAllOrders,
+    required TResult Function() updateInt,
+    required TResult Function() updateString,
   }) {
     return successviewshipped(vieworders);
   }
@@ -6800,6 +7090,8 @@ class _$successviewshippedImpl implements successviewshipped {
     TResult? Function()? loadingviewAllOrders,
     TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult? Function(String erorr)? erorrviewAllOrders,
+    TResult? Function()? updateInt,
+    TResult? Function()? updateString,
   }) {
     return successviewshipped?.call(vieworders);
   }
@@ -6835,6 +7127,8 @@ class _$successviewshippedImpl implements successviewshipped {
     TResult Function()? loadingviewAllOrders,
     TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult Function(String erorr)? erorrviewAllOrders,
+    TResult Function()? updateInt,
+    TResult Function()? updateString,
     required TResult orElse(),
   }) {
     if (successviewshipped != null) {
@@ -6874,6 +7168,8 @@ class _$successviewshippedImpl implements successviewshipped {
     required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
     required TResult Function(successviewAllOrders value) successviewAllOrders,
     required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
+    required TResult Function(updateInt value) updateInt,
+    required TResult Function(updateString value) updateString,
   }) {
     return successviewshipped(this);
   }
@@ -6909,6 +7205,8 @@ class _$successviewshippedImpl implements successviewshipped {
     TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult? Function(successviewAllOrders value)? successviewAllOrders,
     TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult? Function(updateInt value)? updateInt,
+    TResult? Function(updateString value)? updateString,
   }) {
     return successviewshipped?.call(this);
   }
@@ -6944,6 +7242,8 @@ class _$successviewshippedImpl implements successviewshipped {
     TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult Function(successviewAllOrders value)? successviewAllOrders,
     TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult Function(updateInt value)? updateInt,
+    TResult Function(updateString value)? updateString,
     required TResult orElse(),
   }) {
     if (successviewshipped != null) {
@@ -7057,6 +7357,8 @@ class _$ErorrviewshippedImpl implements Erorrviewshipped {
     required TResult Function() loadingviewAllOrders,
     required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
     required TResult Function(String erorr) erorrviewAllOrders,
+    required TResult Function() updateInt,
+    required TResult Function() updateString,
   }) {
     return erorrviewshipped(erorr);
   }
@@ -7092,6 +7394,8 @@ class _$ErorrviewshippedImpl implements Erorrviewshipped {
     TResult? Function()? loadingviewAllOrders,
     TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult? Function(String erorr)? erorrviewAllOrders,
+    TResult? Function()? updateInt,
+    TResult? Function()? updateString,
   }) {
     return erorrviewshipped?.call(erorr);
   }
@@ -7127,6 +7431,8 @@ class _$ErorrviewshippedImpl implements Erorrviewshipped {
     TResult Function()? loadingviewAllOrders,
     TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult Function(String erorr)? erorrviewAllOrders,
+    TResult Function()? updateInt,
+    TResult Function()? updateString,
     required TResult orElse(),
   }) {
     if (erorrviewshipped != null) {
@@ -7166,6 +7472,8 @@ class _$ErorrviewshippedImpl implements Erorrviewshipped {
     required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
     required TResult Function(successviewAllOrders value) successviewAllOrders,
     required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
+    required TResult Function(updateInt value) updateInt,
+    required TResult Function(updateString value) updateString,
   }) {
     return erorrviewshipped(this);
   }
@@ -7201,6 +7509,8 @@ class _$ErorrviewshippedImpl implements Erorrviewshipped {
     TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult? Function(successviewAllOrders value)? successviewAllOrders,
     TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult? Function(updateInt value)? updateInt,
+    TResult? Function(updateString value)? updateString,
   }) {
     return erorrviewshipped?.call(this);
   }
@@ -7236,6 +7546,8 @@ class _$ErorrviewshippedImpl implements Erorrviewshipped {
     TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult Function(successviewAllOrders value)? successviewAllOrders,
     TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult Function(updateInt value)? updateInt,
+    TResult Function(updateString value)? updateString,
     required TResult orElse(),
   }) {
     if (erorrviewshipped != null) {
@@ -7323,6 +7635,8 @@ class _$LoadingviewAllOrdersImpl implements LoadingviewAllOrders {
     required TResult Function() loadingviewAllOrders,
     required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
     required TResult Function(String erorr) erorrviewAllOrders,
+    required TResult Function() updateInt,
+    required TResult Function() updateString,
   }) {
     return loadingviewAllOrders();
   }
@@ -7358,6 +7672,8 @@ class _$LoadingviewAllOrdersImpl implements LoadingviewAllOrders {
     TResult? Function()? loadingviewAllOrders,
     TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult? Function(String erorr)? erorrviewAllOrders,
+    TResult? Function()? updateInt,
+    TResult? Function()? updateString,
   }) {
     return loadingviewAllOrders?.call();
   }
@@ -7393,6 +7709,8 @@ class _$LoadingviewAllOrdersImpl implements LoadingviewAllOrders {
     TResult Function()? loadingviewAllOrders,
     TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult Function(String erorr)? erorrviewAllOrders,
+    TResult Function()? updateInt,
+    TResult Function()? updateString,
     required TResult orElse(),
   }) {
     if (loadingviewAllOrders != null) {
@@ -7432,6 +7750,8 @@ class _$LoadingviewAllOrdersImpl implements LoadingviewAllOrders {
     required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
     required TResult Function(successviewAllOrders value) successviewAllOrders,
     required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
+    required TResult Function(updateInt value) updateInt,
+    required TResult Function(updateString value) updateString,
   }) {
     return loadingviewAllOrders(this);
   }
@@ -7467,6 +7787,8 @@ class _$LoadingviewAllOrdersImpl implements LoadingviewAllOrders {
     TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult? Function(successviewAllOrders value)? successviewAllOrders,
     TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult? Function(updateInt value)? updateInt,
+    TResult? Function(updateString value)? updateString,
   }) {
     return loadingviewAllOrders?.call(this);
   }
@@ -7502,6 +7824,8 @@ class _$LoadingviewAllOrdersImpl implements LoadingviewAllOrders {
     TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult Function(successviewAllOrders value)? successviewAllOrders,
     TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult Function(updateInt value)? updateInt,
+    TResult Function(updateString value)? updateString,
     required TResult orElse(),
   }) {
     if (loadingviewAllOrders != null) {
@@ -7618,6 +7942,8 @@ class _$successviewAllOrdersImpl implements successviewAllOrders {
     required TResult Function() loadingviewAllOrders,
     required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
     required TResult Function(String erorr) erorrviewAllOrders,
+    required TResult Function() updateInt,
+    required TResult Function() updateString,
   }) {
     return successviewAllOrders(viewAllorders);
   }
@@ -7653,6 +7979,8 @@ class _$successviewAllOrdersImpl implements successviewAllOrders {
     TResult? Function()? loadingviewAllOrders,
     TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult? Function(String erorr)? erorrviewAllOrders,
+    TResult? Function()? updateInt,
+    TResult? Function()? updateString,
   }) {
     return successviewAllOrders?.call(viewAllorders);
   }
@@ -7688,6 +8016,8 @@ class _$successviewAllOrdersImpl implements successviewAllOrders {
     TResult Function()? loadingviewAllOrders,
     TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult Function(String erorr)? erorrviewAllOrders,
+    TResult Function()? updateInt,
+    TResult Function()? updateString,
     required TResult orElse(),
   }) {
     if (successviewAllOrders != null) {
@@ -7727,6 +8057,8 @@ class _$successviewAllOrdersImpl implements successviewAllOrders {
     required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
     required TResult Function(successviewAllOrders value) successviewAllOrders,
     required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
+    required TResult Function(updateInt value) updateInt,
+    required TResult Function(updateString value) updateString,
   }) {
     return successviewAllOrders(this);
   }
@@ -7762,6 +8094,8 @@ class _$successviewAllOrdersImpl implements successviewAllOrders {
     TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult? Function(successviewAllOrders value)? successviewAllOrders,
     TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult? Function(updateInt value)? updateInt,
+    TResult? Function(updateString value)? updateString,
   }) {
     return successviewAllOrders?.call(this);
   }
@@ -7797,6 +8131,8 @@ class _$successviewAllOrdersImpl implements successviewAllOrders {
     TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult Function(successviewAllOrders value)? successviewAllOrders,
     TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult Function(updateInt value)? updateInt,
+    TResult Function(updateString value)? updateString,
     required TResult orElse(),
   }) {
     if (successviewAllOrders != null) {
@@ -7910,6 +8246,8 @@ class _$ErorrviewAllOrdersImpl implements ErorrviewAllOrders {
     required TResult Function() loadingviewAllOrders,
     required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
     required TResult Function(String erorr) erorrviewAllOrders,
+    required TResult Function() updateInt,
+    required TResult Function() updateString,
   }) {
     return erorrviewAllOrders(erorr);
   }
@@ -7945,6 +8283,8 @@ class _$ErorrviewAllOrdersImpl implements ErorrviewAllOrders {
     TResult? Function()? loadingviewAllOrders,
     TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult? Function(String erorr)? erorrviewAllOrders,
+    TResult? Function()? updateInt,
+    TResult? Function()? updateString,
   }) {
     return erorrviewAllOrders?.call(erorr);
   }
@@ -7980,6 +8320,8 @@ class _$ErorrviewAllOrdersImpl implements ErorrviewAllOrders {
     TResult Function()? loadingviewAllOrders,
     TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
     TResult Function(String erorr)? erorrviewAllOrders,
+    TResult Function()? updateInt,
+    TResult Function()? updateString,
     required TResult orElse(),
   }) {
     if (erorrviewAllOrders != null) {
@@ -8019,6 +8361,8 @@ class _$ErorrviewAllOrdersImpl implements ErorrviewAllOrders {
     required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
     required TResult Function(successviewAllOrders value) successviewAllOrders,
     required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
+    required TResult Function(updateInt value) updateInt,
+    required TResult Function(updateString value) updateString,
   }) {
     return erorrviewAllOrders(this);
   }
@@ -8054,6 +8398,8 @@ class _$ErorrviewAllOrdersImpl implements ErorrviewAllOrders {
     TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult? Function(successviewAllOrders value)? successviewAllOrders,
     TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult? Function(updateInt value)? updateInt,
+    TResult? Function(updateString value)? updateString,
   }) {
     return erorrviewAllOrders?.call(this);
   }
@@ -8089,6 +8435,8 @@ class _$ErorrviewAllOrdersImpl implements ErorrviewAllOrders {
     TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
     TResult Function(successviewAllOrders value)? successviewAllOrders,
     TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult Function(updateInt value)? updateInt,
+    TResult Function(updateString value)? updateString,
     required TResult orElse(),
   }) {
     if (erorrviewAllOrders != null) {
@@ -8106,4 +8454,546 @@ abstract class ErorrviewAllOrders implements OrdersState {
   @JsonKey(ignore: true)
   _$$ErorrviewAllOrdersImplCopyWith<_$ErorrviewAllOrdersImpl> get copyWith =>
       throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$updateIntImplCopyWith<$Res> {
+  factory _$$updateIntImplCopyWith(
+          _$updateIntImpl value, $Res Function(_$updateIntImpl) then) =
+      __$$updateIntImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$updateIntImplCopyWithImpl<$Res>
+    extends _$OrdersStateCopyWithImpl<$Res, _$updateIntImpl>
+    implements _$$updateIntImplCopyWith<$Res> {
+  __$$updateIntImplCopyWithImpl(
+      _$updateIntImpl _value, $Res Function(_$updateIntImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$updateIntImpl implements updateInt {
+  const _$updateIntImpl();
+
+  @override
+  String toString() {
+    return 'OrdersState.updateInt()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$updateIntImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loadingUpdate,
+    required TResult Function() successUpdate,
+    required TResult Function(String erorr) erorrUpdate,
+    required TResult Function() loadingviewdetails,
+    required TResult Function(List<DataDetails> responseDetails)
+        successviewdetails,
+    required TResult Function(String erorr) erorrviewdetails,
+    required TResult Function() loadingviewapprove,
+    required TResult Function(List<Datum> vieworders) successviewapprove,
+    required TResult Function(String erorr) erorrviewapprove,
+    required TResult Function() loadingviewCancel,
+    required TResult Function(List<Datum> vieworders) successviewCancel,
+    required TResult Function(String erorr) erorrviewCancel,
+    required TResult Function() loadingviewdone,
+    required TResult Function(List<Datum> vieworders) successviewdone,
+    required TResult Function(String erorr) erorrviewdone,
+    required TResult Function() loadingviewpending,
+    required TResult Function(List<Datum> vieworders) successviewpending,
+    required TResult Function(String erorr) erorrviewpending,
+    required TResult Function() loadingviewprepare,
+    required TResult Function(List<Datum> viewprepareorders) successviewprepare,
+    required TResult Function(String erorr) erorrviewprepare,
+    required TResult Function() loadingviewshipped,
+    required TResult Function(List<Datum> vieworders) successviewshipped,
+    required TResult Function(String erorr) erorrviewshipped,
+    required TResult Function() loadingviewAllOrders,
+    required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
+    required TResult Function(String erorr) erorrviewAllOrders,
+    required TResult Function() updateInt,
+    required TResult Function() updateString,
+  }) {
+    return updateInt();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loadingUpdate,
+    TResult? Function()? successUpdate,
+    TResult? Function(String erorr)? erorrUpdate,
+    TResult? Function()? loadingviewdetails,
+    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
+    TResult? Function(String erorr)? erorrviewdetails,
+    TResult? Function()? loadingviewapprove,
+    TResult? Function(List<Datum> vieworders)? successviewapprove,
+    TResult? Function(String erorr)? erorrviewapprove,
+    TResult? Function()? loadingviewCancel,
+    TResult? Function(List<Datum> vieworders)? successviewCancel,
+    TResult? Function(String erorr)? erorrviewCancel,
+    TResult? Function()? loadingviewdone,
+    TResult? Function(List<Datum> vieworders)? successviewdone,
+    TResult? Function(String erorr)? erorrviewdone,
+    TResult? Function()? loadingviewpending,
+    TResult? Function(List<Datum> vieworders)? successviewpending,
+    TResult? Function(String erorr)? erorrviewpending,
+    TResult? Function()? loadingviewprepare,
+    TResult? Function(List<Datum> viewprepareorders)? successviewprepare,
+    TResult? Function(String erorr)? erorrviewprepare,
+    TResult? Function()? loadingviewshipped,
+    TResult? Function(List<Datum> vieworders)? successviewshipped,
+    TResult? Function(String erorr)? erorrviewshipped,
+    TResult? Function()? loadingviewAllOrders,
+    TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
+    TResult? Function(String erorr)? erorrviewAllOrders,
+    TResult? Function()? updateInt,
+    TResult? Function()? updateString,
+  }) {
+    return updateInt?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loadingUpdate,
+    TResult Function()? successUpdate,
+    TResult Function(String erorr)? erorrUpdate,
+    TResult Function()? loadingviewdetails,
+    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
+    TResult Function(String erorr)? erorrviewdetails,
+    TResult Function()? loadingviewapprove,
+    TResult Function(List<Datum> vieworders)? successviewapprove,
+    TResult Function(String erorr)? erorrviewapprove,
+    TResult Function()? loadingviewCancel,
+    TResult Function(List<Datum> vieworders)? successviewCancel,
+    TResult Function(String erorr)? erorrviewCancel,
+    TResult Function()? loadingviewdone,
+    TResult Function(List<Datum> vieworders)? successviewdone,
+    TResult Function(String erorr)? erorrviewdone,
+    TResult Function()? loadingviewpending,
+    TResult Function(List<Datum> vieworders)? successviewpending,
+    TResult Function(String erorr)? erorrviewpending,
+    TResult Function()? loadingviewprepare,
+    TResult Function(List<Datum> viewprepareorders)? successviewprepare,
+    TResult Function(String erorr)? erorrviewprepare,
+    TResult Function()? loadingviewshipped,
+    TResult Function(List<Datum> vieworders)? successviewshipped,
+    TResult Function(String erorr)? erorrviewshipped,
+    TResult Function()? loadingviewAllOrders,
+    TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
+    TResult Function(String erorr)? erorrviewAllOrders,
+    TResult Function()? updateInt,
+    TResult Function()? updateString,
+    required TResult orElse(),
+  }) {
+    if (updateInt != null) {
+      return updateInt();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(LoadingUpdate value) loadingUpdate,
+    required TResult Function(SuccessUpdate value) successUpdate,
+    required TResult Function(ErorrUpdate value) erorrUpdate,
+    required TResult Function(Loadingviewdetails value) loadingviewdetails,
+    required TResult Function(successviewdetails value) successviewdetails,
+    required TResult Function(Erorrviewdetails value) erorrviewdetails,
+    required TResult Function(Loadingviewapprove value) loadingviewapprove,
+    required TResult Function(Successviewapprove value) successviewapprove,
+    required TResult Function(Erorrviewapprove value) erorrviewapprove,
+    required TResult Function(LoadingviewCancel value) loadingviewCancel,
+    required TResult Function(SuccessviewCancel value) successviewCancel,
+    required TResult Function(ErorrviewCancel value) erorrviewCancel,
+    required TResult Function(Loadingviewdone value) loadingviewdone,
+    required TResult Function(Successviewdone value) successviewdone,
+    required TResult Function(Erorrviewdone value) erorrviewdone,
+    required TResult Function(Loadingviewpending value) loadingviewpending,
+    required TResult Function(Successviewpending value) successviewpending,
+    required TResult Function(Erorrviewpending value) erorrviewpending,
+    required TResult Function(Loadingviewprepare value) loadingviewprepare,
+    required TResult Function(Successviewprepare value) successviewprepare,
+    required TResult Function(Erorrviewprepare value) erorrviewprepare,
+    required TResult Function(Loadingviewshipped value) loadingviewshipped,
+    required TResult Function(successviewshipped value) successviewshipped,
+    required TResult Function(Erorrviewshipped value) erorrviewshipped,
+    required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
+    required TResult Function(successviewAllOrders value) successviewAllOrders,
+    required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
+    required TResult Function(updateInt value) updateInt,
+    required TResult Function(updateString value) updateString,
+  }) {
+    return updateInt(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(LoadingUpdate value)? loadingUpdate,
+    TResult? Function(SuccessUpdate value)? successUpdate,
+    TResult? Function(ErorrUpdate value)? erorrUpdate,
+    TResult? Function(Loadingviewdetails value)? loadingviewdetails,
+    TResult? Function(successviewdetails value)? successviewdetails,
+    TResult? Function(Erorrviewdetails value)? erorrviewdetails,
+    TResult? Function(Loadingviewapprove value)? loadingviewapprove,
+    TResult? Function(Successviewapprove value)? successviewapprove,
+    TResult? Function(Erorrviewapprove value)? erorrviewapprove,
+    TResult? Function(LoadingviewCancel value)? loadingviewCancel,
+    TResult? Function(SuccessviewCancel value)? successviewCancel,
+    TResult? Function(ErorrviewCancel value)? erorrviewCancel,
+    TResult? Function(Loadingviewdone value)? loadingviewdone,
+    TResult? Function(Successviewdone value)? successviewdone,
+    TResult? Function(Erorrviewdone value)? erorrviewdone,
+    TResult? Function(Loadingviewpending value)? loadingviewpending,
+    TResult? Function(Successviewpending value)? successviewpending,
+    TResult? Function(Erorrviewpending value)? erorrviewpending,
+    TResult? Function(Loadingviewprepare value)? loadingviewprepare,
+    TResult? Function(Successviewprepare value)? successviewprepare,
+    TResult? Function(Erorrviewprepare value)? erorrviewprepare,
+    TResult? Function(Loadingviewshipped value)? loadingviewshipped,
+    TResult? Function(successviewshipped value)? successviewshipped,
+    TResult? Function(Erorrviewshipped value)? erorrviewshipped,
+    TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
+    TResult? Function(successviewAllOrders value)? successviewAllOrders,
+    TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult? Function(updateInt value)? updateInt,
+    TResult? Function(updateString value)? updateString,
+  }) {
+    return updateInt?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(LoadingUpdate value)? loadingUpdate,
+    TResult Function(SuccessUpdate value)? successUpdate,
+    TResult Function(ErorrUpdate value)? erorrUpdate,
+    TResult Function(Loadingviewdetails value)? loadingviewdetails,
+    TResult Function(successviewdetails value)? successviewdetails,
+    TResult Function(Erorrviewdetails value)? erorrviewdetails,
+    TResult Function(Loadingviewapprove value)? loadingviewapprove,
+    TResult Function(Successviewapprove value)? successviewapprove,
+    TResult Function(Erorrviewapprove value)? erorrviewapprove,
+    TResult Function(LoadingviewCancel value)? loadingviewCancel,
+    TResult Function(SuccessviewCancel value)? successviewCancel,
+    TResult Function(ErorrviewCancel value)? erorrviewCancel,
+    TResult Function(Loadingviewdone value)? loadingviewdone,
+    TResult Function(Successviewdone value)? successviewdone,
+    TResult Function(Erorrviewdone value)? erorrviewdone,
+    TResult Function(Loadingviewpending value)? loadingviewpending,
+    TResult Function(Successviewpending value)? successviewpending,
+    TResult Function(Erorrviewpending value)? erorrviewpending,
+    TResult Function(Loadingviewprepare value)? loadingviewprepare,
+    TResult Function(Successviewprepare value)? successviewprepare,
+    TResult Function(Erorrviewprepare value)? erorrviewprepare,
+    TResult Function(Loadingviewshipped value)? loadingviewshipped,
+    TResult Function(successviewshipped value)? successviewshipped,
+    TResult Function(Erorrviewshipped value)? erorrviewshipped,
+    TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
+    TResult Function(successviewAllOrders value)? successviewAllOrders,
+    TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult Function(updateInt value)? updateInt,
+    TResult Function(updateString value)? updateString,
+    required TResult orElse(),
+  }) {
+    if (updateInt != null) {
+      return updateInt(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class updateInt implements OrdersState {
+  const factory updateInt() = _$updateIntImpl;
+}
+
+/// @nodoc
+abstract class _$$updateStringImplCopyWith<$Res> {
+  factory _$$updateStringImplCopyWith(
+          _$updateStringImpl value, $Res Function(_$updateStringImpl) then) =
+      __$$updateStringImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$updateStringImplCopyWithImpl<$Res>
+    extends _$OrdersStateCopyWithImpl<$Res, _$updateStringImpl>
+    implements _$$updateStringImplCopyWith<$Res> {
+  __$$updateStringImplCopyWithImpl(
+      _$updateStringImpl _value, $Res Function(_$updateStringImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$updateStringImpl implements updateString {
+  const _$updateStringImpl();
+
+  @override
+  String toString() {
+    return 'OrdersState.updateString()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$updateStringImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loadingUpdate,
+    required TResult Function() successUpdate,
+    required TResult Function(String erorr) erorrUpdate,
+    required TResult Function() loadingviewdetails,
+    required TResult Function(List<DataDetails> responseDetails)
+        successviewdetails,
+    required TResult Function(String erorr) erorrviewdetails,
+    required TResult Function() loadingviewapprove,
+    required TResult Function(List<Datum> vieworders) successviewapprove,
+    required TResult Function(String erorr) erorrviewapprove,
+    required TResult Function() loadingviewCancel,
+    required TResult Function(List<Datum> vieworders) successviewCancel,
+    required TResult Function(String erorr) erorrviewCancel,
+    required TResult Function() loadingviewdone,
+    required TResult Function(List<Datum> vieworders) successviewdone,
+    required TResult Function(String erorr) erorrviewdone,
+    required TResult Function() loadingviewpending,
+    required TResult Function(List<Datum> vieworders) successviewpending,
+    required TResult Function(String erorr) erorrviewpending,
+    required TResult Function() loadingviewprepare,
+    required TResult Function(List<Datum> viewprepareorders) successviewprepare,
+    required TResult Function(String erorr) erorrviewprepare,
+    required TResult Function() loadingviewshipped,
+    required TResult Function(List<Datum> vieworders) successviewshipped,
+    required TResult Function(String erorr) erorrviewshipped,
+    required TResult Function() loadingviewAllOrders,
+    required TResult Function(List<Datum> viewAllorders) successviewAllOrders,
+    required TResult Function(String erorr) erorrviewAllOrders,
+    required TResult Function() updateInt,
+    required TResult Function() updateString,
+  }) {
+    return updateString();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loadingUpdate,
+    TResult? Function()? successUpdate,
+    TResult? Function(String erorr)? erorrUpdate,
+    TResult? Function()? loadingviewdetails,
+    TResult? Function(List<DataDetails> responseDetails)? successviewdetails,
+    TResult? Function(String erorr)? erorrviewdetails,
+    TResult? Function()? loadingviewapprove,
+    TResult? Function(List<Datum> vieworders)? successviewapprove,
+    TResult? Function(String erorr)? erorrviewapprove,
+    TResult? Function()? loadingviewCancel,
+    TResult? Function(List<Datum> vieworders)? successviewCancel,
+    TResult? Function(String erorr)? erorrviewCancel,
+    TResult? Function()? loadingviewdone,
+    TResult? Function(List<Datum> vieworders)? successviewdone,
+    TResult? Function(String erorr)? erorrviewdone,
+    TResult? Function()? loadingviewpending,
+    TResult? Function(List<Datum> vieworders)? successviewpending,
+    TResult? Function(String erorr)? erorrviewpending,
+    TResult? Function()? loadingviewprepare,
+    TResult? Function(List<Datum> viewprepareorders)? successviewprepare,
+    TResult? Function(String erorr)? erorrviewprepare,
+    TResult? Function()? loadingviewshipped,
+    TResult? Function(List<Datum> vieworders)? successviewshipped,
+    TResult? Function(String erorr)? erorrviewshipped,
+    TResult? Function()? loadingviewAllOrders,
+    TResult? Function(List<Datum> viewAllorders)? successviewAllOrders,
+    TResult? Function(String erorr)? erorrviewAllOrders,
+    TResult? Function()? updateInt,
+    TResult? Function()? updateString,
+  }) {
+    return updateString?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loadingUpdate,
+    TResult Function()? successUpdate,
+    TResult Function(String erorr)? erorrUpdate,
+    TResult Function()? loadingviewdetails,
+    TResult Function(List<DataDetails> responseDetails)? successviewdetails,
+    TResult Function(String erorr)? erorrviewdetails,
+    TResult Function()? loadingviewapprove,
+    TResult Function(List<Datum> vieworders)? successviewapprove,
+    TResult Function(String erorr)? erorrviewapprove,
+    TResult Function()? loadingviewCancel,
+    TResult Function(List<Datum> vieworders)? successviewCancel,
+    TResult Function(String erorr)? erorrviewCancel,
+    TResult Function()? loadingviewdone,
+    TResult Function(List<Datum> vieworders)? successviewdone,
+    TResult Function(String erorr)? erorrviewdone,
+    TResult Function()? loadingviewpending,
+    TResult Function(List<Datum> vieworders)? successviewpending,
+    TResult Function(String erorr)? erorrviewpending,
+    TResult Function()? loadingviewprepare,
+    TResult Function(List<Datum> viewprepareorders)? successviewprepare,
+    TResult Function(String erorr)? erorrviewprepare,
+    TResult Function()? loadingviewshipped,
+    TResult Function(List<Datum> vieworders)? successviewshipped,
+    TResult Function(String erorr)? erorrviewshipped,
+    TResult Function()? loadingviewAllOrders,
+    TResult Function(List<Datum> viewAllorders)? successviewAllOrders,
+    TResult Function(String erorr)? erorrviewAllOrders,
+    TResult Function()? updateInt,
+    TResult Function()? updateString,
+    required TResult orElse(),
+  }) {
+    if (updateString != null) {
+      return updateString();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(LoadingUpdate value) loadingUpdate,
+    required TResult Function(SuccessUpdate value) successUpdate,
+    required TResult Function(ErorrUpdate value) erorrUpdate,
+    required TResult Function(Loadingviewdetails value) loadingviewdetails,
+    required TResult Function(successviewdetails value) successviewdetails,
+    required TResult Function(Erorrviewdetails value) erorrviewdetails,
+    required TResult Function(Loadingviewapprove value) loadingviewapprove,
+    required TResult Function(Successviewapprove value) successviewapprove,
+    required TResult Function(Erorrviewapprove value) erorrviewapprove,
+    required TResult Function(LoadingviewCancel value) loadingviewCancel,
+    required TResult Function(SuccessviewCancel value) successviewCancel,
+    required TResult Function(ErorrviewCancel value) erorrviewCancel,
+    required TResult Function(Loadingviewdone value) loadingviewdone,
+    required TResult Function(Successviewdone value) successviewdone,
+    required TResult Function(Erorrviewdone value) erorrviewdone,
+    required TResult Function(Loadingviewpending value) loadingviewpending,
+    required TResult Function(Successviewpending value) successviewpending,
+    required TResult Function(Erorrviewpending value) erorrviewpending,
+    required TResult Function(Loadingviewprepare value) loadingviewprepare,
+    required TResult Function(Successviewprepare value) successviewprepare,
+    required TResult Function(Erorrviewprepare value) erorrviewprepare,
+    required TResult Function(Loadingviewshipped value) loadingviewshipped,
+    required TResult Function(successviewshipped value) successviewshipped,
+    required TResult Function(Erorrviewshipped value) erorrviewshipped,
+    required TResult Function(LoadingviewAllOrders value) loadingviewAllOrders,
+    required TResult Function(successviewAllOrders value) successviewAllOrders,
+    required TResult Function(ErorrviewAllOrders value) erorrviewAllOrders,
+    required TResult Function(updateInt value) updateInt,
+    required TResult Function(updateString value) updateString,
+  }) {
+    return updateString(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(LoadingUpdate value)? loadingUpdate,
+    TResult? Function(SuccessUpdate value)? successUpdate,
+    TResult? Function(ErorrUpdate value)? erorrUpdate,
+    TResult? Function(Loadingviewdetails value)? loadingviewdetails,
+    TResult? Function(successviewdetails value)? successviewdetails,
+    TResult? Function(Erorrviewdetails value)? erorrviewdetails,
+    TResult? Function(Loadingviewapprove value)? loadingviewapprove,
+    TResult? Function(Successviewapprove value)? successviewapprove,
+    TResult? Function(Erorrviewapprove value)? erorrviewapprove,
+    TResult? Function(LoadingviewCancel value)? loadingviewCancel,
+    TResult? Function(SuccessviewCancel value)? successviewCancel,
+    TResult? Function(ErorrviewCancel value)? erorrviewCancel,
+    TResult? Function(Loadingviewdone value)? loadingviewdone,
+    TResult? Function(Successviewdone value)? successviewdone,
+    TResult? Function(Erorrviewdone value)? erorrviewdone,
+    TResult? Function(Loadingviewpending value)? loadingviewpending,
+    TResult? Function(Successviewpending value)? successviewpending,
+    TResult? Function(Erorrviewpending value)? erorrviewpending,
+    TResult? Function(Loadingviewprepare value)? loadingviewprepare,
+    TResult? Function(Successviewprepare value)? successviewprepare,
+    TResult? Function(Erorrviewprepare value)? erorrviewprepare,
+    TResult? Function(Loadingviewshipped value)? loadingviewshipped,
+    TResult? Function(successviewshipped value)? successviewshipped,
+    TResult? Function(Erorrviewshipped value)? erorrviewshipped,
+    TResult? Function(LoadingviewAllOrders value)? loadingviewAllOrders,
+    TResult? Function(successviewAllOrders value)? successviewAllOrders,
+    TResult? Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult? Function(updateInt value)? updateInt,
+    TResult? Function(updateString value)? updateString,
+  }) {
+    return updateString?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(LoadingUpdate value)? loadingUpdate,
+    TResult Function(SuccessUpdate value)? successUpdate,
+    TResult Function(ErorrUpdate value)? erorrUpdate,
+    TResult Function(Loadingviewdetails value)? loadingviewdetails,
+    TResult Function(successviewdetails value)? successviewdetails,
+    TResult Function(Erorrviewdetails value)? erorrviewdetails,
+    TResult Function(Loadingviewapprove value)? loadingviewapprove,
+    TResult Function(Successviewapprove value)? successviewapprove,
+    TResult Function(Erorrviewapprove value)? erorrviewapprove,
+    TResult Function(LoadingviewCancel value)? loadingviewCancel,
+    TResult Function(SuccessviewCancel value)? successviewCancel,
+    TResult Function(ErorrviewCancel value)? erorrviewCancel,
+    TResult Function(Loadingviewdone value)? loadingviewdone,
+    TResult Function(Successviewdone value)? successviewdone,
+    TResult Function(Erorrviewdone value)? erorrviewdone,
+    TResult Function(Loadingviewpending value)? loadingviewpending,
+    TResult Function(Successviewpending value)? successviewpending,
+    TResult Function(Erorrviewpending value)? erorrviewpending,
+    TResult Function(Loadingviewprepare value)? loadingviewprepare,
+    TResult Function(Successviewprepare value)? successviewprepare,
+    TResult Function(Erorrviewprepare value)? erorrviewprepare,
+    TResult Function(Loadingviewshipped value)? loadingviewshipped,
+    TResult Function(successviewshipped value)? successviewshipped,
+    TResult Function(Erorrviewshipped value)? erorrviewshipped,
+    TResult Function(LoadingviewAllOrders value)? loadingviewAllOrders,
+    TResult Function(successviewAllOrders value)? successviewAllOrders,
+    TResult Function(ErorrviewAllOrders value)? erorrviewAllOrders,
+    TResult Function(updateInt value)? updateInt,
+    TResult Function(updateString value)? updateString,
+    required TResult orElse(),
+  }) {
+    if (updateString != null) {
+      return updateString(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class updateString implements OrdersState {
+  const factory updateString() = _$updateStringImpl;
 }

@@ -7,8 +7,6 @@ import 'package:untitled/core/extensions/extention_navigator.dart';
 import '../../../../core/function/show_dilaog/top_show_dialog.dart';
 import '../../../../core/widgets/setup_erorr.dart';
 
-import '../../../../core/theming/colors.dart';
-
 class UpdateOrdersBlocListener extends StatelessWidget {
   const UpdateOrdersBlocListener({super.key});
 
@@ -22,15 +20,15 @@ class UpdateOrdersBlocListener extends StatelessWidget {
       listener: (context, state) {
         state.whenOrNull(
           loadingUpdate: () {
-            context.pop();
-            showDialog(
-              context: context,
-              builder: (context) => const Center(
-                child: CircularProgressIndicator(
-                  color: AppColor.mainBlue,
-                ),
-              ),
-            );
+            // context.pop();
+            // showDialog(
+            //   context: context,
+            //   builder: (context) => const Center(
+            //     child: CircularProgressIndicator(
+            //       color: AppColor.mainBlue,
+            //     ),
+            //   ),
+            // );
           },
           successUpdate: () {
             context.pop();

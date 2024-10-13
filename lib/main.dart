@@ -9,14 +9,12 @@ import 'package:device_preview/device_preview.dart';
 
 import 'core/class/cache_helper.dart';
 import 'core/get_it/get_it.dart';
-import 'core/helpers/push_notifications_service.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-  PushNotificationsService.init();
   setupServise();
   Bloc.observer = MyBlocObserver();
   await getIt<CacheHelper>().init();

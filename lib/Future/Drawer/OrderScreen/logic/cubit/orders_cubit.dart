@@ -1,7 +1,5 @@
-import 'dart:developer';
-
-import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../../models/response_orders/datum.dart';
 import '../../data/repo_orders.dart';
@@ -19,18 +17,6 @@ class OrdersCubit extends Cubit<OrdersState> {
   TextEditingController trackingUrlCtrl = TextEditingController();
   String selectedOrderStatus = 'pending';
   String playerId = '';
-  List<Datum> orderData = [
-    const Datum(
-      ordersUserid: 100,
-      ordersDatetime: '2000-4-22',
-      ordersId: 2,
-      ordersPaymentmets: 3,
-      orderToatalprice: 555,
-      ordersType: 44,
-      ordersStatus: 0,
-      ordersCoupon: 66,
-    )
-  ];
 
   List<String> item = [
     'All order',
@@ -80,6 +66,7 @@ class OrdersCubit extends Cubit<OrdersState> {
     } else {
       selectedOrderStatus = 'Cancelled';
     }
+    emit(const OrdersState.updateInt());
   }
 
   // String? updateStatus;
@@ -96,6 +83,7 @@ class OrdersCubit extends Cubit<OrdersState> {
     } else if (value == 'done') {
       selectedOrderStatus = 'done';
     } else {}
+    emit(const OrdersState.updateString());
   }
 
   updateOrders(int orderid, int userid, int type, String playerId) {
@@ -108,9 +96,7 @@ class OrdersCubit extends Cubit<OrdersState> {
       shipped(orderid, userid, playerId);
     } else if (selectedOrderStatus == 'done') {
       done(orderid, userid, playerId);
-    } else {
-      log('message');
-    }
+    } else {}
   }
 
   ///:approve

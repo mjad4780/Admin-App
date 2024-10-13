@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../models/response_notification/datum.dart';
@@ -21,7 +19,6 @@ class NotificationListSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    log(MediaQuery.sizeOf(context).width.toString());
     return Container(
       padding: const EdgeInsets.all(defaultPadding),
       decoration: const BoxDecoration(

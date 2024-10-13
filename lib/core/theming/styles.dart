@@ -6,20 +6,20 @@ import 'font_weight_helper.dart';
 
 abstract class TextStyles {
   static TextStyle styleRegular16(context) {
-    return const TextStyle(
-      // color: const Color(0xFF064060),
-      // fontSize: getResponsiveFontSize(context, fontSize: 16),
-      // fontFamily: 'Montserrat',
+    return TextStyle(
+      // color: Color(0xFF064060),
+      fontSize: getResponsiveFontSize(context, fontSize: 16),
+      fontFamily: 'Montserrat',
       fontWeight: FontWeight.w400,
     );
   }
 
   static TextStyle stylesection(context) {
-    return const TextStyle(
-      color: AppColor.primaryColor, fontWeight: FontWeight.bold,
-      // color: const Color(0xFF064060),
-      // fontSize: getResponsiveFontSize(context, fontSize: 16),
-      // fontFamily: 'Montserrat',
+    return TextStyle(
+      color: AppColor.primaryColor,
+      fontWeight: FontWeight.bold,
+      fontSize: getResponsiveFontSize(context, fontSize: 16),
+      fontFamily: 'Montserrat',
     );
   }
 

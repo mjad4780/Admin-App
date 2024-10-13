@@ -74,4 +74,7 @@ class OrdersState with _$OrdersState {
       successviewAllOrders;
   const factory OrdersState.erorrviewAllOrders({required String erorr}) =
       ErorrviewAllOrders;
+
+  const factory OrdersState.updateInt() = updateInt;
+  const factory OrdersState.updateString() = updateString;
 }

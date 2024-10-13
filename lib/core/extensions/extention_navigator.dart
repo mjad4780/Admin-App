@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 extension Navigation on BuildContext {
-  Future<dynamic> pushN(BuildContext context, Widget widget) {
+  Future<dynamic> pushN(BuildContext context, Widget widget, int staus) {
+    // context.read<OrdersCubit>().orderStatus(staus);
     return Navigator.push(
         this, MaterialPageRoute(builder: (context) => widget));
   }

@@ -4,8 +4,9 @@ import 'package:gap/gap.dart';
 import '../utility/constants.dart';
 
 class RowBotttomAdd extends StatelessWidget {
-  const RowBotttomAdd({super.key, this.onPressed});
+  const RowBotttomAdd({super.key, this.onPressed, this.loading = false});
   final void Function()? onPressed;
+  final bool loading;
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -32,7 +33,9 @@ class RowBotttomAdd extends StatelessWidget {
               backgroundColor: primaryColor,
             ),
             onPressed: onPressed,
-            child: const Text('Submit'),
+            child: loading == true
+                ? const CircularProgressIndicator()
+                : const Text('Submit'),
           ),
         ],
       ),

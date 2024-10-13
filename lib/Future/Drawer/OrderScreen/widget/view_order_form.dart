@@ -1,4 +1,4 @@
-import 'package:untitled/core/get_it/get_it.dart';
+import 'package:untitled/Future/Drawer/OrderScreen/logic/cubit/orders_state.dart';
 import 'package:untitled/models/response_orders/datum.dart';
 
 import '../../../../core/theming/styles.dart';
@@ -34,19 +34,14 @@ class OrderSubmitForm extends StatelessWidget {
     return size.width <= SizeConfig.tablet
         ? Scaffold(
             appBar: AppBar(),
-            body: BlocProvider(
-              create: (context) => getIt<OrdersCubit>(),
-              child: CustemSubmint(
-                size: size,
-                order: order,
-              ),
-            ))
-        : BlocProvider(
-            create: (context) => getIt<OrdersCubit>(),
-            child: CustemSubmint(
+            body: CustemSubmint(
               size: size,
               order: order,
-            ));
+            ))
+        : CustemSubmint(
+            size: size,
+            order: order,
+          );
   }
 }
 
@@ -78,66 +73,73 @@ class CustemSubmint extends StatelessWidget {
           child: Form(
             // key: context.read<OrdersCubit>().orderFormKey,
             // autovalidateMode: context.read<OrdersCubit>().autovalidateMode,
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Row(
-                  children: [
-                    Expanded(
-                        child: FormRow(
-                            text: 'Name:',
-                            widget: Text(order.ordersUserid.toString(),
-                                style: TextStyles.styleRegular16(context)))),
-                    Expanded(
-                        child: FormRow(
-                            text: 'Order Id:',
-                            widget: Text(order.ordersId.toString(),
-                                style: TextStyles.styleRegular16(context)))),
-                  ],
-                ),
-                DetailsBlocBuilder(
-                  tatalPrice: order.orderToatalprice ?? 0,
-                ),
-                AddressSection(order: order),
-                const Gap(10),
-                PaymentDetailsSection(
-                  order: order,
-                ),
-                FormRow(
-                    text: 'Order Status:',
-                    widget: CustomDropdown(
-                      hintText: context.read<OrdersCubit>().selectedOrderStatus,
-                      items: context.read<OrdersCubit>().item,
-                      displayItem: (val) => val,
-                      onChanged: (newValue) {
-                        context
-                            .read<OrdersCubit>()
-                            .updatestatus(newValue ?? '');
+            child: Builder(builder: (context) {
+              return Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Row(
+                    children: [
+                      Expanded(
+                          child: FormRow(
+                              text: 'Name:',
+                              widget: Text(order.ordersUserid.toString(),
+                                  style: TextStyles.styleRegular16(context)))),
+                      Expanded(
+                          child: FormRow(
+                              text: 'Order Id:',
+                              widget: Text(order.ordersId.toString(),
+                                  style: TextStyles.styleRegular16(context)))),
+                    ],
+                  ),
+                  DetailsBlocBuilder(
+                    tatalPrice: order.orderToatalprice ?? 0,
+                  ),
+                  AddressSection(order: order),
+                  const Gap(10),
+                  PaymentDetailsSection(
+                    order: order,
+                  ),
+                  FormRow(
+                      text: 'Order Status:',
+                      widget: CustomDropdown(
+                        hintText:
+                            context.read<OrdersCubit>().selectedOrderStatus,
+                        items: context.read<OrdersCubit>().item,
+                        displayItem: (val) => val,
+                        onChanged: (newValue) {
+                          context
+                              .read<OrdersCubit>()
+                              .updatestatus(newValue ?? '');
+                        },
+                        validator: (value) {
+                          return validator(value, 'Please select status');
+                        },
+                      )),
+                  FormRow(
+                      text: 'Tracking URL:',
+                      widget: CustomTextField(
+                        labelText: 'Tracking Url',
+                        onSave: (val) {},
+                        controller: context.read<OrdersCubit>().trackingUrlCtrl,
+                      )),
+                  const Gap(defaultPadding * 2),
+                  BlocConsumer<OrdersCubit, OrdersState>(
+                    listener: (context, state) {},
+                    builder: (context, state) => RowBotttomAdd(
+                      loading: state is LoadingUpdate ? true : false,
+                      onPressed: () {
+                        context.read<OrdersCubit>().updateOrders(
+                            order.ordersId!,
+                            order.ordersUserid!,
+                            order.ordersType!,
+                            order.playerId!);
                       },
-                      validator: (value) {
-                        return validator(value, 'Please select status');
-                      },
-                    )),
-                FormRow(
-                    text: 'Tracking URL:',
-                    widget: CustomTextField(
-                      labelText: 'Tracking Url',
-                      onSave: (val) {},
-                      controller: context.read<OrdersCubit>().trackingUrlCtrl,
-                    )),
-                const Gap(defaultPadding * 2),
-                RowBotttomAdd(
-                  onPressed: () {
-                    context.read<OrdersCubit>().updateOrders(
-                        order.ordersId!,
-                        order.ordersUserid!,
-                        order.ordersType!,
-                        order.playerId!);
-                  },
-                ),
-                const UpdateOrdersBlocListener()
-              ],
-            ),
+                    ),
+                  ),
+                  const UpdateOrdersBlocListener()
+                ],
+              );
+            }),
           )),
     );
   }

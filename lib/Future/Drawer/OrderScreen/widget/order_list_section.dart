@@ -97,7 +97,8 @@ class OrderListSection extends StatelessWidget {
   List<DataRow> rowtable(BuildContext context) {
     return List.generate(
       order.length,
-      (index) => orderDataRow(order[index], index + 1, delete: () {}, edit: () {
+      (index) =>
+          orderDataRow(order[index], index + 1, delete: () {}, edit: () async {
         context
             .read<OrdersCubit>()
             .viewdetails(order[index].ordersId!, order[index].adressUserid!);
@@ -110,7 +111,8 @@ class OrderListSection extends StatelessWidget {
                   order: order[index],
                 ),
               )
-            : context.pushN(context, OrderSubmitForm(order: order[index]));
+            : context.pushN(context, OrderSubmitForm(order: order[index]),
+                order[index].ordersStatus!);
       }),
     );
   }

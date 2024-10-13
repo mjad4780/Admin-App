@@ -565,7 +565,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = ResponseOrders.fromJson(jsonDecode(_result.data!)!);
+    final _value = ResponseOrders.fromJson(jsonDecode(_result.data!));
     return _value;
   }
 
@@ -747,7 +747,7 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         ))));
-    final _value = ResponseDashpoard.fromJson(jsonDecode(_result.data!)!);
+    final _value = ResponseDashpoard.fromJson(jsonDecode(_result.data!));
     return _value;
   }
 

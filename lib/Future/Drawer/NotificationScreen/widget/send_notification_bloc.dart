@@ -6,8 +6,6 @@ import 'package:untitled/core/extensions/extention_navigator.dart';
 import '../../../../core/function/show_dilaog/top_show_dialog.dart';
 import '../../../../core/widgets/setup_erorr.dart';
 
-import '../../../../core/theming/colors.dart';
-
 class SendNotificationBloc extends StatelessWidget {
   const SendNotificationBloc({super.key});
 
@@ -18,17 +16,17 @@ class SendNotificationBloc extends StatelessWidget {
           current is LoadingAdd || current is SuccessAdd || current is ErorrAdd,
       listener: (context, state) {
         state.whenOrNull(
-          loadingAdd: () {
-            context.pop();
-            showDialog(
-              context: context,
-              builder: (context) => const Center(
-                child: CircularProgressIndicator(
-                  color: AppColor.mainBlue,
-                ),
-              ),
-            );
-          },
+          // loadingAdd: () {
+          //   context.pop();
+          //   showDialog(
+          //     context: context,
+          //     builder: (context) => const Center(
+          //       child: CircularProgressIndicator(
+          //         color: AppColor.mainBlue,
+          //       ),
+          //     ),
+          //   );
+          // },
           successAdd: () {
             topsnackbar(context, 'success Send Notification');
 
