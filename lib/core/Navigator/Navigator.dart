@@ -1,4 +1,4 @@
-import '../../Future/mainScreen/ui/Screen/main_screen.dart';
+import '../../features/mainScreen/ui/Screen/main_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 

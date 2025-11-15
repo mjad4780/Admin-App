@@ -31,7 +31,6 @@ dependencies:
   build_runner: ^2.4.7
   cached_network_image: ^3.3.1
   cupertino_icons: ^1.0.6
-  device_preview: ^1.2.0
   dio: ^5.3.4
   dropdown_button2: ^2.3.9
   firebase_core: ^3.4.0
@@ -50,7 +49,6 @@ dependencies:
   go_router: ^13.1.0
   google_fonts: ^4.0.4
   image_picker: ^1.0.0
-  intl: ^0.19.0
   jiffy: ^6.2.1
   json_annotation: ^4.9.0
   json_serializable: ^6.8.0
@@ -61,8 +59,10 @@ dependencies:
   retrofit_generator: ^8.0.4
   shared_preferences: ^2.2.2
   top_snackbar_flutter: ^3.1.0
+  device_preview: ^1.2.0
 
 dev_dependencies:
+  build_runner: ^2.4.0
   flutter_lints: ^3.0.0
   flutter_test:
     sdk: flutter

@@ -1,23 +1,23 @@
-import 'package:untitled/Future/Drawer/CategoryScreen/logic/cubit/categories_cubit.dart';
-import 'package:untitled/Future/Drawer/CouponCodeScreen/logic/cubit/coupon_cubit.dart';
-import 'package:untitled/Future/Drawer/DashboardScreen/data/repo.dart';
-import 'package:untitled/Future/Drawer/DashboardScreen/data/repo_get_dashboard.dart';
-import 'package:untitled/Future/Drawer/DashboardScreen/logic/cubit/dashboard_cubit.dart';
-import 'package:untitled/Future/Drawer/NotificationScreen/data/repo.dart';
-import 'package:untitled/Future/Drawer/NotificationScreen/logic/cubit/notification_cubit.dart';
+import 'package:untitled/features/drawer/CategoryScreen/logic/cubit/categories_cubit.dart';
+import 'package:untitled/features/drawer/CouponCodeScreen/logic/cubit/coupon_cubit.dart';
+import 'package:untitled/features/drawer/DashboardScreen/data/repo.dart';
+import 'package:untitled/features/drawer/DashboardScreen/data/repo_get_dashboard.dart';
+import 'package:untitled/features/drawer/DashboardScreen/logic/cubit/dashboard_cubit.dart';
+import 'package:untitled/features/drawer/NotificationScreen/data/repo.dart';
+import 'package:untitled/features/drawer/NotificationScreen/logic/cubit/notification_cubit.dart';
 
-import 'package:untitled/Future/Drawer/OrderScreen/logic/cubit/orders_cubit.dart';
-import 'package:untitled/Future/Drawer/PosterScreen/data/repo.dart';
+import 'package:untitled/features/drawer/OrderScreen/logic/cubit/orders_cubit.dart';
+import 'package:untitled/features/drawer/PosterScreen/data/repo.dart';
 import 'package:dio/dio.dart';
 
 import 'package:get_it/get_it.dart';
-import 'package:untitled/Future/mainScreen/logic/main_cubit/main_cubit.dart';
+import 'package:untitled/features/mainScreen/logic/main_cubit/main_cubit.dart';
 
-import '../../Future/Drawer/CategoryScreen/data/repo.dart';
-import '../../Future/Drawer/CouponCodeScreen/data/repo.dart';
-import '../../Future/Drawer/OrderScreen/data/repo_orders.dart';
-import '../../Future/Drawer/OrderScreen/data/repo_view_order.dart';
-import '../../Future/Drawer/PosterScreen/logic/cubit/cubit/posters_cubit.dart';
+import '../../features/drawer/CategoryScreen/data/repo.dart';
+import '../../features/drawer/CouponCodeScreen/data/repo.dart';
+import '../../features/drawer/OrderScreen/data/repo_orders.dart';
+import '../../features/drawer/OrderScreen/data/repo_view_order.dart';
+import '../../features/drawer/PosterScreen/logic/cubit/cubit/posters_cubit.dart';
 import '../class/cache_helper.dart';
 import '../networking/api_service.dart';
 import '../networking/dio_factory.dart';
